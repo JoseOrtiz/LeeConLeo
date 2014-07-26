@@ -2,7 +2,8 @@
 <resources>
 
     <string name="app_name">LeeConLeo</string>
-    <string name="hello_world">Lee con Leo</string>
+    <string name="app_title">Lee con Leo</string>
     <string name="action_settings">Configuración</string>
+    <string name="play">Jugar</string>
 
 </resources>
