@@ -1,36 +1,43 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+# built application files
+*.apk
+*.ap_
 
-# Folder config file
-Desktop.ini
+# files for the dex VM
+*.dex
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# Java class files
+*.class
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+# generated files
+bin/
+gen/
 
-# =========================
-# Operating System Files
-# =========================
+# Local configuration file (sdk path, etc)
+local.properties
 
-# OSX
-# =========================
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
 
-.DS_Store
-.AppleDouble
-.LSOverride
+# External tool builders
+.externalToolBuilders/
 
-# Icon must ends with two \r.
-Icon
+# Locally stored "Eclipse launch configurations"
+*.launch
 
-# Thumbnails
-._*
+# CDT-specific
+.cproject
 
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
+# PDT-specific
+.buildpath
