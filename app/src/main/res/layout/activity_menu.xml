@@ -10,14 +10,16 @@
         android:layout_gravity="top|center"
         android:layout_marginTop="50dp"
         android:textSize="32dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        />
 
     <Button
-        android:id="@+id/main_button"
+        android:id="@+id/play_button"
         android:layout_width="@dimen/abc_action_bar_stacked_tab_max_width"
         android:layout_height="wrap_content"
         android:textSize="32dp"
         android:layout_gravity="center"
-        android:text="@string/play"/>
+        android:text="@string/play"
+        android:onClick="startGame"/>
 
 </FrameLayout>

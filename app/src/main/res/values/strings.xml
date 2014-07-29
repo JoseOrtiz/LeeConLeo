@@ -5,5 +5,7 @@
     <string name="app_title">Lee con Leo</string>
     <string name="action_settings">Configuración</string>
     <string name="play">Jugar</string>
+    <string name="title_activity_game_map">GameMap</string>
+    <string name="map_string">Bienvenido</string>
 
 </resources>
