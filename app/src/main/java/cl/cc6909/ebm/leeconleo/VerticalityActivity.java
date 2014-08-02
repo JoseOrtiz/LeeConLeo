@@ -1,27 +1,24 @@
 package cl.cc6909.ebm.leeconleo;
 
-import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-
 import cl.cc6909.ebm.leeconleo.R;
 
-public class GameMapActivity extends ActionBarActivity {
-
+public class VerticalityActivity extends ActionBarActivity {
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game_map);
+        setContentView(R.layout.activity_verticality);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.game_map, menu);
+        getMenuInflater().inflate(R.menu.verticality, menu);
         return true;
     }
 
@@ -35,11 +32,5 @@ public class GameMapActivity extends ActionBarActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    public void startVerticalityLevel(View view){
-        Intent intent = new Intent(this, VerticalityActivity.class);
-        startActivity(intent);
-
     }
 }

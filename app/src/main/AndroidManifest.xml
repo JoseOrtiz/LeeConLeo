@@ -47,11 +47,19 @@
         <activity
             android:name=".GameMapActivity"
             android:label="@string/title_activity_game_map"
-            android:screenOrientation="portrait"
-            android:parentActivityName="cl.cc6909.ebm.leeconleo.MenuActivity" >
+            android:parentActivityName=".MenuActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cl.cc6909.ebm.leeconleo.MenuActivity" />
+        </activity>
+        <activity
+            android:name=".VerticalityActivity"
+            android:label="@string/title_activity_verticality"
+            android:parentActivityName=".GameMapActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cl.cc6909.ebm.leeconleo.GameMapActivity" />
         </activity>
     </application>
 

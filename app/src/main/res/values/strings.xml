@@ -7,5 +7,7 @@
     <string name="play">Jugar</string>
     <string name="title_activity_game_map">GameMap</string>
     <string name="map_string">Bienvenido</string>
+    <string name="title_activity_verticality">Verticality Level</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
