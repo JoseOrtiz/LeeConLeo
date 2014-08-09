@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="normal_shape" type="color">#AAAAAA</item>
+    <item name="target_shape" type="color">#555555</item>
+    <integer-array name="androidcolors">
+        <item>@color/normal_shape</item>
+        <item>@color/target_shape</item>
+    </integer-array>
+</resources>

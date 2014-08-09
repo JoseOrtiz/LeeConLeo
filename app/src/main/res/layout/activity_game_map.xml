@@ -30,6 +30,7 @@
                     android:id="@+id/level1Icon"
                     android:src="@drawable/level"
                     android:background="@drawable/abc_ab_bottom_transparent_light_holo"
+                    android:scaleType="fitCenter"
                     android:onClick="startVerticalityLevel"/>
             </RelativeLayout>
             <RelativeLayout
@@ -89,7 +90,8 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/between_levels_icon" />
+                    android:src="@drawable/between_levels_icon"
+                    android:scaleType="centerInside"/>
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dp"
@@ -209,6 +211,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/level2Icon"
                     android:src="@drawable/level"
+                    android:scaleType="centerInside"
                     android:background="@drawable/abc_ab_bottom_transparent_light_holo" />
             </RelativeLayout>
             <RelativeLayout

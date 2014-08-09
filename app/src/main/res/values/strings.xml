@@ -9,5 +9,10 @@
     <string name="map_string">Bienvenido</string>
     <string name="title_activity_verticality">Verticality Level</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="good_feedback">Bien</string>
+    <string name="bad_feedback">Mal</string>
+    <string name="down">Abajo</string>
+    <string name="up">Arriba</string>
 
 </resources>
