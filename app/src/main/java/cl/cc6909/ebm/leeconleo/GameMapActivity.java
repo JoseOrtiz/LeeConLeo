@@ -13,9 +13,15 @@ public class GameMapActivity extends Activity {
         setContentView(R.layout.activity_game_map);
     }
 
-    public void startVerticalityLevel(View view){
+    public void startVerticalLevel(View view){
         Intent intent = new Intent(this, VerticalActivity.class);
         startActivity(intent);
 
     }
+
+    public void startHorizontalLevel(View view){
+        Intent intent = new Intent(this, HorizontalActivity.class);
+        startActivity(intent);
+    }
+
 }

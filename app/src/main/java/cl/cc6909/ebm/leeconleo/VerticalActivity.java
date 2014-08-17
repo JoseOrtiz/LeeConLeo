@@ -1,24 +1,16 @@
 package cl.cc6909.ebm.leeconleo;
 
 import android.app.Activity;
-import android.app.Dialog;
 import android.content.ClipData;
 import android.content.ClipDescription;
-import android.content.Context;
-import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.Point;
-import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.DragEvent;
-import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -30,10 +22,13 @@ public class VerticalActivity extends Activity implements View.OnClickListener {
     private static final String IMAGE_TAG = "Leo tag";
     private FeedbackDialog pd;
     private Handler h;
-    private Runnable r;
+    private Runnable r1;
+    private Runnable r2;
+    private FrameLayout container;
+    private View view;
     private int answer;
     private int drag_answer;
-    private int totalCorrectAnswers = 2;
+    private int totalCorrectAnswers = 5;
     private int correctAnswers;
     private ImageView leo;
 
@@ -44,12 +39,18 @@ public class VerticalActivity extends Activity implements View.OnClickListener {
         correctAnswers = 0;
 
         h = new Handler();
-        pd = new FeedbackDialog(this,"");
-        r =new Runnable() {
+        pd = new FeedbackDialog(this);
+        r1 =new Runnable() {
             @Override
             public void run() {
                 if (pd.isShowing()) {
                     pd.dismiss();
+                    if(correctAnswers>totalCorrectAnswers){
+                        startDragActivity();
+                    }
+                    else{
+                        findViewById(answer).setVisibility(View.VISIBLE);
+                    }
                 }
             }
         };
@@ -65,7 +66,7 @@ public class VerticalActivity extends Activity implements View.OnClickListener {
 
     @Override
     protected void onDestroy() {
-        h.removeCallbacks(r);
+        h.removeCallbacks(r1);
         if (pd.isShowing() ) {
             pd.dismiss();
         }
@@ -74,7 +75,8 @@ public class VerticalActivity extends Activity implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        int click = v.getId();
+        switch (click){
             case R.id.back_button:
                 finish();
                 break;
@@ -82,26 +84,26 @@ public class VerticalActivity extends Activity implements View.OnClickListener {
                 if(answer==R.id.down_answer){
                     pd.setGoodFeedback();
                     pd.show();
-                    h.postDelayed(r, 2000);
+                    h.postDelayed(r1, 2000);
                     changeAnswer();
                 }
                 else{
                     pd.setBadFeedback();
                     pd.show();
-                    h.postDelayed(r, 2000);
+                    h.postDelayed(r1, 2000);
                 }
                 break;
             case R.id.up_arrow:
                 if(answer==R.id.up_answer){
                     pd.setGoodFeedback();
                     pd.show();
-                    h.postDelayed(r, 2000);
+                    h.postDelayed(r1, 2000);
                     changeAnswer();
                 }
                 else{
                     pd.setBadFeedback();
                     pd.show();
-                    h.postDelayed(r, 2000);
+                    h.postDelayed(r1, 2000);
                 }
                 break;
         }
@@ -118,12 +120,6 @@ public class VerticalActivity extends Activity implements View.OnClickListener {
         else{
             answer = R.id.up_answer;
         }
-        if(correctAnswers>totalCorrectAnswers){
-            startDragActivity();
-        }
-        else{
-            findViewById(answer).setVisibility(View.VISIBLE);
-        }
     }
 
     private void startDragActivity(){
@@ -136,6 +132,7 @@ public class VerticalActivity extends Activity implements View.OnClickListener {
         leo.setTag(IMAGE_TAG);
         leo.setVisibility(View.VISIBLE);
 
+
         leo.setOnLongClickListener(new View.OnLongClickListener() {
 
             @Override
@@ -143,9 +140,8 @@ public class VerticalActivity extends Activity implements View.OnClickListener {
                 ClipData.Item item = new ClipData.Item((CharSequence) v.getTag());
                 String[] mimeTypes = {ClipDescription.MIMETYPE_TEXT_PLAIN};
                 ClipData dragData = new ClipData(v.getTag().toString(), mimeTypes, item);
-                View.DragShadowBuilder myShadow = new MyDragShadowBuilder(leo);
+                View.DragShadowBuilder myShadow = new MyDragShadowBuilder(leo, BitmapFactory.decodeResource(getResources(),R.drawable.adventurer));
                 v.startDrag(dragData, myShadow, leo, 0);
-                v.setVisibility(View.INVISIBLE);
                 return true;
             }
         });
@@ -161,67 +157,6 @@ public class VerticalActivity extends Activity implements View.OnClickListener {
         }
         else if(dragAnswer == R.id.up_surface){
             tv.setText(getString(R.string.up));
-        }
-    }
-
-    private class FeedbackDialog extends Dialog {
-
-        private TextView tv;
-
-        public void setGoodFeedback(){
-            tv.setText(getText(R.string.good_feedback));
-            tv.setTextColor(Color.GREEN);
-        }
-
-        public void setBadFeedback(){
-            tv.setText(getText(R.string.bad_feedback));
-            tv.setTextColor(Color.RED);
-        }
-        public FeedbackDialog(Context context, String feedback) {
-            super(context, R.style.Theme_Transparent);
-            WindowManager.LayoutParams wlmp = getWindow().getAttributes();
-            wlmp.gravity = Gravity.CENTER_HORIZONTAL;
-            getWindow().setAttributes(wlmp);
-            setTitle(null);
-            setCancelable(false);
-            setOnCancelListener(null);
-            LinearLayout layout = new LinearLayout(context);
-            layout.setOrientation(LinearLayout.VERTICAL);
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-            tv = new TextView(context);
-            tv.setText(feedback);
-            tv.setTextSize(200);
-            layout.addView(tv, params);
-            addContentView(layout, params);
-        }
-    }
-
-    private static class MyDragShadowBuilder extends View.DragShadowBuilder {
-
-        private static Drawable shadow;
-        private Bitmap image;
-
-        public MyDragShadowBuilder(View v) {
-            super(v);
-            shadow = new ColorDrawable(R.drawable.adventurer);
-        }
-
-        @Override
-        public void onProvideShadowMetrics (Point size, Point touch){
-            int width, height;
-            width = getView().getWidth() / 2;
-
-            height = getView().getHeight() / 2;
-
-            shadow.setBounds(0, 0, width, height);
-
-            size.set(width, height);
-
-            touch.set(width / 2, height / 2);
-        }
-        @Override
-        public void onDrawShadow(Canvas canvas) {
-            shadow.draw(canvas);
         }
     }
 
@@ -244,26 +179,46 @@ public class VerticalActivity extends Activity implements View.OnClickListener {
 
                 case DragEvent.ACTION_DROP:
                     if(v == findViewById(drag_answer)) {
-                        View view = (View) event.getLocalState();
+                        view = (View) event.getLocalState();
 
                         ViewGroup owner = (ViewGroup) view.getParent();
                         owner.removeView(view);
 
-                        FrameLayout container = (FrameLayout) v;
+                        container = (FrameLayout) v;
                         container.addView(view);
                         view.setX(event.getX());
-                        view.setY(70);
+                        view.setY(container.getHeight()-252);
+
+                        r2 =new Runnable(){
+
+                            @Override
+                            public void run() {
+                                if (pd.isShowing()) {
+                                    pd.dismiss();
+                                    changeDragAnswer(container, view);
+                                }
+                            }
+                        };
+
                         pd.setGoodFeedback();
                         pd.show();
-                        h.postDelayed(r, 2000);
+                        h.postDelayed(r2, 2000);
                         view.setVisibility(View.VISIBLE);
-                        changeDragAnswer(container,view);
                     } else {
                         View view = (View) event.getLocalState();
                         view.setVisibility(View.VISIBLE);
                         pd.setBadFeedback();
                         pd.show();
-                        h.postDelayed(r, 2000);
+                        r2 =new Runnable(){
+
+                            @Override
+                            public void run() {
+                                if (pd.isShowing()) {
+                                    pd.dismiss();
+                                }
+                            }
+                        };
+                        h.postDelayed(r2, 2000);
                     }
                     break;
 

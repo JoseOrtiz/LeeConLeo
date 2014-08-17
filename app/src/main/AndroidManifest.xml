@@ -63,6 +63,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cl.cc6909.ebm.leeconleo.GameMapActivity" />
         </activity>
+        <activity
+            android:name=".HorizontalActivity"
+            android:label="@string/title_activity_horizontal"
+            android:parentActivityName=".GameMapActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cl.cc6909.ebm.leeconleo.GameMapActivity" />
+        </activity>
     </application>
 
 </manifest>

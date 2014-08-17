@@ -31,7 +31,7 @@
                     android:src="@drawable/level"
                     android:background="@drawable/abc_ab_bottom_transparent_light_holo"
                     android:scaleType="fitCenter"
-                    android:onClick="startVerticalityLevel"/>
+                    android:onClick="startVerticalLevel"/>
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dp"
@@ -212,7 +212,8 @@
                     android:id="@+id/level2Icon"
                     android:src="@drawable/level"
                     android:scaleType="centerInside"
-                    android:background="@drawable/abc_ab_bottom_transparent_light_holo" />
+                    android:background="@drawable/abc_ab_bottom_transparent_light_holo"
+                    android:onClick="startHorizontalLevel"/>
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="0dp"

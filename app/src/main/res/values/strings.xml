@@ -14,5 +14,8 @@
     <string name="bad_feedback">Mal</string>
     <string name="down">Abajo</string>
     <string name="up">Arriba</string>
+    <string name="title_activity_horizontal">HorizontalActivity</string>
+    <string name="right">Derecha</string>
+    <string name="left">Izquierda</string>
 
 </resources>

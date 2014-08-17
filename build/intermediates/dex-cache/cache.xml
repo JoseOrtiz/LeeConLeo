@@ -2,16 +2,28 @@
 <pre-dex-items>
 
     <item
-        dex="C:\Users\Jose\AndroidStudioProjects\LeeConLeo\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-48a33c7aff9ffd8499be2768f7a82c95be004cd3.jar"
-        jar="C:\Desarrollo\adt-bundle-windows-x86_64-20140702\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        dex="C:\Users\Jose\AndroidStudioProjects\LeeConLeo\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-ee223a4f01f5f1638bd056e392dadfce7fa597f4.jar"
+        jar="C:\Desarrollo\adt-bundle-windows-x86_64-20140702\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
     <item
-        dex="C:\Users\Jose\AndroidStudioProjects\LeeConLeo\app\build\intermediates\pre-dexed\debug\classes-dedafe37512a1ec890012e19ca766ef6bec6f351.jar"
-        jar="C:\Users\Jose\AndroidStudioProjects\LeeConLeo\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.1.0\classes.jar"
+        dex="C:\Users\Jose\AndroidStudioProjects\LeeConLeo\app\build\intermediates\pre-dexed\debug\classes-a7717f66d5f506319eeb22a127e7f9c0d8758be1.jar"
+        jar="C:\Users\Jose\AndroidStudioProjects\LeeConLeo\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+    <item
+        dex="C:\Users\Jose\AndroidStudioProjects\LeeConLeo\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-65993cfd199e49b4befeb994e1d44f32f22624e9.jar"
+        jar="C:\Users\Jose\AndroidStudioProjects\LeeConLeo\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+    <item
+        dex="C:\Users\Jose\AndroidStudioProjects\LeeConLeo\app\build\intermediates\pre-dexed\debug\classes-3b8c0014b5feca79b7dce092dcf82bd7792ec375.jar"
+        jar="C:\Users\Jose\AndroidStudioProjects\LeeConLeo\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef"/>
 
 </pre-dex-items>
