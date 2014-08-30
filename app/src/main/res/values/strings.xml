@@ -17,5 +17,6 @@
     <string name="title_activity_horizontal">HorizontalActivity</string>
     <string name="right">Derecha</string>
     <string name="left">Izquierda</string>
+    <string name="title_activity_platform">PlatformActivity</string>
 
 </resources>

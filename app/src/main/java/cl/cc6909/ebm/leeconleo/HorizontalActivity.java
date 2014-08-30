@@ -6,8 +6,6 @@ import android.content.ClipDescription;
 import android.content.Context;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
-import android.hardware.SensorEvent;
-import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.DragEvent;
@@ -35,7 +33,6 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
     private int totalCorrectAnswers = 3;
     private int correctAnswers;
     private ImageView leo;
-    private SensorManager mSensorManager;
     private MyTiltEventListener myTiltEventListener;
     private int tiltThreshold=30;
     private Runnable r3;
@@ -360,17 +357,8 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
 
     private class MyTiltEventListener extends OrientationEventListener {
 
-        final float[] mValuesAccel       = new float[3];
-
         public MyTiltEventListener(Context context) {
             super(context);
-        }
-
-
-        private void getAccelerometer(SensorEvent event) {
-            TextView tip = (TextView) findViewById(R.id.drag_tip);
-            tip.setTextSize(20);
-            tip.setText("x,y,z:" + mValuesAccel[0]+"|"+mValuesAccel[1]+"|"+mValuesAccel[2]);
         }
 
         @Override

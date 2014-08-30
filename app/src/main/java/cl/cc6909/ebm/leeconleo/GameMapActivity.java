@@ -24,4 +24,9 @@ public class GameMapActivity extends Activity {
         startActivity(intent);
     }
 
+    public void startPlatformLevel(View view){
+        Intent intent = new Intent(this, PlatformActivity.class);
+        startActivity(intent);
+    }
+
 }
