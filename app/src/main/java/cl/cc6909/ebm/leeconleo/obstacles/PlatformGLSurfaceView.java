@@ -1,14 +1,17 @@
 package cl.cc6909.ebm.leeconleo.obstacles;
 
-import android.app.ActivityManager;
+import android.app.Activity;
 import android.content.Context;
-import android.content.pm.ConfigurationInfo;
-import android.graphics.PixelFormat;
 import android.opengl.GLSurfaceView;
 import android.util.AttributeSet;
+import android.view.MotionEvent;
+import android.view.View;
 
-public class PlatformGLSurfaceView extends GLSurfaceView{
+import cl.cc6909.ebm.leeconleo.SwipeInterface;
+
+public class PlatformGLSurfaceView extends GLSurfaceView implements SwipeInterface{
     private PlatformRenderer mRenderer;
+
 
     public PlatformGLSurfaceView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -20,10 +23,11 @@ public class PlatformGLSurfaceView extends GLSurfaceView{
     }
 
     private void init(Context context){
-        mRenderer = new PlatformRenderer();
+        mRenderer = new PlatformRenderer(context);
         setEGLContextClientVersion(2);
         setRenderer(mRenderer);
-        setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
+        //setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
+        requestFocus();
     }
     @Override
     public void onPause() {
@@ -35,5 +39,23 @@ public class PlatformGLSurfaceView extends GLSurfaceView{
     public void onResume() {
         super.onResume();
         mRenderer.onResume();
+    }
+
+    @Override
+    public void onSwipeLeft() {
+        return;
+    }
+
+    @Override
+    public void onSwipeRight() {
+        return;
+    }
+
+    public void onSwipeUp() {
+        mRenderer.onSwipeUp();
+    }
+
+    public void onSwipeDown() {
+        mRenderer.onSwipeDown();
     }
 }

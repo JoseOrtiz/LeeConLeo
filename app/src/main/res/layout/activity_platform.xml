@@ -36,6 +36,10 @@
         android:layout_gravity="bottom"
         android:gravity="center_horizontal"
         android:id="@+id/gamePlatformLayout">
+        <cl.cc6909.ebm.leeconleo.obstacles.PlatformGLSurfaceView
+            android:id="@+id/platformSurface"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
 
     </LinearLayout>
     <LinearLayout

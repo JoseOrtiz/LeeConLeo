@@ -5,7 +5,6 @@ import android.content.ClipData;
 import android.content.ClipDescription;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.DragEvent;
@@ -23,7 +22,6 @@ public class VerticalActivity extends Activity implements View.OnClickListener {
     private FeedbackDialog pd;
     private Handler h;
     private Runnable r1;
-    private Runnable r2;
     private FrameLayout container;
     private View view;
     private int answer;
@@ -55,9 +53,9 @@ public class VerticalActivity extends Activity implements View.OnClickListener {
             }
         };
 
-        ((ImageView)findViewById(R.id.back_button)).setOnClickListener(this);
-        ((ImageView)findViewById(R.id.up_arrow)).setOnClickListener(this);
-        ((ImageView)findViewById(R.id.down_arrow)).setOnClickListener(this);
+        findViewById(R.id.back_button).setOnClickListener(this);
+        findViewById(R.id.up_arrow).setOnClickListener(this);
+        findViewById(R.id.down_arrow).setOnClickListener(this);
 
         answer = R.id.down_answer;
 
@@ -161,7 +159,6 @@ public class VerticalActivity extends Activity implements View.OnClickListener {
     }
 
     class MyDragListener implements View.OnDragListener {
-        Drawable normalShape = getResources().getDrawable(R.drawable.adventurer);
         @Override
         public boolean onDrag(View v, DragEvent event) {
 
@@ -178,6 +175,7 @@ public class VerticalActivity extends Activity implements View.OnClickListener {
                     break;
 
                 case DragEvent.ACTION_DROP:
+                    Runnable r2;
                     if(v == findViewById(drag_answer)) {
                         view = (View) event.getLocalState();
 

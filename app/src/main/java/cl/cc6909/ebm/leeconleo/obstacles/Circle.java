@@ -8,7 +8,8 @@ import java.nio.FloatBuffer;
 
 public class Circle {
 
-    private float radius, centerX, centerY;
+    private float radius;
+    private Vector2D center;
     private int mProgram, mPositionHandle, mColorHandle, mMVPMatrixHandle, points ;
     private FloatBuffer mVertexBuffer;
     private float vertices[];
@@ -27,18 +28,27 @@ public class Circle {
                     "  gl_FragColor = vColor;" +
                     "}";
 
-    public Circle(float centerX, float centerY, float radius, int points, float[] color){
+    public Circle(Vector2D center, float radius, int points, float[] color){
         this.vertices = new float[points*3];
         this.color = color;
         this.points = points;
         this.radius = radius;
-        this.centerX = centerX;
-        this.centerY = centerY;
+        this.center = center;
+        updateVertex();
+
+        int vertexShader = PlatformRenderer.loadShader(GLES20.GL_VERTEX_SHADER, vertexShaderCode);
+        int fragmentShader = PlatformRenderer.loadShader(GLES20.GL_FRAGMENT_SHADER, fragmentShaderCode);
+
+        mProgram = GLES20.glCreateProgram();
+        GLES20.glAttachShader(mProgram, vertexShader);
+        GLES20.glAttachShader(mProgram, fragmentShader);
+        GLES20.glLinkProgram(mProgram);
+
     }
 
-    private void updateVertex(float centerX, float centerY) {
-        vertices[0] = centerX;
-        vertices[1] = centerY;
+    private void updateVertex() {
+        vertices[0] = center.getX();
+        vertices[1] = center.getY();
         vertices[2] = 0.0f;
 
         for(int i =0; i <points-1; i++){
@@ -48,26 +58,20 @@ public class Circle {
         }
     }
 
-    public void setCenter(float centerX, float centerY){
-        this.centerX = centerX;
-        this.centerY = centerY;
+    public void setCenter(Vector2D center){
+        this.center = center;
+        updateVertex();
+    }
+    public Vector2D getCenter(){
+        return center;
     }
 
     public void draw (float[] mvpMatrix){
-        updateVertex(centerX, centerY);
-
         ByteBuffer vertexByteBuffer = ByteBuffer.allocateDirect(vertices.length * 4);
         vertexByteBuffer.order(ByteOrder.nativeOrder());
         mVertexBuffer = vertexByteBuffer.asFloatBuffer();
         mVertexBuffer.put(vertices);
         mVertexBuffer.position(0);
-        int vertexShader = PlatformRenderer.loadShader(GLES20.GL_VERTEX_SHADER, vertexShaderCode);
-        int fragmentShader = PlatformRenderer.loadShader(GLES20.GL_FRAGMENT_SHADER, fragmentShaderCode);
-
-        mProgram = GLES20.glCreateProgram();
-        GLES20.glAttachShader(mProgram, vertexShader);
-        GLES20.glAttachShader(mProgram, fragmentShader);
-        GLES20.glLinkProgram(mProgram);
 
         GLES20.glUseProgram(mProgram);
 

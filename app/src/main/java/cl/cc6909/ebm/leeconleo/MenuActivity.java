@@ -16,6 +16,7 @@ public class MenuActivity extends Activity {
 
     public void startGame(View view){
         Intent intent = new Intent(this, GameMapActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
         startActivity(intent);
 
     }

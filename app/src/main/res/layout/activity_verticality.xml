@@ -10,24 +10,24 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_gravity="center_vertical|left"
+        android:layout_gravity="center_vertical|start"
         android:layout_weight="1"
-        android:gravity="start|left">
+        android:gravity="start">
         <ImageView
             android:id="@+id/back_button"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:src="@drawable/back"
             android:scaleType="centerInside"
-            android:layout_gravity="left" />
+            android:layout_gravity="start" />
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:id="@+id/drag_tip"
-            android:textSize="100dp"
-            android:textAlignment="center" />
+            android:textSize="100sp"
+            android:gravity="center" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"
@@ -60,7 +60,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="320dp"
-                android:src="@drawable/mesa"
+                android:src="@drawable/table"
                 android:scaleType="fitXY"
                 android:layout_gravity="bottom" />
 
@@ -101,8 +101,8 @@
                 android:layout_width="fill_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:layout_gravity="right"
-                android:gravity="right">
+                android:layout_gravity="end"
+                android:gravity="end">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -110,8 +110,8 @@
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="@string/up"
                     android:id="@+id/up_arrow_label"
-                    android:layout_gravity="center_vertical"
-                    android:textSize="80dp"
+                    android:gravity="center"
+                    android:textSize="80sp"
                     android:textIsSelectable="false" />
 
                 <ImageView

@@ -1,29 +1,66 @@
 package cl.cc6909.ebm.leeconleo.obstacles;
 
+import android.content.Context;
 import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
 import android.opengl.Matrix;
+import android.os.Handler;
+import android.os.SystemClock;
 import android.util.Log;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
+import cl.cc6909.ebm.leeconleo.FeedbackDialog;
+import cl.cc6909.ebm.leeconleo.PlatformActivity;
+
 public class PlatformRenderer implements GLSurfaceView.Renderer{
     private static final String TAG = "PlatformRenderer";
+    private final Context mActivityContext;
     private Background back;
+    private Runner runner;
+    private Obstacle obstacle;
 
     // mMVPMatrix is an abbreviation for "Model View Projection Matrix"
     private final float[] mMVPMatrix = new float[16];
     private final float[] mProjectionMatrix = new float[16];
     private final float[] mViewMatrix = new float[16];
     private final float[] mRotationMatrix = new float[16];
+    private long time;
 
+    private FeedbackDialog pd;
+    private Handler h1,h2;
+    private Runnable r1;
+    private boolean checked;
+
+    public PlatformRenderer(Context activity) {
+        this.mActivityContext = activity;
+
+        h1 = new Handler();
+        h2 = new Handler();
+        pd = new FeedbackDialog(mActivityContext);
+        r1 = new Runnable() {
+            @Override
+            public void run() {
+                if (pd.isShowing()) {
+                    pd.dismiss();
+                }
+            }
+        };
+
+        checked = false;
+
+    }
 
     @Override
     public void onSurfaceCreated(GL10 gl, EGLConfig config) {
         GLES20.glClearColor(0.5f, 1f, 1f, 0f);
-        back = new Background(System.currentTimeMillis());
+        time = SystemClock.uptimeMillis();
+        back = new Background(time);
+        runner = new Runner(mActivityContext, time);
+        obstacle = new Obstacle(mActivityContext, time);
     }
+
 
     @Override
     public void onSurfaceChanged(GL10 gl, int width, int height) {
@@ -37,19 +74,84 @@ public class PlatformRenderer implements GLSurfaceView.Renderer{
 
     @Override
     public void onDrawFrame(GL10 gl) {
-        GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT | GLES20.GL_DEPTH_BUFFER_BIT);
+        long current = SystemClock.uptimeMillis();
+        if(current - time > 1000/30) {
+            GLES20.glClearColor(0.5f, 1f, 1f, 0f);
+            clearBuffers(true, true, true);
 
-        back.draw(mMVPMatrix,System.currentTimeMillis());
+            back.draw(mMVPMatrix, current);
+            runner.draw(mMVPMatrix, current);
+            obstacle.draw(mMVPMatrix,current);
+            checkCollision();
+            time=current;
+        }
 
     }
-    public void onPause()
-    {
+    public void onPause(){
         /* Do stuff to pause the renderer */
     }
 
-    public void onResume()
-    {
+    public void onResume(){
         /* Do stuff to resume the renderer */
+    }
+
+    private void checkCollision(){
+        Vector2D runnerPosition= runner.getPosition();
+        Vector2D obstaclePosition = obstacle.getPosition();
+        float distanceX = runnerPosition.getX() - obstaclePosition.getX();
+        if(distanceX<0.1f && distanceX>=0f && !checked){
+            boolean good = false;
+            checked = true;
+            if (obstaclePosition.getY()<-0.3){
+                if(runnerPosition.getY()>obstaclePosition.getY()+0.3f){
+                    good = true;
+                }
+            }
+            else {
+                if(runnerPosition.getY()+0.5f<obstaclePosition.getY()){
+                    good = true;
+                }
+            }
+            final boolean finalGood = good;
+            Runnable runnable = new Runnable() {
+                @Override
+                public void run() {
+                    h2.post(new Runnable() { // This thread runs in the UI
+                        @Override
+                        public void run() {
+                            if(finalGood){
+                                pd.setGoodFeedback();
+                            }
+                            else {
+                                pd.setBadFeedback();
+                            }
+                            pd.show();
+                            h1.postDelayed(r1, 1000);
+                        }
+                    });
+                }
+            };
+            new Thread(runnable).start();
+        }
+        else {
+            checked = false;
+        }
+    }
+
+    public void clearBuffers(boolean color, boolean depth, boolean stencil) {
+        int bits = 0;
+        if (color) {
+            bits = GLES20.GL_COLOR_BUFFER_BIT;
+        }
+        if (depth) {
+            bits |= GLES20.GL_DEPTH_BUFFER_BIT;
+        }
+        if (stencil) {
+            bits |= GLES20.GL_STENCIL_BUFFER_BIT;
+        }
+        if (bits != 0) {
+            GLES20.glClear(bits);
+        }
     }
 
     /**
@@ -92,5 +194,13 @@ public class PlatformRenderer implements GLSurfaceView.Renderer{
             Log.e(TAG, glOperation + ": glError " + error);
             throw new RuntimeException(glOperation + ": glError " + error);
         }
+    }
+
+    public void onSwipeUp(){
+        runner.jump();
+    }
+
+    public void onSwipeDown(){
+        runner.crouch();
     }
 }

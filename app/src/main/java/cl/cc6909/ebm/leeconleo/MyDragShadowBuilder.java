@@ -9,12 +9,10 @@ import android.view.View;
 
 public class MyDragShadowBuilder extends View.DragShadowBuilder {
 
-    private static Drawable shadow;
     private Bitmap image;
 
     public MyDragShadowBuilder(View v, Bitmap image) {
         super(v);
-        shadow = new ColorDrawable(R.drawable.adventurer);
         this.image = image;
     }
 
@@ -22,8 +20,8 @@ public class MyDragShadowBuilder extends View.DragShadowBuilder {
     public void onProvideShadowMetrics (Point size, Point touch){
         size.x = image.getWidth();
         size.y = image.getHeight();
-        touch.x = size.x;
-        touch.y = size.y;
+        touch.x = size.x/2;
+        touch.y = size.y/2;
     }
     @Override
     public void onDrawShadow(Canvas canvas) {

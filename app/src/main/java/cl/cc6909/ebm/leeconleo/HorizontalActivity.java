@@ -25,7 +25,6 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
     private FeedbackDialog pd;
     private Handler h;
     private Runnable r1;
-    private Runnable r2;
     private FrameLayout container;
     private View view;
     private int answer;
@@ -35,7 +34,6 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
     private ImageView leo;
     private MyTiltEventListener myTiltEventListener;
     private int tiltThreshold=30;
-    private Runnable r3;
 
 
     @Override
@@ -60,9 +58,9 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
             }
         };
 
-        ((ImageView)findViewById(R.id.back_button)).setOnClickListener(this);
-        ((ImageView)findViewById(R.id.left_arrow)).setOnClickListener(this);
-        ((ImageView)findViewById(R.id.right_arrow)).setOnClickListener(this);
+        findViewById(R.id.back_button).setOnClickListener(this);
+        findViewById(R.id.left_arrow).setOnClickListener(this);
+        findViewById(R.id.right_arrow).setOnClickListener(this);
 
         answer = R.id.left_answer;
 
@@ -233,13 +231,13 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
     }
 
     private void checkTiltAnswer(int orientation) {
-        r3 =new Runnable(){
+        Runnable r3 = new Runnable() {
 
             @Override
             public void run() {
                 if (pd.isShowing()) {
                     pd.dismiss();
-                    changeTiltAnswer(container,view);
+                    changeTiltAnswer(container, view);
                     myTiltEventListener.enable();
                 }
             }
@@ -297,6 +295,7 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
                     break;
 
                 case DragEvent.ACTION_DROP:
+                    Runnable r2;
                     if(v == findViewById(drag_answer)) {
                         view = (View) event.getLocalState();
 
