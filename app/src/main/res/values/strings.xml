@@ -22,5 +22,8 @@
     <string name="between_tables">Entre las mesas</string>
     <string name="over_left_table">Sobre la mesa izquierda</string>
     <string name="over_right_table">Sobre la mesa derecha</string>
+    <string name="title_activity_letter">LetterActivity</string>
+    <string name="introduction">introducción</string>
+    <string name="title_activity_introduction">IntroductionActivity</string>
 
 </resources>

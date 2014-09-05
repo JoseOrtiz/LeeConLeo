@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import cl.cc6909.ebm.leeconleo.letters.LetterActivity;
+
 public class GameMapActivity extends Activity {
 
     @Override
@@ -31,6 +33,13 @@ public class GameMapActivity extends Activity {
 
     public void startBetweenLevel(View view){
         Intent intent = new Intent(this, BetweenActivity.class);
+        startActivity(intent);
+    }
+
+    public void startLetterActivity(View view){
+        Intent intent = new Intent(this, LetterActivity.class);
+        String tag = (String) view.getTag();
+        intent.putExtra("letter",tag);
         startActivity(intent);
     }
 

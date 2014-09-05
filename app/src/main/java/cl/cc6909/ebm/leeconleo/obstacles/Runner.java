@@ -21,7 +21,7 @@ public class Runner {
         jumping = false;
         crouching = false;
         runner = new Sprite(context, position,0.4f,0.5f, 5, 3, R.drawable.running_2, 3);
-        jumper = new Sprite(context, position,0.4f,0.5f, 7, 1, R.drawable.jumping, 12);
+        jumper = new Sprite(context, position,0.4f,0.5f, 7, 1, R.drawable.jumping, 10);
         this.time = time;
     }
 

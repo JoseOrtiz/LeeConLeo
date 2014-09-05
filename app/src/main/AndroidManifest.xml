@@ -87,10 +87,28 @@
         <activity
             android:name=".BetweenActivity"
             android:label="@string/title_activity_between"
-            android:parentActivityName=".GameMapActivity" >
+            android:parentActivityName=".GameMapActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cl.cc6909.ebm.leeconleo.GameMapActivity" />
+        </activity>
+        <activity
+            android:name=".letters.LetterActivity"
+            android:label="@string/title_activity_letter"
+            android:parentActivityName=".GameMapActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cl.cc6909.ebm.leeconleo.GameMapActivity" />
+        </activity>
+        <activity
+            android:name=".letters.IntroductionActivity"
+            android:label="@string/title_activity_introduction"
+            android:parentActivityName=".letters.LetterActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cl.cc6909.ebm.leeconleo.letters.LetterActivity" />
         </activity>
     </application>
 
