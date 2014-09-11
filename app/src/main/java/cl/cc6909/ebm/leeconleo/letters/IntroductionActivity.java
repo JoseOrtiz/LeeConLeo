@@ -1,14 +1,16 @@
 package cl.cc6909.ebm.leeconleo.letters;
 
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import cl.cc6909.ebm.leeconleo.R;
 
-public class IntroductionActivity extends Activity {
+public class IntroductionActivity extends Activity implements View.OnClickListener{
     String letter;
 
     @Override
@@ -31,5 +33,16 @@ public class IntroductionActivity extends Activity {
         TextView lowercasePrinting= (TextView) findViewById(R.id.lowercase_printing_letter);
         lowercasePrinting.setText(letter.toLowerCase());
         lowercasePrinting.setTextColor(Color.BLUE);
+
+        findViewById(R.id.back_button).setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.back_button:
+                finish();
+                break;
+        }
     }
 }

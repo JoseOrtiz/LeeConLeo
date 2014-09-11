@@ -110,6 +110,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cl.cc6909.ebm.leeconleo.letters.LetterActivity" />
         </activity>
+        <activity
+            android:name=".letters.PaintActivity"
+            android:label="@string/title_activity_paint"
+            android:parentActivityName=".letters.LetterActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cl.cc6909.ebm.leeconleo.letters.LetterActivity" />
+        </activity>
     </application>
 
 </manifest>

@@ -8,13 +8,12 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.DragEvent;
 import android.view.OrientationEventListener;
 import android.view.Surface;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.WindowManager;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -24,8 +23,7 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
     private static final String IMAGE_TAG = "Leo horizontal tag";
     private FeedbackDialog pd;
     private Handler h;
-    private Runnable r1;
-    private FrameLayout container;
+    private Runnable r1, r2, r3;
     private View view;
     private int answer;
     private int drag_answer;
@@ -33,7 +31,7 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
     private int correctAnswers;
     private ImageView leo;
     private MyTiltEventListener myTiltEventListener;
-    private int tiltThreshold=30;
+    private int tiltThreshold=25;
 
 
     @Override
@@ -70,8 +68,24 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
     @Override
     protected void onDestroy() {
         h.removeCallbacks(r1);
+        try{
+            h.removeCallbacks(r2);
+        }catch (Exception e){
+            Log.e("Horizontal Destroy",e.getMessage());
+        }
+        try{
+            h.removeCallbacks(r3);
+        }catch (Exception e){
+            Log.e("Horizontal Destroy",e.getMessage());
+        }
         if (pd.isShowing()) {
             pd.dismiss();
+        }
+        try{
+            myTiltEventListener.disable();
+        }
+        catch (Exception e ){
+            Log.i("Horizontal Destroy", "Tilt Listener not initialized");
         }
         super.onDestroy();
     }
@@ -83,7 +97,7 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
         }catch (Exception e){
 
         }
-    }
+    }*/
 
     protected void onResume() {
         super.onResume();
@@ -94,12 +108,12 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
                 startDragActivity();
             }
         }
-        try {
+        /*try {
             mSensorManager.registerListener(myTiltEventListener, mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_NORMAL);
         }catch (Exception e){
 
-        }
-    }*/
+        }*/
+    }
 
     @Override
     public void onClick(View v) {
@@ -150,6 +164,7 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
         setDragTip(drag_answer);
         View answers = findViewById(R.id.horizontal_answers);
         answers.setVisibility(View.GONE);
+        findViewById(R.id.answer_layout).setVisibility(View.VISIBLE);
         leo = (ImageView) findViewById(R.id.draggable_leo);
 
         leo.setTag(IMAGE_TAG);
@@ -164,7 +179,8 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
                 String[] mimeTypes = {ClipDescription.MIMETYPE_TEXT_PLAIN};
                 ClipData dragData = new ClipData(v.getTag().toString(), mimeTypes, item);
                 View.DragShadowBuilder myShadow = new MyDragShadowBuilder(leo, BitmapFactory.decodeResource(getResources(), R.drawable.adventurer));
-                v.startDrag(dragData, myShadow, leo, 0);
+                v.startDrag(dragData, myShadow, null, 0);
+                v.setVisibility(View.INVISIBLE);
                 return true;
             }
         });
@@ -183,13 +199,8 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
         }
     }
 
-    private void changeDragAnswer(FrameLayout container, View view) {
-        container.removeView(view);
-        LinearLayout answer_layout = (LinearLayout) findViewById(R.id.answer_layout);
-        answer_layout.addView(view);
-        int width = answer_layout.getWidth();
-        view.setY(10);
-        view.setX(width/2-64);
+    private void changeDragAnswer(View view) {
+        view.setVisibility(View.INVISIBLE);
         correctAnswers++;
         if (Math.random()>0.5) {
             drag_answer = R.id.left_surface;
@@ -198,7 +209,7 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
             drag_answer= R.id.right_surface;
         }
         setDragTip(drag_answer);
-        view.setVisibility(View.VISIBLE);
+        findViewById(R.id.draggable_leo).setVisibility(View.VISIBLE);
 
     }
 
@@ -207,18 +218,13 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
         findViewById(R.id.right_surface).setOnDragListener(null);
         findViewById(R.id.draggable_leo).setOnLongClickListener(null);
 
-        changeTiltAnswer(container,view);
+        changeTiltAnswer(view);
         myTiltEventListener = new MyTiltEventListener(this);
         myTiltEventListener.enable();
     }
 
-    private void changeTiltAnswer(FrameLayout container, View view){
-        container.removeView(view);
-        LinearLayout answer_layout = (LinearLayout) findViewById(R.id.answer_layout);
-        answer_layout.addView(view);
-        int width = answer_layout.getWidth();
-        view.setY(10);
-        view.setX(width/2-64);
+    private void changeTiltAnswer( View view){
+        view.setVisibility(View.INVISIBLE);
         correctAnswers++;
         if (Math.random()>0.5) {
             drag_answer = R.id.left_surface;
@@ -227,53 +233,45 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
             drag_answer= R.id.right_surface;
         }
         setDragTip(drag_answer);
-        view.setVisibility(View.VISIBLE);
+        findViewById(R.id.draggable_leo).setVisibility(View.VISIBLE);
     }
 
     private void checkTiltAnswer(int orientation) {
-        Runnable r3 = new Runnable() {
+        r3 = new Runnable() {
 
             @Override
             public void run() {
                 if (pd.isShowing()) {
                     pd.dismiss();
-                    changeTiltAnswer(container, view);
+                    changeTiltAnswer(view);
                     myTiltEventListener.enable();
                 }
             }
         };
-        ViewGroup owner = (ViewGroup) view.getParent();
-        owner.removeView(view);
+        findViewById(R.id.draggable_leo).setVisibility(View.INVISIBLE);
         if(orientation<-1*tiltThreshold && drag_answer==R.id.left_surface){
-            container = (FrameLayout) findViewById(R.id.left_surface);
-            container.addView(view);
-            view.setX(container.getWidth()/2-64);
-            view.setY(container.getHeight()/2-126);
+            view = findViewById(R.id.left_answer);
+
             pd.setGoodFeedback();
             correctAnswers++;
         }
         else if(orientation>tiltThreshold && drag_answer==R.id.right_surface){
-            container = (FrameLayout) findViewById(R.id.right_surface);
-            container.addView(view);
-            view.setX(container.getWidth()/2-64);
-            view.setY(container.getHeight()/2-126);
+            view = findViewById(R.id.right_answer);
             pd.setGoodFeedback();
             correctAnswers++;
         }
         else{
             switch (drag_answer){
                 case R.id.left_surface:
-                    container = (FrameLayout) findViewById(R.id.right_surface);
+                    view = findViewById(R.id.right_answer);
                     break;
                 case R.id.right_surface:
-                    container = (FrameLayout) findViewById(R.id.left_surface);
+                    view = findViewById(R.id.left_answer);
                     break;
             }
-            container.addView(view);
-            view.setX(container.getWidth()/2-64);
-            view.setY(container.getHeight()/2-126);
             pd.setBadFeedback();
         }
+        view.setVisibility(View.VISIBLE);
         pd.show();
         h.postDelayed(r3, 2000);
     }
@@ -295,17 +293,13 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
                     break;
 
                 case DragEvent.ACTION_DROP:
-                    Runnable r2;
                     if(v == findViewById(drag_answer)) {
-                        view = (View) event.getLocalState();
-
-                        ViewGroup owner = (ViewGroup) view.getParent();
-                        owner.removeView(view);
-
-                        container = (FrameLayout) v;
-                        container.addView(view);
-                        view.setX(container.getWidth()/2-64);
-                        view.setY(container.getHeight()/2-126);
+                        if(drag_answer == R.id.left_surface){
+                            view = findViewById(R.id.left_answer);
+                        }
+                        else{
+                            view = findViewById(R.id.right_answer);
+                        }
 
                         r2 =new Runnable(){
 
@@ -316,7 +310,7 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
                                     if (correctAnswers > 2*totalCorrectAnswers) {
                                         startTiltActivity();
                                     } else {
-                                        changeDragAnswer(container, view);
+                                        changeDragAnswer(view);
                                     }
                                 }
                             }
@@ -365,7 +359,7 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
             orientation = adjustDegree(orientation);
             LinearLayout answer_layout = (LinearLayout) findViewById(R.id.answer_layout);
             int width = answer_layout.getWidth();
-            view.setX(width/2-64+3*orientation);
+            findViewById(R.id.draggable_leo).setX(width/2-64+3*orientation);
             if(orientation>tiltThreshold || orientation<-1*tiltThreshold){
                 checkTiltAnswer(orientation);
                 disable();

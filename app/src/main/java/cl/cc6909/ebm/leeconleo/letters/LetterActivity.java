@@ -26,5 +26,10 @@ public class LetterActivity extends Activity {
         intent.putExtra("letter",letter);
         startActivity(intent);
     }
+    public void startPaintingActivity(View view){
+        Intent intent = new Intent(this, PaintActivity.class);
+        intent.putExtra("letter",letter);
+        startActivity(intent);
+    }
 
 }

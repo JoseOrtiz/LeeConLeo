@@ -106,6 +106,12 @@ public class Sprite{
         };
     }
 
+    public void restartCubeTextureCoords(){
+        currentHFrame = 0f;
+        currentVFrame = 0f;
+        updateCubeTextureCoords();
+    }
+
     public void updateCubeTextureCoords(){
         float hDivision = 1.0f/hFrames;
         float vDivision = 1.0f/vFrames;

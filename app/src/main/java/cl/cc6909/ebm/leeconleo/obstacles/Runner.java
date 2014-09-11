@@ -11,7 +11,7 @@ public class Runner {
     private boolean jumping, crouching;
     private long startCrouch;
     private final long crouchingTime = 1;
-    private final Vector2D gravity = new Vector2D(0f,-0.8f);
+    private final Vector2D gravity = new Vector2D(0f,-1f);
     private Sprite runner, jumper;
     private long time;
 
@@ -37,6 +37,7 @@ public class Runner {
             position = new Vector2D(-0.72f, -0.72f);
             velocity = new Vector2D(0f,0f);
             jumping = false;
+            jumper.restartCubeTextureCoords();
         }
         if(jumping){
             jumper.setLeftDown(position);
@@ -47,7 +48,8 @@ public class Runner {
     public void jump(){
         if(!jumping && !crouching) {
             jumping = true;
-            velocity = Vector2D.add(velocity, new Vector2D(0, 1f));
+            velocity = Vector2D.add(velocity, new Vector2D(0, 1.1f));
+            runner.restartCubeTextureCoords();
         }
     }
 

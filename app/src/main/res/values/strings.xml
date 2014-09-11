@@ -25,5 +25,8 @@
     <string name="title_activity_letter">LetterActivity</string>
     <string name="introduction">introducción</string>
     <string name="title_activity_introduction">IntroductionActivity</string>
+    <string name="title_activity_paint">PaintActivity</string>
+    <string name="paint">Pintar</string>
+    <string name="back">Atrás</string>
 
 </resources>
