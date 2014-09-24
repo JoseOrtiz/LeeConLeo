@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.SystemClock;
 
 import cl.cc6909.ebm.leeconleo.R;
+import cl.cc6909.ebm.leeconleo.Vector2D;
 
 public class Runner {
     private Vector2D position;

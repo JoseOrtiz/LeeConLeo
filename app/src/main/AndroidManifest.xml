@@ -105,7 +105,8 @@
         <activity
             android:name=".letters.IntroductionActivity"
             android:label="@string/title_activity_introduction"
-            android:parentActivityName=".letters.LetterActivity" >
+            android:parentActivityName=".letters.LetterActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cl.cc6909.ebm.leeconleo.letters.LetterActivity" />
@@ -113,7 +114,26 @@
         <activity
             android:name=".letters.PaintActivity"
             android:label="@string/title_activity_paint"
-            android:parentActivityName=".letters.LetterActivity" >
+            android:parentActivityName=".letters.LetterActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cl.cc6909.ebm.leeconleo.letters.LetterActivity" />
+        </activity>
+        <activity
+            android:name=".letters.StitchActivity"
+            android:label="@string/title_activity_stitch"
+            android:parentActivityName=".letters.LetterActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cl.cc6909.ebm.leeconleo.letters.LetterActivity" />
+        </activity>
+        <activity
+            android:name=".letters.TapActivity"
+            android:label="@string/title_activity_tap"
+            android:parentActivityName=".letters.LetterActivity"
+            android:screenOrientation="portrait"  >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cl.cc6909.ebm.leeconleo.letters.LetterActivity" />

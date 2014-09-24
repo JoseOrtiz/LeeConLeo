@@ -24,14 +24,14 @@
                 android:background="@android:color/transparent"
                 android:src="@drawable/level"
                 android:scaleType="fitCenter"
-                android:onClick="startIntroduction"/>
+                android:onClick="startIntroductionActivity"/>
             <TextView
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:text="@string/introduction"
                 android:textSize="50sp"
                 android:gravity="center"
-                android:onClick="startIntroduction"/>
+                android:onClick="startIntroductionActivity"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
@@ -54,10 +54,31 @@
                 android:gravity="center"
                 android:onClick="startPaintingActivity"/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="0dp"
-            android:layout_weight="3">
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:contentDescription="@string/paint"
+                android:background="@android:color/transparent"
+                android:src="@drawable/level"
+                android:scaleType="fitCenter"
+                android:onClick="startStitchActivity"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/stitch"
+                android:textSize="50sp"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
             </LinearLayout>
 
     </LinearLayout>

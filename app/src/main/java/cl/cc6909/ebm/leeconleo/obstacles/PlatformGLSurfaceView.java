@@ -1,11 +1,8 @@
 package cl.cc6909.ebm.leeconleo.obstacles;
 
-import android.app.Activity;
 import android.content.Context;
 import android.opengl.GLSurfaceView;
 import android.util.AttributeSet;
-import android.view.MotionEvent;
-import android.view.View;
 
 import cl.cc6909.ebm.leeconleo.SwipeInterface;
 
@@ -43,12 +40,12 @@ public class PlatformGLSurfaceView extends GLSurfaceView implements SwipeInterfa
 
     @Override
     public void onSwipeLeft() {
-        return;
+
     }
 
     @Override
     public void onSwipeRight() {
-        return;
+
     }
 
     public void onSwipeUp() {

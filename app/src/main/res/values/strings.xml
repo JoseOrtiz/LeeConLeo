@@ -28,5 +28,8 @@
     <string name="title_activity_paint">PaintActivity</string>
     <string name="paint">Pintar</string>
     <string name="back">Atrás</string>
+    <string name="title_activity_stitch">StitchActivity</string>
+    <string name="stitch">Coser</string>
+    <string name="title_activity_tap">TapActivity</string>
 
 </resources>

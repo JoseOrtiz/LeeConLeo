@@ -6,6 +6,8 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 
+import cl.cc6909.ebm.leeconleo.Vector2D;
+
 public class Circle {
 
     private float radius;

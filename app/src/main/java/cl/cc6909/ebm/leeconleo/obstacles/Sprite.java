@@ -5,14 +5,13 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.opengl.GLES20;
 import android.opengl.GLUtils;
-import android.util.Log;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 import java.nio.ShortBuffer;
 
-import cl.cc6909.ebm.leeconleo.R;
+import cl.cc6909.ebm.leeconleo.Vector2D;
 
 public class Sprite{
     //Reference to Activity Context

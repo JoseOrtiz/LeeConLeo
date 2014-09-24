@@ -12,7 +12,7 @@ import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
 import cl.cc6909.ebm.leeconleo.FeedbackDialog;
-import cl.cc6909.ebm.leeconleo.PlatformActivity;
+import cl.cc6909.ebm.leeconleo.Vector2D;
 
 public class PlatformRenderer implements GLSurfaceView.Renderer{
     private static final String TAG = "PlatformRenderer";

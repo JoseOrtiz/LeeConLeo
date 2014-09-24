@@ -21,13 +21,19 @@ public class LetterActivity extends Activity {
         letter = intent.getStringExtra("letter");
     }
 
-    public void startIntroduction(View view){
+    public void startIntroductionActivity(View view){
         Intent intent = new Intent(this, IntroductionActivity.class);
         intent.putExtra("letter",letter);
         startActivity(intent);
     }
     public void startPaintingActivity(View view){
         Intent intent = new Intent(this, PaintActivity.class);
+        intent.putExtra("letter",letter);
+        startActivity(intent);
+    }
+
+    public void startStitchActivity(View view){
+        Intent intent = new Intent(this, StitchActivity.class);
         intent.putExtra("letter",letter);
         startActivity(intent);
     }

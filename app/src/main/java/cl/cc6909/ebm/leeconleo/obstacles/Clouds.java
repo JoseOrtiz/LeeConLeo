@@ -1,7 +1,8 @@
 package cl.cc6909.ebm.leeconleo.obstacles;
 
 import java.util.ArrayList;
-import java.util.Vector;
+
+import cl.cc6909.ebm.leeconleo.Vector2D;
 
 public class Clouds {
     private Vector2D speed;

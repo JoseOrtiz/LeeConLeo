@@ -7,6 +7,8 @@ import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 import java.nio.ShortBuffer;
 
+import cl.cc6909.ebm.leeconleo.Vector2D;
+
 public class Square {
     private final String vertexShaderCode =
             "attribute vec4 aPosition;              \n"

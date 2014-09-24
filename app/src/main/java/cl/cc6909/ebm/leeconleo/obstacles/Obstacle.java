@@ -2,6 +2,8 @@ package cl.cc6909.ebm.leeconleo.obstacles;
 
 import android.content.Context;
 
+import cl.cc6909.ebm.leeconleo.Vector2D;
+
 public class Obstacle {
     private Vector2D position;
     private Vector2D velocity;

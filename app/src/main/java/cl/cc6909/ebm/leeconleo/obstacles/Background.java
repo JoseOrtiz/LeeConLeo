@@ -2,6 +2,8 @@ package cl.cc6909.ebm.leeconleo.obstacles;
 
 import java.util.Vector;
 
+import cl.cc6909.ebm.leeconleo.Vector2D;
+
 public class Background {
     private long time;
     private Square[] floor;
