@@ -113,10 +113,10 @@ public class StitchRenderer implements GLSurfaceView.Renderer {
 
     public int getStitchNumber(Vector2D position){
         Stitch activeStitch = getActiveStitch();
-        if(Vector2D.distance(activeStitch.getStitch(0),position)<0.1f){
+        if(Vector2D.distance(activeStitch.getStitch(0),position)<0.11f){
             return 0;
         }
-        if(Vector2D.distance(activeStitch.getStitch(1),position)<0.1f){
+        if(Vector2D.distance(activeStitch.getStitch(1),position)<0.11f){
             return 1;
         }
         return -1;

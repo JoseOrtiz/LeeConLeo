@@ -31,5 +31,6 @@
     <string name="title_activity_stitch">StitchActivity</string>
     <string name="stitch">Coser</string>
     <string name="title_activity_tap">TapActivity</string>
+    <string name="tap">Golpear</string>
 
 </resources>

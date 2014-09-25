@@ -15,9 +15,9 @@
 
     <Button
         android:id="@+id/play_button"
-        android:layout_width="@dimen/abc_action_bar_stacked_tab_max_width"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="32dp"
+        android:textSize="100sp"
         android:layout_gravity="center"
         android:text="@string/play"
         android:onClick="startGame"/>

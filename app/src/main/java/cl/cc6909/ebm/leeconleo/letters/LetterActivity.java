@@ -38,4 +38,10 @@ public class LetterActivity extends Activity {
         startActivity(intent);
     }
 
+    public void startTapActivity(View view){
+        Intent intent = new Intent(this, TapActivity.class);
+        intent.putExtra("letter",letter);
+        startActivity(intent);
+    }
+
 }

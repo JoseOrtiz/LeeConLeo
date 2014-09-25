@@ -31,7 +31,8 @@
                 android:text="@string/introduction"
                 android:textSize="50sp"
                 android:gravity="center"
-                android:onClick="startIntroductionActivity"/>
+                android:onClick="startIntroductionActivity"
+                android:clickable="true"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
@@ -52,7 +53,8 @@
                 android:text="@string/paint"
                 android:textSize="50sp"
                 android:gravity="center"
-                android:onClick="startPaintingActivity"/>
+                android:onClick="startPaintingActivity"
+                android:clickable="true"/>
         </LinearLayout>
 
         <LinearLayout
@@ -73,12 +75,37 @@
                 android:layout_height="fill_parent"
                 android:text="@string/stitch"
                 android:textSize="50sp"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:onClick="startStitchActivity"
+                android:clickable="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:contentDescription="@string/paint"
+                android:background="@android:color/transparent"
+                android:src="@drawable/level"
+                android:scaleType="fitCenter"
+                android:onClick="startTapActivity"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/tap"
+                android:textSize="50sp"
+                android:gravity="center"
+                android:onClick="startTapActivity"
+                android:clickable="true"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="0dp"
-            android:layout_weight="2">
+            android:layout_weight="1">
             </LinearLayout>
 
     </LinearLayout>
