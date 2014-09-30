@@ -9,13 +9,12 @@ import android.view.ViewTreeObserver;
 
 import cl.cc6909.ebm.leeconleo.R;
 
-public class StitchActivity extends Activity implements View.OnClickListener{
+public class StitchActivity extends Activity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stitch);
-        findViewById(R.id.back_button).setOnClickListener(this);
 
         final StitchGLSurfaceView stitch = (StitchGLSurfaceView) findViewById(R.id.stitch_surface);
 
@@ -37,16 +36,10 @@ public class StitchActivity extends Activity implements View.OnClickListener{
             }
 
         });
-        findViewById(R.id.stitch_surface).setOnClickListener(this);
     }
 
-    @Override
-    public void onClick(View v) {
-        int click = v.getId();
-        switch (click) {
-            case R.id.back_button:
-                finish();
-                break;
-        }
+
+    public void onBackButtonClicked(View view){
+        finish();
     }
 }

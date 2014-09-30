@@ -32,5 +32,12 @@
     <string name="stitch">Coser</string>
     <string name="title_activity_tap">TapActivity</string>
     <string name="tap">Golpear</string>
+    <string name="title_activity_recognition">RecognitionActivity</string>
+    <string name="recognition">Reconocimiento</string>
+    <string name="title_activity_starts_with">StartsWithActivity</string>
+    <string name="title_activity_ends_with">EndsWithActivity</string>
+    <string name="starts_with">Comienza con</string>
+    <string name="ends_with">Termina con</string>
+    <string name="title_activity_join">JoinActivity</string>
 
 </resources>

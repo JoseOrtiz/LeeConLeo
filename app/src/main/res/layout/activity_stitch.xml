@@ -10,7 +10,9 @@
         android:layout_height="wrap_content"
         android:src="@drawable/back"
         android:scaleType="centerInside"
-        android:layout_gravity="start" />
+        android:layout_gravity="start"
+        android:onClick="onBackButtonClicked"
+        android:clickable="true"/>
 
     <cl.cc6909.ebm.leeconleo.letters.StitchGLSurfaceView
         android:id="@+id/stitch_surface"

@@ -30,6 +30,8 @@ public class TapActivity extends Activity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_tap);
 
         tap = new Vector<String>();
         h = new Handler();
@@ -42,8 +44,6 @@ public class TapActivity extends Activity{
                 }
             }
         };
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tap);
         letter = getIntent().getStringExtra("letter");
         final AutoResizeTextView tapText = (AutoResizeTextView) findViewById(R.id.tap_text);
 

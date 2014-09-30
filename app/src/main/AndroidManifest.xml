@@ -133,7 +133,34 @@
             android:name=".letters.TapActivity"
             android:label="@string/title_activity_tap"
             android:parentActivityName=".letters.LetterActivity"
-            android:screenOrientation="portrait"  >
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cl.cc6909.ebm.leeconleo.letters.LetterActivity" />
+        </activity>
+        <activity
+            android:name=".letters.StartsWithActivity"
+            android:label="@string/title_activity_starts_with"
+            android:parentActivityName=".letters.LetterActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cl.cc6909.ebm.leeconleo.letters.LetterActivity" />
+        </activity>
+        <activity
+            android:name=".letters.EndsWithActivity"
+            android:label="@string/title_activity_ends_with"
+            android:parentActivityName=".letters.LetterActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cl.cc6909.ebm.leeconleo.letters.LetterActivity" />
+        </activity>
+        <activity
+            android:name=".letters.JoinActivity"
+            android:label="@string/title_activity_join"
+            android:parentActivityName=".letters.LetterActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cl.cc6909.ebm.leeconleo.letters.LetterActivity" />

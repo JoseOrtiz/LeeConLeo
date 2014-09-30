@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,108 +6,143 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="cl.cc6909.ebm.leeconleo.letters.LetterActivity">
 
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical">
-        <LinearLayout
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/introduction"
+            android:background="@android:color/transparent"
+            android:src="@drawable/level"
+            android:scaleType="fitCenter"
+            android:onClick="startIntroductionActivity"/>
+        <TextView
             android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:contentDescription="@string/introduction"
-                android:background="@android:color/transparent"
-                android:src="@drawable/level"
-                android:scaleType="fitCenter"
-                android:onClick="startIntroductionActivity"/>
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:text="@string/introduction"
-                android:textSize="50sp"
-                android:gravity="center"
-                android:onClick="startIntroductionActivity"
-                android:clickable="true"/>
-        </LinearLayout>
-        <LinearLayout
+            android:layout_height="fill_parent"
+            android:text="@string/introduction"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:onClick="startIntroductionActivity"
+            android:clickable="true"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/paint"
+            android:background="@android:color/transparent"
+            android:src="@drawable/level"
+            android:scaleType="fitCenter"
+            android:onClick="startPaintingActivity"/>
+        <TextView
             android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:contentDescription="@string/paint"
-                android:background="@android:color/transparent"
-                android:src="@drawable/level"
-                android:scaleType="fitCenter"
-                android:onClick="startPaintingActivity"/>
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:text="@string/paint"
-                android:textSize="50sp"
-                android:gravity="center"
-                android:onClick="startPaintingActivity"
-                android:clickable="true"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:contentDescription="@string/paint"
-                android:background="@android:color/transparent"
-                android:src="@drawable/level"
-                android:scaleType="fitCenter"
-                android:onClick="startStitchActivity"/>
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:text="@string/stitch"
-                android:textSize="50sp"
-                android:gravity="center"
-                android:onClick="startStitchActivity"
-                android:clickable="true"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:contentDescription="@string/paint"
-                android:background="@android:color/transparent"
-                android:src="@drawable/level"
-                android:scaleType="fitCenter"
-                android:onClick="startTapActivity"/>
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:text="@string/tap"
-                android:textSize="50sp"
-                android:gravity="center"
-                android:onClick="startTapActivity"
-                android:clickable="true"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
-            </LinearLayout>
-
+            android:layout_height="fill_parent"
+            android:text="@string/paint"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:onClick="startPaintingActivity"
+            android:clickable="true"/>
     </LinearLayout>
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/paint"
+            android:background="@android:color/transparent"
+            android:src="@drawable/level"
+            android:scaleType="fitCenter"
+            android:onClick="startStitchActivity"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/stitch"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:onClick="startStitchActivity"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/tap"
+            android:background="@android:color/transparent"
+            android:src="@drawable/level"
+            android:scaleType="fitCenter"
+            android:onClick="startTapActivity"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/tap"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:onClick="startTapActivity"
+            android:clickable="true"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/starts_with"
+            android:background="@android:color/transparent"
+            android:src="@drawable/level"
+            android:scaleType="fitCenter"
+            android:onClick="startStartsWithActivity"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/starts_with"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:onClick="startStartsWithActivity"
+            android:clickable="true"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/ends_with"
+            android:background="@android:color/transparent"
+            android:src="@drawable/level"
+            android:scaleType="fitCenter"
+            android:onClick="startEndsWithActivity"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/ends_with"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:onClick="startEndsWithActivity"
+            android:clickable="true"/>
+    </LinearLayout>
+
+</LinearLayout>
+

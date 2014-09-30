@@ -44,4 +44,16 @@ public class LetterActivity extends Activity {
         startActivity(intent);
     }
 
+    public void startStartsWithActivity(View view){
+        Intent intent = new Intent(this, StartsWithActivity.class);
+        intent.putExtra("letter",letter);
+        startActivity(intent);
+    }
+
+    public void startEndsWithActivity(View view){
+        Intent intent = new Intent(this, EndsWithActivity.class);
+        intent.putExtra("letter",letter);
+        startActivity(intent);
+    }
+
 }
