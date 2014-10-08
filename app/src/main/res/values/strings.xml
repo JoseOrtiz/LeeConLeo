@@ -39,5 +39,6 @@
     <string name="starts_with">Comienza con</string>
     <string name="ends_with">Termina con</string>
     <string name="title_activity_join">JoinActivity</string>
+    <string name="join">Unir</string>
 
 </resources>

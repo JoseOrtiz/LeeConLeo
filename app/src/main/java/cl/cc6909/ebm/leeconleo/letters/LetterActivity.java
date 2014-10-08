@@ -56,4 +56,10 @@ public class LetterActivity extends Activity {
         startActivity(intent);
     }
 
+    public void startJoinActivity(View view){
+        Intent intent = new Intent(this, JoinActivity.class);
+        intent.putExtra("letter",letter);
+        startActivity(intent);
+    }
+
 }
