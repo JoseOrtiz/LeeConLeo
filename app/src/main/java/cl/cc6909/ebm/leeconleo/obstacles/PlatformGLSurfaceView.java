@@ -9,7 +9,6 @@ import cl.cc6909.ebm.leeconleo.SwipeInterface;
 public class PlatformGLSurfaceView extends GLSurfaceView implements SwipeInterface{
     private PlatformRenderer mRenderer;
 
-
     public PlatformGLSurfaceView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context);
@@ -36,6 +35,10 @@ public class PlatformGLSurfaceView extends GLSurfaceView implements SwipeInterfa
     public void onResume() {
         super.onResume();
         mRenderer.onResume();
+    }
+
+    public void onDestroy() {
+        mRenderer.onDestroy();
     }
 
     @Override

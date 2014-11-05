@@ -63,8 +63,10 @@ public class StartsWithActivity extends RecognitionActivity {
             pd.setGoodFeedback();
             pd.show();
             h.postDelayed(r, 2000);
-            if(!pictures.empty())
+            if(!pictures.empty()) {
                 picture = pictures.pop();
+                resetImages();
+            }
         }
     }
 }

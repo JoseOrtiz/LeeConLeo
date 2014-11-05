@@ -40,5 +40,11 @@
     <string name="ends_with">Termina con</string>
     <string name="title_activity_join">JoinActivity</string>
     <string name="join">Unir</string>
+    <string name="activity_join_starts_with">JoinStartsWithActivity</string>
+    <string name="join_starting_with">Unir comenzando con</string>
+    <string name="activity_join_ends_with">JoinEndsWithActivity</string>
+    <string name="join_ends_with">Unir terminando con</string>
+    <string name="title_activity_wrap">WrapActivity</string>
+    <string name="wrap">Encerrar</string>
 
 </resources>

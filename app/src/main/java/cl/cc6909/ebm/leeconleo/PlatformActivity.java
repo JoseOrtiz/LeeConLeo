@@ -31,6 +31,12 @@ public class PlatformActivity extends Activity implements View.OnClickListener{
     }
 
     @Override
+    protected void onDestroy(){
+        super.onDestroy();
+        mGLSurfaceView.onDestroy();
+    }
+
+    @Override
     public void onClick(View v) {
         int click = v.getId();
         switch (click) {

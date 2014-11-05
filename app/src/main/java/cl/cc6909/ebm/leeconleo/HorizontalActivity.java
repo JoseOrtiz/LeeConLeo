@@ -320,6 +320,7 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
                         pd.show();
                         h.postDelayed(r2, 2000);
                         view.setVisibility(View.VISIBLE);
+                        return true;
                     } else {
                         View view = (View) event.getLocalState();
                         view.setVisibility(View.VISIBLE);
@@ -336,9 +337,13 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
                         };
                         h.postDelayed(r2, 2000);
                     }
-                    break;
+                    return false;
 
                 case DragEvent.ACTION_DRAG_ENDED:
+                    if(!event.getResult()){
+                        View view = (View) event.getLocalState();
+                        view.setVisibility(View.VISIBLE);
+                    }
                     v.setBackgroundColor(Color.TRANSPARENT);
 
                 default:

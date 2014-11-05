@@ -157,10 +157,27 @@
                 android:value="cl.cc6909.ebm.leeconleo.letters.LetterActivity" />
         </activity>
         <activity
-            android:name=".letters.JoinActivity"
-            android:label="@string/title_activity_join"
+            android:name=".letters.JoinStartsWithActivity"
+            android:label="@string/activity_join_starts_with"
             android:parentActivityName=".letters.LetterActivity"
             android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cl.cc6909.ebm.leeconleo.letters.LetterActivity" />
+        </activity>
+        <activity
+            android:name=".letters.JoinEndsWithActivity"
+            android:label="@string/activity_join_ends_with"
+            android:parentActivityName=".letters.LetterActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cl.cc6909.ebm.leeconleo.letters.LetterActivity" />
+        </activity>
+        <activity
+            android:name=".letters.WrapActivity"
+            android:label="@string/title_activity_wrap"
+            android:parentActivityName=".letters.LetterActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cl.cc6909.ebm.leeconleo.letters.LetterActivity" />

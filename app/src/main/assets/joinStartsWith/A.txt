@@ -1,0 +1,1 @@
+mono.png,perro.jpg,arbol.jpg,casa.jpg

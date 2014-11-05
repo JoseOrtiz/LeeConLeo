@@ -30,8 +30,9 @@ public class PlatformRenderer implements GLSurfaceView.Renderer{
 
     private FeedbackDialog pd;
     private Handler h1,h2;
-    private Runnable r1;
+    private Runnable r1,r2;
     private boolean checked;
+
 
     public PlatformRenderer(Context activity) {
         this.mActivityContext = activity;
@@ -113,7 +114,7 @@ public class PlatformRenderer implements GLSurfaceView.Renderer{
                 }
             }
             final boolean finalGood = good;
-            Runnable runnable = new Runnable() {
+            r2= new Runnable() {
                 @Override
                 public void run() {
                     h2.post(new Runnable() { // This thread runs in the UI
@@ -131,7 +132,7 @@ public class PlatformRenderer implements GLSurfaceView.Renderer{
                     });
                 }
             };
-            new Thread(runnable).start();
+            new Thread(r2).start();
         }
         else {
             checked = false;
@@ -202,5 +203,13 @@ public class PlatformRenderer implements GLSurfaceView.Renderer{
 
     public void onSwipeDown(){
         runner.crouch();
+    }
+
+    public void onDestroy(){
+        h1.removeCallbacks(r1);
+        h2.removeCallbacks(r2);
+        if (pd.isShowing() ) {
+            pd.dismiss();
+        }
     }
 }

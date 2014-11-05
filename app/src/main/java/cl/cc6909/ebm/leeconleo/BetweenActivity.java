@@ -8,7 +8,6 @@ import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.DragEvent;
 import android.view.View;
 import android.view.ViewTreeObserver;
@@ -36,7 +35,6 @@ public class BetweenActivity extends Activity implements View.OnClickListener {
             @Override
             public void onGlobalLayout() {
                 int height = findViewById(R.id.gameArea).getHeight()/2+10;
-                Log.i("create","height:"+height);
                 rightTable.getLayoutParams().height = height;
                 ViewTreeObserver obs = rightTable.getViewTreeObserver();
 
@@ -163,9 +161,8 @@ public class BetweenActivity extends Activity implements View.OnClickListener {
                         pd.show();
                         h.postDelayed(r, 2000);
                         view.setVisibility(View.VISIBLE);
+                        return true;
                     } else {
-                        View view = (View) event.getLocalState();
-                        view.setVisibility(View.VISIBLE);
                         pd.setBadFeedback();
                         pd.show();
                         r =new Runnable(){
@@ -179,9 +176,13 @@ public class BetweenActivity extends Activity implements View.OnClickListener {
                         };
                         h.postDelayed(r, 2000);
                     }
-                    break;
+                    return false;
 
                 case DragEvent.ACTION_DRAG_ENDED:
+                    if(!event.getResult()){
+                        View view = (View) event.getLocalState();
+                        view.setVisibility(View.VISIBLE);
+                    }
                     v.setBackgroundColor(Color.TRANSPARENT);
 
                 default:

@@ -1,12 +1,13 @@
 package cl.cc6909.ebm.leeconleo.letters;
 
+import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
+import android.support.annotation.NonNull;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
@@ -14,9 +15,13 @@ import cl.cc6909.ebm.leeconleo.R;
 import cl.cc6909.ebm.leeconleo.Vector2D;
 
 public class RopeView extends View{
-    private float xPos, yPos;
-    private Bitmap rope;
-    private int height;
+    private Vector2D position;
+    private Bitmap rope, harness;
+    private int height, hookWidth;
+    private boolean touching;
+    private Matrix matrix;
+    private Vector2D start;
+    private JoinActivity join;
 
     public RopeView(Context context) {
         super(context);
@@ -35,26 +40,36 @@ public class RopeView extends View{
 
     private void init(){
         rope = BitmapFactory.decodeResource(getResources(), R.drawable.rope);
+        harness = BitmapFactory.decodeResource(getResources(), R.drawable.harness);
+        hookWidth= BitmapFactory.decodeResource(getResources(), R.drawable.hook).getWidth();
+        touching = false;
+        matrix = new Matrix();
     }
 
     public void setData(int height){
         this.height = height;
-        xPos = rope.getWidth();
-        yPos = (height - rope.getHeight())/2;
+        position = new Vector2D(rope.getWidth(),(height - rope.getHeight())/2);
+        start = new Vector2D(0,(this.height - rope.getHeight())/2);
     }
+
+    public void reset(){
+        position = new Vector2D(rope.getWidth(),(height - rope.getHeight())/2);
+    }
+
+    public void setActivity(JoinActivity join){
+        this.join = join;
+    }
+
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        float canvasx = (float) canvas.getWidth();
-        float canvasy = (float) canvas.getHeight();
         float width = (float) rope.getWidth();
         float height = (float) rope.getHeight();
-        Vector2D start = new Vector2D(0,(this.height - height)/2);
-        Vector2D end = new Vector2D(xPos,yPos);
+        Vector2D end = position;
         double distance = Vector2D.distance(start, end);
         float scaleWidth = (float) (distance/width);
-        Matrix matrix = new Matrix();
+        matrix.reset();
         matrix.postScale(scaleWidth,1f);
         Vector2D aux = Vector2D.subtract(end, start);
         float angle = (float) (Math.atan2(aux.getY(), aux.getX()) * 180 / Math.PI);
@@ -71,13 +86,41 @@ public class RopeView extends View{
         matrix.reset();
         matrix.postTranslate(boardPosX, boardPosY);
         canvas.drawBitmap(bitmap, matrix, null);
+        canvas.drawBitmap(harness,end.getX()-1,end.getY()-1-harness.getHeight()/2,null);
     }
 
     @Override
-    public boolean onTouchEvent(MotionEvent event){
-        xPos = event.getX();
-        yPos = event.getY();
+    public boolean onTouchEvent(@NonNull MotionEvent event){
+        int action = event.getActionMasked();
+        switch (action) {
+            case MotionEvent.ACTION_DOWN: {
+                Vector2D touch = new Vector2D(event.getX(), event.getY());
+                if(Vector2D.distance(position,touch)<100){
+                    position = touch;
+                    touching=true;
+                }
+                break;
+            }
+            case MotionEvent.ACTION_MOVE: {
+                if(touching){
+                    position = new Vector2D(event.getX(), event.getY());
+                }
+                break;
+            }
+            case MotionEvent.ACTION_UP: {
+                touching = false;
+                int limit = getWidth() - hookWidth - harness.getWidth()/2;
+                if(position.getX()> limit){
+                    int answer = (int) (position.getY() * 4 / height);
+                    if(answer>3) answer=3;
+                    if(answer<0) answer=0;
+                    position = new Vector2D(limit,answer*height/4+height/8);
+                    join.checkAnswer(answer);
+                }
+                break;
+            }
+        }
         invalidate();
-        return super.onTouchEvent(event);
+        return true;
     }
 }

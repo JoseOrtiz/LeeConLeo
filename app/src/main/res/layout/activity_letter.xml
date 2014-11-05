@@ -151,18 +151,62 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
-            android:contentDescription="@string/join"
+            android:contentDescription="@string/join_starting_with"
             android:background="@android:color/transparent"
             android:src="@drawable/level"
             android:scaleType="fitCenter"
-            android:onClick="startJoinActivity"/>
+            android:onClick="startJoinStartsWithActivity"/>
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:text="@string/join"
+            android:text="@string/join_starting_with"
             android:textSize="50sp"
             android:gravity="center"
-            android:onClick="startJoinActivity"
+            android:onClick="startJoinStartsWithActivity"
+            android:clickable="true"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/join_ends_with"
+            android:background="@android:color/transparent"
+            android:src="@drawable/level"
+            android:scaleType="fitCenter"
+            android:onClick="startJoinEndsWithActivity"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/join_ends_with"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:onClick="startJoinEndsWithActivity"
+            android:clickable="true"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:contentDescription="@string/wrap"
+            android:background="@android:color/transparent"
+            android:src="@drawable/level"
+            android:scaleType="fitCenter"
+            android:onClick="startWrapActivity"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/wrap"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:onClick="startWrapActivity"
             android:clickable="true"/>
     </LinearLayout>
 

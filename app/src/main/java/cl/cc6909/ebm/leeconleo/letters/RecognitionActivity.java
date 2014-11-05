@@ -137,4 +137,19 @@ public class RecognitionActivity extends Activity {
     public void getVoiceTip(View view){
 
     }
+
+    protected void resetImages(){
+        TableLayout table = (TableLayout) findViewById(R.id.picture_gallery);
+        for (int i = 0; i < table.getChildCount(); ++i) {
+            TableRow tr = (TableRow) table.getChildAt(i);
+            for (int j = 0; j < tr.getChildCount(); ++j) {
+                if (tr.getChildAt(j) instanceof RelativeLayout) {
+                    RelativeLayout rl = (RelativeLayout) tr.getChildAt(j);
+                    ImageView iv = (ImageView) rl.getChildAt(0);
+                    iv.setImageDrawable(picture[i * 2 + j].getImage());
+                }
+            }
+        }
+
+    }
 }
