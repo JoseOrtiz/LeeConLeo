@@ -6,6 +6,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.PorterDuff;
 import android.support.annotation.NonNull;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -140,5 +141,13 @@ public class WrapView extends View {
                 break;
         }
         return true;
+    }
+
+    public void clearCanvas() {
+        paths.clear();
+        mPath.reset();
+        paths.add(mPath);
+        mCanvas.drawColor(Color.TRANSPARENT, PorterDuff.Mode.CLEAR);
+        invalidate();
     }
 }

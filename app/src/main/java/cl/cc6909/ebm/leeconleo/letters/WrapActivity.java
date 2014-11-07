@@ -9,7 +9,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
 import android.text.Layout;
-import android.util.Log;
+import android.util.SparseBooleanArray;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
@@ -37,6 +37,8 @@ public class WrapActivity extends ActionBarActivity {
     protected WrapView wrapView;
     private ArrayList<String> dictionary;
     private String answer1, answer2;
+    private SparseBooleanArray completed1, completed2;
+    private Iterator<String> iterator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +46,8 @@ public class WrapActivity extends ActionBarActivity {
         setContentView(R.layout.activity_wrap);
         loadDictionary();
         letter = getIntent().getStringExtra("letter");
+        completed1 = new SparseBooleanArray();
+        completed2 = new SparseBooleanArray();
         changeAnswers();
         h = new Handler();
         pd = new FeedbackDialog(this);
@@ -52,6 +56,11 @@ public class WrapActivity extends ActionBarActivity {
             public void run() {
                 if (pd.isShowing()) {
                     pd.dismiss();
+                    wrapView.clearCanvas();
+                    completed1.clear();
+                    completed2.clear();
+                    changeAnswers();
+                    setAnswers();
                 }
             }
         };
@@ -119,10 +128,16 @@ public class WrapActivity extends ActionBarActivity {
         TextView wrap1 = (TextView) findViewById(R.id.wrap_1);
         TextView wrap2 = (TextView) findViewById(R.id.wrap_2);
         Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/little_days.ttf");
-        wrap1.setText(answer1);
         wrap1.setTypeface(tf);
-        wrap2.setText(answer2);
         wrap2.setTypeface(tf);
+        setAnswers();
+    }
+
+    private void setAnswers() {
+        TextView wrap1 = (TextView) findViewById(R.id.wrap_1);
+        TextView wrap2 = (TextView) findViewById(R.id.wrap_2);
+        wrap1.setText(answer1);
+        wrap2.setText(answer2);
     }
 
     private void loadDictionary() {
@@ -157,14 +172,15 @@ public class WrapActivity extends ActionBarActivity {
             } catch (Exception e) {
             }
         }
+        iterator = dictionary.iterator();
     }
 
     public void changeAnswers(){
-        Iterator<String> iterator = dictionary.iterator();
         while(iterator.hasNext()){
             String next = iterator.next();
             if(next.indexOf(letter)>0){
                 answer1=next;
+                setAnswerToComplete(answer1,completed1);
                 break;
             }
         }
@@ -172,6 +188,21 @@ public class WrapActivity extends ActionBarActivity {
             String next = iterator.next();
             if(next.indexOf(letter)>0){
                 answer2=next;
+                setAnswerToComplete(answer2,completed2);
+                break;
+            }
+        }
+
+    }
+
+    private void setAnswerToComplete(String answer, SparseBooleanArray completed) {
+        int i=0;
+        while(i<answer.length()){
+            int index = answer.indexOf(letter, i);
+            if(index>i) {
+                completed.append(index, false);
+                i=index+1;
+            }else{
                 break;
             }
         }
@@ -206,27 +237,53 @@ public class WrapActivity extends ActionBarActivity {
                 int i = text.toString().indexOf(letter);
                 float[] widths = new float[letter.length()];
                 layout1.getPaint().getTextWidths(text, i, i + letter.length(), widths);
-                return checkPosition(wrap1, xMin-locations[0]-10, xMax-locations[0]-10, yMin, yMax, widths);
+                int position = checkPosition(wrap1, xMin - locations[0] - 10, xMax - locations[0] - 10, yMin, yMax, widths,completed1);
+                if(position>=0){
+                    completed1.put(position,true);
+                    checkCompleted();
+                    return true;
+                }
             } else if (intersect2) {
                 Layout layout2 = (wrap2).getLayout();
                 CharSequence text = Normalizer.normalize(answer2, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "");
                 int i = text.toString().indexOf(letter);
                 float[] widths = new float[letter.length()];
                 layout2.getPaint().getTextWidths(text, i, i + letter.length(), widths);
-                return checkPosition(wrap1, xMin-locations[0]-10, xMax-locations[0]-10, yMin, yMax, widths);
+                int position = checkPosition(wrap2, xMin - locations[0] - 10, xMax - locations[0] - 10, yMin, yMax, widths,completed2);
+                if(position>=0){
+                    completed2.put(position,true);
+                    checkCompleted();
+                    return true;
+                }
             }
         }
         return false;
     }
 
+    private void checkCompleted() {
+        for(int i=0;i<completed1.size();++i){
+            if(!completed1.valueAt(i))
+                return;
+        }
+        for(int i=0;i<completed2.size();++i){
+            if(!completed2.valueAt(i))
+                return;
+        }
+        pd.setGoodFeedback();
+        pd.show();
+        h.postDelayed(r, 2000);
+    }
+
     @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
-    private boolean checkPosition(TextView wrap, float xMin, float xMax, float yMin, float yMax, float[] measure) {
+    private int checkPosition(TextView wrap, float xMin, float xMax, float yMin, float yMax, float[] measure, SparseBooleanArray completed) {
+        if(yMax-yMin<measure[0]*2/3)
+            return -1;
         float center = yMin + yMax / 2;
         HashMap<Integer, Integer> count = new HashMap<Integer, Integer>();
         Layout layout = wrap.getLayout();
-        float total=0;
+        float totalMeasure=0;
         for(float f:measure){
-            total+=f;
+            totalMeasure+=f;
         }
         for (float x = xMin; x <= xMax; x += 1) {
             int value;
@@ -245,28 +302,36 @@ public class WrapActivity extends ActionBarActivity {
         if (count.size() >= letter.length() && count.size() <= letter.length() + 2) {
             Integer first= Collections.min(count.keySet());
             int i = wrap.getText().toString().indexOf(letter, first);
-            int sum= 0;
+            int sum = 0;
+            int wide = 0;
+            if(completed.get(i)){
+                return -1;
+            }
             for (int j = 0; j < letter.length(); j++) {
                 if (count.containsKey(j + i)) {
                     sum += count.get(j + i);
                 }
             }
+            wide=sum;
             if(count.containsKey(i-1)){
-                if(count.get(i-1)>total/2){
-                    return false;
+                wide+=count.get(i-1);
+                if(count.get(i-1)>totalMeasure/2){
+                    return -1;
                 }
             }
             if(count.containsKey(i+letter.length()+1)){
-                if(count.get(i+letter.length()+1)>total/2){
-                    return false;
+                wide+=count.get(i+letter.length()+1);
+                if(count.get(i+letter.length()+1)>totalMeasure/2){
+                    return -1;
                 }
             }
-            Log.i("total", total + "");
-            Log.i("suma", sum + "");
-            if (sum >= total*4/5) {
-                return true;
+            if (sum >= totalMeasure*6/10 && wide<totalMeasure*8/5) {
+                return i;
+            }
+            if(i==wrap.getText().length()-1 && sum>=totalMeasure*2/3){
+                return i;
             }
         }
-        return false;
+        return -1;
     }
 }
