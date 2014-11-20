@@ -1,0 +1,7 @@
+nariz.jpg,oido.png,pelo.jpg,boca.jpg
+perro.jpg,pie.jpg,televisor.jpg,ojo.jpg
+ala.png,avion.png,oro.jpg,casa.jpg
+oso.jpg,mariposa.jpg,pajaro.png,mono.jpg
+oveja.gif,perro.jpg,puerta.png,raton.png
+loro.jpg,orangutan.jpg,conejo.jpg,coco.jpg
+aro.jpg,ornitorrinco.jpg,abeja.jpeg,auto.png

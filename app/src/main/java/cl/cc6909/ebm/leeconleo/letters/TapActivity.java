@@ -118,6 +118,7 @@ public class TapActivity extends Activity{
 
     public void onRoundButtonClicked(View view){
         String number = (String) view.getTag();
+        Log.i("number",""+number);
         tap.remove(number);
         view.setVisibility(View.INVISIBLE);
         if(checkCompleted() && !completed){

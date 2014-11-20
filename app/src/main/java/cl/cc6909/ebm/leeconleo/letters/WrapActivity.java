@@ -178,7 +178,7 @@ public class WrapActivity extends ActionBarActivity {
     public void changeAnswers(){
         while(iterator.hasNext()){
             String next = iterator.next();
-            if(next.indexOf(letter)>0){
+            if(Normalizer.normalize(next.toLowerCase(), Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "").contains(letter)){
                 answer1=next;
                 setAnswerToComplete(answer1,completed1);
                 break;
@@ -186,7 +186,7 @@ public class WrapActivity extends ActionBarActivity {
         }
         while(iterator.hasNext()){
             String next = iterator.next();
-            if(next.indexOf(letter)>0){
+            if(Normalizer.normalize(next.toLowerCase(), Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "").contains(letter)){
                 answer2=next;
                 setAnswerToComplete(answer2,completed2);
                 break;
@@ -196,9 +196,10 @@ public class WrapActivity extends ActionBarActivity {
     }
 
     private void setAnswerToComplete(String answer, SparseBooleanArray completed) {
-        int i=0;
+        int i=-1;
         while(i<answer.length()){
-            int index = answer.indexOf(letter, i);
+            int index = Normalizer.normalize(answer.toLowerCase(), Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "").indexOf(letter,i);
+            //int index = answer.indexOf(letter, i);
             if(index>i) {
                 completed.append(index, false);
                 i=index+1;
@@ -233,7 +234,7 @@ public class WrapActivity extends ActionBarActivity {
         if (!(intersect1 && intersect2)) {
             if (intersect1) {
                 Layout layout1 = wrap1.getLayout();
-                CharSequence text = Normalizer.normalize(answer1, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "");
+                CharSequence text = Normalizer.normalize(answer1.toLowerCase(), Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "");
                 int i = text.toString().indexOf(letter);
                 float[] widths = new float[letter.length()];
                 layout1.getPaint().getTextWidths(text, i, i + letter.length(), widths);
@@ -245,7 +246,7 @@ public class WrapActivity extends ActionBarActivity {
                 }
             } else if (intersect2) {
                 Layout layout2 = (wrap2).getLayout();
-                CharSequence text = Normalizer.normalize(answer2, Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "");
+                CharSequence text = Normalizer.normalize(answer2.toLowerCase(), Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "");
                 int i = text.toString().indexOf(letter);
                 float[] widths = new float[letter.length()];
                 layout2.getPaint().getTextWidths(text, i, i + letter.length(), widths);
@@ -301,9 +302,9 @@ public class WrapActivity extends ActionBarActivity {
         }
         if (count.size() >= letter.length() && count.size() <= letter.length() + 2) {
             Integer first= Collections.min(count.keySet());
-            int i = wrap.getText().toString().indexOf(letter, first);
+            int i=Normalizer.normalize(wrap.getText().toString().toLowerCase(), Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "").indexOf(letter, first);
             int sum = 0;
-            int wide = 0;
+            int wide;
             if(completed.get(i)){
                 return -1;
             }

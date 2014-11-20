@@ -1,6 +1,7 @@
 package cl.cc6909.ebm.leeconleo.letters;
 
 import android.app.Activity;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import cl.cc6909.ebm.leeconleo.FeedbackDialog;
 import cl.cc6909.ebm.leeconleo.R;
@@ -28,6 +30,7 @@ public class JoinActivity extends Activity {
 
         final LinearLayout answers = (LinearLayout) findViewById(R.id.answer_layout);
         final RopeView rope = (RopeView) findViewById(R.id.rope_view);
+        ((TextView)findViewById(R.id.letter_text)).setText(letter);
         rope.setActivity(this);
 
         h = new Handler();
@@ -38,7 +41,8 @@ public class JoinActivity extends Activity {
                 if (pd.isShowing()) {
                     pd.dismiss();
                 }
-                rope.reset();
+                rope.restart();
+                resetImages();
             }
         };
 
@@ -47,7 +51,7 @@ public class JoinActivity extends Activity {
 
             @Override
             public void onGlobalLayout() {
-                int size = 200;
+                int size;
                 for (int i = 0; i < answers.getChildCount(); ++i) {
                     RelativeLayout rl = (RelativeLayout) answers.getChildAt(i);
                     size = rl.getHeight();
@@ -59,10 +63,23 @@ public class JoinActivity extends Activity {
                     iv.getLayoutParams().width = size;
                     iv.setTag(picture[i].getName());
                 }
+            }
+        });
+        vto = rope.getViewTreeObserver();
+        vto.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                int size = answers.getChildAt(0).getHeight();
                 int width = rope.getWidth();
                 rope.getLayoutParams().width = width - size;
                 rope.setData(rope.getHeight());
+                if (Build.VERSION.SDK_INT > Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1) {
+                    rope.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                } else {
+                    rope.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+                }
             }
+
         });
     }
 
@@ -71,6 +88,9 @@ public class JoinActivity extends Activity {
     }
 
     public void checkAnswer(int answer){
+    }
+    public void onImageClicked(View view){
+        String name = (String) view.getTag();
     }
 
     protected void resetImages(){

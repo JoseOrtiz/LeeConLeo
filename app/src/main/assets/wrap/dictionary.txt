@@ -5,8 +5,8 @@ Escalera
 Mueble
 Silla
 Mesa
-Árbol
 Televisor
+Árbol
 Computador
 Celular
 Enchufe

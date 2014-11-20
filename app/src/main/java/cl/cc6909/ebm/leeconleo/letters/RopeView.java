@@ -52,8 +52,9 @@ public class RopeView extends View{
         start = new Vector2D(0,(this.height - rope.getHeight())/2);
     }
 
-    public void reset(){
+    public void restart(){
         position = new Vector2D(rope.getWidth(),(height - rope.getHeight())/2);
+        invalidate();
     }
 
     public void setActivity(JoinActivity join){
@@ -63,7 +64,7 @@ public class RopeView extends View{
 
     @Override
     protected void onDraw(Canvas canvas) {
-        super.onDraw(canvas);
+        //super.onDraw(canvas);
         float width = (float) rope.getWidth();
         float height = (float) rope.getHeight();
         Vector2D end = position;

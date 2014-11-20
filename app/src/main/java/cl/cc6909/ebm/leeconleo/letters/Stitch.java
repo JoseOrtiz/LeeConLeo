@@ -47,7 +47,7 @@ public class Stitch {
         vertexCount2 = stitchCoords2.length / COORDS_PER_VERTEX;
         mProgram = GLES20.glCreateProgram();             // create empty OpenGL Program
 
-        color = new float[]{0.8f,0.8f,0.7f,1f};
+        color = new float[]{0.5f,0.5f,0.7f,1f};
         // prepare shaders and OpenGL program
         int vertexShader = StitchRenderer.loadShader(
                 GLES20.GL_VERTEX_SHADER, vertexShaderCode);
@@ -84,6 +84,11 @@ public class Stitch {
         draw2();
 
     }
+    public void drawActive(){
+        color = new float[]{0.5f,0.9f,0.5f,1f};
+        draw();
+        color = new float[]{0.3f,0.3f,0.3f,0.8f};
+    }
     public void draw1(){
 
         ByteBuffer bb = ByteBuffer.allocateDirect(
@@ -114,6 +119,19 @@ public class Stitch {
 
         // Draw the triangle
         GLES20.glDrawArrays(GLES20.GL_TRIANGLE_FAN, 0, vertexCount1);
+
+        // Disable vertex array
+        //GLES20.glDisableVertexAttribArray(mPositionHandle);
+
+        //border
+        // get handle to fragment shader's vColor member
+        mColorHandle = GLES20.glGetUniformLocation(mProgram, "vColor");
+
+        // Set color for drawing the triangle
+        GLES20.glUniform4fv(mColorHandle, 1, new float[]{0f,0f,0f,1f}, 0);
+
+        // Draw the triangle
+        GLES20.glDrawArrays(GLES20.GL_LINE_LOOP, 0, vertexCount1);
 
         // Disable vertex array
         GLES20.glDisableVertexAttribArray(mPositionHandle);
@@ -148,6 +166,19 @@ public class Stitch {
 
         // Draw the triangle
         GLES20.glDrawArrays(GLES20.GL_TRIANGLE_FAN, 0, vertexCount2);
+
+        // Disable vertex array
+        //GLES20.glDisableVertexAttribArray(mPositionHandle);
+
+        //border
+        // get handle to fragment shader's vColor member
+        mColorHandle = GLES20.glGetUniformLocation(mProgram, "vColor");
+
+        // Set color for drawing the triangle
+        GLES20.glUniform4fv(mColorHandle, 1, new float[]{0f,0f,0f,1f}, 0);
+
+        // Draw the triangle
+        GLES20.glDrawArrays(GLES20.GL_LINE_LOOP, 0, vertexCount1);
 
         // Disable vertex array
         GLES20.glDisableVertexAttribArray(mPositionHandle);

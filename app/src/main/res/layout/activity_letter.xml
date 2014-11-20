@@ -32,6 +32,7 @@
             android:clickable="true"/>
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/paint_layout"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -53,8 +54,8 @@
             android:onClick="startPaintingActivity"
             android:clickable="true"/>
     </LinearLayout>
-
     <LinearLayout
+        android:id="@+id/stitch_layout"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -76,8 +77,8 @@
             android:onClick="startStitchActivity"
             android:clickable="true"/>
     </LinearLayout>
-
     <LinearLayout
+        android:id="@+id/tap_layout"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -100,6 +101,7 @@
             android:clickable="true"/>
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/starts_with_layout"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -122,6 +124,7 @@
             android:clickable="true"/>
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/ends_with_layout"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -144,6 +147,7 @@
             android:clickable="true"/>
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/join_starts_with_layout"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -166,6 +170,7 @@
             android:clickable="true"/>
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/join_ends_with_layout"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -188,6 +193,7 @@
             android:clickable="true"/>
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/wrap_layout"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="1"

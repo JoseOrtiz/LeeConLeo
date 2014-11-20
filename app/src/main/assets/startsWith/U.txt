@@ -1,0 +1,6 @@
+oro.jpg,una.jpg,pajaro.png,pelo.jpg
+limon.jpeg,unicornio.jpg,luna.jpg,mani.png
+uniforme.jpg,iman.jpg,iglesia.gif,gato,jpg
+estrella.jpg,empanada.png,universo.jpg,escoba.jpg
+casa.jpg,avion.png,coco.jpg,uno.gif
+boca.png,arbol.jpg,uva.jpg,ala.png

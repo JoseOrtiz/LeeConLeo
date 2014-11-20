@@ -107,7 +107,7 @@ public class Contour {
         // Set color for drawing the triangle
         GLES20.glUniform4fv(mColorHandle, 1, color, 0);
 
-        // Draw the triangle
+        // Draw the line
         GLES20.glDrawArrays(GLES20.GL_LINE_STRIP, 0, vertexCount);
 
         // Disable vertex array

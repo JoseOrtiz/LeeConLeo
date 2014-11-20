@@ -101,8 +101,14 @@ public class StitchRenderer implements GLSurfaceView.Renderer {
 
     @Override
     public void onDrawFrame(GL10 gl) {
-        for(Stitch s:stitch) {
-            s.draw();
+        for(int i=stitch.size()-1;i>=0;i--){
+            if(i==current){
+                continue;
+            }
+            stitch.get(i).draw();
+        }
+        if(current<stitch.size()) {
+            stitch.get(current).drawActive();
         }
         contour.draw();
     }

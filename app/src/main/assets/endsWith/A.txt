@@ -1,1 +1,13 @@
 casa.jpg,mono.png,perro.jpg,arbol.jpg
+gato.jpg,pie.png,televisor.jpg,puerta.png
+oreja.jpg,ojo.jpg,pelo.jpg,mano.jpg
+raton.png,abeja.jpeg,pajaro.png,conejo.jpg
+agua.jpg,oso.jpg,nariz.jpg,pajaro.png
+arco.jpg,conejo.jpg,gato.jpg,boca.png
+aro.jpg,oido.png,ojo.jpg,momia.jpg
+asiento.jpg,puerta.png,pie.png,mano.jpg
+auto.png,oveja.gif,raton.png,limon.jpeg
+avion.png,televisor.jpg,iglu.jpg,isla.jpg
+azucar.jpg,oro.jpg,escoba.jpg,sal.gif
+azul.jpg,uva.jpg,sol.gif,loro.jpg
+anillo.jpg,lapiz.jpg,luna.jpg,coco.jpg

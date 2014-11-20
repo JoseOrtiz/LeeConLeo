@@ -1,0 +1,2 @@
+alan.png,casa.jpg,iglu.jpg,coc.jpg
+gato.jpg,bambu.jpg,colibri.jpg,elefante.jpg

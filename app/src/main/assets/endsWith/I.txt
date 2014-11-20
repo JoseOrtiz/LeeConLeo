@@ -1,0 +1,4 @@
+colibri.jpg,elefante.jpg,conejo.jpg,erizo.jpg
+limon.jpeg,uva.jpg,kiwi.jpg,coco.jpg
+azucar.jpg,empanada.png,mono.png,mani.png
+perro.jpg,pelo.jpg,sushi.jpg,puerta.png
