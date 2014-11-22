@@ -1,0 +1,12 @@
+unicornio.jpg,oido.png,mano.jpg,elefante.jpg
+lapiz.jpg,empanada.png,mani.png,pie.png
+enchufe.jpg,abeja.jpeg,uva.jpg,nariz.jpg
+agua.jpeg,sol.gif,olla.jpg,enfermera.jpg
+auto.png,pajaro.png,pelo.jpg,erizo.jpg
+mariposa.jpg,mapa.jpg,escoba.jpg,azul.jpg
+universo.jpg,escorpion.jpg,luna.jpg,una.jpg
+espantapajaros.jpg,puerta.png,ojo.jpg,oveja.gif
+uniforme.jpg,espejo.jpg,insectos.jpg,mono.png
+sal.jpg,esqueleto.jpg,ala.png,aro.jpg
+asiento.jpg,orangutan.jpg,pelota.jpg,estrella.jpg
+estrella_de_mar.png,ornitorrinco.jpg,iglesia.gif,kiwi.jpg

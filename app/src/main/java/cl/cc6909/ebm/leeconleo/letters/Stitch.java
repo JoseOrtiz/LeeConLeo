@@ -90,7 +90,6 @@ public class Stitch {
         color = new float[]{0.3f,0.3f,0.3f,0.8f};
     }
     public void draw1(){
-
         ByteBuffer bb = ByteBuffer.allocateDirect(
                 // (# of coordinate values * 4 bytes per float)
                 stitchCoords1.length * 4);
@@ -196,7 +195,7 @@ public class Stitch {
         if(norm.getX()*proj.getX()<0) proj.setX(0f);
         if(norm.getY()*proj.getY()<0) proj.setY(0f);
         vectors[index] = Vector2D.add(initial[index],proj);
-        if(Vector2D.distance(vectors[index],center)<0.1f){
+        if(Vector2D.distance(vectors[index],center)<0.11f){
             vectors[index]=center;
         }
         makeStitches();

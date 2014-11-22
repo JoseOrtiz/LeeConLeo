@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="true">
+    <item android:drawable="@drawable/horizontal_tap_1" android:duration="1000"/>
+    <item android:drawable="@drawable/horizontal_tap_2" android:duration="200"/>
+    <item android:drawable="@drawable/horizontal_tap_3" android:duration="100"/>
+    <item android:drawable="@drawable/horizontal_tap_4" android:duration="100"/>
+    <item android:drawable="@drawable/horizontal_tap_5" android:duration="100"/>
+    <item android:drawable="@drawable/horizontal_tap_6" android:duration="500"/>
+    <item android:drawable="@drawable/horizontal_tap_5" android:duration="200"/>
+    <item android:drawable="@drawable/horizontal_tap_12" android:duration="500"/>
+    <item android:drawable="@drawable/horizontal_tap_1" android:duration="500"/>
+    <item android:drawable="@drawable/horizontal_tap_7" android:duration="200"/>
+    <item android:drawable="@drawable/horizontal_tap_8" android:duration="100"/>
+    <item android:drawable="@drawable/horizontal_tap_9" android:duration="100"/>
+    <item android:drawable="@drawable/horizontal_tap_10" android:duration="100"/>
+    <item android:drawable="@drawable/horizontal_tap_11" android:duration="500"/>
+    <item android:drawable="@drawable/horizontal_tap_10" android:duration="200"/>
+    <item android:drawable="@drawable/horizontal_tap_12" android:duration="500"/>
+    <item android:drawable="@drawable/horizontal_tap_13" android:duration="100"/>
+    <item android:drawable="@drawable/horizontal_tap_14" android:duration="100"/>
+    <item android:drawable="@drawable/horizontal_tap_15" android:duration="100"/>
+    <item android:drawable="@drawable/horizontal_tap_16" android:duration="100"/>
+    <item android:drawable="@android:color/transparent" android:duration="100"/>
+
+</animation-list>

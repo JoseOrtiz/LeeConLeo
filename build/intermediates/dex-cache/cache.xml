@@ -25,5 +25,11 @@
         jumboMode="false"
         revision="20.0.0"
         sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef"/>
+    <item
+        dex="C:\Users\Jose\AndroidStudioProjects\LeeConLeo\app\build\intermediates\pre-dexed\debug\classes-9c88c5fd9f68c5b235d1d3271a919327bb4719bd.jar"
+        jar="C:\Users\Jose\AndroidStudioProjects\LeeConLeo\app\build\intermediates\exploded-aar\com.github.amlcurran.showcaseview\library\5.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8b3d9a7b348d8bcfb4d740dfaf70bc374cdae9d6"/>
 
 </pre-dex-items>

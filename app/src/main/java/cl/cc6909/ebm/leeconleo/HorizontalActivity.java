@@ -18,6 +18,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.github.amlcurran.showcaseview.OnShowcaseEventListener;
+import com.github.amlcurran.showcaseview.ShowcaseView;
+
 
 public class HorizontalActivity extends Activity implements View.OnClickListener {
     private static final String IMAGE_TAG = "Leo horizontal tag";
@@ -63,6 +66,7 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
         answer = R.id.left_answer;
 
         findViewById(answer).setVisibility(View.VISIBLE);
+        new ShowcaseManager(this).showcaseHorizontalTap();
     }
 
     @Override
@@ -187,6 +191,7 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
 
         findViewById(R.id.left_surface).setOnDragListener(new MyDragListener());
         findViewById(R.id.right_surface).setOnDragListener(new MyDragListener());
+        new ShowcaseManager(this).showcaseHorizontalDrag();
     }
 
     private void setDragTip(int dragAnswer) {
@@ -220,7 +225,9 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
 
         changeTiltAnswer(view);
         myTiltEventListener = new MyTiltEventListener(this);
-        myTiltEventListener.enable();
+        ShowcaseView horizontalTilt = new ShowcaseManager(this).showcaseHorizontalTilt();
+        horizontalTilt.setOnShowcaseEventListener(new HorizontalShowcaseListener());
+
     }
 
     private void changeTiltAnswer( View view){
@@ -389,6 +396,25 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
                 orientation -= 360;
             }
             return orientation;
+        }
+    }
+
+    private class HorizontalShowcaseListener implements OnShowcaseEventListener{
+
+        @Override
+        public void onShowcaseViewHide(ShowcaseView showcaseView) {
+
+        }
+
+        @Override
+        public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
+            myTiltEventListener.enable();
+
+        }
+
+        @Override
+        public void onShowcaseViewShow(ShowcaseView showcaseView) {
+
         }
     }
 

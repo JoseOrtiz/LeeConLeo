@@ -60,6 +60,8 @@ public class VerticalActivity extends Activity implements View.OnClickListener {
         answer = R.id.down_answer;
 
         findViewById(answer).setVisibility(View.VISIBLE);
+        //new ShowcaseManager(this).showcaseBackButton();
+        new ShowcaseManager(this).showcaseVerticalActivity();
     }
 
     @Override
@@ -146,6 +148,7 @@ public class VerticalActivity extends Activity implements View.OnClickListener {
 
         findViewById(R.id.down_surface).setOnDragListener(new MyDragListener());
         findViewById(R.id.up_surface).setOnDragListener(new MyDragListener());
+        new ShowcaseManager(this).showcaseVerticalDrag();
     }
 
     private void setDragTip(int dragAnswer) {

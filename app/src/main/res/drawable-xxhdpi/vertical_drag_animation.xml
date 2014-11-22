@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="true">
+    <item android:drawable="@drawable/vertical_drag_1" android:duration="100" />
+    <item android:drawable="@drawable/vertical_drag_2" android:duration="1000" />
+    <item android:drawable="@drawable/vertical_drag_3" android:duration="100" />
+    <item android:drawable="@drawable/vertical_drag_4" android:duration="100" />
+    <item android:drawable="@drawable/vertical_drag_5" android:duration="100" />
+    <item android:drawable="@drawable/vertical_drag_6" android:duration="100" />
+    <item android:drawable="@drawable/vertical_drag_7" android:duration="100" />
+    <item android:drawable="@drawable/vertical_drag_8" android:duration="100" />
+    <item android:drawable="@drawable/vertical_drag_9" android:duration="100" />
+    <item android:drawable="@drawable/vertical_drag_10" android:duration="1000" />
+    <item android:drawable="@drawable/vertical_drag_11" android:duration="100" />
+    <item android:drawable="@drawable/vertical_drag_12" android:duration="100" />
+    <item android:drawable="@drawable/vertical_drag_13" android:duration="1000" />
+    <item android:drawable="@android:color/transparent" android:duration="100"/>
+
+</animation-list>

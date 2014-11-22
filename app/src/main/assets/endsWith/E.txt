@@ -1,0 +1,4 @@
+mariposa.jpg,asiento.jpg,elefante.jpg,isla.jpg
+sushi.jpg,mani.png,enchufe.jpg,raton.png
+empanada.png,pelota.jpg,escoba.jpg,pie.png
+uniforme.jpg,loro.jpg,televisor.jpg,mano.jpg
