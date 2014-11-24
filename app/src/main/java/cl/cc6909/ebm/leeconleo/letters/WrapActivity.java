@@ -4,6 +4,7 @@ import android.annotation.TargetApi;
 import android.graphics.Color;
 import android.graphics.Rect;
 import android.graphics.Typeface;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -15,6 +16,9 @@ import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.github.amlcurran.showcaseview.OnShowcaseEventListener;
+import com.github.amlcurran.showcaseview.ShowcaseView;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -28,6 +32,7 @@ import java.util.Vector;
 
 import cl.cc6909.ebm.leeconleo.FeedbackDialog;
 import cl.cc6909.ebm.leeconleo.R;
+import cl.cc6909.ebm.leeconleo.ShowcaseManager;
 
 public class WrapActivity extends ActionBarActivity {
     protected String letter;
@@ -131,6 +136,9 @@ public class WrapActivity extends ActionBarActivity {
         wrap1.setTypeface(tf);
         wrap2.setTypeface(tf);
         setAnswers();
+
+        ShowcaseView showcaseView = new ShowcaseManager(this).showcaseWrap();
+        showcaseView.setOnShowcaseEventListener(new WrapShowcaseListener());
     }
 
     private void setAnswers() {
@@ -176,21 +184,25 @@ public class WrapActivity extends ActionBarActivity {
     }
 
     public void changeAnswers(){
-        while(iterator.hasNext()){
-            String next = iterator.next();
-            if(Normalizer.normalize(next.toLowerCase(), Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "").contains(letter)){
-                answer1=next;
-                setAnswerToComplete(answer1,completed1);
-                break;
+        if(iterator.hasNext()) {
+            while (iterator.hasNext()) {
+                String next = iterator.next();
+                if (Normalizer.normalize(next.toLowerCase(), Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "").contains(letter)) {
+                    answer1 = next;
+                    setAnswerToComplete(answer1, completed1);
+                    break;
+                }
             }
-        }
-        while(iterator.hasNext()){
-            String next = iterator.next();
-            if(Normalizer.normalize(next.toLowerCase(), Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "").contains(letter)){
-                answer2=next;
-                setAnswerToComplete(answer2,completed2);
-                break;
+            while (iterator.hasNext()) {
+                String next = iterator.next();
+                if (Normalizer.normalize(next.toLowerCase(), Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "").contains(letter)) {
+                    answer2 = next;
+                    setAnswerToComplete(answer2, completed2);
+                    break;
+                }
             }
+        }else{
+            finish();
         }
 
     }
@@ -334,5 +346,25 @@ public class WrapActivity extends ActionBarActivity {
             }
         }
         return -1;
+    }
+
+    private class WrapShowcaseListener implements OnShowcaseEventListener{
+
+        @Override
+        public void onShowcaseViewHide(ShowcaseView showcaseView) {
+            AnimationDrawable background = (AnimationDrawable) showcaseView.getBackground();
+            background.stop();
+
+        }
+
+        @Override
+        public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
+
+        }
+
+        @Override
+        public void onShowcaseViewShow(ShowcaseView showcaseView) {
+
+        }
     }
 }

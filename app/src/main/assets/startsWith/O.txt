@@ -1,7 +1,9 @@
-nariz.jpg,oido.png,pelo.jpg,boca.jpg
-perro.jpg,pie.jpg,televisor.jpg,ojo.jpg
-ala.png,avion.png,oro.jpg,casa.jpg
-oso.jpg,mariposa.jpg,pajaro.png,mono.jpg
-oveja.gif,perro.jpg,puerta.png,raton.png
-loro.jpg,orangutan.jpg,conejo.jpg,coco.jpg
-aro.jpg,ornitorrinco.jpg,abeja.jpeg,auto.png
+olla.jpg,iman.jpg,pato.jpg,kiwi.jpg
+iglu.jpg,azul.jpg,ocho.jpg,lechuga.jpg
+estrella.jpg,maiz.jpg,ojo.jpg,gato.jpg
+colibri.jpg,lana.jpg,bambu.jpg,ornitorrinco.jpg
+payaso.jpg,escoba.jpg,abeja.jpeg,oido.png
+oveja.gif,avion.png,sushi.jpg,pie.png
+oso.jpg,pirata.jpg,mago.png,peine.jpg
+piedra.jpg,piano.png,pino.jpg,orangutan.jpg
+oro.jpg,mapa.jpg,puma.jpg,raton.png

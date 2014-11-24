@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:drawable="@drawable/platform_swipe_1" android:duration="200"/>
+    <item android:drawable="@drawable/platform_swipe_2" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_3" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_4" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_5" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_6" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_7" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_8" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_9" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_10" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_11" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_12" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_13" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_14" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_15" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_16" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_17" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_18" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_19" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_20" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_21" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_22" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_23" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_24" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_25" android:duration="200"/>
+	<item android:drawable="@drawable/platform_swipe_26" android:duration="200"/>
+    <item android:drawable="@android:color/transparent" android:duration="200"/>
+
+</animation-list>

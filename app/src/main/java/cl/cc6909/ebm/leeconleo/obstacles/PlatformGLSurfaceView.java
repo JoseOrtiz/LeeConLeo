@@ -25,17 +25,17 @@ public class PlatformGLSurfaceView extends GLSurfaceView implements SwipeInterfa
         //setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
         requestFocus();
     }
-    @Override
-    public void onPause() {
+    public void pause() {
         super.onPause();
         mRenderer.onPause();
     }
 
-    @Override
-    public void onResume() {
+    public void resume(){
         super.onResume();
         mRenderer.onResume();
     }
+
+
 
     public void onDestroy() {
         mRenderer.onDestroy();

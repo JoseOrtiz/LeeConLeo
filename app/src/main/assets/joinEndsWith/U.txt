@@ -1,2 +1,2 @@
-alan.png,casa.jpg,iglu.jpg,coc.jpg
-gato.jpg,bambu.jpg,colibri.jpg,elefante.jpg
+iglu.jpg,pantalon.jpg,lana.jpg,pie.png
+enfermera.jpg,azucar.jpg,martillo.jpg,bambu.jpg

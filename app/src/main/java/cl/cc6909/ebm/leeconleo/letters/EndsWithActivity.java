@@ -64,7 +64,8 @@ public class EndsWithActivity extends RecognitionActivity {
             h.postDelayed(r, 2000);
             if(!pictures.empty()) {
                 picture = pictures.pop();
-                resetImages();
+            }else {
+                finished=true;
             }
         }
     }

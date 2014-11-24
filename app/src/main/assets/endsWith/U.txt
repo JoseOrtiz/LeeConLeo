@@ -1,2 +1,2 @@
-alan.png,casa.jpg,iglu.jpg,coc.jpg
-gato.jpg,bambu.jpg,colibri.jpg,enchufe.jpg
+oveja.gif,palmera.png,iman.jpg,bambu.jpg
+mochila.jpg,una.jpg,boca.png,iglu.jpg

@@ -1,4 +1,4 @@
-colibri.jpg,elefante.jpg,conejo.jpg,erizo.jpg
-limon.jpeg,uva.jpg,kiwi.jpg,coco.jpg
-azucar.jpg,empanada.png,mono.png,mani.png
-perro.jpg,pelo.jpg,sushi.jpg,puerta.png
+pera.jpg,estrella_de_mar.png,lupa.jpg,mani.png
+universo.jpg,panda.jpg,raton.png,colibri.jpg
+sushi.jpg,loro.jpg,una.jpg,arco.jpg
+papa.jpg,lobo.jpg,kiwi.jpg,pelo.jpg

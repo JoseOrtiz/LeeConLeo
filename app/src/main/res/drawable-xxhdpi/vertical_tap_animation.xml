@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="true">
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
     <item android:drawable="@drawable/vertical_tap_1" android:duration="1000" />
     <item android:drawable="@drawable/vertical_tap_2" android:duration="100" />
     <item android:drawable="@drawable/vertical_tap_3" android:duration="100" />
@@ -21,6 +21,6 @@
     <item android:drawable="@drawable/vertical_tap_16" android:duration="100" />
     <item android:drawable="@drawable/vertical_tap_17" android:duration="100" />
     <item android:drawable="@drawable/vertical_tap_18" android:duration="100" />
-    <item android:drawable="@android:color/transparent" android:duration="50" />
+    <item android:drawable="@android:color/transparent" android:duration="500" />
 
 </animation-list>

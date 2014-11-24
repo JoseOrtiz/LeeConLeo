@@ -5,6 +5,7 @@ import android.content.ClipData;
 import android.content.ClipDescription;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -13,6 +14,9 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.github.amlcurran.showcaseview.OnShowcaseEventListener;
+import com.github.amlcurran.showcaseview.ShowcaseView;
 
 public class BetweenActivity extends Activity implements View.OnClickListener {
     private static final String IMAGE_TAG = "Ball tag";
@@ -92,6 +96,8 @@ public class BetweenActivity extends Activity implements View.OnClickListener {
         findViewById(R.id.left_surface).setOnDragListener(new MyDragListener());
         findViewById(R.id.center_surface).setOnDragListener(new MyDragListener());
         findViewById(R.id.right_surface).setOnDragListener(new MyDragListener());
+        ShowcaseView showcaseView = new ShowcaseManager(this).showcaseBetween();
+        showcaseView.setOnShowcaseEventListener(new BetweenShowcaseListener());
     }
 
     private void setDragTip(int dragAnswer) {
@@ -206,5 +212,24 @@ public class BetweenActivity extends Activity implements View.OnClickListener {
         }
         findViewById(R.id.draggable_ball).setVisibility(View.VISIBLE);
         setDragTip(answer);
+    }
+
+    private class BetweenShowcaseListener implements OnShowcaseEventListener{
+
+        @Override
+        public void onShowcaseViewHide(ShowcaseView showcaseView) {
+            AnimationDrawable background = (AnimationDrawable) showcaseView.getBackground();
+            background.stop();
+        }
+
+        @Override
+        public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
+
+        }
+
+        @Override
+        public void onShowcaseViewShow(ShowcaseView showcaseView) {
+
+        }
     }
 }

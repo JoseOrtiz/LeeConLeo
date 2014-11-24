@@ -1,4 +1,9 @@
-mariposa.jpg,asiento.jpg,elefante.jpg,isla.jpg
-sushi.jpg,mani.png,enchufe.jpg,raton.png
-empanada.png,pelota.jpg,escoba.jpg,pie.png
-uniforme.jpg,loro.jpg,televisor.jpg,mano.jpg
+lente.png,palmera.png,escorpion.jpg,pez.jpg
+agua.jpeg,flauta.jpg,iglesia.gif,puente.jpg
+pluma.jpg,asiento.jpg,indio.png,peine.jpg
+enchufe.jpg,lapiz.jpg,coco.jpg,pirata.jpg
+avion.png,sushi.jpg,perfume.jpg,sal.jpg
+arbol.jpg,pie.png,pelota.jpg,platano.jpg
+mani.png,leche.jpg,palta.jpg,lana.jpg
+labios.jpg,locomotora.jpg,gato.jpg,elefante.jpg
+escoba.jpg,ocho.jpg,uniforme.jpg,raton.png

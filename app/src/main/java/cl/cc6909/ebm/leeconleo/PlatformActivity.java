@@ -1,11 +1,15 @@
 package cl.cc6909.ebm.leeconleo;
 
 import android.app.Activity;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
+
+import com.github.amlcurran.showcaseview.OnShowcaseEventListener;
+import com.github.amlcurran.showcaseview.ShowcaseView;
 
 import cl.cc6909.ebm.leeconleo.obstacles.PlatformGLSurfaceView;
 
@@ -38,7 +42,9 @@ public class PlatformActivity extends Activity implements View.OnClickListener{
             }
 
         });
-
+        ShowcaseView showcaseView = new ShowcaseManager(this).showcasePlatform();
+        showcaseView.setOnShowcaseEventListener(new PlatformShowcaseListener());
+        mGLSurfaceView.pause();
     }
     @Override
     protected void onResume(){
@@ -64,6 +70,27 @@ public class PlatformActivity extends Activity implements View.OnClickListener{
             case R.id.back_button:
                 finish();
                 break;
+        }
+    }
+    private class PlatformShowcaseListener implements OnShowcaseEventListener{
+
+        @Override
+        public void onShowcaseViewHide(ShowcaseView showcaseView) {
+            AnimationDrawable background = (AnimationDrawable) showcaseView.getBackground();
+            background.stop();
+            mGLSurfaceView.resume();
+
+        }
+
+        @Override
+        public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
+            //mGLSurfaceView.onResume();
+
+        }
+
+        @Override
+        public void onShowcaseViewShow(ShowcaseView showcaseView) {
+            mGLSurfaceView.pause();
         }
     }
 }

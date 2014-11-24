@@ -6,6 +6,7 @@ import android.content.ClipDescription;
 import android.content.Context;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -66,7 +67,8 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
         answer = R.id.left_answer;
 
         findViewById(answer).setVisibility(View.VISIBLE);
-        new ShowcaseManager(this).showcaseHorizontalTap();
+        ShowcaseView showcaseView = new ShowcaseManager(this).showcaseHorizontalTap();
+        showcaseView.setOnShowcaseEventListener(new HorizontalShowcaseListener());
     }
 
     @Override
@@ -191,7 +193,9 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
 
         findViewById(R.id.left_surface).setOnDragListener(new MyDragListener());
         findViewById(R.id.right_surface).setOnDragListener(new MyDragListener());
-        new ShowcaseManager(this).showcaseHorizontalDrag();
+        ShowcaseView showcaseView = new ShowcaseManager(this).showcaseHorizontalDrag();
+        showcaseView.setOnShowcaseEventListener(new HorizontalShowcaseListener());
+
     }
 
     private void setDragTip(int dragAnswer) {
@@ -403,12 +407,15 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
 
         @Override
         public void onShowcaseViewHide(ShowcaseView showcaseView) {
-
+            AnimationDrawable background = (AnimationDrawable) showcaseView.getBackground();
+            background.stop();
         }
 
         @Override
         public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
-            myTiltEventListener.enable();
+            if(myTiltEventListener!=null) {
+                myTiltEventListener.enable();
+            }
 
         }
 

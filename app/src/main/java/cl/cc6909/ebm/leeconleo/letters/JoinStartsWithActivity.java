@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 import java.util.Stack;
 
 public class JoinStartsWithActivity extends JoinActivity {
-    private Stack<Image[]> pictures;
+    protected Stack<Image[]> pictures;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         letter = getIntent().getStringExtra("letter");
@@ -62,6 +62,8 @@ public class JoinStartsWithActivity extends JoinActivity {
             h.postDelayed(r, 2000);
             if(!pictures.empty()) {
                 picture = pictures.pop();
+            }else {
+                finished=true;
             }
         }
     }

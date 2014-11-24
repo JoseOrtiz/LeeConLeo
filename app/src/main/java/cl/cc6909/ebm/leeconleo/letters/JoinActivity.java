@@ -1,6 +1,7 @@
 package cl.cc6909.ebm.leeconleo.letters;
 
 import android.app.Activity;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -11,8 +12,12 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.github.amlcurran.showcaseview.OnShowcaseEventListener;
+import com.github.amlcurran.showcaseview.ShowcaseView;
+
 import cl.cc6909.ebm.leeconleo.FeedbackDialog;
 import cl.cc6909.ebm.leeconleo.R;
+import cl.cc6909.ebm.leeconleo.ShowcaseManager;
 
 public class JoinActivity extends Activity {
     protected Image[] picture;
@@ -20,6 +25,7 @@ public class JoinActivity extends Activity {
     protected Handler h;
     protected FeedbackDialog pd;
     protected Runnable r;
+    protected Boolean finished;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,8 +49,12 @@ public class JoinActivity extends Activity {
                 }
                 rope.restart();
                 resetImages();
+                if(finished){
+                    finish();
+                }
             }
         };
+        finished=false;
 
         ViewTreeObserver vto = answers.getViewTreeObserver();
         vto.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
@@ -81,6 +91,10 @@ public class JoinActivity extends Activity {
             }
 
         });
+
+        ShowcaseView showcaseView = new ShowcaseManager(this).showcaseJoin();
+        showcaseView.setOnShowcaseEventListener(new JoinShowcaseListener());
+
     }
 
     public void onBackButtonClicked(View view){
@@ -102,6 +116,25 @@ public class JoinActivity extends Activity {
             iv.setImageDrawable(picture[i].getImage());
         }
 
+    }
+
+    private class JoinShowcaseListener implements OnShowcaseEventListener{
+
+        @Override
+        public void onShowcaseViewHide(ShowcaseView showcaseView) {
+            AnimationDrawable background = (AnimationDrawable) showcaseView.getBackground();
+            background.stop();
+        }
+
+        @Override
+        public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
+
+        }
+
+        @Override
+        public void onShowcaseViewShow(ShowcaseView showcaseView) {
+
+        }
     }
 
 }

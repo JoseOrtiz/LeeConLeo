@@ -26,12 +26,12 @@ public class PlatformRenderer implements GLSurfaceView.Renderer{
     private final float[] mProjectionMatrix = new float[16];
     private final float[] mViewMatrix = new float[16];
     private final float[] mRotationMatrix = new float[16];
-    private long time;
+    private long time,pausedTime,pause;
 
     private FeedbackDialog pd;
     private Handler h1,h2;
     private Runnable r1,r2;
-    private boolean checked;
+    private boolean checked, paused;
 
 
     public PlatformRenderer(Context activity) {
@@ -50,6 +50,8 @@ public class PlatformRenderer implements GLSurfaceView.Renderer{
         };
 
         checked = false;
+        pausedTime=0;
+        paused=false;
 
     }
 
@@ -76,24 +78,39 @@ public class PlatformRenderer implements GLSurfaceView.Renderer{
     @Override
     public void onDrawFrame(GL10 gl) {
         long current = SystemClock.uptimeMillis();
-        if(current - time > 1000/30) {
-            GLES20.glClearColor(0.5f, 1f, 1f, 0f);
-            clearBuffers(true, true, true);
+        current-=pausedTime;
+        if(!paused) {
+            if (current - time > 1000 / 30) {
+                GLES20.glClearColor(0.5f, 1f, 1f, 0f);
+                clearBuffers(true, true, true);
 
-            back.draw(mMVPMatrix, current);
-            runner.draw(mMVPMatrix, current);
-            obstacle.draw(mMVPMatrix,current);
-            checkCollision();
-            time=current;
+                back.draw(mMVPMatrix, current);
+                runner.draw(mMVPMatrix, current);
+                obstacle.draw(mMVPMatrix, current);
+                checkCollision();
+                time = current;
+            }
+        }else{
+            if (current - time > 1000 / 30) {
+                GLES20.glClearColor(0.5f, 1f, 1f, 0f);
+                clearBuffers(true, true, true);
+                back.draw(mMVPMatrix, current);
+                time=current;
+            }
         }
 
     }
     public void onPause(){
         /* Do stuff to pause the renderer */
+        paused=true;
+        pause=SystemClock.uptimeMillis();
     }
 
     public void onResume(){
         /* Do stuff to resume the renderer */
+        pausedTime+=SystemClock.uptimeMillis()-pause;
+        paused=false;
+        time=pause;
     }
 
     private void checkCollision(){

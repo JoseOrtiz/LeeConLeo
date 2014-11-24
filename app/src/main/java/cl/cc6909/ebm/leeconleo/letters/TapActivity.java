@@ -1,6 +1,7 @@
 package cl.cc6909.ebm.leeconleo.letters;
 
 import android.app.Activity;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -11,6 +12,9 @@ import android.view.ViewTreeObserver;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 
+import com.github.amlcurran.showcaseview.OnShowcaseEventListener;
+import com.github.amlcurran.showcaseview.ShowcaseView;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -18,6 +22,7 @@ import java.util.Vector;
 
 import cl.cc6909.ebm.leeconleo.FeedbackDialog;
 import cl.cc6909.ebm.leeconleo.R;
+import cl.cc6909.ebm.leeconleo.ShowcaseManager;
 
 public class TapActivity extends Activity{
 
@@ -83,7 +88,8 @@ public class TapActivity extends Activity{
         });
 
         setTapNeeded();
-
+        ShowcaseView showcaseView = new ShowcaseManager(this).showcaseTap();
+        showcaseView.setOnShowcaseEventListener(new TapShowcaseListener());
     }
 
     private void setTapNeeded() {
@@ -135,6 +141,25 @@ public class TapActivity extends Activity{
 
     public boolean checkCompleted(){
         return tap.isEmpty();
+    }
+
+    private class TapShowcaseListener implements OnShowcaseEventListener{
+
+        @Override
+        public void onShowcaseViewHide(ShowcaseView showcaseView) {
+            AnimationDrawable background = (AnimationDrawable) showcaseView.getBackground();
+            background.stop();
+        }
+
+        @Override
+        public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
+
+        }
+
+        @Override
+        public void onShowcaseViewShow(ShowcaseView showcaseView) {
+
+        }
     }
 
 }

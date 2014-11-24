@@ -1,6 +1,6 @@
-oveja.gif,uno.gif,iglesia.gif,sol.gif
-iglu.jpg,casa.jpg,escoba.jpg,espejo.jpg
-agua.jpeg,iman.jpg,avion.png,mano.jpg
-empanada.png,,auto.png,indio.png,ala.png
-asiento.jpg,insectos.jpg,mono.png,orangutan.jpg
-isla.jpg,oso.jpg,pajaro.jpg,sal.jpg
+papel.jpg,iglesia.gif,uniforme.jpg,sol.gif
+asiento.jpg,gato.jpg,isla.jpg,piano.png
+indio.png,paraguas.jpg,marioneta.jpg,piscina.jpg
+olla.jpg,oveja.gif,insectos.jpg,pavo.jpg
+peine.jpg,iglu.jpg,payaso.jpg,auto.png
+iman.jpg,luna.jpg,maiz.jpg,espejo.jpg

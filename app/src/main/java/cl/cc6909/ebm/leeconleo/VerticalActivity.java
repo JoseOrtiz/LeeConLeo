@@ -5,6 +5,7 @@ import android.content.ClipData;
 import android.content.ClipDescription;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.DragEvent;
@@ -14,6 +15,9 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.github.amlcurran.showcaseview.OnShowcaseEventListener;
+import com.github.amlcurran.showcaseview.ShowcaseView;
 
 
 public class VerticalActivity extends Activity implements View.OnClickListener {
@@ -61,7 +65,8 @@ public class VerticalActivity extends Activity implements View.OnClickListener {
 
         findViewById(answer).setVisibility(View.VISIBLE);
         //new ShowcaseManager(this).showcaseBackButton();
-        new ShowcaseManager(this).showcaseVerticalActivity();
+        ShowcaseView showcaseView = new ShowcaseManager(this).showcaseVerticalActivity();
+        showcaseView.setOnShowcaseEventListener(new VerticalShowcaseListener());
     }
 
     @Override
@@ -148,7 +153,8 @@ public class VerticalActivity extends Activity implements View.OnClickListener {
 
         findViewById(R.id.down_surface).setOnDragListener(new MyDragListener());
         findViewById(R.id.up_surface).setOnDragListener(new MyDragListener());
-        new ShowcaseManager(this).showcaseVerticalDrag();
+        ShowcaseView showcaseView = new ShowcaseManager(this).showcaseVerticalDrag();
+        showcaseView.setOnShowcaseEventListener(new VerticalShowcaseListener());
     }
 
     private void setDragTip(int dragAnswer) {
@@ -250,6 +256,25 @@ public class VerticalActivity extends Activity implements View.OnClickListener {
         setDragTip(drag_answer);
         view.setVisibility(View.VISIBLE);
 
+    }
+
+    private class VerticalShowcaseListener implements OnShowcaseEventListener{
+
+        @Override
+        public void onShowcaseViewHide(ShowcaseView showcaseView) {
+            AnimationDrawable background = (AnimationDrawable) showcaseView.getBackground();
+            background.stop();
+        }
+
+        @Override
+        public void onShowcaseViewDidHide(ShowcaseView showcaseView) {
+
+        }
+
+        @Override
+        public void onShowcaseViewShow(ShowcaseView showcaseView) {
+
+        }
     }
 
 }

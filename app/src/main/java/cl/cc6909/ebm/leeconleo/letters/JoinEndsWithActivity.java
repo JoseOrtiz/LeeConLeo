@@ -62,6 +62,8 @@ public class JoinEndsWithActivity extends JoinActivity{
             h.postDelayed(r, 2000);
             if(!pictures.empty()) {
                 picture = pictures.pop();
+            }else {
+                finished=true;
             }
         }
     }
