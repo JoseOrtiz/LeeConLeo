@@ -1,0 +1,7 @@
+perro.jpg,pluma.jpg,mimo.jpg,piano.png
+molino.jpg,payaso.jpg,pez.jpg,mono.png
+pera.jpg,motocicleta.jpg,pipa.png,pulpo.jpg
+leche.jpg,puma.jpg,elefante.jpg,pelota.jpg
+lana.jpg,iglesia.gif,peine.jpg,pina.jpg
+pelo.jpg,momia.gif,iglu.jpg,pan.jpg
+coco.jpg,perfume.jpg,agua.jpeg,pinguino.jpg

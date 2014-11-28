@@ -1,0 +1,7 @@
+mani.png,oro.jpg,sol.gif,lana.jpg
+pollo.gif,puercoespin.jpg,jaula.jpg,papel.jpg
+aro.jpg,paloma.jpg,marioneta.jpg,pincel.jpg
+perro.jpg,puerta.png,arbol.jpg,labios.jpg
+pizza.png,palta.jpg,sal.jpg,lechuga.jpg
+boca.png,platano.jpg,mimo.jpg,miel.jpg
+olla.jpg,azul.jpg,avion.png,leña.jpg

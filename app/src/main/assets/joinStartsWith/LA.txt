@@ -1,0 +1,7 @@
+lapiz.jpg,uno.gif,conejo.jpg,palmera.png
+pizza.png,ojo.jpg,murcielago.jpg,lampara.JPG
+mono.png,laberinto.jpg,luna.jpg,olla.jpg
+lago.jpg,insectos.jpg,pie.png,pato.jpg
+pera.jpg,lentejuela.jpg,asiento.jpg,lagartija.jpg
+lana.jpg,escoba.jpg,esqueleto.jpg,pincel.jpg
+motocicleta.jpg,televisor.jpg,locomotora.jpg,labios.jpg

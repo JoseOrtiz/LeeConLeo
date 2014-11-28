@@ -1,0 +1,15 @@
+melon.jpg,mago.png,payaso.jpg,jaula.jpg
+pajaro.png,miel.jpg,pirata.jpg,mani.png
+pantalon.jpg,lapiz.jpg,escorpion.jpg,mochila.jpg
+iglesia.gif,perfume.jpg,pato.jpg,kiwi.jpg
+mapa.jpg,pala.jpeg,uniforme.jpg,oso.jpg
+limon.jpeg,uva.jpg,puma.jpg,paloma.jpg
+panda.jpg,molino.jpg,oveja.gif,indio.png
+palmera.png,arbol.jpg,olla.jpg,espantapajaros.jpg
+palta.jpg,unicornio.jpg,marioneta.jpg,uno.gif
+pinguino.jpg,asiento.jpg,pavo.jpg,espejo.jpg
+insectos.jpg,papa.jpg,arco.jpg,loro.jpg
+patin.jpg,aro.jpg,abeja.jpeg,lana.jpg
+pluma.jpg,martillo.jpg,medusa.jpg,pan.jpg
+paraguas.jpg,pino.jpg,bambu.jpg,auto.png
+papel.jpg,piscina.jpg,raton.png,agua.jpeg

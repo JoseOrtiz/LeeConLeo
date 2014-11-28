@@ -1,0 +1,3 @@
+marioneta.jpg,locomotora.jpg,arco.jpg,puma.jpg
+payaso.jpg,elefante.jpg,orangutan.jpg,paloma.jpg
+flauta.jpg,pluma.jpg,mago.png,empanada.png

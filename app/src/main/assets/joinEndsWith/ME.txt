@@ -1,0 +1,2 @@
+uniforme.jpg,libro.jpg,iman.jpg,pinguino.jpg
+jaula.jpg,nariz.jpg,perfume.jpg,insectos.jpg

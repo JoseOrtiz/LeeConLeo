@@ -1,0 +1,3 @@
+oveja.gif,luna.jpg,empanada.png,piedra.jpg
+sal.jpg,estrella.jpg,palta.jpg,lupa.jpg
+luces.jpg,puma.jpg,pierna.jpg,piano.png

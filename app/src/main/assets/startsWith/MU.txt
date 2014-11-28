@@ -1,0 +1,2 @@
+mochila.jpg,murcielago.jpg,pavo.jpg,mani.png
+oido.png,casa.jpg,pantalon.jpg,muneca.jpg

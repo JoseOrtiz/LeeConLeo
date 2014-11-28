@@ -1,0 +1,7 @@
+insectos.jpg,uno.gif,iglu.jpg,papel.jpg
+astronauta.jpg,puente.jpg,sol.gif,oveja.gif
+leon.jpg,oido.png,miel.jpg,sushi.jpg
+payaso.jpg,luna.jpg,azul.jpg,universo.jpg
+arbol.jpg,ala.png,pulpo.jpg,pirata.jpg
+sal.jpg,pierna.jpg,mochila.jpg,molino.jpg
+pina.jpg,pino.jpg,mano.jpg,pincel.jpg

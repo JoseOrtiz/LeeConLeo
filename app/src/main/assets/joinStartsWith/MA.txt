@@ -1,0 +1,9 @@
+pizza.png,pelota.jpg,auto.png,maiz.jpg
+insectos.jpg,oro.jpg,pala.jpeg,mago.png
+mariposa.jpg,plancha.jpg,conejo.jpg,azucar.jpg
+pez.jpg,colibri.jpg,coco.jpg,mani.png
+ala.png,marioneta.jpg,muneca.jpg,isla.jpg
+paloma.jpg,perro.jpg,pelo.jpg,manzana.jpg
+mano.jpg,unicornio.jpg,flauta.jpg,lagartija.jpg
+ocho.jpg,mapa.jpg,medusa.jpg,pizarra.jpg
+palmera.png,pan.jpg,puente.jpg,martillo.jpg

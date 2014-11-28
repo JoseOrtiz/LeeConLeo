@@ -1,0 +1,9 @@
+martillo.jpg,peine.jpg,empanada.png,puma.jpg
+mano.jpg,pera.jpg,azul.jpg,mimo.jpg
+mani.png,loro.jpg,uva.jpg,libro.jpg
+pato.jpg,manzana.jpg,pierna.jpg,pavo.jpg
+lapiz.jpg,luna.jpg,mago.png,microfono.jpg
+oido.png,momia.gif,sushi.jpg,maiz.jpg
+iglesia.gif,esqueleto.jpg,lana.jpg,marioneta.jpg
+mariposa.jpg,molino.jpg,asiento.jpg,oso.jpg
+pulpo.jpg,iglu.jpg,panda.jpg,mapa.jpg

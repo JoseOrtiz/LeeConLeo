@@ -1,0 +1,9 @@
+papa.jpg,peine.jpg,jaula.jpg,oveja.gif
+mochila.jpg,erizo.jpg,melon.jpg,platano.jpg
+perro.jpg,auto.png,lagartija.jpg,lentejuela.jpg
+arbol.jpg,gato.jpg,kiwi.jpg,ala.png
+pollo.gif,raton.png,azul.jpg,estrella.jpg
+pipa.png,olla.jpg,palmera.png,conejo.jpg
+patin.jpg,lago.jpg,pala.jpeg,payaso.jpg
+isla.jpg,abeja.jpeg,sal.jpg,casa.jpg
+pluma.jpg,silla.jpg,espejo.jpg,lampara.JPG

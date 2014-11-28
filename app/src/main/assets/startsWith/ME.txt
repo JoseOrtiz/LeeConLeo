@@ -1,0 +1,3 @@
+plato.JPG,olla.jpg,mesa.jpg,lana.jpg
+jaula.jpg,agua.jpeg,medusa.jpg,mimo.jpg
+iman.jpg,estrella_de_mar.png,melon.jpg,papel.jpg

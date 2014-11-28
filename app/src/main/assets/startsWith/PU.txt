@@ -1,0 +1,5 @@
+kiwi.jpg,paraguas.jpg,pulpo.jpg,pajaro.png
+libro.jpg,pinguino.jpg,puercoespin.jpg,coco.jpg
+insectos.jpg,puma.jpg,raton.png,olla.jpg
+enfermera.jpg,pala.jpeg,patin.jpg,puerta.png
+azucar.jpg,iglu.jpg,puente.jpg,pelota.jpg

@@ -1,0 +1,3 @@
+puma.jpg,ocho.jpg,murcielago.jpg,raton.png
+pulpo.jpg,sushi.jpg,pluma.jpg,piedra.jpg
+uva.jpg,ala.png,paloma.jpg,aro.jpg

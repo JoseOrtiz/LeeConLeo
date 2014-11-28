@@ -1,0 +1,15 @@
+peine.jpg,mono.png,puercoespin.jpg,paraguas.jpg
+platano.jpg,leon.jpg,mesa.jpg,papa.jpg
+mimo.jpg,puerta.png,pajaro.png,manzana.jpg
+lupa.jpg,estrella.jpg,una.jpg,panda.jpg
+lobo.jpg,pie.png,palmera.png,casa.jpg
+pantalon.jpg,leche.jpg,pera.jpg,boca.png
+oro.jpg,escoba.jpg,pan.jpg,mano.jpg
+nariz.jpg,gato.jpg,pala.jpeg,piedra.jpg
+plato.JPG,isla.jpg,ojo.jpg,patin.jpg
+esqueleto.jpg,lagartija.jpg,pavo.jpg,erizo.jpg
+pelo.jpg,enchufe.jpg,pincel.jpg,paloma.jpg
+oido.png,pollo.gif,astronauta.jpg,payaso.jpg
+papel.jpg,pina.jpg,pez.jpg,sal.jpg
+plancha.jpg,microfono.jpg,anillo.jpg,palta.jpg
+pato.jpg,muneca.jpg,piano.png,perro.jpg

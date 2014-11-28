@@ -1,0 +1,3 @@
+lobo.jpg,mochila.jpg,lapiz.jpg,molino.jpg
+loro.jpg,uniforme.jpg,pie.png,escoba.jpg
+ocho.jpg,locomotora.jpg,uva.jpg,panda.jpg

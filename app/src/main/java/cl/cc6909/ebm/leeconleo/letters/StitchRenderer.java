@@ -101,13 +101,19 @@ public class StitchRenderer implements GLSurfaceView.Renderer {
 
     @Override
     public void onDrawFrame(GL10 gl) {
-        for(int i=stitch.size()-1;i>=0;i--){
-            if(i==current){
+        float f3 = 243f / 255f;
+        GLES20.glClearColor(f3, f3, f3, 1f);
+        GLES20.glClear(GLES20.GL_COLOR_BUFFER_BIT | GLES20.GL_DEPTH_BUFFER_BIT);
+        GLES20.glDisable(GLES20.GL_DEPTH_TEST);
+        GLES20.glEnable(GLES20.GL_BLEND);
+        GLES20.glBlendFunc(GLES20.GL_SRC_ALPHA, GLES20.GL_ONE_MINUS_SRC_ALPHA);
+        for (int i = stitch.size() - 1; i >= 0; i--) {
+            if (i == current) {
                 continue;
             }
             stitch.get(i).draw();
         }
-        if(current<stitch.size()) {
+        if (current < stitch.size()) {
             stitch.get(current).drawActive();
         }
         contour.draw();
@@ -119,13 +125,14 @@ public class StitchRenderer implements GLSurfaceView.Renderer {
 
     public int getStitchNumber(Vector2D position){
         Stitch activeStitch = getActiveStitch();
-        if(Vector2D.distance(activeStitch.getStitch(0),position)<0.11f){
+        return activeStitch.getStitchNumber(position);
+        /*if(Vector2D.distance(activeStitch.getStitch(0),position)<0.11f){
             return 0;
         }
         if(Vector2D.distance(activeStitch.getStitch(1),position)<0.11f){
             return 1;
         }
-        return -1;
+        return -1;*/
     }
 
 
@@ -165,4 +172,5 @@ public class StitchRenderer implements GLSurfaceView.Renderer {
 
         return shader;
     }
+
 }

@@ -1,0 +1,4 @@
+palmera.png,esqueleto.jpg,lupa.jpg,oveja.gif
+pipa.png,pizza.png,ojo.jpg,pollo.gif
+mago.png,limon.jpeg,mimo.jpg,mapa.jpg
+pulpo.jpg,televisor.jpg,ala.png,papa.jpg

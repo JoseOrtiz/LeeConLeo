@@ -1,0 +1,3 @@
+azucar.jpg,jaula.jpg,mimo.jpg,silla.jpg
+casa.jpg,panda.jpg,iglu.jpg,miel.jpg
+microfono.jpg,esqueleto.jpg,piedra.jpg,asiento.jpg

@@ -1,0 +1,4 @@
+microfono.jpg,pipa.png,casa.jpg,pelo.jpg
+pino.jpg,pollo.gif,elefante.jpg,escorpion.jpg
+peine.jpg,martillo.jpg,paraguas.jpg,universo.jpg
+unicornio.jpg,pluma.jpg,anillo.jpg,oro.jpg

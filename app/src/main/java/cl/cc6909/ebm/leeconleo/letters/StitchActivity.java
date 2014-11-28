@@ -22,7 +22,7 @@ public class StitchActivity extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stitch);
 
-         stitch= (StitchGLSurfaceView) findViewById(R.id.stitch_surface);
+        stitch= (StitchGLSurfaceView) findViewById(R.id.stitch_surface);
 
         ViewTreeObserver vto = stitch.getViewTreeObserver();
         vto.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
@@ -43,6 +43,7 @@ public class StitchActivity extends Activity{
 
         });
         ShowcaseView showcaseView = new ShowcaseManager(this).showcaseStitch();
+        showcaseView.setOnShowcaseEventListener(new StitchShowcaseListener());
     }
 
 
@@ -54,7 +55,6 @@ public class StitchActivity extends Activity{
 
         @Override
         public void onShowcaseViewHide(ShowcaseView showcaseView) {
-            stitch.onResume();
             AnimationDrawable background = (AnimationDrawable) showcaseView.getBackground();
             background.stop();
         }
@@ -66,8 +66,6 @@ public class StitchActivity extends Activity{
 
         @Override
         public void onShowcaseViewShow(ShowcaseView showcaseView) {
-            stitch.onPause();
-
         }
     }
 }

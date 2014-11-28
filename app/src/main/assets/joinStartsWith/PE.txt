@@ -1,0 +1,7 @@
+libro.jpg,ornitorrinco.jpg,uva.jpg,peine.jpg
+limon.jpeg,uno.gif,casa.jpg,pez.jpg
+patin.jpg,medusa.jpg,pelota.jpg,maiz.jpg
+pino.jpg,papel.jpg,erizo.jpg,pelo.jpg
+sal.jpg,perfume.jpg,mapa.jpg,una.jpg
+enchufe.jpg,murcielago.jpg,pizza.png,pera.jpg
+perro.jpg,pie.png,unicornio.jpg,isla.jpg

@@ -1,0 +1,7 @@
+puercoespin.jpg,lana.jpg,arbol.jpg,patin.jpg
+lagartija.jpg,mapa.jpg,pavo.jpg,abeja.jpeg
+azul.jpg,manzana.jpg,lampara.JPG,empanada.png
+sushi.jpg,pipa.png,papel.jpg,lapiz.jpg
+unicornio.jpg,lago.jpg,colibri.jpg,mimo.jpg
+espantapajaros.jpg,aro.jpg,palta.jpg,laberinto.jpg
+libro.jpg,mani.png,labios.jpg,pirata.jpg

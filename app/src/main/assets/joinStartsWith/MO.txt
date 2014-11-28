@@ -1,0 +1,5 @@
+pluma.jpg,lechuga.jpg,ornitorrinco.jpg,momia.gif
+pierna.jpg,azucar.jpg,plato.JPG,mono.png
+isla.jpg,ala.png,mochila.jpg,kiwi.jpg
+motocicleta.jpg,empanada.png,auto.png,estrella_de_mar.png
+molino.jpg,pizza.png,enfermera.jpg,puente.jpg

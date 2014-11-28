@@ -1,0 +1,2 @@
+murcielago.jpg,universo.jpg,pirata.jpg,lente.png
+muneca.jpg,puente.jpg,indio.png,auto.png

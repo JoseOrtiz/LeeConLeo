@@ -1,0 +1,5 @@
+paloma.jpg,motocicleta.jpg,panda.jpg,puerta.png
+escoba.jpg,puma.jpg,piscina.jpg,mano.jpg
+uva.jpg,enchufe.jpg,puercoespin.jpg,aro.jpg
+isla.jpg,casa.jpg,loro.jpg,puente.jpg
+pipa.png,papa.jpg,pulpo.jpg,ornitorrinco.jpg

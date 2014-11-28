@@ -36,16 +36,6 @@
     </vector>
     <vector>
         <v1>
-            <x>-0.1f</x>
-            <y>0f</y>
-        </v1>
-        <v2>
-            <x>0.3f</x>
-            <y>0f</y>
-        </v2>
-    </vector>
-    <vector>
-        <v1>
             <x>-0.2f</x>
             <y>0.4f</y>
         </v1>
@@ -56,21 +46,11 @@
     </vector>
     <vector>
         <v1>
-            <x>-0.3f</x>
-            <y>0.2f</y>
-        </v1>
-        <v2>
-            <x>0.1f</x>
-            <y>0.2f</y>
-        </v2>
-    </vector>
-    <vector>
-        <v1>
-            <x>-0.3f</x>
+            <x>-0.2f</x>
             <y>-0.2f</y>
         </v1>
         <v2>
-            <x>0.1f</x>
+            <x>0.2f</x>
             <y>-0.2f</y>
         </v2>
     </vector>

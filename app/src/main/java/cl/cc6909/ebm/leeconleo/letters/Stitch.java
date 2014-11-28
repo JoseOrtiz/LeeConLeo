@@ -1,10 +1,12 @@
 package cl.cc6909.ebm.leeconleo.letters;
 
 import android.opengl.GLES20;
+import android.util.Log;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
+import java.util.Vector;
 
 import cl.cc6909.ebm.leeconleo.Vector2D;
 
@@ -189,13 +191,16 @@ public class Stitch {
 
     public void moveStitch(Vector2D newPosition, int index) {
         if(index<0 || index > 1) return;
-        Vector2D norm = Vector2D.multiply(0.1f,Vector2D.norm(Vector2D.subtract(center, initial[index])));
+        Vector2D movement = Vector2D.multiply(0.1f,Vector2D.norm(Vector2D.subtract(center,initial[index])));
+        Vector2D normal = Vector2D.norm(Vector2D.subtract(initial[index],center));
+        Vector2D remaining = Vector2D.subtract(newPosition, center);
+        //Vector2D distance = Vector2D.subtract(center,vectors[index]);
         Vector2D moved = Vector2D.subtract(newPosition, initial[index]);
-        Vector2D proj = Vector2D.multiply(Vector2D.dot(moved,norm)/(norm.scalar()*norm.scalar()),norm);
-        if(norm.getX()*proj.getX()<0) proj.setX(0f);
-        if(norm.getY()*proj.getY()<0) proj.setY(0f);
+        Vector2D proj = Vector2D.multiply(Vector2D.dot(moved, movement) / (movement.scalar() * movement.scalar()), movement);
+        if(movement.getX()*proj.getX()<0) proj.setX(0f);
+        if(movement.getY()*proj.getY()<0) proj.setY(0f);
         vectors[index] = Vector2D.add(initial[index],proj);
-        if(Vector2D.distance(vectors[index],center)<0.11f){
+        if(Vector2D.distance(vectors[index],center)<0.11f || Vector2D.dot(normal,remaining)<0){
             vectors[index]=center;
         }
         makeStitches();
@@ -208,4 +213,23 @@ public class Stitch {
     public Vector2D getCenter(){
         return center;
     }
+
+    public int getStitchNumber(Vector2D v){
+        Vector2D norm[] = new Vector2D[2];
+        norm[0] = Vector2D.multiply(0.1f,Vector2D.norm(Vector2D.subtract(initial[0],center)));
+        norm[1] = Vector2D.multiply(0.1f,Vector2D.norm(Vector2D.subtract(initial[1],center)));
+        Vector2D subtract1 = Vector2D.subtract(v, vectors[1]);
+        Vector2D subtract0 = Vector2D.subtract(v, vectors[0]);
+        Vector2D proj1 = Vector2D.multiply(Vector2D.dot(subtract1,norm[1])/(norm[1].scalar()*norm[1].scalar()),norm[1]);
+        Vector2D proj0 = Vector2D.multiply(Vector2D.dot(subtract0,norm[0])/(norm[0].scalar()*norm[0].scalar()),norm[0]);
+        if(Vector2D.dot(proj0,norm[0])>0 && subtract0.scalar()<0.7){
+            return 0;
+        }
+        if(Vector2D.dot(proj1,norm[1])>0 && subtract1.scalar()<0.7){
+            return 1;
+        }
+        return -1;
+
+    }
 }
+

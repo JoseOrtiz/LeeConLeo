@@ -1,0 +1,4 @@
+arbol.jpg,martillo.jpg,locomotora.jpg,limon.jpeg
+espejo.jpg,anillo.jpg,pez.jpg,esqueleto.jpg
+raton.png,pelo.jpg,pelota.jpg,pantalon.jpg
+pollo.gif,platano.jpg,molino.jpg,arco.jpg

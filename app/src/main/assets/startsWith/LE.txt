@@ -1,0 +1,6 @@
+bambu.jpg,lechuga.jpg,medusa.jpg,locomotora.jpg
+colibri.jpg,maiz.jpg,lentejuela.jpg,payaso.jpg
+muneca.jpg,espejo.jpg,molino.jpg,leña.jpg
+ocho.jpg,leon.jpg,astronauta.jpg,mapa.jpg
+lagartija.jpg,pulpo.jpg,leche.jpg,pez.jpg
+marioneta.jpg,melon.jpg,ojo.jpg,lente.png

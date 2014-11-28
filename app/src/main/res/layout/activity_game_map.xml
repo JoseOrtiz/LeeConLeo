@@ -16,7 +16,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/linear_map">
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content">

@@ -1,0 +1,13 @@
+pina.jpg,peine.jpg,azucar.jpg,maiz.jpg
+payaso.jpg,limon.jpeg,plato.JPG,pino.jpg
+motocicleta.jpg,isla.jpg,libro.jpg,piedra.jpg
+pierna.jpg,unicornio.jpg,mesa.jpg,lupa.jpg
+platano.jpg,coco.jpg,conejo.jpg,pipa.png
+puerta.png,luna.jpg,pinguino.jpg,iglu.jpg
+televisor.jpg,estrella.jpg,sal.jpg,piscina.jpg
+ojo.jpg,arco.jpg,sol.gif,pie.png
+piano.png,loro.jpg,mariposa.jpg,perfume.jpg
+pizarra.jpg,plancha.jpg,mimo.jpg,medusa.jpg
+mochila.jpg,silla.jpg,espejo.jpg,pincel.jpg
+perro.jpg,pizza.png,asiento.jpg,erizo.jpg
+molino.jpg,pirata.jpg,iglesia.gif,astronauta.jpg

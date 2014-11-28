@@ -1,0 +1,3 @@
+pulpo.jpg,lana.jpg,lente.png,mimo.jpg
+lobo.jpg,estrella.jpg,miel.jpg,medusa.jpg
+microfono.jpg,perfume.jpg,martillo.jpg,pala.jpeg

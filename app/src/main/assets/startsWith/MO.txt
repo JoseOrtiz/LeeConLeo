@@ -1,0 +1,5 @@
+puerta.png,mochila.jpg,papa.jpg,labios.jpg
+momia.gif,espantapajaros.jpg,libro.jpg,sushi.jpg
+molino.jpg,oso.jpg,lagartija.jpg,insectos.jpg
+lente.png,raton.png,motocicleta.jpg,arco.jpg
+marioneta.jpg,universo.jpg,pincel.jpg,mono.png

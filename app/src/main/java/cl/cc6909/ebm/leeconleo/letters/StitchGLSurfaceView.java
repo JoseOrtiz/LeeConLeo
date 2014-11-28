@@ -33,12 +33,12 @@ public class StitchGLSurfaceView extends GLSurfaceView{
         mContext = context;
         stitchPointer = new int[2];
         mRenderer = new StitchRenderer(mContext);
-        setZOrderOnTop(true);
+        //setZOrderOnTop(true);
         setEGLConfigChooser(8, 8, 8, 8, 16, 0);
         getHolder().setFormat(PixelFormat.RGBA_8888);
         setEGLContextClientVersion(2);
         setRenderer(mRenderer);
-        //setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
+        setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
         requestFocus();
     }
 
@@ -83,8 +83,10 @@ public class StitchGLSurfaceView extends GLSurfaceView{
             }
 
         }
+        requestRender();
 
         return true;
     }
+
 
 }

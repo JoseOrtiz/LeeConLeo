@@ -1,0 +1,3 @@
+murcielago.jpg,paloma.jpg,melon.jpg,mapa.jpg
+pala.jpeg,medusa.jpg,panda.jpg,plancha.jpg
+mesa.jpg,pinguino.jpg,gato.jpg,abeja.jpeg

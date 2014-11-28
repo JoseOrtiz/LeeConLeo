@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.speech.tts.TextToSpeech;
 import android.view.DragEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,8 +20,10 @@ import android.widget.TextView;
 import com.github.amlcurran.showcaseview.OnShowcaseEventListener;
 import com.github.amlcurran.showcaseview.ShowcaseView;
 
+import java.util.Locale;
 
-public class VerticalActivity extends Activity implements View.OnClickListener {
+
+public class VerticalActivity extends Activity implements View.OnClickListener{
 
     private static final String IMAGE_TAG = "Leo tag";
     private FeedbackDialog pd;
@@ -273,6 +276,7 @@ public class VerticalActivity extends Activity implements View.OnClickListener {
 
         @Override
         public void onShowcaseViewShow(ShowcaseView showcaseView) {
+
 
         }
     }

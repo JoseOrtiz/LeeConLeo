@@ -1,0 +1,4 @@
+astronauta.jpg,mapa.jpg,oro.jpg,elefante.jpg
+maiz.jpg,pirata.jpg,pez.jpg,papa.jpg
+iglu.jpg,uniforme.jpg,lupa.jpg,puerta.png
+pipa.png,platano.jpg,arbol.jpg,luna.jpg

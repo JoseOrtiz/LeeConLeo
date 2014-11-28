@@ -31,7 +31,7 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
     private View view;
     private int answer;
     private int drag_answer;
-    private int totalCorrectAnswers = 3;
+    private int totalCorrectAnswers = 5;
     private int correctAnswers;
     private ImageView leo;
     private MyTiltEventListener myTiltEventListener;
@@ -185,7 +185,7 @@ public class HorizontalActivity extends Activity implements View.OnClickListener
                 String[] mimeTypes = {ClipDescription.MIMETYPE_TEXT_PLAIN};
                 ClipData dragData = new ClipData(v.getTag().toString(), mimeTypes, item);
                 View.DragShadowBuilder myShadow = new MyDragShadowBuilder(leo, BitmapFactory.decodeResource(getResources(), R.drawable.adventurer));
-                v.startDrag(dragData, myShadow, null, 0);
+                v.startDrag(dragData, myShadow, leo, 0);
                 v.setVisibility(View.INVISIBLE);
                 return true;
             }

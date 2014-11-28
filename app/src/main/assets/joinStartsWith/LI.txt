@@ -1,0 +1,2 @@
+oido.png,ala.png,libro.jpg,esqueleto.jpg
+limon.jpeg,puente.jpg,oro.jpg,pie.png
