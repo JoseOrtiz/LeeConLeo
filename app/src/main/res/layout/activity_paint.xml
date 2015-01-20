@@ -21,15 +21,23 @@
             android:scaleType="centerInside"
             android:layout_gravity="start" />
     </LinearLayout>
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="9">
+        <cl.cc6909.ebm.leeconleo.letters.AutoResizeTextView
+            android:id="@+id/paint_background"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="1000sp"
+            android:text="a"
+            android:gravity="center"/>
         <cl.cc6909.ebm.leeconleo.letters.PaintView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:id="@+id/paint_surface"/>
-        </LinearLayout>
+            android:id="@+id/paint_surface"
+            android:clickable="true" />
+    </RelativeLayout>
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"

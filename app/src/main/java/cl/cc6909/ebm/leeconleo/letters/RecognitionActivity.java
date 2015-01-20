@@ -1,9 +1,11 @@
 package cl.cc6909.ebm.leeconleo.letters;
 
 import android.app.Activity;
+import android.content.res.AssetFileDescriptor;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.AnimationDrawable;
+import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -31,6 +33,7 @@ public class RecognitionActivity extends Activity {
     protected Runnable r;
     protected Image[] picture;
     protected Boolean finished;
+    private MediaPlayer m;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -137,6 +140,7 @@ public class RecognitionActivity extends Activity {
         });
         ShowcaseView showcaseView = new ShowcaseManager(this).showcaseRecognition();
         showcaseView.setOnShowcaseEventListener(new RecognitionShowcaseListener());
+        m = new MediaPlayer();
 
     }
 
@@ -148,6 +152,24 @@ public class RecognitionActivity extends Activity {
     }
 
     public void getVoiceTip(View view){
+        try {
+            if (m.isPlaying()) {
+                m.stop();
+                m.release();
+                m = new MediaPlayer();
+            }
+
+            AssetFileDescriptor descriptor = getAssets().openFd("picturesSpeech/"+view.getTag() +".mp3");
+            m.setDataSource(descriptor.getFileDescriptor(), descriptor.getStartOffset(), descriptor.getLength());
+            descriptor.close();
+
+            m.prepare();
+            m.setVolume(1f, 1f);
+            m.setLooping(true);
+            m.start();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
     }
 
@@ -166,7 +188,7 @@ public class RecognitionActivity extends Activity {
 
     }
 
-    private class RecognitionShowcaseListener implements OnShowcaseEventListener{
+    private class RecognitionShowcaseListener implements OnShowcaseEventListener {
 
         @Override
         public void onShowcaseViewHide(ShowcaseView showcaseView) {

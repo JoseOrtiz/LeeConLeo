@@ -1,22 +1,23 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 20
-    buildToolsVersion "20.0.0"
-
+    buildToolsVersion '20.0.0'
     defaultConfig {
         applicationId "cl.cc6909.ebm.leeconleo"
-        minSdkVersion 11
-        targetSdkVersion 20
         versionCode 1
         versionName "1.0"
+        minSdkVersion 11
+        targetSdkVersion 20
     }
     buildTypes {
         release {
-            runProguard false
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    productFlavors {
+    }
+    compileSdkVersion 20
 }
 
 dependencies {

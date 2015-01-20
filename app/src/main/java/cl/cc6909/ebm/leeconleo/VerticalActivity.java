@@ -150,6 +150,7 @@ public class VerticalActivity extends Activity implements View.OnClickListener{
                 ClipData dragData = new ClipData(v.getTag().toString(), mimeTypes, item);
                 View.DragShadowBuilder myShadow = new MyDragShadowBuilder(leo, BitmapFactory.decodeResource(getResources(),R.drawable.adventurer));
                 v.startDrag(dragData, myShadow, leo, 0);
+                v.setVisibility(View.INVISIBLE);
                 return true;
             }
         });
@@ -233,6 +234,10 @@ public class VerticalActivity extends Activity implements View.OnClickListener{
                     break;
 
                 case DragEvent.ACTION_DRAG_ENDED:
+                    if(!event.getResult()){
+                        View view = (View) event.getLocalState();
+                        view.setVisibility(View.VISIBLE);
+                    }
                     v.setBackgroundColor(Color.TRANSPARENT);
 
                 default:

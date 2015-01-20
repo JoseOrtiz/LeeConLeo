@@ -1,7 +1,9 @@
 package cl.cc6909.ebm.leeconleo.letters;
 
 import android.app.Activity;
+import android.content.res.AssetFileDescriptor;
 import android.graphics.drawable.AnimationDrawable;
+import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -21,17 +23,21 @@ import cl.cc6909.ebm.leeconleo.ShowcaseManager;
 
 public class JoinActivity extends Activity {
     protected Image[] picture;
-    protected String letter;
+    protected String letter="ma";
     protected Handler h;
     protected FeedbackDialog pd;
     protected Runnable r;
     protected Boolean finished;
+    private MediaPlayer m;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_join);
         letter = getIntent().getStringExtra("letter");
+        if(letter.equals("")){
+            letter="ma";
+        }
 
 
         final LinearLayout answers = (LinearLayout) findViewById(R.id.answer_layout);
@@ -105,6 +111,25 @@ public class JoinActivity extends Activity {
     }
     public void onImageClicked(View view){
         String name = (String) view.getTag();
+
+        try {
+            if (m.isPlaying()) {
+                m.stop();
+                m.release();
+                m = new MediaPlayer();
+            }
+
+            AssetFileDescriptor descriptor = getAssets().openFd("picturesSpeech/"+name+".mp3");
+            m.setDataSource(descriptor.getFileDescriptor(), descriptor.getStartOffset(), descriptor.getLength());
+            descriptor.close();
+
+            m.prepare();
+            m.setVolume(1f, 1f);
+            m.setLooping(true);
+            m.start();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     protected void resetImages(){

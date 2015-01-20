@@ -42,6 +42,7 @@ public class RopeView extends View{
         rope = BitmapFactory.decodeResource(getResources(), R.drawable.rope);
         harness = BitmapFactory.decodeResource(getResources(), R.drawable.harness);
         hookWidth= BitmapFactory.decodeResource(getResources(), R.drawable.hook).getWidth();
+        position = new Vector2D(50,rope.getHeight()/2);
         touching = false;
         matrix = new Matrix();
     }

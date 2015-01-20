@@ -27,7 +27,6 @@ public class LetterActivity extends Activity {
     }
 
     private void checkConditions() {
-        checkPainting();
         checkStitch();
         checkTap();
         checkStartsWith();
@@ -45,16 +44,6 @@ public class LetterActivity extends Activity {
         Intent intent = new Intent(this, PaintActivity.class);
         intent.putExtra("letter",letter);
         startActivity(intent);
-    }
-
-    private void checkPainting() {
-        AssetManager mg = getResources().getAssets();
-        try {
-            mg.open("letters/"+letter.toUpperCase()+".png");
-
-        } catch (IOException ex) {
-            findViewById(R.id.paint_layout).setVisibility(View.GONE);
-        }
     }
 
     public void startStitchActivity(View view){

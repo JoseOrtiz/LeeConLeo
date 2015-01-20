@@ -26,21 +26,23 @@
         android:layout_height="0dp"
         android:orientation="horizontal"
         android:layout_weight="3">
-        <TextView
+        <cl.cc6909.ebm.leeconleo.letters.FontFitTextView
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:id="@+id/uppercase_printing_letter"
             android:gravity="center"
-            android:textSize="300sp"/>
+            android:textSize="300sp"
+            android:background="@drawable/down_right_line"/>
 
-        <TextView
+        <cl.cc6909.ebm.leeconleo.letters.FontFitTextView
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:id="@+id/lowercase_printing_letter"
             android:gravity="center"
-            android:textSize="300sp"/>
+            android:textSize="300sp"
+            android:background="@drawable/down_line"/>
         </LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"
@@ -48,15 +50,16 @@
         android:orientation="horizontal"
         android:layout_weight="3">
 
-        <TextView
+        <cl.cc6909.ebm.leeconleo.letters.FontFitTextView
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:id="@+id/uppercase_handwritten"
             android:gravity="center"
-            android:textSize="300sp"/>
+            android:textSize="300sp"
+            android:background="@drawable/right_line"/>
 
-        <TextView
+        <cl.cc6909.ebm.leeconleo.letters.FontFitTextView
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_weight="1"

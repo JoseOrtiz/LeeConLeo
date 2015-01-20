@@ -26,6 +26,23 @@ public class GameMapActivity extends Activity {
             "m","ma","mo","mi","mu","me",
             "p","pa","po","pi","pu","pe",
             "l","la","lo","li","lu","le",
+            "d","da","do","di","du","de",
+            "s","sa","so","si","su","se",
+            "b","ba","bo","bi","bu","be",
+            "c","ca","co","ci","cu","ce",
+            "f","fa","fo","fi","fu","fe",
+            "g","ga","go","gi","gu","ge",
+            "h","ha","ho","hi","hu","he",
+            "j","ja","jo","ji","ju","je",
+            "k","ka","ko","ki","ku","ke",
+            "n","na","no","ni","nu","ne",
+            "r","ra","ro","ri","ru","re",
+            "t","ta","to","ti","tu","te",
+            "v","va","vo","vi","vu","ve",
+            "w","wa","wo","wi","wu","we",
+            "x","xa","xo","xi","xu","xe",
+            "y","ya","yo","yi","yu","ye",
+            "z","za","zo","zi","zu","ze",
     };
 
     @Override
@@ -50,7 +67,6 @@ public class GameMapActivity extends Activity {
                     image.setLayoutParams(new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
                     image.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
                     aux.addView(image);
-                    Log.i("Iterar",l+" "+i);
                 }
                 parent.addView(aux);
 

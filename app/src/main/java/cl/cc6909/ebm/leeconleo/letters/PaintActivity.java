@@ -2,8 +2,8 @@ package cl.cc6909.ebm.leeconleo.letters;
 
 import android.app.Activity;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.AnimationDrawable;
-import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
 import android.os.Bundle;
@@ -13,9 +13,6 @@ import android.widget.RelativeLayout;
 
 import com.github.amlcurran.showcaseview.OnShowcaseEventListener;
 import com.github.amlcurran.showcaseview.ShowcaseView;
-
-import java.io.IOException;
-import java.io.InputStream;
 
 import cl.cc6909.ebm.leeconleo.R;
 import cl.cc6909.ebm.leeconleo.ShowcaseManager;
@@ -31,7 +28,11 @@ public class PaintActivity extends Activity implements View.OnClickListener{
         pw = (PaintView) findViewById(R.id.paint_surface);
         pw.setDrawingCacheEnabled(true);
         letter = getIntent().getStringExtra("letter");
-        InputStream inputStream;
+        AutoResizeTextView background = (AutoResizeTextView) findViewById(R.id.paint_background);
+        Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/arialic_hollow.ttf");
+        background.setText(letter);
+        background.setTypeface(tf);
+        /*InputStream inputStream;
         try {
             inputStream = getResources().getAssets().open("letters/" + letter.toUpperCase() + ".png");
             Drawable bitmap = Drawable.createFromStream(inputStream, null);
@@ -42,7 +43,7 @@ public class PaintActivity extends Activity implements View.OnClickListener{
             }
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
 
         findViewById(R.id.back_button).setOnClickListener(this);
         adjustSizeOfPalette();
