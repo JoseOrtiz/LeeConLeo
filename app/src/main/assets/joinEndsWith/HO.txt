@@ -1,0 +1,3 @@
+nariz.jpg,corazon.png,semaforo.jpg,ocho.jpg
+fantasma.jpg,plancha.jpg,futbol.jpg,buho.gif
+enchufe.jpg,microfono.jpg,perfume.jpg,serrucho.jpg

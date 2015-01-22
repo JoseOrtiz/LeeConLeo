@@ -1,0 +1,2 @@
+violeta.jpg,camioneta.jpg,asiento.jpg,enchufe.jpg
+paloma.jpg,cafe.jpg,pelo.jpg,cerdo.jpg

@@ -1,0 +1,3 @@
+toro.jpg,iglesia.gif,pan.jpg,taza.jpg
+caracol.jpg,casa.jpg,tambor.jpg,ventilador.jpg
+barco.jpg,tarantula.jpg,cupido.png,violeta.jpg

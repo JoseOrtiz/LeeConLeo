@@ -1,0 +1,3 @@
+halcon.jpg,mimo.jpg,topo.jpg,rinoceronte.jpg
+plancha.jpg,triangulo.jpg,jarra.JPG,hada.jpg
+basurero.jpg,secador.jpg,hamster.jpg,nieve.jpg

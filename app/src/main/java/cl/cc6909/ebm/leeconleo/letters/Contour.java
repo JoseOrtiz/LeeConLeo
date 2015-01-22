@@ -39,7 +39,7 @@ public class Contour {
         center.add(initial);
         mProgram = GLES20.glCreateProgram();             // create empty OpenGL Program
 
-        color = new float[]{0f,0f,0f,1f};
+        color = new float[]{0f,0f,1f,1f};
         // prepare shaders and OpenGL program
         int vertexShader = StitchRenderer.loadShader(
                 GLES20.GL_VERTEX_SHADER, vertexShaderCode);
@@ -108,7 +108,9 @@ public class Contour {
         GLES20.glUniform4fv(mColorHandle, 1, color, 0);
 
         // Draw the line
+        GLES20.glLineWidth(6f);
         GLES20.glDrawArrays(GLES20.GL_LINE_STRIP, 0, vertexCount);
+        GLES20.glLineWidth(1f);
 
         // Disable vertex array
         GLES20.glDisableVertexAttribArray(mPositionHandle);

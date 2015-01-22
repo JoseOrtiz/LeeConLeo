@@ -1,0 +1,2 @@
+domino.png,cisne.jpg,limon.jpeg,halcon.jpg
+payaso.jpg,peine.jpg,bambu.jpg,durazno.jpg

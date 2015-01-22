@@ -1,7 +1,7 @@
-libro.jpg,ornitorrinco.jpg,uva.jpg,peine.jpg
-limon.jpeg,uno.gif,casa.jpg,pez.jpg
-patin.jpg,medusa.jpg,pelota.jpg,maiz.jpg
-pino.jpg,papel.jpg,erizo.jpg,pelo.jpg
-sal.jpg,perfume.jpg,mapa.jpg,una.jpg
-enchufe.jpg,murcielago.jpg,pizza.png,pera.jpg
-perro.jpg,pie.png,unicornio.jpg,isla.jpg
+semaforo.jpg,rey.gif,lente.png,perro.jpg
+perfume.jpg,lentejuela.jpg,campana.jpg,luces.jpg
+pez.jpg,trompeta.jpg,delantal.jpg,hipopotamo.jpg
+lampara.JPG,tijera.jpg,enchufe.jpg,pelota.jpg
+plato.JPG,reno.jpg,pelo.jpg,pollo.gif
+castor.jpg,foca.jpg,peine.jpg,espejo.jpg
+helicoptero.jpg,tiburon.jpg,globo.jpg,pera.jpg

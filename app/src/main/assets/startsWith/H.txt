@@ -1,0 +1,10 @@
+mano.jpg,seis.png,cocodrilo.jpg,hiena.jpg
+empanada.png,hipopotamo.jpg,caballito_de_mar.jpg,plato.JPG
+limon.jpeg,helado.jpg,castor.jpg,goma.jpg
+gato.jpg,flauta.jpg,mariposa.jpg,helicoptero.jpg
+lechuga.jpg,hoja.jpg,aro.jpg,tigre.gif
+hada.jpg,mono.png,miel.jpg,vaca.jpg
+tenis.jpg,triangulo.jpg,tortuga.jpg,huevo.jpg
+serpiente.jpg,bolos.jpg,zorro.jpg,hamster.jpg
+halcon.jpg,estrella_de_mar.png,galleta.jpg,sopa.jpg
+serrucho.jpg,hormiga.jpg,sol.gif,duende.gif

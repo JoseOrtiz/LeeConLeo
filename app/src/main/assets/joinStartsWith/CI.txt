@@ -1,0 +1,2 @@
+molino.jpg,cisne.jpg,caballito_de_mar.jpg,pera.jpg
+hada.jpg,circulo.png,pavo.jpg,nido.jpg

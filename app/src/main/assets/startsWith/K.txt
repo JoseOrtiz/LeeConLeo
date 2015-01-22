@@ -1,0 +1,4 @@
+kiwi.jpg,perro.jpg,boca.png,medusa.jpg
+dinosaurio.jpg,ketchup.jpg,pie.png,camioneta.jpg
+buho.gif,sillon.jpg,koala.jpg,mariposa.jpg
+pincel.jpg,karate.png,hada.jpg,cabra.jpg

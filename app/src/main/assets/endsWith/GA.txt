@@ -1,0 +1,3 @@
+hiena.jpg,hormiga.jpg,volcan.jpg,mani.png
+leche.jpg,tortuga.jpg,olla.jpg,tren.jpg
+platano.jpg,lechuga.jpg,rana.jpg,panda.jpg

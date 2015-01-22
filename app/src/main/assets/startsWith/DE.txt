@@ -1,0 +1,4 @@
+esqueleto.jpg,trompeta.jpg,kiwi.jpg,desierto.jpg
+laberinto.jpg,uva.jpg,dedo.png,buho.gif
+tierra.gif,delantal.jpg,molino.jpg,isla.jpg
+sushi.jpg,piano.png,sapo.jpg,delfin.jpg

@@ -1,0 +1,14 @@
+lapiz.jpg,delantal.jpg,pelota.jpg,impresora.png
+lana.jpg,gato.jpg,cabra.jpg,pina.jpg
+estrella_de_mar.png,dado.png,piedra.jpg,platano.jpg
+diamante.jpg,regalo.jpg,calcetin.jpg,locomotora.jpg
+palmera.png,loro.jpg,golf.jpg,doce.jpg
+pollo.gif,jarra.JPG,uva.jpg,abeja.jpeg
+pizarra.jpg,universo.jpg,lobo.jpg,mesa.jpg
+olla.jpg,sopa.jpg,lentejuela.jpg,tierra.gif
+caballo.png,lena.jpg,bruja.jpg,lampara.JPG
+tijera.jpg,esqueleto.jpg,papel.jpg,pierna.jpg
+damasco.jpg,cebra.jpg,pala.jpeg,dinosaurio.jpg
+pera.jpg,anillo.jpg,papa.jpg,volcan.jpg
+pantalon.jpg,santa.png,mano.jpg,guitarra.jpg
+orangutan.jpg,jaula.jpg,helado.jpg,enfermera.jpg

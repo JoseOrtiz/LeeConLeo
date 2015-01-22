@@ -1,0 +1,5 @@
+televisor.jpg,cupido.png,palta.jpg,mesa.jpg
+flor.gif,casa.jpg,jirafa.jpg,piano.png
+mariposa.jpg,furgon.jpg,galleta.jpg,santa.png
+pirata.jpg,oido.png,arbol.jpg,frambuesa.jpg
+girasol.png,biblia.jpg,medusa.jpg,barco.jpg

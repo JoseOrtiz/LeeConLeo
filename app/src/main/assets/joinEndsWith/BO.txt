@@ -1,0 +1,2 @@
+seis.png,lupa.jpg,carta.jpg,globo.jpg
+locomotora.jpg,mochila.jpg,tomate.jpg,lobo.jpg

@@ -1,0 +1,2 @@
+delantal.jpg,payaso.jpg,uva.jpg,huevo.jpg
+flamenco.jpg,pavo.jpg,guante.jpg,gallina.jpg

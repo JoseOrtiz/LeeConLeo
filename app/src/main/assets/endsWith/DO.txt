@@ -1,0 +1,9 @@
+mariposa.jpg,dado.png,corbata.jpg,sapo.jpg
+oido.png,universo.jpg,ojo.jpg,hormiga.jpg
+vestido.jpg,uva.jpg,triangulo.jpg,ventana.jpg
+motocicleta.jpg,pollo.gif,helado.jpg,jabon.jpg
+cueva.jpg,cerdo.jpg,pan.jpg,jirafa.jpg
+violeta.jpg,jarra.JPG,hada.jpg,rosado.jpg
+pina.jpg,paraguas.jpg,nido.jpg,lechuga.jpg
+loro.jpg,platano.jpg,cupido.png,elefante.jpg
+karate.png,dedo.png,surfeo.jpg,biblioteca.JPG

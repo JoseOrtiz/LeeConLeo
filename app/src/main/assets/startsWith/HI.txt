@@ -1,0 +1,2 @@
+nariz.jpg,hipopotamo.jpg,laberinto.jpg,guante.jpg
+oso.jpg,hiena.jpg,mapa.jpg,desierto.jpg

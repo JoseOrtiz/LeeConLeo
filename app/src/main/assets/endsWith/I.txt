@@ -1,4 +1,5 @@
-kiwi.jpg,uno.gif,auto.png,palta.jpg
-maiz.jpg,pala.jpeg,sushi.jpg,pez.jpg
-pipa.png,uva.jpg,mani.png,casa.jpg
-colibri.jpg,empanada.png,mano.jpg,azucar.jpg
+brocoli.jpg,uva.jpg,pollo.gif,abeja.jpeg
+libro.jpg,sushi.jpg,silla.jpg,santa.png
+mani.png,gato.jpg,calcetin.jpg,bicicleta.jpg
+violin.jpg,regalo.jpg,desierto.jpg,colibri.jpg
+papel.jpg,coco.jpg,flor.gif,kiwi.jpg

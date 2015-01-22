@@ -1,0 +1,3 @@
+serrucho.jpg,camaleon.jpg,payaso.jpg,vaca.jpg
+vaso.jpg,molino.jpg,medusa.jpg,bambu.jpg
+tarantula.jpg,vaquero.jpg,burro.jpg,puercoespin.jpg

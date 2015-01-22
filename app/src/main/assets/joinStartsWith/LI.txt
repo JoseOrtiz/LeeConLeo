@@ -1,2 +1,2 @@
-oido.png,ala.png,libro.jpg,esqueleto.jpg
-limon.jpeg,puente.jpg,oro.jpg,pie.png
+libro.jpg,girasol.png,tarantula.jpg,vela.jpg
+saxofon.jpg,nido.jpg,limon.jpeg,fantasma.jpg

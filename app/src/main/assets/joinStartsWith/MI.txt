@@ -1,3 +1,3 @@
-azucar.jpg,jaula.jpg,mimo.jpg,silla.jpg
-casa.jpg,panda.jpg,iglu.jpg,miel.jpg
-microfono.jpg,esqueleto.jpg,piedra.jpg,asiento.jpg
+oso.jpg,sandia.jpg,hoja.jpg,microfono.jpg
+jamon.jpg,mimo.jpg,torta.jpg,bicicleta.jpg
+nave.jpg,miel.jpg,dos.jpg,camion.jpg

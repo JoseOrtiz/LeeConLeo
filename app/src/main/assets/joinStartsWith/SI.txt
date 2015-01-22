@@ -1,0 +1,4 @@
+escorpion.png,avion.png,siete.jpg,tambor.jpg
+payaso.jpg,pelota.jpg,zorro.jpg,silla.jpg
+plato.JPG,joyas.jpg,burro.jpg,sillon.jpg
+sirena.jpg,zanahoria.jpg,rey.gif,iglu.jpg

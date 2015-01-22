@@ -1,0 +1,5 @@
+oveja.gif,camaleon.jpg,toro.jpg,helado.jpg
+mapa.jpg,azucar.jpg,esqueleto.jpg,tomate.jpg
+tortuga.jpg,lobo.jpg,frambuesa.jpg,pelo.jpg
+patin.jpg,perro.jpg,topo.jpg,puercoespin.jpg
+secador.jpg,lentejuela.jpg,torta.jpg,uniforme.jpg

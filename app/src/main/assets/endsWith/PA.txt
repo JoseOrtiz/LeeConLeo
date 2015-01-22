@@ -1,4 +1,5 @@
-astronauta.jpg,mapa.jpg,oro.jpg,elefante.jpg
-maiz.jpg,pirata.jpg,pez.jpg,papa.jpg
-iglu.jpg,uniforme.jpg,lupa.jpg,puerta.png
-pipa.png,platano.jpg,arbol.jpg,luna.jpg
+foca.jpg,tenis.jpg,pipa.png,libro.jpg
+sopa.jpg,duende.gif,pantalon.jpg,vaquero.jpg
+regalo.jpg,papel.jpg,doce.jpg,lupa.jpg
+vaca.jpg,surfeo.jpg,estrella_de_mar.png,mapa.jpg
+ventilador.jpg,papa.jpg,huevo.jpg,plancha.jpg

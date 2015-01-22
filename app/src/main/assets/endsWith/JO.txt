@@ -1,0 +1,4 @@
+agua.jpeg,mani.png,cueva.jpg,espejo.jpg
+ketchup.jpg,iglesia.gif,foca.jpg,ojo.jpg
+zorro.jpg,surfeo.jpg,bruja.jpg,conejo.jpg
+flamenco.jpg,astronauta.jpg,cangrejo.jpg,cafe.jpg

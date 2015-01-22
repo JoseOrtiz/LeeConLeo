@@ -1,0 +1,13 @@
+violin.jpg,falda.jpg,sirena.jpg,insectos.jpg
+golf.jpg,plato.JPG,fuego.png,oro.jpg
+iglu.jpg,serrucho.jpg,brocoli.jpg,fantasma.jpg
+espantapajaros.jpg,palta.jpg,pelota.jpg,flor.gif
+frutilla.png,marioneta.jpg,ornitorrinco.jpg,cabra.jpg
+asiento.jpg,furgon.jpg,halcon.jpg,una.jpg
+indio.png,abeja.jpeg,foca.jpg,volcan.jpg
+flauta.jpg,escoba.jpg,verduras.jpg,elefante.jpg
+flamenco.jpg,globo.jpg,rosado.jpg,buho.gif
+leche.jpg,santa.png,mano.jpg,faro.jpg
+puma.jpg,uniforme.jpg,perfume.jpg,futbol.jpg
+billete.jpg,corazon.png,flecha.png,basurero.jpg
+desierto.jpg,frambuesa.jpg,mono.png,sapo.jpg

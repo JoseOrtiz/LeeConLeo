@@ -1,0 +1,2 @@
+flor.gif,dado.png,faro.jpg,hormiga.jpg
+jarra.JPG,oido.png,tambor.jpg,hoja.jpg

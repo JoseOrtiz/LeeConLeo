@@ -1,0 +1,3 @@
+delfin.jpg,cerdo.jpg,murcielago.jpg,bambu.jpg
+cebra.jpg,jarra.JPG,agua.jpeg,leche.jpg
+helado.jpg,pipa.png,oso.jpg,celular.jpg

@@ -1,0 +1,8 @@
+hormiga.jpg,burro.jpg,regalo.jpg,sillon.jpg
+bombero.jpeg,lana.jpg,reno.jpg,mani.png
+triangulo.jpg,girasol.png,rey.gif,guitarra.jpg
+delfin.jpg,rosado.jpg,sopa.jpg,elefante.jpg
+serpiente.jpg,novios.jpg,miel.jpg,rinoceronte.jpg
+durazno.jpg,reina.jpg,jabon.jpg,sol.gif
+raton.png,cabra.jpg,melon.jpg,flauta.jpg
+rana.jpg,anillo.jpg,boxeo.jpg,violeta.jpg

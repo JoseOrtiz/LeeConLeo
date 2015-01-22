@@ -1,0 +1,7 @@
+estrella_de_mar.png,jabon.jpg,helado.jpg,biblia.jpg
+bicicleta.jpg,pato.jpg,jamon.jpg,volcan.jpg
+dado.png,beisbol.jpeg,mapa.jpg,jarra.JPG
+pirata.jpg,muneca.jpg,jaguar.jpg,boca.png
+helicoptero.jpg,tarantula.jpg,bote.jpg,joyas.jpg
+espejo.jpg,lago.jpg,loro.jpg,jaula.jpg
+ketchup.jpg,marioneta.jpg,locomotora.jpg,jirafa.jpg

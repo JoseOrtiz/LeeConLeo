@@ -1,6 +1,6 @@
-unicornio.jpg,panda.jpg,piscina.jpg,mapa.jpg
-mago.png,leon.jpg,universo.jpg,pino.jpg
-uno.gif,microfono.jpg,avion.png,lapiz.jpg
-platano.jpg,una.jpg,pina.jpg,lechuga.jpg
-jaula.jpg,sol.gif,uniforme.jpg,muneca.jpg
-sal.jpg,lagartija.jpg,uva.jpg,pavo.jpg
+locomotora.jpg,unicornio.jpg,mesa.jpg,vaca.jpg
+nube.jpg,uniforme.jpg,insectos.jpg,tarantula.jpg
+limon.jpeg,rana.jpg,uva.jpg,delantal.jpg
+cama.jpg,telescopio.jpg,globo.jpg,universo.jpg
+patin.jpg,astronauta.jpg,una.jpg,laberinto.jpg
+sopa.jpg,pincel.jpg,paloma.jpg,uno.gif

@@ -1,0 +1,2 @@
+camaleon.jpg,helado.jpg,palmera.png,lobo.jpg
+gusano.jpg,helicoptero.jpg,bote.jpg,boxeo.jpg

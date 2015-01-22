@@ -1,0 +1,7 @@
+flamenco.jpg,leon.jpg,lapiz.jpg,camaleon.jpg
+genio.png,violin.jpg,coco.jpg,momia.gif
+bote.jpg,disco.jpg,lechuga.jpg,asiento.jpg
+bicicleta.jpg,arco.jpg,kiwi.jpg,fuego.png
+barco.jpg,dalmata.JPG,calcetin.jpg,ojo.jpg
+hiena.jpg,estrella.jpg,torta.jpg,ornitorrinco.jpg
+loro.jpg,globo.jpg,damasco.jpg,piedra.jpg

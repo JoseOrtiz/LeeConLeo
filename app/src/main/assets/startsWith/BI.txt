@@ -1,0 +1,4 @@
+cocodrilo.jpg,jaula.jpg,ketchup.jpg,billete.jpg
+casa.jpg,pavo.jpg,labios.jpg,biblioteca.JPG
+bicicleta.jpg,martillo.jpg,lupa.jpg,pajaro.png
+rosado.jpg,plato.JPG,biblia.jpg,goma.jpg

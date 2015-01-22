@@ -1,0 +1,5 @@
+barco.jpg,arbol.jpg,motocicleta.jpg,vaso.jpg
+arco.jpg,olla.jpg,basurero.jpg,nariz.jpg
+ballena.jpg,corazon.png,flor.gif,dedo.png
+bambu.jpg,zanahoria.jpg,momia.gif,payaso.jpg
+hormiga.jpg,pato.jpg,baloncesto.jpg,lena.jpg

@@ -1,6 +1,6 @@
-lechuga.jpg,raton.png,televisor.jpg,uva.jpg
-lentejuela.jpg,peine.jpg,sushi.jpg,plato.JPG
-mesa.jpg,mani.png,puercoespin.jpg,leon.jpg
-papel.jpg,leña.jpg,empanada.png,coco.jpg
-pelo.jpg,orangutan.jpg,abeja.jpeg,leche.jpg
-palta.jpg,lente.png,paraguas.jpg,pera.jpg
+pajaro.png,leon.jpg,biblioteca.JPG,pirata.jpg
+kiwi.jpg,colibri.jpg,locomotora.jpg,lente.png
+castor.jpg,lena.jpg,doce.jpg,bambu.jpg
+momia.gif,corbata.jpg,lentejuela.jpg,jaguar.jpg
+hamster.jpg,guante.jpg,lechuga.jpg,salvavidas.jpg
+pollo.gif,leche.jpg,estrella.jpg,helado.jpg

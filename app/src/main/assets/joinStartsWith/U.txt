@@ -1,6 +1,6 @@
-labios.jpg,unicornio.jpg,esqueleto.jpg,pulpo.jpg
-piano.png,ornitorrinco.jpg,casa.jpg,universo.jpg
-pajaro.png,uva.jpg,boca.png,indio.png
-leche.jpg,kiwi.jpg,uniforme.jpg,locomotora.jpg
-escoba.jpg,uno.gif,elefante.jpg,erizo.jpg
-una.jpg,manzana.jpg,pirata.jpg,plancha.jpg
+universo.jpg,pluma.jpg,pina.jpg,hormiga.jpg
+uniforme.jpg,flauta.jpg,estrella.jpg,bruja.jpg
+uva.jpg,lagartija.jpg,cabra.jpg,falda.jpg
+uno.gif,lente.png,camaleon.jpg,jarra.JPG
+lentejuela.jpg,disco.jpg,unicornio.jpg,raton.png
+telefono.jpg,lana.jpg,rosado.jpg,una.jpg

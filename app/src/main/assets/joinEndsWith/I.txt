@@ -1,4 +1,5 @@
-pera.jpg,estrella_de_mar.png,lupa.jpg,mani.png
-universo.jpg,panda.jpg,raton.png,colibri.jpg
-sushi.jpg,loro.jpg,una.jpg,arco.jpg
-papa.jpg,lobo.jpg,kiwi.jpg,pelo.jpg
+brocoli.jpg,piano.png,lente.png,cocodrilo.jpg
+kiwi.jpg,corazon.png,diamante.jpg,camello.jpg
+puma.jpg,koala.jpg,colibri.jpg,momia.gif
+cangrejo.jpg,sushi.jpg,impresora.png,lentejuela.jpg
+fantasma.jpg,mani.png,carta.jpg,caballito_de_mar.jpg

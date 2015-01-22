@@ -1,7 +1,7 @@
-perro.jpg,pluma.jpg,mimo.jpg,piano.png
-molino.jpg,payaso.jpg,pez.jpg,mono.png
-pera.jpg,motocicleta.jpg,pipa.png,pulpo.jpg
-leche.jpg,puma.jpg,elefante.jpg,pelota.jpg
-lana.jpg,iglesia.gif,peine.jpg,pina.jpg
-pelo.jpg,momia.gif,iglu.jpg,pan.jpg
-coco.jpg,perfume.jpg,agua.jpeg,pinguino.jpg
+pelo.jpg,siete.jpg,caballito_de_mar.jpg,taza.jpg
+tenedor.jpg,celular.jpg,perfume.jpg,pan.jpg
+frambuesa.jpg,ornitorrinco.jpg,seis.png,peine.jpg
+microfono.jpg,caballo.png,asiento.jpg,pera.jpg
+pez.jpg,lana.jpg,anillo.jpg,carta.jpg
+delfin.jpg,caracol.jpg,perro.jpg,voleibol.gif
+pirata.jpg,kiwi.jpg,ducha.jpg,pelota.jpg

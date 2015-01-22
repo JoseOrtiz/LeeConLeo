@@ -1,0 +1,4 @@
+pez.jpg,mimo.jpg,circulo.png,rinoceronte.jpg
+nariz.jpg,tucan.jpg,pie.png,miel.jpg
+lapiz.jpg,motocicleta.jpg,oro.jpg,pajaro.png
+iman.jpg,maiz.jpg,flauta.jpg,arbol.jpg

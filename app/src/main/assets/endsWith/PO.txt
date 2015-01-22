@@ -1,1 +1,3 @@
-pulpo.jpg,mani.png,auto.png,pelo.jpg
+boca.png,novios.jpg,pulpo.jpg,dado.png
+calabaza.jpg,asiento.jpg,espejo.jpg,sapo.jpg
+topo.jpg,biblioteca.JPG,damasco.jpg,joyas.jpg

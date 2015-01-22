@@ -1,0 +1,3 @@
+oveja.gif,faro.jpg,seis.png,trompeta.jpg
+hoja.jpg,guitarra.jpg,falda.jpg,auto.png
+gato.jpg,luces.jpg,papa.jpg,fantasma.jpg

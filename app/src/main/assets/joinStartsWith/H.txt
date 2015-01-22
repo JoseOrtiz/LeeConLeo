@@ -1,0 +1,10 @@
+hipopotamo.jpg,lobo.jpg,diamante.jpg,violeta.jpg
+azucar.jpg,toro.jpg,gota.png,hormiga.jpg
+jamon.jpg,dulce.jpg,hamster.jpg,kiwi.jpg
+calcetin.jpg,sillon.jpg,sapo.jpg,hiena.jpg
+santa.png,koala.jpg,halcon.jpg,pantalon.jpg
+helado.jpg,anillo.jpg,gorila.JPG,pan.jpg
+volcan.jpg,mago.png,pirata.jpg,hoja.jpg
+huevo.jpg,ventana.jpg,guitarra.jpg,piscina.jpg
+oveja.gif,manzana.jpg,verduras.jpg,helicoptero.jpg
+carta.jpg,vaquero.jpg,hada.jpg,jarra.JPG

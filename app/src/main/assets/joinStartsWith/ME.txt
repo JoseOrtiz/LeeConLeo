@@ -1,3 +1,3 @@
-murcielago.jpg,paloma.jpg,melon.jpg,mapa.jpg
-pala.jpeg,medusa.jpg,panda.jpg,plancha.jpg
-mesa.jpg,pinguino.jpg,gato.jpg,abeja.jpeg
+melon.jpg,futbol.jpg,nube.jpg,saxofon.jpg
+empanada.png,kiwi.jpg,girasol.png,mesa.jpg
+locomotora.jpg,pulpo.jpg,cupido.png,medusa.jpg

@@ -17,6 +17,7 @@ import android.widget.TextView;
 import com.github.amlcurran.showcaseview.OnShowcaseEventListener;
 import com.github.amlcurran.showcaseview.ShowcaseView;
 
+import cl.cc6909.ebm.leeconleo.BackgroundSound;
 import cl.cc6909.ebm.leeconleo.FeedbackDialog;
 import cl.cc6909.ebm.leeconleo.R;
 import cl.cc6909.ebm.leeconleo.ShowcaseManager;
@@ -116,8 +117,8 @@ public class JoinActivity extends Activity {
             if (m.isPlaying()) {
                 m.stop();
                 m.release();
-                m = new MediaPlayer();
             }
+            m = new MediaPlayer();
 
             AssetFileDescriptor descriptor = getAssets().openFd("picturesSpeech/"+name+".mp3");
             m.setDataSource(descriptor.getFileDescriptor(), descriptor.getStartOffset(), descriptor.getLength());
@@ -125,7 +126,7 @@ public class JoinActivity extends Activity {
 
             m.prepare();
             m.setVolume(1f, 1f);
-            m.setLooping(true);
+            m.setLooping(false);
             m.start();
         } catch (Exception e) {
             e.printStackTrace();

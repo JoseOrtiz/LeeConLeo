@@ -1,4 +1,11 @@
-microfono.jpg,pipa.png,casa.jpg,pelo.jpg
-pino.jpg,pollo.gif,elefante.jpg,escorpion.jpg
-peine.jpg,martillo.jpg,paraguas.jpg,universo.jpg
-unicornio.jpg,pluma.jpg,anillo.jpg,oro.jpg
+cocodrilo.jpg,astronauta.jpg,cueva.jpg,nariz.jpg
+puerta.png,caballo.png,disco.jpg,lapiz.jpg
+faro.jpg,nido.jpg,regalo.jpg,tambor.jpg
+pulpo.jpg,martillo.jpg,momia.gif,lagartija.jpg
+tenedor.jpg,telescopio.jpg,bote.jpg,camello.jpg
+natacion.jpg,circulo.png,duende.gif,auto.png
+gallina.jpg,calabaza.jpg,puma.jpg,anillo.jpg
+mano.jpg,triangulo.jpg,ornitorrinco.jpg,foca.jpg
+pelo.jpg,vela.jpg,caballito_de_mar.jpg,cama.jpg
+conejo.jpg,pinguino.jpg,espejo.jpg,gallo.jpg
+pollo.gif,oro.jpg,sirena.jpg,orangutan.jpg

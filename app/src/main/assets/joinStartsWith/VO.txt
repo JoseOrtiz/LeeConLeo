@@ -1,0 +1,2 @@
+azucar.jpg,volcan.jpg,flauta.jpg,pina.jpg
+voleibol.gif,libro.jpg,pelo.jpg,tierra.gif

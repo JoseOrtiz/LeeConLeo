@@ -1,0 +1,17 @@
+loro.jpg,baloncesto.jpg,delfin.jpg,martillo.jpg
+libro.jpg,lagartija.jpg,momia.gif,oso.jpg
+helicoptero.jpg,abeja.jpeg,guitarra.jpg,impresora.png
+genio.png,pipa.png,desierto.jpg,basurero.jpg
+caracol.jpg,pulpo.jpg,vaquero.jpg,volcan.jpg
+tucan.jpg,vaso.jpg,calabaza.jpg,toro.jpg
+pajaro.png,tierra.gif,bolos.jpg,bambu.jpg
+ornitorrinco.jpg,manzana.jpg,circulo.png,oro.jpg
+mapa.jpg,pizarra.jpg,canguro.jpg,labios.jpg
+saltamontes.jpg,salvavidas.jpg,zorro.jpg,bicicleta.jpg
+cisne.jpg,faro.jpg,koala.jpg,bruja.jpg
+ocho.jpg,laberinto.jpg,burro.jpg,jaula.jpg
+asiento.jpg,violeta.jpg,sombrero.jpeg,gusano.jpg
+perro.jpg,hamster.jpg,rana.jpg,sopa.jpg
+molino.jpg,microfono.jpg,bombero.jpeg,reina.jpg
+cerdo.jpg,boxeo.jpg,semaforo.jpg,nave.jpg
+ventana.jpg,aro.jpg,dedo.png,rey.gif

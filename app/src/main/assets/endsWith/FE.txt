@@ -1,0 +1,2 @@
+caracol.jpg,cebra.jpg,enchufe.jpg,mago.png
+sushi.jpg,gato.jpg,cafe.jpg,caballo.png

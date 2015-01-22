@@ -1,0 +1,2 @@
+jirafa.jpg,burro.jpg,nieve.jpg,semaforo.jpg
+nave.jpg,joyas.jpg,payaso.jpg,tractor.gif

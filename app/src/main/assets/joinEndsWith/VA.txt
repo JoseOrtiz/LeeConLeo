@@ -1,0 +1,2 @@
+lena.jpg,frambuesa.jpg,uva.jpg,semaforo.jpg
+cueva.jpg,colibri.jpg,bote.jpg,diente.jpg

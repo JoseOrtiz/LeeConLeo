@@ -1,3 +1,6 @@
-marioneta.jpg,locomotora.jpg,arco.jpg,puma.jpg
-payaso.jpg,elefante.jpg,orangutan.jpg,paloma.jpg
-flauta.jpg,pluma.jpg,mago.png,empanada.png
+helado.jpg,iglesia.gif,karate.png,puma.jpg
+vaca.jpg,pierna.jpg,piedra.jpg,cama.jpg
+mani.png,esqueleto.jpg,sushi.jpg,goma.jpg
+biblioteca.JPG,isla.jpg,pluma.jpg,azul.jpg
+zorro.jpg,fantasma.jpg,serrucho.jpg,laberinto.jpg
+paloma.jpg,jabon.jpg,medusa.jpg,telefono.jpg

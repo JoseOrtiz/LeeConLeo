@@ -1,0 +1,4 @@
+lapiz.jpg,globo.jpg,topo.jpg,bruja.jpg
+guitarra.jpg,pez.jpg,telescopio.jpg,estrella_de_mar.png
+basurero.jpg,volcan.jpg,maiz.jpg,escoba.jpg
+corazon.png,nariz.jpg,calcetin.jpg,piedra.jpg

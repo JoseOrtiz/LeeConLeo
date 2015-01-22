@@ -1,0 +1,1 @@
+rosado.jpg,beisbol.jpeg,faro.jpg,flor.gif

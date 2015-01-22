@@ -1,0 +1,5 @@
+pala.jpeg,ocho.jpg,burro.jpg,tenis.jpg
+arco.jpg,tenedor.jpg,goma.jpg,saxofon.jpg
+laberinto.jpg,telefono.jpg,bicicleta.jpg,ducha.jpg
+uniforme.jpg,pato.jpg,telescopio.jpg,lampara.JPG
+patin.jpg,mani.png,televisor.jpg,baloncesto.jpg

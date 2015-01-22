@@ -1,0 +1,7 @@
+pizza.png,ornitorrinco.jpg,pantalon.jpg,lago.jpg
+tarantula.jpg,damasco.jpg,gallo.jpg,cisne.jpg
+cerdo.jpg,halcon.jpg,arco.jpg,pierna.jpg
+barco.jpg,melon.jpg,helicoptero.jpg,huevo.jpg
+helado.jpg,bolos.jpg,coco.jpg,papel.jpg
+naranja.jpg,disco.jpg,luna.jpg,beisbol.jpeg
+flamenco.jpg,iglesia.gif,tambor.jpg,desierto.jpg

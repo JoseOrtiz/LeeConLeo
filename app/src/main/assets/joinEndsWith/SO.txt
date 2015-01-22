@@ -1,0 +1,4 @@
+gallina.jpg,universo.jpg,jaula.jpg,leche.jpg
+luna.jpg,loro.jpg,cebra.jpg,vaso.jpg
+payaso.jpg,mono.png,pelota.jpg,lampara.JPG
+enchufe.jpg,calabaza.jpg,oso.jpg,tucan.jpg

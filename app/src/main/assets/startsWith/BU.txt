@@ -1,0 +1,2 @@
+buho.gif,semaforo.jpg,volcan.jpg,submarino.jpg
+gorila.JPG,burro.jpg,pirata.jpg,lentejuela.jpg

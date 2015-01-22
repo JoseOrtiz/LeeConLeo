@@ -3,14 +3,10 @@ package cl.cc6909.ebm.leeconleo.letters;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.AssetManager;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 
 import java.io.IOException;
-import java.util.Arrays;
 
 import cl.cc6909.ebm.leeconleo.R;
 
@@ -147,6 +143,10 @@ public class LetterActivity extends Activity {
         Intent intent = new Intent(this, WrapActivity.class);
         intent.putExtra("letter",letter);
         startActivity(intent);
+    }
+
+    public void onBackButtonClicked(View view){
+        finish();
     }
 
 }

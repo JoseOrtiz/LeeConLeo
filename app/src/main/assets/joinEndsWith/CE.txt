@@ -1,0 +1,2 @@
+jamon.jpg,foca.jpg,baloncesto.jpg,dulce.jpg
+dinosaurio.jpg,pulpo.jpg,doce.jpg,barco.jpg

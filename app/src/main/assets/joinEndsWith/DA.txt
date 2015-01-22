@@ -1,0 +1,4 @@
+tambor.jpg,falda.jpg,perro.jpg,nariz.jpg
+seis.png,bambu.jpg,panda.jpg,flauta.jpg
+hada.jpg,arbol.jpg,lena.jpg,paloma.jpg
+empanada.png,momia.gif,pato.jpg,futbol.jpg

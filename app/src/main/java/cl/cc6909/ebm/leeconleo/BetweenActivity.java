@@ -6,6 +6,7 @@ import android.content.ClipDescription;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.AnimationDrawable;
+import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -25,6 +26,7 @@ public class BetweenActivity extends Activity implements View.OnClickListener {
     private Runnable r;
     private ImageView ball;
     private int answer, correctAnswers;
+    private MediaPlayer mDrag, mDrop;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,6 +100,8 @@ public class BetweenActivity extends Activity implements View.OnClickListener {
         findViewById(R.id.right_surface).setOnDragListener(new MyDragListener());
         ShowcaseView showcaseView = new ShowcaseManager(this).showcaseBetween();
         showcaseView.setOnShowcaseEventListener(new BetweenShowcaseListener());
+        mDrag =MediaPlayer.create(this,R.raw.drag);
+        mDrop =MediaPlayer.create(this,R.raw.drop);
     }
 
     private void setDragTip(int dragAnswer) {
@@ -130,6 +134,7 @@ public class BetweenActivity extends Activity implements View.OnClickListener {
 
             switch (event.getAction()) {
                 case DragEvent.ACTION_DRAG_STARTED:
+                    dragSound();
                     break;
 
                 case DragEvent.ACTION_DRAG_ENTERED:
@@ -190,11 +195,42 @@ public class BetweenActivity extends Activity implements View.OnClickListener {
                         view.setVisibility(View.VISIBLE);
                     }
                     v.setBackgroundColor(Color.TRANSPARENT);
+                    dropSound();
 
                 default:
                     break;
             }
             return true;
+        }
+    }
+    private void dragSound() {
+        try {
+            if (mDrag.isPlaying()) {
+                mDrag.stop();
+                mDrag.release();
+                mDrag = MediaPlayer.create(this, R.raw.drag);
+            }
+
+            mDrag.setVolume(100, 100);
+            mDrag.setLooping(false);
+            mDrag.start();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    private void dropSound() {
+        try {
+            if (mDrop.isPlaying()) {
+                mDrop.stop();
+                mDrop.release();
+                mDrop =MediaPlayer.create(this,R.raw.drop);
+            }
+
+            mDrop.setVolume(100, 100);
+            mDrop.setLooping(false);
+            mDrop.start();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
     private void changeDragAnswer(View view){

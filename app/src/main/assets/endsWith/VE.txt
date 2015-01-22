@@ -1,0 +1,2 @@
+palta.jpg,oveja.gif,nieve.jpg,jamon.jpg
+pan.jpg,tierra.gif,nave.jpg,boca.png

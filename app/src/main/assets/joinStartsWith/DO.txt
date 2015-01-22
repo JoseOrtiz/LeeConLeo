@@ -1,0 +1,3 @@
+doce.jpg,ballena.jpg,pan.jpg,pluma.jpg
+barco.jpg,gallina.jpg,libro.jpg,dos.jpg
+domino.png,unicornio.jpg,plancha.jpg,gallo.jpg

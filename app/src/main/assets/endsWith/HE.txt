@@ -1,0 +1,1 @@
+helado.jpg,leche.jpg,vaquero.jpg,piedra.jpg

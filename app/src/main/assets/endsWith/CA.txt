@@ -1,0 +1,5 @@
+casa.jpg,barco.jpg,enchufe.jpg,biblioteca.JPG
+impresora.png,saltamontes.jpg,boca.png,espejo.jpg
+foca.jpg,basurero.jpg,guitarra.jpg,pulpo.jpg
+burro.jpg,cangrejo.jpg,pirata.jpg,vaca.jpg
+gallina.jpg,gato.jpg,muneca.jpg,siete.jpg

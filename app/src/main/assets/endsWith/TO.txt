@@ -1,0 +1,9 @@
+nave.jpg,escorpion.png,vaquero.jpg,gato.jpg
+insectos.jpg,brocoli.jpg,golf.jpg,asiento.jpg
+baloncesto.jpg,orangutan.jpg,oso.jpg,cupido.png
+rana.jpg,domino.png,labios.jpg,pato.jpg
+sapo.jpg,pierna.jpg,gallo.jpg,laberinto.jpg
+pavo.jpg,esqueleto.jpg,pollo.gif,libro.jpg
+auto.png,corazon.png,leon.jpg,pino.jpg
+cueva.jpg,paloma.jpg,impresora.png,desierto.jpg
+palta.jpg,plato.JPG,pizarra.jpg,karate.png

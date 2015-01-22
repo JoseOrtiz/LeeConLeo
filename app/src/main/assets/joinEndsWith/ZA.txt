@@ -1,0 +1,3 @@
+enchufe.jpg,bolos.jpg,taza.jpg,oveja.gif
+nave.jpg,pizarra.jpg,cueva.jpg,calabaza.jpg
+cisne.jpg,puerta.png,pizza.png,televisor.jpg

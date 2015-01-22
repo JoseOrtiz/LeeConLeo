@@ -1,0 +1,2 @@
+uva.jpg,ornitorrinco.jpg,caracol.jpg,brocoli.jpg
+vaquero.jpg,patin.jpg,pelo.jpg,cueva.jpg

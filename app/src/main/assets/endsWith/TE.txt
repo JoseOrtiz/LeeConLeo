@@ -1,0 +1,13 @@
+puerta.png,cueva.jpg,nido.jpg,guante.jpg
+zanahoria.jpg,rinoceronte.jpg,orangutan.jpg,murcielago.jpg
+koala.jpg,pajaro.png,elefante.jpg,frambuesa.jpg
+diamante.jpg,pez.jpg,sirena.jpg,ocho.jpg
+dalmata.JPG,flauta.jpg,pollo.gif,lente.png
+tomate.jpg,hiena.jpg,ballena.jpg,ventana.jpg
+regalo.jpg,sandia.jpg,asiento.jpg,puente.jpg
+diente.jpg,baloncesto.jpg,iglu.jpg,boxeo.jpg
+nave.jpg,biblioteca.JPG,billete.jpg,enchufe.jpg
+karate.png,cabra.jpg,hada.jpg,vaso.jpg
+azul.jpg,pipa.png,siete.jpg,tractor.gif
+trompeta.jpg,bote.jpg,libro.jpg,reno.jpg
+palmera.png,cocodrilo.jpg,pizza.png,serpiente.jpg

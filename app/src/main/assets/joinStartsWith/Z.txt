@@ -1,0 +1,2 @@
+cueva.jpg,zanahoria.jpg,pato.jpg,santa.png
+brocoli.jpg,medusa.jpg,lampara.JPG,zorro.jpg

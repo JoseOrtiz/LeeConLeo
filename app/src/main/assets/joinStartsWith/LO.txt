@@ -1,3 +1,3 @@
-palmera.png,lobo.jpg,marioneta.jpg,orangutan.jpg
-loro.jpg,miel.jpg,ojo.jpg,insectos.jpg
-ornitorrinco.jpg,abeja.jpeg,locomotora.jpg,isla.jpg
+submarino.jpg,jabon.jpg,locomotora.jpg,secador.jpg
+sopa.jpg,cocodrilo.jpg,lobo.jpg,trompeta.jpg
+mesa.jpg,nariz.jpg,jarra.JPG,loro.jpg

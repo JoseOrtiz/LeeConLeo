@@ -1,0 +1,3 @@
+uva.jpg,nave.jpg,damasco.jpg,peine.jpg
+oso.jpg,dado.png,toro.jpg,kiwi.jpg
+dalmata.JPG,buho.gif,campana.jpg,pala.jpeg

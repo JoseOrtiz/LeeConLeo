@@ -1,0 +1,14 @@
+genio.png,hiena.jpg,naranja.jpg,nube.jpg
+azul.jpg,basurero.jpg,biblioteca.JPG,goma.jpg
+gota.png,tambor.jpg,cisne.jpg,surfeo.jpg
+fantasma.jpg,guante.jpg,huevo.jpg,cupido.png
+paraguas.jpg,golf.jpg,oro.jpg,pina.jpg
+estrella_de_mar.png,martillo.jpg,gusano.jpg,tomate.jpg
+bombero.jpeg,regalo.jpg,hormiga.jpg,galleta.jpg
+celular.jpg,cabra.jpg,gallina.jpg,olla.jpg
+guitarra.jpg,zanahoria.jpg,calcetin.jpg,tucan.jpg
+sillon.jpg,telefono.jpg,globo.jpg,submarino.jpg
+universo.jpg,gallo.jpg,jirafa.jpg,topo.jpg
+vela.jpg,delantal.jpg,girasol.png,rana.jpg
+pantalon.jpg,dado.png,disco.jpg,gato.jpg
+gorila.JPG,novios.jpg,camaleon.jpg,mago.png

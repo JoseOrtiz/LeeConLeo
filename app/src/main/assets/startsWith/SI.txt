@@ -1,0 +1,4 @@
+frambuesa.jpg,siete.jpg,universo.jpg,pizza.png
+serrucho.jpg,flauta.jpg,hamster.jpg,sirena.jpg
+sillon.jpg,tierra.gif,boxeo.jpg,arbol.jpg
+gorila.JPG,maiz.jpg,silla.jpg,pato.jpg

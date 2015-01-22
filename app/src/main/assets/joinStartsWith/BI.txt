@@ -1,0 +1,4 @@
+torta.jpg,trompeta.jpg,bicicleta.jpg,foca.jpg
+biblioteca.JPG,cebra.jpg,colibri.jpg,muneca.jpg
+biblia.jpg,beisbol.jpeg,conejo.jpg,sol.gif
+billete.jpg,espantapajaros.jpg,aro.jpg,reina.jpg

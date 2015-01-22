@@ -1,1 +1,1 @@
-azucar.jpg,platano.jpg,raton.png,iglu.jpg
+semaforo.jpg,iglu.jpg,elefante.jpg,vaquero.jpg

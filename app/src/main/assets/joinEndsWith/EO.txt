@@ -1,0 +1,2 @@
+mani.png,natacion.jpg,surfeo.jpg,pirata.jpg
+murcielago.jpg,boxeo.jpg,cisne.jpg,rana.jpg

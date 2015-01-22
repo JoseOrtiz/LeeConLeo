@@ -1,0 +1,14 @@
+televisor.jpg,abeja.jpeg,perfume.jpg,avion.png
+elefante.jpg,tambor.jpg,dedo.png,guante.jpg
+casa.jpg,secador.jpg,golf.jpg,pluma.jpg
+flor.gif,medusa.jpg,tucan.jpg,dulce.jpg
+piano.png,tenedor.jpg,auto.png,cangrejo.jpg
+aro.jpg,ventilador.jpg,corbata.jpg,guitarra.jpg
+azucar.jpg,azul.jpg,cabra.jpg,silla.jpg
+insectos.jpg,celular.jpg,microfono.jpg,plato.JPG
+hiena.jpg,hamster.jpg,brocoli.jpg,flamenco.jpg
+tortuga.jpg,mapa.jpg,castor.jpg,uva.jpg
+tierra.gif,labios.jpg,estrella_de_mar.png,ala.png
+circulo.png,corazon.png,tractor.gif,sol.gif
+caballito_de_mar.jpg,puma.jpg,peine.jpg,fantasma.jpg
+jaguar.jpg,escoba.jpg,raton.png,paloma.jpg

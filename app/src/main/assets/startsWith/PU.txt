@@ -1,5 +1,5 @@
-kiwi.jpg,paraguas.jpg,pulpo.jpg,pajaro.png
-libro.jpg,pinguino.jpg,puercoespin.jpg,coco.jpg
-insectos.jpg,puma.jpg,raton.png,olla.jpg
-enfermera.jpg,pala.jpeg,patin.jpg,puerta.png
-azucar.jpg,iglu.jpg,puente.jpg,pelota.jpg
+puercoespin.jpg,dulce.jpg,mono.png,sapo.jpg
+pincel.jpg,casa.jpg,puerta.png,corbata.jpg
+carta.jpg,pulpo.jpg,novios.jpg,cocodrilo.jpg
+rosado.jpg,tierra.gif,puma.jpg,silla.jpg
+caballo.png,jirafa.jpg,puente.jpg,cebra.jpg

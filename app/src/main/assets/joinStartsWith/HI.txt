@@ -1,0 +1,2 @@
+hamster.jpg,hipopotamo.jpg,lagartija.jpg,miel.jpg
+marioneta.jpg,erizo.jpg,mono.png,hiena.jpg

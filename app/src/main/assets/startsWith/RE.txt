@@ -1,0 +1,4 @@
+oro.jpg,rey.gif,puercoespin.jpg,gallina.jpg
+globo.jpg,reina.jpg,pincel.jpg,asiento.jpg
+iglu.jpg,pelo.jpg,oso.jpg,regalo.jpg
+iglesia.gif,buho.gif,beisbol.jpeg,reno.jpg

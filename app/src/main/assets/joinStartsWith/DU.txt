@@ -1,0 +1,4 @@
+hiena.jpg,durazno.jpg,limon.jpeg,pluma.jpg
+hada.jpg,desierto.jpg,impresora.png,ducha.jpg
+sol.gif,calabaza.jpg,guante.jpg,dulce.jpg
+perro.jpg,cerdo.jpg,duende.gif,girasol.png

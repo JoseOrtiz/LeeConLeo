@@ -1,0 +1,7 @@
+auto.png,torta.jpg,impresora.png,jamon.jpg
+murcielago.jpg,escoba.jpg,saltamontes.jpg,jarra.JPG
+pan.jpg,huevo.jpg,lente.png,jirafa.jpg
+tractor.gif,carta.jpg,jaula.jpg,voleibol.gif
+koala.jpg,billete.jpg,joyas.jpg,lampara.JPG
+domino.png,espantapajaros.jpg,jaguar.jpg,microfono.jpg
+coco.jpg,uno.gif,jabon.jpg,dulce.jpg

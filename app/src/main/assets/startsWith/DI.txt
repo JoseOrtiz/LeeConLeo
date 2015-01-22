@@ -1,0 +1,4 @@
+diamante.jpg,panda.jpg,nube.jpg,palmera.png
+melon.jpg,dalmata.JPG,dinosaurio.jpg,sol.gif
+disco.jpg,furgon.jpg,triangulo.jpg,labios.jpg
+jamon.jpg,diente.jpg,pinguino.jpg,zorro.jpg

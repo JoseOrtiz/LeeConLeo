@@ -1,0 +1,15 @@
+piano.png,oveja.gif,bote.jpg,tierra.gif
+perro.jpg,pinguino.jpg,enfermera.jpg,libro.jpg
+delantal.jpg,palmera.png,domino.png,pie.png
+hipopotamo.jpg,torta.jpg,sol.gif,uno.gif
+nube.jpg,mono.png,loro.jpg,foca.jpg
+vaca.jpg,pino.jpg,rinoceronte.jpg,orangutan.jpg
+microfono.jpg,nido.jpg,hamster.jpg,tenis.jpg
+silla.jpg,durazno.jpg,aro.jpg,colibri.jpg
+jarra.JPG,puerta.png,gusano.jpg,fantasma.jpg
+ala.png,naranja.jpg,reno.jpg,serpiente.jpg
+molino.jpg,gato.jpg,frutilla.png,mago.png
+mano.jpg,buho.gif,canguro.jpg,tiburon.jpg
+lentejuela.jpg,platano.jpg,impresora.png,elefante.jpg
+zorro.jpg,toro.jpg,flor.gif,submarino.jpg
+rana.jpg,secador.jpg,tomate.jpg,telefono.jpg

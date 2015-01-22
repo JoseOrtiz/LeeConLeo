@@ -1,0 +1,5 @@
+sapo.jpg,ventana.jpg,estrella_de_mar.png,pino.jpg
+manzana.jpg,golf.jpg,marioneta.jpg,ventilador.jpg
+unicornio.jpg,joyas.jpg,vela.jpg,bote.jpg
+regalo.jpg,lampara.JPG,vestido.jpg,piedra.jpg
+verduras.jpg,lechuga.jpg,payaso.jpg,motocicleta.jpg

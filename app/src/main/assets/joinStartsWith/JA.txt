@@ -1,0 +1,5 @@
+pipa.png,tijera.jpg,pera.jpg,jaguar.jpg
+palta.jpg,paloma.jpg,jabon.jpg,biblia.jpg
+jarra.JPG,indio.png,orangutan.jpg,celular.jpg
+erizo.jpg,pollo.gif,escorpion.png,jamon.jpg
+jaula.jpg,cocodrilo.jpg,vaso.jpg,sandia.jpg

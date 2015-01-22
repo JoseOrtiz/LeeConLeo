@@ -1,0 +1,4 @@
+goma.jpg,orangutan.jpg,saxofon.jpg,bicicleta.jpg
+durazno.jpg,pierna.jpg,gorila.JPG,galleta.jpg
+melon.jpg,golf.jpg,ojo.jpg,cupido.png
+tomate.jpg,puerta.png,gota.png,uva.jpg

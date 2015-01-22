@@ -1,0 +1,2 @@
+volcan.jpg,indio.png,taza.jpg,billete.jpg
+silla.jpg,doce.jpg,voleibol.gif,empanada.png

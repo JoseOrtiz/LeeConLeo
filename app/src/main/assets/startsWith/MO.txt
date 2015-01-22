@@ -1,5 +1,5 @@
-puerta.png,mochila.jpg,papa.jpg,labios.jpg
-momia.gif,espantapajaros.jpg,libro.jpg,sushi.jpg
-molino.jpg,oso.jpg,lagartija.jpg,insectos.jpg
-lente.png,raton.png,motocicleta.jpg,arco.jpg
-marioneta.jpg,universo.jpg,pincel.jpg,mono.png
+plato.JPG,sombrero.jpeg,motocicleta.jpg,tigre.gif
+ketchup.jpg,molino.jpg,bombero.jpeg,santa.png
+zanahoria.jpg,oido.png,mochila.jpg,uva.jpg
+mago.png,momia.gif,pipa.png,universo.jpg
+toro.jpg,iglu.jpg,mono.png,boca.png

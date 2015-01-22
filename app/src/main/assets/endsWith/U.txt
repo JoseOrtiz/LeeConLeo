@@ -1,2 +1,2 @@
-oveja.gif,palmera.png,iman.jpg,bambu.jpg
-mochila.jpg,una.jpg,boca.png,iglu.jpg
+caballo.png,arco.jpg,tierra.gif,bambu.jpg
+mono.png,hamster.jpg,zorro.jpg,iglu.jpg

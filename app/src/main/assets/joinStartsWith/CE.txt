@@ -1,0 +1,3 @@
+buho.gif,regalo.jpg,cebra.jpg,pulpo.jpg
+vaquero.jpg,paloma.jpg,celular.jpg,lobo.jpg
+pera.jpg,cerdo.jpg,flauta.jpg,violeta.jpg

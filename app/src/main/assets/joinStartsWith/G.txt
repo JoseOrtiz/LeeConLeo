@@ -1,0 +1,14 @@
+uva.jpg,estrella.jpg,leche.jpg,girasol.png
+anillo.jpg,puercoespin.jpg,televisor.jpg,gato.jpg
+sirena.jpg,espantapajaros.jpg,gallina.jpg,falda.jpg
+oso.jpg,saxofon.jpg,guitarra.jpg,dulce.jpg
+frutilla.png,flecha.png,gorila.JPG,ventana.jpg
+faro.jpg,globo.jpg,furgon.jpg,una.jpg
+sol.gif,vaca.jpg,bambu.jpg,genio.png
+goma.jpg,desierto.jpg,tierra.gif,hoja.jpg
+galleta.jpg,mochila.jpg,karate.png,luces.jpg
+mano.jpg,zorro.jpg,rinoceronte.jpg,gota.png
+escoba.jpg,golf.jpg,sombrero.jpeg,tortuga.jpg
+boca.png,halcon.jpg,triangulo.jpg,gusano.jpg
+impresora.png,pirata.jpg,helicoptero.jpg,guante.jpg
+koala.jpg,pez.jpg,gallo.jpg,payaso.jpg

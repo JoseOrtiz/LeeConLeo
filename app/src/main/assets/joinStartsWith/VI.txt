@@ -1,0 +1,2 @@
+rana.jpg,muneca.jpg,torta.jpg,violeta.jpg
+nariz.jpg,maiz.jpg,caballo.png,violin.jpg

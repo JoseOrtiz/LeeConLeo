@@ -1,3 +1,3 @@
-colibri.jpg,indio.png,nariz.jpg,luces.jpg
-bambu.jpg,luna.jpg,silla.jpg,pizza.png
-lupa.jpg,pelo.jpg,pirata.jpg,papel.jpg
+koala.jpg,orangutan.jpg,aro.jpg,lupa.jpg
+luces.jpg,iman.jpg,mapa.jpg,surfeo.jpg
+gato.jpg,paloma.jpg,luna.jpg,isla.jpg

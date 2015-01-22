@@ -1,0 +1,5 @@
+trompeta.jpg,cama.jpg,motocicleta.jpg,iglesia.gif
+reina.jpg,zanahoria.jpg,camello.jpg,flamenco.jpg
+estrella.jpg,universo.jpg,biblia.jpg,gota.png
+momia.gif,reno.jpg,gorila.JPG,dos.jpg
+empanada.png,cisne.jpg,hiena.jpg,sandia.jpg

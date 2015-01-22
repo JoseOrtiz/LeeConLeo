@@ -1,0 +1,4 @@
+jabon.jpg,tijera.jpg,dedo.png,azul.jpg
+barco.jpg,auto.png,genio.png,tierra.gif
+pino.jpg,locomotora.jpg,tortuga.jpg,tiburon.jpg
+tigre.gif,flecha.png,voleibol.gif,volcan.jpg

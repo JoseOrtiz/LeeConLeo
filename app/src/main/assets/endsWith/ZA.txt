@@ -1,0 +1,3 @@
+bambu.jpg,frutilla.png,calabaza.jpg,bombero.jpeg
+huevo.jpg,tenis.jpg,taza.jpg,cocodrilo.jpg
+iglesia.gif,pizza.png,carta.jpg,hoja.jpg

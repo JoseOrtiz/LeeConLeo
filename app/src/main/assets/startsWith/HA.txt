@@ -1,0 +1,3 @@
+hada.jpg,tijera.jpg,erizo.jpg,serrucho.jpg
+nube.jpg,campana.jpg,regalo.jpg,halcon.jpg
+nariz.jpg,astronauta.jpg,hamster.jpg,pavo.jpg

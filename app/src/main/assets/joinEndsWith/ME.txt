@@ -1,2 +1,2 @@
-uniforme.jpg,libro.jpg,iman.jpg,pinguino.jpg
-jaula.jpg,nariz.jpg,perfume.jpg,insectos.jpg
+conejo.jpg,impresora.png,uniforme.jpg,unicornio.jpg
+sal.jpg,pluma.jpg,perfume.jpg,biblia.jpg

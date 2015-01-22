@@ -1,0 +1,5 @@
+patin.jpg,cabra.jpg,barco.jpg,delfin.jpg
+bambu.jpg,erizo.jpg,girasol.png,gusano.jpg
+sol.gif,ballena.jpg,raton.png,laberinto.jpg
+bote.jpg,secador.jpg,basurero.jpg,labios.jpg
+rana.jpg,esqueleto.jpg,baloncesto.jpg,toro.jpg

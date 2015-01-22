@@ -1,0 +1,2 @@
+sirena.jpg,coco.jpg,caracol.jpg,violeta.jpg
+cisne.jpg,camello.jpg,violin.jpg,ojo.jpg

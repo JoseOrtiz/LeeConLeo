@@ -1,0 +1,5 @@
+azul.jpg,toro.jpg,uno.gif,kiwi.jpg
+koala.jpg,topo.jpg,novios.jpg,damasco.jpg
+bruja.jpg,lago.jpg,tomate.jpg,golf.jpg
+tortuga.jpg,lupa.jpg,sal.jpg,palmera.png
+pantalon.jpg,tigre.gif,corbata.jpg,torta.jpg

@@ -1,0 +1,6 @@
+rana.jpg,conejo.jpg,tortuga.jpg,pulpo.jpg
+pizza.png,trompeta.jpg,pelo.jpg,cocodrilo.jpg
+cebra.jpg,elefante.jpg,serrucho.jpg,corbata.jpg
+dinosaurio.jpg,billete.jpg,ocho.jpg,corazon.png
+bolos.jpg,sandia.jpg,colibri.jpg,dalmata.JPG
+coco.jpg,reno.jpg,doce.jpg,orangutan.jpg

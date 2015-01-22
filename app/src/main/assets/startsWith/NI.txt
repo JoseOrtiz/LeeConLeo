@@ -1,0 +1,2 @@
+nieve.jpg,ventana.jpg,reno.jpg,ballena.jpg
+tenis.jpg,delfin.jpg,duende.gif,nido.jpg

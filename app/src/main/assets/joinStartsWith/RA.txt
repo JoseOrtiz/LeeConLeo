@@ -1,0 +1,2 @@
+jabon.jpg,raton.png,nido.jpg,tucan.jpg
+sillon.jpg,enfermera.jpg,rana.jpg,caballito_de_mar.jpg

@@ -1,6 +1,6 @@
-bambu.jpg,lechuga.jpg,medusa.jpg,locomotora.jpg
-colibri.jpg,maiz.jpg,lentejuela.jpg,payaso.jpg
-muneca.jpg,espejo.jpg,molino.jpg,leña.jpg
-ocho.jpg,leon.jpg,astronauta.jpg,mapa.jpg
-lagartija.jpg,pulpo.jpg,leche.jpg,pez.jpg
-marioneta.jpg,melon.jpg,ojo.jpg,lente.png
+canguro.jpg,lente.png,indio.png,lagartija.jpg
+lentejuela.jpg,tractor.gif,flauta.jpg,halcon.jpg
+leche.jpg,tambor.jpg,elefante.jpg,ventilador.jpg
+coco.jpg,vaquero.jpg,patin.jpg,lechuga.jpg
+lena.jpg,miel.jpg,vaca.jpg,taza.jpg
+hiena.jpg,anillo.jpg,leon.jpg,dinosaurio.jpg

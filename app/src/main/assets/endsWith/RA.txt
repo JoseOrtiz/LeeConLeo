@@ -1,0 +1,14 @@
+muneca.jpg,lampara.JPG,gusano.jpg,tucan.jpg
+karate.png,piedra.jpg,pajaro.png,enchufe.jpg
+luna.jpg,camioneta.jpg,pizarra.jpg,murcielago.jpg
+caracol.jpg,tierra.gif,vaca.jpg,sirena.jpg
+oro.jpg,palmera.png,dalmata.JPG,pincel.jpg
+uno.gif,impresora.png,arco.jpg,voleibol.gif
+pinguino.jpg,momia.gif,pera.jpg,reno.jpg
+ornitorrinco.jpg,cabra.jpg,goma.jpg,helicoptero.jpg
+locomotora.jpg,huevo.jpg,semaforo.jpg,pulpo.jpg
+ventilador.jpg,guitarra.jpg,telefono.jpg,toro.jpg
+luces.jpg,enfermera.jpg,nave.jpg,pato.jpg
+isla.jpg,vaso.jpg,jarra.JPG,baloncesto.jpg
+furgon.jpg,escoba.jpg,cebra.jpg,lechuga.jpg
+puente.jpg,tractor.gif,tijera.jpg,asiento.jpg

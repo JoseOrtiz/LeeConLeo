@@ -1,0 +1,8 @@
+rinoceronte.jpg,volcan.jpg,mono.png,vaca.jpg
+lechuga.jpg,hamster.jpg,calcetin.jpg,rosado.jpg
+naranja.jpg,foca.jpg,reno.jpg,pipa.png
+rey.gif,pino.jpg,murcielago.jpg,peine.jpg
+diamante.jpg,luna.jpg,cangrejo.jpg,raton.png
+frutilla.png,tierra.gif,rana.jpg,doce.jpg
+fantasma.jpg,reina.jpg,paraguas.jpg,pluma.jpg
+leon.jpg,espejo.jpg,regalo.jpg,pan.jpg

@@ -1,0 +1,4 @@
+payaso.jpg,iglesia.gif,elefante.jpg,mani.png
+universo.jpg,serpiente.jpg,zanahoria.jpg,tijera.jpg
+silla.jpg,pavo.jpg,oso.jpg,pollo.gif
+jaguar.jpg,vaquero.jpg,vaso.jpg,bicicleta.jpg

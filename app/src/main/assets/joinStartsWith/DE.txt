@@ -1,0 +1,4 @@
+caballo.png,burro.jpg,dedo.png,tarantula.jpg
+delantal.jpg,bote.jpg,nieve.jpg,tomate.jpg
+jirafa.jpg,desierto.jpg,submarino.jpg,tenedor.jpg
+delfin.jpg,lagartija.jpg,papel.jpg,iman.jpg

@@ -1,0 +1,4 @@
+mapa.jpg,tenedor.jpg,duende.gif,volcan.jpg
+carta.jpg,frutilla.png,ducha.jpg,azul.jpg
+caracol.jpg,dalmata.JPG,caballito_de_mar.jpg,durazno.jpg
+damasco.jpg,nariz.jpg,taza.jpg,dulce.jpg

@@ -1,0 +1,3 @@
+hipopotamo.jpg,joyas.jpg,sopa.jpg,plancha.jpg
+ducha.jpg,oveja.gif,falda.jpg,pierna.jpg
+halcon.jpg,serrucho.jpg,brocoli.jpg,flecha.png

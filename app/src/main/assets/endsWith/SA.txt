@@ -1,0 +1,5 @@
+tierra.gif,casa.jpg,sombrero.jpeg,sapo.jpg
+escorpion.png,diente.jpg,mesa.jpg,hada.jpg
+delfin.jpg,dos.jpg,mariposa.jpg,peine.jpg
+nido.jpg,fantasma.jpg,avion.png,medusa.jpg
+frambuesa.jpg,castor.jpg,isla.jpg,lana.jpg

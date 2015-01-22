@@ -1,0 +1,5 @@
+oveja.gif,telescopio.jpg,vaquero.jpg,casa.jpg
+pluma.jpg,iman.jpg,ornitorrinco.jpg,dinosaurio.jpg
+colibri.jpg,unicornio.jpg,televisor.jpg,hormiga.jpg
+flauta.jpg,celular.jpg,pollo.gif,indio.png
+serpiente.jpg,enfermera.jpg,buho.gif,genio.png

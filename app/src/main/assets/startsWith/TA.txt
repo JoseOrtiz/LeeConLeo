@@ -1,0 +1,3 @@
+beisbol.jpeg,lana.jpg,loro.jpg,tambor.jpg
+gallo.jpg,estrella.jpg,dalmata.JPG,taza.jpg
+tren.jpg,tarantula.jpg,falda.jpg,circulo.png

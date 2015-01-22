@@ -1,1 +1,1 @@
-espantapajaros.jpg,pollo.gif,uva.jpg,empanada.png
+pollo.gif,uva.jpg,cama.jpg,ojo.jpg

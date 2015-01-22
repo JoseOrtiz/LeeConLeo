@@ -1,0 +1,4 @@
+uniforme.jpg,jarra.JPG,tractor.gif,hada.jpg
+panda.jpg,platano.jpg,lentejuela.jpg,dado.png
+falda.jpg,sillon.jpg,cisne.jpg,pino.jpg
+empanada.png,piscina.jpg,jaula.jpg,disco.jpg

@@ -1,0 +1,4 @@
+uno.gif,lago.jpg,salvavidas.jpg,pino.jpg
+siete.jpg,murcielago.jpg,barco.jpg,pato.jpg
+mago.png,boxeo.jpg,pie.png,tortuga.jpg
+melon.jpg,rinoceronte.jpg,fuego.png,leche.jpg

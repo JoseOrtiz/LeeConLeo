@@ -1,1 +1,2 @@
-mimo.jpg,leche.jpg,kiwi.jpg,puercoespin.jpg
+paraguas.jpg,ballena.jpg,hipopotamo.jpg,natacion.jpg
+disco.jpg,ketchup.jpg,mimo.jpg,falda.jpg

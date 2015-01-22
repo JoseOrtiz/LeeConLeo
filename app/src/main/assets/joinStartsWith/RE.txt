@@ -1,0 +1,4 @@
+caracol.jpg,rey.gif,burro.jpg,puma.jpg
+boca.png,uniforme.jpg,reno.jpg,oveja.gif
+perro.jpg,regalo.jpg,desierto.jpg,biblia.jpg
+mimo.jpg,escoba.jpg,cebra.jpg,reina.jpg

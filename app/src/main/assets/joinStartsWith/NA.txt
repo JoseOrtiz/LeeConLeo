@@ -1,0 +1,4 @@
+peine.jpg,camello.jpg,insectos.jpg,naranja.jpg
+taza.jpg,nave.jpg,laberinto.jpg,mapa.jpg
+huevo.jpg,nariz.jpg,empanada.png,lente.png
+sapo.jpg,nube.jpg,natacion.jpg,impresora.png

@@ -156,16 +156,15 @@ public class RecognitionActivity extends Activity {
             if (m.isPlaying()) {
                 m.stop();
                 m.release();
-                m = new MediaPlayer();
             }
-
+            m = new MediaPlayer();
             AssetFileDescriptor descriptor = getAssets().openFd("picturesSpeech/"+view.getTag() +".mp3");
             m.setDataSource(descriptor.getFileDescriptor(), descriptor.getStartOffset(), descriptor.getLength());
             descriptor.close();
 
             m.prepare();
             m.setVolume(1f, 1f);
-            m.setLooping(true);
+            m.setLooping(false);
             m.start();
         } catch (Exception e) {
             e.printStackTrace();

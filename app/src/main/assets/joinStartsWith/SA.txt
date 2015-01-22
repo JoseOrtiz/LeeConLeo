@@ -1,0 +1,7 @@
+flauta.jpg,nube.jpg,sapo.jpg,pelo.jpg
+salvavidas.jpg,voleibol.gif,lupa.jpg,papa.jpg
+dinosaurio.jpg,estrella.jpg,sandia.jpg,barco.jpg
+labios.jpg,pina.jpg,platano.jpg,santa.png
+tijera.jpg,sal.jpg,fantasma.jpg,serrucho.jpg
+vestido.jpg,oido.png,futbol.jpg,saltamontes.jpg
+gallo.jpg,impresora.png,sushi.jpg,saxofon.jpg

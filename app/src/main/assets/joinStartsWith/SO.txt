@@ -1,0 +1,3 @@
+sol.gif,espejo.jpg,saxofon.jpg,ornitorrinco.jpg
+sopa.jpg,lapiz.jpg,natacion.jpg,orangutan.jpg
+zanahoria.jpg,camaleon.jpg,sombrero.jpeg,topo.jpg

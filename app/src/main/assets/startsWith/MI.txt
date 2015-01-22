@@ -1,3 +1,3 @@
-pulpo.jpg,lana.jpg,lente.png,mimo.jpg
-lobo.jpg,estrella.jpg,miel.jpg,medusa.jpg
-microfono.jpg,perfume.jpg,martillo.jpg,pala.jpeg
+empanada.png,koala.jpg,microfono.jpg,doce.jpg
+miel.jpg,ducha.jpg,cocodrilo.jpg,bombero.jpeg
+mimo.jpg,pulpo.jpg,nube.jpg,frambuesa.jpg

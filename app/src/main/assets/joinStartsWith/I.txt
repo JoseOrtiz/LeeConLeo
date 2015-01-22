@@ -1,6 +1,7 @@
-papel.jpg,iglesia.gif,uniforme.jpg,sol.gif
-asiento.jpg,gato.jpg,isla.jpg,piano.png
-indio.png,paraguas.jpg,marioneta.jpg,piscina.jpg
-olla.jpg,oveja.gif,insectos.jpg,pavo.jpg
-peine.jpg,iglu.jpg,payaso.jpg,auto.png
-iman.jpg,luna.jpg,maiz.jpg,espejo.jpg
+iman.jpg,tren.jpg,nave.jpg,cueva.jpg
+calabaza.jpg,iglesia.gif,tomate.jpg,burro.jpg
+insectos.jpg,violeta.jpg,triangulo.jpg,joyas.jpg
+isla.jpg,tierra.gif,tiburon.jpg,beisbol.jpeg
+boxeo.jpg,impresora.png,flauta.jpg,semaforo.jpg
+lupa.jpg,flecha.png,iglu.jpg,melon.jpg
+indio.png,pincel.jpg,palmera.png,mani.png

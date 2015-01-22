@@ -1,0 +1,5 @@
+elefante.jpg,boca.png,nariz.jpg,pulpo.jpg
+boxeo.jpg,universo.jpg,uniforme.jpg,baloncesto.jpg
+auto.png,molino.jpg,bolos.jpg,genio.png
+helado.jpg,uva.jpg,camioneta.jpg,bombero.jpeg
+motocicleta.jpg,agua.jpeg,abeja.jpeg,bote.jpg

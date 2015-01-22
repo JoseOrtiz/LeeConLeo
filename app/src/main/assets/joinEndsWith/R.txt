@@ -1,0 +1,14 @@
+pino.jpg,flauta.jpg,tenedor.jpg,cama.jpg
+estrella_de_mar.png,luces.jpg,impresora.png,topo.jpg
+papel.jpg,tambor.jpg,puerta.png,pincel.jpg
+jarra.JPG,astronauta.jpg,televisor.jpg,duende.gif
+escorpion.png,mago.png,jaula.jpg,azucar.jpg
+pantalon.jpg,novios.jpg,momia.gif,castor.jpg
+boxeo.jpg,secador.jpg,carta.jpg,pina.jpg
+leon.jpg,mariposa.jpg,dado.png,ventilador.jpg
+violeta.jpg,jaguar.jpg,zanahoria.jpg,vaso.jpg
+calcetin.jpg,sirena.jpg,cafe.jpg,caballito_de_mar.jpg
+galleta.jpg,faro.jpg,celular.jpg,cupido.png
+flecha.png,flor.gif,tijera.jpg,kiwi.jpg
+martillo.jpg,salvavidas.jpg,hamster.jpg,reno.jpg
+genio.png,fuego.png,tractor.gif,sandia.jpg

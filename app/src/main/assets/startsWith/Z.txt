@@ -1,0 +1,2 @@
+zanahoria.jpg,biblioteca.JPG,volcan.jpg,bicicleta.jpg
+mariposa.jpg,saltamontes.jpg,zorro.jpg,conejo.jpg

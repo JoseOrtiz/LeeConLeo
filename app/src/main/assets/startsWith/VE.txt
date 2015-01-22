@@ -1,0 +1,5 @@
+ventana.jpg,piano.png,globo.jpg,flor.gif
+cafe.jpg,diamante.jpg,verduras.jpg,murcielago.jpg
+libro.jpg,gusano.jpg,vestido.jpg,guitarra.jpg
+disco.jpg,ventilador.jpg,medusa.jpg,helado.jpg
+arbol.jpg,indio.png,vela.jpg,seis.png

@@ -1,1 +1,2 @@
-uva.jpg,pera.jpg,mimo.jpg,lente.png
+mimo.jpg,lupa.jpg,cafe.jpg,nido.jpg
+hipopotamo.jpg,gusano.jpg,plancha.jpg,boxeo.jpg

@@ -1,2 +1,2 @@
-mochila.jpg,murcielago.jpg,pavo.jpg,mani.png
-oido.png,casa.jpg,pantalon.jpg,muneca.jpg
+ducha.jpg,murcielago.jpg,perfume.jpg,pato.jpg
+muneca.jpg,dalmata.JPG,sirena.jpg,gota.png

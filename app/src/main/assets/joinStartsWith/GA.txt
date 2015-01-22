@@ -1,0 +1,4 @@
+piano.png,trompeta.jpg,gallina.jpg,lana.jpg
+genio.png,toro.jpg,gallo.jpg,furgon.jpg
+galleta.jpg,uniforme.jpg,vestido.jpg,corbata.jpg
+gato.jpg,cama.jpg,elefante.jpg,medusa.jpg

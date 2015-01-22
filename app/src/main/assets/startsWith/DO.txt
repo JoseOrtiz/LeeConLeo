@@ -1,0 +1,3 @@
+nave.jpg,ducha.jpg,domino.png,cama.jpg
+cueva.jpg,doce.jpg,luna.jpg,mariposa.jpg
+dos.jpg,flamenco.jpg,saxofon.jpg,seis.png

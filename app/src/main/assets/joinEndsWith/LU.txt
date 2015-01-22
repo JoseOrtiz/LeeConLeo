@@ -1,1 +1,1 @@
-iglu.jpg,sal.jpg,luna.jpg,plato.JPG
+uva.jpg,hipopotamo.jpg,iglu.jpg,ala.png

@@ -1,0 +1,13 @@
+cerdo.jpg,billete.jpg,arbol.jpg,indio.png
+joyas.jpg,celular.jpg,diamante.jpg,pincel.jpg
+insectos.jpg,siete.jpg,conejo.jpg,tenis.jpg
+hipopotamo.jpg,oro.jpg,circulo.png,guante.jpg
+tomate.jpg,mapa.jpg,uno.gif,mesa.jpg
+mochila.jpg,microfono.jpg,tijera.jpg,diente.jpg
+camioneta.jpg,elefante.jpg,dinosaurio.jpg,tiburon.jpg
+olla.jpg,disco.jpg,furgon.jpg,puente.jpg
+caballito_de_mar.jpg,gota.png,saltamontes.jpg,serpiente.jpg
+espejo.jpg,patin.jpg,karate.png,escoba.jpg
+bicicleta.jpg,calcetin.jpg,lente.png,sushi.jpg
+espantapajaros.jpg,colibri.jpg,rinoceronte.jpg,pala.jpeg
+bote.jpg,pan.jpg,universo.jpg,globo.jpg

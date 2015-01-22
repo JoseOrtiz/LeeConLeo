@@ -1,0 +1,9 @@
+salvavidas.jpg,isla.jpg,dado.png,gallo.jpg
+calcetin.jpg,torta.jpg,cupido.png,vaso.jpg
+regalo.jpg,bruja.jpg,buho.gif,nido.jpg
+oro.jpg,helado.jpg,nieve.jpg,sillon.jpg
+dedo.png,ornitorrinco.jpg,leche.jpg,zorro.jpg
+perfume.jpg,avion.png,molino.jpg,rosado.jpg
+enchufe.jpg,carta.jpg,cerdo.jpg,cangrejo.jpg
+tortuga.jpg,vestido.jpg,pino.jpg,campana.jpg
+tenis.jpg,pajaro.png,barco.jpg,oido.png

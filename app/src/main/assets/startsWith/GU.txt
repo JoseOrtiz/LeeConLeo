@@ -1,0 +1,3 @@
+gusano.jpg,flor.gif,foca.jpg,bolos.jpg
+jabon.jpg,guitarra.jpg,melon.jpg,peine.jpg
+saltamontes.jpg,guante.jpg,golf.jpg,pala.jpeg

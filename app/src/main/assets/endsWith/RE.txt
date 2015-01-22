@@ -1,0 +1,1 @@
+silla.jpg,barco.jpg,zanahoria.jpg,tigre.gif

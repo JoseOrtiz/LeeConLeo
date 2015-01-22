@@ -1,0 +1,14 @@
+libro.jpg,novios.jpg,diente.jpg,pez.jpg
+dos.jpg,flecha.png,celular.jpg,ketchup.jpg
+lobo.jpg,seis.png,frambuesa.jpg,raton.png
+cueva.jpg,sirena.jpg,canguro.jpg,tenis.jpg
+nave.jpg,castor.jpg,labios.jpg,diamante.jpg
+cisne.jpg,paraguas.jpg,pantalon.jpg,pincel.jpg
+bolos.jpg,regalo.jpg,caballito_de_mar.jpg,bruja.jpg
+tren.jpg,leon.jpg,salvavidas.jpg,iman.jpg
+indio.png,luces.jpg,vaca.jpg,martillo.jpg
+saltamontes.jpg,empanada.png,campana.jpg,doce.jpg
+espantapajaros.jpg,cupido.png,uno.gif,laberinto.jpg
+joyas.jpg,pie.png,auto.png,tenedor.jpg
+insectos.jpg,lente.png,sapo.jpg,papa.jpg
+boxeo.jpg,arco.jpg,papel.jpg,verduras.jpg

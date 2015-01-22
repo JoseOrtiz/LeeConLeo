@@ -1,0 +1,2 @@
+cafe.jpg,aro.jpg,raton.png,salvavidas.jpg
+jamon.jpg,violeta.jpg,colibri.jpg,rana.jpg

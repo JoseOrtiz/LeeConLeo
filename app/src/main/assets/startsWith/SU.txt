@@ -1,0 +1,3 @@
+surfeo.jpg,jamon.jpg,peine.jpg,hamster.jpg
+sushi.jpg,camello.jpg,delantal.jpg,kiwi.jpg
+lapiz.jpg,laberinto.jpg,orangutan.jpg,submarino.jpg

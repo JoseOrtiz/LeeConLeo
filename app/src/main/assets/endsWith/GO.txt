@@ -1,0 +1,4 @@
+empanada.png,hoja.jpg,lago.jpg,boca.png
+hormiga.jpg,verduras.jpg,murcielago.jpg,biblia.jpg
+sombrero.jpeg,mago.png,puente.jpg,elefante.jpg
+paraguas.jpg,caballo.png,hamster.jpg,fuego.png

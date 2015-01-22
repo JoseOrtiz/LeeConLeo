@@ -1,0 +1,2 @@
+rana.jpg,uno.gif,cisne.jpg,pajaro.png
+faro.jpg,santa.png,cangrejo.jpg,peine.jpg

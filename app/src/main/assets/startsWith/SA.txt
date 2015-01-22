@@ -1,0 +1,7 @@
+dado.png,falda.jpg,dalmata.JPG,saxofon.jpg
+ornitorrinco.jpg,salvavidas.jpg,lago.jpg,fuego.png
+basurero.jpg,paloma.jpg,saltamontes.jpg,camioneta.jpg
+loro.jpg,huevo.jpg,sal.jpg,caballo.png
+sapo.jpg,novios.jpg,mago.png,escorpion.png
+sandia.jpg,ketchup.jpg,martillo.jpg,oro.jpg
+pera.jpg,jirafa.jpg,oso.jpg,santa.png

@@ -1,0 +1,3 @@
+karate.png,gallo.jpg,foca.jpg,dalmata.JPG
+vaca.jpg,dado.png,flauta.jpg,palmera.png
+submarino.jpg,damasco.jpg,universo.jpg,marioneta.jpg

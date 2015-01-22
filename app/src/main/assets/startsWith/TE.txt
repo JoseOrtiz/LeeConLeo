@@ -1,0 +1,5 @@
+hiena.jpg,boca.png,telescopio.jpg,guante.jpg
+lago.jpg,luna.jpg,tenedor.jpg,unicornio.jpg
+astronauta.jpg,camello.jpg,tenis.jpg,reina.jpg
+televisor.jpg,piedra.jpg,uva.jpg,sandia.jpg
+leche.jpg,tigre.gif,telefono.jpg,novios.jpg

@@ -1,6 +1,7 @@
 package cl.cc6909.ebm.leeconleo;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Build;
 import android.os.Bundle;
@@ -44,6 +45,9 @@ public class PlatformActivity extends Activity implements View.OnClickListener{
         });
         ShowcaseView showcaseView = new ShowcaseManager(this).showcasePlatform();
         showcaseView.setOnShowcaseEventListener(new PlatformShowcaseListener());
+
+        Intent objIntent = new Intent(this, BackgroundSound.class);
+        startService(objIntent);
         mGLSurfaceView.pause();
     }
     @Override
@@ -61,6 +65,8 @@ public class PlatformActivity extends Activity implements View.OnClickListener{
     protected void onDestroy(){
         super.onDestroy();
         mGLSurfaceView.onDestroy();
+        Intent objIntent = new Intent(this, BackgroundSound.class);
+        stopService(objIntent);
     }
 
     @Override

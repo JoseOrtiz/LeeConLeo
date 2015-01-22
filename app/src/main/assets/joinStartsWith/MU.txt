@@ -1,2 +1,2 @@
-murcielago.jpg,universo.jpg,pirata.jpg,lente.png
-muneca.jpg,puente.jpg,indio.png,auto.png
+colibri.jpg,huevo.jpg,anillo.jpg,murcielago.jpg
+muneca.jpg,puerta.png,labios.jpg,lampara.JPG

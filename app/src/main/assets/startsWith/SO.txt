@@ -1,0 +1,3 @@
+camioneta.jpg,sopa.jpg,sapo.jpg,casa.jpg
+jirafa.jpg,sol.gif,marioneta.jpg,pala.jpeg
+manzana.jpg,payaso.jpg,bruja.jpg,sombrero.jpeg

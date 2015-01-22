@@ -1,0 +1,2 @@
+buho.gif,nave.jpg,oso.jpg,mesa.jpg
+espantapajaros.jpg,burro.jpg,ventana.jpg,zanahoria.jpg

@@ -1,4 +1,11 @@
-arbol.jpg,martillo.jpg,locomotora.jpg,limon.jpeg
-espejo.jpg,anillo.jpg,pez.jpg,esqueleto.jpg
-raton.png,pelo.jpg,pelota.jpg,pantalon.jpg
-pollo.gif,platano.jpg,molino.jpg,arco.jpg
+vaca.jpg,lampara.JPG,uno.gif,circulo.png
+pera.jpg,coco.jpg,camello.jpg,cisne.jpg
+indio.png,tren.jpg,impresora.png,martillo.jpg
+surfeo.jpg,triangulo.jpg,delfin.jpg,toro.jpg
+pollo.gif,flamenco.jpg,burro.jpg,naranja.jpg
+anillo.jpg,kiwi.jpg,mochila.jpg,lente.png
+luna.jpg,puente.jpg,regalo.jpg,sombrero.jpeg
+globo.jpg,pelo.jpg,agua.jpeg,hamster.jpg
+insectos.jpg,gallo.jpg,bambu.jpg,ducha.jpg
+pierna.jpg,cocodrilo.jpg,pala.jpeg,verduras.jpg
+guitarra.jpg,cupido.png,caballo.png,zorro.jpg

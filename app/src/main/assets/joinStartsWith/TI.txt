@@ -1,0 +1,4 @@
+jarra.JPG,tijera.jpg,estrella.jpg,frambuesa.jpg
+tierra.gif,camion.jpg,rosado.jpg,frutilla.png
+pinguino.jpg,tiburon.jpg,pie.png,gallo.jpg
+maiz.jpg,hada.jpg,tigre.gif,universo.jpg

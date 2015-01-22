@@ -1,0 +1,3 @@
+oveja.gif,impresora.png,vaca.jpg,pan.jpg
+vaquero.jpg,iglesia.gif,mimo.jpg,pie.png
+agua.jpeg,sopa.jpg,vaso.jpg,pina.jpg

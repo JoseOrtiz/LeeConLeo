@@ -1,6 +1,7 @@
-pollo.gif,nariz.jpg,iglesia.gif,libro.jpg
-momia.gif,flauta.jpg,loro.jpg,iglu.jpg
-aro.jpg,pelo.jpg,insectos.jpg,pincel.jpg
-puerta.png,indio.png,pulpo.jpg,palmera.png
-azucar.jpg,ala.png,perfume.jpg,iman.jpg
-pizarra.jpg,isla.jpg,pato.jpg,boca.png
+tucan.jpg,payaso.jpg,iman.jpg,golf.jpg
+uniforme.jpg,insectos.jpg,durazno.jpg,peine.jpg
+murcielago.jpg,iglesia.gif,torta.jpg,olla.jpg
+vaquero.jpg,plancha.jpg,televisor.jpg,impresora.png
+casa.jpg,auto.png,cama.jpg,indio.png
+isla.jpg,hormiga.jpg,conejo.jpg,espantapajaros.jpg
+iglu.jpg,maiz.jpg,surfeo.jpg,billete.jpg

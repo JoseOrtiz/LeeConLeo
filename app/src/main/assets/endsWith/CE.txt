@@ -1,0 +1,2 @@
+taza.jpg,vela.jpg,dulce.jpg,olla.jpg
+telescopio.jpg,uniforme.jpg,pajaro.png,doce.jpg

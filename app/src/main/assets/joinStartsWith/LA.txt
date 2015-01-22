@@ -1,7 +1,7 @@
-lapiz.jpg,uno.gif,conejo.jpg,palmera.png
-pizza.png,ojo.jpg,murcielago.jpg,lampara.JPG
-mono.png,laberinto.jpg,luna.jpg,olla.jpg
-lago.jpg,insectos.jpg,pie.png,pato.jpg
-pera.jpg,lentejuela.jpg,asiento.jpg,lagartija.jpg
-lana.jpg,escoba.jpg,esqueleto.jpg,pincel.jpg
-motocicleta.jpg,televisor.jpg,locomotora.jpg,labios.jpg
+delfin.jpg,lago.jpg,mono.png,joyas.jpg
+laberinto.jpg,dinosaurio.jpg,delantal.jpg,biblia.jpg
+galleta.jpg,sombrero.jpeg,labios.jpg,hiena.jpg
+colibri.jpg,oro.jpg,lana.jpg,sapo.jpg
+pato.jpg,insectos.jpg,palmera.png,lapiz.jpg
+serpiente.jpg,sal.jpg,payaso.jpg,lagartija.jpg
+lampara.JPG,estrella.jpg,peine.jpg,fantasma.jpg

@@ -1,0 +1,3 @@
+tomate.jpg,bruja.jpg,limon.jpeg,fantasma.jpg
+escorpion.png,jabon.jpg,loro.jpg,falda.jpg
+erizo.jpg,faro.jpg,patin.jpg,iglesia.gif

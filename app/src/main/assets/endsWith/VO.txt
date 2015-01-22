@@ -1,0 +1,2 @@
+pavo.jpg,sirena.jpg,pina.jpg,piedra.jpg
+huevo.jpg,plancha.jpg,martillo.jpg,saxofon.jpg

@@ -1,1 +1,1 @@
-unicornio.jpg,pollo.gif,murcielago.jpg,limon.jpeg
+caracol.jpg,pizarra.jpg,zanahoria.jpg,pollo.gif

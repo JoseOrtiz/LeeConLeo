@@ -1,2 +1,2 @@
-libro.jpg,leche.jpg,palmera.png,sal.jpg
-oveja.gif,limon.jpeg,uniforme.jpg,astronauta.jpg
+bicicleta.jpg,enchufe.jpg,libro.jpg,espantapajaros.jpg
+labios.jpg,limon.jpeg,bombero.jpeg,taza.jpg

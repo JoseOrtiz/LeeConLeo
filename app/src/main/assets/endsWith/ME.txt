@@ -1,2 +1,2 @@
-martillo.jpg,muneca.jpg,silla.jpg,perfume.jpg
-puerta.png,motocicleta.jpg,uno.gif,uniforme.jpg
+flecha.png,azul.jpg,uniforme.jpg,lago.jpg
+rey.gif,faro.jpg,camaleon.jpg,perfume.jpg

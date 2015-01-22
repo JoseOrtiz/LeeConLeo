@@ -1,0 +1,9 @@
+casa.jpg,toro.jpg,pato.jpg,taza.jpg
+hamster.jpg,tractor.gif,ojo.jpg,baloncesto.jpg
+caracol.jpg,plancha.jpg,plato.JPG,calabaza.jpg
+panda.jpg,asiento.jpg,ketchup.jpg,tijera.jpg
+mono.png,desierto.jpg,universo.jpg,dedo.png
+espejo.jpg,isla.jpg,laberinto.jpg,delfin.jpg
+mariposa.jpg,auto.png,violeta.jpg,verduras.jpg
+silla.jpg,avion.png,gato.jpg,iman.jpg
+esqueleto.jpg,kiwi.jpg,oido.png,tambor.jpg

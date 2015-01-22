@@ -1,0 +1,4 @@
+leon.jpg,ojo.jpg,koala.jpg,globo.jpg
+medusa.jpg,espejo.jpg,tambor.jpg,microfono.jpg
+tijera.jpg,conejo.jpg,ornitorrinco.jpg,bambu.jpg
+camello.jpg,estrella_de_mar.png,cangrejo.jpg,tortuga.jpg

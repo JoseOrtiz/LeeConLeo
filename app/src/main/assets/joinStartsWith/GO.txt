@@ -1,0 +1,4 @@
+colibri.jpg,carta.jpg,canguro.jpg,golf.jpg
+uno.gif,rosado.jpg,gorila.JPG,oro.jpg
+damasco.jpg,gota.png,nariz.jpg,flamenco.jpg
+cerdo.jpg,goma.jpg,hiena.jpg,siete.jpg

@@ -1,0 +1,5 @@
+genio.png,puma.jpg,serrucho.jpg,corazon.png
+leche.jpg,secador.jpg,diamante.jpg,pierna.jpg
+seis.png,hada.jpg,goma.jpg,pelo.jpg
+cafe.jpg,koala.jpg,anillo.jpg,serpiente.jpg
+semaforo.jpg,tarantula.jpg,elefante.jpg,jamon.jpg

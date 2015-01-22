@@ -1,0 +1,5 @@
+caballito_de_mar.jpg,bolos.jpg,karate.png,siete.jpg
+mimo.jpg,bombero.jpeg,asiento.jpg,rey.gif
+torta.jpg,vela.jpg,bote.jpg,rinoceronte.jpg
+salvavidas.jpg,boxeo.jpg,tucan.jpg,golf.jpg
+submarino.jpg,caracol.jpg,boca.png,perfume.jpg

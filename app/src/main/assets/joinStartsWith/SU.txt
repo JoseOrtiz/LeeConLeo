@@ -1,0 +1,3 @@
+nube.jpg,taza.jpg,surfeo.jpg,pinguino.jpg
+pirata.jpg,seis.png,submarino.jpg,miel.jpg
+cisne.jpg,lampara.JPG,impresora.png,sushi.jpg

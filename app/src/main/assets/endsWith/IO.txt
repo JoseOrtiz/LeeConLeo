@@ -1,0 +1,5 @@
+diamante.jpg,uno.gif,dinosaurio.jpg,elefante.jpg
+cama.jpg,unicornio.jpg,ketchup.jpg,gallo.jpg
+pipa.png,violin.jpg,espejo.jpg,indio.png
+hoja.jpg,furgon.jpg,genio.png,cangrejo.jpg
+azucar.jpg,mariposa.jpg,pirata.jpg,telescopio.jpg

@@ -1,0 +1,2 @@
+coco.jpg,lobo.jpg,puente.jpg,sirena.jpg
+globo.jpg,loro.jpg,jirafa.jpg,cueva.jpg

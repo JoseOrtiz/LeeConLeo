@@ -1,0 +1,4 @@
+foca.jpg,semaforo.jpg,mesa.jpg,karate.png
+paraguas.jpg,gota.png,oveja.gif,koala.jpg
+oso.jpg,saxofon.jpg,naranja.jpg,ketchup.jpg
+kiwi.jpg,canguro.jpg,uno.gif,espantapajaros.jpg

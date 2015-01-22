@@ -1,0 +1,1 @@
+silla.jpg,cafe.jpg,pizza.png,genio.png

@@ -1,0 +1,2 @@
+pirata.jpg,serpiente.jpg,hormiga.jpg,lechuga.jpg
+azul.jpg,hoja.jpg,raton.png,escoba.jpg

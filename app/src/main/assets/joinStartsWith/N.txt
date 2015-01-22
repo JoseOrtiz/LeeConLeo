@@ -1,0 +1,8 @@
+pie.png,natacion.jpg,payaso.jpg,saltamontes.jpg
+koala.jpg,lapiz.jpg,tenedor.jpg,naranja.jpg
+nube.jpg,helicoptero.jpg,vaquero.jpg,perro.jpg
+nido.jpg,iman.jpg,camioneta.jpg,camion.jpg
+laberinto.jpg,tucan.jpg,nave.jpg,enfermera.jpg
+patin.jpg,mono.png,novios.jpg,serrucho.jpg
+tortuga.jpg,marioneta.jpg,disco.jpg,nieve.jpg
+lago.jpg,nariz.jpg,luna.jpg,iglu.jpg

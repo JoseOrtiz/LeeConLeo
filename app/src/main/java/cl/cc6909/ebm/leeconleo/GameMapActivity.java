@@ -88,7 +88,6 @@ public class GameMapActivity extends Activity {
                     image.setLayoutParams(new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
                     image.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
                     aux.addView(image);
-                    Log.i("Iterar",l+" "+i);
                 }
                 parent.addView(aux);
 
@@ -133,7 +132,6 @@ public class GameMapActivity extends Activity {
                     });
                     image.setTag(l);
                     aux.addView(image);
-                    Log.i("Iterar",l+" "+i);
                 }
                 parent.addView(aux);
             }

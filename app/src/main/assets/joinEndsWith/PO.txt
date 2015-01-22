@@ -1,1 +1,3 @@
-pulpo.jpg,casa.jpg,asiento.jpg,lobo.jpg
+abeja.jpeg,panda.jpg,pizza.png,pulpo.jpg
+oido.png,nave.jpg,ventana.jpg,sapo.jpg
+torta.jpg,topo.jpg,ojo.jpg,enchufe.jpg

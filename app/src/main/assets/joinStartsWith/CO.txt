@@ -1,0 +1,6 @@
+tarantula.jpg,lapiz.jpg,goma.jpg,cocodrilo.jpg
+buho.gif,arbol.jpg,saxofon.jpg,colibri.jpg
+leche.jpg,lupa.jpg,loro.jpg,conejo.jpg
+unicornio.jpg,piedra.jpg,coco.jpg,molino.jpg
+isla.jpg,vestido.jpg,laberinto.jpg,corbata.jpg
+tierra.gif,huevo.jpg,corazon.png,baloncesto.jpg

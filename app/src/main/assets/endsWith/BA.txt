@@ -1,0 +1,1 @@
+barco.jpg,libro.jpg,escoba.jpg,oido.png

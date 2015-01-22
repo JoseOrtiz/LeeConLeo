@@ -1,0 +1,4 @@
+nariz.jpg,puerta.png,celular.jpg,oido.png
+raton.png,zorro.jpg,pie.png,naranja.jpg
+pan.jpg,lampara.JPG,natacion.jpg,sushi.jpg
+canguro.jpg,nave.jpg,arbol.jpg,novios.jpg

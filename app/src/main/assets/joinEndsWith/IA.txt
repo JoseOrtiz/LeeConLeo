@@ -1,0 +1,5 @@
+sal.jpg,lampara.JPG,mariposa.jpg,iglesia.gif
+lupa.jpg,desierto.jpg,momia.gif,aro.jpg
+sandia.jpg,microfono.jpg,palta.jpg,mimo.jpg
+canguro.jpg,rosado.jpg,zanahoria.jpg,abeja.jpeg
+biblia.jpg,papel.jpg,patin.jpg,pipa.png

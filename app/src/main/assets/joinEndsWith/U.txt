@@ -1,2 +1,2 @@
-iglu.jpg,pantalon.jpg,lana.jpg,pie.png
-enfermera.jpg,azucar.jpg,martillo.jpg,bambu.jpg
+iglu.jpg,tenis.jpg,goma.jpg,hoja.jpg
+vaca.jpg,castor.jpg,platano.jpg,bambu.jpg

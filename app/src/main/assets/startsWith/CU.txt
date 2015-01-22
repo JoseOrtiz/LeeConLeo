@@ -1,0 +1,2 @@
+vaca.jpg,boca.png,cupido.png,mono.png
+papel.jpg,jamon.jpg,avion.png,cueva.jpg

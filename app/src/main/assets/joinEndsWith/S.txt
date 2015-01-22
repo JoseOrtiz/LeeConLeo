@@ -1,0 +1,14 @@
+duende.gif,azul.jpg,lagartija.jpg,luces.jpg
+olla.jpg,saltamontes.jpg,hiena.jpg,muneca.jpg
+puercoespin.jpg,toro.jpg,pinguino.jpg,labios.jpg
+cama.jpg,galleta.jpg,oro.jpg,tenis.jpg
+lena.jpg,estrella_de_mar.png,bolos.jpg,serpiente.jpg
+mesa.jpg,agua.jpeg,dedo.png,salvavidas.jpg
+escoba.jpg,camello.jpg,seis.png,reina.jpg
+joyas.jpg,camioneta.jpg,volcan.jpg,ojo.jpg
+espantapajaros.jpg,sushi.jpg,mochila.jpg,violin.jpg
+dos.jpg,mago.png,futbol.jpg,tarantula.jpg
+nieve.jpg,novios.jpg,motocicleta.jpg,halcon.jpg
+verduras.jpg,pelota.jpg,cebra.jpg,ornitorrinco.jpg
+burro.jpg,paraguas.jpg,delfin.jpg,murcielago.jpg
+insectos.jpg,tambor.jpg,frutilla.png,furgon.jpg

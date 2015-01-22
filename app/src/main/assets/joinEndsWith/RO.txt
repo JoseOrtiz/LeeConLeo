@@ -1,0 +1,17 @@
+pajaro.png,arco.jpg,ducha.jpg,pina.jpg
+pluma.jpg,payaso.jpg,enchufe.jpg,libro.jpg
+pinguino.jpg,anillo.jpg,vaquero.jpg,medusa.jpg
+basurero.jpg,pez.jpg,coco.jpg,espejo.jpg
+sirena.jpg,duende.gif,helicoptero.jpg,camion.jpg
+canguro.jpg,luna.jpg,hipopotamo.jpg,escorpion.png
+azucar.jpg,lobo.jpg,lena.jpg,semaforo.jpg
+burro.jpg,tomate.jpg,zanahoria.jpg,lampara.JPG
+biblia.jpg,toro.jpg,agua.jpeg,ketchup.jpg
+aro.jpg,patin.jpg,esqueleto.jpg,astronauta.jpg
+perro.jpg,cueva.jpg,universo.jpg,avion.png
+nube.jpg,sushi.jpg,mani.png,faro.jpg
+paraguas.jpg,piscina.jpg,sombrero.jpeg,carta.jpg
+guante.jpg,bombero.jpeg,pollo.gif,lechuga.jpg
+iglu.jpg,boca.png,zorro.jpg,foca.jpg
+loro.jpg,elefante.jpg,piano.png,lapiz.jpg
+cabra.jpg,oro.jpg,lana.jpg,sal.jpg

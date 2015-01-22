@@ -1,0 +1,6 @@
+jarra.JPG,mani.png,lagartija.jpg,taza.jpg
+semaforo.jpg,papa.jpg,naranja.jpg,pizza.png
+colibri.jpg,abeja.jpeg,helado.jpg,basurero.jpg
+bruja.jpg,pajaro.png,avion.png,arco.jpg
+reina.jpg,oveja.gif,dedo.png,luces.jpg
+tractor.gif,hoja.jpg,ketchup.jpg,nariz.jpg

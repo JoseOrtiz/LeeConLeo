@@ -1,0 +1,2 @@
+paloma.jpg,manzana.jpg,desierto.jpg,cupido.png
+orangutan.jpg,cueva.jpg,taza.jpg,girasol.png

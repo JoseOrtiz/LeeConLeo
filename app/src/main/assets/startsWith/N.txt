@@ -1,0 +1,8 @@
+topo.jpg,agua.jpeg,natacion.jpg,perfume.jpg
+hada.jpg,gato.jpg,nido.jpg,damasco.jpg
+novios.jpg,doce.jpg,sopa.jpg,celular.jpg
+nave.jpg,uniforme.jpg,seis.png,platano.jpg
+palmera.png,ballena.jpg,nieve.jpg,secador.jpg
+raton.png,trompeta.jpg,nariz.jpg,abeja.jpeg
+santa.png,biblioteca.JPG,mariposa.jpg,nube.jpg
+pipa.png,pluma.jpg,motocicleta.jpg,naranja.jpg

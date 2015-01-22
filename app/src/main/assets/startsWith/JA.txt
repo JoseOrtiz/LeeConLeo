@@ -1,0 +1,5 @@
+jarra.JPG,globo.jpg,hiena.jpg,corazon.png
+hoja.jpg,volcan.jpg,verduras.jpg,jaguar.jpg
+jaula.jpg,halcon.jpg,basurero.jpg,pinguino.jpg
+pato.jpg,pie.png,jabon.jpg,locomotora.jpg
+jamon.jpg,castor.jpg,oso.jpg,sol.gif

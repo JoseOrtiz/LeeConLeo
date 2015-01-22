@@ -1,0 +1,5 @@
+biblioteca.JPG,duende.gif,genio.png,platano.jpg
+foca.jpg,pinguino.jpg,nieve.jpg,billete.jpg
+vaca.jpg,sal.jpg,conejo.jpg,beisbol.jpeg
+muneca.jpg,cabra.jpg,desierto.jpg,laberinto.jpg
+goma.jpg,luces.jpg,boca.png,buho.gif

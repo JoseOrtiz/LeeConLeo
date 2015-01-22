@@ -1,0 +1,4 @@
+diente.jpg,medusa.jpg,mariposa.jpg,semaforo.jpg
+empanada.png,libro.jpg,dinosaurio.jpg,gorila.JPG
+verduras.jpg,momia.gif,diamante.jpg,biblia.jpg
+locomotora.jpg,cocodrilo.jpg,disco.jpg,submarino.jpg

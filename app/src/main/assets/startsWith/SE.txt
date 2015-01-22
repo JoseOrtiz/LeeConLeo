@@ -1,0 +1,5 @@
+serrucho.jpg,billete.jpg,guante.jpg,iglesia.gif
+lago.jpg,seis.png,indio.png,puente.jpg
+saltamontes.jpg,serpiente.jpg,dado.png,frutilla.png
+secador.jpg,carta.jpg,mochila.jpg,empanada.png
+semaforo.jpg,trompeta.jpg,rana.jpg,fuego.png

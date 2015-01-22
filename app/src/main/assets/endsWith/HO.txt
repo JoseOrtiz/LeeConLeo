@@ -1,0 +1,3 @@
+tenis.jpg,isla.jpg,arco.jpg,ocho.jpg
+mochila.jpg,cabra.jpg,serrucho.jpg,espejo.jpg
+billete.jpg,halcon.jpg,helado.jpg,buho.gif

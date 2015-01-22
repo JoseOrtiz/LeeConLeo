@@ -1,0 +1,4 @@
+pluma.jpg,helicoptero.jpg,ducha.jpg,galleta.jpg
+mago.png,sapo.jpg,puma.jpg,gallo.jpg
+gallina.jpg,puente.jpg,caballito_de_mar.jpg,pato.jpg
+gato.jpg,hormiga.jpg,novios.jpg,rinoceronte.jpg

@@ -1,0 +1,2 @@
+toro.jpg,circulo.png,sushi.jpg,mani.png
+tren.jpg,laberinto.jpg,olla.jpg,cisne.jpg

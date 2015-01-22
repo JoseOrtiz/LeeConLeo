@@ -1,0 +1,6 @@
+buho.gif,paraguas.jpg,celular.jpg,naranja.jpg
+espejo.jpg,hoja.jpg,submarino.jpg,plato.JPG
+lago.jpg,lagartija.jpg,orangutan.jpg,saltamontes.jpg
+enchufe.jpg,oveja.gif,maiz.jpg,nave.jpg
+mago.png,pluma.jpg,sol.gif,bruja.jpg
+jaguar.jpg,faro.jpg,nube.jpg,abeja.jpeg

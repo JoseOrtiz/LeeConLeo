@@ -1,7 +1,7 @@
-puercoespin.jpg,lana.jpg,arbol.jpg,patin.jpg
-lagartija.jpg,mapa.jpg,pavo.jpg,abeja.jpeg
-azul.jpg,manzana.jpg,lampara.JPG,empanada.png
-sushi.jpg,pipa.png,papel.jpg,lapiz.jpg
-unicornio.jpg,lago.jpg,colibri.jpg,mimo.jpg
-espantapajaros.jpg,aro.jpg,palta.jpg,laberinto.jpg
-libro.jpg,mani.png,labios.jpg,pirata.jpg
+labios.jpg,televisor.jpg,semaforo.jpg,bambu.jpg
+universo.jpg,lago.jpg,ojo.jpg,surfeo.jpg
+luna.jpg,pipa.png,voleibol.gif,lapiz.jpg
+lana.jpg,empanada.png,lena.jpg,gallina.jpg
+trompeta.jpg,pluma.jpg,arco.jpg,laberinto.jpg
+lampara.JPG,santa.png,frutilla.png,jabon.jpg
+bolos.jpg,pulpo.jpg,lagartija.jpg,tambor.jpg

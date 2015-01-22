@@ -1,3 +1,6 @@
-puma.jpg,ocho.jpg,murcielago.jpg,raton.png
-pulpo.jpg,sushi.jpg,pluma.jpg,piedra.jpg
-uva.jpg,ala.png,paloma.jpg,aro.jpg
+papel.jpg,tenedor.jpg,paloma.jpg,raton.png
+iglu.jpg,uno.gif,leche.jpg,goma.jpg
+pluma.jpg,delantal.jpg,erizo.jpg,universo.jpg
+volcan.jpg,plancha.jpg,puma.jpg,nave.jpg
+fantasma.jpg,girasol.png,lentejuela.jpg,tierra.gif
+cama.jpg,dinosaurio.jpg,pan.jpg,jaula.jpg

@@ -1,0 +1,3 @@
+mochila.jpg,rosado.jpg,uno.gif,fuego.png
+futbol.jpg,cabra.jpg,puerta.png,guitarra.jpg
+limon.jpeg,cocodrilo.jpg,furgon.jpg,lupa.jpg

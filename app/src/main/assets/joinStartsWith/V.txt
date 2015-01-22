@@ -1,0 +1,12 @@
+cafe.jpg,luces.jpg,violin.jpg,circulo.png
+vaso.jpg,cueva.jpg,azul.jpg,delfin.jpg
+verduras.jpg,hoja.jpg,jaula.jpg,camaleon.jpg
+zanahoria.jpg,laberinto.jpg,oro.jpg,vestido.jpg
+zorro.jpg,nave.jpg,tortuga.jpg,ventilador.jpg
+vaquero.jpg,asiento.jpg,sirena.jpg,pirata.jpg
+televisor.jpg,cabra.jpg,pie.png,volcan.jpg
+vela.jpg,flor.gif,gato.jpg,sillon.jpg
+vaca.jpg,tambor.jpg,anillo.jpg,falda.jpg
+bote.jpg,iglesia.gif,cupido.png,violeta.jpg
+iman.jpg,caracol.jpg,plancha.jpg,ventana.jpg
+cocodrilo.jpg,baloncesto.jpg,voleibol.gif,enchufe.jpg

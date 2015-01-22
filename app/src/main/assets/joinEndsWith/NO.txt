@@ -1,0 +1,15 @@
+tijera.jpg,submarino.jpg,genio.png,hada.jpg
+conejo.jpg,uniforme.jpg,mano.jpg,locomotora.jpg
+frambuesa.jpg,dos.jpg,billete.jpg,gusano.jpg
+jaguar.jpg,flauta.jpg,nariz.jpg,platano.jpg
+leon.jpg,tractor.gif,papel.jpg,reno.jpg
+piano.png,labios.jpg,diamante.jpg,lechuga.jpg
+telefono.jpg,corazon.png,marioneta.jpg,mesa.jpg
+coco.jpg,cabra.jpg,domino.png,bambu.jpg
+desierto.jpg,ventana.jpg,molino.jpg,koala.jpg
+gota.png,universo.jpg,durazno.jpg,sandia.jpg
+uno.gif,isla.jpg,piscina.jpg,semaforo.jpg
+enchufe.jpg,microfono.jpg,trompeta.jpg,pala.jpeg
+voleibol.gif,lampara.JPG,pulpo.jpg,mono.png
+carta.jpg,pino.jpg,damasco.jpg,furgon.jpg
+oido.png,boxeo.jpg,falda.jpg,pinguino.jpg

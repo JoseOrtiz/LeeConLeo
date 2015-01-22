@@ -1,0 +1,13 @@
+tigre.gif,pavo.jpg,flamenco.jpg,seis.png
+hormiga.jpg,flecha.png,caballo.png,lechuga.jpg
+futbol.jpg,cama.jpg,paloma.jpg,nave.jpg
+cupido.png,flor.gif,doce.jpg,pato.jpg
+furgon.jpg,lentejuela.jpg,bambu.jpg,tambor.jpg
+duende.gif,muneca.jpg,foca.jpg,conejo.jpg
+frutilla.png,natacion.jpg,gallo.jpg,pajaro.png
+loro.jpg,falda.jpg,toro.jpg,taza.jpg
+estrella.jpg,fantasma.jpg,gota.png,mimo.jpg
+bicicleta.jpg,jabon.jpg,faro.jpg,maiz.jpg
+camello.jpg,puente.jpg,calcetin.jpg,flauta.jpg
+lana.jpg,sandia.jpg,pelo.jpg,frambuesa.jpg
+fuego.png,biblioteca.JPG,hiena.jpg,pino.jpg

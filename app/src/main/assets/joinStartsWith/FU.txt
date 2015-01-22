@@ -1,0 +1,3 @@
+futbol.jpg,galleta.jpg,falda.jpg,casa.jpg
+furgon.jpg,campana.jpg,circulo.png,nariz.jpg
+mani.png,enchufe.jpg,raton.png,fuego.png
