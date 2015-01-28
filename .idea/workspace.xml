@@ -103,95 +103,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41a4e568-5787-478d-9918-944f0f427106" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/picturesSpeech/auto.mp3" afterPath="$PROJECT_DIR$/app/src/main/assets/picturesSpeech/auto.mp3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/model_data.bin" afterPath="$PROJECT_DIR$/build/intermediates/model_data.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/endsWith/A.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/endsWith/A.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/A.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/A.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/A.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/A.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/A.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/A.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/BackgroundSound.java" afterPath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/BackgroundSound.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/BetweenActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/BetweenActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/Contour.java" afterPath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/Contour.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/endsWith/E.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/endsWith/E.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/E.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/E.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/E.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/E.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/E.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/E.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/GameMapActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/GameMapActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/HorizontalActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/HorizontalActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/endsWith/I.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/endsWith/I.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/I.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/I.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/I.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/I.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/I.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/I.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/JoinActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/JoinActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/endsWith/L.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/endsWith/L.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/L.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/L.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/L.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/L.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/L.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/L.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/endsWith/LA.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/endsWith/LA.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/LA.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/LA.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/LA.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/LA.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/LA.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/LA.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/LE.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/LE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/LE.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/LE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/LI.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/LI.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/LI.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/LI.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/endsWith/LO.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/endsWith/LO.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/LO.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/LO.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/LO.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/LO.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/LO.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/LO.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/endsWith/LU.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/endsWith/LU.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/LU.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/LU.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/LU.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/LU.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/LU.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/LU.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/LetterActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/LetterActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/M.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/M.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/M.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/M.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/endsWith/MA.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/endsWith/MA.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/MA.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/MA.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/MA.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/MA.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/MA.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/MA.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/endsWith/ME.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/endsWith/ME.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/ME.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/ME.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/ME.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/ME.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/ME.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/ME.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/MI.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/MI.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/MI.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/MI.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/endsWith/MO.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/endsWith/MO.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/MO.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/MO.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/MO.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/MO.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/MO.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/MO.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/MU.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/MU.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/MU.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/MU.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/MenuActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/MenuActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/endsWith/O.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/endsWith/O.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/O.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/O.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/O.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/O.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/O.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/O.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/P.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/P.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/P.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/P.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/endsWith/PA.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/endsWith/PA.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/PA.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/PA.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/PA.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/PA.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/PA.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/PA.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/PE.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/PE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/PE.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/PE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/PI.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/PI.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/PI.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/PI.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/endsWith/PO.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/endsWith/PO.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/PO.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/PO.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/PO.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/PO.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/PO.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/PO.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/PU.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/PU.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/PU.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/PU.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/PlatformActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/PlatformActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/RecognitionActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/RecognitionActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/endsWith/U.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/endsWith/U.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/U.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinEndsWith/U.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/U.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/joinStartsWith/U.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/startsWith/U.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/startsWith/U.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/VerticalActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/VerticalActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_letter.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_letter.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/assets/wrap/dictionary.txt" afterPath="$PROJECT_DIR$/app/src/main/assets/wrap/dictionary.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/StitchRenderer.java" afterPath="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/StitchRenderer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LeeConLeo.iws" />
@@ -220,12 +133,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="C.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/assets/stitch/C.xml">
+      <file leaf-file-name="StitchRenderer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/StitchRenderer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.653944" vertical-offset="406" max-vertical-offset="2074">
-              <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1394" max-vertical-offset="3196">
+              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParsedDataSet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/ParsedDataSet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="731" max-vertical-offset="1275">
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameMapActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/GameMapActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.09970675" vertical-offset="629" max-vertical-offset="2975">
+              <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+              <folding>
+                <element signature="e#5626#5842#0" expanded="true" />
+                <element signature="e#5819#5820#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1709,10 +1645,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/JoinStartsWithActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/JoinEndsWithActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/StartsWithActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/EndsWithActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/assets/tap/AO.txt" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_game_map_2.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_game_map.xml" />
@@ -1724,7 +1656,6 @@
         <option value="$PROJECT_DIR$/app/src/main/assets/stitch/P.xml" />
         <option value="$PROJECT_DIR$/app/src/main/assets/stitch/I.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/StitchActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/StitchRenderer.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/Stitch.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/StitchGLSurfaceView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/IntroductionActivity.java" />
@@ -1753,13 +1684,18 @@
         <option value="$PROJECT_DIR$/app/src/main/assets/stitch/D.xml" />
         <option value="$PROJECT_DIR$/app/src/main/assets/stitch/S.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/RecognitionActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/JoinActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/MenuActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/assets/stitch/B.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/LetterActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_letter.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/Contour.java" />
         <option value="$PROJECT_DIR$/app/src/main/assets/stitch/C.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/assets/stitch/F.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/assets/stitch/G.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/assets/stitch/H.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/JoinActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/ExtraData.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/StitchRenderer.java" />
       </list>
     </option>
   </component>
@@ -1798,6 +1734,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1964,6 +1903,104 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leeconleo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeeConLeo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeeConLeo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leeconleo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="obstacles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeeConLeo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeeConLeo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="leeconleo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="letters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeeConLeo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LeeConLeo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -2018,9 +2055,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2064,17 +2098,17 @@
       <recent name="cl.cc6909.ebm.leeconleo" />
       <recent name="cl.cc6909.ebm.leeconleo.letters" />
     </key>
-    <key name="android.template.parentActivityClass">
-      <recent name="cl.cc6909.ebm.leeconleo.letters.LetterActivity" />
-      <recent name="" />
-      <recent name="cl.cc6909.ebm.leeconleo.GameMapActivity" />
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="cl.cc6909.ebm.leeconleo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Jose\AndroidStudioProjects\LeeConLeo\app\src\main\res\drawable-xxhdpi" />
       <recent name="C:\Users\Jose\AndroidStudioProjects\LeeConLeo\app\src\main\assets\fonts" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="cl.cc6909.ebm.leeconleo" />
+    <key name="android.template.parentActivityClass">
+      <recent name="cl.cc6909.ebm.leeconleo.letters.LetterActivity" />
+      <recent name="" />
+      <recent name="cl.cc6909.ebm.leeconleo.GameMapActivity" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.app">
@@ -2284,22 +2318,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29648608" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3321617" sideWeight="0.45127437" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3737705" sideWeight="0.45168376" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36486486" sideWeight="0.43802083" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2375" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3229508" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30983606" sideWeight="0.54722637" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3737705" sideWeight="0.5475842" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2312,6 +2345,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29648608" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32848233" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -2340,68 +2374,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/Image.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="354" max-vertical-offset="765">
-          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_stitch.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.4804805" vertical-offset="160" max-vertical-offset="493">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/StitchActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="14" max-vertical-offset="986">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/IntroductionActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="867">
-          <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_recognition.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="3009">
-          <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/Vector2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="336" max-vertical-offset="952">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/FontFitTextView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3753943" vertical-offset="323" max-vertical-offset="1666">
-          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/down_right_line.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/right_line.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2060606" vertical-offset="0" max-vertical-offset="330">
@@ -2417,13 +2389,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_introduction.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5049505" vertical-offset="629" max-vertical-offset="1445">
           <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/RopeView.java">
@@ -2490,13 +2462,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_paint.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="393" max-vertical-offset="3468">
           <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
@@ -2550,13 +2522,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_join.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="2414">
           <caret line="63" column="39" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
@@ -2567,14 +2539,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_verticality.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2703">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/PlatformActivity.java">
@@ -2588,13 +2559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0050890585" vertical-offset="627" max-vertical-offset="1020">
           <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/GameMapActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2306" max-vertical-offset="2924">
-          <caret line="173" column="5" selection-start-line="173" selection-start-column="5" selection-end-line="173" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -2616,7 +2580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34605598" vertical-offset="935" max-vertical-offset="2584">
           <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2628,21 +2591,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/RecognitionActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1853" max-vertical-offset="2958">
-          <caret line="159" column="34" selection-start-line="159" selection-start-column="34" selection-end-line="159" selection-end-column="34" />
-          <folding />
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -2650,7 +2604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="124" max-vertical-offset="544">
           <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2658,7 +2611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1492" max-vertical-offset="2074">
           <caret line="116" column="7" selection-start-line="116" selection-start-column="7" selection-end-line="116" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2666,105 +2618,144 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1496" max-vertical-offset="2414">
           <caret line="102" column="19" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
-          <folding>
-            <marker date="1421965586748" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421965586748" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1421965586748" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/JoinActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1120" max-vertical-offset="2363">
-          <caret line="106" column="4" selection-start-line="106" selection-start-column="4" selection-end-line="108" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_wrap.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18579236" vertical-offset="136" max-vertical-offset="1853">
           <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="24" selection-end-column="19" />
-          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/LetterActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2652">
           <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_letter.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.3703704" vertical-offset="76" max-vertical-offset="4063">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding>
-            <element signature="e#229#264#0" expanded="true" />
-            <element signature="e#290#325#0" expanded="true" />
-            <element signature="e#349#382#0" expanded="true" />
-            <element signature="e#409#442#0" expanded="true" />
-            <element signature="e#711#725#0" expanded="true" />
-            <element signature="e#1389#1411#0" expanded="true" />
-            <element signature="e#1752#1774#0" expanded="true" />
-            <element signature="e#2331#2346#0" expanded="true" />
-            <element signature="e#2683#2698#0" expanded="true" />
-            <element signature="e#3252#3267#0" expanded="true" />
-            <element signature="e#3602#3618#0" expanded="true" />
-            <element signature="e#4167#4180#0" expanded="true" />
-            <element signature="e#4512#4525#0" expanded="true" />
-            <element signature="e#5079#5100#0" expanded="true" />
-            <element signature="e#5439#5460#0" expanded="true" />
-            <element signature="e#6019#6038#0" expanded="true" />
-            <element signature="e#6375#6394#0" expanded="true" />
-            <element signature="e#6958#6986#0" expanded="true" />
-            <element signature="e#7329#7357#0" expanded="true" />
-            <element signature="e#7925#7949#0" expanded="true" />
-            <element signature="e#8290#8314#0" expanded="true" />
-            <element signature="e#8870#8884#0" expanded="true" />
-            <element signature="e#9217#9231#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/Stitch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3466" max-vertical-offset="3859">
-          <caret line="228" column="20" selection-start-line="228" selection-start-column="20" selection-end-line="228" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/StitchRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1644" max-vertical-offset="2720">
-          <caret line="127" column="51" selection-start-line="127" selection-start-column="51" selection-end-line="127" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/Contour.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17811705" vertical-offset="1443" max-vertical-offset="2057">
-          <caret line="97" column="51" selection-start-line="97" selection-start-column="51" selection-end-line="97" selection-end-column="51" />
-          <folding />
+        <state vertical-scroll-proportion="-5.3703704" vertical-offset="76" max-vertical-offset="4063">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/assets/stitch/C.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.653944" vertical-offset="406" max-vertical-offset="2074">
+        <state vertical-scroll-proportion="0.0" vertical-offset="406" max-vertical-offset="2074">
           <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/assets/stitch/F.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1127" max-vertical-offset="1734">
+          <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/assets/stitch/G.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="3094">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/JoinActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1088" max-vertical-offset="2380">
+          <caret line="103" column="30" selection-start-line="103" selection-start-column="30" selection-end-line="103" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/assets/stitch/H.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1904">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/RecognitionActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1496" max-vertical-offset="2958">
+          <caret line="142" column="8" selection-start-line="142" selection-start-column="8" selection-end-line="142" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/StitchActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="164" max-vertical-offset="986">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/Stitch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="3859">
+          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/obstacles/Square.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="2023">
+          <caret line="89" column="13" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/Contour.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="987" max-vertical-offset="2057">
+          <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/ExtraData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="1632">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/StitchRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="880" max-vertical-offset="2822">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/StitchXmlContentHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.259887" vertical-offset="1472" max-vertical-offset="2159">
+          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/letters/ParsedDataSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="401" max-vertical-offset="833">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cl/cc6909/ebm/leeconleo/GameMapActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09970675" vertical-offset="629" max-vertical-offset="2941">
+          <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+          <folding>
+            <element signature="e#5626#5842#0" expanded="true" />
+            <element signature="e#5819#5820#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

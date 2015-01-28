@@ -101,6 +101,7 @@ public class JoinActivity extends Activity {
 
         ShowcaseView showcaseView = new ShowcaseManager(this).showcaseJoin();
         showcaseView.setOnShowcaseEventListener(new JoinShowcaseListener());
+        m = new MediaPlayer();
 
     }
 

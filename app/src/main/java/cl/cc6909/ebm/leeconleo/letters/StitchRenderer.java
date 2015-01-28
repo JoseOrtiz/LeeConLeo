@@ -71,11 +71,6 @@ public class StitchRenderer implements GLSurfaceView.Renderer {
             while (i.hasNext()) {
 
                 dataItem = i.next();
-
-                    /*
-                     * parentTag can also represent the main type of data, in
-                     * our example, "Owners" and "Dogs"
-                     */
                 String parentTag = dataItem.getParentTag();
                 Log.v(LOG_TAG, "parentTag: " + parentTag);
 
@@ -117,6 +112,17 @@ public class StitchRenderer implements GLSurfaceView.Renderer {
             stitch.get(current).drawActive();
         }
         contour.draw();
+        if(isCompleted()){
+            drawExtraData();
+        }
+    }
+
+    private void drawExtraData() {
+        ExtraData ed = new ExtraData();
+        Log.i("ExtraData",letter);
+        if(letter.equals("t")){
+            ed.draw();
+        }
     }
 
     public Stitch getActiveStitch(){
