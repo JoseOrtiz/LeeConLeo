@@ -1,6 +1,7 @@
 package cl.cc6909.ebm.leeconleo.letters;
 
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.Rect;
 import android.graphics.Typeface;
@@ -8,7 +9,6 @@ import android.graphics.drawable.AnimationDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.ActionBarActivity;
 import android.text.Layout;
 import android.util.SparseBooleanArray;
 import android.view.View;
@@ -34,7 +34,7 @@ import cl.cc6909.ebm.leeconleo.FeedbackDialog;
 import cl.cc6909.ebm.leeconleo.R;
 import cl.cc6909.ebm.leeconleo.ShowcaseManager;
 
-public class WrapActivity extends ActionBarActivity {
+public class WrapActivity extends Activity {
     protected String letter;
     protected Handler h;
     protected FeedbackDialog pd;
@@ -208,16 +208,11 @@ public class WrapActivity extends ActionBarActivity {
     }
 
     private void setAnswerToComplete(String answer, SparseBooleanArray completed) {
-        int i=-1;
-        while(i<answer.length()){
-            int index = Normalizer.normalize(answer.toLowerCase(), Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "").indexOf(letter,i);
-            //int index = answer.indexOf(letter, i);
-            if(index>i) {
-                completed.append(index, false);
-                i=index+1;
-            }else{
-                break;
-            }
+        int index = Normalizer.normalize(answer.toLowerCase(), Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "").indexOf(letter);
+        while(index>=0){
+            completed.append(index, false);
+            index++;
+            index = Normalizer.normalize(answer.toLowerCase(), Normalizer.Form.NFD).replaceAll("[^\\p{ASCII}]", "").indexOf(letter,index);
         }
 
     }

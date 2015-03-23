@@ -79,7 +79,11 @@
                 android:textSize="200sp"
                 android:clickable="true"
                 android:focusable="true"
-                android:focusableInTouchMode="true"/>
+                android:focusableInTouchMode="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"/>
             <cl.cc6909.ebm.leeconleo.letters.FontFitTextView
                 android:id="@+id/wrap_2"
                 android:layout_height="400dp"
@@ -92,7 +96,11 @@
                 android:text="Paralelepipedo"
                 android:clickable="true"
                 android:focusable="true"
-                android:focusableInTouchMode="true"/>
+                android:focusableInTouchMode="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="30dp"/>
             <cl.cc6909.ebm.leeconleo.letters.WrapView
                 android:id="@+id/wrap_view"
                 android:layout_width="fill_parent"
