@@ -1,18 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+
+enum LeoPose { front, side, happy, thinking, cheering }
 
 class LeoAvatar extends StatelessWidget {
-  const LeoAvatar({super.key, this.size = 160});
+  const LeoAvatar({super.key, this.size = 160, this.pose = LeoPose.front});
+
+  static const aspectRatio = 400 / 560;
 
   final double size;
+  final LeoPose pose;
 
   @override
   Widget build(BuildContext context) {
-    final colors = Theme.of(context).colorScheme;
-    return Container(
-      width: size,
+    return SvgPicture.asset(
+      'assets/images/leo/leo_${pose.name}.svg',
+      key: ValueKey('leo-${pose.name}'),
       height: size,
-      decoration: BoxDecoration(color: colors.secondaryContainer, shape: BoxShape.circle),
-      child: Icon(Icons.pets_rounded, size: size * 0.6, color: colors.onSecondaryContainer),
+      width: size * aspectRatio,
     );
   }
 }

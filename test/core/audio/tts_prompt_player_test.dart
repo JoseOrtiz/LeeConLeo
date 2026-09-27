@@ -12,6 +12,7 @@ void main() {
     voiceLookupAttempts: 3,
     voiceLookupInterval: Duration.zero,
     maxUtteranceDuration: maxUtteranceDuration,
+    retryDelay: Duration.zero,
   );
 
   Future<void> settle() => Future<void>.delayed(Duration.zero);
@@ -24,6 +25,15 @@ void main() {
     expect(tts.language, 'es-MX');
     expect(tts.speechRate, TtsPromptPlayer.defaultSpeechRate);
     expect(tts.spoken, ['Hola']);
+  });
+
+  test('prepare picks the voice before anything is spoken', () async {
+    final tts = FakeFlutterTts(languages: {'es-US'});
+
+    await playerWith(tts).prepare();
+
+    expect(tts.language, 'es-US');
+    expect(tts.spoken, isEmpty);
   });
 
   test('waits for voices that load after the first lookup', () async {
@@ -87,6 +97,50 @@ void main() {
     await Future<void>.delayed(const Duration(milliseconds: 50));
 
     expect(tts.spoken, ['Uno', 'Dos']);
+  });
+
+  test('a phrase that fails is spoken again', () async {
+    final tts = FakeFlutterTts(failures: 1);
+
+    await playerWith(tts).say('Hola');
+
+    expect(tts.spoken, ['Hola', 'Hola']);
+  });
+
+  test('a phrase that keeps failing is retried only twice', () async {
+    final tts = FakeFlutterTts(failures: 10);
+
+    await playerWith(tts).say('Hola');
+
+    expect(tts.spoken, ['Hola', 'Hola', 'Hola']);
+  });
+
+  test('a phrase the browser blocks is said after the first tap', () async {
+    final tts = FakeFlutterTts(failures: 1, failure: TtsPromptPlayer.blockedByBrowser);
+    final player = playerWith(tts);
+
+    await player.say('Hola');
+    expect(tts.spoken, ['Hola']);
+
+    player.resumeAfterUserGesture();
+    await settle();
+    expect(tts.spoken, ['Hola', 'Hola']);
+
+    player.resumeAfterUserGesture();
+    await settle();
+    expect(tts.spoken, ['Hola', 'Hola']);
+  });
+
+  test('a newer phrase replaces the blocked one', () async {
+    final tts = FakeFlutterTts(failures: 1, failure: TtsPromptPlayer.blockedByBrowser);
+    final player = playerWith(tts);
+
+    await player.say('Hola');
+    await player.say('Arriba');
+    player.resumeAfterUserGesture();
+    await settle();
+
+    expect(tts.spoken, ['Hola', 'Arriba']);
   });
 
   test('stop drops a prompt that is waiting', () async {

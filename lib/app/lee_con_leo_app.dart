@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../core/audio/audio_providers.dart';
 import 'app_router.dart';
 import 'app_theme.dart';
 
-class LeeConLeoApp extends StatefulWidget {
+class LeeConLeoApp extends ConsumerStatefulWidget {
   const LeeConLeoApp({super.key});
 
   @override
-  State<LeeConLeoApp> createState() => _LeeConLeoAppState();
+  ConsumerState<LeeConLeoApp> createState() => _LeeConLeoAppState();
 }
 
-class _LeeConLeoAppState extends State<LeeConLeoApp> {
+class _LeeConLeoAppState extends ConsumerState<LeeConLeoApp> {
   final GoRouter _router = createAppRouter();
 
   @override
@@ -27,6 +29,11 @@ class _LeeConLeoAppState extends State<LeeConLeoApp> {
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light(),
       routerConfig: _router,
+      builder: (context, child) => Listener(
+        behavior: HitTestBehavior.translucent,
+        onPointerDown: (_) => ref.read(promptPlayerProvider).resumeAfterUserGesture(),
+        child: child,
+      ),
     );
   }
 }

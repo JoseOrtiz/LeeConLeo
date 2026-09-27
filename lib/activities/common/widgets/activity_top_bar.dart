@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'progress_star.dart';
+
 class ActivityTopBar extends StatelessWidget {
   const ActivityTopBar({
     super.key,
@@ -16,7 +18,6 @@ class ActivityTopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colors = Theme.of(context).colorScheme;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       child: Row(
@@ -30,13 +31,10 @@ class ActivityTopBar extends StatelessWidget {
           Expanded(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
+              spacing: 4,
               children: [
                 for (var i = 0; i < total; i++)
-                  Icon(
-                    Icons.star_rounded,
-                    size: 28,
-                    color: i < completed ? colors.tertiary : colors.outlineVariant,
-                  ),
+                  ProgressStar(key: ValueKey('star-$i'), isEarned: i < completed),
               ],
             ),
           ),

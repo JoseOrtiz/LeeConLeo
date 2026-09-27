@@ -14,7 +14,6 @@ import 'activity_context.dart';
 import 'activity_session.dart';
 import 'activity_spec.dart';
 import 'widgets/activity_top_bar.dart';
-import 'widgets/celebration_overlay.dart';
 import 'widgets/intro_view.dart';
 import 'widgets/reward_view.dart';
 
@@ -118,11 +117,8 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
 
   Widget _buildPhase(ActivitySession session) => switch (session.phase) {
     SessionPhase.intro => IntroView(onStart: session.begin),
-    SessionPhase.playing => _spec!.buildItemView(session.currentItem, session),
-    SessionPhase.celebrating => Stack(
-      fit: StackFit.expand,
-      children: [_spec!.buildItemView(session.currentItem, session), const CelebrationOverlay()],
-    ),
+    SessionPhase.playing ||
+    SessionPhase.celebrating => _spec!.buildItemView(session.currentItem, session),
     SessionPhase.finished => RewardView(onDone: _goHome),
   };
 
