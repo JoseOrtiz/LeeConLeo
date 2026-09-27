@@ -23,6 +23,7 @@ void main() {
     await playerWith(tts).say('Hola');
 
     expect(tts.language, 'es-MX');
+    expect(tts.voice, 'Local es-MX');
     expect(tts.speechRate, TtsPromptPlayer.defaultSpeechRate);
     expect(tts.spoken, ['Hola']);
   });
@@ -37,7 +38,7 @@ void main() {
   });
 
   test('waits for voices that load after the first lookup', () async {
-    final tts = FakeFlutterTts(languages: {'es-US'}, lookupsBeforeVoicesLoad: 8);
+    final tts = FakeFlutterTts(languages: {'es-US'}, lookupsBeforeVoicesLoad: 2);
 
     await playerWith(tts).say('Hola');
 
@@ -97,6 +98,7 @@ void main() {
     await Future<void>.delayed(const Duration(milliseconds: 50));
 
     expect(tts.spoken, ['Uno', 'Dos']);
+    expect(tts.stops, greaterThanOrEqualTo(1));
   });
 
   test('a phrase that fails is spoken again', () async {

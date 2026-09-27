@@ -26,3 +26,4 @@ flutter:
   assets:
     - assets/content/bundle.json
     - assets/images/leo/
+    - assets/images/words/

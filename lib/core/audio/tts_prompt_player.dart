@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 
+import '../../utils/voice_picker.dart';
 import 'prompt_player.dart';
 
 class TtsPromptPlayer implements PromptPlayer {
@@ -90,7 +91,7 @@ class TtsPromptPlayer implements PromptPlayer {
       }
       final utterance = _utterance = Completer<bool>();
       await _tts.speak(text);
-      final spoken = await utterance.future.timeout(maxUtteranceDuration, onTimeout: () => true);
+      final spoken = await utterance.future.timeout(maxUtteranceDuration, onTimeout: _reset);
       _utterance = null;
       if (spoken) return;
       if (_lastErrorWasBlock) {
@@ -98,6 +99,12 @@ class TtsPromptPlayer implements PromptPlayer {
         return;
       }
     }
+  }
+
+  Future<bool> _reset() async {
+    debugPrint('Speech did not finish in time; resetting the speech engine');
+    await _tts.stop();
+    return true;
   }
 
   void _onError(dynamic message) {
@@ -118,19 +125,33 @@ class TtsPromptPlayer implements PromptPlayer {
 
   Future<bool> _configure() async {
     await _tts.setSpeechRate(speechRate);
-    final language = await _findSpanishLanguage();
-    if (language == null) return false;
-    await _tts.setLanguage(language);
+    final voice = await _findSpanishVoice();
+    if (voice == null) {
+      debugPrint('Speech: no Spanish voice found yet');
+      return false;
+    }
+    debugPrint('Speech voice: ${voice.name} (${voice.locale})');
+    await _tts.setLanguage(voice.locale);
+    await _tts.setVoice({'name': voice.name, 'locale': voice.locale});
     return true;
   }
 
-  Future<String?> _findSpanishLanguage() async {
+  Future<Voice?> _findSpanishVoice() async {
     for (var attempt = 0; attempt < voiceLookupAttempts; attempt++) {
       if (attempt > 0) await Future<void>.delayed(voiceLookupInterval);
-      for (final language in preferredLanguages) {
-        if (await _tts.isLanguageAvailable(language) == true) return language;
-      }
+      final voice = pickVoice(await _availableVoices(), preferredLanguages);
+      if (voice != null) return voice;
     }
     return null;
+  }
+
+  Future<List<Voice>> _availableVoices() async {
+    final voices = await _tts.getVoices;
+    if (voices is! List) return const [];
+    return [
+      for (final voice in voices)
+        if (voice case {'name': final String name, 'locale': final String locale})
+          Voice(name: name, locale: locale),
+    ];
   }
 }

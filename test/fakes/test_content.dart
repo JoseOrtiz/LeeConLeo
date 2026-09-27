@@ -15,6 +15,10 @@ const testPrompts = PromptLibrary({
   'spatial.left_right.intro': ['intro'],
   'spatial.left_right.left': ['say left'],
   'spatial.left_right.right': ['say right'],
+  'spatial.positions.intro': ['intro'],
+  'spatial.positions.over': ['say over'],
+  'spatial.positions.under': ['say under'],
+  'spatial.positions.between': ['say between'],
 });
 
 const testContent = ContentBundle(
@@ -28,6 +32,7 @@ const testContent = ContentBundle(
       steps: [
         PathStep(id: 'up-down', activities: ['spatial.up_down']),
         PathStep(id: 'left-right', activities: ['spatial.left_right']),
+        PathStep(id: 'positions', activities: ['spatial.positions']),
         PathStep(id: 'a', grapheme: 'a', sound: 'a', activities: ['letter.meet']),
       ],
     ),

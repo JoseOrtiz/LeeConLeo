@@ -179,6 +179,7 @@
 - text: medusa
 - text: melón
 - text: mesa
+  image: words/mesa.svg
 - text: micrófono
 - text: miel
 - text: mimo
@@ -225,6 +226,7 @@
 - text: peine
 - text: pelo
 - text: pelota
+  image: words/pelota.svg
 - text: pera
 - text: perfume
 - text: perro
