@@ -29,6 +29,11 @@ plan is in `docs/`.
 
 - After editing `content/`: `dart run tool/content.dart build`.
 - Before finishing: `flutter analyze` and `flutter test` must pass.
-- All changes go through pull requests into `main`. PR descriptions describe what
-  changed and how it was verified, not what the README already explains.
+- Commits follow Conventional Commits in English (`feat:`, `fix:`, `chore:`,
+  `docs:`, `refactor:`, `test:`, `ci:`), with an imperative summary.
+- All changes go through pull requests into `main`. The PR title uses the same
+  Conventional Commits prefix with a summary in Spanish (e.g.
+  `chore: regenerar el proyecto Android`). PR descriptions are in Spanish, short
+  and focused, with three sections: `Contexto`, `Cambios`, `Pruebas`. No future
+  work, and nothing the README already explains.
 - Don't push or create branches. The maintainer runs remote git operations.
