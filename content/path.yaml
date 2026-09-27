@@ -1,15 +1,22 @@
 - stage: 0
   name: Leo explora
+  scene: scenes/meadow.svg
+  tint: '#EEF7E4'
   steps:
     - id: up-down
+      icon: steps/up_down.svg
       activities: [spatial.up_down]
     - id: left-right
+      icon: steps/left_right.svg
       activities: [spatial.left_right]
     - id: positions
+      icon: steps/positions.svg
       activities: [spatial.positions]
 
 - stage: 2
   name: Las vocales
+  scene: scenes/beach.svg
+  tint: '#FDF4DE'
   steps:
     - id: a
       grapheme: a

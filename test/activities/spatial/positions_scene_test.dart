@@ -21,7 +21,12 @@ void main() {
       });
 
       test('everything stays on screen', () {
-        for (final rect in [...scene.tables, scene.leoArea, scene.ballAt(scene.ballStart)]) {
+        for (final rect in [
+          ...scene.tables,
+          scene.leoArea,
+          scene.ballAt(scene.ballStart),
+          scene.floor,
+        ]) {
           expect(bounds.expandToInclude(rect), bounds);
         }
       });

@@ -9,12 +9,14 @@ class ActivityTopBar extends StatelessWidget {
     required this.onRepeat,
     required this.completed,
     required this.total,
+    this.showsProgress = true,
   });
 
   final VoidCallback onHome;
   final VoidCallback onRepeat;
   final int completed;
   final int total;
+  final bool showsProgress;
 
   @override
   Widget build(BuildContext context) {
@@ -33,8 +35,9 @@ class ActivityTopBar extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               spacing: 4,
               children: [
-                for (var i = 0; i < total; i++)
-                  ProgressStar(key: ValueKey('star-$i'), isEarned: i < completed),
+                if (showsProgress)
+                  for (var i = 0; i < total; i++)
+                    ProgressStar(key: ValueKey('star-$i'), isEarned: i < completed),
               ],
             ),
           ),

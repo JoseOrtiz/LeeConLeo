@@ -3917,30 +3917,37 @@
     {
       "stage": 0,
       "name": "Leo explora",
+      "scene": "scenes/meadow.svg",
+      "tint": "#EEF7E4",
       "steps": [
         {
           "id": "up-down",
           "activities": [
             "spatial.up_down"
-          ]
+          ],
+          "icon": "steps/up_down.svg"
         },
         {
           "id": "left-right",
           "activities": [
             "spatial.left_right"
-          ]
+          ],
+          "icon": "steps/left_right.svg"
         },
         {
           "id": "positions",
           "activities": [
             "spatial.positions"
-          ]
+          ],
+          "icon": "steps/positions.svg"
         }
       ]
     },
     {
       "stage": 2,
       "name": "Las vocales",
+      "scene": "scenes/beach.svg",
+      "tint": "#FDF4DE",
       "steps": [
         {
           "id": "a",
@@ -4016,6 +4023,12 @@
     ],
     "reward": [
       "¡Terminaste! Ganaste una estrella."
+    ],
+    "home.intro": [
+      "¡Hola! Soy Leo. Toca donde estoy yo para jugar."
+    ],
+    "home.locked": [
+      "Todavía no. Primero juega donde estoy yo."
     ],
     "spatial.up_down.intro": [
       "¡Hola! Soy Leo. Ayúdame a encontrar arriba y abajo."

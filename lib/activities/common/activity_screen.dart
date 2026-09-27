@@ -8,7 +8,11 @@ import 'package:go_router/go_router.dart';
 import '../../core/audio/audio_providers.dart';
 import '../../core/content/content_providers.dart';
 import '../../core/content/models/content_bundle.dart';
+import '../../core/content/models/path_stage.dart';
 import '../../core/logging/logging_providers.dart';
+import '../../core/progress/progress_providers.dart';
+import '../../app/widgets/scene_band.dart';
+import '../../utils/hex_color.dart';
 import '../activity_providers.dart';
 import 'activity_context.dart';
 import 'activity_session.dart';
@@ -40,6 +44,7 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
   ActivitySession? _session;
   Timer? _celebrationTimer;
   bool _isUnavailable = false;
+  PathStage? _stage;
 
   @override
   void initState() {
@@ -70,6 +75,7 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
     setState(() {
       _spec = spec;
       _session = session;
+      _stage = content.stageOf(step.id);
     });
     session.start();
   }
@@ -80,10 +86,16 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
       _celebrationTimer?.cancel();
       _celebrationTimer = Timer(widget.celebrationDuration, session.next);
     }
+    if (session.phase == SessionPhase.finished) {
+      ref.read(completedStepsProvider.notifier).markCompleted(session.stepId);
+    }
     setState(() {});
   }
 
-  void _goHome() => context.go('/');
+  void _goHome() {
+    ref.read(promptPlayerProvider).stop();
+    context.go('/');
+  }
 
   @override
   void dispose() {
@@ -94,7 +106,28 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: SafeArea(child: _buildBody()));
+    final scene = _stage?.scene;
+    final showScene = scene != null && _showsScene;
+    return Scaffold(
+      backgroundColor: _tint,
+      body: Stack(
+        children: [
+          if (showScene) Positioned.fill(child: SceneBand(asset: 'assets/images/$scene')),
+          SafeArea(child: _buildBody()),
+        ],
+      ),
+    );
+  }
+
+  bool get _showsScene {
+    final phase = _session?.phase;
+    return _isUnavailable || phase == SessionPhase.intro || phase == SessionPhase.finished;
+  }
+
+  Color? get _tint {
+    final tint = _stage?.tint;
+    final argb = tint == null ? null : parseHexColor(tint);
+    return argb == null ? null : Color(argb);
   }
 
   Widget _buildBody() {
@@ -109,6 +142,7 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
           onRepeat: session.repeatPrompt,
           completed: _completedItems(session),
           total: session.itemCount,
+          showsProgress: !_showsScene,
         ),
         Expanded(child: _buildPhase(session)),
       ],

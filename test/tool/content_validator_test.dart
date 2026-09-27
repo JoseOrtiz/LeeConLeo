@@ -6,6 +6,8 @@ import 'package:lee_con_leo/core/content/models/prompt_library.dart';
 import 'package:lee_con_leo/core/content/models/word.dart';
 
 import '../../tool/src/validation/rules/known_activities_rule.dart';
+import '../../tool/src/validation/rules/path_images_rule.dart';
+import '../../tool/src/validation/rules/stage_tints_rule.dart';
 import '../../tool/src/validation/rules/syllables_match_text_rule.dart';
 import '../../tool/src/validation/rules/unique_ids_rule.dart';
 
@@ -41,5 +43,43 @@ void main() {
     );
     final issues = const KnownActivitiesRule().check(bundle).toList();
     expect(issues.single.message, contains('letter.dance'));
+  });
+
+  test('flags step icons that do not exist', () {
+    final bundle = _bundle(
+      steps: [
+        const PathStep(id: 'up-down', activities: [], icon: 'steps/up_down.svg'),
+        const PathStep(id: 'lost', activities: [], icon: 'steps/missing.svg'),
+        const PathStep(id: 'a', activities: []),
+      ],
+    );
+    final issues = const PathImagesRule().check(bundle).toList();
+    expect(issues.single.message, contains('lost'));
+  });
+
+  test('flags stage scenes that do not exist', () {
+    const bundle = ContentBundle(
+      words: [],
+      stages: [
+        PathStage(stage: 0, name: 'ok', scene: 'scenes/meadow.svg', steps: []),
+        PathStage(stage: 1, name: 'lost', scene: 'scenes/missing.svg', steps: []),
+      ],
+      prompts: PromptLibrary({}),
+    );
+    final issues = const PathImagesRule().check(bundle).toList();
+    expect(issues.single.message, contains('stage 1'));
+  });
+
+  test('flags stage tints that are not colors', () {
+    const bundle = ContentBundle(
+      words: [],
+      stages: [
+        PathStage(stage: 0, name: 'ok', tint: '#EEF7E4', steps: []),
+        PathStage(stage: 1, name: 'bad', tint: 'green', steps: []),
+      ],
+      prompts: PromptLibrary({}),
+    );
+    final issues = const StageTintsRule().check(bundle).toList();
+    expect(issues.single.message, contains('green'));
   });
 }

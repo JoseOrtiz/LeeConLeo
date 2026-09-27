@@ -1,80 +1,232 @@
+import 'dart:async';
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../activities/activity_providers.dart';
-import '../activities/activity_registry.dart';
+import '../app/app_theme.dart';
 import '../app/widgets/leo_avatar.dart';
+import '../app/widgets/pulse.dart';
+import '../core/audio/audio_providers.dart';
 import '../core/content/content_providers.dart';
 import '../core/content/models/content_bundle.dart';
-import '../core/content/models/path_stage.dart';
+import '../core/content/models/path_step.dart';
+import '../core/progress/progress_providers.dart';
+import 'greeting.dart';
+import 'leo_position.dart';
+import 'path_layout.dart';
+import 'route_painter.dart';
+import '../app/widgets/scene_band.dart';
 import 'step_button.dart';
+import 'step_status.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final content = ref.watch(contentProvider);
-    final registry = ref.watch(activityRegistryProvider);
-
     return Scaffold(
       body: SafeArea(
-        child: content.when(
-          data: (bundle) => _StageList(bundle: bundle, registry: registry),
-          loading: () => const Center(child: CircularProgressIndicator()),
-          error: (error, _) => Center(child: Text('$error')),
-        ),
+        child: ref
+            .watch(contentProvider)
+            .when(
+              data: (bundle) => PathMap(bundle: bundle),
+              loading: () => const Center(child: CircularProgressIndicator()),
+              error: (error, _) => Center(child: Text('$error')),
+            ),
       ),
     );
   }
 }
 
-class _StageList extends StatelessWidget {
-  const _StageList({required this.bundle, required this.registry});
+class PathMap extends ConsumerStatefulWidget {
+  const PathMap({super.key, required this.bundle});
+
+  static const walkDuration = Duration(milliseconds: 900);
+  static const maxWidth = 560.0;
+  static const introPrompt = 'home.intro';
+  static const lockedPrompt = 'home.locked';
 
   final ContentBundle bundle;
-  final ActivityRegistry registry;
+
+  @override
+  ConsumerState<PathMap> createState() => _PathMapState();
+}
+
+class _PathMapState extends ConsumerState<PathMap> {
+  final _leoKey = GlobalKey();
+  final _random = Random();
+  Timer? _showLeoTimer;
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) => _arrive());
+  }
+
+  void _arrive() {
+    if (!mounted) return;
+    if (ref.read(greetingProvider.notifier).takeTurn()) _say(PathMap.introPrompt);
+    final target = _leoTarget(_statuses(ref.read(completedStepsProvider)));
+    if (target != null && ref.read(leoPositionProvider) != target) {
+      ref.read(leoPositionProvider.notifier).moveTo(target);
+    }
+    _showLeoTimer = Timer(PathMap.walkDuration, _showLeo);
+  }
+
+  @override
+  void dispose() {
+    _showLeoTimer?.cancel();
+    super.dispose();
+  }
+
+  void _showLeo() {
+    final leo = _leoKey.currentContext;
+    if (!mounted || leo == null) return;
+    Scrollable.ensureVisible(leo, alignment: 0.5, duration: const Duration(milliseconds: 400));
+  }
+
+  void _say(String promptId) =>
+      ref.read(promptPlayerProvider).say(widget.bundle.prompts.pick(promptId, _random));
+
+  Map<String, StepStatus> _statuses(Set<String> completed) {
+    final registry = ref.read(activityRegistryProvider);
+    return stepStatuses(
+      widget.bundle.steps,
+      completed: completed,
+      isPlayable: (step) => registry.firstAvailable(step.activities) != null,
+    );
+  }
+
+  String? _leoTarget(Map<String, StepStatus> statuses) {
+    for (final MapEntry(key: id, value: status) in statuses.entries) {
+      if (status == StepStatus.next) return id;
+    }
+    final done = [
+      for (final MapEntry(key: id, value: status) in statuses.entries)
+        if (status == StepStatus.done) id,
+    ];
+    return done.isEmpty ? null : done.last;
+  }
+
+  void _open(PathStep step, StepStatus status) {
+    final activityId = ref.read(activityRegistryProvider).firstAvailable(step.activities);
+    if (status == StepStatus.locked || activityId == null) {
+      _say(PathMap.lockedPrompt);
+      return;
+    }
+    context.go('/play/${step.id}/$activityId');
+  }
 
   @override
   Widget build(BuildContext context) {
-    return ListView(
-      padding: const EdgeInsets.all(24),
-      children: [
-        const Center(child: LeoAvatar()),
-        for (final stage in bundle.stages) _stageSection(context, stage),
-      ],
+    final statuses = _statuses(ref.watch(completedStepsProvider));
+    final leoAt = ref.watch(leoPositionProvider) ?? _leoTarget(statuses);
+
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final width = constraints.maxWidth;
+        final layout = PathLayout.fit(
+          width: min(width, PathMap.maxWidth),
+          stages: widget.bundle.stages,
+          minHeight: constraints.maxHeight,
+        );
+        return SingleChildScrollView(
+          reverse: true,
+          child: SizedBox(
+            width: width,
+            height: layout.height,
+            child: Stack(
+              children: [
+                for (final (index, stage) in widget.bundle.stages.indexed) ...[
+                  Positioned(
+                    left: 0,
+                    right: 0,
+                    top: layout.stageBands[index].top,
+                    height: layout.stageBands[index].height + SceneBand.seamOverlap,
+                    child: _scene(stage.scene),
+                  ),
+                  Positioned(
+                    left: 16,
+                    top: layout.stageBands[index].top + 16,
+                    child: _StageLabel(name: stage.name),
+                  ),
+                ],
+                Positioned(
+                  left: (width - layout.width) / 2,
+                  top: 0,
+                  width: layout.width,
+                  height: layout.height,
+                  child: Stack(children: _route(layout, statuses, leoAt)),
+                ),
+              ],
+            ),
+          ),
+        );
+      },
     );
   }
 
-  Widget _stageSection(BuildContext context, PathStage stage) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 32),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(stage.name, style: Theme.of(context).textTheme.headlineMedium),
-          const SizedBox(height: 16),
-          Wrap(
-            spacing: 16,
-            runSpacing: 16,
-            children: [
-              for (final step in stage.steps)
-                StepButton(
-                  key: ValueKey('step-${step.id}'),
-                  step: step,
-                  onPressed: _openAction(context, step.id, step.activities),
-                ),
-            ],
+  List<Widget> _route(PathLayout layout, Map<String, StepStatus> statuses, String? leoAt) => [
+    Positioned.fill(
+      child: CustomPaint(
+        painter: RoutePainter(
+          points: [for (final step in widget.bundle.steps) layout.stepCenters[step.id]!],
+          edge: AppTheme.outline,
+          road: AppTheme.road,
+        ),
+      ),
+    ),
+    for (final step in widget.bundle.steps)
+      Positioned.fromRect(
+        rect: layout.stoneOf(step.id),
+        child: _pulseIfNext(
+          statuses[step.id]!,
+          StepButton(
+            key: ValueKey('step-${step.id}'),
+            step: step,
+            status: statuses[step.id]!,
+            onPressed: () => _open(step, statuses[step.id]!),
           ),
-        ],
+        ),
+      ),
+    if (leoAt != null)
+      AnimatedPositioned.fromRect(
+        rect: layout.leoBeside(leoAt),
+        duration: PathMap.walkDuration,
+        curve: Curves.easeInOut,
+        child: IgnorePointer(
+          child: LeoAvatar(key: _leoKey, size: PathLayout.leoHeight),
+        ),
+      ),
+  ];
+
+  Widget _pulseIfNext(StepStatus status, Widget stone) =>
+      status == StepStatus.next ? Pulse(child: stone) : stone;
+
+  Widget _scene(String? scene) => scene == null
+      ? ColoredBox(color: Theme.of(context).colorScheme.surfaceContainerLow)
+      : SceneBand(asset: 'assets/images/$scene');
+}
+
+class _StageLabel extends StatelessWidget {
+  const _StageLabel({required this.name});
+
+  final String name;
+
+  @override
+  Widget build(BuildContext context) {
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: Colors.white.withValues(alpha: 0.85),
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+        child: Text(name, style: Theme.of(context).textTheme.titleMedium),
       ),
     );
-  }
-
-  VoidCallback? _openAction(BuildContext context, String stepId, List<String> activities) {
-    final activityId = registry.firstAvailable(activities);
-    if (activityId == null) return null;
-    return () => context.go('/play/$stepId/$activityId');
   }
 }

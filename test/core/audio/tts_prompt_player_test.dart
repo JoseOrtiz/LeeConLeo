@@ -13,6 +13,7 @@ void main() {
     voiceLookupInterval: Duration.zero,
     maxUtteranceDuration: maxUtteranceDuration,
     retryDelay: Duration.zero,
+    stopSettleDelay: Duration.zero,
   );
 
   Future<void> settle() => Future<void>.delayed(Duration.zero);
@@ -145,16 +146,25 @@ void main() {
     expect(tts.spoken, ['Hola', 'Arriba']);
   });
 
-  test('stop drops a prompt that is waiting', () async {
+  test('stop cuts the current phrase and a newer one still plays', () async {
     final tts = FakeFlutterTts(finishesImmediately: false);
     final player = playerWith(tts);
 
-    player.say('Uno');
+    player.say('¡Terminaste!');
     await settle();
-    player.say('Dos');
+    player.say('¡Hola! Soy Leo.');
     await player.stop();
     await settle();
 
-    expect(tts.spoken, ['Uno']);
+    expect(tts.spoken, ['¡Terminaste!', '¡Hola! Soy Leo.']);
+    expect(tts.stops, 1);
+  });
+
+  test('a phrase cut on purpose is not retried', () async {
+    final tts = FakeFlutterTts(failures: 1, failure: 'interrupted');
+
+    await playerWith(tts).say('Hola');
+
+    expect(tts.spoken, ['Hola']);
   });
 }

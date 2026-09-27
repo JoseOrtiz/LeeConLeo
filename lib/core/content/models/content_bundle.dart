@@ -27,6 +27,13 @@ class ContentBundle {
     return null;
   }
 
+  PathStage? stageOf(String stepId) {
+    for (final stage in stages) {
+      if (stage.steps.any((step) => step.id == stepId)) return stage;
+    }
+    return null;
+  }
+
   Map<String, dynamic> toJson() => {
     'words': [for (final word in words) word.toJson()],
     'stages': [for (final stage in stages) stage.toJson()],
