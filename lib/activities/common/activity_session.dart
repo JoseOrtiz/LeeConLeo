@@ -133,10 +133,4 @@ class ActivitySession extends ChangeNotifier implements ItemController {
       _player.say('${_pick(feedbackId)} ${_pick(currentItem.promptId)}');
 
   String _pick(String promptId) => _prompts.pick(promptId, _random);
-
-  @override
-  void dispose() {
-    _player.stop();
-    super.dispose();
-  }
 }

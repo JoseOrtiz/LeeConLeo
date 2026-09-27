@@ -14,6 +14,12 @@ feedback.hint:
 reward:
   - ¡Terminaste! Ganaste una estrella.
 
+home.intro:
+  - ¡Hola! Soy Leo. Toca donde estoy yo para jugar.
+
+home.locked:
+  - Todavía no. Primero juega donde estoy yo.
+
 spatial.up_down.intro:
   - ¡Hola! Soy Leo. Ayúdame a encontrar arriba y abajo.
 

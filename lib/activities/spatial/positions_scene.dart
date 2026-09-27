@@ -24,6 +24,7 @@ class PositionsScene {
     required this.ballSize,
     required this.ballStart,
     required this.leoArea,
+    required this.floor,
   });
 
   factory PositionsScene.fit(Size size) {
@@ -76,6 +77,7 @@ class PositionsScene {
       ],
       ballSize: ball,
       ballStart: Offset(size.width * 0.64, trayCenter),
+      floor: Rect.fromLTRB(0, floor, size.width, size.height),
       leoArea: Rect.fromCenter(
         center: Offset(size.width * 0.34, trayCenter),
         width: leoHeight * LeoAvatar.aspectRatio,
@@ -103,6 +105,7 @@ class PositionsScene {
   final double ballSize;
   final Offset ballStart;
   final Rect leoArea;
+  final Rect floor;
 
   Rect ballAt(Offset center) => Rect.fromCenter(center: center, width: ballSize, height: ballSize);
 

@@ -15,6 +15,7 @@ class TtsPromptPlayer implements PromptPlayer {
     this.maxUtteranceDuration = const Duration(seconds: 10),
     this.retriesAfterError = 2,
     this.retryDelay = const Duration(milliseconds: 500),
+    this.stopSettleDelay = const Duration(milliseconds: 200),
   }) : _tts = tts ?? FlutterTts() {
     _tts
       ..setCompletionHandler(() => _finishUtterance(spoken: true))
@@ -25,6 +26,7 @@ class TtsPromptPlayer implements PromptPlayer {
   static const preferredLanguages = ['es-CL', 'es-US', 'es-MX', 'es-ES'];
   static const defaultSpeechRate = kIsWeb ? 0.9 : 0.45;
   static const blockedByBrowser = 'not-allowed';
+  static const cutOnPurpose = {'interrupted', 'canceled'};
 
   final FlutterTts _tts;
   final double speechRate;
@@ -33,6 +35,7 @@ class TtsPromptPlayer implements PromptPlayer {
   final Duration maxUtteranceDuration;
   final int retriesAfterError;
   final Duration retryDelay;
+  final Duration stopSettleDelay;
   Future<bool>? _setup;
   Completer<bool>? _utterance;
   String? _pending;
@@ -70,10 +73,10 @@ class TtsPromptPlayer implements PromptPlayer {
   @override
   Future<void> stop() async {
     _stops++;
-    _pending = null;
     _blocked = null;
-    _finishUtterance(spoken: true);
     await _tts.stop();
+    await Future<void>.delayed(stopSettleDelay);
+    _finishUtterance(spoken: true);
   }
 
   String? _takePending() {
@@ -108,6 +111,10 @@ class TtsPromptPlayer implements PromptPlayer {
   }
 
   void _onError(dynamic message) {
+    if (cutOnPurpose.contains(message)) {
+      _finishUtterance(spoken: true);
+      return;
+    }
     debugPrint('Speech failed: $message');
     _lastErrorWasBlock = message == blockedByBrowser;
     _finishUtterance(spoken: false);

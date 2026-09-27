@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../app/app_theme.dart';
 import '../../app/widgets/leo_avatar.dart';
 import '../common/activity_item.dart';
 import '../common/item_controller.dart';
@@ -38,6 +39,7 @@ class _PositionsViewState extends State<PositionsView> {
         final placed = widget.controller.isSolved ? _dropped : null;
         return Stack(
           children: [
+            Positioned.fromRect(rect: scene.floor, child: const _Floor()),
             for (final table in scene.tables)
               Positioned.fromRect(rect: table, child: SvgPicture.asset(PositionsView.tableAsset)),
             for (final zone in scene.zones)
@@ -97,6 +99,20 @@ class _PositionsViewState extends State<PositionsView> {
   }
 
   Widget _ball() => SvgPicture.asset(PositionsView.ballAsset);
+}
+
+class _Floor extends StatelessWidget {
+  const _Floor();
+
+  @override
+  Widget build(BuildContext context) {
+    return const DecoratedBox(
+      decoration: BoxDecoration(
+        color: AppTheme.road,
+        border: Border(top: BorderSide(color: AppTheme.outline, width: 6)),
+      ),
+    );
+  }
 }
 
 class _ZoneGlow extends StatelessWidget {

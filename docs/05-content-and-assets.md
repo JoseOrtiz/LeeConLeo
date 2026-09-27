@@ -50,6 +50,14 @@ Run `dart run tool/content.dart build` after editing to regenerate
       activities: [syllables.starts_with, syllables.ends_with, syllables.build_word]
 ```
 
+A step without a letter can set `icon` (relative to `assets/images/`, for example
+`steps/up_down.svg`) so it is recognizable on the home screen. A stage can set
+`scene` (for example `scenes/meadow.svg`): the map ground drawn behind its steps,
+seen from above so stages stack into one map. The scene also frames the intro and
+reward screens of the stage's games. `tint` (a `#RRGGBB` color) is the calm
+background behind the games themselves, so nothing distracts from what the child
+has to find.
+
 Activities pull their items from the word bank using the step's target. Adding a
 word to `words.yaml` automatically makes it available to every activity where it
 fits.

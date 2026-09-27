@@ -9,6 +9,7 @@ import 'package:lee_con_leo/core/content/activity_ids.dart';
 import 'package:lee_con_leo/core/content/content_providers.dart';
 import 'package:lee_con_leo/core/logging/in_memory_event_log.dart';
 import 'package:lee_con_leo/core/logging/logging_providers.dart';
+import 'package:lee_con_leo/core/progress/progress_providers.dart';
 
 import '../fakes/recording_prompt_player.dart';
 import '../fakes/test_content.dart';
@@ -68,6 +69,8 @@ void main() {
         }
 
         expect(find.byKey(const ValueKey('reward')), findsOneWidget);
+        final container = ProviderScope.containerOf(tester.element(find.byType(ActivityScreen)));
+        expect(container.read(completedStepsProvider), contains(stepId));
         expect(log.events, hasLength(6));
         expect(log.events.every((event) => event.isCorrect), isTrue);
       });

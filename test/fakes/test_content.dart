@@ -9,6 +9,8 @@ const testPrompts = PromptLibrary({
   'feedback.retry': ['retry'],
   'feedback.hint': ['hint'],
   'reward': ['reward'],
+  'home.intro': ['home intro'],
+  'home.locked': ['home locked'],
   'spatial.up_down.intro': ['intro'],
   'spatial.up_down.up': ['say up'],
   'spatial.up_down.down': ['say down'],
@@ -21,6 +23,8 @@ const testPrompts = PromptLibrary({
   'spatial.positions.between': ['say between'],
 });
 
+const testTint = '#EEF7E4';
+
 const testContent = ContentBundle(
   words: [
     Word(text: 'mano', syllables: ['ma', 'no'], sounds: ['ma', 'no']),
@@ -29,6 +33,8 @@ const testContent = ContentBundle(
     PathStage(
       stage: 0,
       name: 'Leo explora',
+      scene: 'scenes/meadow.svg',
+      tint: testTint,
       steps: [
         PathStep(id: 'up-down', activities: ['spatial.up_down']),
         PathStep(id: 'left-right', activities: ['spatial.left_right']),
