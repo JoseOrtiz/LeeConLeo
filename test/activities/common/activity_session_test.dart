@@ -58,15 +58,19 @@ void main() {
     expect(session.currentItem.id, '1');
   });
 
-  test('a wrong answer asks to retry, and the hint turns on after two mistakes', () {
+  test('a wrong answer asks to retry and repeats the prompt', () {
     session.begin();
     session.answer('down');
     expect(session.isHintActive, isFalse);
-    expect(player.spoken.last, 'retry');
+    expect(player.spoken.last, 'retry say up');
+  });
 
+  test('the hint turns on after two mistakes and repeats the prompt', () {
+    session.begin();
+    session.answer('down');
     session.answer('down');
     expect(session.isHintActive, isTrue);
-    expect(player.spoken.last, 'hint');
+    expect(player.spoken.last, 'hint say up');
   });
 
   test('finishing the last item gives the reward', () {

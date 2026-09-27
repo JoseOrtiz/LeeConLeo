@@ -22,3 +22,12 @@ spatial.up_down.up:
 
 spatial.up_down.down:
   - Toca la flecha de abajo.
+
+spatial.left_right.intro:
+  - ¡Ahora vamos a mirar a los lados! Ayúdame a encontrar izquierda y derecha.
+
+spatial.left_right.left:
+  - Toca la flecha de la izquierda.
+
+spatial.left_right.right:
+  - Toca la flecha de la derecha.

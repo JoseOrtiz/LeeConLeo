@@ -19,7 +19,7 @@ class RewardView extends StatelessWidget {
             size: 200,
             color: Theme.of(context).colorScheme.tertiary,
           ),
-          const LeoAvatar(size: 120),
+          const LeoAvatar(size: 200, pose: LeoPose.cheering),
           const SizedBox(height: 32),
           IconButton.filled(
             key: const ValueKey('done'),

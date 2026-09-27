@@ -13,7 +13,7 @@ class IntroView extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const LeoAvatar(size: 200),
+          const LeoAvatar(size: 260, pose: LeoPose.happy),
           const SizedBox(height: 32),
           IconButton.filled(
             key: const ValueKey('start'),

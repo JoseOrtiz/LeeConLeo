@@ -12,6 +12,9 @@ const testPrompts = PromptLibrary({
   'spatial.up_down.intro': ['intro'],
   'spatial.up_down.up': ['say up'],
   'spatial.up_down.down': ['say down'],
+  'spatial.left_right.intro': ['intro'],
+  'spatial.left_right.left': ['say left'],
+  'spatial.left_right.right': ['say right'],
 });
 
 const testContent = ContentBundle(
@@ -24,6 +27,7 @@ const testContent = ContentBundle(
       name: 'Leo explora',
       steps: [
         PathStep(id: 'up-down', activities: ['spatial.up_down']),
+        PathStep(id: 'left-right', activities: ['spatial.left_right']),
         PathStep(id: 'a', grapheme: 'a', sound: 'a', activities: ['letter.meet']),
       ],
     ),

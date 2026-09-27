@@ -56,6 +56,12 @@ class ActivitySession extends ChangeNotifier implements ItemController {
   @override
   bool get isHintActive => _mistakes >= mistakesBeforeHint;
 
+  @override
+  bool get hasMistake => _mistakes > 0;
+
+  @override
+  bool get isSolved => _phase == SessionPhase.celebrating;
+
   void start() => _say(ActivityPromptIds.intro(activityId));
 
   void begin() {
@@ -72,7 +78,7 @@ class ActivitySession extends ChangeNotifier implements ItemController {
       _say(ActivityPromptIds.correct);
     } else {
       _mistakes++;
-      _say(isHintActive ? ActivityPromptIds.hint : ActivityPromptIds.retry);
+      _sayThenRepeatPrompt(isHintActive ? ActivityPromptIds.hint : ActivityPromptIds.retry);
     }
     notifyListeners();
   }
@@ -121,7 +127,12 @@ class ActivitySession extends ChangeNotifier implements ItemController {
     );
   }
 
-  void _say(String promptId) => _player.say(_prompts.pick(promptId, _random));
+  void _say(String promptId) => _player.say(_pick(promptId));
+
+  void _sayThenRepeatPrompt(String feedbackId) =>
+      _player.say('${_pick(feedbackId)} ${_pick(currentItem.promptId)}');
+
+  String _pick(String promptId) => _prompts.pick(promptId, _random);
 
   @override
   void dispose() {

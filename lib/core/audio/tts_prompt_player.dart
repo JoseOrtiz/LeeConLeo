@@ -9,32 +9,50 @@ class TtsPromptPlayer implements PromptPlayer {
   TtsPromptPlayer({
     FlutterTts? tts,
     this.speechRate = defaultSpeechRate,
-    this.voiceLookupAttempts = 20,
+    this.voiceLookupAttempts = 80,
     this.voiceLookupInterval = const Duration(milliseconds: 100),
     this.maxUtteranceDuration = const Duration(seconds: 10),
+    this.retriesAfterError = 2,
+    this.retryDelay = const Duration(milliseconds: 500),
   }) : _tts = tts ?? FlutterTts() {
     _tts
-      ..setCompletionHandler(_finishUtterance)
-      ..setCancelHandler(_finishUtterance)
-      ..setErrorHandler((_) => _finishUtterance());
+      ..setCompletionHandler(() => _finishUtterance(spoken: true))
+      ..setCancelHandler(() => _finishUtterance(spoken: true))
+      ..setErrorHandler(_onError);
   }
 
   static const preferredLanguages = ['es-CL', 'es-US', 'es-MX', 'es-ES'];
   static const defaultSpeechRate = kIsWeb ? 0.9 : 0.45;
+  static const blockedByBrowser = 'not-allowed';
 
   final FlutterTts _tts;
   final double speechRate;
   final int voiceLookupAttempts;
   final Duration voiceLookupInterval;
   final Duration maxUtteranceDuration;
+  final int retriesAfterError;
+  final Duration retryDelay;
   Future<bool>? _setup;
-  Completer<void>? _utterance;
+  Completer<bool>? _utterance;
   String? _pending;
   bool _isSpeaking = false;
+  int _stops = 0;
+  bool _lastErrorWasBlock = false;
+  String? _blocked;
+
+  @override
+  Future<void> prepare() => _ensureConfigured();
+
+  @override
+  void resumeAfterUserGesture() {
+    final text = _blocked;
+    if (text != null) say(text);
+  }
 
   @override
   Future<void> say(String text) async {
     if (text.isEmpty) return;
+    _blocked = null;
     _pending = text;
     if (_isSpeaking) return;
     _isSpeaking = true;
@@ -50,8 +68,10 @@ class TtsPromptPlayer implements PromptPlayer {
 
   @override
   Future<void> stop() async {
+    _stops++;
     _pending = null;
-    _finishUtterance();
+    _blocked = null;
+    _finishUtterance(spoken: true);
     await _tts.stop();
   }
 
@@ -62,15 +82,33 @@ class TtsPromptPlayer implements PromptPlayer {
   }
 
   Future<void> _speakAndWait(String text) async {
-    final utterance = _utterance = Completer<void>();
-    await _tts.speak(text);
-    await utterance.future.timeout(maxUtteranceDuration, onTimeout: () {});
-    _utterance = null;
+    final stops = _stops;
+    for (var attempt = 0; attempt <= retriesAfterError; attempt++) {
+      if (attempt > 0) {
+        await Future<void>.delayed(retryDelay);
+        if (_stops != stops || _pending != null) return;
+      }
+      final utterance = _utterance = Completer<bool>();
+      await _tts.speak(text);
+      final spoken = await utterance.future.timeout(maxUtteranceDuration, onTimeout: () => true);
+      _utterance = null;
+      if (spoken) return;
+      if (_lastErrorWasBlock) {
+        _blocked = text;
+        return;
+      }
+    }
   }
 
-  void _finishUtterance() {
+  void _onError(dynamic message) {
+    debugPrint('Speech failed: $message');
+    _lastErrorWasBlock = message == blockedByBrowser;
+    _finishUtterance(spoken: false);
+  }
+
+  void _finishUtterance({required bool spoken}) {
     final utterance = _utterance;
-    if (utterance != null && !utterance.isCompleted) utterance.complete();
+    if (utterance != null && !utterance.isCompleted) utterance.complete(spoken);
   }
 
   Future<void> _ensureConfigured() async {
