@@ -11,7 +11,8 @@
         "a",
         "be",
         "ja"
-      ]
+      ],
+      "image": "words/abeja.svg"
     },
     {
       "text": "agua",
@@ -975,7 +976,8 @@
         "le",
         "fan",
         "te"
-      ]
+      ],
+      "image": "words/elefante.svg"
     },
     {
       "text": "empanada",
@@ -1117,7 +1119,8 @@
         "es",
         "tre",
         "ya"
-      ]
+      ],
+      "image": "words/estrella.svg"
     },
     {
       "text": "estrella de mar",
@@ -1584,7 +1587,8 @@
       "sounds": [
         "i",
         "glu"
-      ]
+      ],
+      "image": "words/iglu.svg"
     },
     {
       "text": "impresora",
@@ -1634,7 +1638,8 @@
       "sounds": [
         "is",
         "la"
-      ]
+      ],
+      "image": "words/isla.svg"
     },
     {
       "text": "jabón",
@@ -2402,7 +2407,8 @@
       "sounds": [
         "o",
         "jo"
-      ]
+      ],
+      "image": "words/ojo.svg"
     },
     {
       "text": "olla",
@@ -2467,7 +2473,8 @@
       "sounds": [
         "o",
         "so"
-      ]
+      ],
+      "image": "words/oso.svg"
     },
     {
       "text": "oveja",
@@ -3650,7 +3657,8 @@
         "ni",
         "kor",
         "nio"
-      ]
+      ],
+      "image": "words/unicornio.svg"
     },
     {
       "text": "uniforme",
@@ -3702,7 +3710,8 @@
       "sounds": [
         "u",
         "ba"
-      ]
+      ],
+      "image": "words/uva.svg"
     },
     {
       "text": "uña",
@@ -3898,7 +3907,8 @@
       "sounds": [
         "ar",
         "bol"
-      ]
+      ],
+      "image": "words/arbol.svg"
     }
   ],
   "stages": [

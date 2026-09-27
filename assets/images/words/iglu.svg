@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<ellipse cx="200" cy="312" rx="170" ry="34" fill="#FFFFFF" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M70 304 Q70 120 200 118 Q330 120 330 304 Z" fill="#FFFFFF" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M80 250 L320 250 M88 204 L312 204 M112 160 L288 160" fill="none" stroke="#A9B4C2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M150 132 L150 160 M250 132 L250 160 M120 160 L120 204 M200 160 L200 204 M280 160 L280 204 M150 204 L150 250 M250 204 L250 250 M110 250 L110 304 M290 250 L290 304" fill="none" stroke="#A9B4C2" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M70 304 Q70 120 200 118 Q330 120 330 304 Z" fill="none" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M150 304 L150 262 Q150 214 200 214 Q250 214 250 262 L250 304 Z" fill="#FFFFFF" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M166 304 L166 266 Q166 230 200 230 Q234 230 234 266 L234 304 Z" fill="#6B4226" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>
