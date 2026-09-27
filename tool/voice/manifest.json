@@ -1,0 +1,281 @@
+{
+  "engine": "VoxCPM2 (openbmb/VoxCPM2)",
+  "license": "Apache-2.0 (code and weights)",
+  "voiceDescription": "Un niño explorador de siete años, cálido y entusiasta, con acento chileno",
+  "seed": 2,
+  "referenceText": "¡Hola! Soy Leo. Ayúdame a encontrar arriba y abajo. Ma. Me. Mi. Mo. Mu.",
+  "settings": {
+    "cfg_value": 2.0,
+    "inference_timesteps": 10,
+    "speed": 0.85,
+    "spellings": {
+      "a": "Aa",
+      "e": "Ee",
+      "i": "Ii",
+      "o": "Oo",
+      "u": "Uu"
+    }
+  },
+  "clips": [
+    {
+      "promptId": "feedback.correct",
+      "index": 0,
+      "text": "¡Muy bien!",
+      "file": "assets/audio/prompts/feedback.correct.0.m4a"
+    },
+    {
+      "promptId": "feedback.correct",
+      "index": 1,
+      "text": "¡Excelente!",
+      "file": "assets/audio/prompts/feedback.correct.1.m4a"
+    },
+    {
+      "promptId": "feedback.correct",
+      "index": 2,
+      "text": "¡Lo lograste!",
+      "file": "assets/audio/prompts/feedback.correct.2.m4a"
+    },
+    {
+      "promptId": "feedback.correct",
+      "index": 3,
+      "text": "¡Súper!",
+      "file": "assets/audio/prompts/feedback.correct.3.m4a"
+    },
+    {
+      "promptId": "feedback.retry",
+      "index": 0,
+      "text": "¡Casi! Inténtalo otra vez.",
+      "file": "assets/audio/prompts/feedback.retry.0.m4a"
+    },
+    {
+      "promptId": "feedback.retry",
+      "index": 1,
+      "text": "Escucha otra vez.",
+      "file": "assets/audio/prompts/feedback.retry.1.m4a"
+    },
+    {
+      "promptId": "feedback.hint",
+      "index": 0,
+      "text": "Mira, te ayudo.",
+      "file": "assets/audio/prompts/feedback.hint.0.m4a"
+    },
+    {
+      "promptId": "reward",
+      "index": 0,
+      "text": "¡Terminaste! Ganaste una estrella.",
+      "file": "assets/audio/prompts/reward.0.m4a"
+    },
+    {
+      "promptId": "home.intro",
+      "index": 0,
+      "text": "¡Hola! Soy Leo. Toca donde estoy yo para jugar.",
+      "file": "assets/audio/prompts/home.intro.0.m4a"
+    },
+    {
+      "promptId": "home.locked",
+      "index": 0,
+      "text": "Todavía no. Primero juega donde estoy yo.",
+      "file": "assets/audio/prompts/home.locked.0.m4a"
+    },
+    {
+      "promptId": "spatial.up_down.intro",
+      "index": 0,
+      "text": "¡Hola! Soy Leo. Ayúdame a encontrar arriba y abajo.",
+      "file": "assets/audio/prompts/spatial.up_down.intro.0.m4a"
+    },
+    {
+      "promptId": "spatial.up_down.up",
+      "index": 0,
+      "text": "Toca la flecha de arriba.",
+      "file": "assets/audio/prompts/spatial.up_down.up.0.m4a"
+    },
+    {
+      "promptId": "spatial.up_down.down",
+      "index": 0,
+      "text": "Toca la flecha de abajo.",
+      "file": "assets/audio/prompts/spatial.up_down.down.0.m4a"
+    },
+    {
+      "promptId": "spatial.left_right.intro",
+      "index": 0,
+      "text": "¡Ahora vamos a mirar a los lados! Ayúdame a encontrar izquierda y derecha.",
+      "file": "assets/audio/prompts/spatial.left_right.intro.0.m4a"
+    },
+    {
+      "promptId": "spatial.left_right.left",
+      "index": 0,
+      "text": "Toca la flecha de la izquierda.",
+      "file": "assets/audio/prompts/spatial.left_right.left.0.m4a"
+    },
+    {
+      "promptId": "spatial.left_right.right",
+      "index": 0,
+      "text": "Toca la flecha de la derecha.",
+      "file": "assets/audio/prompts/spatial.left_right.right.0.m4a"
+    },
+    {
+      "promptId": "spatial.positions.intro",
+      "index": 0,
+      "text": "¡Juguemos con la pelota! Escucha dónde va y arrástrala con tu dedo.",
+      "file": "assets/audio/prompts/spatial.positions.intro.0.m4a"
+    },
+    {
+      "promptId": "spatial.positions.over",
+      "index": 0,
+      "text": "Pon la pelota arriba de la mesa.",
+      "file": "assets/audio/prompts/spatial.positions.over.0.m4a"
+    },
+    {
+      "promptId": "spatial.positions.under",
+      "index": 0,
+      "text": "Pon la pelota abajo de la mesa.",
+      "file": "assets/audio/prompts/spatial.positions.under.0.m4a"
+    },
+    {
+      "promptId": "spatial.positions.between",
+      "index": 0,
+      "text": "Pon la pelota entre las mesas.",
+      "file": "assets/audio/prompts/spatial.positions.between.0.m4a"
+    },
+    {
+      "promptId": "vowel.a",
+      "index": 0,
+      "text": "a",
+      "file": "assets/audio/sounds/vowel.a.m4a",
+      "spokenAs": "Aa... Ee... Ii... Oo... Uu."
+    },
+    {
+      "promptId": "vowel.e",
+      "index": 0,
+      "text": "e",
+      "file": "assets/audio/sounds/vowel.e.m4a",
+      "spokenAs": "Aa... Ee... Ii... Oo... Uu."
+    },
+    {
+      "promptId": "vowel.i",
+      "index": 0,
+      "text": "i",
+      "file": "assets/audio/sounds/vowel.i.m4a",
+      "spokenAs": "Aa... Ee... Ii... Oo... Uu."
+    },
+    {
+      "promptId": "vowel.o",
+      "index": 0,
+      "text": "o",
+      "file": "assets/audio/sounds/vowel.o.m4a",
+      "spokenAs": "Aa... Ee... Ii... Oo... Uu."
+    },
+    {
+      "promptId": "vowel.u",
+      "index": 0,
+      "text": "u",
+      "file": "assets/audio/sounds/vowel.u.m4a",
+      "spokenAs": "Aa... Ee... Ii... Oo... Uu."
+    },
+    {
+      "promptId": "syllable.ma",
+      "index": 0,
+      "text": "ma",
+      "file": "assets/audio/sounds/syllable.ma.m4a",
+      "spokenAs": "Ma... Me... Mi... Mo... Mu."
+    },
+    {
+      "promptId": "syllable.me",
+      "index": 0,
+      "text": "me",
+      "file": "assets/audio/sounds/syllable.me.m4a",
+      "spokenAs": "Ma... Me... Mi... Mo... Mu."
+    },
+    {
+      "promptId": "syllable.mi",
+      "index": 0,
+      "text": "mi",
+      "file": "assets/audio/sounds/syllable.mi.m4a",
+      "spokenAs": "Ma... Me... Mi... Mo... Mu."
+    },
+    {
+      "promptId": "syllable.mo",
+      "index": 0,
+      "text": "mo",
+      "file": "assets/audio/sounds/syllable.mo.m4a",
+      "spokenAs": "Ma... Me... Mi... Mo... Mu."
+    },
+    {
+      "promptId": "syllable.mu",
+      "index": 0,
+      "text": "mu",
+      "file": "assets/audio/sounds/syllable.mu.m4a",
+      "spokenAs": "Ma... Me... Mi... Mo... Mu."
+    },
+    {
+      "promptId": "syllable.pa",
+      "index": 0,
+      "text": "pa",
+      "file": "assets/audio/sounds/syllable.pa.m4a",
+      "spokenAs": "Pa... Pe... Pi... Po... Pu."
+    },
+    {
+      "promptId": "syllable.pe",
+      "index": 0,
+      "text": "pe",
+      "file": "assets/audio/sounds/syllable.pe.m4a",
+      "spokenAs": "Pa... Pe... Pi... Po... Pu."
+    },
+    {
+      "promptId": "syllable.pi",
+      "index": 0,
+      "text": "pi",
+      "file": "assets/audio/sounds/syllable.pi.m4a",
+      "spokenAs": "Pa... Pe... Pi... Po... Pu."
+    },
+    {
+      "promptId": "syllable.po",
+      "index": 0,
+      "text": "po",
+      "file": "assets/audio/sounds/syllable.po.m4a",
+      "spokenAs": "Pa... Pe... Pi... Po... Pu."
+    },
+    {
+      "promptId": "syllable.pu",
+      "index": 0,
+      "text": "pu",
+      "file": "assets/audio/sounds/syllable.pu.m4a",
+      "spokenAs": "Pa... Pe... Pi... Po... Pu."
+    },
+    {
+      "promptId": "syllable.la",
+      "index": 0,
+      "text": "la",
+      "file": "assets/audio/sounds/syllable.la.m4a",
+      "spokenAs": "La... Le... Li... Lo... Lu."
+    },
+    {
+      "promptId": "syllable.le",
+      "index": 0,
+      "text": "le",
+      "file": "assets/audio/sounds/syllable.le.m4a",
+      "spokenAs": "La... Le... Li... Lo... Lu."
+    },
+    {
+      "promptId": "syllable.li",
+      "index": 0,
+      "text": "li",
+      "file": "assets/audio/sounds/syllable.li.m4a",
+      "spokenAs": "La... Le... Li... Lo... Lu."
+    },
+    {
+      "promptId": "syllable.lo",
+      "index": 0,
+      "text": "lo",
+      "file": "assets/audio/sounds/syllable.lo.m4a",
+      "spokenAs": "La... Le... Li... Lo... Lu."
+    },
+    {
+      "promptId": "syllable.lu",
+      "index": 0,
+      "text": "lu",
+      "file": "assets/audio/sounds/syllable.lu.m4a",
+      "spokenAs": "La... Le... Li... Lo... Lu."
+    }
+  ]
+}

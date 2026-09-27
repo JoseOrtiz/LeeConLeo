@@ -23,8 +23,22 @@ class YamlContentReader {
   ContentBundle read() => ContentBundle(
     words: [for (final entry in _readList(ContentPaths.words)) _toWord(entry)],
     stages: [for (final entry in _readList(ContentPaths.path)) PathStage.fromJson(entry)],
-    prompts: PromptLibrary.fromJson(_readMap(ContentPaths.prompts)),
+    prompts: PromptLibrary.fromJson(_readMap(ContentPaths.prompts), clips: _promptClips()),
   );
+
+  Map<String, String> _promptClips() {
+    final dir = Directory('${ContentPaths.audio}/${ContentPaths.promptClipsDir}');
+    if (!dir.existsSync()) return const {};
+    final names = [
+      for (final file in dir.listSync().whereType<File>())
+        if (file.path.endsWith(ContentPaths.clipExtension)) file.uri.pathSegments.last,
+    ]..sort();
+    return {
+      for (final name in names)
+        name.substring(0, name.length - ContentPaths.clipExtension.length):
+            '${ContentPaths.promptClipsDir}/$name',
+    };
+  }
 
   Word _toWord(Map<String, dynamic> entry) {
     final text = entry['text'] as String;

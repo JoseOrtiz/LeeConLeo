@@ -4060,5 +4060,27 @@
     "spatial.positions.between": [
       "Pon la pelota entre las mesas."
     ]
+  },
+  "promptClips": {
+    "feedback.correct.0": "prompts/feedback.correct.0.m4a",
+    "feedback.correct.1": "prompts/feedback.correct.1.m4a",
+    "feedback.correct.2": "prompts/feedback.correct.2.m4a",
+    "feedback.correct.3": "prompts/feedback.correct.3.m4a",
+    "feedback.hint.0": "prompts/feedback.hint.0.m4a",
+    "feedback.retry.0": "prompts/feedback.retry.0.m4a",
+    "feedback.retry.1": "prompts/feedback.retry.1.m4a",
+    "home.intro.0": "prompts/home.intro.0.m4a",
+    "home.locked.0": "prompts/home.locked.0.m4a",
+    "reward.0": "prompts/reward.0.m4a",
+    "spatial.left_right.intro.0": "prompts/spatial.left_right.intro.0.m4a",
+    "spatial.left_right.left.0": "prompts/spatial.left_right.left.0.m4a",
+    "spatial.left_right.right.0": "prompts/spatial.left_right.right.0.m4a",
+    "spatial.positions.between.0": "prompts/spatial.positions.between.0.m4a",
+    "spatial.positions.intro.0": "prompts/spatial.positions.intro.0.m4a",
+    "spatial.positions.over.0": "prompts/spatial.positions.over.0.m4a",
+    "spatial.positions.under.0": "prompts/spatial.positions.under.0.m4a",
+    "spatial.up_down.down.0": "prompts/spatial.up_down.down.0.m4a",
+    "spatial.up_down.intro.0": "prompts/spatial.up_down.intro.0.m4a",
+    "spatial.up_down.up.0": "prompts/spatial.up_down.up.0.m4a"
   }
 }

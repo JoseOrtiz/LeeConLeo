@@ -110,10 +110,10 @@ to record.
 
 | Audio type | Source | Notes |
 |---|---|---|
-| Words, syllables, Leo's phrases | **Offline open TTS (e.g. Piper), pre-generated at build time** into Ogg files | Same audio on every device, with no network needed. Prefer a Latin American Spanish voice. Check each voice's license before shipping |
-| Isolated syllables ("mu") | TTS, with a carrier trick when needed | TTS often mispronounces a lone syllable. Try saying it slowly, or generating it inside a word and trimming. Every syllable clip gets reviewed by ear |
+| Words, syllables, Leo's phrases | **VoxCPM2 (Apache-2.0 code and weights), pre-generated** into clips | Same audio on every device, with no network needed. Leo is a designed voice, a Chilean seven-year-old explorer, not a cloned person. Chosen over Piper (voices sounded wrong) and over OmniVoice (non-commercial weights) |
+| Isolated syllables ("mu") | Cut from a series said like a teacher ("Ma... Me... Mi... Mo... Mu."), with a short carrier phrase as the fallback | A lone syllable comes out as a quick blip or in another language. Each sound is capitalized, and a vowel alone is written twice ("Ee"), because a single capital is read as an English letter name. Every syllable clip gets reviewed by ear |
 | Isolated letter sounds ("/m/") | **Not used** | TTS can't produce them well. The Silabario teaches through syllables anyway, so letters are introduced by their **name** plus an example syllable and word |
-| Missing clips | Device TTS fallback (`flutter_tts`) | Safety net only. Flagged in validation |
+| Missing clips | Device TTS fallback (`flutter_tts`) | Safety net only: a phrase without a clip is spoken whole by the device, never half clip and half device. Validation counts phrases without a clip and flags clips that match no phrase |
 | Sound effects | CC0 sources (e.g. Kenney, freesound CC0) | |
 
 - Every generated clip gets a checksum in the content bundle. If a volunteer ever
@@ -125,8 +125,16 @@ to record.
 - **Recording kit:** the build tool generates a script (every word, syllable and
   prompt, one per line, with the target file name), so a volunteer teacher can
   record everything in one session with a phone and a quiet room.
-- **Format:** mono Ogg/Opus, loudness-normalized, silence trimmed.
+- **Format:** mono AAC (`.m4a`), loudness-normalized, silence trimmed, slowed to 85% for
+  young children. AAC rather than Ogg/Opus, because iPhones and iPads can't play Ogg.
+- **Where clips live:** `assets/audio/prompts/<prompt id>.<variant>.m4a` (for example
+  `feedback.correct.2.m4a`, the third phrase of `feedback.correct`), found by the build tool, and
+  `assets/audio/sounds/<vowel|syllable>.<sound>.m4a` for the letter activities.
 - Check each TTS voice's license individually before using its output.
+- `tool/voice/leo_voice.ipynb` (Google Colab, GPU) designs Leo's voice with VoxCPM2
+  (Apache-2.0 code and weights) and generates every prompt, vowel and syllable in
+  that voice, with a `manifest.json` recording the engine, seed and settings.
+  `tool/voice/leo_reference.wav` is the clip every phrase copies, so new phrases keep Leo's voice.
 
 ## Fonts
 

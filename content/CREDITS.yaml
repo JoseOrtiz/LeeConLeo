@@ -1,1 +1,5 @@
-[]
+- asset: Leo's voice (assets/audio/prompts/, assets/audio/sounds/, tool/voice/leo_reference.wav)
+  source: Generated for this project with VoxCPM2 (openbmb/VoxCPM2) using tool/voice/leo_voice.ipynb
+  author: Lee con Leo contributors
+  license: CC BY-SA 4.0
+  notes: VoxCPM2 code and weights are Apache-2.0. The voice was designed from a text description, not cloned from a person. tool/voice/manifest.json records the description, seed and settings.

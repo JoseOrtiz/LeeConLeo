@@ -3,7 +3,9 @@ import 'dart:math';
 import 'package:flutter/foundation.dart';
 
 import '../../core/audio/prompt_player.dart';
+import '../../core/audio/utterance.dart';
 import '../../core/content/models/prompt_library.dart';
+import '../../core/content/models/spoken_line.dart';
 import '../../core/logging/event_log.dart';
 import '../../core/logging/item_event.dart';
 import 'activity_item.dart';
@@ -127,10 +129,10 @@ class ActivitySession extends ChangeNotifier implements ItemController {
     );
   }
 
-  void _say(String promptId) => _player.say(_pick(promptId));
+  void _say(String promptId) => _player.say(Utterance([_line(promptId)]));
 
   void _sayThenRepeatPrompt(String feedbackId) =>
-      _player.say('${_pick(feedbackId)} ${_pick(currentItem.promptId)}');
+      _player.say(Utterance([_line(feedbackId), _line(currentItem.promptId)]));
 
-  String _pick(String promptId) => _prompts.pick(promptId, _random);
+  SpokenLine _line(String promptId) => _prompts.line(promptId, _random);
 }

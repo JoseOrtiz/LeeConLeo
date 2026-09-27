@@ -10,6 +10,7 @@ import '../app/app_theme.dart';
 import '../app/widgets/leo_avatar.dart';
 import '../app/widgets/pulse.dart';
 import '../core/audio/audio_providers.dart';
+import '../core/audio/utterance.dart';
 import '../core/content/content_providers.dart';
 import '../core/content/models/content_bundle.dart';
 import '../core/content/models/path_step.dart';
@@ -88,8 +89,9 @@ class _PathMapState extends ConsumerState<PathMap> {
     Scrollable.ensureVisible(leo, alignment: 0.5, duration: const Duration(milliseconds: 400));
   }
 
-  void _say(String promptId) =>
-      ref.read(promptPlayerProvider).say(widget.bundle.prompts.pick(promptId, _random));
+  void _say(String promptId) => ref
+      .read(promptPlayerProvider)
+      .say(Utterance([widget.bundle.prompts.line(promptId, _random)]));
 
   Map<String, StepStatus> _statuses(Set<String> completed) {
     final registry = ref.read(activityRegistryProvider);

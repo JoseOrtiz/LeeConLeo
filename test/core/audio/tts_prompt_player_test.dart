@@ -21,7 +21,7 @@ void main() {
   test('picks the first preferred Spanish language that is available', () async {
     final tts = FakeFlutterTts(languages: {'es-ES', 'es-MX'});
 
-    await playerWith(tts).say('Hola');
+    await playerWith(tts).sayText('Hola');
 
     expect(tts.language, 'es-MX');
     expect(tts.voice, 'Local es-MX');
@@ -41,7 +41,7 @@ void main() {
   test('waits for voices that load after the first lookup', () async {
     final tts = FakeFlutterTts(languages: {'es-US'}, lookupsBeforeVoicesLoad: 2);
 
-    await playerWith(tts).say('Hola');
+    await playerWith(tts).sayText('Hola');
 
     expect(tts.language, 'es-US');
   });
@@ -50,11 +50,11 @@ void main() {
     final tts = FakeFlutterTts(languages: {'es-US'}, lookupsBeforeVoicesLoad: 100);
     final player = playerWith(tts);
 
-    await player.say('Hola');
+    await player.sayText('Hola');
     expect(tts.language, isNull);
 
     tts.lookupsBeforeVoicesLoad = 0;
-    await player.say('Arriba');
+    await player.sayText('Arriba');
 
     expect(tts.language, 'es-US');
     expect(tts.spoken, ['Hola', 'Arriba']);
@@ -64,9 +64,9 @@ void main() {
     final tts = FakeFlutterTts(finishesImmediately: false);
     final player = playerWith(tts);
 
-    player.say('¡Excelente!');
+    player.sayText('¡Excelente!');
     await settle();
-    player.say('¿Dónde está arriba?');
+    player.sayText('¿Dónde está arriba?');
     await settle();
     expect(tts.spoken, ['¡Excelente!']);
 
@@ -79,10 +79,10 @@ void main() {
     final tts = FakeFlutterTts(finishesImmediately: false);
     final player = playerWith(tts);
 
-    player.say('Uno');
+    player.sayText('Uno');
     await settle();
-    player.say('Dos');
-    player.say('Tres');
+    player.sayText('Dos');
+    player.sayText('Tres');
     tts.finishSpeaking();
     await settle();
 
@@ -93,9 +93,9 @@ void main() {
     final tts = FakeFlutterTts(finishesImmediately: false);
     final player = playerWith(tts, maxUtteranceDuration: const Duration(milliseconds: 10));
 
-    player.say('Uno');
+    player.sayText('Uno');
     await settle();
-    player.say('Dos');
+    player.sayText('Dos');
     await Future<void>.delayed(const Duration(milliseconds: 50));
 
     expect(tts.spoken, ['Uno', 'Dos']);
@@ -105,7 +105,7 @@ void main() {
   test('a phrase that fails is spoken again', () async {
     final tts = FakeFlutterTts(failures: 1);
 
-    await playerWith(tts).say('Hola');
+    await playerWith(tts).sayText('Hola');
 
     expect(tts.spoken, ['Hola', 'Hola']);
   });
@@ -113,7 +113,7 @@ void main() {
   test('a phrase that keeps failing is retried only twice', () async {
     final tts = FakeFlutterTts(failures: 10);
 
-    await playerWith(tts).say('Hola');
+    await playerWith(tts).sayText('Hola');
 
     expect(tts.spoken, ['Hola', 'Hola', 'Hola']);
   });
@@ -122,7 +122,7 @@ void main() {
     final tts = FakeFlutterTts(failures: 1, failure: TtsPromptPlayer.blockedByBrowser);
     final player = playerWith(tts);
 
-    await player.say('Hola');
+    await player.sayText('Hola');
     expect(tts.spoken, ['Hola']);
 
     player.resumeAfterUserGesture();
@@ -138,8 +138,8 @@ void main() {
     final tts = FakeFlutterTts(failures: 1, failure: TtsPromptPlayer.blockedByBrowser);
     final player = playerWith(tts);
 
-    await player.say('Hola');
-    await player.say('Arriba');
+    await player.sayText('Hola');
+    await player.sayText('Arriba');
     player.resumeAfterUserGesture();
     await settle();
 
@@ -150,9 +150,9 @@ void main() {
     final tts = FakeFlutterTts(finishesImmediately: false);
     final player = playerWith(tts);
 
-    player.say('¡Terminaste!');
+    player.sayText('¡Terminaste!');
     await settle();
-    player.say('¡Hola! Soy Leo.');
+    player.sayText('¡Hola! Soy Leo.');
     await player.stop();
     await settle();
 
@@ -163,7 +163,7 @@ void main() {
   test('a phrase cut on purpose is not retried', () async {
     final tts = FakeFlutterTts(failures: 1, failure: 'interrupted');
 
-    await playerWith(tts).say('Hola');
+    await playerWith(tts).sayText('Hola');
 
     expect(tts.spoken, ['Hola']);
   });
