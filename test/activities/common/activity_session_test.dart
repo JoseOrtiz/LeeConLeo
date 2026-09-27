@@ -65,6 +65,16 @@ void main() {
     expect(player.spoken.last, 'retry say up');
   });
 
+  test('feedback and the repeated prompt keep their recorded clips', () {
+    session.begin();
+    session.answer('down');
+
+    expect(player.utterances.last.lines.map((line) => line.clip), [
+      testClips['feedback.retry.0'],
+      testClips['spatial.up_down.up.0'],
+    ]);
+  });
+
   test('the hint turns on after two mistakes and repeats the prompt', () {
     session.begin();
     session.answer('down');

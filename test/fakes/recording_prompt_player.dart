@@ -1,18 +1,21 @@
 import 'package:lee_con_leo/core/audio/prompt_player.dart';
+import 'package:lee_con_leo/core/audio/utterance.dart';
 
 class RecordingPromptPlayer implements PromptPlayer {
   static const stopCall = '<stop>';
 
   final List<String> spoken = [];
+  final List<Utterance> utterances = [];
   final List<String> calls = [];
 
   @override
   Future<void> prepare() async {}
 
   @override
-  Future<void> say(String text) async {
-    spoken.add(text);
-    calls.add(text);
+  Future<void> say(Utterance utterance) async {
+    spoken.add(utterance.text);
+    utterances.add(utterance);
+    calls.add(utterance.text);
   }
 
   @override

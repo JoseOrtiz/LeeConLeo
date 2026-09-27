@@ -6,4 +6,6 @@ abstract final class ContentPaths {
   static const bundle = 'assets/content/bundle.json';
   static const images = 'assets/images';
   static const audio = 'assets/audio';
+  static const promptClipsDir = 'prompts';
+  static const clipExtension = '.m4a';
 }

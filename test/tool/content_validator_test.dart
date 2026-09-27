@@ -7,6 +7,7 @@ import 'package:lee_con_leo/core/content/models/word.dart';
 
 import '../../tool/src/validation/rules/known_activities_rule.dart';
 import '../../tool/src/validation/rules/path_images_rule.dart';
+import '../../tool/src/validation/rules/prompt_clips_rule.dart';
 import '../../tool/src/validation/rules/stage_tints_rule.dart';
 import '../../tool/src/validation/rules/syllables_match_text_rule.dart';
 import '../../tool/src/validation/rules/unique_ids_rule.dart';
@@ -68,6 +69,26 @@ void main() {
     );
     final issues = const PathImagesRule().check(bundle).toList();
     expect(issues.single.message, contains('stage 1'));
+  });
+
+  test('flags clips without a prompt and counts phrases without a clip', () {
+    const bundle = ContentBundle(
+      words: [],
+      stages: [],
+      prompts: PromptLibrary(
+        {
+          'feedback.correct': ['¡Muy bien!', '¡Súper!'],
+        },
+        clips: {
+          'feedback.correct.0': 'prompts/feedback.correct.0.m4a',
+          'feedback.correct.5': 'prompts/feedback.correct.5.m4a',
+        },
+      ),
+    );
+    final issues = const PromptClipsRule().check(bundle).toList();
+
+    expect(issues.where((issue) => issue.isError).single.message, contains('feedback.correct.5'));
+    expect(issues.where((issue) => !issue.isError).single.message, contains('1 of 2'));
   });
 
   test('flags stage tints that are not colors', () {

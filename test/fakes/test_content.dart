@@ -21,7 +21,12 @@ const testPrompts = PromptLibrary({
   'spatial.positions.over': ['say over'],
   'spatial.positions.under': ['say under'],
   'spatial.positions.between': ['say between'],
-});
+}, clips: testClips);
+
+const testClips = {
+  'feedback.retry.0': 'prompts/feedback.retry.0.m4a',
+  'spatial.up_down.up.0': 'prompts/spatial.up_down.up.0.m4a',
+};
 
 const testTint = '#EEF7E4';
 

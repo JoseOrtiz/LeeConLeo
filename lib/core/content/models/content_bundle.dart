@@ -11,7 +11,10 @@ class ContentBundle {
     stages: [
       for (final stage in json['stages'] as List) PathStage.fromJson(stage as Map<String, dynamic>),
     ],
-    prompts: PromptLibrary.fromJson(json['prompts'] as Map<String, dynamic>),
+    prompts: PromptLibrary.fromJson(
+      json['prompts'] as Map<String, dynamic>,
+      clips: (json['promptClips'] as Map<String, dynamic>? ?? const {}).cast<String, String>(),
+    ),
   );
 
   final List<Word> words;
@@ -38,5 +41,6 @@ class ContentBundle {
     'words': [for (final word in words) word.toJson()],
     'stages': [for (final stage in stages) stage.toJson()],
     'prompts': prompts.toJson(),
+    if (prompts.clips.isNotEmpty) 'promptClips': prompts.clips,
   };
 }

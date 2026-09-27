@@ -5,6 +5,7 @@ import 'package:flutter_tts/flutter_tts.dart';
 
 import '../../utils/voice_picker.dart';
 import 'prompt_player.dart';
+import 'utterance.dart';
 
 class TtsPromptPlayer implements PromptPlayer {
   TtsPromptPlayer({
@@ -50,11 +51,13 @@ class TtsPromptPlayer implements PromptPlayer {
   @override
   void resumeAfterUserGesture() {
     final text = _blocked;
-    if (text != null) say(text);
+    if (text != null) sayText(text);
   }
 
   @override
-  Future<void> say(String text) async {
+  Future<void> say(Utterance utterance) => sayText(utterance.text);
+
+  Future<void> sayText(String text) async {
     if (text.isEmpty) return;
     _blocked = null;
     _pending = text;
