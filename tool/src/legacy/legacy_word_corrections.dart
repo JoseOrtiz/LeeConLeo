@@ -1,0 +1,80 @@
+class LegacyWordCorrections {
+  const LegacyWordCorrections();
+
+  static const excluded = {'indio', 'biblia', 'iglesia', 'cupido', 'santa'};
+
+  static const accents = {
+    'arbol': 'árbol',
+    'avion': 'avión',
+    'azucar': 'azúcar',
+    'bambu': 'bambú',
+    'beisbol': 'béisbol',
+    'brocoli': 'brócoli',
+    'buho': 'búho',
+    'cafe': 'café',
+    'calcetin': 'calcetín',
+    'camaleon': 'camaleón',
+    'camion': 'camión',
+    'circulo': 'círculo',
+    'colibri': 'colibrí',
+    'corazon': 'corazón',
+    'dalmata': 'dálmata',
+    'delfin': 'delfín',
+    'domino': 'dominó',
+    'escorpion': 'escorpión',
+    'espantapajaros': 'espantapájaros',
+    'furgon': 'furgón',
+    'futbol': 'fútbol',
+    'halcon': 'halcón',
+    'hamster': 'hámster',
+    'helicoptero': 'helicóptero',
+    'hipopotamo': 'hipopótamo',
+    'iglu': 'iglú',
+    'iman': 'imán',
+    'jabon': 'jabón',
+    'jamon': 'jamón',
+    'ketchup': 'kétchup',
+    'lampara': 'lámpara',
+    'lapiz': 'lápiz',
+    'lena': 'leña',
+    'leon': 'león',
+    'limon': 'limón',
+    'maiz': 'maíz',
+    'mani': 'maní',
+    'melon': 'melón',
+    'microfono': 'micrófono',
+    'muneca': 'muñeca',
+    'murcielago': 'murciélago',
+    'natacion': 'natación',
+    'oido': 'oído',
+    'orangutan': 'orangután',
+    'pajaro': 'pájaro',
+    'pantalon': 'pantalón',
+    'patin': 'patín',
+    'pina': 'piña',
+    'pinguino': 'pingüino',
+    'platano': 'plátano',
+    'puercoespin': 'puercoespín',
+    'raton': 'ratón',
+    'sandia': 'sandía',
+    'saxofon': 'saxofón',
+    'semaforo': 'semáforo',
+    'sillon': 'sillón',
+    'tarantula': 'tarántula',
+    'telefono': 'teléfono',
+    'tiburon': 'tiburón',
+    'triangulo': 'triángulo',
+    'tucan': 'tucán',
+    'una': 'uña',
+    'violin': 'violín',
+    'volcan': 'volcán',
+  };
+
+  List<String> apply(Iterable<String> words) {
+    final corrected = {
+      for (final word in words)
+        if (!excluded.contains(word)) accents[word] ?? word,
+    };
+    return corrected.toList()..sort();
+  }
+}

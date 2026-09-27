@@ -1,0 +1,43 @@
+import 'dart:io';
+
+import 'package:lee_con_leo/core/content/models/content_bundle.dart';
+import 'package:lee_con_leo/core/content/models/path_stage.dart';
+import 'package:lee_con_leo/core/content/models/prompt_library.dart';
+import 'package:lee_con_leo/core/content/models/word.dart';
+import 'package:lee_con_leo/utils/spanish/sound_key_encoder.dart';
+import 'package:lee_con_leo/utils/spanish/syllabifier.dart';
+import 'package:yaml/yaml.dart';
+
+import 'content_paths.dart';
+import 'utils/yaml_to_dart.dart';
+
+class YamlContentReader {
+  const YamlContentReader({
+    this.syllabifier = const Syllabifier(),
+    this.soundKeyEncoder = const SoundKeyEncoder(),
+  });
+
+  final Syllabifier syllabifier;
+  final SoundKeyEncoder soundKeyEncoder;
+
+  ContentBundle read() => ContentBundle(
+    words: [for (final entry in _readList(ContentPaths.words)) _toWord(entry)],
+    stages: [for (final entry in _readList(ContentPaths.path)) PathStage.fromJson(entry)],
+    prompts: PromptLibrary.fromJson(_readMap(ContentPaths.prompts)),
+  );
+
+  Word _toWord(Map<String, dynamic> entry) {
+    final text = entry['text'] as String;
+    final syllables = (entry['syllables'] as List?)?.cast<String>() ?? syllabifier.split(text);
+    final sounds =
+        (entry['sounds'] as List?)?.cast<String>() ?? soundKeyEncoder.encodeAll(syllables);
+    return Word.fromJson({...entry, 'syllables': syllables, 'sounds': sounds});
+  }
+
+  List<Map<String, dynamic>> _readList(String path) =>
+      (_load(path) as List? ?? const []).cast<Map<String, dynamic>>();
+
+  Map<String, dynamic> _readMap(String path) => (_load(path) as Map<String, dynamic>?) ?? {};
+
+  Object? _load(String path) => yamlToDart(loadYaml(File(path).readAsStringSync()));
+}
