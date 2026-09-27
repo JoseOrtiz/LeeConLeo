@@ -18,8 +18,10 @@ class FakeFlutterTts extends Fake implements FlutterTts {
   final bool finishesImmediately;
   int failures;
   String? language;
+  String? voice;
   double? speechRate;
   final List<String> spoken = [];
+  int stops = 0;
   VoidCallback? _onFinished;
   ErrorHandler? _onError;
 
@@ -35,16 +37,21 @@ class FakeFlutterTts extends Fake implements FlutterTts {
   void setErrorHandler(ErrorHandler handler) => _onError = handler;
 
   @override
-  Future<dynamic> isLanguageAvailable(String language) async {
+  Future<dynamic> get getVoices async {
     if (lookupsBeforeVoicesLoad > 0) {
       lookupsBeforeVoicesLoad--;
-      return false;
+      return <Object?>[];
     }
-    return languages.contains(language);
+    return [
+      for (final language in languages) {'name': 'Local $language', 'locale': language},
+    ];
   }
 
   @override
   Future<dynamic> setLanguage(String language) async => this.language = language;
+
+  @override
+  Future<dynamic> setVoice(Map<String, String> voice) async => this.voice = voice['name'];
 
   @override
   Future<dynamic> setSpeechRate(double rate) async => speechRate = rate;
@@ -61,5 +68,5 @@ class FakeFlutterTts extends Fake implements FlutterTts {
   }
 
   @override
-  Future<dynamic> stop() async {}
+  Future<dynamic> stop() async => stops++;
 }

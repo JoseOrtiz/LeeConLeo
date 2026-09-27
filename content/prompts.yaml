@@ -31,3 +31,15 @@ spatial.left_right.left:
 
 spatial.left_right.right:
   - Toca la flecha de la derecha.
+
+spatial.positions.intro:
+  - ¡Juguemos con la pelota! Escucha dónde va y arrástrala con tu dedo.
+
+spatial.positions.over:
+  - Pon la pelota arriba de la mesa.
+
+spatial.positions.under:
+  - Pon la pelota abajo de la mesa.
+
+spatial.positions.between:
+  - Pon la pelota entre las mesas.
