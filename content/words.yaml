@@ -1,4 +1,5 @@
 - text: abeja
+  image: words/abeja.svg
 - text: agua
 - text: ala
 - text: anillo
@@ -77,6 +78,7 @@
 - text: durazno
 - text: dálmata
 - text: elefante
+  image: words/elefante.svg
 - text: empanada
 - text: enchufe
 - text: enfermera
@@ -87,6 +89,7 @@
 - text: espejo
 - text: esqueleto
 - text: estrella
+  image: words/estrella.svg
 - text: estrella de mar
 - text: falda
 - text: fantasma
@@ -126,10 +129,12 @@
 - text: huevo
 - text: hámster
 - text: iglú
+  image: words/iglu.svg
 - text: impresora
 - text: imán
 - text: insectos
 - text: isla
+  image: words/isla.svg
 - text: jabón
 - text: jaguar
 - text: jamón
@@ -194,11 +199,13 @@
 - text: nube
 - text: ocho
 - text: ojo
+  image: words/ojo.svg
 - text: olla
 - text: orangután
 - text: ornitorrinco
 - text: oro
 - text: oso
+  image: words/oso.svg
 - text: oveja
 - text: oído
 - text: pala
@@ -300,10 +307,12 @@
 - text: trompeta
 - text: tucán
 - text: unicornio
+  image: words/unicornio.svg
 - text: uniforme
 - text: universo
 - text: uno
 - text: uva
+  image: words/uva.svg
 - text: uña
 - text: vaca
 - text: vaquero
@@ -320,3 +329,4 @@
 - text: zanahoria
 - text: zorro
 - text: árbol
+  image: words/arbol.svg

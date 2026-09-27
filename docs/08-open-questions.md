@@ -12,6 +12,7 @@
 | Pictures | Dedicated illustrations: SVG drawn by Claude, plus AI-generated images for complex subjects. ARASAAC/OpenMoji only as a temporary fallback |
 | Letter sounds | Taught through letter names + syllables (Silabario tradition). No isolated phonemes |
 | Testing | No test group: checklist, informal play-tests and an open beta ([06](06-roadmap.md) M3) |
+| Leo's design | Redesigned: a blond boy whose hair looks like a lion's mane, keeping the 2014 red vest, shorts and boots ([`content/STYLE.md`](../content/STYLE.md)) |
 
 ## Still open
 
@@ -22,4 +23,3 @@
 | 3 | Which TTS voice (and license) sounds most natural to Chilean ears? | José, by listening to samples | M1 |
 | 4 | Code license: MIT (maximum reuse) or GPL-3.0 (forks must stay open)? | José | M0 |
 | 5 | Is Stage 1 (listening games) a separate map area, or mixed into each consonant group? | Beta feedback | M2 |
-| 6 | Should Leo's character be redesigned, or stay close to the 2014 drawing? | José | M1 |
