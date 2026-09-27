@@ -1,0 +1,24 @@
+feedback.correct:
+  - ¡Muy bien!
+  - ¡Excelente!
+  - ¡Lo lograste!
+  - ¡Súper!
+
+feedback.retry:
+  - ¡Casi! Inténtalo otra vez.
+  - Escucha otra vez.
+
+feedback.hint:
+  - Mira, te ayudo.
+
+reward:
+  - ¡Terminaste! Ganaste una estrella.
+
+spatial.up_down.intro:
+  - ¡Hola! Soy Leo. Ayúdame a encontrar arriba y abajo.
+
+spatial.up_down.up:
+  - Toca la flecha de arriba.
+
+spatial.up_down.down:
+  - Toca la flecha de abajo.

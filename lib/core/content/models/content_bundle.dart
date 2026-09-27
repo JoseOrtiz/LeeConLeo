@@ -1,0 +1,35 @@
+import 'path_stage.dart';
+import 'path_step.dart';
+import 'prompt_library.dart';
+import 'word.dart';
+
+class ContentBundle {
+  const ContentBundle({required this.words, required this.stages, required this.prompts});
+
+  factory ContentBundle.fromJson(Map<String, dynamic> json) => ContentBundle(
+    words: [for (final word in json['words'] as List) Word.fromJson(word as Map<String, dynamic>)],
+    stages: [
+      for (final stage in json['stages'] as List) PathStage.fromJson(stage as Map<String, dynamic>),
+    ],
+    prompts: PromptLibrary.fromJson(json['prompts'] as Map<String, dynamic>),
+  );
+
+  final List<Word> words;
+  final List<PathStage> stages;
+  final PromptLibrary prompts;
+
+  Iterable<PathStep> get steps => stages.expand((stage) => stage.steps);
+
+  PathStep? stepById(String id) {
+    for (final step in steps) {
+      if (step.id == id) return step;
+    }
+    return null;
+  }
+
+  Map<String, dynamic> toJson() => {
+    'words': [for (final word in words) word.toJson()],
+    'stages': [for (final stage in stages) stage.toJson()],
+    'prompts': prompts.toJson(),
+  };
+}

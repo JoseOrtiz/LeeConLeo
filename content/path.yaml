@@ -1,0 +1,33 @@
+- stage: 0
+  name: Leo explora
+  steps:
+    - id: up-down
+      activities: [spatial.up_down]
+    - id: left-right
+      activities: [spatial.left_right]
+    - id: positions
+      activities: [spatial.positions]
+
+- stage: 2
+  name: Las vocales
+  steps:
+    - id: a
+      grapheme: a
+      sound: a
+      activities: [letter.meet, letter.trace, letter.find, syllables.starts_with]
+    - id: e
+      grapheme: e
+      sound: e
+      activities: [letter.meet, letter.trace, letter.find, syllables.starts_with]
+    - id: i
+      grapheme: i
+      sound: i
+      activities: [letter.meet, letter.trace, letter.find, syllables.starts_with]
+    - id: o
+      grapheme: o
+      sound: o
+      activities: [letter.meet, letter.trace, letter.find, syllables.starts_with]
+    - id: u
+      grapheme: u
+      sound: u
+      activities: [letter.meet, letter.trace, letter.find, syllables.starts_with]
