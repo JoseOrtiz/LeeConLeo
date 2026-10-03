@@ -11,7 +11,17 @@ void main() {
   });
 
   test('firstAvailable skips activities that are not built yet', () {
-    expect(registry.firstAvailable([ActivityIds.meet, ActivityIds.upDown]), ActivityIds.upDown);
-    expect(registry.firstAvailable([ActivityIds.meet]), isNull);
+    expect(
+      registry.firstAvailable([ActivityIds.startsWith, ActivityIds.upDown]),
+      ActivityIds.upDown,
+    );
+    expect(registry.firstAvailable([ActivityIds.startsWith]), isNull);
+  });
+
+  test('nextAvailable gives the following built activity of a step', () {
+    const step = [ActivityIds.meet, ActivityIds.startsWith, ActivityIds.find];
+
+    expect(registry.nextAvailable(step, after: ActivityIds.meet), ActivityIds.find);
+    expect(registry.nextAvailable(step, after: ActivityIds.find), isNull);
   });
 }

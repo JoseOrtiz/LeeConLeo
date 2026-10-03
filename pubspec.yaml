@@ -33,3 +33,7 @@ flutter:
     - assets/images/scenes/
     - assets/images/steps/
     - assets/images/words/
+  fonts:
+    - family: PlaywriteCL
+      fonts:
+        - asset: assets/fonts/PlaywriteCL.ttf

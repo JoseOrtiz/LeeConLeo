@@ -21,20 +21,25 @@
     - id: a
       grapheme: a
       sound: a
+      word: abeja
       activities: [letter.meet, letter.trace, letter.find, syllables.starts_with]
     - id: e
       grapheme: e
       sound: e
+      word: elefante
       activities: [letter.meet, letter.trace, letter.find, syllables.starts_with]
     - id: i
       grapheme: i
       sound: i
+      word: iglú
       activities: [letter.meet, letter.trace, letter.find, syllables.starts_with]
     - id: o
       grapheme: o
       sound: o
+      word: oso
       activities: [letter.meet, letter.trace, letter.find, syllables.starts_with]
     - id: u
       grapheme: u
       sound: u
+      word: uva
       activities: [letter.meet, letter.trace, letter.find, syllables.starts_with]

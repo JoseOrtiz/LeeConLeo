@@ -60,7 +60,7 @@ map** button.
 | Step | Mechanic |
 |---|---|
 | *Meet* | Leo says the letter's name, an example syllable and a word ("eme… **ma**… **ma**no"). Printed and school-cursive forms, upper and lower case |
-| *Trace* | Follow the strokes in the correct order with a finger: numbered start points, arrows, and a path that fills in as the finger moves. Tolerance adapts to age. Finishing unlocks coloring the letter |
+| *Trace* | Follow the strokes in the correct order with a finger: a glowing start point (children may not know numbers yet), arrows, and a path that fills in as the finger moves. Tolerance adapts to age. Finishing unlocks coloring the letter |
 | *Find* | Letters float as bubbles. Pop every target letter, avoiding lookalikes (b/d, p/q, m/n) |
 
 ### Syllables and words

@@ -8,7 +8,7 @@
 | Repository | New repository for 2.0. This one becomes the thesis archive ([07](07-legacy.md)) |
 | Name | Keep **Lee con Leo** ("Leo" makes it easy to find on the stores). Check the stores for name conflicts before publishing |
 | Voices | Automatically generated (offline TTS) for now. Human recordings may replace them later with no code changes |
-| Font | Andika (SIL OFL). Cursive postponed |
+| Font | Playwrite Chile (OFL), the Chilean school cursive |
 | Pictures | Dedicated illustrations: SVG drawn by Claude, plus AI-generated images for complex subjects. ARASAAC/OpenMoji only as a temporary fallback |
 | Letter sounds | Taught through letter names + syllables (Silabario tradition). No isolated phonemes |
 | Testing | No test group: checklist, informal play-tests and an open beta ([06](06-roadmap.md) M3) |

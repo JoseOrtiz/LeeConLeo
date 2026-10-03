@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 class ChoiceButton extends StatelessWidget {
   const ChoiceButton({
     super.key,
-    required this.icon,
+    required this.child,
     required this.onPressed,
     this.isHighlighted = false,
   });
 
-  final IconData icon;
+  final Widget child;
   final VoidCallback onPressed;
   final bool isHighlighted;
 
@@ -29,8 +29,19 @@ class ChoiceButton extends StatelessWidget {
           child: InkWell(
             borderRadius: BorderRadius.circular(28),
             onTap: onPressed,
-            child: Center(
-              child: FittedBox(child: Icon(icon, size: 160, color: colors.onPrimaryContainer)),
+            child: Padding(
+              padding: const EdgeInsets.all(12),
+              child: Center(
+                child: FittedBox(
+                  child: IconTheme.merge(
+                    data: IconThemeData(size: 160, color: colors.onPrimaryContainer),
+                    child: DefaultTextStyle.merge(
+                      style: TextStyle(color: colors.onPrimaryContainer),
+                      child: child,
+                    ),
+                  ),
+                ),
+              ),
             ),
           ),
         ),

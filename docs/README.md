@@ -33,7 +33,7 @@ The 2014 code lives in the archived repository `LeeConLeo-Legacy` (see
 - **Evidence built in:** an optional observation mode logs taps, errors and time
   per activity, and exports CSV for testing sessions with teachers.
 - **Assets:** dedicated illustrations (SVG drawn by Claude, plus AI-generated
-  images), offline TTS voices for now, and the Andika font.
+  images), offline TTS voices for now, and the Playwrite Chile school font.
 - **Open:** code under MIT, original content under CC BY-SA 4.0, and every
   third-party asset openly licensed and credited. **None of the 2014 internet
   images or audio will be shipped.**

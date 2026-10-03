@@ -3,3 +3,8 @@
   author: Lee con Leo contributors
   license: CC BY-SA 4.0
   notes: VoxCPM2 code and weights are Apache-2.0. The voice was designed from a text description, not cloned from a person. tool/voice/manifest.json records the description, seed and settings.
+- asset: Playwrite Chile font (assets/fonts/PlaywriteCL.ttf)
+  source: https://github.com/google/fonts/tree/main/ofl/playwritecl
+  author: TypeTogether
+  license: SIL Open Font License 1.1 (assets/fonts/OFL.txt)
+  notes: Chile's school cursive ("letra ligada"), used for every letter the child sees. The font file is bundled unmodified.

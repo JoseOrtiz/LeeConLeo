@@ -45,6 +45,7 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
   Timer? _celebrationTimer;
   bool _isUnavailable = false;
   PathStage? _stage;
+  String? _nextActivityId;
 
   @override
   void initState() {
@@ -54,7 +55,8 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
 
   void _startSession(ContentBundle content) {
     if (!mounted) return;
-    final spec = ref.read(activityRegistryProvider).find(widget.activityId);
+    final registry = ref.read(activityRegistryProvider);
+    final spec = registry.find(widget.activityId);
     final step = content.stepById(widget.stepId);
     if (spec == null || step == null) {
       setState(() => _isUnavailable = true);
@@ -76,6 +78,7 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
       _spec = spec;
       _session = session;
       _stage = content.stageOf(step.id);
+      _nextActivityId = registry.nextAvailable(step.activities, after: spec.id);
     });
     session.start();
   }
@@ -86,7 +89,7 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
       _celebrationTimer?.cancel();
       _celebrationTimer = Timer(widget.celebrationDuration, session.next);
     }
-    if (session.phase == SessionPhase.finished) {
+    if (session.phase == SessionPhase.finished && _nextActivityId == null) {
       ref.read(completedStepsProvider.notifier).markCompleted(session.stepId);
     }
     setState(() {});
@@ -95,6 +98,13 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
   void _goHome() {
     ref.read(promptPlayerProvider).stop();
     context.go('/');
+  }
+
+  void _continue() {
+    final next = _nextActivityId;
+    if (next == null) return _goHome();
+    ref.read(promptPlayerProvider).stop();
+    context.go('/play/${widget.stepId}/$next');
   }
 
   @override
@@ -153,7 +163,7 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
     SessionPhase.intro => IntroView(onStart: session.begin),
     SessionPhase.playing ||
     SessionPhase.celebrating => _spec!.buildItemView(session.currentItem, session),
-    SessionPhase.finished => RewardView(onDone: _goHome),
+    SessionPhase.finished => RewardView(onDone: _continue),
   };
 
   int _completedItems(ActivitySession session) => switch (session.phase) {
