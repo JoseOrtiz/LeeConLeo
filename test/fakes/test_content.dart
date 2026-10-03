@@ -1,4 +1,7 @@
+import 'dart:math';
+
 import 'package:lee_con_leo/core/content/models/content_bundle.dart';
+import 'package:lee_con_leo/core/content/models/letter_shape.dart';
 import 'package:lee_con_leo/core/content/models/path_stage.dart';
 import 'package:lee_con_leo/core/content/models/path_step.dart';
 import 'package:lee_con_leo/core/content/models/prompt_library.dart';
@@ -21,6 +24,15 @@ const testPrompts = PromptLibrary({
   'spatial.positions.over': ['say over'],
   'spatial.positions.under': ['say under'],
   'spatial.positions.between': ['say between'],
+  'letter.meet.intro': ['intro'],
+  'letter.meet.a': ['meet a'],
+  'letter.meet.a.upper': ['say upper'],
+  'letter.meet.a.lower': ['say lower'],
+  'letter.trace.intro': ['intro'],
+  'letter.trace.a.lower': ['trace a'],
+  'letter.trace.a.upper': ['trace A'],
+  'letter.find.intro': ['intro'],
+  'letter.find.a': ['find a'],
 }, clips: testClips);
 
 const testClips = {
@@ -33,6 +45,7 @@ const testTint = '#EEF7E4';
 const testContent = ContentBundle(
   words: [
     Word(text: 'mano', syllables: ['ma', 'no'], sounds: ['ma', 'no']),
+    Word(text: 'abeja', syllables: ['a', 'be', 'ja'], sounds: ['a', 'be', 'ja'], image: testImage),
   ],
   stages: [
     PathStage(
@@ -44,9 +57,29 @@ const testContent = ContentBundle(
         PathStep(id: 'up-down', activities: ['spatial.up_down']),
         PathStep(id: 'left-right', activities: ['spatial.left_right']),
         PathStep(id: 'positions', activities: ['spatial.positions']),
-        PathStep(id: 'a', grapheme: 'a', sound: 'a', activities: ['letter.meet']),
+        PathStep(
+          id: 'a',
+          grapheme: 'a',
+          sound: 'a',
+          word: 'abeja',
+          activities: ['letter.meet', 'syllables.starts_with', 'letter.trace', 'letter.find'],
+        ),
+        PathStep(id: 'e', grapheme: 'e', sound: 'e', activities: ['letter.find']),
       ],
     ),
   ],
   prompts: testPrompts,
+  letters: {'a': testLetter},
+);
+
+const testImage = 'words/abeja.svg';
+
+const testLetter = LetterShape(
+  lower: [
+    [Point(0.0, 0.0), Point(0.0, 100.0)],
+    [Point(0.0, -40.0)],
+  ],
+  upper: [
+    [Point(0.0, 0.0), Point(50.0, 50.0), Point(100.0, 0.0)],
+  ],
 );

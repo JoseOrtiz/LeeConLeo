@@ -5,6 +5,7 @@ class PathStep {
     this.grapheme,
     this.sound,
     this.icon,
+    this.word,
   });
 
   factory PathStep.fromJson(Map<String, dynamic> json) => PathStep(
@@ -13,6 +14,7 @@ class PathStep {
     grapheme: json['grapheme'] as String?,
     sound: json['sound'] as String?,
     icon: json['icon'] as String?,
+    word: json['word'] as String?,
   );
 
   final String id;
@@ -20,6 +22,7 @@ class PathStep {
   final String? grapheme;
   final String? sound;
   final String? icon;
+  final String? word;
 
   Map<String, dynamic> toJson() => {
     'id': id,
@@ -27,5 +30,6 @@ class PathStep {
     if (grapheme != null) 'grapheme': grapheme,
     if (sound != null) 'sound': sound,
     if (icon != null) 'icon': icon,
+    if (word != null) 'word': word,
   };
 }

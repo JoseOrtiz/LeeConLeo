@@ -3958,7 +3958,8 @@
             "syllables.starts_with"
           ],
           "grapheme": "a",
-          "sound": "a"
+          "sound": "a",
+          "word": "abeja"
         },
         {
           "id": "e",
@@ -3969,7 +3970,8 @@
             "syllables.starts_with"
           ],
           "grapheme": "e",
-          "sound": "e"
+          "sound": "e",
+          "word": "elefante"
         },
         {
           "id": "i",
@@ -3980,7 +3982,8 @@
             "syllables.starts_with"
           ],
           "grapheme": "i",
-          "sound": "i"
+          "sound": "i",
+          "word": "iglú"
         },
         {
           "id": "o",
@@ -3991,7 +3994,8 @@
             "syllables.starts_with"
           ],
           "grapheme": "o",
-          "sound": "o"
+          "sound": "o",
+          "word": "oso"
         },
         {
           "id": "u",
@@ -4002,7 +4006,8 @@
             "syllables.starts_with"
           ],
           "grapheme": "u",
-          "sound": "u"
+          "sound": "u",
+          "word": "uva"
         }
       ]
     }
@@ -4059,6 +4064,105 @@
     ],
     "spatial.positions.between": [
       "Pon la pelota entre las mesas."
+    ],
+    "letter.meet.intro": [
+      "¡Te voy a presentar una letra! Escucha y tócala."
+    ],
+    "letter.trace.intro": [
+      "¡Ahora dibujemos la letra! Pon tu dedo en el punto que brilla y sigue el camino."
+    ],
+    "letter.find.intro": [
+      "¡Mira cuántas burbujas! Revienta las que tienen la letra que te digo."
+    ],
+    "letter.meet.a": [
+      "Esta es la... a. ¡La... a de abeja! ¡Tócala!"
+    ],
+    "letter.meet.a.upper": [
+      "Toca la... a mayúscula."
+    ],
+    "letter.meet.a.lower": [
+      "Toca la... a minúscula."
+    ],
+    "letter.trace.a.lower": [
+      "Repasa la... a minúscula con tu dedo."
+    ],
+    "letter.trace.a.upper": [
+      "Repasa la... a mayúscula con tu dedo."
+    ],
+    "letter.find.a": [
+      "Revienta las burbujas que tienen la... a."
+    ],
+    "letter.meet.e": [
+      "Esta es la... e. ¡La... e de elefante! ¡Tócala!"
+    ],
+    "letter.meet.e.upper": [
+      "Toca la... e mayúscula."
+    ],
+    "letter.meet.e.lower": [
+      "Toca la... e minúscula."
+    ],
+    "letter.trace.e.lower": [
+      "Repasa la... e minúscula con tu dedo."
+    ],
+    "letter.trace.e.upper": [
+      "Repasa la... e mayúscula con tu dedo."
+    ],
+    "letter.find.e": [
+      "Revienta las burbujas que tienen la... e."
+    ],
+    "letter.meet.i": [
+      "Esta es la... i. ¡La... i de iglú! ¡Tócala!"
+    ],
+    "letter.meet.i.upper": [
+      "Toca la... i mayúscula."
+    ],
+    "letter.meet.i.lower": [
+      "Toca la... i minúscula."
+    ],
+    "letter.trace.i.lower": [
+      "Repasa la... i minúscula con tu dedo."
+    ],
+    "letter.trace.i.upper": [
+      "Repasa la... i mayúscula con tu dedo."
+    ],
+    "letter.find.i": [
+      "Revienta las burbujas que tienen la... i."
+    ],
+    "letter.meet.o": [
+      "Esta es la... o. ¡La... o de oso! ¡Tócala!"
+    ],
+    "letter.meet.o.upper": [
+      "Toca la... o mayúscula."
+    ],
+    "letter.meet.o.lower": [
+      "Toca la... o minúscula."
+    ],
+    "letter.trace.o.lower": [
+      "Repasa la... o minúscula con tu dedo."
+    ],
+    "letter.trace.o.upper": [
+      "Repasa la... o mayúscula con tu dedo."
+    ],
+    "letter.find.o": [
+      "Revienta las burbujas que tienen la... o."
+    ],
+    "letter.meet.u": [
+      "Esta es la... u. ¡La... u de uva! ¡Tócala!"
+    ],
+    "letter.meet.u.upper": [
+      "Toca la... u mayúscula."
+    ],
+    "letter.meet.u.lower": [
+      "Toca la... u minúscula."
+    ],
+    "letter.trace.u.lower": [
+      "Repasa la... u minúscula con tu dedo."
+    ],
+    "letter.trace.u.upper": [
+      "Repasa la... u mayúscula con tu dedo."
+    ],
+    "letter.find.u": [
+      "Revienta las burbujas que tienen la... u."
     ]
   },
   "promptClips": {
@@ -4071,6 +4175,39 @@
     "feedback.retry.1": "prompts/feedback.retry.1.m4a",
     "home.intro.0": "prompts/home.intro.0.m4a",
     "home.locked.0": "prompts/home.locked.0.m4a",
+    "letter.find.a.0": "prompts/letter.find.a.0.m4a",
+    "letter.find.e.0": "prompts/letter.find.e.0.m4a",
+    "letter.find.i.0": "prompts/letter.find.i.0.m4a",
+    "letter.find.intro.0": "prompts/letter.find.intro.0.m4a",
+    "letter.find.o.0": "prompts/letter.find.o.0.m4a",
+    "letter.find.u.0": "prompts/letter.find.u.0.m4a",
+    "letter.meet.a.0": "prompts/letter.meet.a.0.m4a",
+    "letter.meet.a.lower.0": "prompts/letter.meet.a.lower.0.m4a",
+    "letter.meet.a.upper.0": "prompts/letter.meet.a.upper.0.m4a",
+    "letter.meet.e.0": "prompts/letter.meet.e.0.m4a",
+    "letter.meet.e.lower.0": "prompts/letter.meet.e.lower.0.m4a",
+    "letter.meet.e.upper.0": "prompts/letter.meet.e.upper.0.m4a",
+    "letter.meet.i.0": "prompts/letter.meet.i.0.m4a",
+    "letter.meet.i.lower.0": "prompts/letter.meet.i.lower.0.m4a",
+    "letter.meet.i.upper.0": "prompts/letter.meet.i.upper.0.m4a",
+    "letter.meet.intro.0": "prompts/letter.meet.intro.0.m4a",
+    "letter.meet.o.0": "prompts/letter.meet.o.0.m4a",
+    "letter.meet.o.lower.0": "prompts/letter.meet.o.lower.0.m4a",
+    "letter.meet.o.upper.0": "prompts/letter.meet.o.upper.0.m4a",
+    "letter.meet.u.0": "prompts/letter.meet.u.0.m4a",
+    "letter.meet.u.lower.0": "prompts/letter.meet.u.lower.0.m4a",
+    "letter.meet.u.upper.0": "prompts/letter.meet.u.upper.0.m4a",
+    "letter.trace.a.lower.0": "prompts/letter.trace.a.lower.0.m4a",
+    "letter.trace.a.upper.0": "prompts/letter.trace.a.upper.0.m4a",
+    "letter.trace.e.lower.0": "prompts/letter.trace.e.lower.0.m4a",
+    "letter.trace.e.upper.0": "prompts/letter.trace.e.upper.0.m4a",
+    "letter.trace.i.lower.0": "prompts/letter.trace.i.lower.0.m4a",
+    "letter.trace.i.upper.0": "prompts/letter.trace.i.upper.0.m4a",
+    "letter.trace.intro.0": "prompts/letter.trace.intro.0.m4a",
+    "letter.trace.o.lower.0": "prompts/letter.trace.o.lower.0.m4a",
+    "letter.trace.o.upper.0": "prompts/letter.trace.o.upper.0.m4a",
+    "letter.trace.u.lower.0": "prompts/letter.trace.u.lower.0.m4a",
+    "letter.trace.u.upper.0": "prompts/letter.trace.u.upper.0.m4a",
     "reward.0": "prompts/reward.0.m4a",
     "spatial.left_right.intro.0": "prompts/spatial.left_right.intro.0.m4a",
     "spatial.left_right.left.0": "prompts/spatial.left_right.left.0.m4a",
@@ -4082,5 +4219,907 @@
     "spatial.up_down.down.0": "prompts/spatial.up_down.down.0.m4a",
     "spatial.up_down.intro.0": "prompts/spatial.up_down.intro.0.m4a",
     "spatial.up_down.up.0": "prompts/spatial.up_down.up.0.m4a"
+  },
+  "letters": {
+    "a": {
+      "lower": [
+        [
+          [
+            80,
+            54
+          ],
+          [
+            73,
+            50
+          ],
+          [
+            64,
+            49
+          ],
+          [
+            57,
+            52
+          ],
+          [
+            53,
+            58
+          ],
+          [
+            52,
+            66
+          ],
+          [
+            53,
+            74
+          ],
+          [
+            56,
+            81
+          ],
+          [
+            62,
+            85
+          ],
+          [
+            68,
+            85
+          ],
+          [
+            74,
+            82
+          ],
+          [
+            79,
+            76
+          ],
+          [
+            81,
+            68
+          ],
+          [
+            82,
+            58
+          ],
+          [
+            82,
+            49
+          ],
+          [
+            82,
+            60
+          ],
+          [
+            82,
+            72
+          ],
+          [
+            82,
+            81
+          ],
+          [
+            84,
+            87
+          ],
+          [
+            89,
+            88
+          ],
+          [
+            94,
+            85
+          ]
+        ]
+      ],
+      "upper": [
+        [
+          [
+            90,
+            42
+          ],
+          [
+            84,
+            32
+          ],
+          [
+            76,
+            26
+          ],
+          [
+            66,
+            24
+          ],
+          [
+            55,
+            25
+          ],
+          [
+            45,
+            30
+          ],
+          [
+            37,
+            40
+          ],
+          [
+            32,
+            52
+          ],
+          [
+            30,
+            65
+          ],
+          [
+            30,
+            78
+          ],
+          [
+            33,
+            92
+          ],
+          [
+            39,
+            104
+          ],
+          [
+            48,
+            111
+          ],
+          [
+            59,
+            113
+          ],
+          [
+            70,
+            110
+          ],
+          [
+            79,
+            102
+          ],
+          [
+            86,
+            90
+          ],
+          [
+            90,
+            76
+          ],
+          [
+            93,
+            60
+          ],
+          [
+            94,
+            42
+          ],
+          [
+            95,
+            24
+          ],
+          [
+            95,
+            45
+          ],
+          [
+            95,
+            70
+          ],
+          [
+            95,
+            95
+          ],
+          [
+            96,
+            107
+          ],
+          [
+            100,
+            113
+          ],
+          [
+            106,
+            113
+          ],
+          [
+            111,
+            110
+          ],
+          [
+            114,
+            106
+          ]
+        ]
+      ]
+    },
+    "e": {
+      "lower": [
+        [
+          [
+            48,
+            89
+          ],
+          [
+            56,
+            88
+          ],
+          [
+            62,
+            85
+          ],
+          [
+            68,
+            81
+          ],
+          [
+            74,
+            75
+          ],
+          [
+            79,
+            68
+          ],
+          [
+            81,
+            60
+          ],
+          [
+            80,
+            54
+          ],
+          [
+            76,
+            50
+          ],
+          [
+            70,
+            48
+          ],
+          [
+            65,
+            50
+          ],
+          [
+            61,
+            56
+          ],
+          [
+            60,
+            64
+          ],
+          [
+            62,
+            72
+          ],
+          [
+            66,
+            79
+          ],
+          [
+            72,
+            85
+          ],
+          [
+            78,
+            88
+          ],
+          [
+            84,
+            87
+          ],
+          [
+            88,
+            84
+          ],
+          [
+            92,
+            80
+          ]
+        ]
+      ],
+      "upper": [
+        [
+          [
+            95,
+            33
+          ],
+          [
+            88,
+            27
+          ],
+          [
+            78,
+            23
+          ],
+          [
+            66,
+            23
+          ],
+          [
+            56,
+            26
+          ],
+          [
+            49,
+            32
+          ],
+          [
+            46,
+            42
+          ],
+          [
+            47,
+            51
+          ],
+          [
+            52,
+            58
+          ],
+          [
+            60,
+            63
+          ],
+          [
+            68,
+            65
+          ],
+          [
+            77,
+            66
+          ],
+          [
+            85,
+            66
+          ],
+          [
+            76,
+            68
+          ],
+          [
+            66,
+            69
+          ],
+          [
+            58,
+            70
+          ],
+          [
+            51,
+            74
+          ],
+          [
+            46,
+            80
+          ],
+          [
+            43,
+            88
+          ],
+          [
+            43,
+            97
+          ],
+          [
+            46,
+            105
+          ],
+          [
+            52,
+            112
+          ],
+          [
+            61,
+            116
+          ],
+          [
+            72,
+            117
+          ],
+          [
+            82,
+            114
+          ],
+          [
+            91,
+            108
+          ],
+          [
+            99,
+            101
+          ]
+        ]
+      ]
+    },
+    "i": {
+      "lower": [
+        [
+          [
+            68,
+            61
+          ],
+          [
+            68,
+            72
+          ],
+          [
+            68,
+            84
+          ],
+          [
+            68,
+            92
+          ],
+          [
+            70,
+            98
+          ],
+          [
+            74,
+            99
+          ],
+          [
+            78,
+            97
+          ],
+          [
+            80,
+            95
+          ]
+        ],
+        [
+          [
+            69,
+            41
+          ]
+        ]
+      ],
+      "upper": [
+        [
+          [
+            50,
+            37
+          ],
+          [
+            50,
+            31
+          ],
+          [
+            54,
+            26
+          ],
+          [
+            60,
+            24
+          ],
+          [
+            66,
+            26
+          ],
+          [
+            72,
+            28
+          ],
+          [
+            78,
+            26
+          ],
+          [
+            83,
+            22
+          ],
+          [
+            83,
+            35
+          ],
+          [
+            83,
+            55
+          ],
+          [
+            83,
+            75
+          ],
+          [
+            83,
+            95
+          ],
+          [
+            81,
+            104
+          ],
+          [
+            76,
+            111
+          ],
+          [
+            68,
+            114
+          ],
+          [
+            60,
+            113
+          ],
+          [
+            54,
+            109
+          ],
+          [
+            49,
+            104
+          ]
+        ]
+      ]
+    },
+    "o": {
+      "lower": [
+        [
+          [
+            69,
+            49
+          ],
+          [
+            60,
+            52
+          ],
+          [
+            54,
+            60
+          ],
+          [
+            52,
+            70
+          ],
+          [
+            54,
+            80
+          ],
+          [
+            60,
+            87
+          ],
+          [
+            69,
+            90
+          ],
+          [
+            77,
+            87
+          ],
+          [
+            83,
+            80
+          ],
+          [
+            85,
+            70
+          ],
+          [
+            83,
+            60
+          ],
+          [
+            78,
+            53
+          ],
+          [
+            70,
+            50
+          ],
+          [
+            63,
+            53
+          ],
+          [
+            62,
+            58
+          ],
+          [
+            68,
+            62
+          ],
+          [
+            76,
+            61
+          ],
+          [
+            84,
+            58
+          ],
+          [
+            93,
+            53
+          ]
+        ]
+      ],
+      "upper": [
+        [
+          [
+            50,
+            28
+          ],
+          [
+            42,
+            36
+          ],
+          [
+            36,
+            48
+          ],
+          [
+            33,
+            62
+          ],
+          [
+            33,
+            76
+          ],
+          [
+            36,
+            90
+          ],
+          [
+            42,
+            101
+          ],
+          [
+            50,
+            109
+          ],
+          [
+            60,
+            113
+          ],
+          [
+            70,
+            114
+          ],
+          [
+            80,
+            112
+          ],
+          [
+            90,
+            106
+          ],
+          [
+            98,
+            96
+          ],
+          [
+            103,
+            83
+          ],
+          [
+            106,
+            68
+          ],
+          [
+            105,
+            54
+          ],
+          [
+            101,
+            41
+          ],
+          [
+            95,
+            31
+          ],
+          [
+            87,
+            25
+          ],
+          [
+            77,
+            23
+          ],
+          [
+            68,
+            26
+          ],
+          [
+            61,
+            31
+          ],
+          [
+            57,
+            37
+          ],
+          [
+            56,
+            43
+          ]
+        ]
+      ]
+    },
+    "u": {
+      "lower": [
+        [
+          [
+            55,
+            49
+          ],
+          [
+            55,
+            62
+          ],
+          [
+            55,
+            75
+          ],
+          [
+            57,
+            82
+          ],
+          [
+            63,
+            87
+          ],
+          [
+            70,
+            87
+          ],
+          [
+            76,
+            83
+          ],
+          [
+            80,
+            76
+          ],
+          [
+            82,
+            66
+          ],
+          [
+            83,
+            55
+          ],
+          [
+            83,
+            49
+          ],
+          [
+            83,
+            62
+          ],
+          [
+            83,
+            74
+          ],
+          [
+            83,
+            82
+          ],
+          [
+            85,
+            88
+          ],
+          [
+            90,
+            88
+          ],
+          [
+            95,
+            84
+          ]
+        ]
+      ],
+      "upper": [
+        [
+          [
+            23,
+            36
+          ],
+          [
+            28,
+            29
+          ],
+          [
+            34,
+            24
+          ],
+          [
+            40,
+            22
+          ],
+          [
+            45,
+            24
+          ],
+          [
+            48,
+            30
+          ],
+          [
+            48,
+            45
+          ],
+          [
+            48,
+            65
+          ],
+          [
+            48,
+            85
+          ],
+          [
+            49,
+            96
+          ],
+          [
+            53,
+            105
+          ],
+          [
+            60,
+            111
+          ],
+          [
+            69,
+            113
+          ],
+          [
+            78,
+            111
+          ],
+          [
+            86,
+            105
+          ],
+          [
+            91,
+            96
+          ],
+          [
+            94,
+            84
+          ],
+          [
+            95,
+            65
+          ],
+          [
+            95,
+            45
+          ],
+          [
+            95,
+            24
+          ],
+          [
+            95,
+            45
+          ],
+          [
+            95,
+            70
+          ],
+          [
+            95,
+            95
+          ],
+          [
+            96,
+            107
+          ],
+          [
+            100,
+            113
+          ],
+          [
+            106,
+            113
+          ],
+          [
+            111,
+            110
+          ],
+          [
+            115,
+            106
+          ]
+        ]
+      ]
+    }
   }
 }

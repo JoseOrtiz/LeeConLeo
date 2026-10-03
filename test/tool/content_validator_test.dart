@@ -1,4 +1,7 @@
+import 'dart:math';
+
 import 'package:flutter_test/flutter_test.dart';
+import 'package:lee_con_leo/core/content/models/letter_shape.dart';
 import 'package:lee_con_leo/core/content/models/content_bundle.dart';
 import 'package:lee_con_leo/core/content/models/path_stage.dart';
 import 'package:lee_con_leo/core/content/models/path_step.dart';
@@ -6,6 +9,7 @@ import 'package:lee_con_leo/core/content/models/prompt_library.dart';
 import 'package:lee_con_leo/core/content/models/word.dart';
 
 import '../../tool/src/validation/rules/known_activities_rule.dart';
+import '../../tool/src/validation/rules/letter_steps_rule.dart';
 import '../../tool/src/validation/rules/path_images_rule.dart';
 import '../../tool/src/validation/rules/prompt_clips_rule.dart';
 import '../../tool/src/validation/rules/stage_tints_rule.dart';
@@ -102,5 +106,80 @@ void main() {
     );
     final issues = const StageTintsRule().check(bundle).toList();
     expect(issues.single.message, contains('green'));
+  });
+
+  group('letter steps', () {
+    ContentBundle letterBundle({
+      String? word = 'abeja',
+      Map<String, LetterShape> letters = const {},
+      Map<String, List<String>> prompts = const {},
+    }) => ContentBundle(
+      words: const [
+        Word(
+          text: 'abeja',
+          syllables: ['a', 'be', 'ja'],
+          sounds: ['a', 'be', 'ja'],
+          image: 'x.svg',
+        ),
+        Word(text: 'ala', syllables: ['a', 'la'], sounds: ['a', 'la']),
+      ],
+      stages: [
+        PathStage(
+          stage: 2,
+          name: 'vocales',
+          steps: [
+            PathStep(
+              id: 'a',
+              grapheme: 'a',
+              word: word,
+              activities: const ['letter.meet', 'letter.trace', 'letter.find'],
+            ),
+          ],
+        ),
+      ],
+      prompts: PromptLibrary(prompts),
+      letters: letters,
+    );
+
+    const shape = LetterShape(
+      lower: [
+        [Point(0.0, 0.0), Point(0.0, 10.0)],
+      ],
+      upper: [
+        [Point(0.0, 0.0), Point(5.0, 10.0)],
+      ],
+    );
+    const prompts = {
+      'letter.meet.a': ['Esta es la a.'],
+      'letter.meet.a.upper': ['Toca la a mayúscula.'],
+      'letter.meet.a.lower': ['Toca la a minúscula.'],
+      'letter.trace.a.lower': ['Repasa la a minúscula.'],
+      'letter.trace.a.upper': ['Repasa la a mayúscula.'],
+      'letter.find.a': ['Revienta las a.'],
+    };
+
+    test('a complete letter step passes', () {
+      final bundle = letterBundle(letters: const {'a': shape}, prompts: prompts);
+      expect(const LetterStepsRule().check(bundle), isEmpty);
+    });
+
+    test('flags missing prompts and stroke data', () {
+      final issues = const LetterStepsRule().check(letterBundle()).map((i) => i.message).toList();
+
+      expect(issues, hasLength(7));
+      expect(issues, contains(contains('"letter.find.a"')));
+      expect(issues, contains(contains('no stroke data for "a"')));
+    });
+
+    test('flags a meet word that is missing or has no picture', () {
+      final noPicture = letterBundle(word: 'ala', letters: const {'a': shape}, prompts: prompts);
+      final unknown = letterBundle(word: 'oso', letters: const {'a': shape}, prompts: prompts);
+
+      expect(const LetterStepsRule().check(noPicture).single.message, contains('no image'));
+      expect(
+        const LetterStepsRule().check(unknown).single.message,
+        contains('not in the word bank'),
+      );
+    });
   });
 }

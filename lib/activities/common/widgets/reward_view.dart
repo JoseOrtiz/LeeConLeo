@@ -11,24 +11,27 @@ class RewardView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(
-            Icons.star_rounded,
-            key: const ValueKey('reward'),
-            size: 200,
-            color: AppTheme.starGold,
-          ),
-          const LeoAvatar(size: 200, pose: LeoPose.cheering),
-          const SizedBox(height: 32),
-          IconButton.filled(
-            key: const ValueKey('done'),
-            iconSize: 72,
-            onPressed: onDone,
-            icon: const Icon(Icons.check_rounded),
-          ),
-        ],
+      child: FittedBox(
+        fit: BoxFit.scaleDown,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(
+              Icons.star_rounded,
+              key: const ValueKey('reward'),
+              size: 200,
+              color: AppTheme.starGold,
+            ),
+            const LeoAvatar(size: 200, pose: LeoPose.cheering),
+            const SizedBox(height: 32),
+            IconButton.filled(
+              key: const ValueKey('done'),
+              iconSize: 72,
+              onPressed: onDone,
+              icon: const Icon(Icons.check_rounded),
+            ),
+          ],
+        ),
       ),
     );
   }

@@ -4,6 +4,7 @@ import '../../app/widgets/leo_avatar.dart';
 import '../common/activity_item.dart';
 import '../common/item_controller.dart';
 import '../common/widgets/choice_button.dart';
+import '../common/widgets/leo_beside.dart';
 import 'direction_activity.dart';
 
 class DirectionView extends StatelessWidget {
@@ -45,7 +46,7 @@ class DirectionView extends StatelessWidget {
               curve: Curves.easeInOut,
               child: Padding(
                 padding: const EdgeInsets.all(leoMargin),
-                child: LeoAvatar(size: leoHeight, pose: _pose),
+                child: LeoAvatar(size: leoHeight, pose: leoPoseFor(controller)),
               ),
             ),
           ),
@@ -62,12 +63,6 @@ class DirectionView extends StatelessWidget {
     return _isVertical ? Alignment(0, signed) : Alignment(signed, 0);
   }
 
-  LeoPose get _pose {
-    if (controller.isSolved) return LeoPose.cheering;
-    if (controller.hasMistake) return LeoPose.thinking;
-    return LeoPose.front;
-  }
-
   Size get _leoSpace {
     const height = leoHeight + 2 * leoMargin;
     const width = leoHeight * LeoAvatar.aspectRatio + 2 * leoMargin;
@@ -76,8 +71,8 @@ class DirectionView extends StatelessWidget {
 
   Widget _arrow(Direction direction) => ChoiceButton(
     key: ValueKey('choice-${direction.value}'),
-    icon: direction.icon,
     isHighlighted: controller.isHintActive && item.target == direction.value,
     onPressed: () => controller.answer(direction.value),
+    child: Icon(direction.icon),
   );
 }

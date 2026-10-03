@@ -15,4 +15,9 @@ class ActivityRegistry {
     }
     return null;
   }
+
+  String? nextAvailable(List<String> activityIds, {required String after}) {
+    final index = activityIds.indexOf(after);
+    return index < 0 ? null : firstAvailable(activityIds.sublist(index + 1));
+  }
 }

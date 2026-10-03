@@ -10,7 +10,7 @@ content/
   path.yaml          stages and step order (teachers can reorder)
   words.yaml         the word bank
   sounds.yaml        sound keys and grapheme → sound rules (Chilean Spanish)
-  letters/           stroke data for tracing, one file per letter form
+  letters/           stroke data for tracing, one file per letter (both cases)
   prompts.yaml       Leo's spoken phrases (instructions, feedback, hints)
   CREDITS.yaml       every third-party asset: source, author, license
 ```
@@ -57,6 +57,25 @@ seen from above so stages stack into one map. The scene also frames the intro an
 reward screens of the stage's games. `tint` (a `#RRGGBB` color) is the calm
 background behind the games themselves, so nothing distracts from what the child
 has to find.
+
+A letter step sets `grapheme` and the `word` Leo pairs with it in *Meet* ("la a de
+abeja"). That word needs a picture. The step's activities play one after another,
+and the step counts as done after the last one.
+
+### `letters/a.yaml`
+
+```yaml
+lower:
+  - [[78, 26], [64, 8], [45, 2], [26, 8], [12, 26], [7, 50], ...]
+  - [[86, 2], [86, 100]]
+upper:
+  - [[60, 0], [8, 140]]
+```
+
+Each stroke is a list of `[x, y]` points (y grows downwards) in the order the finger
+moves, and the strokes are listed in writing order. A stroke with one point is a dot
+(the dot of the *i*). The app smooths the points into curves and scales the letter to
+the screen, so the units don't matter. Draw the shapes to match Playwrite Chile.
 
 Activities pull their items from the word bank using the step's target. Adding a
 word to `words.yaml` automatically makes it available to every activity where it
@@ -135,19 +154,18 @@ to record.
   (Apache-2.0 code and weights) and generates every prompt, vowel and syllable in
   that voice, with a `manifest.json` recording the engine, seed and settings.
   `tool/voice/leo_reference.wav` is the clip every phrase copies, so new phrases keep Leo's voice.
+- A pull request that adds or changes a phrase also adds its clips. Run the notebook with
+  `content/prompts.yaml` from that branch (the notebook asks you to upload it), so the clips match it.
 
 ## Fonts
 
-**Decision:** **Andika** (SIL, Open Font License) for all printed letters and the
-adult UI. SIL designed it for beginning readers: single-story "a" and "g",
-unambiguous b/d/p/q, and I/l/1 easy to tell apart. It's free to bundle and
+**Decision:** **Playwrite Chile** (TypeTogether, Open Font License) for every letter
+the child sees. It models "letra ligada", the cursive most Chilean schools teach, so
+the letters look like the ones in the child's notebook. It's free to bundle and
 covers ñ and accents.
 
 - **Tracing doesn't depend on a font.** *Trace* uses our own stroke data (points,
-  order and direction for each stroke), drawn to match Andika's shapes.
-- **Cursive is postponed.** Showing school cursive ("letra ligada") needs a
-  matching open font, or our own stroke data. It isn't needed until the child
-  starts writing words, so it isn't in the first milestones.
+  order and direction for each stroke), drawn to match Playwrite Chile's shapes.
 
 ## Licensing summary
 

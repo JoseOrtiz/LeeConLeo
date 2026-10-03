@@ -5,6 +5,7 @@ import '../../app/app_theme.dart';
 import '../../app/widgets/leo_avatar.dart';
 import '../common/activity_item.dart';
 import '../common/item_controller.dart';
+import '../common/widgets/leo_beside.dart';
 import 'positions_scene.dart';
 
 class PositionsView extends StatefulWidget {
@@ -46,7 +47,7 @@ class _PositionsViewState extends State<PositionsView> {
               Positioned.fromRect(rect: zone.area, child: _dropZone(zone)),
             Positioned.fromRect(
               rect: scene.leoArea,
-              child: LeoAvatar(size: scene.leoArea.height, pose: _pose),
+              child: LeoAvatar(size: scene.leoArea.height, pose: leoPoseFor(widget.controller)),
             ),
             if (placed != null)
               Positioned.fromRect(
@@ -60,12 +61,6 @@ class _PositionsViewState extends State<PositionsView> {
         );
       },
     );
-  }
-
-  LeoPose get _pose {
-    if (widget.controller.isSolved) return LeoPose.cheering;
-    if (widget.controller.hasMistake) return LeoPose.thinking;
-    return LeoPose.front;
   }
 
   Widget _dropZone(SceneZone zone) {

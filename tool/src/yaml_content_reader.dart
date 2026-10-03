@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:lee_con_leo/core/content/models/content_bundle.dart';
+import 'package:lee_con_leo/core/content/models/letter_shape.dart';
 import 'package:lee_con_leo/core/content/models/path_stage.dart';
 import 'package:lee_con_leo/core/content/models/prompt_library.dart';
 import 'package:lee_con_leo/core/content/models/word.dart';
@@ -24,7 +25,28 @@ class YamlContentReader {
     words: [for (final entry in _readList(ContentPaths.words)) _toWord(entry)],
     stages: [for (final entry in _readList(ContentPaths.path)) PathStage.fromJson(entry)],
     prompts: PromptLibrary.fromJson(_readMap(ContentPaths.prompts), clips: _promptClips()),
+    letters: _letters(),
   );
+
+  Map<String, LetterShape> _letters() {
+    final dir = Directory(ContentPaths.letters);
+    if (!dir.existsSync()) return const {};
+    final files = [
+      for (final file in dir.listSync().whereType<File>())
+        if (file.path.endsWith(_yamlExtension)) file,
+    ]..sort((a, b) => a.path.compareTo(b.path));
+    return {
+      for (final file in files)
+        _baseName(file): LetterShape.fromJson(_load(file.path) as Map<String, dynamic>),
+    };
+  }
+
+  static const _yamlExtension = '.yaml';
+
+  String _baseName(File file) {
+    final name = file.uri.pathSegments.last;
+    return name.substring(0, name.length - _yamlExtension.length);
+  }
 
   Map<String, String> _promptClips() {
     final dir = Directory('${ContentPaths.audio}/${ContentPaths.promptClipsDir}');
