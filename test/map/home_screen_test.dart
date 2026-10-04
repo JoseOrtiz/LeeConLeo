@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lee_con_leo/activities/common/activity_screen.dart';
 import 'package:lee_con_leo/app/app_router.dart';
+import 'package:lee_con_leo/app/startup_providers.dart';
 import 'package:lee_con_leo/app/widgets/pulse.dart';
 import 'package:lee_con_leo/core/audio/audio_providers.dart';
 import 'package:lee_con_leo/core/content/content_providers.dart';
@@ -27,6 +28,7 @@ void main() {
       ProviderScope(
         overrides: [
           contentProvider.overrideWith((ref) async => testContent),
+          minimumSplashProvider.overrideWithValue(Duration.zero),
           promptPlayerProvider.overrideWithValue(player),
           eventLogProvider.overrideWithValue(InMemoryEventLog()),
           progressStoreProvider.overrideWithValue(InMemoryProgressStore(completed)),

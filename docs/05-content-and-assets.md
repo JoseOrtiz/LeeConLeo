@@ -167,6 +167,23 @@ covers ñ and accents.
 - **Tracing doesn't depend on a font.** *Trace* uses our own stroke data (points,
   order and direction for each stroke), drawn to match Playwrite Chile's shapes.
 
+## App icon and splash
+
+The icon shows Leo's head with letter bubbles, and the splash shows Leo among floating
+letters, the same picture the app shows while content loads (`LoadingView`). Both are
+drawn from the app's own widgets, so they change with Leo and the letter bubbles:
+
+```
+flutter test tool/branding/render_branding_test.dart   # writes assets/branding/*.png
+dart run flutter_launcher_icons
+dart run flutter_native_splash:create
+```
+
+Native splash screens can't animate, so at launch the app keeps the loading screen, with
+its floating letters, for at least 1.5 seconds. Android 12 and later only show a round
+icon on a plain color while the app starts, so there the letters appear in that loading
+screen.
+
 ## Licensing summary
 
 | Part | License |

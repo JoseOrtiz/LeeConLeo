@@ -15,9 +15,20 @@ class LeeConLeoApp extends ConsumerStatefulWidget {
 
 class _LeeConLeoAppState extends ConsumerState<LeeConLeoApp> {
   final GoRouter _router = createAppRouter();
+  late final AppLifecycleListener _lifecycle;
+
+  @override
+  void initState() {
+    super.initState();
+    _lifecycle = AppLifecycleListener(
+      onHide: () => ref.read(pausablePlayerProvider).pause(),
+      onShow: () => ref.read(pausablePlayerProvider).resume(),
+    );
+  }
 
   @override
   void dispose() {
+    _lifecycle.dispose();
     _router.dispose();
     super.dispose();
   }

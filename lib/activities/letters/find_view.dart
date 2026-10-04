@@ -2,11 +2,10 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-import '../../app/app_theme.dart';
 import '../common/activity_item.dart';
 import '../common/item_controller.dart';
 import '../common/widgets/leo_beside.dart';
-import '../common/widgets/letter_glyph.dart';
+import '../common/widgets/letter_bubble.dart';
 import 'find_activity.dart';
 
 class FindView extends StatefulWidget {
@@ -104,46 +103,12 @@ class _FindViewState extends State<FindView> with SingleTickerProviderStateMixin
         scale: _popped.contains(index) ? 0 : 1,
         duration: const Duration(milliseconds: 250),
         curve: Curves.easeInBack,
-        child: _Bubble(
+        child: GestureDetector(
           key: ValueKey('bubble-$index'),
-          letter: widget.item.options[index],
-          isHinted: widget.controller.isHintActive && _isTarget(index),
           onTap: () => _tap(index),
-        ),
-      ),
-    );
-  }
-}
-
-class _Bubble extends StatelessWidget {
-  const _Bubble({super.key, required this.letter, required this.isHinted, required this.onTap});
-
-  final String letter;
-  final bool isHinted;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    final colors = Theme.of(context).colorScheme;
-    return GestureDetector(
-      onTap: onTap,
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 300),
-        decoration: BoxDecoration(
-          shape: BoxShape.circle,
-          gradient: const RadialGradient(
-            center: Alignment(-0.4, -0.5),
-            colors: [Colors.white, Color(0xFFBDE4F7)],
-          ),
-          border: Border.all(
-            color: isHinted ? colors.tertiary : AppTheme.outline,
-            width: isHinted ? 8 : 4,
-          ),
-        ),
-        child: Center(
-          child: FractionallySizedBox(
-            heightFactor: 0.6,
-            child: FittedBox(child: LetterGlyph(letter, color: AppTheme.outline)),
+          child: LetterBubble(
+            letter: widget.item.options[index],
+            isHinted: widget.controller.isHintActive && _isTarget(index),
           ),
         ),
       ),

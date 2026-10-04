@@ -8,10 +8,11 @@ import 'package:go_router/go_router.dart';
 import '../activities/activity_providers.dart';
 import '../app/app_theme.dart';
 import '../app/widgets/leo_avatar.dart';
+import '../app/startup_providers.dart';
+import '../app/widgets/loading_view.dart';
 import '../app/widgets/pulse.dart';
 import '../core/audio/audio_providers.dart';
 import '../core/audio/utterance.dart';
-import '../core/content/content_providers.dart';
 import '../core/content/models/content_bundle.dart';
 import '../core/content/models/path_step.dart';
 import '../core/progress/progress_providers.dart';
@@ -29,12 +30,13 @@ class HomeScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
+      backgroundColor: AppTheme.cream,
       body: SafeArea(
         child: ref
-            .watch(contentProvider)
+            .watch(startupProvider)
             .when(
               data: (bundle) => PathMap(bundle: bundle),
-              loading: () => const Center(child: CircularProgressIndicator()),
+              loading: () => const LoadingView(),
               error: (error, _) => Center(child: Text('$error')),
             ),
       ),
