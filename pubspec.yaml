@@ -34,6 +34,7 @@ flutter:
     - assets/images/leo/
     - assets/images/scenes/
     - assets/images/steps/
+    - assets/images/ui/
     - assets/images/words/
   fonts:
     - family: PlaywriteCL

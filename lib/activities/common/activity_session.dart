@@ -64,6 +64,10 @@ class ActivitySession extends ChangeNotifier implements ItemController {
   @override
   bool get isSolved => _phase == SessionPhase.celebrating;
 
+  @override
+  bool get showsDemo =>
+      _phase == SessionPhase.playing && ((_index == 0 && _mistakes == 0) || isHintActive);
+
   void start() => _say(ActivityPromptIds.intro(activityId));
 
   void begin() {

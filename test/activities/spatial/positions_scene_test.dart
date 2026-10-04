@@ -21,12 +21,7 @@ void main() {
       });
 
       test('everything stays on screen', () {
-        for (final rect in [
-          ...scene.tables,
-          scene.leoArea,
-          scene.ballAt(scene.ballStart),
-          scene.floor,
-        ]) {
+        for (final rect in [...scene.tables, scene.leoArea, scene.ballInTray, scene.floor]) {
           expect(bounds.expandToInclude(rect), bounds);
         }
       });
@@ -36,6 +31,11 @@ void main() {
           final ball = scene.ballAt(zone.restingPlace);
           expect(zone.area.expandToInclude(ball), zone.area, reason: zone.id);
         }
+      });
+
+      test('the ball waiting in the tray is big enough to grab', () {
+        expect(scene.trayBallSize, greaterThanOrEqualTo(PositionsScene.minTrayBall));
+        expect(scene.ballInTray.overlaps(scene.leoArea), isFalse);
       });
 
       test('every position has a place to drop the ball', () {

@@ -22,11 +22,12 @@
 
 Every activity follows the same frame, so children learn it once:
 
-1. **Leo explains** (audio), and an animated hand shows the first move.
+1. **Leo explains** (audio), and an animated hand shows the first move until the
+   child touches the screen.
 2. **The child plays** 5–8 items.
 3. **Feedback on every item:** a sound, an animation and a short spoken phrase.
-   After 2 errors on an item, a hint (the correct option glows, or the audio
-   repeats more slowly).
+   After 2 errors on an item, a hint: the correct option glows and the hand shows
+   the move again.
 4. **Reward:** a sticker or a star, then back to the map.
 5. **Logging:** every item records `{activity, item, answer, correct, ms, hintUsed}`
    (see [04](04-architecture.md)).

@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 import '../common/item_controller.dart';
+import '../common/widgets/demo_overlay.dart';
 import '../common/widgets/leo_beside.dart';
 import 'stroke_tracer.dart';
 import 'trace_activity.dart';
@@ -70,6 +71,12 @@ class _TraceViewState extends State<TraceView> with SingleTickerProviderStateMix
     if (tracer.isComplete) widget.controller.answer(widget.item.target);
   }
 
+  List<Offset> _demoPath() {
+    final tracer = _tracer!;
+    if (tracer.isComplete) return const [];
+    return [for (final point in _path!.strokes[tracer.currentStroke]) Offset(point.x, point.y)];
+  }
+
   Point<double> _point(Offset offset) => Point(offset.dx, offset.dy);
 
   @override
@@ -82,22 +89,27 @@ class _TraceViewState extends State<TraceView> with SingleTickerProviderStateMix
         child: LayoutBuilder(
           builder: (context, constraints) {
             _fit(constraints.biggest);
-            return GestureDetector(
-              key: TraceView.canvasKey,
-              behavior: HitTestBehavior.opaque,
-              onPanDown: (details) => _update((t) => t.start(_point(details.localPosition))),
-              onPanUpdate: (details) => _update((t) => t.move(_point(details.localPosition))),
-              onPanEnd: (_) => _update((t) => t.end()),
-              onPanCancel: () => _update((t) => t.end()),
-              child: CustomPaint(
-                size: Size.infinite,
-                painter: TracePainter(
-                  path: _path!,
-                  tracer: _tracer!,
-                  glow: _glow,
-                  guide: colors.surfaceContainerHighest,
-                  ink: colors.primary,
-                  marker: colors.tertiary,
+            return DemoOverlay(
+              key: ValueKey('demo-${widget.item.id}'),
+              show: widget.controller.showsDemo,
+              path: _demoPath(),
+              child: GestureDetector(
+                key: TraceView.canvasKey,
+                behavior: HitTestBehavior.opaque,
+                onPanDown: (details) => _update((t) => t.start(_point(details.localPosition))),
+                onPanUpdate: (details) => _update((t) => t.move(_point(details.localPosition))),
+                onPanEnd: (_) => _update((t) => t.end()),
+                onPanCancel: () => _update((t) => t.end()),
+                child: CustomPaint(
+                  size: Size.infinite,
+                  painter: TracePainter(
+                    path: _path!,
+                    tracer: _tracer!,
+                    glow: _glow,
+                    guide: colors.surfaceContainerHighest,
+                    ink: colors.primary,
+                    marker: colors.tertiary,
+                  ),
                 ),
               ),
             );

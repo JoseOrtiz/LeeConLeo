@@ -5,6 +5,7 @@ import '../../app/app_theme.dart';
 import '../../app/widgets/leo_avatar.dart';
 import '../common/activity_item.dart';
 import '../common/item_controller.dart';
+import '../common/widgets/demo_overlay.dart';
 import '../common/widgets/leo_beside.dart';
 import 'positions_scene.dart';
 
@@ -38,30 +39,40 @@ class _PositionsViewState extends State<PositionsView> {
       builder: (context, constraints) {
         final scene = PositionsScene.fit(constraints.biggest);
         final placed = widget.controller.isSolved ? _dropped : null;
-        return Stack(
-          children: [
-            Positioned.fromRect(rect: scene.floor, child: const _Floor()),
-            for (final table in scene.tables)
-              Positioned.fromRect(rect: table, child: SvgPicture.asset(PositionsView.tableAsset)),
-            for (final zone in scene.zones)
-              Positioned.fromRect(rect: zone.area, child: _dropZone(zone)),
-            Positioned.fromRect(
-              rect: scene.leoArea,
-              child: LeoAvatar(size: scene.leoArea.height, pose: leoPoseFor(widget.controller)),
-            ),
-            if (placed != null)
+        return DemoOverlay(
+          key: ValueKey('demo-${widget.item.id}'),
+          show: widget.controller.showsDemo,
+          path: [scene.ballStart, _targetZone(scene).restingPlace],
+          carrying: _ball(),
+          carryingSize: scene.trayBallSize,
+          child: Stack(
+            children: [
+              Positioned.fromRect(rect: scene.floor, child: const _Floor()),
+              for (final table in scene.tables)
+                Positioned.fromRect(rect: table, child: SvgPicture.asset(PositionsView.tableAsset)),
+              for (final zone in scene.zones)
+                Positioned.fromRect(rect: zone.area, child: _dropZone(zone)),
               Positioned.fromRect(
-                key: const ValueKey(PositionsView.placedBall),
-                rect: scene.ballAt(placed.restingPlace),
-                child: _ball(),
-              )
-            else
-              Positioned.fromRect(rect: scene.grabArea, child: _draggableBall(scene)),
-          ],
+                rect: scene.leoArea,
+                child: LeoAvatar(size: scene.leoArea.height, pose: leoPoseFor(widget.controller)),
+              ),
+              if (placed != null)
+                Positioned.fromRect(
+                  key: const ValueKey(PositionsView.placedBall),
+                  rect: scene.ballAt(placed.restingPlace),
+                  child: _ball(),
+                )
+              else
+                Positioned.fromRect(rect: scene.grabArea, child: _draggableBall(scene)),
+            ],
+          ),
         );
       },
     );
   }
+
+  SceneZone _targetZone(PositionsScene scene) =>
+      scene.zones.firstWhere((zone) => zone.position == widget.item.target);
 
   Widget _dropZone(SceneZone zone) {
     final isHinted = widget.controller.isHintActive && zone.position == widget.item.target;
@@ -79,7 +90,7 @@ class _PositionsViewState extends State<PositionsView> {
   }
 
   Widget _draggableBall(PositionsScene scene) {
-    final ball = SizedBox.square(dimension: scene.ballSize, child: _ball());
+    final ball = SizedBox.square(dimension: scene.trayBallSize, child: _ball());
     return Draggable<String>(
       key: const ValueKey(PositionsView.ball),
       data: PositionsView.ball,

@@ -5,5 +5,7 @@ abstract interface class ItemController {
 
   bool get isSolved;
 
+  bool get showsDemo;
+
   void answer(String value);
 }

@@ -94,6 +94,7 @@ class PositionsScene {
   static const headroomShare = 0.2;
   static const ballShare = 0.32;
   static const grabShare = 1.8;
+  static const minTrayBall = 64.0;
   static const tableSurface = 0.34;
   static const tableUnderside = 0.49;
   static const tableFloor = 0.84;
@@ -107,8 +108,16 @@ class PositionsScene {
   final Rect leoArea;
   final Rect floor;
 
+  double get trayBallSize => max(ballSize, minTrayBall);
+
   Rect ballAt(Offset center) => Rect.fromCenter(center: center, width: ballSize, height: ballSize);
 
-  Rect get grabArea =>
-      Rect.fromCenter(center: ballStart, width: ballSize * grabShare, height: ballSize * grabShare);
+  Rect get ballInTray =>
+      Rect.fromCenter(center: ballStart, width: trayBallSize, height: trayBallSize);
+
+  Rect get grabArea => Rect.fromCenter(
+    center: ballStart,
+    width: trayBallSize * grabShare,
+    height: trayBallSize * grabShare,
+  );
 }

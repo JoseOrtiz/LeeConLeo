@@ -94,6 +94,24 @@ void main() {
     expect(player.spoken.last, 'reward');
   });
 
+  test('the demonstration shows on the first item and comes back as a hint', () {
+    session.start();
+    expect(session.showsDemo, isFalse);
+
+    session.begin();
+    expect(session.showsDemo, isTrue);
+
+    session.answer('down');
+    expect(session.showsDemo, isFalse);
+    session.answer('down');
+    expect(session.showsDemo, isTrue);
+
+    session.answer('up');
+    session.next();
+    expect(session.currentItem.id, '1');
+    expect(session.showsDemo, isFalse);
+  });
+
   test('records every answer with its attempt number', () {
     session.begin();
     session.answer('down');
