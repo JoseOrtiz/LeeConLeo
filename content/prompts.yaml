@@ -148,3 +148,21 @@ letter.trace.u.upper:
 
 letter.find.u:
   - Revienta las burbujas que tienen la... u.
+
+syllables.starts_with.intro:
+  - ¡Escucha bien! Toca el dibujo que empieza con el sonido que te digo.
+
+syllables.starts_with.a:
+  - ¿Qué dibujo empieza con... a?
+
+syllables.starts_with.e:
+  - ¿Qué dibujo empieza con... e?
+
+syllables.starts_with.i:
+  - ¿Qué dibujo empieza con... i?
+
+syllables.starts_with.o:
+  - ¿Qué dibujo empieza con... o?
+
+syllables.starts_with.u:
+  - ¿Qué dibujo empieza con... u?

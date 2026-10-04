@@ -12,7 +12,8 @@
         "be",
         "ja"
       ],
-      "image": "words/abeja.svg"
+      "image": "words/abeja.svg",
+      "audio": "words/abeja.m4a"
     },
     {
       "text": "agua",
@@ -977,7 +978,8 @@
         "fan",
         "te"
       ],
-      "image": "words/elefante.svg"
+      "image": "words/elefante.svg",
+      "audio": "words/elefante.m4a"
     },
     {
       "text": "empanada",
@@ -1120,7 +1122,8 @@
         "tre",
         "ya"
       ],
-      "image": "words/estrella.svg"
+      "image": "words/estrella.svg",
+      "audio": "words/estrella.m4a"
     },
     {
       "text": "estrella de mar",
@@ -1588,7 +1591,8 @@
         "i",
         "glu"
       ],
-      "image": "words/iglu.svg"
+      "image": "words/iglu.svg",
+      "audio": "words/iglu.m4a"
     },
     {
       "text": "impresora",
@@ -1639,7 +1643,8 @@
         "is",
         "la"
       ],
-      "image": "words/isla.svg"
+      "image": "words/isla.svg",
+      "audio": "words/isla.m4a"
     },
     {
       "text": "jabón",
@@ -2166,7 +2171,8 @@
         "me",
         "sa"
       ],
-      "image": "words/mesa.svg"
+      "image": "words/mesa.svg",
+      "audio": "words/mesa.m4a"
     },
     {
       "text": "micrófono",
@@ -2409,7 +2415,8 @@
         "o",
         "jo"
       ],
-      "image": "words/ojo.svg"
+      "image": "words/ojo.svg",
+      "audio": "words/ojo.m4a"
     },
     {
       "text": "olla",
@@ -2475,7 +2482,8 @@
         "o",
         "so"
       ],
-      "image": "words/oso.svg"
+      "image": "words/oso.svg",
+      "audio": "words/oso.m4a"
     },
     {
       "text": "oveja",
@@ -2699,7 +2707,8 @@
         "lo",
         "ta"
       ],
-      "image": "words/pelota.svg"
+      "image": "words/pelota.svg",
+      "audio": "words/pelota.m4a"
     },
     {
       "text": "pera",
@@ -3660,7 +3669,8 @@
         "kor",
         "nio"
       ],
-      "image": "words/unicornio.svg"
+      "image": "words/unicornio.svg",
+      "audio": "words/unicornio.m4a"
     },
     {
       "text": "uniforme",
@@ -3713,7 +3723,8 @@
         "u",
         "ba"
       ],
-      "image": "words/uva.svg"
+      "image": "words/uva.svg",
+      "audio": "words/uva.m4a"
     },
     {
       "text": "uña",
@@ -3910,7 +3921,8 @@
         "ar",
         "bol"
       ],
-      "image": "words/arbol.svg"
+      "image": "words/arbol.svg",
+      "audio": "words/arbol.m4a"
     }
   ],
   "stages": [
@@ -4163,6 +4175,24 @@
     ],
     "letter.find.u": [
       "Revienta las burbujas que tienen la... u."
+    ],
+    "syllables.starts_with.intro": [
+      "¡Escucha bien! Toca el dibujo que empieza con el sonido que te digo."
+    ],
+    "syllables.starts_with.a": [
+      "¿Qué dibujo empieza con... a?"
+    ],
+    "syllables.starts_with.e": [
+      "¿Qué dibujo empieza con... e?"
+    ],
+    "syllables.starts_with.i": [
+      "¿Qué dibujo empieza con... i?"
+    ],
+    "syllables.starts_with.o": [
+      "¿Qué dibujo empieza con... o?"
+    ],
+    "syllables.starts_with.u": [
+      "¿Qué dibujo empieza con... u?"
     ]
   },
   "promptClips": {
@@ -4218,7 +4248,13 @@
     "spatial.positions.under.0": "prompts/spatial.positions.under.0.m4a",
     "spatial.up_down.down.0": "prompts/spatial.up_down.down.0.m4a",
     "spatial.up_down.intro.0": "prompts/spatial.up_down.intro.0.m4a",
-    "spatial.up_down.up.0": "prompts/spatial.up_down.up.0.m4a"
+    "spatial.up_down.up.0": "prompts/spatial.up_down.up.0.m4a",
+    "syllables.starts_with.a.0": "prompts/syllables.starts_with.a.0.m4a",
+    "syllables.starts_with.e.0": "prompts/syllables.starts_with.e.0.m4a",
+    "syllables.starts_with.i.0": "prompts/syllables.starts_with.i.0.m4a",
+    "syllables.starts_with.intro.0": "prompts/syllables.starts_with.intro.0.m4a",
+    "syllables.starts_with.o.0": "prompts/syllables.starts_with.o.0.m4a",
+    "syllables.starts_with.u.0": "prompts/syllables.starts_with.u.0.m4a"
   },
   "letters": {
     "a": {

@@ -1,6 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lee_con_leo/activities/common/activity_item.dart';
 import 'package:lee_con_leo/activities/common/activity_session.dart';
+import 'package:lee_con_leo/core/content/models/spoken_line.dart';
 import 'package:lee_con_leo/core/logging/in_memory_event_log.dart';
 
 import '../../fakes/recording_prompt_player.dart';
@@ -110,6 +111,31 @@ void main() {
     session.next();
     expect(session.currentItem.id, '1');
     expect(session.showsDemo, isFalse);
+  });
+
+  test('Leo names the picture the child picked before the feedback', () {
+    final named = ActivitySession(
+      stepId: 'a',
+      activityId: 'syllables.starts_with',
+      items: const [
+        ActivityItem(
+          id: '0',
+          target: 'abeja',
+          promptId: 'spatial.up_down.up',
+          options: ['abeja', 'oso'],
+          optionNames: {'oso': SpokenLine('oso', clip: 'words/oso.m4a')},
+        ),
+      ],
+      prompts: testPrompts,
+      player: player,
+      log: log,
+    )..begin();
+
+    named.answer('oso');
+    expect(player.spoken.last, 'oso retry say up');
+
+    named.answer('abeja');
+    expect(player.spoken.last, 'correct');
   });
 
   test('records every answer with its attempt number', () {

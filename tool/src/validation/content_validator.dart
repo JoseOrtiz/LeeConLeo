@@ -5,6 +5,7 @@ import 'rules/letter_steps_rule.dart';
 import 'rules/path_images_rule.dart';
 import 'rules/prompt_clips_rule.dart';
 import 'rules/stage_tints_rule.dart';
+import 'rules/starts_with_steps_rule.dart';
 import 'rules/step_has_words_rule.dart';
 import 'rules/syllables_match_text_rule.dart';
 import 'rules/unique_ids_rule.dart';
@@ -25,6 +26,7 @@ class ContentValidator {
     PromptClipsRule(),
     StepHasWordsRule(),
     LetterStepsRule(),
+    StartsWithStepsRule(),
   ];
 
   final List<ValidationRule> rules;

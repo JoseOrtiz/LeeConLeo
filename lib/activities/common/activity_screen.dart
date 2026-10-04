@@ -51,16 +51,22 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
   @override
   void initState() {
     super.initState();
-    ref.read(contentProvider.future).then(_startSession);
+    final content = ref.read(contentProvider).value;
+    if (content != null) {
+      _startSession(content);
+      return;
+    }
+    ref.read(contentProvider.future).then((content) {
+      if (mounted) setState(() => _startSession(content));
+    });
   }
 
   void _startSession(ContentBundle content) {
-    if (!mounted) return;
     final registry = ref.read(activityRegistryProvider);
     final spec = registry.find(widget.activityId);
     final step = content.stepById(widget.stepId);
     if (spec == null || step == null) {
-      setState(() => _isUnavailable = true);
+      _isUnavailable = true;
       return;
     }
 
@@ -75,12 +81,10 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
       random: random,
     )..addListener(_onSessionChanged);
 
-    setState(() {
-      _spec = spec;
-      _session = session;
-      _stage = content.stageOf(step.id);
-      _nextActivityId = registry.nextAvailable(step.activities, after: spec.id);
-    });
+    _spec = spec;
+    _session = session;
+    _stage = content.stageOf(step.id);
+    _nextActivityId = registry.nextAvailable(step.activities, after: spec.id);
     session.start();
   }
 

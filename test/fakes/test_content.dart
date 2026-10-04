@@ -33,6 +33,8 @@ const testPrompts = PromptLibrary({
   'letter.trace.a.upper': ['trace A'],
   'letter.find.intro': ['intro'],
   'letter.find.a': ['find a'],
+  'syllables.starts_with.intro': ['intro'],
+  'syllables.starts_with.a': ['starts a'],
 }, clips: testClips);
 
 const testClips = {
@@ -45,7 +47,34 @@ const testTint = '#EEF7E4';
 const testContent = ContentBundle(
   words: [
     Word(text: 'mano', syllables: ['ma', 'no'], sounds: ['ma', 'no']),
-    Word(text: 'abeja', syllables: ['a', 'be', 'ja'], sounds: ['a', 'be', 'ja'], image: testImage),
+    Word(
+      text: 'abeja',
+      syllables: ['a', 'be', 'ja'],
+      sounds: ['a', 'be', 'ja'],
+      image: testImage,
+      audio: 'words/abeja.m4a',
+    ),
+    Word(
+      text: 'oso',
+      syllables: ['o', 'so'],
+      sounds: ['o', 'so'],
+      image: 'words/oso.svg',
+      audio: 'words/oso.m4a',
+    ),
+    Word(
+      text: 'uva',
+      syllables: ['u', 'va'],
+      sounds: ['u', 'ba'],
+      image: 'words/uva.svg',
+      audio: 'words/uva.m4a',
+    ),
+    Word(
+      text: 'mesa',
+      syllables: ['me', 'sa'],
+      sounds: ['me', 'sa'],
+      image: 'words/mesa.svg',
+      audio: 'words/mesa.m4a',
+    ),
   ],
   stages: [
     PathStage(
@@ -62,7 +91,7 @@ const testContent = ContentBundle(
           grapheme: 'a',
           sound: 'a',
           word: 'abeja',
-          activities: ['letter.meet', 'syllables.starts_with', 'letter.trace', 'letter.find'],
+          activities: ['letter.meet', 'letter.trace', 'letter.find', 'syllables.starts_with'],
         ),
         PathStep(id: 'e', grapheme: 'e', sound: 'e', activities: ['letter.find']),
       ],

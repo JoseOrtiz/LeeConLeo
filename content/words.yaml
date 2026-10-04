@@ -1,5 +1,6 @@
 - text: abeja
   image: words/abeja.svg
+  audio: words/abeja.m4a
 - text: agua
 - text: ala
 - text: anillo
@@ -79,6 +80,7 @@
 - text: dálmata
 - text: elefante
   image: words/elefante.svg
+  audio: words/elefante.m4a
 - text: empanada
 - text: enchufe
 - text: enfermera
@@ -90,6 +92,7 @@
 - text: esqueleto
 - text: estrella
   image: words/estrella.svg
+  audio: words/estrella.m4a
 - text: estrella de mar
 - text: falda
 - text: fantasma
@@ -130,11 +133,13 @@
 - text: hámster
 - text: iglú
   image: words/iglu.svg
+  audio: words/iglu.m4a
 - text: impresora
 - text: imán
 - text: insectos
 - text: isla
   image: words/isla.svg
+  audio: words/isla.m4a
 - text: jabón
 - text: jaguar
 - text: jamón
@@ -180,6 +185,7 @@
 - text: melón
 - text: mesa
   image: words/mesa.svg
+  audio: words/mesa.m4a
 - text: micrófono
 - text: miel
 - text: mimo
@@ -201,12 +207,14 @@
 - text: ocho
 - text: ojo
   image: words/ojo.svg
+  audio: words/ojo.m4a
 - text: olla
 - text: orangután
 - text: ornitorrinco
 - text: oro
 - text: oso
   image: words/oso.svg
+  audio: words/oso.m4a
 - text: oveja
 - text: oído
 - text: pala
@@ -227,6 +235,7 @@
 - text: pelo
 - text: pelota
   image: words/pelota.svg
+  audio: words/pelota.m4a
 - text: pera
 - text: perfume
 - text: perro
@@ -310,11 +319,13 @@
 - text: tucán
 - text: unicornio
   image: words/unicornio.svg
+  audio: words/unicornio.m4a
 - text: uniforme
 - text: universo
 - text: uno
 - text: uva
   image: words/uva.svg
+  audio: words/uva.m4a
 - text: uña
 - text: vaca
 - text: vaquero
@@ -332,3 +343,4 @@
 - text: zorro
 - text: árbol
   image: words/arbol.svg
+  audio: words/arbol.m4a
