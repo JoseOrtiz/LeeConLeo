@@ -43,3 +43,21 @@
       sound: u
       word: uva
       activities: [letter.meet, letter.trace, letter.find, syllables.starts_with]
+
+- stage: 4
+  name: Primeras consonantes
+  scene: scenes/forest.svg
+  tint: '#E6F2DC'
+  steps:
+    - id: m
+      grapheme: m
+      word: mesa
+      activities: [letter.meet, letter.trace, letter.find]
+    - id: p
+      grapheme: p
+      word: pelota
+      activities: [letter.meet, letter.trace, letter.find]
+    - id: l
+      grapheme: l
+      word: luna
+      activities: [letter.meet, letter.trace, letter.find]

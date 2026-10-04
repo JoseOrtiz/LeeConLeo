@@ -169,6 +169,8 @@
 - text: loro
 - text: luces
 - text: luna
+  image: words/luna.svg
+  audio: words/luna.m4a
 - text: lupa
 - text: lámpara
 - text: lápiz

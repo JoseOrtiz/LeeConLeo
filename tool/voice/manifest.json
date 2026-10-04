@@ -14,6 +14,9 @@
       "i": "Ii",
       "o": "Oo",
       "u": "Uu"
+    },
+    "wordSpellings": {
+      "ojo": "¡Ojo!"
     }
   },
   "clips": [
@@ -156,220 +159,328 @@
       "file": "assets/audio/prompts/letter.find.intro.0.m4a"
     },
     {
-      "promptId": "letter.meet.a",
-      "index": 0,
-      "text": "Esta es la... a. ¡La... a de abeja! ¡Tócala!",
-      "file": "assets/audio/prompts/letter.meet.a.0.m4a"
-    },
-    {
-      "promptId": "letter.find.a",
-      "index": 0,
-      "text": "Revienta las burbujas que tienen la... a.",
-      "file": "assets/audio/prompts/letter.find.a.0.m4a"
-    },
-    {
-      "promptId": "letter.meet.e",
-      "index": 0,
-      "text": "Esta es la... e. ¡La... e de elefante! ¡Tócala!",
-      "file": "assets/audio/prompts/letter.meet.e.0.m4a"
-    },
-    {
-      "promptId": "letter.find.e",
-      "index": 0,
-      "text": "Revienta las burbujas que tienen la... e.",
-      "file": "assets/audio/prompts/letter.find.e.0.m4a"
-    },
-    {
-      "promptId": "letter.meet.i",
-      "index": 0,
-      "text": "Esta es la... i. ¡La... i de iglú! ¡Tócala!",
-      "file": "assets/audio/prompts/letter.meet.i.0.m4a"
-    },
-    {
-      "promptId": "letter.find.i",
-      "index": 0,
-      "text": "Revienta las burbujas que tienen la... i.",
-      "file": "assets/audio/prompts/letter.find.i.0.m4a"
-    },
-    {
-      "promptId": "letter.meet.o",
-      "index": 0,
-      "text": "Esta es la... o. ¡La... o de oso! ¡Tócala!",
-      "file": "assets/audio/prompts/letter.meet.o.0.m4a"
-    },
-    {
-      "promptId": "letter.find.o",
-      "index": 0,
-      "text": "Revienta las burbujas que tienen la... o.",
-      "file": "assets/audio/prompts/letter.find.o.0.m4a"
-    },
-    {
-      "promptId": "letter.meet.u",
-      "index": 0,
-      "text": "Esta es la... u. ¡La... u de uva! ¡Tócala!",
-      "file": "assets/audio/prompts/letter.meet.u.0.m4a"
-    },
-    {
-      "promptId": "letter.find.u",
-      "index": 0,
-      "text": "Revienta las burbujas que tienen la... u.",
-      "file": "assets/audio/prompts/letter.find.u.0.m4a"
-    },
-    {
-      "promptId": "letter.meet.a.upper",
-      "index": 0,
-      "text": "Toca la... a mayúscula.",
-      "file": "assets/audio/prompts/letter.meet.a.upper.0.m4a"
-    },
-    {
-      "promptId": "letter.meet.a.lower",
-      "index": 0,
-      "text": "Toca la... a minúscula.",
-      "file": "assets/audio/prompts/letter.meet.a.lower.0.m4a"
-    },
-    {
-      "promptId": "letter.trace.a.lower",
-      "index": 0,
-      "text": "Repasa la... a minúscula con tu dedo.",
-      "file": "assets/audio/prompts/letter.trace.a.lower.0.m4a"
-    },
-    {
-      "promptId": "letter.trace.a.upper",
-      "index": 0,
-      "text": "Repasa la... a mayúscula con tu dedo.",
-      "file": "assets/audio/prompts/letter.trace.a.upper.0.m4a"
-    },
-    {
-      "promptId": "letter.meet.e.upper",
-      "index": 0,
-      "text": "Toca la... e mayúscula.",
-      "file": "assets/audio/prompts/letter.meet.e.upper.0.m4a"
-    },
-    {
-      "promptId": "letter.meet.e.lower",
-      "index": 0,
-      "text": "Toca la... e minúscula.",
-      "file": "assets/audio/prompts/letter.meet.e.lower.0.m4a"
-    },
-    {
-      "promptId": "letter.trace.e.lower",
-      "index": 0,
-      "text": "Repasa la... e minúscula con tu dedo.",
-      "file": "assets/audio/prompts/letter.trace.e.lower.0.m4a"
-    },
-    {
-      "promptId": "letter.trace.e.upper",
-      "index": 0,
-      "text": "Repasa la... e mayúscula con tu dedo.",
-      "file": "assets/audio/prompts/letter.trace.e.upper.0.m4a"
-    },
-    {
-      "promptId": "letter.meet.i.upper",
-      "index": 0,
-      "text": "Toca la... i mayúscula.",
-      "file": "assets/audio/prompts/letter.meet.i.upper.0.m4a"
-    },
-    {
-      "promptId": "letter.meet.i.lower",
-      "index": 0,
-      "text": "Toca la... i minúscula.",
-      "file": "assets/audio/prompts/letter.meet.i.lower.0.m4a"
-    },
-    {
-      "promptId": "letter.trace.i.lower",
-      "index": 0,
-      "text": "Repasa la... i minúscula con tu dedo.",
-      "file": "assets/audio/prompts/letter.trace.i.lower.0.m4a"
-    },
-    {
-      "promptId": "letter.trace.i.upper",
-      "index": 0,
-      "text": "Repasa la... i mayúscula con tu dedo.",
-      "file": "assets/audio/prompts/letter.trace.i.upper.0.m4a"
-    },
-    {
-      "promptId": "letter.meet.o.upper",
-      "index": 0,
-      "text": "Toca la... o mayúscula.",
-      "file": "assets/audio/prompts/letter.meet.o.upper.0.m4a"
-    },
-    {
-      "promptId": "letter.meet.o.lower",
-      "index": 0,
-      "text": "Toca la... o minúscula.",
-      "file": "assets/audio/prompts/letter.meet.o.lower.0.m4a"
-    },
-    {
-      "promptId": "letter.trace.o.lower",
-      "index": 0,
-      "text": "Repasa la... o minúscula con tu dedo.",
-      "file": "assets/audio/prompts/letter.trace.o.lower.0.m4a"
-    },
-    {
-      "promptId": "letter.trace.o.upper",
-      "index": 0,
-      "text": "Repasa la... o mayúscula con tu dedo.",
-      "file": "assets/audio/prompts/letter.trace.o.upper.0.m4a"
-    },
-    {
-      "promptId": "letter.meet.u.upper",
-      "index": 0,
-      "text": "Toca la... u mayúscula.",
-      "file": "assets/audio/prompts/letter.meet.u.upper.0.m4a"
-    },
-    {
-      "promptId": "letter.meet.u.lower",
-      "index": 0,
-      "text": "Toca la... u minúscula.",
-      "file": "assets/audio/prompts/letter.meet.u.lower.0.m4a"
-    },
-    {
-      "promptId": "letter.trace.u.lower",
-      "index": 0,
-      "text": "Repasa la... u minúscula con tu dedo.",
-      "file": "assets/audio/prompts/letter.trace.u.lower.0.m4a"
-    },
-    {
-      "promptId": "letter.trace.u.upper",
-      "index": 0,
-      "text": "Repasa la... u mayúscula con tu dedo.",
-      "file": "assets/audio/prompts/letter.trace.u.upper.0.m4a"
-    },
-    {
       "promptId": "syllables.starts_with.intro",
       "index": 0,
       "text": "¡Escucha bien! Toca el dibujo que empieza con el sonido que te digo.",
       "file": "assets/audio/prompts/syllables.starts_with.intro.0.m4a"
     },
     {
+      "promptId": "letter.meet.a",
+      "index": 0,
+      "text": "Esta es la, a. ¡La, a de abeja! ¡Tócala!",
+      "file": "assets/audio/prompts/letter.meet.a.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.a.upper",
+      "index": 0,
+      "text": "Toca la, a mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.a.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.a.lower",
+      "index": 0,
+      "text": "Toca la, a minúscula.",
+      "file": "assets/audio/prompts/letter.meet.a.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.a.lower",
+      "index": 0,
+      "text": "Repasa la, a minúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.a.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.a.upper",
+      "index": 0,
+      "text": "Repasa la, a mayúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.a.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.find.a",
+      "index": 0,
+      "text": "Revienta las burbujas que tienen la, a.",
+      "file": "assets/audio/prompts/letter.find.a.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.e",
+      "index": 0,
+      "text": "Esta es la, e. ¡La, e de elefante! ¡Tócala!",
+      "file": "assets/audio/prompts/letter.meet.e.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.e.upper",
+      "index": 0,
+      "text": "Toca la, e mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.e.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.e.lower",
+      "index": 0,
+      "text": "Toca la, e minúscula.",
+      "file": "assets/audio/prompts/letter.meet.e.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.e.lower",
+      "index": 0,
+      "text": "Repasa la, e minúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.e.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.e.upper",
+      "index": 0,
+      "text": "Repasa la, e mayúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.e.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.find.e",
+      "index": 0,
+      "text": "Revienta las burbujas que tienen la, e.",
+      "file": "assets/audio/prompts/letter.find.e.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.i",
+      "index": 0,
+      "text": "Esta es la, i. ¡La, i de iglú! ¡Tócala!",
+      "file": "assets/audio/prompts/letter.meet.i.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.i.upper",
+      "index": 0,
+      "text": "Toca la, i mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.i.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.i.lower",
+      "index": 0,
+      "text": "Toca la, i minúscula.",
+      "file": "assets/audio/prompts/letter.meet.i.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.i.lower",
+      "index": 0,
+      "text": "Repasa la, i minúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.i.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.i.upper",
+      "index": 0,
+      "text": "Repasa la, i mayúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.i.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.find.i",
+      "index": 0,
+      "text": "Revienta las burbujas que tienen la, i.",
+      "file": "assets/audio/prompts/letter.find.i.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.o",
+      "index": 0,
+      "text": "Esta es la, o. ¡La, o de oso! ¡Tócala!",
+      "file": "assets/audio/prompts/letter.meet.o.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.o.upper",
+      "index": 0,
+      "text": "Toca la, o mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.o.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.o.lower",
+      "index": 0,
+      "text": "Toca la, o minúscula.",
+      "file": "assets/audio/prompts/letter.meet.o.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.o.lower",
+      "index": 0,
+      "text": "Repasa la, o minúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.o.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.o.upper",
+      "index": 0,
+      "text": "Repasa la, o mayúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.o.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.find.o",
+      "index": 0,
+      "text": "Revienta las burbujas que tienen la, o.",
+      "file": "assets/audio/prompts/letter.find.o.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.u",
+      "index": 0,
+      "text": "Esta es la, u. ¡La, u de uva! ¡Tócala!",
+      "file": "assets/audio/prompts/letter.meet.u.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.u.upper",
+      "index": 0,
+      "text": "Toca la, u mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.u.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.u.lower",
+      "index": 0,
+      "text": "Toca la, u minúscula.",
+      "file": "assets/audio/prompts/letter.meet.u.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.u.lower",
+      "index": 0,
+      "text": "Repasa la, u minúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.u.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.u.upper",
+      "index": 0,
+      "text": "Repasa la, u mayúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.u.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.find.u",
+      "index": 0,
+      "text": "Revienta las burbujas que tienen la, u.",
+      "file": "assets/audio/prompts/letter.find.u.0.m4a"
+    },
+    {
       "promptId": "syllables.starts_with.a",
       "index": 0,
-      "text": "¿Qué dibujo empieza con... a?",
+      "text": "¿Qué dibujo empieza con, a?",
       "file": "assets/audio/prompts/syllables.starts_with.a.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.e",
       "index": 0,
-      "text": "¿Qué dibujo empieza con... e?",
+      "text": "¿Qué dibujo empieza con, e?",
       "file": "assets/audio/prompts/syllables.starts_with.e.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.i",
       "index": 0,
-      "text": "¿Qué dibujo empieza con... i?",
+      "text": "¿Qué dibujo empieza con, i?",
       "file": "assets/audio/prompts/syllables.starts_with.i.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.o",
       "index": 0,
-      "text": "¿Qué dibujo empieza con... o?",
+      "text": "¿Qué dibujo empieza con, o?",
       "file": "assets/audio/prompts/syllables.starts_with.o.0.m4a"
     },
     {
       "promptId": "syllables.starts_with.u",
       "index": 0,
-      "text": "¿Qué dibujo empieza con... u?",
+      "text": "¿Qué dibujo empieza con, u?",
       "file": "assets/audio/prompts/syllables.starts_with.u.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.m",
+      "index": 0,
+      "text": "Esta es la, eme. ¡La, eme de mesa! ¡Tócala!",
+      "file": "assets/audio/prompts/letter.meet.m.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.m.upper",
+      "index": 0,
+      "text": "Toca la, eme mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.m.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.m.lower",
+      "index": 0,
+      "text": "Toca la, eme minúscula.",
+      "file": "assets/audio/prompts/letter.meet.m.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.m.lower",
+      "index": 0,
+      "text": "Repasa la, eme minúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.m.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.m.upper",
+      "index": 0,
+      "text": "Repasa la, eme mayúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.m.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.find.m",
+      "index": 0,
+      "text": "Revienta las burbujas que tienen la, eme.",
+      "file": "assets/audio/prompts/letter.find.m.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.p",
+      "index": 0,
+      "text": "Esta es la, pe. ¡La, pe de pelota! ¡Tócala!",
+      "file": "assets/audio/prompts/letter.meet.p.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.p.upper",
+      "index": 0,
+      "text": "Toca la, pe mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.p.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.p.lower",
+      "index": 0,
+      "text": "Toca la, pe minúscula.",
+      "file": "assets/audio/prompts/letter.meet.p.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.p.lower",
+      "index": 0,
+      "text": "Repasa la, pe minúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.p.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.p.upper",
+      "index": 0,
+      "text": "Repasa la, pe mayúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.p.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.find.p",
+      "index": 0,
+      "text": "Revienta las burbujas que tienen la, pe.",
+      "file": "assets/audio/prompts/letter.find.p.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.l",
+      "index": 0,
+      "text": "Esta es la, ele. ¡La, ele de luna! ¡Tócala!",
+      "file": "assets/audio/prompts/letter.meet.l.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.l.upper",
+      "index": 0,
+      "text": "Toca la, ele mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.l.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.l.lower",
+      "index": 0,
+      "text": "Toca la, ele minúscula.",
+      "file": "assets/audio/prompts/letter.meet.l.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.l.lower",
+      "index": 0,
+      "text": "Repasa la, ele minúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.l.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.l.upper",
+      "index": 0,
+      "text": "Repasa la, ele mayúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.l.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.find.l",
+      "index": 0,
+      "text": "Revienta las burbujas que tienen la, ele.",
+      "file": "assets/audio/prompts/letter.find.l.0.m4a"
     },
     {
       "promptId": "vowel.a",
@@ -558,7 +669,7 @@
       "index": 0,
       "text": "ojo",
       "file": "assets/audio/words/ojo.m4a",
-      "spokenAs": "Ojo."
+      "spokenAs": "¡Ojo!"
     },
     {
       "promptId": "word.oso",
@@ -594,6 +705,13 @@
       "text": "árbol",
       "file": "assets/audio/words/arbol.m4a",
       "spokenAs": "Árbol."
+    },
+    {
+      "promptId": "word.luna",
+      "index": 0,
+      "text": "luna",
+      "file": "assets/audio/words/luna.m4a",
+      "spokenAs": "Luna."
     }
   ]
 }
