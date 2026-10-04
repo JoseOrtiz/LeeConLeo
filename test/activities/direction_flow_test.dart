@@ -110,6 +110,21 @@ void main() {
         await tester.pumpAndSettle(const Duration(seconds: 5));
       });
 
+      if (activityId == ActivityIds.leftRight) {
+        testWidgets('Leo waits above the arrows, which sit side by side', (tester) async {
+          await pumpActivity(tester);
+          await tester.tap(find.byKey(const ValueKey('start')));
+          await tester.pumpAndSettle();
+
+          final leo = tester.getRect(find.byKey(const ValueKey('leo-front')));
+          final left = tester.getRect(find.byKey(const ValueKey('choice-left')));
+          final right = tester.getRect(find.byKey(const ValueKey('choice-right')));
+          expect(leo.bottom, lessThanOrEqualTo(left.top));
+          expect(left.top, right.top);
+          expect(left.right, lessThanOrEqualTo(right.left));
+        });
+      }
+
       testWidgets('the repeat button speaks the current prompt again', (tester) async {
         await pumpActivity(tester);
         await tester.tap(find.byKey(const ValueKey('start')));

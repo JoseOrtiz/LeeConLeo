@@ -11,6 +11,7 @@ import '../../core/content/models/content_bundle.dart';
 import '../../core/content/models/path_stage.dart';
 import '../../core/logging/logging_providers.dart';
 import '../../core/progress/progress_providers.dart';
+import '../../app/widgets/loading_view.dart';
 import '../../app/widgets/scene_band.dart';
 import '../../utils/hex_color.dart';
 import '../activity_providers.dart';
@@ -143,7 +144,7 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
   Widget _buildBody() {
     if (_isUnavailable) return RewardView(onDone: _goHome);
     final session = _session;
-    if (session == null) return const Center(child: CircularProgressIndicator());
+    if (session == null) return const LoadingView();
 
     return Column(
       children: [
