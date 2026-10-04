@@ -194,7 +194,7 @@ void main() {
 
       expect(find.byKey(const ValueKey('reward')), findsOneWidget);
       expect(log.events.every((event) => event.isCorrect), isTrue);
-      expect(completedSteps(tester), contains('a'));
+      expect(completedSteps(tester), isNot(contains('a')));
     });
 
     testWidgets('popping another letter asks to try again and then shows a hint', (tester) async {

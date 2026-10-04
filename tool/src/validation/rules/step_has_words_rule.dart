@@ -13,7 +13,7 @@ class StepHasWordsRule implements ValidationRule {
     for (final step in bundle.steps) {
       final sound = step.sound;
       if (sound == null) continue;
-      final matches = bundle.words.where((word) => word.firstSound == sound).length;
+      final matches = bundle.words.where((word) => word.startsWithSound(sound)).length;
       final distractors = bundle.words.length - matches;
       if (matches == 0) {
         yield ValidationIssue.warning('step "${step.id}": no word starts with the sound "$sound"');

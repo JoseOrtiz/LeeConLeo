@@ -1,4 +1,4 @@
-- asset: Leo's voice (assets/audio/prompts/, assets/audio/sounds/, tool/voice/leo_reference.wav)
+- asset: Leo's voice (assets/audio/prompts/, assets/audio/sounds/, assets/audio/words/, tool/voice/leo_reference.wav)
   source: Generated for this project with VoxCPM2 (openbmb/VoxCPM2) using tool/voice/leo_voice.ipynb
   author: Lee con Leo contributors
   license: CC BY-SA 4.0

@@ -13,6 +13,7 @@ import '../../tool/src/validation/rules/letter_steps_rule.dart';
 import '../../tool/src/validation/rules/path_images_rule.dart';
 import '../../tool/src/validation/rules/prompt_clips_rule.dart';
 import '../../tool/src/validation/rules/stage_tints_rule.dart';
+import '../../tool/src/validation/rules/starts_with_steps_rule.dart';
 import '../../tool/src/validation/rules/syllables_match_text_rule.dart';
 import '../../tool/src/validation/rules/unique_ids_rule.dart';
 
@@ -182,6 +183,73 @@ void main() {
       expect(
         const LetterStepsRule().check(unknown).single.message,
         contains('not in the word bank'),
+      );
+    });
+  });
+
+  group('starts with steps', () {
+    Word pictured(String text, List<String> sounds, {bool hasAudio = true}) => Word(
+      text: text,
+      syllables: sounds,
+      sounds: sounds,
+      image: 'words/$text.svg',
+      audio: hasAudio ? 'words/$text.m4a' : null,
+    );
+
+    ContentBundle bundle(List<Word> words, {String? sound = 'a', bool hasPrompt = true}) =>
+        ContentBundle(
+          words: words,
+          stages: [
+            PathStage(
+              stage: 2,
+              name: 'vocales',
+              steps: [
+                PathStep(id: 'a', sound: sound, activities: const ['syllables.starts_with']),
+              ],
+            ),
+          ],
+          prompts: PromptLibrary({
+            if (hasPrompt) 'syllables.starts_with.a': ['¿Qué dibujo empieza con... a?'],
+          }),
+        );
+
+    final complete = [
+      pictured('abeja', ['a', 'be', 'ja']),
+      pictured('oso', ['o', 'so']),
+      pictured('uva', ['u', 'ba']),
+      pictured('mesa', ['me', 'sa']),
+    ];
+
+    test('a step with a sound, its phrase and enough pictures passes', () {
+      expect(const StartsWithStepsRule().check(bundle(complete)), isEmpty);
+    });
+
+    test('flags a missing phrase, too few pictures and pictures without audio', () {
+      final issues = const StartsWithStepsRule()
+          .check(
+            bundle([
+              pictured('abeja', ['a', 'be', 'ja']),
+              pictured('oso', ['o', 'so'], hasAudio: false),
+            ], hasPrompt: false),
+          )
+          .map((issue) => issue.message)
+          .toList();
+
+      expect(issues, [
+        contains('"oso": a word with a picture needs audio'),
+        contains('missing prompt "syllables.starts_with.a"'),
+        contains('fewer than 3 pictures'),
+      ]);
+    });
+
+    test('flags a step without a sound or without a matching picture', () {
+      expect(
+        const StartsWithStepsRule().check(bundle(complete, sound: null)).single.message,
+        contains('needs a sound'),
+      );
+      expect(
+        const StartsWithStepsRule().check(bundle(complete.skip(1).toList())).single.message,
+        contains('no word with a picture starts with "a"'),
       );
     });
   });

@@ -148,14 +148,17 @@ to record.
   young children. AAC rather than Ogg/Opus, because iPhones and iPads can't play Ogg.
 - **Where clips live:** `assets/audio/prompts/<prompt id>.<variant>.m4a` (for example
   `feedback.correct.2.m4a`, the third phrase of `feedback.correct`), found by the build tool, and
-  `assets/audio/sounds/<vowel|syllable>.<sound>.m4a` for the letter activities.
+  `assets/audio/sounds/<vowel|syllable>.<sound>.m4a` for the letter activities. A word's recording is
+  its `audio` path in `words.yaml` (for example `words/abeja.m4a`), and every word with a picture needs
+  one, because games say the name of the picture the child taps.
 - Check each TTS voice's license individually before using its output.
 - `tool/voice/leo_voice.ipynb` (Google Colab, GPU) designs Leo's voice with VoxCPM2
   (Apache-2.0 code and weights) and generates every prompt, vowel and syllable in
   that voice, with a `manifest.json` recording the engine, seed and settings.
   `tool/voice/leo_reference.wav` is the clip every phrase copies, so new phrases keep Leo's voice.
 - A pull request that adds or changes a phrase also adds its clips. Run the notebook with
-  `content/prompts.yaml` from that branch (the notebook asks you to upload it), so the clips match it.
+  `content/prompts.yaml` and `content/words.yaml` from that branch (the notebook asks you to upload both),
+  so the clips match it.
 
 ## Fonts
 

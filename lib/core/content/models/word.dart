@@ -31,6 +31,8 @@ class Word {
 
   String get lastSound => sounds.last;
 
+  bool startsWithSound(String sound) => sounds.isNotEmpty && sounds.first.startsWith(sound);
+
   Map<String, dynamic> toJson() => {
     'text': text,
     'syllables': syllables,

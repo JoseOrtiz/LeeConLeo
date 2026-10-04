@@ -29,6 +29,7 @@ flutter:
   assets:
     - assets/audio/prompts/
     - assets/audio/sounds/
+    - assets/audio/words/
     - assets/content/bundle.json
     - assets/images/leo/
     - assets/images/scenes/

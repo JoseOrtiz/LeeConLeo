@@ -81,10 +81,11 @@ class ActivitySession extends ChangeNotifier implements ItemController {
     _record(value);
     if (value == currentItem.target) {
       _phase = SessionPhase.celebrating;
-      _say(ActivityPromptIds.correct);
+      _sayAfterAnswer(value, [ActivityPromptIds.correct]);
     } else {
       _mistakes++;
-      _sayThenRepeatPrompt(isHintActive ? ActivityPromptIds.hint : ActivityPromptIds.retry);
+      final feedback = isHintActive ? ActivityPromptIds.hint : ActivityPromptIds.retry;
+      _sayAfterAnswer(value, [feedback, currentItem.promptId]);
     }
     notifyListeners();
   }
@@ -135,8 +136,9 @@ class ActivitySession extends ChangeNotifier implements ItemController {
 
   void _say(String promptId) => _player.say(Utterance([_line(promptId)]));
 
-  void _sayThenRepeatPrompt(String feedbackId) =>
-      _player.say(Utterance([_line(feedbackId), _line(currentItem.promptId)]));
+  void _sayAfterAnswer(String answer, List<String> promptIds) => _player.say(
+    Utterance([?currentItem.optionNames[answer], for (final id in promptIds) _line(id)]),
+  );
 
   SpokenLine _line(String promptId) => _prompts.line(promptId, _random);
 }

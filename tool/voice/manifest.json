@@ -336,6 +336,42 @@
       "file": "assets/audio/prompts/letter.trace.u.upper.0.m4a"
     },
     {
+      "promptId": "syllables.starts_with.intro",
+      "index": 0,
+      "text": "¡Escucha bien! Toca el dibujo que empieza con el sonido que te digo.",
+      "file": "assets/audio/prompts/syllables.starts_with.intro.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.a",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con... a?",
+      "file": "assets/audio/prompts/syllables.starts_with.a.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.e",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con... e?",
+      "file": "assets/audio/prompts/syllables.starts_with.e.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.i",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con... i?",
+      "file": "assets/audio/prompts/syllables.starts_with.i.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.o",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con... o?",
+      "file": "assets/audio/prompts/syllables.starts_with.o.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.u",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con... u?",
+      "file": "assets/audio/prompts/syllables.starts_with.u.0.m4a"
+    },
+    {
       "promptId": "vowel.a",
       "index": 0,
       "text": "a",
@@ -474,6 +510,90 @@
       "text": "lu",
       "file": "assets/audio/sounds/syllable.lu.m4a",
       "spokenAs": "La... Le... Li... Lo... Lu."
+    },
+    {
+      "promptId": "word.abeja",
+      "index": 0,
+      "text": "abeja",
+      "file": "assets/audio/words/abeja.m4a",
+      "spokenAs": "Abeja."
+    },
+    {
+      "promptId": "word.elefante",
+      "index": 0,
+      "text": "elefante",
+      "file": "assets/audio/words/elefante.m4a",
+      "spokenAs": "Elefante."
+    },
+    {
+      "promptId": "word.estrella",
+      "index": 0,
+      "text": "estrella",
+      "file": "assets/audio/words/estrella.m4a",
+      "spokenAs": "Estrella."
+    },
+    {
+      "promptId": "word.iglu",
+      "index": 0,
+      "text": "iglú",
+      "file": "assets/audio/words/iglu.m4a",
+      "spokenAs": "Iglú."
+    },
+    {
+      "promptId": "word.isla",
+      "index": 0,
+      "text": "isla",
+      "file": "assets/audio/words/isla.m4a",
+      "spokenAs": "Isla."
+    },
+    {
+      "promptId": "word.mesa",
+      "index": 0,
+      "text": "mesa",
+      "file": "assets/audio/words/mesa.m4a",
+      "spokenAs": "Mesa."
+    },
+    {
+      "promptId": "word.ojo",
+      "index": 0,
+      "text": "ojo",
+      "file": "assets/audio/words/ojo.m4a",
+      "spokenAs": "Ojo."
+    },
+    {
+      "promptId": "word.oso",
+      "index": 0,
+      "text": "oso",
+      "file": "assets/audio/words/oso.m4a",
+      "spokenAs": "Oso."
+    },
+    {
+      "promptId": "word.pelota",
+      "index": 0,
+      "text": "pelota",
+      "file": "assets/audio/words/pelota.m4a",
+      "spokenAs": "Pelota."
+    },
+    {
+      "promptId": "word.unicornio",
+      "index": 0,
+      "text": "unicornio",
+      "file": "assets/audio/words/unicornio.m4a",
+      "spokenAs": "Unicornio."
+    },
+    {
+      "promptId": "word.uva",
+      "index": 0,
+      "text": "uva",
+      "file": "assets/audio/words/uva.m4a",
+      "spokenAs": "Uva."
+    },
+    {
+      "promptId": "word.arbol",
+      "index": 0,
+      "text": "árbol",
+      "file": "assets/audio/words/arbol.m4a",
+      "spokenAs": "Árbol."
     }
   ]
 }
