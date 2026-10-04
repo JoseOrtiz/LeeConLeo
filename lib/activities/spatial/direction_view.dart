@@ -4,6 +4,7 @@ import '../../app/widgets/leo_avatar.dart';
 import '../common/activity_item.dart';
 import '../common/item_controller.dart';
 import '../common/widgets/choice_button.dart';
+import '../common/widgets/demo_overlay.dart';
 import '../common/widgets/leo_beside.dart';
 import 'direction_activity.dart';
 
@@ -37,7 +38,12 @@ class DirectionView extends StatelessWidget {
         return Stack(
           fit: StackFit.expand,
           children: [
-            _isVertical ? _stackedArrows() : _sideBySideArrows(),
+            DemoOverlay(
+              key: ValueKey('demo-${item.id}'),
+              show: controller.showsDemo,
+              path: [_targetCenter(size)],
+              child: _isVertical ? _stackedArrows() : _sideBySideArrows(),
+            ),
             IgnorePointer(
               child: AnimatedAlign(
                 alignment: controller.isSolved

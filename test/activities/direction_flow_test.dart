@@ -3,7 +3,9 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:lee_con_leo/activities/common/activity_screen.dart';
+import 'package:lee_con_leo/activities/common/widgets/demo_overlay.dart';
 import 'package:lee_con_leo/core/audio/audio_providers.dart';
 import 'package:lee_con_leo/core/content/activity_ids.dart';
 import 'package:lee_con_leo/core/content/content_providers.dart';
@@ -124,6 +126,28 @@ void main() {
           expect(left.right, lessThanOrEqualTo(right.left));
         });
       }
+
+      testWidgets('a hand shows the first move on the right arrow', (tester) async {
+        await pumpActivity(tester);
+        await tester.tap(find.byKey(const ValueKey('start')));
+        await tester.pump();
+        await tester.pump(const Duration(milliseconds: 500));
+
+        final hand = find.byKey(DemoOverlay.handKey);
+        expect(hand, findsOneWidget);
+        final arrow = tester.getRect(
+          find.byKey(ValueKey('choice-${targetOf(player.spoken.last)}')),
+        );
+        final fingertip = tester.getRect(
+          find.descendant(of: hand, matching: find.byType(SvgPicture)),
+        );
+        expect(arrow.contains(fingertip.topCenter + const Offset(0, 8)), isTrue);
+
+        await tester.tap(find.byKey(ValueKey('choice-${targetOf(player.spoken.last)}')));
+        await tester.pump();
+        expect(hand, findsNothing);
+        await tester.pumpAndSettle(const Duration(milliseconds: 20));
+      });
 
       testWidgets('the repeat button speaks the current prompt again', (tester) async {
         await pumpActivity(tester);

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../common/activity_item.dart';
 import '../common/item_controller.dart';
+import '../common/widgets/demo_overlay.dart';
 import '../common/widgets/leo_beside.dart';
 import '../common/widgets/letter_bubble.dart';
 import 'find_activity.dart';
@@ -74,17 +75,27 @@ class _FindViewState extends State<FindView> with SingleTickerProviderStateMixin
           final rows = (options.length / columns).ceil();
           final cell = Size(constraints.maxWidth / columns, constraints.maxHeight / rows);
           final diameter = min(cell.width, cell.height) * 0.8;
-          return Stack(
-            children: [
-              for (var i = 0; i < options.length; i++)
-                Positioned(
-                  left: (i % columns) * cell.width + (cell.width - diameter) / 2,
-                  top: (i ~/ columns) * cell.height + (cell.height - diameter) / 2,
-                  width: diameter,
-                  height: diameter,
-                  child: _bubble(i, diameter),
-                ),
-            ],
+          Offset centerOf(int i) =>
+              Offset((i % columns + 0.5) * cell.width, (i ~/ columns + 0.5) * cell.height);
+          final firstTarget = [
+            for (var i = 0; i < options.length; i++) i,
+          ].firstWhere((i) => _isTarget(i) && !_popped.contains(i), orElse: () => -1);
+          return DemoOverlay(
+            key: ValueKey('demo-${widget.item.id}'),
+            show: widget.controller.showsDemo,
+            path: [if (firstTarget >= 0) centerOf(firstTarget)],
+            child: Stack(
+              children: [
+                for (var i = 0; i < options.length; i++)
+                  Positioned(
+                    left: (i % columns) * cell.width + (cell.width - diameter) / 2,
+                    top: (i ~/ columns) * cell.height + (cell.height - diameter) / 2,
+                    width: diameter,
+                    height: diameter,
+                    child: _bubble(i, diameter),
+                  ),
+              ],
+            ),
           );
         },
       ),

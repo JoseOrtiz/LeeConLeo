@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_riverpod/misc.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lee_con_leo/activities/common/activity_screen.dart';
+import 'package:lee_con_leo/activities/common/widgets/demo_overlay.dart';
 import 'package:lee_con_leo/activities/common/widgets/letter_glyph.dart';
 import 'package:lee_con_leo/activities/letters/find_activity.dart';
 import 'package:lee_con_leo/activities/letters/trace_path.dart';
@@ -132,6 +133,14 @@ void main() {
       expect(find.byKey(const ValueKey('reward')), findsOneWidget);
       expect(log.events.map((event) => event.target), ['a', 'A']);
       expect(completedSteps(tester), isNot(contains('a')));
+    });
+
+    testWidgets('a hand traces the first stroke until the child starts', (tester) async {
+      await play(tester, ActivityIds.trace);
+      expect(find.byKey(DemoOverlay.handKey), findsOneWidget);
+
+      await trace(tester, testLetter.lower, strokes: 1);
+      expect(find.byKey(DemoOverlay.handKey), findsNothing);
     });
 
     testWidgets('a letter is not done until every stroke is traced', (tester) async {

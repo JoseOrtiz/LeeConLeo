@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../../core/content/models/letter_shape.dart';
 import '../common/item_controller.dart';
 import '../common/widgets/choice_button.dart';
+import '../common/widgets/demo_overlay.dart';
 import '../common/widgets/leo_beside.dart';
 import '../common/widgets/letter_glyph.dart';
 import 'meet_activity.dart';
@@ -22,21 +23,36 @@ class MeetView extends StatelessWidget {
     return LeoBeside(
       controller: controller,
       child: LayoutBuilder(
-        builder: (context, constraints) => Flex(
-          direction: constraints.maxWidth > constraints.maxHeight ? Axis.horizontal : Axis.vertical,
-          children: [
-            for (final option in item.options) Expanded(child: _card(option)),
-            if (image != null)
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(24),
-                  child: SvgPicture.asset('assets/images/$image'),
+        builder: (context, constraints) => DemoOverlay(
+          key: ValueKey('demo-${item.id}'),
+          show: controller.showsDemo,
+          path: [_targetCenter(constraints.biggest)],
+          child: Flex(
+            direction: _isWide(constraints.biggest) ? Axis.horizontal : Axis.vertical,
+            children: [
+              for (final option in item.options) Expanded(child: _card(option)),
+              if (image != null)
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(24),
+                    child: SvgPicture.asset('assets/images/$image'),
+                  ),
                 ),
-              ),
-          ],
+            ],
+          ),
         ),
       ),
     );
+  }
+
+  bool _isWide(Size size) => size.width > size.height;
+
+  Offset _targetCenter(Size size) {
+    final slots = item.options.length + (item.image == null ? 0 : 1);
+    final along = (item.options.indexOf(item.target) + 0.5) / slots;
+    return _isWide(size)
+        ? Offset(size.width * along, size.height / 2)
+        : Offset(size.width / 2, size.height * along);
   }
 
   Widget _card(String option) => ChoiceButton(
