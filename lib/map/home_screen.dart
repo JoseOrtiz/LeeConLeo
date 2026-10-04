@@ -17,6 +17,7 @@ import '../core/content/models/content_bundle.dart';
 import '../core/content/models/path_step.dart';
 import '../core/progress/progress_providers.dart';
 import 'greeting.dart';
+import 'label_slot.dart';
 import 'leo_position.dart';
 import 'path_layout.dart';
 import 'route_painter.dart';
@@ -51,6 +52,8 @@ class PathMap extends ConsumerStatefulWidget {
   static const maxWidth = 560.0;
   static const introPrompt = 'home.intro';
   static const lockedPrompt = 'home.locked';
+  static const labelMargin = 16.0;
+  static const labelHeight = 44.0;
 
   final ContentBundle bundle;
 
@@ -137,6 +140,10 @@ class _PathMapState extends ConsumerState<PathMap> {
           stages: widget.bundle.stages,
           minHeight: constraints.maxHeight,
         );
+        final inset = (width - layout.width) / 2;
+        final road = RoutePainter.through([
+          for (final step in widget.bundle.steps) layout.stepCenters[step.id]! + Offset(inset, 0),
+        ]);
         return SingleChildScrollView(
           reverse: true,
           child: SizedBox(
@@ -152,11 +159,7 @@ class _PathMapState extends ConsumerState<PathMap> {
                     height: layout.stageBands[index].height + SceneBand.seamOverlap,
                     child: _scene(stage.scene),
                   ),
-                  Positioned(
-                    left: 16,
-                    top: layout.stageBands[index].top + 16,
-                    child: _StageLabel(name: stage.name),
-                  ),
+                  _label(stage.name, layout.stageBands[index].top, road, width),
                 ],
                 Positioned(
                   left: (width - layout.width) / 2,
@@ -207,6 +210,27 @@ class _PathMapState extends ConsumerState<PathMap> {
       ),
   ];
 
+  Widget _label(String name, double bandTop, Path road, double width) {
+    final top = bandTop + PathMap.labelMargin;
+    final slot = labelSlot(
+      road: road,
+      roadHalfWidth: RoutePainter.halfWidth,
+      top: top,
+      bottom: top + PathMap.labelHeight,
+      width: width,
+      margin: PathMap.labelMargin,
+    );
+    return Positioned(
+      left: slot.isLeft ? PathMap.labelMargin : null,
+      right: slot.isLeft ? null : PathMap.labelMargin,
+      top: top,
+      child: ConstrainedBox(
+        constraints: BoxConstraints(maxWidth: slot.maxWidth),
+        child: _StageLabel(key: ValueKey('stage-label-$name'), name: name),
+      ),
+    );
+  }
+
   Widget _pulseIfNext(StepStatus status, Widget stone) =>
       status == StepStatus.next ? Pulse(child: stone) : stone;
 
@@ -216,7 +240,7 @@ class _PathMapState extends ConsumerState<PathMap> {
 }
 
 class _StageLabel extends StatelessWidget {
-  const _StageLabel({required this.name});
+  const _StageLabel({super.key, required this.name});
 
   final String name;
 
