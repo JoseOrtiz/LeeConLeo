@@ -10,7 +10,6 @@
 | Navigation | **go_router** | Map → unit → activity, with deep links for testing |
 | Local storage | **drift** (SQLite) | Profiles, progress and the event log. Queryable for the teacher view and CSV export |
 | Audio | **just_audio** (speech), **flame_audio** (effects) | Short clips, low latency, preloading per activity |
-| Fallback voice | **flutter_tts** (device text-to-speech) | Only for words that don't have a recording yet. Not used for isolated letter sounds (see [05](05-content-and-assets.md)) |
 | Localization | Flutter `intl` / ARB | Adult-facing UI only (settings, teacher view). Child-facing prompts are audio |
 
 Package choices get re-checked for maintenance status when the project starts.
@@ -97,7 +96,7 @@ and activity (about 430 files) goes away.
 
 - **Content validation** (`dart run tool/content.dart validate`) fails the build
   when something is missing or wrong:
-  - every word has a picture, audio (or a TTS fallback flag), a syllable split and
+  - every phrase has its recorded clip, and every word has a picture, audio, a syllable split and
     a sound key
   - every asset appears in `CREDITS`
   - no generated round has fewer than 4 valid options

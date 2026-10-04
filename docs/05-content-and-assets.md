@@ -132,7 +132,7 @@ to record.
 | Words, syllables, Leo's phrases | **VoxCPM2 (Apache-2.0 code and weights), pre-generated** into clips | Same audio on every device, with no network needed. Leo is a designed voice, a Chilean seven-year-old explorer, not a cloned person. Chosen over Piper (voices sounded wrong) and over OmniVoice (non-commercial weights) |
 | Isolated syllables ("mu") | Cut from a series said like a teacher ("Ma... Me... Mi... Mo... Mu."), with a short carrier phrase as the fallback | A lone syllable comes out as a quick blip or in another language. Each sound is capitalized, and a vowel alone is written twice ("Ee"), because a single capital is read as an English letter name. Every syllable clip gets reviewed by ear |
 | Isolated letter sounds ("/m/") | **Not used** | TTS can't produce them well. The Silabario teaches through syllables anyway, so letters are introduced by their **name** plus an example syllable and word |
-| Missing clips | Device TTS fallback (`flutter_tts`) | Safety net only: a phrase without a clip is spoken whole by the device, never half clip and half device. Validation counts phrases without a clip and flags clips that match no phrase |
+| Missing clips | **Not allowed** | There is no device voice. Validation fails for a phrase without its clip and for a clip that matches no phrase, so every pull request ships its recordings |
 | Sound effects | CC0 sources (e.g. Kenney, freesound CC0) | |
 
 - Every generated clip gets a checksum in the content bundle. If a volunteer ever

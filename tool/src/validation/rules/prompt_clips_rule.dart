@@ -19,9 +19,8 @@ class PromptClipsRule implements ValidationRule {
         yield ValidationIssue.error('clip "$file" matches no prompt variant "$key"');
       }
     }
-    final missing = keys.where((key) => !prompts.clips.containsKey(key)).length;
-    if (missing > 0) {
-      yield ValidationIssue.warning('$missing of ${keys.length} phrases have no recorded clip yet');
+    for (final key in keys.where((key) => !prompts.clips.containsKey(key))) {
+      yield ValidationIssue.error('phrase "$key" has no recorded clip');
     }
   }
 }

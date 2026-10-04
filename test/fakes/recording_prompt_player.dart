@@ -9,9 +9,6 @@ class RecordingPromptPlayer implements PromptPlayer {
   final List<String> calls = [];
 
   @override
-  Future<void> prepare() async {}
-
-  @override
   Future<void> say(Utterance utterance) async {
     spoken.add(utterance.text);
     utterances.add(utterance);

@@ -1,30 +1,25 @@
+import 'package:flutter/foundation.dart';
+
 import 'clip_speaker.dart';
 import 'prompt_player.dart';
 import 'utterance.dart';
 
 class ClipPromptPlayer implements PromptPlayer {
-  ClipPromptPlayer({required ClipSpeaker speaker, required PromptPlayer fallback})
-    : _speaker = speaker,
-      _fallback = fallback;
+  ClipPromptPlayer({required ClipSpeaker speaker}) : _speaker = speaker;
 
   final ClipSpeaker _speaker;
-  final PromptPlayer _fallback;
   Utterance? _pending;
   Utterance? _blocked;
   bool _isPlaying = false;
   int _stops = 0;
 
   @override
-  Future<void> prepare() => _fallback.prepare();
-
-  @override
   Future<void> say(Utterance utterance) async {
     if (utterance.isEmpty) return;
     _blocked = null;
     if (!utterance.hasAllClips) {
-      _pending = null;
-      await _speaker.stop();
-      return _fallback.say(utterance);
+      debugPrint('No recorded clip for "${utterance.text}"');
+      return;
     }
     _pending = utterance;
     if (_isPlaying) return;
@@ -43,14 +38,12 @@ class ClipPromptPlayer implements PromptPlayer {
     _stops++;
     _blocked = null;
     await _speaker.stop();
-    await _fallback.stop();
   }
 
   @override
   void resumeAfterUserGesture() {
     final blocked = _blocked;
     if (blocked != null) say(blocked);
-    _fallback.resumeAfterUserGesture();
   }
 
   Utterance? _takePending() {
@@ -63,13 +56,9 @@ class ClipPromptPlayer implements PromptPlayer {
     final stops = _stops;
     for (final line in utterance.lines) {
       final result = await _speaker.play(line.clip!);
-      if (_stops != stops) return;
+      if (_stops != stops || result == ClipResult.failed) return;
       if (result == ClipResult.blocked) {
         _blocked = utterance;
-        return;
-      }
-      if (result == ClipResult.failed) {
-        await _fallback.say(utterance);
         return;
       }
     }

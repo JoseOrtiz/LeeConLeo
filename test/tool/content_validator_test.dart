@@ -75,7 +75,7 @@ void main() {
     expect(issues.single.message, contains('stage 1'));
   });
 
-  test('flags clips without a prompt and counts phrases without a clip', () {
+  test('flags clips without a prompt and phrases without a clip', () {
     const bundle = ContentBundle(
       words: [],
       stages: [],
@@ -91,8 +91,11 @@ void main() {
     );
     final issues = const PromptClipsRule().check(bundle).toList();
 
-    expect(issues.where((issue) => issue.isError).single.message, contains('feedback.correct.5'));
-    expect(issues.where((issue) => !issue.isError).single.message, contains('1 of 2'));
+    expect(issues.every((issue) => issue.isError), isTrue);
+    expect(issues.map((issue) => issue.message), [
+      contains('feedback.correct.5'),
+      contains('"feedback.correct.1" has no recorded clip'),
+    ]);
   });
 
   test('flags stage tints that are not colors', () {
