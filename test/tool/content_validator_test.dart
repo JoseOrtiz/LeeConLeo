@@ -11,6 +11,7 @@ import 'package:lee_con_leo/core/content/models/word.dart';
 import '../../tool/src/validation/rules/known_activities_rule.dart';
 import '../../tool/src/validation/rules/letter_steps_rule.dart';
 import '../../tool/src/validation/rules/path_images_rule.dart';
+import '../../tool/src/validation/rules/place_size_rule.dart';
 import '../../tool/src/validation/rules/prompt_clips_rule.dart';
 import '../../tool/src/validation/rules/stage_tints_rule.dart';
 import '../../tool/src/validation/rules/starts_with_steps_rule.dart';
@@ -252,5 +253,21 @@ void main() {
         contains('no word with a picture starts with "a"'),
       );
     });
+  });
+
+  test('flags places with no steps or too many to fit one screen', () {
+    PathStage place(String name, int steps) => PathStage(
+      stage: 4,
+      name: name,
+      steps: [for (var i = 0; i < steps; i++) PathStep(id: '$name-$i', activities: const [])],
+    );
+    final bundle = ContentBundle(
+      words: const [],
+      stages: [place('ok', 6), place('empty', 0), place('long', 7)],
+      prompts: const PromptLibrary({}),
+    );
+
+    final issues = const PlaceSizeRule().check(bundle).map((issue) => issue.message).toList();
+    expect(issues, [contains('"empty" has no steps'), contains('"long" has 7 steps')]);
   });
 }

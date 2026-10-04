@@ -67,7 +67,12 @@ class StepButton extends StatelessWidget {
       );
     }
     final grapheme = step.grapheme;
-    if (grapheme != null) return Text(grapheme, style: TextStyle(fontSize: 48, color: textColor));
+    if (grapheme != null) {
+      return Text(
+        grapheme,
+        style: TextStyle(fontFamily: AppTheme.letterFont, fontSize: 44, color: textColor),
+      );
+    }
     return Icon(Icons.explore_rounded, size: 48, color: textColor);
   }
 }

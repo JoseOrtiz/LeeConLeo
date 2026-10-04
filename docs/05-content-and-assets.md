@@ -50,11 +50,20 @@ Run `dart run tool/content.dart build` after editing to regenerate
       activities: [syllables.starts_with, syllables.ends_with, syllables.build_word]
 ```
 
+Each entry is a **place** on the map: one screen with its own scene, name and steps.
+The child swipes between places like pages, and the map opens on the place where Leo
+plays next. A place has at most 6 steps, so it fits a small phone without scrolling;
+validation fails otherwise. `stage` is the learning stage from
+[02](02-learning-path.md), so a long stage is split into several places with the same
+`stage` number (for example the consonants: m, p and l in the forest, d, s and t in
+the next place).
+
 A step without a letter can set `icon` (relative to `assets/images/`, for example
-`steps/up_down.svg`) so it is recognizable on the home screen. A stage can set
-`scene` (for example `scenes/meadow.svg`): the map ground drawn behind its steps,
-seen from above so stages stack into one map. The scene also frames the intro and
-reward screens of the stage's games. `tint` (a `#RRGGBB` color) is the calm
+`steps/up_down.svg`) so it is recognizable on the home screen. A place can set
+`scene` (for example `scenes/meadow.svg`): the ground seen from above, drawn behind
+its steps. It is tiled sideways, so nothing should cross its left or right edge, and
+the road continues off its top and bottom edges to the next and previous places. The
+scene also frames the intro and reward screens of the place's games. `tint` (a `#RRGGBB` color) is the calm
 background behind the games themselves, so nothing distracts from what the child
 has to find.
 
