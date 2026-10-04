@@ -17,9 +17,6 @@ class PausablePromptPlayer implements PromptPlayer {
   void resume() => _isPaused = false;
 
   @override
-  Future<void> prepare() => _player.prepare();
-
-  @override
   Future<void> say(Utterance utterance) async {
     if (!_isPaused) await _player.say(utterance);
   }

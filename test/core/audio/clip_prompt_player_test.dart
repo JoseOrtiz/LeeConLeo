@@ -6,8 +6,6 @@ import 'package:lee_con_leo/core/audio/clip_speaker.dart';
 import 'package:lee_con_leo/core/audio/utterance.dart';
 import 'package:lee_con_leo/core/content/models/spoken_line.dart';
 
-import '../../fakes/recording_prompt_player.dart';
-
 class FakeClipSpeaker implements ClipSpeaker {
   final List<String> played = [];
   final Map<String, ClipResult> results = {};
@@ -39,39 +37,35 @@ Utterance clips(List<String> names) =>
 
 void main() {
   late FakeClipSpeaker speaker;
-  late RecordingPromptPlayer fallback;
   late ClipPromptPlayer player;
 
   Future<void> settle() => Future<void>.delayed(Duration.zero);
 
   setUp(() {
     speaker = FakeClipSpeaker();
-    fallback = RecordingPromptPlayer();
-    player = ClipPromptPlayer(speaker: speaker, fallback: fallback);
+    player = ClipPromptPlayer(speaker: speaker);
   });
 
   test('plays every clip of an utterance in order', () async {
     await player.say(clips(['retry', 'say up']));
 
     expect(speaker.played, ['retry.m4a', 'say up.m4a']);
-    expect(fallback.spoken, isEmpty);
   });
 
-  test('an utterance with a part that has no clip is spoken by the fallback', () async {
+  test('an utterance with a part that has no clip is not played by halves', () async {
     await player.say(
       Utterance([const SpokenLine('retry', clip: 'retry.m4a'), const SpokenLine('new phrase')]),
     );
 
     expect(speaker.played, isEmpty);
-    expect(fallback.spoken, ['retry new phrase']);
   });
 
-  test('a clip that fails hands the whole utterance to the fallback', () async {
+  test('a clip that fails ends its utterance', () async {
     speaker.results['broken.m4a'] = ClipResult.failed;
 
-    await player.say(clips(['broken']));
+    await player.say(clips(['broken', 'after']));
 
-    expect(fallback.spoken, ['broken']);
+    expect(speaker.played, ['broken.m4a']);
   });
 
   test('a clip the browser blocks plays after the first tap', () async {
@@ -111,6 +105,6 @@ void main() {
     await settle();
 
     expect(speaker.played, ['reward.m4a', 'home intro.m4a']);
-    expect(fallback.calls, contains(RecordingPromptPlayer.stopCall));
+    expect(speaker.stops, 1);
   });
 }
