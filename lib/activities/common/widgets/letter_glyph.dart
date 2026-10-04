@@ -13,6 +13,6 @@ class LetterGlyph extends StatelessWidget {
   Widget build(BuildContext context) => Text(
     text,
     textScaler: TextScaler.noScaling,
-    style: TextStyle(fontFamily: AppTheme.letterFont, fontSize: size, height: 1.1, color: color),
+    style: TextStyle(fontFamily: AppTheme.letterFont, fontSize: size, color: color),
   );
 }

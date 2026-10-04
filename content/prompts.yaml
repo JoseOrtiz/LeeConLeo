@@ -60,109 +60,163 @@ letter.find.intro:
   - ¡Mira cuántas burbujas! Revienta las que tienen la letra que te digo.
 
 letter.meet.a:
-  - Esta es la... a. ¡La... a de abeja! ¡Tócala!
+  - Esta es la, a. ¡La, a de abeja! ¡Tócala!
 
 letter.meet.a.upper:
-  - Toca la... a mayúscula.
+  - Toca la, a mayúscula.
 
 letter.meet.a.lower:
-  - Toca la... a minúscula.
+  - Toca la, a minúscula.
 
 letter.trace.a.lower:
-  - Repasa la... a minúscula con tu dedo.
+  - Repasa la, a minúscula con tu dedo.
 
 letter.trace.a.upper:
-  - Repasa la... a mayúscula con tu dedo.
+  - Repasa la, a mayúscula con tu dedo.
 
 letter.find.a:
-  - Revienta las burbujas que tienen la... a.
+  - Revienta las burbujas que tienen la, a.
 
 letter.meet.e:
-  - Esta es la... e. ¡La... e de elefante! ¡Tócala!
+  - Esta es la, e. ¡La, e de elefante! ¡Tócala!
 
 letter.meet.e.upper:
-  - Toca la... e mayúscula.
+  - Toca la, e mayúscula.
 
 letter.meet.e.lower:
-  - Toca la... e minúscula.
+  - Toca la, e minúscula.
 
 letter.trace.e.lower:
-  - Repasa la... e minúscula con tu dedo.
+  - Repasa la, e minúscula con tu dedo.
 
 letter.trace.e.upper:
-  - Repasa la... e mayúscula con tu dedo.
+  - Repasa la, e mayúscula con tu dedo.
 
 letter.find.e:
-  - Revienta las burbujas que tienen la... e.
+  - Revienta las burbujas que tienen la, e.
 
 letter.meet.i:
-  - Esta es la... i. ¡La... i de iglú! ¡Tócala!
+  - Esta es la, i. ¡La, i de iglú! ¡Tócala!
 
 letter.meet.i.upper:
-  - Toca la... i mayúscula.
+  - Toca la, i mayúscula.
 
 letter.meet.i.lower:
-  - Toca la... i minúscula.
+  - Toca la, i minúscula.
 
 letter.trace.i.lower:
-  - Repasa la... i minúscula con tu dedo.
+  - Repasa la, i minúscula con tu dedo.
 
 letter.trace.i.upper:
-  - Repasa la... i mayúscula con tu dedo.
+  - Repasa la, i mayúscula con tu dedo.
 
 letter.find.i:
-  - Revienta las burbujas que tienen la... i.
+  - Revienta las burbujas que tienen la, i.
 
 letter.meet.o:
-  - Esta es la... o. ¡La... o de oso! ¡Tócala!
+  - Esta es la, o. ¡La, o de oso! ¡Tócala!
 
 letter.meet.o.upper:
-  - Toca la... o mayúscula.
+  - Toca la, o mayúscula.
 
 letter.meet.o.lower:
-  - Toca la... o minúscula.
+  - Toca la, o minúscula.
 
 letter.trace.o.lower:
-  - Repasa la... o minúscula con tu dedo.
+  - Repasa la, o minúscula con tu dedo.
 
 letter.trace.o.upper:
-  - Repasa la... o mayúscula con tu dedo.
+  - Repasa la, o mayúscula con tu dedo.
 
 letter.find.o:
-  - Revienta las burbujas que tienen la... o.
+  - Revienta las burbujas que tienen la, o.
 
 letter.meet.u:
-  - Esta es la... u. ¡La... u de uva! ¡Tócala!
+  - Esta es la, u. ¡La, u de uva! ¡Tócala!
 
 letter.meet.u.upper:
-  - Toca la... u mayúscula.
+  - Toca la, u mayúscula.
 
 letter.meet.u.lower:
-  - Toca la... u minúscula.
+  - Toca la, u minúscula.
 
 letter.trace.u.lower:
-  - Repasa la... u minúscula con tu dedo.
+  - Repasa la, u minúscula con tu dedo.
 
 letter.trace.u.upper:
-  - Repasa la... u mayúscula con tu dedo.
+  - Repasa la, u mayúscula con tu dedo.
 
 letter.find.u:
-  - Revienta las burbujas que tienen la... u.
+  - Revienta las burbujas que tienen la, u.
 
 syllables.starts_with.intro:
   - ¡Escucha bien! Toca el dibujo que empieza con el sonido que te digo.
 
 syllables.starts_with.a:
-  - ¿Qué dibujo empieza con... a?
+  - ¿Qué dibujo empieza con, a?
 
 syllables.starts_with.e:
-  - ¿Qué dibujo empieza con... e?
+  - ¿Qué dibujo empieza con, e?
 
 syllables.starts_with.i:
-  - ¿Qué dibujo empieza con... i?
+  - ¿Qué dibujo empieza con, i?
 
 syllables.starts_with.o:
-  - ¿Qué dibujo empieza con... o?
+  - ¿Qué dibujo empieza con, o?
 
 syllables.starts_with.u:
-  - ¿Qué dibujo empieza con... u?
+  - ¿Qué dibujo empieza con, u?
+
+letter.meet.m:
+  - Esta es la, eme. ¡La, eme de mesa! ¡Tócala!
+
+letter.meet.m.upper:
+  - Toca la, eme mayúscula.
+
+letter.meet.m.lower:
+  - Toca la, eme minúscula.
+
+letter.trace.m.lower:
+  - Repasa la, eme minúscula con tu dedo.
+
+letter.trace.m.upper:
+  - Repasa la, eme mayúscula con tu dedo.
+
+letter.find.m:
+  - Revienta las burbujas que tienen la, eme.
+
+letter.meet.p:
+  - Esta es la, pe. ¡La, pe de pelota! ¡Tócala!
+
+letter.meet.p.upper:
+  - Toca la, pe mayúscula.
+
+letter.meet.p.lower:
+  - Toca la, pe minúscula.
+
+letter.trace.p.lower:
+  - Repasa la, pe minúscula con tu dedo.
+
+letter.trace.p.upper:
+  - Repasa la, pe mayúscula con tu dedo.
+
+letter.find.p:
+  - Revienta las burbujas que tienen la, pe.
+
+letter.meet.l:
+  - Esta es la, ele. ¡La, ele de luna! ¡Tócala!
+
+letter.meet.l.upper:
+  - Toca la, ele mayúscula.
+
+letter.meet.l.lower:
+  - Toca la, ele minúscula.
+
+letter.trace.l.lower:
+  - Repasa la, ele minúscula con tu dedo.
+
+letter.trace.l.upper:
+  - Repasa la, ele mayúscula con tu dedo.
+
+letter.find.l:
+  - Revienta las burbujas que tienen la, ele.
