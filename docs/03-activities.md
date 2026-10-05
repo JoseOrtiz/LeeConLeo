@@ -85,8 +85,8 @@ child reads while playing. It unlocks as a reward after each consonant group.
 
 ## Motivation layer
 
-- **Map:** Leo travels through places (forest, beach, city, mountains), one area
-  per stage.
+- **Map:** Leo travels through places (meadow, beach, forest, mountains…), one
+  screen each with a few steps. The child swipes between places like pages.
 - **Stickers:** a collectible album, one sticker per mastered step.
 - **No punishment:** no lives lost, no timers in learning activities (the runner
   is the only timed game, and it's optional).

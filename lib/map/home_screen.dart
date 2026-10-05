@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -7,22 +6,17 @@ import 'package:go_router/go_router.dart';
 
 import '../activities/activity_providers.dart';
 import '../app/app_theme.dart';
-import '../app/widgets/leo_avatar.dart';
 import '../app/startup_providers.dart';
 import '../app/widgets/loading_view.dart';
-import '../app/widgets/pulse.dart';
 import '../core/audio/audio_providers.dart';
 import '../core/audio/utterance.dart';
 import '../core/content/models/content_bundle.dart';
+import '../core/content/models/path_stage.dart';
 import '../core/content/models/path_step.dart';
 import '../core/progress/progress_providers.dart';
 import 'greeting.dart';
-import 'label_slot.dart';
 import 'leo_position.dart';
-import 'path_layout.dart';
-import 'route_painter.dart';
-import '../app/widgets/scene_band.dart';
-import 'step_button.dart';
+import 'place_view.dart';
 import 'step_status.dart';
 
 class HomeScreen extends ConsumerWidget {
@@ -48,12 +42,9 @@ class HomeScreen extends ConsumerWidget {
 class PathMap extends ConsumerStatefulWidget {
   const PathMap({super.key, required this.bundle});
 
-  static const walkDuration = Duration(milliseconds: 900);
-  static const maxWidth = 560.0;
   static const introPrompt = 'home.intro';
   static const lockedPrompt = 'home.locked';
-  static const labelMargin = 16.0;
-  static const labelHeight = 44.0;
+  static const zigzag = [0.5, 0.74, 0.5, 0.26];
 
   final ContentBundle bundle;
 
@@ -62,14 +53,29 @@ class PathMap extends ConsumerStatefulWidget {
 }
 
 class _PathMapState extends ConsumerState<PathMap> {
-  final _leoKey = GlobalKey();
   final _random = Random();
-  Timer? _showLeoTimer;
+  late final Map<String, int> _placeOfStep = {
+    for (final (index, place) in widget.bundle.stages.indexed)
+      for (final step in place.steps) step.id: index,
+  };
+  late final Map<String, double> _columnOfStep = {
+    for (final (index, step) in widget.bundle.steps.indexed)
+      step.id: PathMap.zigzag[index % PathMap.zigzag.length],
+  };
+  late final PageController _pages = PageController(
+    initialPage: _placeOfStep[_leoTarget(_statuses(ref.read(completedStepsProvider)))] ?? 0,
+  );
 
   @override
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) => _arrive());
+  }
+
+  @override
+  void dispose() {
+    _pages.dispose();
+    super.dispose();
   }
 
   void _arrive() {
@@ -79,19 +85,6 @@ class _PathMapState extends ConsumerState<PathMap> {
     if (target != null && ref.read(leoPositionProvider) != target) {
       ref.read(leoPositionProvider.notifier).moveTo(target);
     }
-    _showLeoTimer = Timer(PathMap.walkDuration, _showLeo);
-  }
-
-  @override
-  void dispose() {
-    _showLeoTimer?.cancel();
-    super.dispose();
-  }
-
-  void _showLeo() {
-    final leo = _leoKey.currentContext;
-    if (!mounted || leo == null) return;
-    Scrollable.ensureVisible(leo, alignment: 0.5, duration: const Duration(milliseconds: 400));
   }
 
   void _say(String promptId) => ref
@@ -127,134 +120,41 @@ class _PathMapState extends ConsumerState<PathMap> {
     context.go('/play/${step.id}/$activityId');
   }
 
+  double _crossing(PathStage below, PathStage above) =>
+      (_columnOfStep[below.steps.last.id]! + _columnOfStep[above.steps.first.id]!) / 2;
+
+  LeoHere _leoHere(int place, String? leoAt) {
+    if (leoAt == null) return LeoHere.none;
+    final leoPlace = _placeOfStep[leoAt];
+    if (leoPlace == place) return LeoHere.standing;
+    final previous = place > 0 ? widget.bundle.stages[place - 1].steps : const <PathStep>[];
+    return previous.isNotEmpty && previous.last.id == leoAt ? LeoHere.entering : LeoHere.none;
+  }
+
   @override
   Widget build(BuildContext context) {
     final statuses = _statuses(ref.watch(completedStepsProvider));
     final leoAt = ref.watch(leoPositionProvider) ?? _leoTarget(statuses);
-
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        final width = constraints.maxWidth;
-        final layout = PathLayout.fit(
-          width: min(width, PathMap.maxWidth),
-          stages: widget.bundle.stages,
-          minHeight: constraints.maxHeight,
-        );
-        final inset = (width - layout.width) / 2;
-        final road = RoutePainter.through([
-          for (final step in widget.bundle.steps) layout.stepCenters[step.id]! + Offset(inset, 0),
-        ]);
-        return SingleChildScrollView(
-          reverse: true,
-          child: SizedBox(
-            width: width,
-            height: layout.height,
-            child: Stack(
-              children: [
-                for (final (index, stage) in widget.bundle.stages.indexed) ...[
-                  Positioned(
-                    left: 0,
-                    right: 0,
-                    top: layout.stageBands[index].top,
-                    height: layout.stageBands[index].height + SceneBand.seamOverlap,
-                    child: _scene(stage.scene),
-                  ),
-                  _label(stage.name, layout.stageBands[index].top, road, width),
-                ],
-                Positioned(
-                  left: (width - layout.width) / 2,
-                  top: 0,
-                  width: layout.width,
-                  height: layout.height,
-                  child: Stack(children: _route(layout, statuses, leoAt)),
-                ),
-              ],
-            ),
-          ),
+    final places = widget.bundle.stages;
+    return PageView.builder(
+      controller: _pages,
+      scrollDirection: Axis.vertical,
+      reverse: true,
+      itemCount: places.length,
+      itemBuilder: (context, index) {
+        final place = places[index];
+        return PlaceView(
+          key: ValueKey('place-$index'),
+          place: place,
+          columns: [for (final step in place.steps) _columnOfStep[step.id]!],
+          enteringColumn: index > 0 ? _crossing(places[index - 1], place) : null,
+          leavingColumn: index < places.length - 1 ? _crossing(place, places[index + 1]) : null,
+          statuses: statuses,
+          onOpen: _open,
+          leoStep: leoAt,
+          leoHere: _leoHere(index, leoAt),
         );
       },
-    );
-  }
-
-  List<Widget> _route(PathLayout layout, Map<String, StepStatus> statuses, String? leoAt) => [
-    Positioned.fill(
-      child: CustomPaint(
-        painter: RoutePainter(
-          points: [for (final step in widget.bundle.steps) layout.stepCenters[step.id]!],
-          edge: AppTheme.outline,
-          road: AppTheme.road,
-        ),
-      ),
-    ),
-    for (final step in widget.bundle.steps)
-      Positioned.fromRect(
-        rect: layout.stoneOf(step.id),
-        child: _pulseIfNext(
-          statuses[step.id]!,
-          StepButton(
-            key: ValueKey('step-${step.id}'),
-            step: step,
-            status: statuses[step.id]!,
-            onPressed: () => _open(step, statuses[step.id]!),
-          ),
-        ),
-      ),
-    if (leoAt != null)
-      AnimatedPositioned.fromRect(
-        rect: layout.leoBeside(leoAt),
-        duration: PathMap.walkDuration,
-        curve: Curves.easeInOut,
-        child: IgnorePointer(
-          child: LeoAvatar(key: _leoKey, size: PathLayout.leoHeight),
-        ),
-      ),
-  ];
-
-  Widget _label(String name, double bandTop, Path road, double width) {
-    final top = bandTop + PathMap.labelMargin;
-    final slot = labelSlot(
-      road: road,
-      roadHalfWidth: RoutePainter.halfWidth,
-      top: top,
-      bottom: top + PathMap.labelHeight,
-      width: width,
-      margin: PathMap.labelMargin,
-    );
-    return Positioned(
-      left: slot.isLeft ? PathMap.labelMargin : null,
-      right: slot.isLeft ? null : PathMap.labelMargin,
-      top: top,
-      child: ConstrainedBox(
-        constraints: BoxConstraints(maxWidth: slot.maxWidth),
-        child: _StageLabel(key: ValueKey('stage-label-$name'), name: name),
-      ),
-    );
-  }
-
-  Widget _pulseIfNext(StepStatus status, Widget stone) =>
-      status == StepStatus.next ? Pulse(child: stone) : stone;
-
-  Widget _scene(String? scene) => scene == null
-      ? ColoredBox(color: Theme.of(context).colorScheme.surfaceContainerLow)
-      : SceneBand(asset: 'assets/images/$scene');
-}
-
-class _StageLabel extends StatelessWidget {
-  const _StageLabel({super.key, required this.name});
-
-  final String name;
-
-  @override
-  Widget build(BuildContext context) {
-    return DecoratedBox(
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.85),
-        borderRadius: BorderRadius.circular(16),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-        child: Text(name, style: Theme.of(context).textTheme.titleMedium),
-      ),
     );
   }
 }
