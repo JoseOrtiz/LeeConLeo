@@ -4,8 +4,14 @@ import 'src/commands/build_command.dart';
 import 'src/commands/content_command.dart';
 import 'src/commands/import_legacy_command.dart';
 import 'src/commands/validate_command.dart';
+import 'src/commands/voice_command.dart';
 
-const _commands = <ContentCommand>[ValidateCommand(), BuildCommand(), ImportLegacyCommand()];
+const _commands = <ContentCommand>[
+  ValidateCommand(),
+  BuildCommand(),
+  VoiceCommand(),
+  ImportLegacyCommand(),
+];
 
 void main(List<String> arguments) {
   final command = _commands

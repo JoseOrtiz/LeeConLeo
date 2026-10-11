@@ -165,9 +165,10 @@ to record.
   (Apache-2.0 code and weights) and generates every prompt, vowel and syllable in
   that voice, with a `manifest.json` recording the engine, seed and settings.
   `tool/voice/leo_reference.wav` is the clip every phrase copies, so new phrases keep Leo's voice.
-- A pull request that adds or changes a phrase also adds its clips. Run the notebook with
-  `content/prompts.yaml` and `content/words.yaml` from that branch (the notebook asks you to upload both),
-  so the clips match it.
+- A pull request that adds or changes a phrase or a word also adds its clips. On that branch, run
+  `dart run tool/content.dart voice`: it writes `tool/voice/to_record.json` with every phrase and word that
+  has no recording yet, and the notebook records exactly that list. `--redo=word.ojo,syllable.pa` adds clips
+  that should be recorded again, including phrases whose text changed (their old clip is still on disk).
 
 ## Fonts
 

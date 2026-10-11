@@ -120,7 +120,9 @@
       "sounds": [
         "a",
         "bion"
-      ]
+      ],
+      "image": "words/avion.svg",
+      "audio": "words/avion.m4a"
     },
     {
       "text": "azul",
@@ -1048,7 +1050,9 @@
         "es",
         "ko",
         "ba"
-      ]
+      ],
+      "image": "words/escoba.svg",
+      "audio": "words/escoba.m4a"
     },
     {
       "text": "escorpión",
@@ -1618,7 +1622,9 @@
       "sounds": [
         "i",
         "man"
-      ]
+      ],
+      "image": "words/iman.svg",
+      "audio": "words/iman.m4a"
     },
     {
       "text": "insectos",
@@ -1834,7 +1840,9 @@
       "sounds": [
         "la",
         "na"
-      ]
+      ],
+      "image": "words/lana.svg",
+      "audio": "words/lana.m4a"
     },
     {
       "text": "leche",
@@ -1845,7 +1853,9 @@
       "sounds": [
         "le",
         "che"
-      ]
+      ],
+      "image": "words/leche.svg",
+      "audio": "words/leche.m4a"
     },
     {
       "text": "lechuga",
@@ -1906,7 +1916,9 @@
       "sounds": [
         "le",
         "on"
-      ]
+      ],
+      "image": "words/leon.svg",
+      "audio": "words/leon.m4a"
     },
     {
       "text": "libro",
@@ -1917,7 +1929,9 @@
       "sounds": [
         "li",
         "bro"
-      ]
+      ],
+      "image": "words/libro.svg",
+      "audio": "words/libro.m4a"
     },
     {
       "text": "limón",
@@ -1928,7 +1942,9 @@
       "sounds": [
         "li",
         "mon"
-      ]
+      ],
+      "image": "words/limon.svg",
+      "audio": "words/limon.m4a"
     },
     {
       "text": "lobo",
@@ -1939,7 +1955,9 @@
       "sounds": [
         "lo",
         "bo"
-      ]
+      ],
+      "image": "words/lobo.svg",
+      "audio": "words/lobo.m4a"
     },
     {
       "text": "locomotora",
@@ -1967,7 +1985,9 @@
       "sounds": [
         "lo",
         "ro"
-      ]
+      ],
+      "image": "words/loro.svg",
+      "audio": "words/loro.m4a"
     },
     {
       "text": "luces",
@@ -2002,7 +2022,9 @@
       "sounds": [
         "lu",
         "pa"
-      ]
+      ],
+      "image": "words/lupa.svg",
+      "audio": "words/lupa.m4a"
     },
     {
       "text": "lámpara",
@@ -2026,7 +2048,9 @@
       "sounds": [
         "la",
         "pis"
-      ]
+      ],
+      "image": "words/lapiz.svg",
+      "audio": "words/lapiz.m4a"
     },
     {
       "text": "mago",
@@ -2048,7 +2072,9 @@
       "sounds": [
         "ma",
         "no"
-      ]
+      ],
+      "image": "words/mano.svg",
+      "audio": "words/mano.m4a"
     },
     {
       "text": "manzana",
@@ -2061,7 +2087,9 @@
         "man",
         "sa",
         "na"
-      ]
+      ],
+      "image": "words/manzana.svg",
+      "audio": "words/manzana.m4a"
     },
     {
       "text": "maní",
@@ -2161,7 +2189,9 @@
       "sounds": [
         "me",
         "lon"
-      ]
+      ],
+      "image": "words/melon.svg",
+      "audio": "words/melon.m4a"
     },
     {
       "text": "mesa",
@@ -2189,7 +2219,9 @@
         "kro",
         "fo",
         "no"
-      ]
+      ],
+      "image": "words/microfono.svg",
+      "audio": "words/microfono.m4a"
     },
     {
       "text": "miel",
@@ -2198,7 +2230,9 @@
       ],
       "sounds": [
         "miel"
-      ]
+      ],
+      "image": "words/miel.svg",
+      "audio": "words/miel.m4a"
     },
     {
       "text": "mimo",
@@ -2222,7 +2256,9 @@
         "mo",
         "chi",
         "la"
-      ]
+      ],
+      "image": "words/mochila.svg",
+      "audio": "words/mochila.m4a"
     },
     {
       "text": "molino",
@@ -2257,7 +2293,9 @@
       "sounds": [
         "mo",
         "no"
-      ]
+      ],
+      "image": "words/mono.svg",
+      "audio": "words/mono.m4a"
     },
     {
       "text": "motocicleta",
@@ -2289,7 +2327,9 @@
         "sie",
         "la",
         "go"
-      ]
+      ],
+      "image": "words/murcielago.svg",
+      "audio": "words/murcielago.m4a"
     },
     {
       "text": "muñeca",
@@ -2302,7 +2342,9 @@
         "mu",
         "ñe",
         "ka"
-      ]
+      ],
+      "image": "words/muneca.svg",
+      "audio": "words/muneca.m4a"
     },
     {
       "text": "naranja",
@@ -2498,7 +2540,9 @@
         "o",
         "be",
         "ja"
-      ]
+      ],
+      "image": "words/oveja.svg",
+      "audio": "words/oveja.m4a"
     },
     {
       "text": "oído",
@@ -2559,7 +2603,9 @@
       "sounds": [
         "pal",
         "ta"
-      ]
+      ],
+      "image": "words/palta.svg",
+      "audio": "words/palta.m4a"
     },
     {
       "text": "pan",
@@ -2638,7 +2684,9 @@
       "sounds": [
         "pa",
         "to"
-      ]
+      ],
+      "image": "words/pato.svg",
+      "audio": "words/pato.m4a"
     },
     {
       "text": "patín",
@@ -2721,7 +2769,9 @@
       "sounds": [
         "pe",
         "ra"
-      ]
+      ],
+      "image": "words/pera.svg",
+      "audio": "words/pera.m4a"
     },
     {
       "text": "perfume",
@@ -2745,7 +2795,9 @@
       "sounds": [
         "pe",
         "rro"
-      ]
+      ],
+      "image": "words/perro.svg",
+      "audio": "words/perro.m4a"
     },
     {
       "text": "pez",
@@ -2831,7 +2883,9 @@
       "sounds": [
         "pi",
         "no"
-      ]
+      ],
+      "image": "words/pino.svg",
+      "audio": "words/pino.m4a"
     },
     {
       "text": "pipa",
@@ -2903,7 +2957,9 @@
       "sounds": [
         "pi",
         "ña"
-      ]
+      ],
+      "image": "words/pina.svg",
+      "audio": "words/pina.m4a"
     },
     {
       "text": "plancha",
@@ -2960,7 +3016,24 @@
       "sounds": [
         "po",
         "yo"
-      ]
+      ],
+      "image": "words/pollo.svg",
+      "audio": "words/pollo.m4a"
+    },
+    {
+      "text": "poroto",
+      "syllables": [
+        "po",
+        "ro",
+        "to"
+      ],
+      "sounds": [
+        "po",
+        "ro",
+        "to"
+      ],
+      "image": "words/poroto.svg",
+      "audio": "words/poroto.m4a"
     },
     {
       "text": "puente",
@@ -3008,7 +3081,9 @@
       "sounds": [
         "pul",
         "po"
-      ]
+      ],
+      "image": "words/pulpo.svg",
+      "audio": "words/pulpo.m4a"
     },
     {
       "text": "puma",
@@ -3019,7 +3094,9 @@
       "sounds": [
         "pu",
         "ma"
-      ]
+      ],
+      "image": "words/puma.svg",
+      "audio": "words/puma.m4a"
     },
     {
       "text": "pájaro",
@@ -3737,7 +3814,9 @@
       "sounds": [
         "u",
         "ña"
-      ]
+      ],
+      "image": "words/una.svg",
+      "audio": "words/una.m4a"
     },
     {
       "text": "vaca",
@@ -3972,7 +4051,9 @@
             "syllables.starts_with"
           ],
           "grapheme": "a",
-          "sound": "a",
+          "sounds": [
+            "a"
+          ],
           "word": "abeja"
         },
         {
@@ -3984,7 +4065,9 @@
             "syllables.starts_with"
           ],
           "grapheme": "e",
-          "sound": "e",
+          "sounds": [
+            "e"
+          ],
           "word": "elefante"
         },
         {
@@ -3996,7 +4079,9 @@
             "syllables.starts_with"
           ],
           "grapheme": "i",
-          "sound": "i",
+          "sounds": [
+            "i"
+          ],
           "word": "iglú"
         },
         {
@@ -4008,7 +4093,9 @@
             "syllables.starts_with"
           ],
           "grapheme": "o",
-          "sound": "o",
+          "sounds": [
+            "o"
+          ],
           "word": "oso"
         },
         {
@@ -4020,7 +4107,9 @@
             "syllables.starts_with"
           ],
           "grapheme": "u",
-          "sound": "u",
+          "sounds": [
+            "u"
+          ],
           "word": "uva"
         }
       ]
@@ -4042,6 +4131,19 @@
           "word": "mesa"
         },
         {
+          "id": "ma",
+          "activities": [
+            "syllables.starts_with"
+          ],
+          "sounds": [
+            "ma",
+            "me",
+            "mi",
+            "mo",
+            "mu"
+          ]
+        },
+        {
           "id": "p",
           "activities": [
             "letter.meet",
@@ -4052,6 +4154,19 @@
           "word": "pelota"
         },
         {
+          "id": "pa",
+          "activities": [
+            "syllables.starts_with"
+          ],
+          "sounds": [
+            "pa",
+            "pe",
+            "pi",
+            "po",
+            "pu"
+          ]
+        },
+        {
           "id": "l",
           "activities": [
             "letter.meet",
@@ -4060,6 +4175,19 @@
           ],
           "grapheme": "l",
           "word": "luna"
+        },
+        {
+          "id": "la",
+          "activities": [
+            "syllables.starts_with"
+          ],
+          "sounds": [
+            "la",
+            "le",
+            "li",
+            "lo",
+            "lu"
+          ]
         }
       ]
     }
@@ -4287,6 +4415,51 @@
     ],
     "letter.find.l": [
       "Revienta las burbujas que tienen la, ele."
+    ],
+    "syllables.starts_with.ma": [
+      "¿Qué dibujo empieza con, ma?"
+    ],
+    "syllables.starts_with.me": [
+      "¿Qué dibujo empieza con, me?"
+    ],
+    "syllables.starts_with.mi": [
+      "¿Qué dibujo empieza con, mi?"
+    ],
+    "syllables.starts_with.mo": [
+      "¿Qué dibujo empieza con, mo?"
+    ],
+    "syllables.starts_with.mu": [
+      "¿Qué dibujo empieza con, mu?"
+    ],
+    "syllables.starts_with.pa": [
+      "¿Qué dibujo empieza con, pa?"
+    ],
+    "syllables.starts_with.pe": [
+      "¿Qué dibujo empieza con, pe?"
+    ],
+    "syllables.starts_with.pi": [
+      "¿Qué dibujo empieza con, pi?"
+    ],
+    "syllables.starts_with.po": [
+      "¿Qué dibujo empieza con, po?"
+    ],
+    "syllables.starts_with.pu": [
+      "¿Qué dibujo empieza con, pu?"
+    ],
+    "syllables.starts_with.la": [
+      "¿Qué dibujo empieza con, la?"
+    ],
+    "syllables.starts_with.le": [
+      "¿Qué dibujo empieza con, le?"
+    ],
+    "syllables.starts_with.li": [
+      "¿Qué dibujo empieza con, li?"
+    ],
+    "syllables.starts_with.lo": [
+      "¿Qué dibujo empieza con, lo?"
+    ],
+    "syllables.starts_with.lu": [
+      "¿Qué dibujo empieza con, lu?"
     ]
   },
   "promptClips": {
@@ -4365,7 +4538,22 @@
     "syllables.starts_with.e.0": "prompts/syllables.starts_with.e.0.m4a",
     "syllables.starts_with.i.0": "prompts/syllables.starts_with.i.0.m4a",
     "syllables.starts_with.intro.0": "prompts/syllables.starts_with.intro.0.m4a",
+    "syllables.starts_with.la.0": "prompts/syllables.starts_with.la.0.m4a",
+    "syllables.starts_with.le.0": "prompts/syllables.starts_with.le.0.m4a",
+    "syllables.starts_with.li.0": "prompts/syllables.starts_with.li.0.m4a",
+    "syllables.starts_with.lo.0": "prompts/syllables.starts_with.lo.0.m4a",
+    "syllables.starts_with.lu.0": "prompts/syllables.starts_with.lu.0.m4a",
+    "syllables.starts_with.ma.0": "prompts/syllables.starts_with.ma.0.m4a",
+    "syllables.starts_with.me.0": "prompts/syllables.starts_with.me.0.m4a",
+    "syllables.starts_with.mi.0": "prompts/syllables.starts_with.mi.0.m4a",
+    "syllables.starts_with.mo.0": "prompts/syllables.starts_with.mo.0.m4a",
+    "syllables.starts_with.mu.0": "prompts/syllables.starts_with.mu.0.m4a",
     "syllables.starts_with.o.0": "prompts/syllables.starts_with.o.0.m4a",
+    "syllables.starts_with.pa.0": "prompts/syllables.starts_with.pa.0.m4a",
+    "syllables.starts_with.pe.0": "prompts/syllables.starts_with.pe.0.m4a",
+    "syllables.starts_with.pi.0": "prompts/syllables.starts_with.pi.0.m4a",
+    "syllables.starts_with.po.0": "prompts/syllables.starts_with.po.0.m4a",
+    "syllables.starts_with.pu.0": "prompts/syllables.starts_with.pu.0.m4a",
     "syllables.starts_with.u.0": "prompts/syllables.starts_with.u.0.m4a"
   },
   "letters": {

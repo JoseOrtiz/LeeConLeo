@@ -197,22 +197,25 @@ void main() {
       audio: hasAudio ? 'words/$text.m4a' : null,
     );
 
-    ContentBundle bundle(List<Word> words, {String? sound = 'a', bool hasPrompt = true}) =>
-        ContentBundle(
-          words: words,
-          stages: [
-            PathStage(
-              stage: 2,
-              name: 'vocales',
-              steps: [
-                PathStep(id: 'a', sound: sound, activities: const ['syllables.starts_with']),
-              ],
-            ),
+    ContentBundle bundle(
+      List<Word> words, {
+      List<String> sounds = const ['a'],
+      bool hasPrompt = true,
+    }) => ContentBundle(
+      words: words,
+      stages: [
+        PathStage(
+          stage: 2,
+          name: 'vocales',
+          steps: [
+            PathStep(id: 'a', sounds: sounds, activities: const ['syllables.starts_with']),
           ],
-          prompts: PromptLibrary({
-            if (hasPrompt) 'syllables.starts_with.a': ['¿Qué dibujo empieza con... a?'],
-          }),
-        );
+        ),
+      ],
+      prompts: PromptLibrary({
+        if (hasPrompt) 'syllables.starts_with.a': ['¿Qué dibujo empieza con, a?'],
+      }),
+    );
 
     final complete = [
       pictured('abeja', ['a', 'be', 'ja']),
@@ -245,7 +248,7 @@ void main() {
 
     test('flags a step without a sound or without a matching picture', () {
       expect(
-        const StartsWithStepsRule().check(bundle(complete, sound: null)).single.message,
+        const StartsWithStepsRule().check(bundle(complete, sounds: const [])).single.message,
         contains('needs a sound'),
       );
       expect(

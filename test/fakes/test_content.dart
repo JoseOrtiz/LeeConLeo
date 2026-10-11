@@ -89,11 +89,11 @@ const testContent = ContentBundle(
         PathStep(
           id: 'a',
           grapheme: 'a',
-          sound: 'a',
+          sounds: ['a'],
           word: 'abeja',
           activities: ['letter.meet', 'letter.trace', 'letter.find', 'syllables.starts_with'],
         ),
-        PathStep(id: 'e', grapheme: 'e', sound: 'e', activities: ['letter.find']),
+        PathStep(id: 'e', grapheme: 'e', sounds: ['e'], activities: ['letter.find']),
       ],
     ),
   ],

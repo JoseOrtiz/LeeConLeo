@@ -36,21 +36,28 @@ class StartsWithActivity implements ActivitySpec {
 
   @override
   List<ActivityItem> buildItems(ActivityContext context) {
-    final sound = context.step.sound!;
+    final sounds = context.step.sounds;
     final random = context.random;
-    final pictured = context.content.words.where((word) => word.image != null);
-    final targets = pictured.where((word) => word.startsWithSound(sound)).toList()..shuffle(random);
-    final others = pictured.where((word) => !word.startsWithSound(sound)).toList();
-    return [
-      for (var round = 0; round < rounds; round++)
-        _item(
-          round,
-          sound,
-          targets[round % targets.length],
-          (others..shuffle(random)).take(choices - 1),
-          random,
-        ),
-    ];
+    final pictured = context.content.words.where((word) => word.image != null).toList();
+    final roundSounds = sounds.length == 1
+        ? List.filled(rounds, sounds.single)
+        : ([...sounds]..shuffle(random));
+    final targets = {
+      for (final sound in sounds)
+        sound: pictured.where((word) => word.startsWithSound(sound)).toList()..shuffle(random),
+    };
+    final asked = <String, int>{};
+    final items = <ActivityItem>[];
+    for (final (round, sound) in roundSounds.indexed) {
+      final turn = asked[sound] = (asked[sound] ?? -1) + 1;
+      final choices = targets[sound]!;
+      final others = pictured.where((word) => !word.startsWithSound(sound)).toList()
+        ..shuffle(random);
+      items.add(
+        _item(round, sound, choices[turn % choices.length], others.take(this.choices - 1), random),
+      );
+    }
+    return items;
   }
 
   PictureItem _item(

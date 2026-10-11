@@ -10,6 +10,8 @@
 - text: astronauta
 - text: auto
 - text: avión
+  image: words/avion.svg
+  audio: words/avion.m4a
 - text: azul
 - text: azúcar
 - text: ballena
@@ -86,6 +88,8 @@
 - text: enfermera
 - text: erizo
 - text: escoba
+  image: words/escoba.svg
+  audio: words/escoba.m4a
 - text: escorpión
 - text: espantapájaros
 - text: espejo
@@ -136,6 +140,8 @@
   audio: words/iglu.m4a
 - text: impresora
 - text: imán
+  image: words/iman.svg
+  audio: words/iman.m4a
 - text: insectos
 - text: isla
   image: words/isla.svg
@@ -156,27 +162,49 @@
 - text: lagartija
 - text: lago
 - text: lana
+  image: words/lana.svg
+  audio: words/lana.m4a
 - text: leche
+  image: words/leche.svg
+  audio: words/leche.m4a
 - text: lechuga
 - text: lente
 - text: lentejuela
 - text: leña
 - text: león
+  image: words/leon.svg
+  audio: words/leon.m4a
 - text: libro
+  image: words/libro.svg
+  audio: words/libro.m4a
 - text: limón
+  image: words/limon.svg
+  audio: words/limon.m4a
 - text: lobo
+  image: words/lobo.svg
+  audio: words/lobo.m4a
 - text: locomotora
 - text: loro
+  image: words/loro.svg
+  audio: words/loro.m4a
 - text: luces
 - text: luna
   image: words/luna.svg
   audio: words/luna.m4a
 - text: lupa
+  image: words/lupa.svg
+  audio: words/lupa.m4a
 - text: lámpara
 - text: lápiz
+  image: words/lapiz.svg
+  audio: words/lapiz.m4a
 - text: mago
 - text: mano
+  image: words/mano.svg
+  audio: words/mano.m4a
 - text: manzana
+  image: words/manzana.svg
+  audio: words/manzana.m4a
 - text: maní
 - text: mapa
 - text: marioneta
@@ -185,19 +213,33 @@
 - text: maíz
 - text: medusa
 - text: melón
+  image: words/melon.svg
+  audio: words/melon.m4a
 - text: mesa
   image: words/mesa.svg
   audio: words/mesa.m4a
 - text: micrófono
+  image: words/microfono.svg
+  audio: words/microfono.m4a
 - text: miel
+  image: words/miel.svg
+  audio: words/miel.m4a
 - text: mimo
 - text: mochila
+  image: words/mochila.svg
+  audio: words/mochila.m4a
 - text: molino
 - text: momia
 - text: mono
+  image: words/mono.svg
+  audio: words/mono.m4a
 - text: motocicleta
 - text: murciélago
+  image: words/murcielago.svg
+  audio: words/murcielago.m4a
 - text: muñeca
+  image: words/muneca.svg
+  audio: words/muneca.m4a
 - text: naranja
 - text: nariz
 - text: natación
@@ -218,11 +260,15 @@
   image: words/oso.svg
   audio: words/oso.m4a
 - text: oveja
+  image: words/oveja.svg
+  audio: words/oveja.m4a
 - text: oído
 - text: pala
 - text: palmera
 - text: paloma
 - text: palta
+  image: words/palta.svg
+  audio: words/palta.m4a
 - text: pan
 - text: panda
 - text: pantalón
@@ -230,6 +276,8 @@
 - text: papel
 - text: paraguas
 - text: pato
+  image: words/pato.svg
+  audio: words/pato.m4a
 - text: patín
 - text: pavo
 - text: payaso
@@ -239,8 +287,12 @@
   image: words/pelota.svg
   audio: words/pelota.m4a
 - text: pera
+  image: words/pera.svg
+  audio: words/pera.m4a
 - text: perfume
 - text: perro
+  image: words/perro.svg
+  audio: words/perro.m4a
 - text: pez
 - text: piano
 - text: pie
@@ -249,22 +301,35 @@
 - text: pincel
 - text: pingüino
 - text: pino
+  image: words/pino.svg
+  audio: words/pino.m4a
 - text: pipa
 - text: pirata
 - text: piscina
 - text: pizarra
 - text: pizza
 - text: piña
+  image: words/pina.svg
+  audio: words/pina.m4a
 - text: plancha
 - text: plato
 - text: pluma
 - text: plátano
 - text: pollo
+  image: words/pollo.svg
+  audio: words/pollo.m4a
+- text: poroto
+  image: words/poroto.svg
+  audio: words/poroto.m4a
 - text: puente
 - text: puercoespín
 - text: puerta
 - text: pulpo
+  image: words/pulpo.svg
+  audio: words/pulpo.m4a
 - text: puma
+  image: words/puma.svg
+  audio: words/puma.m4a
 - text: pájaro
 - text: rana
 - text: ratón
@@ -329,6 +394,8 @@
   image: words/uva.svg
   audio: words/uva.m4a
 - text: uña
+  image: words/una.svg
+  audio: words/una.m4a
 - text: vaca
 - text: vaquero
 - text: vaso

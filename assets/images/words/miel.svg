@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<ellipse cx="200" cy="356" rx="110" ry="17.6" fill="#3B2A20" fill-opacity="0.15"/>
+<path d="M120 140 L280 140 Q312 140 312 180 L312 316 Q312 344 280 344 L120 344 Q88 344 88 316 L88 180 Q88 140 120 140 Z" fill="#F2B632" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="120" y="196" width="160" height="96" rx="20" fill="#FFF4DC" stroke="#3B2A20" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M168 222 L200 204 L232 222 L232 260 L200 278 L168 260 Z" fill="#D98E1C" stroke="#3B2A20" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="104" y="100" width="192" height="46" rx="14" fill="#D8433B" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M104 136 L296 136 L296 146 Q270 160 250 146 Q240 182 222 150 Q200 164 178 148 L104 146 Z" fill="#D98E1C"/>
+<path d="M116 118 L284 118" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M104 196 L104 286" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

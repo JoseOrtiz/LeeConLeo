@@ -3,7 +3,7 @@ class PathStep {
     required this.id,
     required this.activities,
     this.grapheme,
-    this.sound,
+    this.sounds = const [],
     this.icon,
     this.word,
   });
@@ -12,7 +12,7 @@ class PathStep {
     id: json['id'] as String,
     activities: (json['activities'] as List).cast<String>(),
     grapheme: json['grapheme'] as String?,
-    sound: json['sound'] as String?,
+    sounds: (json['sounds'] as List? ?? const []).cast<String>(),
     icon: json['icon'] as String?,
     word: json['word'] as String?,
   );
@@ -20,7 +20,7 @@ class PathStep {
   final String id;
   final List<String> activities;
   final String? grapheme;
-  final String? sound;
+  final List<String> sounds;
   final String? icon;
   final String? word;
 
@@ -28,7 +28,7 @@ class PathStep {
     'id': id,
     'activities': activities,
     if (grapheme != null) 'grapheme': grapheme,
-    if (sound != null) 'sound': sound,
+    if (sounds.isNotEmpty) 'sounds': sounds,
     if (icon != null) 'icon': icon,
     if (word != null) 'word': word,
   };
