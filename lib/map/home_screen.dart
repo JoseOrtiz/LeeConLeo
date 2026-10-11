@@ -13,7 +13,10 @@ import '../core/audio/utterance.dart';
 import '../core/content/models/content_bundle.dart';
 import '../core/content/models/path_stage.dart';
 import '../core/content/models/path_step.dart';
+import '../core/profiles/profile_providers.dart';
 import '../core/progress/progress_providers.dart';
+import '../profiles/avatar_button.dart';
+import '../profiles/profile_picker.dart';
 import 'greeting.dart';
 import 'leo_position.dart';
 import 'place_view.dart';
@@ -21,6 +24,8 @@ import 'step_status.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
+
+  static const switchProfileKey = ValueKey('switch-profile');
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -30,13 +35,36 @@ class HomeScreen extends ConsumerWidget {
         child: ref
             .watch(startupProvider)
             .when(
-              data: (bundle) => PathMap(bundle: bundle),
+              data: (bundle) => _home(ref, bundle),
               loading: () => const LoadingView(),
               error: (error, _) => Center(child: Text('$error')),
             ),
       ),
     );
   }
+}
+
+Widget _home(WidgetRef ref, ContentBundle bundle) {
+  final playing = ref.watch(activeProfileProvider);
+  if (playing == null) return ProfilePicker(bundle: bundle);
+  return Stack(
+    children: [
+      PathMap(key: ValueKey('map-${playing.profile.id}'), bundle: bundle),
+      Positioned(
+        top: 8,
+        right: 8,
+        child: AvatarButton(
+          key: HomeScreen.switchProfileKey,
+          avatar: playing.profile.avatar,
+          size: 64,
+          onPressed: () {
+            ref.read(promptPlayerProvider).stop();
+            ref.read(activeProfileProvider.notifier).leave();
+          },
+        ),
+      ),
+    ],
+  );
 }
 
 class PathMap extends ConsumerStatefulWidget {

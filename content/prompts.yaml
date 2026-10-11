@@ -20,6 +20,12 @@ home.intro:
 home.locked:
   - Todavía no. Primero juega donde estoy yo.
 
+profiles.intro:
+  - ¿Quién va a jugar? ¡Toca tu dibujo!
+
+profiles.empty:
+  - ¡Hola! Pídele a un adulto que te ayude a empezar.
+
 spatial.up_down.intro:
   - ¡Hola! Soy Leo. Ayúdame a encontrar arriba y abajo.
 

@@ -20,6 +20,7 @@ void main() {
     await tester.pumpWidget(
       ProviderScope(
         overrides: [
+          singleProfile(),
           contentProvider.overrideWith((ref) => content.future),
           minimumSplashProvider.overrideWithValue(Duration.zero),
         ],
@@ -41,6 +42,7 @@ void main() {
     await tester.pumpWidget(
       ProviderScope(
         overrides: [
+          singleProfile(),
           contentProvider.overrideWith((ref) async => testContent),
           minimumSplashProvider.overrideWithValue(const Duration(seconds: 1)),
           promptPlayerProvider.overrideWithValue(RecordingPromptPlayer()),

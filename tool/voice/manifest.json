@@ -1651,6 +1651,18 @@
       "text": "pomelo",
       "file": "assets/audio/words/pomelo.m4a",
       "spokenAs": "Pomelo."
+    },
+    {
+      "promptId": "profiles.intro",
+      "index": 0,
+      "text": "¿Quién va a jugar? ¡Toca tu dibujo!",
+      "file": "assets/audio/prompts/profiles.intro.0.m4a"
+    },
+    {
+      "promptId": "profiles.empty",
+      "index": 0,
+      "text": "¡Hola! Pídele a un adulto que te ayude a empezar.",
+      "file": "assets/audio/prompts/profiles.empty.0.m4a"
     }
   ]
 }

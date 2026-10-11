@@ -3,10 +3,12 @@ import 'package:go_router/go_router.dart';
 
 import '../activities/common/activity_screen.dart';
 import '../map/home_screen.dart';
+import '../profiles/adults_screen.dart';
 
 GoRouter createAppRouter() => GoRouter(
   routes: [
     GoRoute(path: '/', builder: (context, state) => const HomeScreen()),
+    GoRoute(path: '/adults', builder: (context, state) => const AdultsScreen()),
     GoRoute(
       path: '/play/:stepId/:activityId',
       builder: (context, state) => ActivityScreen(
