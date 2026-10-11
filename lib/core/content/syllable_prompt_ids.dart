@@ -9,6 +9,8 @@ abstract final class SyllablePromptIds {
 
   static String find(String syllable) => '${ActivityIds.syllableFind}.$syllable';
 
+  static String buildWord(String word) => '${ActivityIds.buildWord}.$word';
+
   static List<String> requiredFor(String activityId, String syllable) => switch (activityId) {
     ActivityIds.syllableMeet => [meet(syllable), choose(syllable)],
     ActivityIds.syllableTrace => [trace(syllable)],

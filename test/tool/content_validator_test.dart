@@ -8,6 +8,7 @@ import 'package:lee_con_leo/core/content/models/path_step.dart';
 import 'package:lee_con_leo/core/content/models/prompt_library.dart';
 import 'package:lee_con_leo/core/content/models/word.dart';
 
+import '../../tool/src/validation/rules/build_word_steps_rule.dart';
 import '../../tool/src/validation/rules/known_activities_rule.dart';
 import '../../tool/src/validation/rules/letter_steps_rule.dart';
 import '../../tool/src/validation/rules/path_images_rule.dart';
@@ -351,6 +352,58 @@ void main() {
       expect(
         rule.check(syllableBundle(sounds: const ['ma'])).single.message,
         contains('two or more sounds'),
+      );
+    });
+  });
+
+  group('build word steps', () {
+    const mapa = Word(
+      text: 'mapa',
+      syllables: ['ma', 'pa'],
+      sounds: ['ma', 'pa'],
+      image: 'words/mapa.svg',
+      audio: 'words/mapa.m4a',
+    );
+
+    ContentBundle buildBundle({List<Word> words = const [mapa], bool hasPrompts = true}) =>
+        ContentBundle(
+          words: words,
+          stages: const [
+            PathStage(
+              stage: 4,
+              name: 'bosque',
+              steps: [
+                PathStep(id: 'ma', sounds: ['ma', 'me'], activities: []),
+                PathStep(id: 'pa', sounds: ['pa', 'pe'], activities: ['syllables.build_word']),
+              ],
+            ),
+          ],
+          prompts: PromptLibrary({
+            if (hasPrompts) 'syllables.build_word.mapa': ['build mapa'],
+          }),
+        );
+
+    const rule = BuildWordStepsRule();
+
+    test('a step with a word made of known syllables and its phrase passes', () {
+      expect(rule.check(buildBundle()), isEmpty);
+    });
+
+    test('flags a missing phrase and a step with no word to build', () {
+      expect(
+        rule.check(buildBundle(hasPrompts: false)).single.message,
+        contains('missing prompt "syllables.build_word.mapa"'),
+      );
+      const humo = Word(
+        text: 'humo',
+        syllables: ['hu', 'mo'],
+        sounds: ['u', 'mo'],
+        image: 'words/humo.svg',
+        audio: 'words/humo.m4a',
+      );
+      expect(
+        rule.check(buildBundle(words: const [humo])).single.message,
+        contains('no word with a picture'),
       );
     });
   });

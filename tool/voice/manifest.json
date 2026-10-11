@@ -1543,6 +1543,114 @@
       "text": "vela",
       "file": "assets/audio/words/vela.m4a",
       "spokenAs": "Vela."
+    },
+    {
+      "promptId": "syllables.build_word.intro",
+      "index": 0,
+      "text": "¡Ahora armemos palabras! Mira el dibujo y lleva cada pedacito a su lugar.",
+      "file": "assets/audio/prompts/syllables.build_word.intro.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.mapa",
+      "index": 0,
+      "text": "Arma la palabra, mapa.",
+      "file": "assets/audio/prompts/syllables.build_word.mapa.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.papa",
+      "index": 0,
+      "text": "Arma la palabra, papa.",
+      "file": "assets/audio/prompts/syllables.build_word.papa.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.puma",
+      "index": 0,
+      "text": "Arma la palabra, puma.",
+      "file": "assets/audio/prompts/syllables.build_word.puma.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.lupa",
+      "index": 0,
+      "text": "Arma la palabra, lupa.",
+      "file": "assets/audio/prompts/syllables.build_word.lupa.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.ola",
+      "index": 0,
+      "text": "Arma la palabra, ola.",
+      "file": "assets/audio/prompts/syllables.build_word.ola.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.pala",
+      "index": 0,
+      "text": "Arma la palabra, pala.",
+      "file": "assets/audio/prompts/syllables.build_word.pala.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.paloma",
+      "index": 0,
+      "text": "Arma la palabra, paloma.",
+      "file": "assets/audio/prompts/syllables.build_word.paloma.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.pila",
+      "index": 0,
+      "text": "Arma la palabra, pila.",
+      "file": "assets/audio/prompts/syllables.build_word.pila.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.mula",
+      "index": 0,
+      "text": "Arma la palabra, mula.",
+      "file": "assets/audio/prompts/syllables.build_word.mula.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.pomelo",
+      "index": 0,
+      "text": "Arma la palabra, pomelo.",
+      "file": "assets/audio/prompts/syllables.build_word.pomelo.0.m4a"
+    },
+    {
+      "promptId": "word.mula",
+      "index": 0,
+      "text": "mula",
+      "file": "assets/audio/words/mula.m4a",
+      "spokenAs": "Mula."
+    },
+    {
+      "promptId": "word.pala",
+      "index": 0,
+      "text": "pala",
+      "file": "assets/audio/words/pala.m4a",
+      "spokenAs": "Pala."
+    },
+    {
+      "promptId": "word.paloma",
+      "index": 0,
+      "text": "paloma",
+      "file": "assets/audio/words/paloma.m4a",
+      "spokenAs": "Paloma."
+    },
+    {
+      "promptId": "word.papa",
+      "index": 0,
+      "text": "papa",
+      "file": "assets/audio/words/papa.m4a",
+      "spokenAs": "Papa."
+    },
+    {
+      "promptId": "word.pila",
+      "index": 0,
+      "text": "pila",
+      "file": "assets/audio/words/pila.m4a",
+      "spokenAs": "Pila."
+    },
+    {
+      "promptId": "word.pomelo",
+      "index": 0,
+      "text": "pomelo",
+      "file": "assets/audio/words/pomelo.m4a",
+      "spokenAs": "Pomelo."
     }
   ]
 }

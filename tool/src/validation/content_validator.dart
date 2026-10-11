@@ -1,5 +1,6 @@
 import 'package:lee_con_leo/core/content/models/content_bundle.dart';
 
+import 'rules/build_word_steps_rule.dart';
 import 'rules/known_activities_rule.dart';
 import 'rules/letter_steps_rule.dart';
 import 'rules/path_images_rule.dart';
@@ -31,6 +32,7 @@ class ContentValidator {
     LetterStepsRule(),
     SyllableStepsRule(),
     PictureSoundStepsRule(),
+    BuildWordStepsRule(),
   ];
 
   final List<ValidationRule> rules;
