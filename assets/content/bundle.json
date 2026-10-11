@@ -463,7 +463,9 @@
       "sounds": [
         "ka",
         "ma"
-      ]
+      ],
+      "image": "words/cama.svg",
+      "audio": "words/cama.m4a"
     },
     {
       "text": "camaleón",
@@ -570,6 +572,23 @@
         "ra",
         "kol"
       ]
+    },
+    {
+      "text": "caramelo",
+      "syllables": [
+        "ca",
+        "ra",
+        "me",
+        "lo"
+      ],
+      "sounds": [
+        "ka",
+        "ra",
+        "me",
+        "lo"
+      ],
+      "image": "words/caramelo.svg",
+      "audio": "words/caramelo.m4a"
     },
     {
       "text": "carta",
@@ -1512,6 +1531,19 @@
       ]
     },
     {
+      "text": "hielo",
+      "syllables": [
+        "hie",
+        "lo"
+      ],
+      "sounds": [
+        "ie",
+        "lo"
+      ],
+      "image": "words/hielo.svg",
+      "audio": "words/hielo.m4a"
+    },
+    {
       "text": "hiena",
       "syllables": [
         "hie",
@@ -1584,6 +1616,19 @@
         "ams",
         "ter"
       ]
+    },
+    {
+      "text": "humo",
+      "syllables": [
+        "hu",
+        "mo"
+      ],
+      "sounds": [
+        "u",
+        "mo"
+      ],
+      "image": "words/humo.svg",
+      "audio": "words/humo.m4a"
     },
     {
       "text": "iglú",
@@ -2111,7 +2156,9 @@
       "sounds": [
         "ma",
         "pa"
-      ]
+      ],
+      "image": "words/mapa.svg",
+      "audio": "words/mapa.m4a"
     },
     {
       "text": "marioneta",
@@ -2461,6 +2508,19 @@
       ],
       "image": "words/ojo.svg",
       "audio": "words/ojo.m4a"
+    },
+    {
+      "text": "ola",
+      "syllables": [
+        "o",
+        "la"
+      ],
+      "sounds": [
+        "o",
+        "la"
+      ],
+      "image": "words/ola.svg",
+      "audio": "words/ola.m4a"
     },
     {
       "text": "olla",
@@ -2992,7 +3052,9 @@
       "sounds": [
         "plu",
         "ma"
-      ]
+      ],
+      "image": "words/pluma.svg",
+      "audio": "words/pluma.m4a"
     },
     {
       "text": "plátano",
@@ -3158,6 +3220,19 @@
       ]
     },
     {
+      "text": "remo",
+      "syllables": [
+        "re",
+        "mo"
+      ],
+      "sounds": [
+        "rre",
+        "mo"
+      ],
+      "image": "words/remo.svg",
+      "audio": "words/remo.m4a"
+    },
+    {
       "text": "reno",
       "syllables": [
         "re",
@@ -3268,7 +3343,9 @@
       "sounds": [
         "sa",
         "po"
-      ]
+      ],
+      "image": "words/sapo.svg",
+      "audio": "words/sapo.m4a"
     },
     {
       "text": "saxofón",
@@ -3423,7 +3500,9 @@
       "sounds": [
         "so",
         "pa"
-      ]
+      ],
+      "image": "words/sopa.svg",
+      "audio": "words/sopa.m4a"
     },
     {
       "text": "submarino",
@@ -3724,6 +3803,19 @@
       ]
     },
     {
+      "text": "trompo",
+      "syllables": [
+        "trom",
+        "po"
+      ],
+      "sounds": [
+        "trom",
+        "po"
+      ],
+      "image": "words/trompo.svg",
+      "audio": "words/trompo.m4a"
+    },
+    {
       "text": "tucán",
       "syllables": [
         "tu",
@@ -3862,7 +3954,9 @@
       "sounds": [
         "be",
         "la"
-      ]
+      ],
+      "image": "words/vela.svg",
+      "audio": "words/vela.m4a"
     },
     {
       "text": "ventana",
@@ -4133,7 +4227,11 @@
         {
           "id": "ma",
           "activities": [
-            "syllables.starts_with"
+            "syllables.meet",
+            "syllables.trace",
+            "syllables.find",
+            "syllables.starts_with",
+            "syllables.ends_with"
           ],
           "sounds": [
             "ma",
@@ -4156,7 +4254,11 @@
         {
           "id": "pa",
           "activities": [
-            "syllables.starts_with"
+            "syllables.meet",
+            "syllables.trace",
+            "syllables.find",
+            "syllables.starts_with",
+            "syllables.ends_with"
           ],
           "sounds": [
             "pa",
@@ -4179,7 +4281,11 @@
         {
           "id": "la",
           "activities": [
-            "syllables.starts_with"
+            "syllables.meet",
+            "syllables.trace",
+            "syllables.find",
+            "syllables.starts_with",
+            "syllables.ends_with"
           ],
           "sounds": [
             "la",
@@ -4460,6 +4566,216 @@
     ],
     "syllables.starts_with.lu": [
       "¿Qué dibujo empieza con, lu?"
+    ],
+    "syllables.meet.intro": [
+      "¡Las letras se juntan para sonar! Escucha y toca."
+    ],
+    "syllables.trace.intro": [
+      "¡Ahora escribamos las letras juntas! Pon tu dedo en el punto que brilla y sigue el camino."
+    ],
+    "syllables.find.intro": [
+      "¡Más burbujas! Revienta las que dicen lo que te digo."
+    ],
+    "syllables.ends_with.intro": [
+      "¡Escucha el final! Toca el dibujo que termina con el sonido que te digo."
+    ],
+    "syllables.meet.ma": [
+      "La, eme, y la, a, juntas dicen, ma. ¡Toca, ma!"
+    ],
+    "syllables.meet.ma.choose": [
+      "¿Dónde dice, ma? ¡Tócala!"
+    ],
+    "syllables.trace.ma": [
+      "Escribe, ma, con tu dedo."
+    ],
+    "syllables.find.ma": [
+      "Revienta las burbujas que dicen, ma."
+    ],
+    "syllables.meet.me": [
+      "La, eme, y la, e, juntas dicen, me. ¡Toca, me!"
+    ],
+    "syllables.meet.me.choose": [
+      "¿Dónde dice, me? ¡Tócala!"
+    ],
+    "syllables.trace.me": [
+      "Escribe, me, con tu dedo."
+    ],
+    "syllables.find.me": [
+      "Revienta las burbujas que dicen, me."
+    ],
+    "syllables.meet.mi": [
+      "La, eme, y la, i, juntas dicen, mi. ¡Toca, mi!"
+    ],
+    "syllables.meet.mi.choose": [
+      "¿Dónde dice, mi? ¡Tócala!"
+    ],
+    "syllables.trace.mi": [
+      "Escribe, mi, con tu dedo."
+    ],
+    "syllables.find.mi": [
+      "Revienta las burbujas que dicen, mi."
+    ],
+    "syllables.meet.mo": [
+      "La, eme, y la, o, juntas dicen, mo. ¡Toca, mo!"
+    ],
+    "syllables.meet.mo.choose": [
+      "¿Dónde dice, mo? ¡Tócala!"
+    ],
+    "syllables.trace.mo": [
+      "Escribe, mo, con tu dedo."
+    ],
+    "syllables.find.mo": [
+      "Revienta las burbujas que dicen, mo."
+    ],
+    "syllables.meet.mu": [
+      "La, eme, y la, u, juntas dicen, mu. ¡Toca, mu!"
+    ],
+    "syllables.meet.mu.choose": [
+      "¿Dónde dice, mu? ¡Tócala!"
+    ],
+    "syllables.trace.mu": [
+      "Escribe, mu, con tu dedo."
+    ],
+    "syllables.find.mu": [
+      "Revienta las burbujas que dicen, mu."
+    ],
+    "syllables.meet.pa": [
+      "La, pe, y la, a, juntas dicen, pa. ¡Toca, pa!"
+    ],
+    "syllables.meet.pa.choose": [
+      "¿Dónde dice, pa? ¡Tócala!"
+    ],
+    "syllables.trace.pa": [
+      "Escribe, pa, con tu dedo."
+    ],
+    "syllables.find.pa": [
+      "Revienta las burbujas que dicen, pa."
+    ],
+    "syllables.meet.pe": [
+      "La, pe, y la, e, juntas dicen, pe. ¡Toca, pe!"
+    ],
+    "syllables.meet.pe.choose": [
+      "¿Dónde dice, pe? ¡Tócala!"
+    ],
+    "syllables.trace.pe": [
+      "Escribe, pe, con tu dedo."
+    ],
+    "syllables.find.pe": [
+      "Revienta las burbujas que dicen, pe."
+    ],
+    "syllables.meet.pi": [
+      "La, pe, y la, i, juntas dicen, pi. ¡Toca, pi!"
+    ],
+    "syllables.meet.pi.choose": [
+      "¿Dónde dice, pi? ¡Tócala!"
+    ],
+    "syllables.trace.pi": [
+      "Escribe, pi, con tu dedo."
+    ],
+    "syllables.find.pi": [
+      "Revienta las burbujas que dicen, pi."
+    ],
+    "syllables.meet.po": [
+      "La, pe, y la, o, juntas dicen, po. ¡Toca, po!"
+    ],
+    "syllables.meet.po.choose": [
+      "¿Dónde dice, po? ¡Tócala!"
+    ],
+    "syllables.trace.po": [
+      "Escribe, po, con tu dedo."
+    ],
+    "syllables.find.po": [
+      "Revienta las burbujas que dicen, po."
+    ],
+    "syllables.meet.pu": [
+      "La, pe, y la, u, juntas dicen, pu. ¡Toca, pu!"
+    ],
+    "syllables.meet.pu.choose": [
+      "¿Dónde dice, pu? ¡Tócala!"
+    ],
+    "syllables.trace.pu": [
+      "Escribe, pu, con tu dedo."
+    ],
+    "syllables.find.pu": [
+      "Revienta las burbujas que dicen, pu."
+    ],
+    "syllables.meet.la": [
+      "La, ele, y la, a, juntas dicen, la. ¡Toca, la!"
+    ],
+    "syllables.meet.la.choose": [
+      "¿Dónde dice, la? ¡Tócala!"
+    ],
+    "syllables.trace.la": [
+      "Escribe, la, con tu dedo."
+    ],
+    "syllables.find.la": [
+      "Revienta las burbujas que dicen, la."
+    ],
+    "syllables.meet.le": [
+      "La, ele, y la, e, juntas dicen, le. ¡Toca, le!"
+    ],
+    "syllables.meet.le.choose": [
+      "¿Dónde dice, le? ¡Tócala!"
+    ],
+    "syllables.trace.le": [
+      "Escribe, le, con tu dedo."
+    ],
+    "syllables.find.le": [
+      "Revienta las burbujas que dicen, le."
+    ],
+    "syllables.meet.li": [
+      "La, ele, y la, i, juntas dicen, li. ¡Toca, li!"
+    ],
+    "syllables.meet.li.choose": [
+      "¿Dónde dice, li? ¡Tócala!"
+    ],
+    "syllables.trace.li": [
+      "Escribe, li, con tu dedo."
+    ],
+    "syllables.find.li": [
+      "Revienta las burbujas que dicen, li."
+    ],
+    "syllables.meet.lo": [
+      "La, ele, y la, o, juntas dicen, lo. ¡Toca, lo!"
+    ],
+    "syllables.meet.lo.choose": [
+      "¿Dónde dice, lo? ¡Tócala!"
+    ],
+    "syllables.trace.lo": [
+      "Escribe, lo, con tu dedo."
+    ],
+    "syllables.find.lo": [
+      "Revienta las burbujas que dicen, lo."
+    ],
+    "syllables.meet.lu": [
+      "La, ele, y la, u, juntas dicen, lu. ¡Toca, lu!"
+    ],
+    "syllables.meet.lu.choose": [
+      "¿Dónde dice, lu? ¡Tócala!"
+    ],
+    "syllables.trace.lu": [
+      "Escribe, lu, con tu dedo."
+    ],
+    "syllables.find.lu": [
+      "Revienta las burbujas que dicen, lu."
+    ],
+    "syllables.ends_with.ma": [
+      "¿Qué dibujo termina con, ma?"
+    ],
+    "syllables.ends_with.mo": [
+      "¿Qué dibujo termina con, mo?"
+    ],
+    "syllables.ends_with.pa": [
+      "¿Qué dibujo termina con, pa?"
+    ],
+    "syllables.ends_with.po": [
+      "¿Qué dibujo termina con, po?"
+    ],
+    "syllables.ends_with.la": [
+      "¿Qué dibujo termina con, la?"
+    ],
+    "syllables.ends_with.lo": [
+      "¿Qué dibujo termina con, lo?"
     ]
   },
   "promptClips": {
@@ -4534,6 +4850,60 @@
     "spatial.up_down.down.0": "prompts/spatial.up_down.down.0.m4a",
     "spatial.up_down.intro.0": "prompts/spatial.up_down.intro.0.m4a",
     "spatial.up_down.up.0": "prompts/spatial.up_down.up.0.m4a",
+    "syllables.ends_with.intro.0": "prompts/syllables.ends_with.intro.0.m4a",
+    "syllables.ends_with.la.0": "prompts/syllables.ends_with.la.0.m4a",
+    "syllables.ends_with.lo.0": "prompts/syllables.ends_with.lo.0.m4a",
+    "syllables.ends_with.ma.0": "prompts/syllables.ends_with.ma.0.m4a",
+    "syllables.ends_with.mo.0": "prompts/syllables.ends_with.mo.0.m4a",
+    "syllables.ends_with.pa.0": "prompts/syllables.ends_with.pa.0.m4a",
+    "syllables.ends_with.po.0": "prompts/syllables.ends_with.po.0.m4a",
+    "syllables.find.intro.0": "prompts/syllables.find.intro.0.m4a",
+    "syllables.find.la.0": "prompts/syllables.find.la.0.m4a",
+    "syllables.find.le.0": "prompts/syllables.find.le.0.m4a",
+    "syllables.find.li.0": "prompts/syllables.find.li.0.m4a",
+    "syllables.find.lo.0": "prompts/syllables.find.lo.0.m4a",
+    "syllables.find.lu.0": "prompts/syllables.find.lu.0.m4a",
+    "syllables.find.ma.0": "prompts/syllables.find.ma.0.m4a",
+    "syllables.find.me.0": "prompts/syllables.find.me.0.m4a",
+    "syllables.find.mi.0": "prompts/syllables.find.mi.0.m4a",
+    "syllables.find.mo.0": "prompts/syllables.find.mo.0.m4a",
+    "syllables.find.mu.0": "prompts/syllables.find.mu.0.m4a",
+    "syllables.find.pa.0": "prompts/syllables.find.pa.0.m4a",
+    "syllables.find.pe.0": "prompts/syllables.find.pe.0.m4a",
+    "syllables.find.pi.0": "prompts/syllables.find.pi.0.m4a",
+    "syllables.find.po.0": "prompts/syllables.find.po.0.m4a",
+    "syllables.find.pu.0": "prompts/syllables.find.pu.0.m4a",
+    "syllables.meet.intro.0": "prompts/syllables.meet.intro.0.m4a",
+    "syllables.meet.la.0": "prompts/syllables.meet.la.0.m4a",
+    "syllables.meet.la.choose.0": "prompts/syllables.meet.la.choose.0.m4a",
+    "syllables.meet.le.0": "prompts/syllables.meet.le.0.m4a",
+    "syllables.meet.le.choose.0": "prompts/syllables.meet.le.choose.0.m4a",
+    "syllables.meet.li.0": "prompts/syllables.meet.li.0.m4a",
+    "syllables.meet.li.choose.0": "prompts/syllables.meet.li.choose.0.m4a",
+    "syllables.meet.lo.0": "prompts/syllables.meet.lo.0.m4a",
+    "syllables.meet.lo.choose.0": "prompts/syllables.meet.lo.choose.0.m4a",
+    "syllables.meet.lu.0": "prompts/syllables.meet.lu.0.m4a",
+    "syllables.meet.lu.choose.0": "prompts/syllables.meet.lu.choose.0.m4a",
+    "syllables.meet.ma.0": "prompts/syllables.meet.ma.0.m4a",
+    "syllables.meet.ma.choose.0": "prompts/syllables.meet.ma.choose.0.m4a",
+    "syllables.meet.me.0": "prompts/syllables.meet.me.0.m4a",
+    "syllables.meet.me.choose.0": "prompts/syllables.meet.me.choose.0.m4a",
+    "syllables.meet.mi.0": "prompts/syllables.meet.mi.0.m4a",
+    "syllables.meet.mi.choose.0": "prompts/syllables.meet.mi.choose.0.m4a",
+    "syllables.meet.mo.0": "prompts/syllables.meet.mo.0.m4a",
+    "syllables.meet.mo.choose.0": "prompts/syllables.meet.mo.choose.0.m4a",
+    "syllables.meet.mu.0": "prompts/syllables.meet.mu.0.m4a",
+    "syllables.meet.mu.choose.0": "prompts/syllables.meet.mu.choose.0.m4a",
+    "syllables.meet.pa.0": "prompts/syllables.meet.pa.0.m4a",
+    "syllables.meet.pa.choose.0": "prompts/syllables.meet.pa.choose.0.m4a",
+    "syllables.meet.pe.0": "prompts/syllables.meet.pe.0.m4a",
+    "syllables.meet.pe.choose.0": "prompts/syllables.meet.pe.choose.0.m4a",
+    "syllables.meet.pi.0": "prompts/syllables.meet.pi.0.m4a",
+    "syllables.meet.pi.choose.0": "prompts/syllables.meet.pi.choose.0.m4a",
+    "syllables.meet.po.0": "prompts/syllables.meet.po.0.m4a",
+    "syllables.meet.po.choose.0": "prompts/syllables.meet.po.choose.0.m4a",
+    "syllables.meet.pu.0": "prompts/syllables.meet.pu.0.m4a",
+    "syllables.meet.pu.choose.0": "prompts/syllables.meet.pu.choose.0.m4a",
     "syllables.starts_with.a.0": "prompts/syllables.starts_with.a.0.m4a",
     "syllables.starts_with.e.0": "prompts/syllables.starts_with.e.0.m4a",
     "syllables.starts_with.i.0": "prompts/syllables.starts_with.i.0.m4a",
@@ -4554,7 +4924,23 @@
     "syllables.starts_with.pi.0": "prompts/syllables.starts_with.pi.0.m4a",
     "syllables.starts_with.po.0": "prompts/syllables.starts_with.po.0.m4a",
     "syllables.starts_with.pu.0": "prompts/syllables.starts_with.pu.0.m4a",
-    "syllables.starts_with.u.0": "prompts/syllables.starts_with.u.0.m4a"
+    "syllables.starts_with.u.0": "prompts/syllables.starts_with.u.0.m4a",
+    "syllables.trace.intro.0": "prompts/syllables.trace.intro.0.m4a",
+    "syllables.trace.la.0": "prompts/syllables.trace.la.0.m4a",
+    "syllables.trace.le.0": "prompts/syllables.trace.le.0.m4a",
+    "syllables.trace.li.0": "prompts/syllables.trace.li.0.m4a",
+    "syllables.trace.lo.0": "prompts/syllables.trace.lo.0.m4a",
+    "syllables.trace.lu.0": "prompts/syllables.trace.lu.0.m4a",
+    "syllables.trace.ma.0": "prompts/syllables.trace.ma.0.m4a",
+    "syllables.trace.me.0": "prompts/syllables.trace.me.0.m4a",
+    "syllables.trace.mi.0": "prompts/syllables.trace.mi.0.m4a",
+    "syllables.trace.mo.0": "prompts/syllables.trace.mo.0.m4a",
+    "syllables.trace.mu.0": "prompts/syllables.trace.mu.0.m4a",
+    "syllables.trace.pa.0": "prompts/syllables.trace.pa.0.m4a",
+    "syllables.trace.pe.0": "prompts/syllables.trace.pe.0.m4a",
+    "syllables.trace.pi.0": "prompts/syllables.trace.pi.0.m4a",
+    "syllables.trace.po.0": "prompts/syllables.trace.po.0.m4a",
+    "syllables.trace.pu.0": "prompts/syllables.trace.pu.0.m4a"
   },
   "letters": {
     "a": {
@@ -6137,5 +6523,2637 @@
         ]
       ]
     }
+  },
+  "syllables": {
+    "la": [
+      [
+        [
+          20,
+          112
+        ],
+        [
+          27,
+          110
+        ],
+        [
+          33,
+          105
+        ],
+        [
+          38,
+          97
+        ],
+        [
+          44,
+          85
+        ],
+        [
+          49,
+          69
+        ],
+        [
+          53,
+          52
+        ],
+        [
+          55,
+          37
+        ],
+        [
+          53,
+          26
+        ],
+        [
+          49,
+          20
+        ],
+        [
+          44,
+          20
+        ],
+        [
+          41,
+          25
+        ],
+        [
+          40,
+          35
+        ],
+        [
+          40,
+          52
+        ],
+        [
+          40,
+          72
+        ],
+        [
+          40,
+          92
+        ],
+        [
+          40,
+          105
+        ],
+        [
+          42,
+          111
+        ],
+        [
+          47,
+          113
+        ],
+        [
+          51,
+          111
+        ],
+        [
+          53,
+          109
+        ],
+        [
+          66,
+          71
+        ],
+        [
+          74,
+          66
+        ],
+        [
+          86,
+          67
+        ],
+        [
+          96,
+          78
+        ],
+        [
+          89,
+          74
+        ],
+        [
+          80,
+          73
+        ],
+        [
+          73,
+          76
+        ],
+        [
+          69,
+          82
+        ],
+        [
+          68,
+          90
+        ],
+        [
+          69,
+          98
+        ],
+        [
+          72,
+          105
+        ],
+        [
+          78,
+          109
+        ],
+        [
+          84,
+          109
+        ],
+        [
+          90,
+          106
+        ],
+        [
+          95,
+          100
+        ],
+        [
+          97,
+          92
+        ],
+        [
+          98,
+          82
+        ],
+        [
+          98,
+          73
+        ],
+        [
+          98,
+          84
+        ],
+        [
+          98,
+          96
+        ],
+        [
+          98,
+          105
+        ],
+        [
+          100,
+          111
+        ],
+        [
+          105,
+          112
+        ],
+        [
+          110,
+          109
+        ]
+      ]
+    ],
+    "le": [
+      [
+        [
+          20,
+          112
+        ],
+        [
+          27,
+          110
+        ],
+        [
+          33,
+          105
+        ],
+        [
+          38,
+          97
+        ],
+        [
+          44,
+          85
+        ],
+        [
+          49,
+          69
+        ],
+        [
+          53,
+          52
+        ],
+        [
+          55,
+          37
+        ],
+        [
+          53,
+          26
+        ],
+        [
+          49,
+          20
+        ],
+        [
+          44,
+          20
+        ],
+        [
+          41,
+          25
+        ],
+        [
+          40,
+          35
+        ],
+        [
+          40,
+          52
+        ],
+        [
+          40,
+          72
+        ],
+        [
+          40,
+          92
+        ],
+        [
+          40,
+          105
+        ],
+        [
+          42,
+          111
+        ],
+        [
+          47,
+          113
+        ],
+        [
+          51,
+          111
+        ],
+        [
+          53,
+          109
+        ],
+        [
+          55,
+          113
+        ],
+        [
+          63,
+          112
+        ],
+        [
+          69,
+          109
+        ],
+        [
+          75,
+          105
+        ],
+        [
+          81,
+          99
+        ],
+        [
+          86,
+          92
+        ],
+        [
+          88,
+          84
+        ],
+        [
+          87,
+          78
+        ],
+        [
+          83,
+          74
+        ],
+        [
+          77,
+          72
+        ],
+        [
+          72,
+          74
+        ],
+        [
+          68,
+          80
+        ],
+        [
+          67,
+          88
+        ],
+        [
+          69,
+          96
+        ],
+        [
+          73,
+          103
+        ],
+        [
+          79,
+          109
+        ],
+        [
+          85,
+          112
+        ],
+        [
+          91,
+          111
+        ],
+        [
+          95,
+          108
+        ],
+        [
+          99,
+          104
+        ]
+      ]
+    ],
+    "li": [
+      [
+        [
+          20,
+          112
+        ],
+        [
+          27,
+          110
+        ],
+        [
+          33,
+          105
+        ],
+        [
+          38,
+          97
+        ],
+        [
+          44,
+          85
+        ],
+        [
+          49,
+          69
+        ],
+        [
+          53,
+          52
+        ],
+        [
+          55,
+          37
+        ],
+        [
+          53,
+          26
+        ],
+        [
+          49,
+          20
+        ],
+        [
+          44,
+          20
+        ],
+        [
+          41,
+          25
+        ],
+        [
+          40,
+          35
+        ],
+        [
+          40,
+          52
+        ],
+        [
+          40,
+          72
+        ],
+        [
+          40,
+          92
+        ],
+        [
+          40,
+          105
+        ],
+        [
+          42,
+          111
+        ],
+        [
+          47,
+          113
+        ],
+        [
+          51,
+          111
+        ],
+        [
+          53,
+          109
+        ],
+        [
+          70,
+          73
+        ],
+        [
+          70,
+          84
+        ],
+        [
+          70,
+          96
+        ],
+        [
+          70,
+          104
+        ],
+        [
+          72,
+          110
+        ],
+        [
+          76,
+          111
+        ],
+        [
+          80,
+          109
+        ],
+        [
+          82,
+          107
+        ]
+      ],
+      [
+        [
+          71,
+          53
+        ]
+      ]
+    ],
+    "lo": [
+      [
+        [
+          20,
+          112
+        ],
+        [
+          27,
+          110
+        ],
+        [
+          33,
+          105
+        ],
+        [
+          38,
+          97
+        ],
+        [
+          44,
+          85
+        ],
+        [
+          49,
+          69
+        ],
+        [
+          53,
+          52
+        ],
+        [
+          55,
+          37
+        ],
+        [
+          53,
+          26
+        ],
+        [
+          49,
+          20
+        ],
+        [
+          44,
+          20
+        ],
+        [
+          41,
+          25
+        ],
+        [
+          40,
+          35
+        ],
+        [
+          40,
+          52
+        ],
+        [
+          40,
+          72
+        ],
+        [
+          40,
+          92
+        ],
+        [
+          40,
+          105
+        ],
+        [
+          42,
+          111
+        ],
+        [
+          47,
+          113
+        ],
+        [
+          51,
+          111
+        ],
+        [
+          53,
+          109
+        ],
+        [
+          64,
+          76
+        ],
+        [
+          69,
+          68
+        ],
+        [
+          77,
+          67
+        ],
+        [
+          84,
+          73
+        ],
+        [
+          75,
+          76
+        ],
+        [
+          69,
+          84
+        ],
+        [
+          67,
+          94
+        ],
+        [
+          69,
+          104
+        ],
+        [
+          75,
+          111
+        ],
+        [
+          84,
+          114
+        ],
+        [
+          92,
+          111
+        ],
+        [
+          98,
+          104
+        ],
+        [
+          100,
+          94
+        ],
+        [
+          98,
+          84
+        ],
+        [
+          93,
+          77
+        ],
+        [
+          85,
+          74
+        ],
+        [
+          78,
+          77
+        ],
+        [
+          77,
+          82
+        ],
+        [
+          83,
+          86
+        ],
+        [
+          91,
+          85
+        ],
+        [
+          99,
+          82
+        ],
+        [
+          108,
+          77
+        ]
+      ]
+    ],
+    "lu": [
+      [
+        [
+          20,
+          112
+        ],
+        [
+          27,
+          110
+        ],
+        [
+          33,
+          105
+        ],
+        [
+          38,
+          97
+        ],
+        [
+          44,
+          85
+        ],
+        [
+          49,
+          69
+        ],
+        [
+          53,
+          52
+        ],
+        [
+          55,
+          37
+        ],
+        [
+          53,
+          26
+        ],
+        [
+          49,
+          20
+        ],
+        [
+          44,
+          20
+        ],
+        [
+          41,
+          25
+        ],
+        [
+          40,
+          35
+        ],
+        [
+          40,
+          52
+        ],
+        [
+          40,
+          72
+        ],
+        [
+          40,
+          92
+        ],
+        [
+          40,
+          105
+        ],
+        [
+          42,
+          111
+        ],
+        [
+          47,
+          113
+        ],
+        [
+          51,
+          111
+        ],
+        [
+          53,
+          109
+        ],
+        [
+          72,
+          73
+        ],
+        [
+          72,
+          86
+        ],
+        [
+          72,
+          99
+        ],
+        [
+          74,
+          106
+        ],
+        [
+          80,
+          111
+        ],
+        [
+          86,
+          111
+        ],
+        [
+          92,
+          107
+        ],
+        [
+          96,
+          100
+        ],
+        [
+          98,
+          90
+        ],
+        [
+          100,
+          79
+        ],
+        [
+          100,
+          73
+        ],
+        [
+          100,
+          86
+        ],
+        [
+          100,
+          98
+        ],
+        [
+          100,
+          106
+        ],
+        [
+          102,
+          112
+        ],
+        [
+          106,
+          112
+        ],
+        [
+          112,
+          108
+        ]
+      ]
+    ],
+    "ma": [
+      [
+        [
+          20,
+          39
+        ],
+        [
+          21,
+          32
+        ],
+        [
+          26,
+          28
+        ],
+        [
+          31,
+          29
+        ],
+        [
+          34,
+          34
+        ],
+        [
+          35,
+          44
+        ],
+        [
+          35,
+          56
+        ],
+        [
+          35,
+          68
+        ],
+        [
+          35,
+          56
+        ],
+        [
+          35,
+          44
+        ],
+        [
+          37,
+          38
+        ],
+        [
+          42,
+          32
+        ],
+        [
+          49,
+          29
+        ],
+        [
+          56,
+          30
+        ],
+        [
+          61,
+          35
+        ],
+        [
+          63,
+          42
+        ],
+        [
+          63,
+          55
+        ],
+        [
+          63,
+          68
+        ],
+        [
+          63,
+          55
+        ],
+        [
+          63,
+          42
+        ],
+        [
+          65,
+          37
+        ],
+        [
+          70,
+          31
+        ],
+        [
+          77,
+          29
+        ],
+        [
+          84,
+          30
+        ],
+        [
+          89,
+          35
+        ],
+        [
+          91,
+          42
+        ],
+        [
+          91,
+          54
+        ],
+        [
+          91,
+          62
+        ],
+        [
+          93,
+          67
+        ],
+        [
+          98,
+          68
+        ],
+        [
+          102,
+          66
+        ],
+        [
+          104,
+          64
+        ],
+        [
+          111,
+          25
+        ],
+        [
+          119,
+          20
+        ],
+        [
+          131,
+          21
+        ],
+        [
+          141,
+          32
+        ],
+        [
+          134,
+          28
+        ],
+        [
+          125,
+          27
+        ],
+        [
+          118,
+          30
+        ],
+        [
+          114,
+          36
+        ],
+        [
+          113,
+          44
+        ],
+        [
+          114,
+          52
+        ],
+        [
+          117,
+          59
+        ],
+        [
+          123,
+          63
+        ],
+        [
+          129,
+          63
+        ],
+        [
+          135,
+          60
+        ],
+        [
+          140,
+          54
+        ],
+        [
+          142,
+          46
+        ],
+        [
+          143,
+          36
+        ],
+        [
+          143,
+          27
+        ],
+        [
+          143,
+          38
+        ],
+        [
+          143,
+          50
+        ],
+        [
+          143,
+          59
+        ],
+        [
+          145,
+          65
+        ],
+        [
+          150,
+          66
+        ],
+        [
+          155,
+          63
+        ]
+      ]
+    ],
+    "me": [
+      [
+        [
+          20,
+          33
+        ],
+        [
+          21,
+          26
+        ],
+        [
+          26,
+          22
+        ],
+        [
+          31,
+          23
+        ],
+        [
+          34,
+          28
+        ],
+        [
+          35,
+          38
+        ],
+        [
+          35,
+          50
+        ],
+        [
+          35,
+          62
+        ],
+        [
+          35,
+          50
+        ],
+        [
+          35,
+          38
+        ],
+        [
+          37,
+          32
+        ],
+        [
+          42,
+          26
+        ],
+        [
+          49,
+          23
+        ],
+        [
+          56,
+          24
+        ],
+        [
+          61,
+          29
+        ],
+        [
+          63,
+          36
+        ],
+        [
+          63,
+          49
+        ],
+        [
+          63,
+          62
+        ],
+        [
+          63,
+          49
+        ],
+        [
+          63,
+          36
+        ],
+        [
+          65,
+          31
+        ],
+        [
+          70,
+          25
+        ],
+        [
+          77,
+          23
+        ],
+        [
+          84,
+          24
+        ],
+        [
+          89,
+          29
+        ],
+        [
+          91,
+          36
+        ],
+        [
+          91,
+          48
+        ],
+        [
+          91,
+          56
+        ],
+        [
+          93,
+          61
+        ],
+        [
+          98,
+          62
+        ],
+        [
+          102,
+          60
+        ],
+        [
+          104,
+          58
+        ],
+        [
+          100,
+          61
+        ],
+        [
+          108,
+          60
+        ],
+        [
+          114,
+          57
+        ],
+        [
+          120,
+          53
+        ],
+        [
+          126,
+          47
+        ],
+        [
+          131,
+          40
+        ],
+        [
+          133,
+          32
+        ],
+        [
+          132,
+          26
+        ],
+        [
+          128,
+          22
+        ],
+        [
+          122,
+          20
+        ],
+        [
+          117,
+          22
+        ],
+        [
+          113,
+          28
+        ],
+        [
+          112,
+          36
+        ],
+        [
+          114,
+          44
+        ],
+        [
+          118,
+          51
+        ],
+        [
+          124,
+          57
+        ],
+        [
+          130,
+          60
+        ],
+        [
+          136,
+          59
+        ],
+        [
+          140,
+          56
+        ],
+        [
+          144,
+          52
+        ]
+      ]
+    ],
+    "mi": [
+      [
+        [
+          20,
+          52
+        ],
+        [
+          21,
+          45
+        ],
+        [
+          26,
+          41
+        ],
+        [
+          31,
+          42
+        ],
+        [
+          34,
+          47
+        ],
+        [
+          35,
+          57
+        ],
+        [
+          35,
+          69
+        ],
+        [
+          35,
+          81
+        ],
+        [
+          35,
+          69
+        ],
+        [
+          35,
+          57
+        ],
+        [
+          37,
+          51
+        ],
+        [
+          42,
+          45
+        ],
+        [
+          49,
+          42
+        ],
+        [
+          56,
+          43
+        ],
+        [
+          61,
+          48
+        ],
+        [
+          63,
+          55
+        ],
+        [
+          63,
+          68
+        ],
+        [
+          63,
+          81
+        ],
+        [
+          63,
+          68
+        ],
+        [
+          63,
+          55
+        ],
+        [
+          65,
+          50
+        ],
+        [
+          70,
+          44
+        ],
+        [
+          77,
+          42
+        ],
+        [
+          84,
+          43
+        ],
+        [
+          89,
+          48
+        ],
+        [
+          91,
+          55
+        ],
+        [
+          91,
+          67
+        ],
+        [
+          91,
+          75
+        ],
+        [
+          93,
+          80
+        ],
+        [
+          98,
+          81
+        ],
+        [
+          102,
+          79
+        ],
+        [
+          104,
+          77
+        ],
+        [
+          116,
+          40
+        ],
+        [
+          116,
+          51
+        ],
+        [
+          116,
+          63
+        ],
+        [
+          116,
+          71
+        ],
+        [
+          118,
+          77
+        ],
+        [
+          122,
+          78
+        ],
+        [
+          126,
+          76
+        ],
+        [
+          128,
+          74
+        ]
+      ],
+      [
+        [
+          116,
+          20
+        ]
+      ]
+    ],
+    "mo": [
+      [
+        [
+          20,
+          38
+        ],
+        [
+          21,
+          31
+        ],
+        [
+          26,
+          27
+        ],
+        [
+          31,
+          28
+        ],
+        [
+          34,
+          33
+        ],
+        [
+          35,
+          43
+        ],
+        [
+          35,
+          55
+        ],
+        [
+          35,
+          67
+        ],
+        [
+          35,
+          55
+        ],
+        [
+          35,
+          43
+        ],
+        [
+          37,
+          37
+        ],
+        [
+          42,
+          31
+        ],
+        [
+          49,
+          28
+        ],
+        [
+          56,
+          29
+        ],
+        [
+          61,
+          34
+        ],
+        [
+          63,
+          41
+        ],
+        [
+          63,
+          54
+        ],
+        [
+          63,
+          67
+        ],
+        [
+          63,
+          54
+        ],
+        [
+          63,
+          41
+        ],
+        [
+          65,
+          36
+        ],
+        [
+          70,
+          30
+        ],
+        [
+          77,
+          28
+        ],
+        [
+          84,
+          29
+        ],
+        [
+          89,
+          34
+        ],
+        [
+          91,
+          41
+        ],
+        [
+          91,
+          53
+        ],
+        [
+          91,
+          61
+        ],
+        [
+          93,
+          66
+        ],
+        [
+          98,
+          67
+        ],
+        [
+          102,
+          65
+        ],
+        [
+          104,
+          63
+        ],
+        [
+          110,
+          29
+        ],
+        [
+          115,
+          21
+        ],
+        [
+          123,
+          20
+        ],
+        [
+          130,
+          26
+        ],
+        [
+          121,
+          29
+        ],
+        [
+          115,
+          37
+        ],
+        [
+          113,
+          47
+        ],
+        [
+          115,
+          57
+        ],
+        [
+          121,
+          64
+        ],
+        [
+          130,
+          67
+        ],
+        [
+          138,
+          64
+        ],
+        [
+          144,
+          57
+        ],
+        [
+          146,
+          47
+        ],
+        [
+          144,
+          37
+        ],
+        [
+          139,
+          30
+        ],
+        [
+          131,
+          27
+        ],
+        [
+          124,
+          30
+        ],
+        [
+          123,
+          35
+        ],
+        [
+          129,
+          39
+        ],
+        [
+          137,
+          38
+        ],
+        [
+          145,
+          35
+        ],
+        [
+          154,
+          30
+        ]
+      ]
+    ],
+    "mu": [
+      [
+        [
+          20,
+          32
+        ],
+        [
+          21,
+          25
+        ],
+        [
+          26,
+          21
+        ],
+        [
+          31,
+          22
+        ],
+        [
+          34,
+          27
+        ],
+        [
+          35,
+          37
+        ],
+        [
+          35,
+          49
+        ],
+        [
+          35,
+          61
+        ],
+        [
+          35,
+          49
+        ],
+        [
+          35,
+          37
+        ],
+        [
+          37,
+          31
+        ],
+        [
+          42,
+          25
+        ],
+        [
+          49,
+          22
+        ],
+        [
+          56,
+          23
+        ],
+        [
+          61,
+          28
+        ],
+        [
+          63,
+          35
+        ],
+        [
+          63,
+          48
+        ],
+        [
+          63,
+          61
+        ],
+        [
+          63,
+          48
+        ],
+        [
+          63,
+          35
+        ],
+        [
+          65,
+          30
+        ],
+        [
+          70,
+          24
+        ],
+        [
+          77,
+          22
+        ],
+        [
+          84,
+          23
+        ],
+        [
+          89,
+          28
+        ],
+        [
+          91,
+          35
+        ],
+        [
+          91,
+          47
+        ],
+        [
+          91,
+          55
+        ],
+        [
+          93,
+          60
+        ],
+        [
+          98,
+          61
+        ],
+        [
+          102,
+          59
+        ],
+        [
+          104,
+          57
+        ],
+        [
+          117,
+          20
+        ],
+        [
+          117,
+          33
+        ],
+        [
+          117,
+          46
+        ],
+        [
+          119,
+          53
+        ],
+        [
+          125,
+          58
+        ],
+        [
+          132,
+          58
+        ],
+        [
+          138,
+          54
+        ],
+        [
+          142,
+          47
+        ],
+        [
+          144,
+          37
+        ],
+        [
+          145,
+          26
+        ],
+        [
+          145,
+          20
+        ],
+        [
+          145,
+          33
+        ],
+        [
+          145,
+          45
+        ],
+        [
+          145,
+          53
+        ],
+        [
+          147,
+          59
+        ],
+        [
+          152,
+          59
+        ],
+        [
+          157,
+          55
+        ]
+      ]
+    ],
+    "pa": [
+      [
+        [
+          20,
+          28
+        ],
+        [
+          20,
+          50
+        ],
+        [
+          20,
+          74
+        ],
+        [
+          20,
+          100
+        ],
+        [
+          20,
+          122
+        ],
+        [
+          20,
+          100
+        ],
+        [
+          20,
+          74
+        ],
+        [
+          20,
+          52
+        ],
+        [
+          21,
+          42
+        ],
+        [
+          25,
+          36
+        ],
+        [
+          31,
+          32
+        ],
+        [
+          38,
+          30
+        ],
+        [
+          45,
+          34
+        ],
+        [
+          48,
+          40
+        ],
+        [
+          48,
+          48
+        ],
+        [
+          46,
+          56
+        ],
+        [
+          46,
+          62
+        ],
+        [
+          50,
+          66
+        ],
+        [
+          55,
+          66
+        ],
+        [
+          60,
+          64
+        ],
+        [
+          67,
+          25
+        ],
+        [
+          75,
+          20
+        ],
+        [
+          87,
+          21
+        ],
+        [
+          97,
+          32
+        ],
+        [
+          90,
+          28
+        ],
+        [
+          81,
+          27
+        ],
+        [
+          74,
+          30
+        ],
+        [
+          70,
+          36
+        ],
+        [
+          69,
+          44
+        ],
+        [
+          70,
+          52
+        ],
+        [
+          73,
+          59
+        ],
+        [
+          79,
+          63
+        ],
+        [
+          85,
+          63
+        ],
+        [
+          91,
+          60
+        ],
+        [
+          96,
+          54
+        ],
+        [
+          98,
+          46
+        ],
+        [
+          99,
+          36
+        ],
+        [
+          99,
+          27
+        ],
+        [
+          99,
+          38
+        ],
+        [
+          99,
+          50
+        ],
+        [
+          99,
+          59
+        ],
+        [
+          101,
+          65
+        ],
+        [
+          106,
+          66
+        ],
+        [
+          111,
+          63
+        ]
+      ]
+    ],
+    "pe": [
+      [
+        [
+          20,
+          22
+        ],
+        [
+          20,
+          44
+        ],
+        [
+          20,
+          68
+        ],
+        [
+          20,
+          94
+        ],
+        [
+          20,
+          116
+        ],
+        [
+          20,
+          94
+        ],
+        [
+          20,
+          68
+        ],
+        [
+          20,
+          46
+        ],
+        [
+          21,
+          36
+        ],
+        [
+          25,
+          30
+        ],
+        [
+          31,
+          26
+        ],
+        [
+          38,
+          24
+        ],
+        [
+          45,
+          28
+        ],
+        [
+          48,
+          34
+        ],
+        [
+          48,
+          42
+        ],
+        [
+          46,
+          50
+        ],
+        [
+          46,
+          56
+        ],
+        [
+          50,
+          60
+        ],
+        [
+          55,
+          60
+        ],
+        [
+          60,
+          58
+        ],
+        [
+          56,
+          61
+        ],
+        [
+          64,
+          60
+        ],
+        [
+          70,
+          57
+        ],
+        [
+          76,
+          53
+        ],
+        [
+          82,
+          47
+        ],
+        [
+          87,
+          40
+        ],
+        [
+          89,
+          32
+        ],
+        [
+          88,
+          26
+        ],
+        [
+          84,
+          22
+        ],
+        [
+          78,
+          20
+        ],
+        [
+          73,
+          22
+        ],
+        [
+          69,
+          28
+        ],
+        [
+          68,
+          36
+        ],
+        [
+          70,
+          44
+        ],
+        [
+          74,
+          51
+        ],
+        [
+          80,
+          57
+        ],
+        [
+          86,
+          60
+        ],
+        [
+          92,
+          59
+        ],
+        [
+          96,
+          56
+        ],
+        [
+          100,
+          52
+        ]
+      ]
+    ],
+    "pi": [
+      [
+        [
+          20,
+          40
+        ],
+        [
+          20,
+          62
+        ],
+        [
+          20,
+          87
+        ],
+        [
+          20,
+          112
+        ],
+        [
+          20,
+          134
+        ],
+        [
+          20,
+          112
+        ],
+        [
+          20,
+          87
+        ],
+        [
+          20,
+          65
+        ],
+        [
+          21,
+          55
+        ],
+        [
+          25,
+          48
+        ],
+        [
+          31,
+          44
+        ],
+        [
+          38,
+          43
+        ],
+        [
+          45,
+          46
+        ],
+        [
+          48,
+          52
+        ],
+        [
+          48,
+          60
+        ],
+        [
+          46,
+          68
+        ],
+        [
+          46,
+          75
+        ],
+        [
+          50,
+          79
+        ],
+        [
+          55,
+          79
+        ],
+        [
+          60,
+          76
+        ],
+        [
+          72,
+          40
+        ],
+        [
+          72,
+          51
+        ],
+        [
+          72,
+          63
+        ],
+        [
+          72,
+          71
+        ],
+        [
+          74,
+          77
+        ],
+        [
+          78,
+          78
+        ],
+        [
+          82,
+          76
+        ],
+        [
+          84,
+          74
+        ]
+      ],
+      [
+        [
+          73,
+          20
+        ]
+      ]
+    ],
+    "po": [
+      [
+        [
+          20,
+          26
+        ],
+        [
+          20,
+          48
+        ],
+        [
+          20,
+          73
+        ],
+        [
+          20,
+          98
+        ],
+        [
+          20,
+          120
+        ],
+        [
+          20,
+          98
+        ],
+        [
+          20,
+          73
+        ],
+        [
+          20,
+          51
+        ],
+        [
+          21,
+          41
+        ],
+        [
+          25,
+          34
+        ],
+        [
+          31,
+          30
+        ],
+        [
+          38,
+          29
+        ],
+        [
+          45,
+          32
+        ],
+        [
+          48,
+          38
+        ],
+        [
+          48,
+          46
+        ],
+        [
+          46,
+          54
+        ],
+        [
+          46,
+          61
+        ],
+        [
+          50,
+          65
+        ],
+        [
+          55,
+          65
+        ],
+        [
+          60,
+          62
+        ],
+        [
+          66,
+          29
+        ],
+        [
+          71,
+          21
+        ],
+        [
+          79,
+          20
+        ],
+        [
+          86,
+          26
+        ],
+        [
+          77,
+          29
+        ],
+        [
+          71,
+          37
+        ],
+        [
+          69,
+          47
+        ],
+        [
+          71,
+          57
+        ],
+        [
+          77,
+          64
+        ],
+        [
+          86,
+          67
+        ],
+        [
+          94,
+          64
+        ],
+        [
+          100,
+          57
+        ],
+        [
+          102,
+          47
+        ],
+        [
+          100,
+          37
+        ],
+        [
+          95,
+          30
+        ],
+        [
+          87,
+          27
+        ],
+        [
+          80,
+          30
+        ],
+        [
+          79,
+          35
+        ],
+        [
+          85,
+          39
+        ],
+        [
+          93,
+          38
+        ],
+        [
+          101,
+          35
+        ],
+        [
+          110,
+          30
+        ]
+      ]
+    ],
+    "pu": [
+      [
+        [
+          20,
+          20
+        ],
+        [
+          20,
+          42
+        ],
+        [
+          20,
+          67
+        ],
+        [
+          20,
+          92
+        ],
+        [
+          20,
+          114
+        ],
+        [
+          20,
+          92
+        ],
+        [
+          20,
+          67
+        ],
+        [
+          20,
+          45
+        ],
+        [
+          21,
+          35
+        ],
+        [
+          25,
+          28
+        ],
+        [
+          31,
+          24
+        ],
+        [
+          38,
+          23
+        ],
+        [
+          45,
+          26
+        ],
+        [
+          48,
+          32
+        ],
+        [
+          48,
+          40
+        ],
+        [
+          46,
+          48
+        ],
+        [
+          46,
+          55
+        ],
+        [
+          50,
+          59
+        ],
+        [
+          55,
+          59
+        ],
+        [
+          60,
+          56
+        ],
+        [
+          73,
+          20
+        ],
+        [
+          73,
+          33
+        ],
+        [
+          73,
+          46
+        ],
+        [
+          75,
+          53
+        ],
+        [
+          81,
+          58
+        ],
+        [
+          88,
+          58
+        ],
+        [
+          94,
+          54
+        ],
+        [
+          98,
+          47
+        ],
+        [
+          100,
+          37
+        ],
+        [
+          101,
+          26
+        ],
+        [
+          101,
+          20
+        ],
+        [
+          101,
+          33
+        ],
+        [
+          101,
+          45
+        ],
+        [
+          101,
+          53
+        ],
+        [
+          103,
+          59
+        ],
+        [
+          108,
+          59
+        ],
+        [
+          113,
+          55
+        ]
+      ]
+    ]
   }
 }

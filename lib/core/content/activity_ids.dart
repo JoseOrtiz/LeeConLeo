@@ -5,6 +5,9 @@ abstract final class ActivityIds {
   static const meet = 'letter.meet';
   static const trace = 'letter.trace';
   static const find = 'letter.find';
+  static const syllableMeet = 'syllables.meet';
+  static const syllableTrace = 'syllables.trace';
+  static const syllableFind = 'syllables.find';
   static const startsWith = 'syllables.starts_with';
   static const endsWith = 'syllables.ends_with';
   static const buildWord = 'syllables.build_word';
@@ -16,6 +19,9 @@ abstract final class ActivityIds {
     meet,
     trace,
     find,
+    syllableMeet,
+    syllableTrace,
+    syllableFind,
     startsWith,
     endsWith,
     buildWord,

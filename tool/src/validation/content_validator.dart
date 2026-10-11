@@ -3,11 +3,12 @@ import 'package:lee_con_leo/core/content/models/content_bundle.dart';
 import 'rules/known_activities_rule.dart';
 import 'rules/letter_steps_rule.dart';
 import 'rules/path_images_rule.dart';
+import 'rules/picture_sound_steps_rule.dart';
 import 'rules/place_size_rule.dart';
 import 'rules/prompt_clips_rule.dart';
 import 'rules/stage_tints_rule.dart';
-import 'rules/starts_with_steps_rule.dart';
 import 'rules/step_has_words_rule.dart';
+import 'rules/syllable_steps_rule.dart';
 import 'rules/syllables_match_text_rule.dart';
 import 'rules/unique_ids_rule.dart';
 import 'rules/word_assets_rule.dart';
@@ -28,7 +29,8 @@ class ContentValidator {
     StepHasWordsRule(),
     PlaceSizeRule(),
     LetterStepsRule(),
-    StartsWithStepsRule(),
+    SyllableStepsRule(),
+    PictureSoundStepsRule(),
   ];
 
   final List<ValidationRule> rules;

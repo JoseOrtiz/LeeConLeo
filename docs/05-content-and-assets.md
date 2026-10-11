@@ -11,6 +11,7 @@ content/
   words.yaml         the word bank
   sounds.yaml        sound keys and grapheme → sound rules (Chilean Spanish)
   letters/           stroke data for tracing, one file per letter (both cases)
+  syllables/         stroke data for tracing a joined syllable, one file per syllable
   prompts.yaml       Leo's spoken phrases (instructions, feedback, hints)
   CREDITS.yaml       every third-party asset: source, author, license
 ```
@@ -85,6 +86,22 @@ Each stroke is a list of `[x, y]` points (y grows downwards) in the order the fi
 moves, and the strokes are listed in writing order. A stroke with one point is a dot
 (the dot of the *i*). The app smooths the points into curves and scales the letter to
 the screen, so the units don't matter. Draw the shapes to match Playwrite Chile.
+
+### `syllables/ma.yaml`
+
+```yaml
+strokes:
+  - [[20, 52], [21, 45], ..., [118, 77], [122, 78]]
+```
+
+A lowercase syllable written in joined cursive: the letter strokes in one go, with the
+join from the consonant into the vowel (over the top of *a* and *o*). Only the dot
+of the *i* is a separate stroke. The files were built by placing the letter strokes
+at Playwrite Chile's letter positions, then checked over the font by eye.
+
+A syllable step lists its syllables in `sounds` (`[ma, me, mi, mo, mu]`). *Ends with*
+asks only the syllables that some picture ends with, so a step can use it even when
+words ending in *mu* or *pi* don't exist.
 
 Activities pull their items from the word bank using the step's target. Adding a
 word to `words.yaml` automatically makes it available to every activity where it

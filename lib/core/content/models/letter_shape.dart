@@ -13,16 +13,16 @@ class LetterShape {
   const LetterShape({required this.lower, required this.upper});
 
   factory LetterShape.fromJson(Map<String, dynamic> json) =>
-      LetterShape(lower: _strokes(json['lower']), upper: _strokes(json['upper']));
+      LetterShape(lower: parseStrokes(json['lower']), upper: parseStrokes(json['upper']));
 
   final List<Stroke> lower;
   final List<Stroke> upper;
 
   List<Stroke> strokes(LetterCase letterCase) => letterCase == LetterCase.lower ? lower : upper;
 
-  Map<String, dynamic> toJson() => {'lower': _encode(lower), 'upper': _encode(upper)};
+  Map<String, dynamic> toJson() => {'lower': encodeStrokes(lower), 'upper': encodeStrokes(upper)};
 
-  static List<Stroke> _strokes(Object? json) => [
+  static List<Stroke> parseStrokes(Object? json) => [
     for (final stroke in json as List? ?? const [])
       [
         for (final point in stroke as List)
@@ -30,7 +30,7 @@ class LetterShape {
       ],
   ];
 
-  static List<List<List<num>>> _encode(List<Stroke> strokes) => [
+  static List<List<List<num>>> encodeStrokes(List<Stroke> strokes) => [
     for (final stroke in strokes)
       [
         for (final point in stroke) [_compact(point.x), _compact(point.y)],

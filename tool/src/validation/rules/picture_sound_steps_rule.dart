@@ -1,0 +1,71 @@
+import 'package:lee_con_leo/core/content/models/content_bundle.dart';
+import 'package:lee_con_leo/core/content/models/path_step.dart';
+import 'package:lee_con_leo/core/content/sound_position.dart';
+
+import '../validation_issue.dart';
+import '../validation_rule.dart';
+
+class PictureSoundStepsRule implements ValidationRule {
+  const PictureSoundStepsRule({this.distractors = 3});
+
+  final int distractors;
+
+  @override
+  Iterable<ValidationIssue> check(ContentBundle bundle) sync* {
+    final pictured = SoundPosition.pictured(bundle.words);
+    final used = SoundPosition.values.where(
+      (position) => bundle.steps.any((step) => step.activities.contains(position.activityId)),
+    );
+    if (used.isEmpty) return;
+    for (final word in pictured.where((word) => word.audio == null)) {
+      yield ValidationIssue.error('"${word.text}": a word with a picture needs audio');
+    }
+    for (final position in used) {
+      for (final step in bundle.steps.where(
+        (step) => step.activities.contains(position.activityId),
+      )) {
+        yield* _checkStep(bundle, step, position);
+      }
+    }
+  }
+
+  Iterable<ValidationIssue> _checkStep(
+    ContentBundle bundle,
+    PathStep step,
+    SoundPosition position,
+  ) sync* {
+    final pictured = SoundPosition.pictured(bundle.words);
+    final label = position == SoundPosition.start ? 'starts' : 'ends';
+    if (step.sounds.isEmpty) {
+      yield ValidationIssue.error('step "${step.id}": ${position.activityId} needs a sound');
+      return;
+    }
+    final asked = <String>[];
+    for (final sound in step.sounds) {
+      final matches = pictured.where((word) => position.matches(word, sound)).length;
+      if (matches == 0) {
+        if (position == SoundPosition.start) {
+          yield ValidationIssue.error(
+            'step "${step.id}": no word with a picture $label with "$sound"',
+          );
+        }
+        continue;
+      }
+      asked.add(sound);
+      final prompt = position.promptId(sound);
+      if (!bundle.prompts.contains(prompt)) {
+        yield ValidationIssue.error('step "${step.id}": missing prompt "$prompt"');
+      }
+      if (pictured.length - matches < distractors) {
+        yield ValidationIssue.error(
+          'step "${step.id}": fewer than $distractors pictures that do not $label with "$sound"',
+        );
+      }
+    }
+    if (asked.isEmpty && position == SoundPosition.end) {
+      yield ValidationIssue.error(
+        'step "${step.id}": no word with a picture $label with any of ${step.sounds.join(', ')}',
+      );
+    }
+  }
+}

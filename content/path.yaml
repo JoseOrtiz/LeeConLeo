@@ -55,18 +55,18 @@
       activities: [letter.meet, letter.trace, letter.find]
     - id: ma
       sounds: [ma, me, mi, mo, mu]
-      activities: [syllables.starts_with]
+      activities: [syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with]
     - id: p
       grapheme: p
       word: pelota
       activities: [letter.meet, letter.trace, letter.find]
     - id: pa
       sounds: [pa, pe, pi, po, pu]
-      activities: [syllables.starts_with]
+      activities: [syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with]
     - id: l
       grapheme: l
       word: luna
       activities: [letter.meet, letter.trace, letter.find]
     - id: la
       sounds: [la, le, li, lo, lu]
-      activities: [syllables.starts_with]
+      activities: [syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with]

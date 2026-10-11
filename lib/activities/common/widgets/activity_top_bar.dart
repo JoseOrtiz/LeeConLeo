@@ -31,14 +31,17 @@ class ActivityTopBar extends StatelessWidget {
             icon: const Icon(Icons.home_rounded),
           ),
           Expanded(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              spacing: 4,
-              children: [
-                if (showsProgress)
-                  for (var i = 0; i < total; i++)
-                    ProgressStar(key: ValueKey('star-$i'), isEarned: i < completed),
-              ],
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                spacing: 4,
+                children: [
+                  if (showsProgress)
+                    for (var i = 0; i < total; i++)
+                      ProgressStar(key: ValueKey('star-$i'), isEarned: i < completed),
+                ],
+              ),
             ),
           ),
           IconButton.filled(
