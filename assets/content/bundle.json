@@ -2362,6 +2362,19 @@
       ]
     },
     {
+      "text": "mula",
+      "syllables": [
+        "mu",
+        "la"
+      ],
+      "sounds": [
+        "mu",
+        "la"
+      ],
+      "image": "words/mula.svg",
+      "audio": "words/mula.m4a"
+    },
+    {
       "text": "murciélago",
       "syllables": [
         "mur",
@@ -2626,7 +2639,9 @@
       "sounds": [
         "pa",
         "la"
-      ]
+      ],
+      "image": "words/pala.svg",
+      "audio": "words/pala.m4a"
     },
     {
       "text": "palmera",
@@ -2652,7 +2667,9 @@
         "pa",
         "lo",
         "ma"
-      ]
+      ],
+      "image": "words/paloma.svg",
+      "audio": "words/paloma.m4a"
     },
     {
       "text": "palta",
@@ -2709,7 +2726,9 @@
       "sounds": [
         "pa",
         "pa"
-      ]
+      ],
+      "image": "words/papa.svg",
+      "audio": "words/papa.m4a"
     },
     {
       "text": "papel",
@@ -2911,6 +2930,19 @@
       ]
     },
     {
+      "text": "pila",
+      "syllables": [
+        "pi",
+        "la"
+      ],
+      "sounds": [
+        "pi",
+        "la"
+      ],
+      "image": "words/pila.svg",
+      "audio": "words/pila.m4a"
+    },
+    {
       "text": "pincel",
       "syllables": [
         "pin",
@@ -3081,6 +3113,21 @@
       ],
       "image": "words/pollo.svg",
       "audio": "words/pollo.m4a"
+    },
+    {
+      "text": "pomelo",
+      "syllables": [
+        "po",
+        "me",
+        "lo"
+      ],
+      "sounds": [
+        "po",
+        "me",
+        "lo"
+      ],
+      "image": "words/pomelo.svg",
+      "audio": "words/pomelo.m4a"
     },
     {
       "text": "poroto",
@@ -4258,7 +4305,8 @@
             "syllables.trace",
             "syllables.find",
             "syllables.starts_with",
-            "syllables.ends_with"
+            "syllables.ends_with",
+            "syllables.build_word"
           ],
           "sounds": [
             "pa",
@@ -4285,7 +4333,8 @@
             "syllables.trace",
             "syllables.find",
             "syllables.starts_with",
-            "syllables.ends_with"
+            "syllables.ends_with",
+            "syllables.build_word"
           ],
           "sounds": [
             "la",
@@ -4579,6 +4628,9 @@
     "syllables.ends_with.intro": [
       "¡Escucha el final! Toca el dibujo que termina con el sonido que te digo."
     ],
+    "syllables.build_word.intro": [
+      "¡Ahora armemos palabras! Mira el dibujo y lleva cada pedacito a su lugar."
+    ],
     "syllables.meet.ma": [
       "La, eme, y la, a, juntas dicen, ma. ¡Toca, ma!"
     ],
@@ -4776,6 +4828,36 @@
     ],
     "syllables.ends_with.lo": [
       "¿Qué dibujo termina con, lo?"
+    ],
+    "syllables.build_word.mapa": [
+      "Arma la palabra, mapa."
+    ],
+    "syllables.build_word.papa": [
+      "Arma la palabra, papa."
+    ],
+    "syllables.build_word.puma": [
+      "Arma la palabra, puma."
+    ],
+    "syllables.build_word.lupa": [
+      "Arma la palabra, lupa."
+    ],
+    "syllables.build_word.ola": [
+      "Arma la palabra, ola."
+    ],
+    "syllables.build_word.pala": [
+      "Arma la palabra, pala."
+    ],
+    "syllables.build_word.paloma": [
+      "Arma la palabra, paloma."
+    ],
+    "syllables.build_word.pila": [
+      "Arma la palabra, pila."
+    ],
+    "syllables.build_word.mula": [
+      "Arma la palabra, mula."
+    ],
+    "syllables.build_word.pomelo": [
+      "Arma la palabra, pomelo."
     ]
   },
   "promptClips": {
@@ -4850,6 +4932,17 @@
     "spatial.up_down.down.0": "prompts/spatial.up_down.down.0.m4a",
     "spatial.up_down.intro.0": "prompts/spatial.up_down.intro.0.m4a",
     "spatial.up_down.up.0": "prompts/spatial.up_down.up.0.m4a",
+    "syllables.build_word.intro.0": "prompts/syllables.build_word.intro.0.m4a",
+    "syllables.build_word.lupa.0": "prompts/syllables.build_word.lupa.0.m4a",
+    "syllables.build_word.mapa.0": "prompts/syllables.build_word.mapa.0.m4a",
+    "syllables.build_word.mula.0": "prompts/syllables.build_word.mula.0.m4a",
+    "syllables.build_word.ola.0": "prompts/syllables.build_word.ola.0.m4a",
+    "syllables.build_word.pala.0": "prompts/syllables.build_word.pala.0.m4a",
+    "syllables.build_word.paloma.0": "prompts/syllables.build_word.paloma.0.m4a",
+    "syllables.build_word.papa.0": "prompts/syllables.build_word.papa.0.m4a",
+    "syllables.build_word.pila.0": "prompts/syllables.build_word.pila.0.m4a",
+    "syllables.build_word.pomelo.0": "prompts/syllables.build_word.pomelo.0.m4a",
+    "syllables.build_word.puma.0": "prompts/syllables.build_word.puma.0.m4a",
     "syllables.ends_with.intro.0": "prompts/syllables.ends_with.intro.0.m4a",
     "syllables.ends_with.la.0": "prompts/syllables.ends_with.la.0.m4a",
     "syllables.ends_with.lo.0": "prompts/syllables.ends_with.lo.0.m4a",

@@ -247,6 +247,9 @@
   image: words/mono.svg
   audio: words/mono.m4a
 - text: motocicleta
+- text: mula
+  image: words/mula.svg
+  audio: words/mula.m4a
 - text: murciélago
   image: words/murcielago.svg
   audio: words/murcielago.m4a
@@ -280,8 +283,12 @@
   audio: words/oveja.m4a
 - text: oído
 - text: pala
+  image: words/pala.svg
+  audio: words/pala.m4a
 - text: palmera
 - text: paloma
+  image: words/paloma.svg
+  audio: words/paloma.m4a
 - text: palta
   image: words/palta.svg
   audio: words/palta.m4a
@@ -289,6 +296,8 @@
 - text: panda
 - text: pantalón
 - text: papa
+  image: words/papa.svg
+  audio: words/papa.m4a
 - text: papel
 - text: paraguas
 - text: pato
@@ -314,6 +323,9 @@
 - text: pie
 - text: piedra
 - text: pierna
+- text: pila
+  image: words/pila.svg
+  audio: words/pila.m4a
 - text: pincel
 - text: pingüino
 - text: pino
@@ -336,6 +348,9 @@
 - text: pollo
   image: words/pollo.svg
   audio: words/pollo.m4a
+- text: pomelo
+  image: words/pomelo.svg
+  audio: words/pomelo.m4a
 - text: poroto
   image: words/poroto.svg
   audio: words/poroto.m4a

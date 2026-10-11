@@ -102,6 +102,9 @@ at Playwrite Chile's letter positions, then checked over the font by eye.
 A syllable step lists its syllables in `sounds` (`[ma, me, mi, mo, mu]`). *Ends with*
 asks only the syllables that some picture ends with, so a step can use it even when
 words ending in *mu* or *pi* don't exist.
+*Build the word* uses pictured words spelled exactly as they sound (*humo* is out
+because of the silent *h*), made only of syllables taught up to that step and with
+at least one of the step's own. Each needs a `syllables.build_word.<word>` phrase.
 
 Activities pull their items from the word bank using the step's target. Adding a
 word to `words.yaml` automatically makes it available to every activity where it

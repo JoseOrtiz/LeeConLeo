@@ -7,6 +7,7 @@ import 'letters/trace_activity.dart';
 import 'sounds/picture_sound_activity.dart';
 import 'spatial/direction_activity.dart';
 import 'spatial/positions_activity.dart';
+import 'syllables/build_word_activity.dart';
 import 'syllables/syllable_find_activity.dart';
 import 'syllables/syllable_meet_activity.dart';
 import 'syllables/syllable_trace_activity.dart';
@@ -24,5 +25,6 @@ final activityRegistryProvider = Provider<ActivityRegistry>(
     const SyllableFindActivity(),
     PictureSoundActivity.startsWith,
     PictureSoundActivity.endsWith,
+    const BuildWordActivity(),
   ]),
 );

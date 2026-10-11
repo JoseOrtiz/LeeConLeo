@@ -278,6 +278,9 @@ syllables.find.intro:
 syllables.ends_with.intro:
   - ¡Escucha el final! Toca el dibujo que termina con el sonido que te digo.
 
+syllables.build_word.intro:
+  - ¡Ahora armemos palabras! Mira el dibujo y lleva cada pedacito a su lugar.
+
 syllables.meet.ma:
   - La, eme, y la, a, juntas dicen, ma. ¡Toca, ma!
 
@@ -475,3 +478,33 @@ syllables.ends_with.la:
 
 syllables.ends_with.lo:
   - ¿Qué dibujo termina con, lo?
+
+syllables.build_word.mapa:
+  - Arma la palabra, mapa.
+
+syllables.build_word.papa:
+  - Arma la palabra, papa.
+
+syllables.build_word.puma:
+  - Arma la palabra, puma.
+
+syllables.build_word.lupa:
+  - Arma la palabra, lupa.
+
+syllables.build_word.ola:
+  - Arma la palabra, ola.
+
+syllables.build_word.pala:
+  - Arma la palabra, pala.
+
+syllables.build_word.paloma:
+  - Arma la palabra, paloma.
+
+syllables.build_word.pila:
+  - Arma la palabra, pila.
+
+syllables.build_word.mula:
+  - Arma la palabra, mula.
+
+syllables.build_word.pomelo:
+  - Arma la palabra, pomelo.
