@@ -265,3 +265,213 @@ syllables.starts_with.lo:
 
 syllables.starts_with.lu:
   - ¿Qué dibujo empieza con, lu?
+
+syllables.meet.intro:
+  - ¡Las letras se juntan para sonar! Escucha y toca.
+
+syllables.trace.intro:
+  - ¡Ahora escribamos las letras juntas! Pon tu dedo en el punto que brilla y sigue el camino.
+
+syllables.find.intro:
+  - ¡Más burbujas! Revienta las que dicen lo que te digo.
+
+syllables.ends_with.intro:
+  - ¡Escucha el final! Toca el dibujo que termina con el sonido que te digo.
+
+syllables.meet.ma:
+  - La, eme, y la, a, juntas dicen, ma. ¡Toca, ma!
+
+syllables.meet.ma.choose:
+  - ¿Dónde dice, ma? ¡Tócala!
+
+syllables.trace.ma:
+  - Escribe, ma, con tu dedo.
+
+syllables.find.ma:
+  - Revienta las burbujas que dicen, ma.
+
+syllables.meet.me:
+  - La, eme, y la, e, juntas dicen, me. ¡Toca, me!
+
+syllables.meet.me.choose:
+  - ¿Dónde dice, me? ¡Tócala!
+
+syllables.trace.me:
+  - Escribe, me, con tu dedo.
+
+syllables.find.me:
+  - Revienta las burbujas que dicen, me.
+
+syllables.meet.mi:
+  - La, eme, y la, i, juntas dicen, mi. ¡Toca, mi!
+
+syllables.meet.mi.choose:
+  - ¿Dónde dice, mi? ¡Tócala!
+
+syllables.trace.mi:
+  - Escribe, mi, con tu dedo.
+
+syllables.find.mi:
+  - Revienta las burbujas que dicen, mi.
+
+syllables.meet.mo:
+  - La, eme, y la, o, juntas dicen, mo. ¡Toca, mo!
+
+syllables.meet.mo.choose:
+  - ¿Dónde dice, mo? ¡Tócala!
+
+syllables.trace.mo:
+  - Escribe, mo, con tu dedo.
+
+syllables.find.mo:
+  - Revienta las burbujas que dicen, mo.
+
+syllables.meet.mu:
+  - La, eme, y la, u, juntas dicen, mu. ¡Toca, mu!
+
+syllables.meet.mu.choose:
+  - ¿Dónde dice, mu? ¡Tócala!
+
+syllables.trace.mu:
+  - Escribe, mu, con tu dedo.
+
+syllables.find.mu:
+  - Revienta las burbujas que dicen, mu.
+
+syllables.meet.pa:
+  - La, pe, y la, a, juntas dicen, pa. ¡Toca, pa!
+
+syllables.meet.pa.choose:
+  - ¿Dónde dice, pa? ¡Tócala!
+
+syllables.trace.pa:
+  - Escribe, pa, con tu dedo.
+
+syllables.find.pa:
+  - Revienta las burbujas que dicen, pa.
+
+syllables.meet.pe:
+  - La, pe, y la, e, juntas dicen, pe. ¡Toca, pe!
+
+syllables.meet.pe.choose:
+  - ¿Dónde dice, pe? ¡Tócala!
+
+syllables.trace.pe:
+  - Escribe, pe, con tu dedo.
+
+syllables.find.pe:
+  - Revienta las burbujas que dicen, pe.
+
+syllables.meet.pi:
+  - La, pe, y la, i, juntas dicen, pi. ¡Toca, pi!
+
+syllables.meet.pi.choose:
+  - ¿Dónde dice, pi? ¡Tócala!
+
+syllables.trace.pi:
+  - Escribe, pi, con tu dedo.
+
+syllables.find.pi:
+  - Revienta las burbujas que dicen, pi.
+
+syllables.meet.po:
+  - La, pe, y la, o, juntas dicen, po. ¡Toca, po!
+
+syllables.meet.po.choose:
+  - ¿Dónde dice, po? ¡Tócala!
+
+syllables.trace.po:
+  - Escribe, po, con tu dedo.
+
+syllables.find.po:
+  - Revienta las burbujas que dicen, po.
+
+syllables.meet.pu:
+  - La, pe, y la, u, juntas dicen, pu. ¡Toca, pu!
+
+syllables.meet.pu.choose:
+  - ¿Dónde dice, pu? ¡Tócala!
+
+syllables.trace.pu:
+  - Escribe, pu, con tu dedo.
+
+syllables.find.pu:
+  - Revienta las burbujas que dicen, pu.
+
+syllables.meet.la:
+  - La, ele, y la, a, juntas dicen, la. ¡Toca, la!
+
+syllables.meet.la.choose:
+  - ¿Dónde dice, la? ¡Tócala!
+
+syllables.trace.la:
+  - Escribe, la, con tu dedo.
+
+syllables.find.la:
+  - Revienta las burbujas que dicen, la.
+
+syllables.meet.le:
+  - La, ele, y la, e, juntas dicen, le. ¡Toca, le!
+
+syllables.meet.le.choose:
+  - ¿Dónde dice, le? ¡Tócala!
+
+syllables.trace.le:
+  - Escribe, le, con tu dedo.
+
+syllables.find.le:
+  - Revienta las burbujas que dicen, le.
+
+syllables.meet.li:
+  - La, ele, y la, i, juntas dicen, li. ¡Toca, li!
+
+syllables.meet.li.choose:
+  - ¿Dónde dice, li? ¡Tócala!
+
+syllables.trace.li:
+  - Escribe, li, con tu dedo.
+
+syllables.find.li:
+  - Revienta las burbujas que dicen, li.
+
+syllables.meet.lo:
+  - La, ele, y la, o, juntas dicen, lo. ¡Toca, lo!
+
+syllables.meet.lo.choose:
+  - ¿Dónde dice, lo? ¡Tócala!
+
+syllables.trace.lo:
+  - Escribe, lo, con tu dedo.
+
+syllables.find.lo:
+  - Revienta las burbujas que dicen, lo.
+
+syllables.meet.lu:
+  - La, ele, y la, u, juntas dicen, lu. ¡Toca, lu!
+
+syllables.meet.lu.choose:
+  - ¿Dónde dice, lu? ¡Tócala!
+
+syllables.trace.lu:
+  - Escribe, lu, con tu dedo.
+
+syllables.find.lu:
+  - Revienta las burbujas que dicen, lu.
+
+syllables.ends_with.ma:
+  - ¿Qué dibujo termina con, ma?
+
+syllables.ends_with.mo:
+  - ¿Qué dibujo termina con, mo?
+
+syllables.ends_with.pa:
+  - ¿Qué dibujo termina con, pa?
+
+syllables.ends_with.po:
+  - ¿Qué dibujo termina con, po?
+
+syllables.ends_with.la:
+  - ¿Qué dibujo termina con, la?
+
+syllables.ends_with.lo:
+  - ¿Qué dibujo termina con, lo?

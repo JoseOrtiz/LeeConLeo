@@ -11,10 +11,11 @@ import 'package:lee_con_leo/core/content/models/word.dart';
 import '../../tool/src/validation/rules/known_activities_rule.dart';
 import '../../tool/src/validation/rules/letter_steps_rule.dart';
 import '../../tool/src/validation/rules/path_images_rule.dart';
+import '../../tool/src/validation/rules/picture_sound_steps_rule.dart';
 import '../../tool/src/validation/rules/place_size_rule.dart';
 import '../../tool/src/validation/rules/prompt_clips_rule.dart';
 import '../../tool/src/validation/rules/stage_tints_rule.dart';
-import '../../tool/src/validation/rules/starts_with_steps_rule.dart';
+import '../../tool/src/validation/rules/syllable_steps_rule.dart';
 import '../../tool/src/validation/rules/syllables_match_text_rule.dart';
 import '../../tool/src/validation/rules/unique_ids_rule.dart';
 
@@ -225,11 +226,11 @@ void main() {
     ];
 
     test('a step with a sound, its phrase and enough pictures passes', () {
-      expect(const StartsWithStepsRule().check(bundle(complete)), isEmpty);
+      expect(const PictureSoundStepsRule().check(bundle(complete)), isEmpty);
     });
 
     test('flags a missing phrase, too few pictures and pictures without audio', () {
-      final issues = const StartsWithStepsRule()
+      final issues = const PictureSoundStepsRule()
           .check(
             bundle([
               pictured('abeja', ['a', 'be', 'ja']),
@@ -248,12 +249,108 @@ void main() {
 
     test('flags a step without a sound or without a matching picture', () {
       expect(
-        const StartsWithStepsRule().check(bundle(complete, sounds: const [])).single.message,
+        const PictureSoundStepsRule().check(bundle(complete, sounds: const [])).single.message,
         contains('needs a sound'),
       );
       expect(
-        const StartsWithStepsRule().check(bundle(complete.skip(1).toList())).single.message,
+        const PictureSoundStepsRule().check(bundle(complete.skip(1).toList())).single.message,
         contains('no word with a picture starts with "a"'),
+      );
+    });
+
+    group('ends with', () {
+      ContentBundle endsWith(List<Word> words, {bool hasPrompt = true}) => ContentBundle(
+        words: words,
+        stages: const [
+          PathStage(
+            stage: 4,
+            name: 'bosque',
+            steps: [
+              PathStep(id: 'ma', sounds: ['ma', 'mu'], activities: ['syllables.ends_with']),
+            ],
+          ),
+        ],
+        prompts: PromptLibrary({
+          if (hasPrompt) 'syllables.ends_with.ma': ['¿Qué dibujo termina con, ma?'],
+        }),
+      );
+
+      final words = [
+        ...complete,
+        pictured('puma', ['pu', 'ma']),
+      ];
+
+      test('asks only the sounds some picture ends with', () {
+        expect(const PictureSoundStepsRule().check(endsWith(words)), isEmpty);
+        expect(
+          const PictureSoundStepsRule().check(endsWith(words, hasPrompt: false)).single.message,
+          contains('missing prompt "syllables.ends_with.ma"'),
+        );
+      });
+
+      test('flags a step where no picture ends with any sound', () {
+        expect(
+          const PictureSoundStepsRule().check(endsWith(complete)).single.message,
+          contains('no word with a picture ends with any of ma, mu'),
+        );
+      });
+    });
+  });
+
+  group('syllable steps', () {
+    const strokes = [
+      [Point(0.0, 0.0), Point(10.0, 10.0)],
+    ];
+
+    ContentBundle syllableBundle({
+      List<String> sounds = const ['ma', 'me'],
+      Map<String, List<List<Point<double>>>> syllables = const {'ma': strokes, 'me': strokes},
+      bool hasPrompts = true,
+    }) => ContentBundle(
+      words: const [],
+      stages: [
+        PathStage(
+          stage: 4,
+          name: 'bosque',
+          steps: [
+            PathStep(
+              id: 'ma',
+              sounds: sounds,
+              activities: const ['syllables.meet', 'syllables.trace', 'syllables.find'],
+            ),
+          ],
+        ),
+      ],
+      prompts: PromptLibrary({
+        if (hasPrompts)
+          for (final sound in sounds) ...{
+            'syllables.meet.$sound': ['meet'],
+            'syllables.meet.$sound.choose': ['choose'],
+            'syllables.trace.$sound': ['trace'],
+            'syllables.find.$sound': ['find'],
+          },
+      }),
+      syllables: syllables,
+    );
+
+    const rule = SyllableStepsRule(checkClips: false);
+
+    test('a step with its phrases and strokes passes', () {
+      expect(rule.check(syllableBundle()), isEmpty);
+    });
+
+    test('flags missing phrases, missing strokes and single sounds', () {
+      expect(
+        rule.check(syllableBundle(hasPrompts: false)).map((issue) => issue.message),
+        hasLength(8),
+      );
+      expect(
+        rule.check(syllableBundle(syllables: const {'ma': strokes})).single.message,
+        contains('no stroke data for "me"'),
+      );
+      expect(
+        rule.check(syllableBundle(sounds: const ['ma'])).single.message,
+        contains('two or more sounds'),
       );
     });
   });

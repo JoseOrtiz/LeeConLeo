@@ -64,11 +64,23 @@ map** button.
 | *Trace* | Follow the strokes in the correct order with a finger: a glowing start point (children may not know numbers yet), arrows, and a path that fills in as the finger moves. Tolerance adapts to age. Finishing unlocks coloring the letter |
 | *Find* | Letters float as bubbles. Pop every target letter, avoiding lookalikes (b/d, p/q, m/n) |
 
+### Syllable sequence (for each consonant, after its letter)
+
+Follows the Silabario: the consonant is never sounded alone, it is read joined to a
+vowel, first in order (*ma me mi mo mu*), then mixed, then written.
+
+| Step | Mechanic |
+|---|---|
+| *Meet* | Leo joins the letters one syllable at a time ("La, eme, y la, a, juntas dicen, ma"), showing *m + a* above the written *ma*. Then three mixed rounds: "¿Dónde dice, mo?" among three syllables of the family. A wrong tap speaks that syllable |
+| *Trace* | Write three syllables of the family in joined cursive, as one stroke from the consonant into the vowel |
+| *Find* | Syllable bubbles, in lower case or capitalized (*mo*, *Mo*). Pop the target, among others of the same family (*ma*, *mu*) and of other families |
+| *Starts with*, *Ends with* | The listening games below, with the written syllable shown above the pictures |
+
 ### Syllables and words
 
 | Activity | Mechanic |
 |---|---|
-| *Starts with* | Hear a syllable, and 4 pictures appear. Tap (or drag a line to) the one that starts with it. Tapping a picture speaks its name |
+| *Starts with* | Hear a syllable and see it written, and 4 pictures appear. Tap (or drag a line to) the one that starts with it. Tapping a picture speaks its name |
 | *Ends with* | Same, with the ending |
 | *Build the word* (new) | A picture and its spoken word. Drag syllable tiles into place (*ma + no*). Stage 4 and after |
 | *Circle it* | Circle the target syllable inside written words. Stage 5 and after |

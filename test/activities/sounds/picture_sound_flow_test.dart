@@ -6,7 +6,9 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:lee_con_leo/activities/common/activity_context.dart';
 import 'package:lee_con_leo/activities/common/activity_screen.dart';
 import 'package:lee_con_leo/activities/common/widgets/demo_overlay.dart';
-import 'package:lee_con_leo/activities/sounds/starts_with_activity.dart';
+import 'package:lee_con_leo/activities/sounds/picture_sound_activity.dart';
+import 'package:lee_con_leo/activities/sounds/picture_sound_view.dart';
+import 'package:lee_con_leo/activities/common/widgets/letter_glyph.dart';
 import 'package:lee_con_leo/core/audio/audio_providers.dart';
 import 'package:lee_con_leo/core/content/activity_ids.dart';
 import 'package:lee_con_leo/core/content/content_providers.dart';
@@ -23,7 +25,7 @@ import '../../fakes/test_content.dart';
 
 void main() {
   group('items', () {
-    final items = const StartsWithActivity().buildItems(
+    final items = PictureSoundActivity.startsWith.buildItems(
       ActivityContext(content: testContent, step: testContent.stepById('a')!, random: Random(4)),
     );
 
@@ -37,11 +39,12 @@ void main() {
         expect(item.options, hasLength(4));
         expect(item.images.keys, unorderedEquals(item.options));
         expect(item.optionNames[item.target]!.clip, 'words/abeja.m4a');
+        expect(item.sound, 'a');
       }
     });
   });
 
-  test('a syllable step asks for each of its syllables once', () {
+  test('a syllable step asks for every syllable and ends with the ones it can', () {
     Word pictured(String text, List<String> sounds) =>
         Word(text: text, syllables: sounds, sounds: sounds, image: 'words/$text.svg');
     final content = ContentBundle(
@@ -52,6 +55,8 @@ void main() {
         pictured('oso', ['o', 'so']),
         pictured('uva', ['u', 'ba']),
         pictured('pato', ['pa', 'to']),
+        pictured('puma', ['pu', 'ma']),
+        pictured('pluma', ['plu', 'ma']),
       ],
       stages: const [
         PathStage(
@@ -65,12 +70,13 @@ void main() {
       prompts: testPrompts,
     );
 
-    final items = const StartsWithActivity().buildItems(
+    final items = PictureSoundActivity.startsWith.buildItems(
       ActivityContext(content: content, step: content.stepById('ma')!, random: Random(1)),
     );
 
+    expect(items, hasLength(PictureSoundActivity.rounds));
     expect(
-      items.map((item) => item.promptId),
+      items.map((item) => item.promptId).toSet(),
       unorderedEquals([
         'syllables.starts_with.ma',
         'syllables.starts_with.me',
@@ -82,6 +88,18 @@ void main() {
       expect(content.wordByText(item.target)!.startsWithSound(sound), isTrue);
       final others = item.options.where((option) => option != item.target);
       expect(others.every((text) => !content.wordByText(text)!.startsWithSound(sound)), isTrue);
+    }
+
+    final endings = PictureSoundActivity.endsWith.buildItems(
+      ActivityContext(content: content, step: content.stepById('ma')!, random: Random(1)),
+    );
+
+    expect(endings, hasLength(PictureSoundActivity.rounds));
+    for (final item in endings.cast<PictureItem>()) {
+      expect(item.promptId, 'syllables.ends_with.ma');
+      expect(['puma', 'pluma'], contains(item.target));
+      final others = item.options.where((option) => option != item.target);
+      expect(others.every((text) => !content.wordByText(text)!.endsWithSound('ma')), isTrue);
     }
   });
 
@@ -124,6 +142,13 @@ void main() {
       await play(tester);
       expect(player.spoken.last, 'starts a');
       expect(find.byKey(DemoOverlay.handKey), findsOneWidget);
+      expect(
+        find.descendant(
+          of: find.byKey(PictureSoundView.soundKey),
+          matching: find.widgetWithText(LetterGlyph, 'a'),
+        ),
+        findsOneWidget,
+      );
 
       for (var round = 0; round < 4; round++) {
         await tester.tap(find.byKey(const ValueKey('choice-abeja')));

@@ -25,20 +25,25 @@ class YamlContentReader {
     words: [for (final entry in _readList(ContentPaths.words)) _toWord(entry)],
     stages: [for (final entry in _readList(ContentPaths.path)) PathStage.fromJson(entry)],
     prompts: PromptLibrary.fromJson(_readMap(ContentPaths.prompts), clips: _promptClips()),
-    letters: _letters(),
+    letters: {
+      for (final file in _yamlFiles(ContentPaths.letters))
+        _baseName(file): LetterShape.fromJson(_load(file.path) as Map<String, dynamic>),
+    },
+    syllables: {
+      for (final file in _yamlFiles(ContentPaths.syllables))
+        _baseName(file): LetterShape.parseStrokes(
+          (_load(file.path) as Map<String, dynamic>)['strokes'],
+        ),
+    },
   );
 
-  Map<String, LetterShape> _letters() {
-    final dir = Directory(ContentPaths.letters);
-    if (!dir.existsSync()) return const {};
-    final files = [
+  List<File> _yamlFiles(String path) {
+    final dir = Directory(path);
+    if (!dir.existsSync()) return const [];
+    return [
       for (final file in dir.listSync().whereType<File>())
         if (file.path.endsWith(_yamlExtension)) file,
     ]..sort((a, b) => a.path.compareTo(b.path));
-    return {
-      for (final file in files)
-        _baseName(file): LetterShape.fromJson(_load(file.path) as Map<String, dynamic>),
-    };
   }
 
   static const _yamlExtension = '.yaml';

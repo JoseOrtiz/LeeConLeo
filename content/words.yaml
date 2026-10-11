@@ -39,6 +39,8 @@
 - text: calabaza
 - text: calcetín
 - text: cama
+  image: words/cama.svg
+  audio: words/cama.m4a
 - text: camaleón
 - text: camello
 - text: camioneta
@@ -47,6 +49,9 @@
 - text: cangrejo
 - text: canguro
 - text: caracol
+- text: caramelo
+  image: words/caramelo.svg
+  audio: words/caramelo.m4a
 - text: carta
 - text: casa
 - text: castor
@@ -129,12 +134,18 @@
 - text: halcón
 - text: helado
 - text: helicóptero
+- text: hielo
+  image: words/hielo.svg
+  audio: words/hielo.m4a
 - text: hiena
 - text: hipopótamo
 - text: hoja
 - text: hormiga
 - text: huevo
 - text: hámster
+- text: humo
+  image: words/humo.svg
+  audio: words/humo.m4a
 - text: iglú
   image: words/iglu.svg
   audio: words/iglu.m4a
@@ -207,6 +218,8 @@
   audio: words/manzana.m4a
 - text: maní
 - text: mapa
+  image: words/mapa.svg
+  audio: words/mapa.m4a
 - text: marioneta
 - text: mariposa
 - text: martillo
@@ -252,6 +265,9 @@
 - text: ojo
   image: words/ojo.svg
   audio: words/ojo.m4a
+- text: ola
+  image: words/ola.svg
+  audio: words/ola.m4a
 - text: olla
 - text: orangután
 - text: ornitorrinco
@@ -314,6 +330,8 @@
 - text: plancha
 - text: plato
 - text: pluma
+  image: words/pluma.svg
+  audio: words/pluma.m4a
 - text: plátano
 - text: pollo
   image: words/pollo.svg
@@ -335,6 +353,9 @@
 - text: ratón
 - text: regalo
 - text: reina
+- text: remo
+  image: words/remo.svg
+  audio: words/remo.m4a
 - text: reno
 - text: rey
 - text: rinoceronte
@@ -344,6 +365,8 @@
 - text: salvavidas
 - text: sandía
 - text: sapo
+  image: words/sapo.svg
+  audio: words/sapo.m4a
 - text: saxofón
 - text: secador
 - text: seis
@@ -357,6 +380,8 @@
 - text: sol
 - text: sombrero
 - text: sopa
+  image: words/sopa.svg
+  audio: words/sopa.m4a
 - text: submarino
 - text: surfeo
 - text: sushi
@@ -383,6 +408,9 @@
 - text: tren
 - text: triángulo
 - text: trompeta
+- text: trompo
+  image: words/trompo.svg
+  audio: words/trompo.m4a
 - text: tucán
 - text: unicornio
   image: words/unicornio.svg
@@ -400,6 +428,8 @@
 - text: vaquero
 - text: vaso
 - text: vela
+  image: words/vela.svg
+  audio: words/vela.m4a
 - text: ventana
 - text: ventilador
 - text: verduras

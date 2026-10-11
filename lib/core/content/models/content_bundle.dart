@@ -10,6 +10,7 @@ class ContentBundle {
     required this.stages,
     required this.prompts,
     this.letters = const {},
+    this.syllables = const {},
   });
 
   factory ContentBundle.fromJson(Map<String, dynamic> json) => ContentBundle(
@@ -26,12 +27,18 @@ class ContentBundle {
           in (json['letters'] as Map<String, dynamic>? ?? const {}).entries)
         grapheme: LetterShape.fromJson(shape as Map<String, dynamic>),
     },
+    syllables: {
+      for (final MapEntry(key: syllable, value: strokes)
+          in (json['syllables'] as Map<String, dynamic>? ?? const {}).entries)
+        syllable: LetterShape.parseStrokes(strokes),
+    },
   );
 
   final List<Word> words;
   final List<PathStage> stages;
   final PromptLibrary prompts;
   final Map<String, LetterShape> letters;
+  final Map<String, List<Stroke>> syllables;
 
   Iterable<PathStep> get steps => stages.expand((stage) => stage.steps);
 
@@ -65,6 +72,11 @@ class ContentBundle {
       'letters': {
         for (final MapEntry(key: grapheme, value: shape) in letters.entries)
           grapheme: shape.toJson(),
+      },
+    if (syllables.isNotEmpty)
+      'syllables': {
+        for (final MapEntry(key: syllable, value: strokes) in syllables.entries)
+          syllable: LetterShape.encodeStrokes(strokes),
       },
   };
 }
