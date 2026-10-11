@@ -72,6 +72,7 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
 
     final random = widget.random ?? Random();
     final session = ActivitySession(
+      sessionId: ref.read(sessionIdProvider),
       stepId: step.id,
       activityId: spec.id,
       items: spec.buildItems(ActivityContext(content: content, step: step, random: random)),
@@ -94,6 +95,7 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
       _celebrationTimer?.cancel();
       _celebrationTimer = Timer(widget.celebrationDuration, session.next);
     }
+    if (session.phase == SessionPhase.finished) ref.invalidate(masteredStepsProvider);
     if (session.phase == SessionPhase.finished && _nextActivityId == null) {
       ref.read(completedStepsProvider.notifier).markCompleted(session.stepId);
     }

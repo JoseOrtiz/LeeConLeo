@@ -8,17 +8,24 @@ import 'package:lee_con_leo/app/widgets/pulse.dart';
 import 'package:lee_con_leo/core/audio/audio_providers.dart';
 import 'package:lee_con_leo/core/content/content_providers.dart';
 import 'package:lee_con_leo/core/logging/in_memory_event_log.dart';
+import 'package:lee_con_leo/core/logging/item_event.dart';
 import 'package:lee_con_leo/core/logging/logging_providers.dart';
 import 'package:lee_con_leo/core/progress/in_memory_progress_store.dart';
 import 'package:lee_con_leo/core/progress/progress_providers.dart';
+import 'package:lee_con_leo/map/step_button.dart';
 
+import '../fakes/item_events.dart';
 import '../fakes/recording_prompt_player.dart';
 import '../fakes/test_content.dart';
 
 void main() {
   late RecordingPromptPlayer player;
 
-  Future<void> pumpHome(WidgetTester tester, {Set<String> completed = const {}}) async {
+  Future<void> pumpHome(
+    WidgetTester tester, {
+    Set<String> completed = const {},
+    List<ItemEvent> events = const [],
+  }) async {
     tester.platformDispatcher.accessibilityFeaturesTestValue = const FakeAccessibilityFeatures(
       disableAnimations: true,
     );
@@ -30,7 +37,7 @@ void main() {
           contentProvider.overrideWith((ref) async => testContent),
           minimumSplashProvider.overrideWithValue(Duration.zero),
           promptPlayerProvider.overrideWithValue(player),
-          eventLogProvider.overrideWithValue(InMemoryEventLog()),
+          eventLogProvider.overrideWithValue(InMemoryEventLog(events)),
           progressStoreProvider.overrideWithValue(InMemoryProgressStore(completed)),
         ],
         child: MaterialApp.router(routerConfig: createAppRouter()),
@@ -52,6 +59,29 @@ void main() {
   testWidgets('Leo stands beside the next step to play', (tester) async {
     await pumpHome(tester, completed: {'up-down'});
     expect(distanceFromLeoTo(tester, 'left-right'), lessThan(distanceFromLeoTo(tester, 'up-down')));
+  });
+
+  testWidgets('a mastered step wears a medal and a merely finished one a star', (tester) async {
+    await pumpHome(
+      tester,
+      completed: {'up-down', 'left-right'},
+      events: firstTries('up-down', correct: 10),
+    );
+
+    expect(
+      find.descendant(
+        of: find.byKey(const ValueKey('step-up-down')),
+        matching: find.byKey(StepButton.masteredKey),
+      ),
+      findsOne,
+    );
+    expect(
+      find.descendant(
+        of: find.byKey(const ValueKey('step-left-right')),
+        matching: find.byKey(StepButton.masteredKey),
+      ),
+      findsNothing,
+    );
   });
 
   testWidgets('a locked step makes Leo explain instead of opening a game', (tester) async {

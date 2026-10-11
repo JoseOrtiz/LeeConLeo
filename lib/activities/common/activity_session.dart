@@ -16,6 +16,7 @@ enum SessionPhase { intro, playing, celebrating, finished }
 
 class ActivitySession extends ChangeNotifier implements ItemController {
   ActivitySession({
+    required this.sessionId,
     required this.stepId,
     required this.activityId,
     required List<ActivityItem> items,
@@ -32,6 +33,7 @@ class ActivitySession extends ChangeNotifier implements ItemController {
        _random = random ?? Random(),
        _clock = clock ?? DateTime.now;
 
+  final String sessionId;
   final String stepId;
   final String activityId;
   final int mistakesBeforeHint;
@@ -122,6 +124,7 @@ class ActivitySession extends ChangeNotifier implements ItemController {
     _log.record(
       ItemEvent(
         timestamp: _clock(),
+        sessionId: sessionId,
         stepId: stepId,
         activityId: activityId,
         itemId: currentItem.id,

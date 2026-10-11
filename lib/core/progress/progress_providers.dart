@@ -1,9 +1,15 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../logging/logging_providers.dart';
 import 'in_memory_progress_store.dart';
+import 'mastery.dart';
 import 'progress_store.dart';
 
 final progressStoreProvider = Provider<ProgressStore>((ref) => InMemoryProgressStore());
+
+final masteredStepsProvider = Provider<Set<String>>(
+  (ref) => Mastery.masteredSteps(ref.watch(eventLogProvider).events),
+);
 
 final completedStepsProvider = NotifierProvider<CompletedSteps, Set<String>>(CompletedSteps.new);
 

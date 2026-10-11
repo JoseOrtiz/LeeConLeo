@@ -1,16 +1,26 @@
 import '../core/content/models/path_step.dart';
 
-enum StepStatus { done, next, locked }
+enum StepStatus {
+  mastered,
+  done,
+  next,
+  locked;
+
+  bool get isFinished => this == mastered || this == done;
+}
 
 Map<String, StepStatus> stepStatuses(
   Iterable<PathStep> steps, {
   required Set<String> completed,
+  Set<String> mastered = const {},
   required bool Function(PathStep step) isPlayable,
 }) {
   var nextFound = false;
   final statuses = <String, StepStatus>{};
   for (final step in steps) {
-    if (completed.contains(step.id)) {
+    if (completed.contains(step.id) && mastered.contains(step.id)) {
+      statuses[step.id] = StepStatus.mastered;
+    } else if (completed.contains(step.id)) {
       statuses[step.id] = StepStatus.done;
     } else if (!nextFound && isPlayable(step)) {
       nextFound = true;

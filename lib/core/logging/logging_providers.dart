@@ -4,3 +4,7 @@ import 'event_log.dart';
 import 'in_memory_event_log.dart';
 
 final eventLogProvider = Provider<EventLog>((ref) => InMemoryEventLog());
+
+final sessionIdProvider = Provider<String>(
+  (ref) => DateTime.now().toUtc().microsecondsSinceEpoch.toString(),
+);
