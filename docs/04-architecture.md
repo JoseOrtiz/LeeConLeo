@@ -104,7 +104,8 @@ and activity (about 430 files) goes away.
   - unit tests for mastery, distractor generation and sound keys
   - widget tests for the activity frame
   - golden tests for phone and tablet layouts
-- **CI (GitHub Actions):** analyze, test, content validation, then build an Android
-  APK and an iOS build (no signing) on every PR.
+- **CI (GitHub Actions):** on every PR, in parallel: format, analyze, content validation
+  (`build --check` validates first) and tests; and an Android APK and an iOS build (no
+  signing). A new push to a PR cancels its running checks.
 - **Releases:** GitHub Releases (APK), Google Play, App Store. F-Droid is worth
   considering because the app has no proprietary dependencies.
