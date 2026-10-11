@@ -63,7 +63,11 @@ class _PathMapState extends ConsumerState<PathMap> {
       step.id: PathMap.zigzag[index % PathMap.zigzag.length],
   };
   late final PageController _pages = PageController(
-    initialPage: _placeOfStep[_leoTarget(_statuses(ref.read(completedStepsProvider)))] ?? 0,
+    initialPage:
+        _placeOfStep[_leoTarget(
+          _statuses(ref.read(completedStepsProvider), ref.read(masteredStepsProvider)),
+        )] ??
+        0,
   );
 
   @override
@@ -81,7 +85,9 @@ class _PathMapState extends ConsumerState<PathMap> {
   void _arrive() {
     if (!mounted) return;
     if (ref.read(greetingProvider.notifier).takeTurn()) _say(PathMap.introPrompt);
-    final target = _leoTarget(_statuses(ref.read(completedStepsProvider)));
+    final target = _leoTarget(
+      _statuses(ref.read(completedStepsProvider), ref.read(masteredStepsProvider)),
+    );
     if (target != null && ref.read(leoPositionProvider) != target) {
       ref.read(leoPositionProvider.notifier).moveTo(target);
     }
@@ -91,11 +97,12 @@ class _PathMapState extends ConsumerState<PathMap> {
       .read(promptPlayerProvider)
       .say(Utterance([widget.bundle.prompts.line(promptId, _random)]));
 
-  Map<String, StepStatus> _statuses(Set<String> completed) {
+  Map<String, StepStatus> _statuses(Set<String> completed, Set<String> mastered) {
     final registry = ref.read(activityRegistryProvider);
     return stepStatuses(
       widget.bundle.steps,
       completed: completed,
+      mastered: mastered,
       isPlayable: (step) => registry.firstAvailable(step.activities) != null,
     );
   }
@@ -106,7 +113,7 @@ class _PathMapState extends ConsumerState<PathMap> {
     }
     final done = [
       for (final MapEntry(key: id, value: status) in statuses.entries)
-        if (status == StepStatus.done) id,
+        if (status.isFinished) id,
     ];
     return done.isEmpty ? null : done.last;
   }
@@ -133,7 +140,7 @@ class _PathMapState extends ConsumerState<PathMap> {
 
   @override
   Widget build(BuildContext context) {
-    final statuses = _statuses(ref.watch(completedStepsProvider));
+    final statuses = _statuses(ref.watch(completedStepsProvider), ref.watch(masteredStepsProvider));
     final leoAt = ref.watch(leoPositionProvider) ?? _leoTarget(statuses);
     final places = widget.bundle.stages;
     return PageView.builder(

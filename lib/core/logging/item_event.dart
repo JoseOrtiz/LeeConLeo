@@ -1,6 +1,7 @@
 class ItemEvent {
   const ItemEvent({
     required this.timestamp,
+    required this.sessionId,
     required this.stepId,
     required this.activityId,
     required this.itemId,
@@ -12,6 +13,7 @@ class ItemEvent {
   });
 
   final DateTime timestamp;
+  final String sessionId;
   final String stepId;
   final String activityId;
   final String itemId;

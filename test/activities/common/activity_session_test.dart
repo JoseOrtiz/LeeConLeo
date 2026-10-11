@@ -26,6 +26,7 @@ void main() {
     player = RecordingPromptPlayer();
     log = InMemoryEventLog();
     session = ActivitySession(
+      sessionId: 's1',
       stepId: 'up-down',
       activityId: 'spatial.up_down',
       items: items,
@@ -115,6 +116,7 @@ void main() {
 
   test('Leo names the picture the child picked before the feedback', () {
     final named = ActivitySession(
+      sessionId: 's1',
       stepId: 'a',
       activityId: 'syllables.starts_with',
       items: const [

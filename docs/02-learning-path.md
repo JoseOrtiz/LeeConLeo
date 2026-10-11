@@ -71,9 +71,11 @@ Rules that follow from this:
 
 ## Mastery and review
 
-- A step is **mastered** at ≥ 80 % correct over the last 10 tries, with at least 2
-  sessions.
-- A mastered step unlocks the next one. The child can always replay earlier steps.
+- A step is **mastered** at ≥ 80 % correct over the last 10 tries, with tries in at
+  least 2 sessions. A try is the first answer to an item (retries after a mistake don't
+  count), and a session is one launch of the app.
+- Finishing a step unlocks the next one, whatever the score. A mastered step shows a
+  medal on its stone. The child can always replay earlier steps.
 - **Spaced review:** each session starts with 2–3 quick items from mastered steps,
   weighted towards the ones answered wrong most recently.
 - When a child fails the same step repeatedly (3 sessions below 50 %), the app

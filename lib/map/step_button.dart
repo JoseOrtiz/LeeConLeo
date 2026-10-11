@@ -15,6 +15,7 @@ class StepButton extends StatelessWidget {
   static const size = 96.0;
   static const lockedOpacity = 0.45;
   static const badgeSize = 36.0;
+  static const masteredKey = ValueKey('mastered-badge');
 
   @override
   Widget build(BuildContext context) {
@@ -46,6 +47,17 @@ class StepButton extends StatelessWidget {
               right: -4,
               bottom: -4,
               child: Icon(Icons.star_rounded, size: badgeSize, color: AppTheme.starGold),
+            ),
+          if (status == StepStatus.mastered)
+            const Positioned(
+              key: masteredKey,
+              right: -6,
+              bottom: -6,
+              child: Icon(
+                Icons.workspace_premium_rounded,
+                size: badgeSize * 1.2,
+                color: AppTheme.starGold,
+              ),
             ),
           if (isLocked)
             Positioned(

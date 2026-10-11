@@ -26,6 +26,19 @@ void main() {
     expect(statuses['left-right'], StepStatus.next);
   });
 
+  test('a finished step that is also mastered shows it, and still counts as finished', () {
+    final statuses = stepStatuses(
+      steps,
+      completed: {'up-down', 'left-right'},
+      mastered: {'up-down', 'positions'},
+      isPlayable: isPlayable,
+    );
+    expect(statuses['up-down'], StepStatus.mastered);
+    expect(statuses['left-right'], StepStatus.done);
+    expect(statuses['positions'], StepStatus.next);
+    expect(statuses['up-down']!.isFinished, isTrue);
+  });
+
   test('a step with no game yet is skipped when choosing the next one', () {
     final statuses = stepStatuses(
       steps,

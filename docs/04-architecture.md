@@ -80,7 +80,8 @@ and activity (about 430 files) goes away.
 
 ## Observation mode and data
 
-- **Always on (local only):** the event log that feeds mastery and review.
+- **Always on (local only):** the event log that feeds mastery and review, saved in
+  SQLite (`lib/core/logging/event_database.dart`). On the web it stays in memory for now.
 - **Observation mode (opt-in, behind the parental gate):** adds session markers
   and an observer note field, and **exports CSV** through the system share sheet.
 - **Event row:** `timestamp, profileNick, sessionId, stage, step, activity, itemId,
