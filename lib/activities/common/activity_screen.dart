@@ -10,7 +10,9 @@ import '../../core/content/content_providers.dart';
 import '../../core/content/models/content_bundle.dart';
 import '../../core/content/models/path_stage.dart';
 import '../../core/logging/logging_providers.dart';
+import '../../core/audio/utterance.dart';
 import '../../core/progress/progress_providers.dart';
+import '../../core/progress/stickers.dart';
 import '../../app/widgets/loading_view.dart';
 import '../../app/widgets/scene_band.dart';
 import '../../utils/hex_color.dart';
@@ -36,6 +38,8 @@ class ActivityScreen extends ConsumerStatefulWidget {
   final Duration celebrationDuration;
   final Random? random;
 
+  static const newStickerPrompt = 'stickers.new';
+
   @override
   ConsumerState<ActivityScreen> createState() => _ActivityScreenState();
 }
@@ -47,6 +51,7 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
   bool _isUnavailable = false;
   PathStage? _stage;
   String? _nextActivityId;
+  String? _newSticker;
 
   @override
   void initState() {
@@ -71,11 +76,26 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
     }
 
     final random = widget.random ?? Random();
+    final events = ref.read(eventLogProvider).events;
+    final items = spec.buildItems(
+      ActivityContext(content: content, step: step, random: random, events: events),
+    );
+    _nextActivityId = registry.nextAvailable(step.activities, after: spec.id);
+    if (items.isEmpty) {
+      _isUnavailable = true;
+      final next = _nextActivityId;
+      if (next != null) {
+        WidgetsBinding.instance.addPostFrameCallback((_) {
+          if (mounted) context.go('/play/${widget.stepId}/$next');
+        });
+      }
+      return;
+    }
     final session = ActivitySession(
       sessionId: ref.read(sessionIdProvider),
       stepId: step.id,
       activityId: spec.id,
-      items: spec.buildItems(ActivityContext(content: content, step: step, random: random)),
+      items: items,
       prompts: content.prompts,
       player: ref.read(promptPlayerProvider),
       log: ref.read(eventLogProvider),
@@ -85,7 +105,6 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
     _spec = spec;
     _session = session;
     _stage = content.stageOf(step.id);
-    _nextActivityId = registry.nextAvailable(step.activities, after: spec.id);
     session.start();
   }
 
@@ -95,11 +114,25 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
       _celebrationTimer?.cancel();
       _celebrationTimer = Timer(widget.celebrationDuration, session.next);
     }
-    if (session.phase == SessionPhase.finished) ref.invalidate(masteredStepsProvider);
+    if (session.phase == SessionPhase.finished) _checkSticker(session.stepId);
     if (session.phase == SessionPhase.finished && _nextActivityId == null) {
       ref.read(completedStepsProvider.notifier).markCompleted(session.stepId);
     }
     setState(() {});
+  }
+
+  void _checkSticker(String stepId) {
+    final before = ref.read(masteredStepsProvider);
+    ref.invalidate(masteredStepsProvider);
+    if (before.contains(stepId) || !ref.read(masteredStepsProvider).contains(stepId)) return;
+    final content = ref.read(contentProvider).value;
+    final step = content?.stepById(stepId);
+    if (content == null || step == null) return;
+    _newSticker = Stickers.of(content, step);
+    if (_newSticker == null) return;
+    ref
+        .read(promptPlayerProvider)
+        .say(Utterance([content.prompts.line(ActivityScreen.newStickerPrompt, Random())]));
   }
 
   void _goHome() {
@@ -170,7 +203,7 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
     SessionPhase.intro => IntroView(onStart: session.begin),
     SessionPhase.playing ||
     SessionPhase.celebrating => _spec!.buildItemView(session.currentItem, session),
-    SessionPhase.finished => RewardView(onDone: _continue),
+    SessionPhase.finished => RewardView(onDone: _continue, sticker: _newSticker),
   };
 
   int _completedItems(ActivitySession session) => switch (session.phase) {

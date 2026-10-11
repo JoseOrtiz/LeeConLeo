@@ -4376,6 +4376,15 @@
     "profiles.empty": [
       "¡Hola! Pídele a un adulto que te ayude a empezar."
     ],
+    "review.intro": [
+      "¡Antes de jugar, un repaso rápido! ¿Te acuerdas de esto?"
+    ],
+    "stickers.intro": [
+      "¡Este es tu álbum de stickers! Cada vez que aprendes algo muy bien, ganas uno nuevo."
+    ],
+    "stickers.new": [
+      "¡Ganaste un sticker nuevo! Búscalo en tu álbum."
+    ],
     "spatial.up_down.intro": [
       "¡Hola! Soy Leo. Ayúdame a encontrar arriba y abajo."
     ],
@@ -4929,6 +4938,7 @@
     "letter.trace.u.upper.0": "prompts/letter.trace.u.upper.0.m4a",
     "profiles.empty.0": "prompts/profiles.empty.0.m4a",
     "profiles.intro.0": "prompts/profiles.intro.0.m4a",
+    "review.intro.0": "prompts/review.intro.0.m4a",
     "reward.0": "prompts/reward.0.m4a",
     "spatial.left_right.intro.0": "prompts/spatial.left_right.intro.0.m4a",
     "spatial.left_right.left.0": "prompts/spatial.left_right.left.0.m4a",
@@ -4940,6 +4950,8 @@
     "spatial.up_down.down.0": "prompts/spatial.up_down.down.0.m4a",
     "spatial.up_down.intro.0": "prompts/spatial.up_down.intro.0.m4a",
     "spatial.up_down.up.0": "prompts/spatial.up_down.up.0.m4a",
+    "stickers.intro.0": "prompts/stickers.intro.0.m4a",
+    "stickers.new.0": "prompts/stickers.new.0.m4a",
     "syllables.build_word.intro.0": "prompts/syllables.build_word.intro.0.m4a",
     "syllables.build_word.lupa.0": "prompts/syllables.build_word.lupa.0.m4a",
     "syllables.build_word.mapa.0": "prompts/syllables.build_word.mapa.0.m4a",

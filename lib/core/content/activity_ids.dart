@@ -11,6 +11,7 @@ abstract final class ActivityIds {
   static const startsWith = 'syllables.starts_with';
   static const endsWith = 'syllables.ends_with';
   static const buildWord = 'syllables.build_word';
+  static const review = 'review';
 
   static const all = {
     upDown,
@@ -25,5 +26,6 @@ abstract final class ActivityIds {
     startsWith,
     endsWith,
     buildWord,
+    review,
   };
 }

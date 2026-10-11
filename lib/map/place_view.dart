@@ -25,6 +25,7 @@ class PlaceView extends StatelessWidget {
     this.leavingColumn,
     this.leoStep,
     this.leoHere = LeoHere.none,
+    this.rightReserved = 0,
   });
 
   static const walkDuration = Duration(milliseconds: 900);
@@ -40,6 +41,7 @@ class PlaceView extends StatelessWidget {
   final double? leavingColumn;
   final String? leoStep;
   final LeoHere leoHere;
+  final double rightReserved;
 
   @override
   Widget build(BuildContext context) {
@@ -116,10 +118,11 @@ class PlaceView extends StatelessWidget {
       bottom: labelMargin + labelHeight,
       width: width,
       margin: labelMargin,
+      rightReserved: rightReserved,
     );
     return Positioned(
       left: slot.isLeft ? labelMargin : null,
-      right: slot.isLeft ? null : labelMargin,
+      right: slot.isLeft ? null : labelMargin + rightReserved,
       top: labelMargin,
       child: ConstrainedBox(
         constraints: BoxConstraints(maxWidth: slot.maxWidth),

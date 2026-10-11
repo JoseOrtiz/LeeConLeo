@@ -1663,6 +1663,24 @@
       "index": 0,
       "text": "¡Hola! Pídele a un adulto que te ayude a empezar.",
       "file": "assets/audio/prompts/profiles.empty.0.m4a"
+    },
+    {
+      "promptId": "review.intro",
+      "index": 0,
+      "text": "¡Antes de jugar, un repaso rápido! ¿Te acuerdas de esto?",
+      "file": "assets/audio/prompts/review.intro.0.m4a"
+    },
+    {
+      "promptId": "stickers.intro",
+      "index": 0,
+      "text": "¡Este es tu álbum de stickers! Cada vez que aprendes algo muy bien, ganas uno nuevo.",
+      "file": "assets/audio/prompts/stickers.intro.0.m4a"
+    },
+    {
+      "promptId": "stickers.new",
+      "index": 0,
+      "text": "¡Ganaste un sticker nuevo! Búscalo en tu álbum.",
+      "file": "assets/audio/prompts/stickers.new.0.m4a"
     }
   ]
 }

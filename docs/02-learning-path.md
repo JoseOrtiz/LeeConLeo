@@ -76,8 +76,10 @@ Rules that follow from this:
   count), and a session is one launch of the app.
 - Finishing a step unlocks the next one, whatever the score. A mastered step shows a
   medal on its stone. The child can always replay earlier steps.
-- **Spaced review:** each session starts with 2–3 quick items from mastered steps,
-  weighted towards the ones answered wrong most recently.
+- **Spaced review:** in each launch of the app, the first step a child opens starts
+  with 3 quick items from their other mastered steps, taken from those steps' own games
+  (tracing excluded). Steps with more mistakes among their last 10 tries come back more
+  often. Review answers count towards the step they came from.
 - When a child fails the same step repeatedly (3 sessions below 50 %), the app
   suggests an easier related activity and flags the step in the teacher view. It
   does not lock the child out.
