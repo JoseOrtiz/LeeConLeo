@@ -220,3 +220,48 @@ letter.trace.l.upper:
 
 letter.find.l:
   - Revienta las burbujas que tienen la, ele.
+
+syllables.starts_with.ma:
+  - ¿Qué dibujo empieza con, ma?
+
+syllables.starts_with.me:
+  - ¿Qué dibujo empieza con, me?
+
+syllables.starts_with.mi:
+  - ¿Qué dibujo empieza con, mi?
+
+syllables.starts_with.mo:
+  - ¿Qué dibujo empieza con, mo?
+
+syllables.starts_with.mu:
+  - ¿Qué dibujo empieza con, mu?
+
+syllables.starts_with.pa:
+  - ¿Qué dibujo empieza con, pa?
+
+syllables.starts_with.pe:
+  - ¿Qué dibujo empieza con, pe?
+
+syllables.starts_with.pi:
+  - ¿Qué dibujo empieza con, pi?
+
+syllables.starts_with.po:
+  - ¿Qué dibujo empieza con, po?
+
+syllables.starts_with.pu:
+  - ¿Qué dibujo empieza con, pu?
+
+syllables.starts_with.la:
+  - ¿Qué dibujo empieza con, la?
+
+syllables.starts_with.le:
+  - ¿Qué dibujo empieza con, le?
+
+syllables.starts_with.li:
+  - ¿Qué dibujo empieza con, li?
+
+syllables.starts_with.lo:
+  - ¿Qué dibujo empieza con, lo?
+
+syllables.starts_with.lu:
+  - ¿Qué dibujo empieza con, lu?

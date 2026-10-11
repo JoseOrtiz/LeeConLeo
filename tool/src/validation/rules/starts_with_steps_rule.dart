@@ -19,25 +19,25 @@ class StartsWithStepsRule implements ValidationRule {
       yield ValidationIssue.error('"${word.text}": a word with a picture needs audio');
     }
     for (final step in steps) {
-      final sound = step.sound;
-      if (sound == null) {
+      if (step.sounds.isEmpty) {
         yield ValidationIssue.error('step "${step.id}": ${ActivityIds.startsWith} needs a sound');
-        continue;
       }
-      final prompt = SoundPromptIds.startsWith(sound);
-      if (!bundle.prompts.contains(prompt)) {
-        yield ValidationIssue.error('step "${step.id}": missing prompt "$prompt"');
-      }
-      final matches = pictured.where((word) => word.startsWithSound(sound)).length;
-      if (matches == 0) {
-        yield ValidationIssue.error(
-          'step "${step.id}": no word with a picture starts with "$sound"',
-        );
-      }
-      if (pictured.length - matches < distractors) {
-        yield ValidationIssue.error(
-          'step "${step.id}": fewer than $distractors pictures that do not start with "$sound"',
-        );
+      for (final sound in step.sounds) {
+        final prompt = SoundPromptIds.startsWith(sound);
+        if (!bundle.prompts.contains(prompt)) {
+          yield ValidationIssue.error('step "${step.id}": missing prompt "$prompt"');
+        }
+        final matches = pictured.where((word) => word.startsWithSound(sound)).length;
+        if (matches == 0) {
+          yield ValidationIssue.error(
+            'step "${step.id}": no word with a picture starts with "$sound"',
+          );
+        }
+        if (pictured.length - matches < distractors) {
+          yield ValidationIssue.error(
+            'step "${step.id}": fewer than $distractors pictures that do not start with "$sound"',
+          );
+        }
       }
     }
   }

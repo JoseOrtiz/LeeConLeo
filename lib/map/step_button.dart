@@ -66,7 +66,7 @@ class StepButton extends StatelessWidget {
         child: SvgPicture.asset('assets/images/$icon'),
       );
     }
-    final grapheme = step.grapheme;
+    final grapheme = step.grapheme ?? (step.sounds.length > 1 ? step.sounds.first : null);
     if (grapheme != null) {
       return Text(
         grapheme,

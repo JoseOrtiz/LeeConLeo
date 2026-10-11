@@ -16,7 +16,9 @@
       "u": "Uu"
     },
     "wordSpellings": {
-      "ojo": "¡Ojo!"
+      "ojo": "¡Ojo!",
+      "pato": "Pato,",
+      "escoba": "¡Escoba!"
     }
   },
   "clips": [
@@ -483,6 +485,96 @@
       "file": "assets/audio/prompts/letter.find.l.0.m4a"
     },
     {
+      "promptId": "syllables.starts_with.ma",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, ma?",
+      "file": "assets/audio/prompts/syllables.starts_with.ma.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.me",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, me?",
+      "file": "assets/audio/prompts/syllables.starts_with.me.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.mi",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, mi?",
+      "file": "assets/audio/prompts/syllables.starts_with.mi.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.mo",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, mo?",
+      "file": "assets/audio/prompts/syllables.starts_with.mo.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.mu",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, mu?",
+      "file": "assets/audio/prompts/syllables.starts_with.mu.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.pa",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, pa?",
+      "file": "assets/audio/prompts/syllables.starts_with.pa.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.pe",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, pe?",
+      "file": "assets/audio/prompts/syllables.starts_with.pe.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.pi",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, pi?",
+      "file": "assets/audio/prompts/syllables.starts_with.pi.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.po",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, po?",
+      "file": "assets/audio/prompts/syllables.starts_with.po.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.pu",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, pu?",
+      "file": "assets/audio/prompts/syllables.starts_with.pu.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.la",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, la?",
+      "file": "assets/audio/prompts/syllables.starts_with.la.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.le",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, le?",
+      "file": "assets/audio/prompts/syllables.starts_with.le.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.li",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, li?",
+      "file": "assets/audio/prompts/syllables.starts_with.li.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.lo",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, lo?",
+      "file": "assets/audio/prompts/syllables.starts_with.lo.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.lu",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, lu?",
+      "file": "assets/audio/prompts/syllables.starts_with.lu.0.m4a"
+    },
+    {
       "promptId": "vowel.a",
       "index": 0,
       "text": "a",
@@ -712,6 +804,239 @@
       "text": "luna",
       "file": "assets/audio/words/luna.m4a",
       "spokenAs": "Luna."
+    },
+    {
+      "promptId": "word.avion",
+      "index": 0,
+      "text": "avión",
+      "file": "assets/audio/words/avion.m4a",
+      "spokenAs": "Avión."
+    },
+    {
+      "promptId": "word.escoba",
+      "index": 0,
+      "text": "escoba",
+      "file": "assets/audio/words/escoba.m4a",
+      "spokenAs": "¡Escoba!"
+    },
+    {
+      "promptId": "word.iman",
+      "index": 0,
+      "text": "imán",
+      "file": "assets/audio/words/iman.m4a",
+      "spokenAs": "Imán."
+    },
+    {
+      "promptId": "word.lana",
+      "index": 0,
+      "text": "lana",
+      "file": "assets/audio/words/lana.m4a",
+      "spokenAs": "Lana."
+    },
+    {
+      "promptId": "word.leche",
+      "index": 0,
+      "text": "leche",
+      "file": "assets/audio/words/leche.m4a",
+      "spokenAs": "Leche."
+    },
+    {
+      "promptId": "word.leon",
+      "index": 0,
+      "text": "león",
+      "file": "assets/audio/words/leon.m4a",
+      "spokenAs": "León."
+    },
+    {
+      "promptId": "word.libro",
+      "index": 0,
+      "text": "libro",
+      "file": "assets/audio/words/libro.m4a",
+      "spokenAs": "Libro."
+    },
+    {
+      "promptId": "word.limon",
+      "index": 0,
+      "text": "limón",
+      "file": "assets/audio/words/limon.m4a",
+      "spokenAs": "Limón."
+    },
+    {
+      "promptId": "word.lobo",
+      "index": 0,
+      "text": "lobo",
+      "file": "assets/audio/words/lobo.m4a",
+      "spokenAs": "Lobo."
+    },
+    {
+      "promptId": "word.loro",
+      "index": 0,
+      "text": "loro",
+      "file": "assets/audio/words/loro.m4a",
+      "spokenAs": "Loro."
+    },
+    {
+      "promptId": "word.lupa",
+      "index": 0,
+      "text": "lupa",
+      "file": "assets/audio/words/lupa.m4a",
+      "spokenAs": "Lupa."
+    },
+    {
+      "promptId": "word.lapiz",
+      "index": 0,
+      "text": "lápiz",
+      "file": "assets/audio/words/lapiz.m4a",
+      "spokenAs": "Lápiz."
+    },
+    {
+      "promptId": "word.mano",
+      "index": 0,
+      "text": "mano",
+      "file": "assets/audio/words/mano.m4a",
+      "spokenAs": "Mano."
+    },
+    {
+      "promptId": "word.manzana",
+      "index": 0,
+      "text": "manzana",
+      "file": "assets/audio/words/manzana.m4a",
+      "spokenAs": "Manzana."
+    },
+    {
+      "promptId": "word.melon",
+      "index": 0,
+      "text": "melón",
+      "file": "assets/audio/words/melon.m4a",
+      "spokenAs": "Melón."
+    },
+    {
+      "promptId": "word.microfono",
+      "index": 0,
+      "text": "micrófono",
+      "file": "assets/audio/words/microfono.m4a",
+      "spokenAs": "Micrófono."
+    },
+    {
+      "promptId": "word.miel",
+      "index": 0,
+      "text": "miel",
+      "file": "assets/audio/words/miel.m4a",
+      "spokenAs": "la miel",
+      "cutAtSeconds": 0.245
+    },
+    {
+      "promptId": "word.mochila",
+      "index": 0,
+      "text": "mochila",
+      "file": "assets/audio/words/mochila.m4a",
+      "spokenAs": "una mochila",
+      "cutAtSeconds": 0.355
+    },
+    {
+      "promptId": "word.mono",
+      "index": 0,
+      "text": "mono",
+      "file": "assets/audio/words/mono.m4a",
+      "spokenAs": "Mono."
+    },
+    {
+      "promptId": "word.murcielago",
+      "index": 0,
+      "text": "murciélago",
+      "file": "assets/audio/words/murcielago.m4a",
+      "spokenAs": "Murciélago."
+    },
+    {
+      "promptId": "word.muneca",
+      "index": 0,
+      "text": "muñeca",
+      "file": "assets/audio/words/muneca.m4a",
+      "spokenAs": "Muñeca."
+    },
+    {
+      "promptId": "word.oveja",
+      "index": 0,
+      "text": "oveja",
+      "file": "assets/audio/words/oveja.m4a",
+      "spokenAs": "Oveja."
+    },
+    {
+      "promptId": "word.palta",
+      "index": 0,
+      "text": "palta",
+      "file": "assets/audio/words/palta.m4a",
+      "spokenAs": "Palta."
+    },
+    {
+      "promptId": "word.pato",
+      "index": 0,
+      "text": "pato",
+      "file": "assets/audio/words/pato.m4a",
+      "spokenAs": "Pato,"
+    },
+    {
+      "promptId": "word.pera",
+      "index": 0,
+      "text": "pera",
+      "file": "assets/audio/words/pera.m4a",
+      "spokenAs": "Pera."
+    },
+    {
+      "promptId": "word.perro",
+      "index": 0,
+      "text": "perro",
+      "file": "assets/audio/words/perro.m4a",
+      "spokenAs": "Perro."
+    },
+    {
+      "promptId": "word.pino",
+      "index": 0,
+      "text": "pino",
+      "file": "assets/audio/words/pino.m4a",
+      "spokenAs": "Pino."
+    },
+    {
+      "promptId": "word.pina",
+      "index": 0,
+      "text": "piña",
+      "file": "assets/audio/words/pina.m4a",
+      "spokenAs": "Piña."
+    },
+    {
+      "promptId": "word.pollo",
+      "index": 0,
+      "text": "pollo",
+      "file": "assets/audio/words/pollo.m4a",
+      "spokenAs": "Pollo."
+    },
+    {
+      "promptId": "word.poroto",
+      "index": 0,
+      "text": "poroto",
+      "file": "assets/audio/words/poroto.m4a",
+      "spokenAs": "Poroto."
+    },
+    {
+      "promptId": "word.pulpo",
+      "index": 0,
+      "text": "pulpo",
+      "file": "assets/audio/words/pulpo.m4a",
+      "spokenAs": "Pulpo."
+    },
+    {
+      "promptId": "word.puma",
+      "index": 0,
+      "text": "puma",
+      "file": "assets/audio/words/puma.m4a",
+      "spokenAs": "Puma."
+    },
+    {
+      "promptId": "word.una",
+      "index": 0,
+      "text": "uña",
+      "file": "assets/audio/words/una.m4a",
+      "spokenAs": "Uña."
     }
   ]
 }

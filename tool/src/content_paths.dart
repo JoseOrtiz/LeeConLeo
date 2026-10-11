@@ -9,4 +9,5 @@ abstract final class ContentPaths {
   static const audio = 'assets/audio';
   static const promptClipsDir = 'prompts';
   static const clipExtension = '.m4a';
+  static const toRecord = 'tool/voice/to_record.json';
 }

@@ -10,6 +10,10 @@ import 'package:lee_con_leo/activities/sounds/starts_with_activity.dart';
 import 'package:lee_con_leo/core/audio/audio_providers.dart';
 import 'package:lee_con_leo/core/content/activity_ids.dart';
 import 'package:lee_con_leo/core/content/content_providers.dart';
+import 'package:lee_con_leo/core/content/models/word.dart';
+import 'package:lee_con_leo/core/content/models/path_step.dart';
+import 'package:lee_con_leo/core/content/models/path_stage.dart';
+import 'package:lee_con_leo/core/content/models/content_bundle.dart';
 import 'package:lee_con_leo/core/logging/in_memory_event_log.dart';
 import 'package:lee_con_leo/core/logging/logging_providers.dart';
 import 'package:lee_con_leo/core/progress/progress_providers.dart';
@@ -35,6 +39,50 @@ void main() {
         expect(item.optionNames[item.target]!.clip, 'words/abeja.m4a');
       }
     });
+  });
+
+  test('a syllable step asks for each of its syllables once', () {
+    Word pictured(String text, List<String> sounds) =>
+        Word(text: text, syllables: sounds, sounds: sounds, image: 'words/$text.svg');
+    final content = ContentBundle(
+      words: [
+        pictured('mano', ['ma', 'no']),
+        pictured('mesa', ['me', 'sa']),
+        pictured('miel', ['miel']),
+        pictured('oso', ['o', 'so']),
+        pictured('uva', ['u', 'ba']),
+        pictured('pato', ['pa', 'to']),
+      ],
+      stages: const [
+        PathStage(
+          stage: 4,
+          name: 'bosque',
+          steps: [
+            PathStep(id: 'ma', sounds: ['ma', 'me', 'mi'], activities: ['syllables.starts_with']),
+          ],
+        ),
+      ],
+      prompts: testPrompts,
+    );
+
+    final items = const StartsWithActivity().buildItems(
+      ActivityContext(content: content, step: content.stepById('ma')!, random: Random(1)),
+    );
+
+    expect(
+      items.map((item) => item.promptId),
+      unorderedEquals([
+        'syllables.starts_with.ma',
+        'syllables.starts_with.me',
+        'syllables.starts_with.mi',
+      ]),
+    );
+    for (final item in items) {
+      final sound = item.promptId.split('.').last;
+      expect(content.wordByText(item.target)!.startsWithSound(sound), isTrue);
+      final others = item.options.where((option) => option != item.target);
+      expect(others.every((text) => !content.wordByText(text)!.startsWithSound(sound)), isTrue);
+    }
   });
 
   group('game', () {
