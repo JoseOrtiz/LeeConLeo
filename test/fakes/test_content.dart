@@ -1,11 +1,16 @@
 import 'dart:math';
 
+import 'package:flutter_riverpod/misc.dart';
+
 import 'package:lee_con_leo/core/content/models/content_bundle.dart';
 import 'package:lee_con_leo/core/content/models/letter_shape.dart';
 import 'package:lee_con_leo/core/content/models/path_stage.dart';
 import 'package:lee_con_leo/core/content/models/path_step.dart';
 import 'package:lee_con_leo/core/content/models/prompt_library.dart';
 import 'package:lee_con_leo/core/content/models/word.dart';
+import 'package:lee_con_leo/core/profiles/in_memory_profile_store.dart';
+import 'package:lee_con_leo/core/profiles/profile.dart';
+import 'package:lee_con_leo/core/profiles/profile_providers.dart';
 
 const testPrompts = PromptLibrary({
   'feedback.correct': ['correct'],
@@ -14,6 +19,8 @@ const testPrompts = PromptLibrary({
   'reward': ['reward'],
   'home.intro': ['home intro'],
   'home.locked': ['home locked'],
+  'profiles.intro': ['profiles intro'],
+  'profiles.empty': ['profiles empty'],
   'spatial.up_down.intro': ['intro'],
   'spatial.up_down.up': ['say up'],
   'spatial.up_down.down': ['say down'],
@@ -112,3 +119,8 @@ const testLetter = LetterShape(
     [Point(0.0, 0.0), Point(50.0, 50.0), Point(100.0, 0.0)],
   ],
 );
+
+const testProfile = Profile(id: 1, nickname: 'Ana', avatar: 'words/oso.svg');
+
+Override singleProfile() =>
+    profileStoreProvider.overrideWithValue(InMemoryProfileStore(const [testProfile]));

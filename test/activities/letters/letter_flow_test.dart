@@ -30,6 +30,7 @@ void main() {
     player = RecordingPromptPlayer();
     log = InMemoryEventLog();
     return [
+      singleProfile(),
       contentProvider.overrideWith((ref) async => testContent),
       promptPlayerProvider.overrideWithValue(player),
       eventLogProvider.overrideWithValue(log),

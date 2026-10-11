@@ -4370,6 +4370,12 @@
     "home.locked": [
       "Todavía no. Primero juega donde estoy yo."
     ],
+    "profiles.intro": [
+      "¿Quién va a jugar? ¡Toca tu dibujo!"
+    ],
+    "profiles.empty": [
+      "¡Hola! Pídele a un adulto que te ayude a empezar."
+    ],
     "spatial.up_down.intro": [
       "¡Hola! Soy Leo. Ayúdame a encontrar arriba y abajo."
     ],
@@ -4921,6 +4927,8 @@
     "letter.trace.p.upper.0": "prompts/letter.trace.p.upper.0.m4a",
     "letter.trace.u.lower.0": "prompts/letter.trace.u.lower.0.m4a",
     "letter.trace.u.upper.0": "prompts/letter.trace.u.upper.0.m4a",
+    "profiles.empty.0": "prompts/profiles.empty.0.m4a",
+    "profiles.intro.0": "prompts/profiles.intro.0.m4a",
     "reward.0": "prompts/reward.0.m4a",
     "spatial.left_right.intro.0": "prompts/spatial.left_right.intro.0.m4a",
     "spatial.left_right.left.0": "prompts/spatial.left_right.left.0.m4a",

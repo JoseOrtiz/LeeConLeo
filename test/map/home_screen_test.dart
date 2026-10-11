@@ -34,6 +34,7 @@ void main() {
     await tester.pumpWidget(
       ProviderScope(
         overrides: [
+          singleProfile(),
           contentProvider.overrideWith((ref) async => testContent),
           minimumSplashProvider.overrideWithValue(Duration.zero),
           promptPlayerProvider.overrideWithValue(player),

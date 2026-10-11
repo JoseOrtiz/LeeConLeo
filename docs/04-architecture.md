@@ -81,7 +81,12 @@ and activity (about 430 files) goes away.
 ## Observation mode and data
 
 - **Always on (local only):** the event log that feeds mastery and review, saved in
-  SQLite (`lib/core/logging/event_database.dart`). On the web it stays in memory for now.
+  SQLite (`lib/core/storage/app_database.dart`) per profile, with the profiles and their
+  finished steps. On the web it all stays in memory for now.
+- **Profiles:** a nickname and an avatar (one of the animal pictures). With several
+  profiles the app opens on a picture-only picker; with one it goes straight to the
+  map. The child's avatar on the map hands over to someone else. Adding and deleting
+  profiles sits behind the parental gate (a sum written in words).
 - **Observation mode (opt-in, behind the parental gate):** adds session markers
   and an observer note field, and **exports CSV** through the system share sheet.
 - **Event row:** `timestamp, profileNick, sessionId, stage, step, activity, itemId,

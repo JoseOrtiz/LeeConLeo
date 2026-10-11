@@ -57,7 +57,7 @@ flutter analyze
 flutter test
 ```
 
-After changing the database tables (`lib/core/logging/event_database.dart`),
+After changing the database tables (`lib/core/storage/app_database.dart`),
 regenerate its code with `dart run build_runner build`.
 
 ## License
