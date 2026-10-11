@@ -10,6 +10,7 @@ import '../app/startup_providers.dart';
 import '../app/widgets/loading_view.dart';
 import '../core/audio/audio_providers.dart';
 import '../core/audio/utterance.dart';
+import '../core/content/activity_ids.dart';
 import '../core/content/models/content_bundle.dart';
 import '../core/content/models/path_stage.dart';
 import '../core/content/models/path_step.dart';
@@ -20,12 +21,15 @@ import '../profiles/profile_picker.dart';
 import 'greeting.dart';
 import 'leo_position.dart';
 import 'place_view.dart';
+import 'review_due.dart';
 import 'step_status.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
 
   static const switchProfileKey = ValueKey('switch-profile');
+  static const albumKey = ValueKey('album');
+  static const buttonsWidth = 148.0;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -61,6 +65,21 @@ Widget _home(WidgetRef ref, ContentBundle bundle) {
             ref.read(promptPlayerProvider).stop();
             ref.read(activeProfileProvider.notifier).leave();
           },
+        ),
+      ),
+      Positioned(
+        top: 8,
+        right: 84,
+        child: Builder(
+          builder: (context) => IconButton.filledTonal(
+            key: HomeScreen.albumKey,
+            iconSize: 40,
+            onPressed: () {
+              ref.read(promptPlayerProvider).stop();
+              context.go('/stickers');
+            },
+            icon: const Icon(Icons.auto_stories_rounded),
+          ),
         ),
       ),
     ],
@@ -152,6 +171,12 @@ class _PathMapState extends ConsumerState<PathMap> {
       _say(PathMap.lockedPrompt);
       return;
     }
+    final mastered = ref.read(masteredStepsProvider).difference({step.id});
+    if (ref.read(reviewDueProvider) && mastered.isNotEmpty) {
+      ref.read(reviewDueProvider.notifier).markDone();
+      context.go('/play/${step.id}/${ActivityIds.review}');
+      return;
+    }
     context.go('/play/${step.id}/$activityId');
   }
 
@@ -188,6 +213,7 @@ class _PathMapState extends ConsumerState<PathMap> {
           onOpen: _open,
           leoStep: leoAt,
           leoHere: _leoHere(index, leoAt),
+          rightReserved: HomeScreen.buttonsWidth,
         );
       },
     );

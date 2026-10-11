@@ -7,6 +7,8 @@ class ActivityItem {
     required this.promptId,
     required this.options,
     this.optionNames = const {},
+    this.stepId,
+    this.activityId,
   });
 
   final String id;
@@ -14,4 +16,6 @@ class ActivityItem {
   final String promptId;
   final List<String> options;
   final Map<String, SpokenLine> optionNames;
+  final String? stepId;
+  final String? activityId;
 }

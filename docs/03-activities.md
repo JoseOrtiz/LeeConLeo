@@ -100,7 +100,10 @@ child reads while playing. It unlocks as a reward after each consonant group.
 
 - **Map:** Leo travels through places (meadow, beach, forest, mountains…), one
   screen each with a few steps. The child swipes between places like pages.
-- **Stickers:** a collectible album, one sticker per mastered step.
+- **Stickers:** a collectible album, one sticker per mastered step: the step's icon,
+  its key word, or for a syllable step the first picture that starts with its syllable.
+  The reward screen shows a new sticker when the step becomes mastered, and the album
+  opens from the map.
 - **No punishment:** no lives lost, no timers in learning activities (the runner
   is the only timed game, and it's optional).
 

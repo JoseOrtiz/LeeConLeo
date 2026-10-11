@@ -21,6 +21,9 @@ const testPrompts = PromptLibrary({
   'home.locked': ['home locked'],
   'profiles.intro': ['profiles intro'],
   'profiles.empty': ['profiles empty'],
+  'review.intro': ['review intro'],
+  'stickers.intro': ['stickers intro'],
+  'stickers.new': ['new sticker'],
   'spatial.up_down.intro': ['intro'],
   'spatial.up_down.up': ['say up'],
   'spatial.up_down.down': ['say down'],
@@ -90,7 +93,7 @@ const testContent = ContentBundle(
       scene: 'scenes/meadow.svg',
       tint: testTint,
       steps: [
-        PathStep(id: 'up-down', activities: ['spatial.up_down']),
+        PathStep(id: 'up-down', icon: 'steps/up_down.svg', activities: ['spatial.up_down']),
         PathStep(id: 'left-right', activities: ['spatial.left_right']),
         PathStep(id: 'positions', activities: ['spatial.positions']),
         PathStep(

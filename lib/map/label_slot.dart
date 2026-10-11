@@ -15,6 +15,7 @@ LabelSlot labelSlot({
   required double bottom,
   required double width,
   double margin = 16,
+  double rightReserved = 0,
   double step = 4,
 }) {
   var nearest = double.infinity;
@@ -27,9 +28,11 @@ LabelSlot labelSlot({
       farthest = max(farthest, point.dx);
     }
   }
-  if (nearest == double.infinity) return LabelSlot(isLeft: true, maxWidth: width - 2 * margin);
+  if (nearest == double.infinity) {
+    return LabelSlot(isLeft: true, maxWidth: width - 2 * margin - rightReserved);
+  }
   final left = nearest - roadHalfWidth - 2 * margin;
-  final right = width - farthest - roadHalfWidth - 2 * margin;
+  final right = width - farthest - roadHalfWidth - 2 * margin - rightReserved;
   return left >= right
       ? LabelSlot(isLeft: true, maxWidth: max(0, left))
       : LabelSlot(isLeft: false, maxWidth: max(0, right));

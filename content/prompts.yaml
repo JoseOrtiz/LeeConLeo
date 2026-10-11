@@ -26,6 +26,15 @@ profiles.intro:
 profiles.empty:
   - ¡Hola! Pídele a un adulto que te ayude a empezar.
 
+review.intro:
+  - ¡Antes de jugar, un repaso rápido! ¿Te acuerdas de esto?
+
+stickers.intro:
+  - ¡Este es tu álbum de stickers! Cada vez que aprendes algo muy bien, ganas uno nuevo.
+
+stickers.new:
+  - ¡Ganaste un sticker nuevo! Búscalo en tu álbum.
+
 spatial.up_down.intro:
   - ¡Hola! Soy Leo. Ayúdame a encontrar arriba y abajo.
 

@@ -125,8 +125,8 @@ class ActivitySession extends ChangeNotifier implements ItemController {
       ItemEvent(
         timestamp: _clock(),
         sessionId: sessionId,
-        stepId: stepId,
-        activityId: activityId,
+        stepId: currentItem.stepId ?? stepId,
+        activityId: currentItem.activityId ?? activityId,
         itemId: currentItem.id,
         target: currentItem.target,
         answer: value,
