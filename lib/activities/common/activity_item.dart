@@ -9,6 +9,7 @@ class ActivityItem {
     this.optionNames = const {},
     this.stepId,
     this.activityId,
+    this.promptTail,
   });
 
   final String id;
@@ -18,4 +19,5 @@ class ActivityItem {
   final Map<String, SpokenLine> optionNames;
   final String? stepId;
   final String? activityId;
+  final SpokenLine? promptTail;
 }

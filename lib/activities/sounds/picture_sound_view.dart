@@ -26,6 +26,7 @@ class PictureSoundView extends StatelessWidget {
       : Rect.fromLTWH(0, 0, size.width, size.height * soundShare);
 
   Rect _gridRect(Size size) {
+    if (!item.showsSound) return Offset.zero & size;
     final sound = _soundRect(size);
     return _isWide(size)
         ? Rect.fromLTRB(sound.right + gap, 0, size.width, size.height)
@@ -51,7 +52,7 @@ class PictureSoundView extends StatelessWidget {
             path: [grid.topLeft + _centerOf(item.options.indexOf(item.target), grid.size)],
             child: Stack(
               children: [
-                Positioned.fromRect(rect: _soundRect(size), child: _sound()),
+                if (item.showsSound) Positioned.fromRect(rect: _soundRect(size), child: _sound()),
                 Positioned.fromRect(
                   rect: grid,
                   child: Column(

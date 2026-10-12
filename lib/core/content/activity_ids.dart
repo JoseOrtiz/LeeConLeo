@@ -2,6 +2,8 @@ abstract final class ActivityIds {
   static const upDown = 'spatial.up_down';
   static const leftRight = 'spatial.left_right';
   static const positions = 'spatial.positions';
+  static const clap = 'listening.clap';
+  static const sameSound = 'listening.same_sound';
   static const meet = 'letter.meet';
   static const trace = 'letter.trace';
   static const find = 'letter.find';
@@ -17,6 +19,8 @@ abstract final class ActivityIds {
     upDown,
     leftRight,
     positions,
+    clap,
+    sameSound,
     meet,
     trace,
     find,

@@ -1,5 +1,6 @@
 import 'package:lee_con_leo/core/content/models/content_bundle.dart';
 import 'package:lee_con_leo/core/content/models/path_step.dart';
+import 'package:lee_con_leo/core/content/picture_sound_game.dart';
 import 'package:lee_con_leo/core/content/sound_position.dart';
 
 import '../validation_issue.dart';
@@ -13,18 +14,16 @@ class PictureSoundStepsRule implements ValidationRule {
   @override
   Iterable<ValidationIssue> check(ContentBundle bundle) sync* {
     final pictured = SoundPosition.pictured(bundle.words);
-    final used = SoundPosition.values.where(
-      (position) => bundle.steps.any((step) => step.activities.contains(position.activityId)),
+    final used = PictureSoundGame.values.where(
+      (game) => bundle.steps.any((step) => step.activities.contains(game.activityId)),
     );
     if (used.isEmpty) return;
     for (final word in pictured.where((word) => word.audio == null)) {
       yield ValidationIssue.error('"${word.text}": a word with a picture needs audio');
     }
-    for (final position in used) {
-      for (final step in bundle.steps.where(
-        (step) => step.activities.contains(position.activityId),
-      )) {
-        yield* _checkStep(bundle, step, position);
+    for (final game in used) {
+      for (final step in bundle.steps.where((step) => step.activities.contains(game.activityId))) {
+        yield* _checkStep(bundle, step, game);
       }
     }
   }
@@ -32,12 +31,13 @@ class PictureSoundStepsRule implements ValidationRule {
   Iterable<ValidationIssue> _checkStep(
     ContentBundle bundle,
     PathStep step,
-    SoundPosition position,
+    PictureSoundGame game,
   ) sync* {
+    final position = game.position;
     final pictured = SoundPosition.pictured(bundle.words);
     final label = position == SoundPosition.start ? 'starts' : 'ends';
     if (step.sounds.isEmpty) {
-      yield ValidationIssue.error('step "${step.id}": ${position.activityId} needs a sound');
+      yield ValidationIssue.error('step "${step.id}": ${game.activityId} needs a sound');
       return;
     }
     final asked = <String>[];
