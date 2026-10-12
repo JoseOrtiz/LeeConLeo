@@ -59,9 +59,9 @@ map** button.
 
 | Activity | Mechanic |
 |---|---|
-| *Clap the syllables* | Hear a word, tap the drum once per syllable (*ma-ri-po-sa* → 4) |
+| *Clap the syllables* | See a picture and hear its word, tap the clapping hands once per syllable (*ma-ri-po-sa* → 4), then the check. Each tap adds a dot; a wrong count clears them, and the hint shows the right number of empty dots. When right, Leo says the word split up. Words start with the step's sounds when there are enough, rotating 1–4 syllables |
 | *Rhymes* | Hear two words, tap the happy or sad face |
-| *Same sound* | Hear a sound, pick the picture that starts with it. No letters shown |
+| *Same sound* | Hear a sound, pick the picture that starts with it. *Starts with* without the written card, using the same questions |
 | *Blend the sounds* | Leo says "ma… no", and the child picks the picture (*mano*). This is blending |
 
 ### Letter sequence (for each vowel and consonant)

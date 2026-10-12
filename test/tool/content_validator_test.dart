@@ -9,6 +9,7 @@ import 'package:lee_con_leo/core/content/models/prompt_library.dart';
 import 'package:lee_con_leo/core/content/models/word.dart';
 
 import '../../tool/src/validation/rules/build_word_steps_rule.dart';
+import '../../tool/src/validation/rules/clap_steps_rule.dart';
 import '../../tool/src/validation/rules/known_activities_rule.dart';
 import '../../tool/src/validation/rules/letter_steps_rule.dart';
 import '../../tool/src/validation/rules/path_images_rule.dart';
@@ -406,6 +407,43 @@ void main() {
         contains('no word with a picture'),
       );
     });
+  });
+
+  test('a clapping step needs the ask phrase and a split phrase for every word', () {
+    const sol = Word(
+      text: 'sol',
+      syllables: ['sol'],
+      sounds: ['sol'],
+      image: 'words/sol.svg',
+      audio: 'words/sol.m4a',
+    );
+    ContentBundle clapBundle(Map<String, List<String>> phrases) => ContentBundle(
+      words: const [sol],
+      stages: const [
+        PathStage(
+          stage: 2,
+          name: 'vocales',
+          steps: [
+            PathStep(id: 'o', sounds: ['o'], activities: ['listening.clap']),
+          ],
+        ),
+      ],
+      prompts: PromptLibrary(phrases),
+    );
+
+    expect(
+      const ClapStepsRule().check(
+        clapBundle({
+          'listening.clap.ask': ['ask'],
+          'listening.clap.sol': ['Sol.'],
+        }),
+      ),
+      isEmpty,
+    );
+    expect(const ClapStepsRule().check(clapBundle({})).map((issue) => issue.message), [
+      contains('listening.clap.ask'),
+      contains('listening.clap.sol'),
+    ]);
   });
 
   test('flags places with no steps or too many to fit one screen', () {

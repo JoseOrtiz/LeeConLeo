@@ -4,6 +4,7 @@ import 'package:flutter/widgets.dart';
 
 import '../../core/content/models/spoken_line.dart';
 import '../../core/content/models/word.dart';
+import '../../core/content/picture_sound_game.dart';
 import '../../core/content/sound_position.dart';
 import '../common/activity_context.dart';
 import '../common/activity_item.dart';
@@ -20,22 +21,27 @@ class PictureItem extends ActivityItem {
     required super.optionNames,
     required this.sound,
     required this.images,
+    this.showsSound = true,
   });
 
   final String sound;
   final Map<String, String> images;
+  final bool showsSound;
 }
 
 class PictureSoundActivity implements ActivitySpec {
-  const PictureSoundActivity._(this.position);
+  const PictureSoundActivity._(this.game);
 
-  static const startsWith = PictureSoundActivity._(SoundPosition.start);
-  static const endsWith = PictureSoundActivity._(SoundPosition.end);
+  static const startsWith = PictureSoundActivity._(PictureSoundGame.startsWith);
+  static const endsWith = PictureSoundActivity._(PictureSoundGame.endsWith);
+  static const sameSound = PictureSoundActivity._(PictureSoundGame.sameSound);
 
-  final SoundPosition position;
+  final PictureSoundGame game;
+
+  SoundPosition get position => game.position;
 
   @override
-  String get id => position.activityId;
+  String get id => game.activityId;
 
   static const rounds = 4;
   static const choices = 4;
@@ -98,6 +104,7 @@ class PictureSoundActivity implements ActivitySpec {
       options: [for (final word in words) word.text],
       optionNames: {for (final word in words) word.text: SpokenLine(word.text, clip: word.audio)},
       images: {for (final word in words) word.text: word.image!},
+      showsSound: game.showsSound,
     );
   }
 

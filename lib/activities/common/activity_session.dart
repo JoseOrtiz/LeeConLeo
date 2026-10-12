@@ -83,11 +83,11 @@ class ActivitySession extends ChangeNotifier implements ItemController {
     _record(value);
     if (value == currentItem.target) {
       _phase = SessionPhase.celebrating;
-      _sayAfterAnswer(value, [ActivityPromptIds.correct]);
+      _sayAfterAnswer(value, [_line(ActivityPromptIds.correct)]);
     } else {
       _mistakes++;
       final feedback = isHintActive ? ActivityPromptIds.hint : ActivityPromptIds.retry;
-      _sayAfterAnswer(value, [feedback, currentItem.promptId]);
+      _sayAfterAnswer(value, [_line(feedback), ..._prompt]);
     }
     notifyListeners();
   }
@@ -108,7 +108,7 @@ class ActivitySession extends ChangeNotifier implements ItemController {
     if (_phase == SessionPhase.intro) {
       start();
     } else if (_phase == SessionPhase.playing) {
-      _say(currentItem.promptId);
+      _player.say(Utterance(_prompt));
     }
   }
 
@@ -116,7 +116,7 @@ class ActivitySession extends ChangeNotifier implements ItemController {
     _phase = SessionPhase.playing;
     _mistakes = 0;
     _itemShownAt = _clock();
-    _say(currentItem.promptId);
+    _player.say(Utterance(_prompt));
     notifyListeners();
   }
 
@@ -139,9 +139,10 @@ class ActivitySession extends ChangeNotifier implements ItemController {
 
   void _say(String promptId) => _player.say(Utterance([_line(promptId)]));
 
-  void _sayAfterAnswer(String answer, List<String> promptIds) => _player.say(
-    Utterance([?currentItem.optionNames[answer], for (final id in promptIds) _line(id)]),
-  );
+  List<SpokenLine> get _prompt => [_line(currentItem.promptId), ?currentItem.promptTail];
+
+  void _sayAfterAnswer(String answer, List<SpokenLine> lines) =>
+      _player.say(Utterance([?currentItem.optionNames[answer], ...lines]));
 
   SpokenLine _line(String promptId) => _prompts.line(promptId, _random);
 }

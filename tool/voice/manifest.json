@@ -1687,6 +1687,408 @@
       "index": 0,
       "text": "¿A qué quieres jugar? ¡Toca un dibujo!",
       "file": "assets/audio/prompts/step.intro.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.intro",
+      "index": 0,
+      "text": "¡Vamos a aplaudir! Toca las manos una vez por cada pedacito de la palabra, y después toca el botón de listo.",
+      "file": "assets/audio/prompts/listening.clap.intro.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.ask",
+      "index": 0,
+      "text": "Aplaude los pedacitos de la palabra...",
+      "file": "assets/audio/prompts/listening.clap.ask.0.m4a"
+    },
+    {
+      "promptId": "listening.same_sound.intro",
+      "index": 0,
+      "text": "¡Escucha bien! Toca el dibujo que empieza con el sonido que te digo.",
+      "file": "assets/audio/prompts/listening.same_sound.intro.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.abeja",
+      "index": 0,
+      "text": "A... be... ja.",
+      "file": "assets/audio/prompts/listening.clap.abeja.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.avión",
+      "index": 0,
+      "text": "A... vión.",
+      "file": "assets/audio/prompts/listening.clap.avión.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.cama",
+      "index": 0,
+      "text": "Ca... ma.",
+      "file": "assets/audio/prompts/listening.clap.cama.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.caramelo",
+      "index": 0,
+      "text": "Ca... ra... me... lo.",
+      "file": "assets/audio/prompts/listening.clap.caramelo.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.elefante",
+      "index": 0,
+      "text": "E... le... fan... te.",
+      "file": "assets/audio/prompts/listening.clap.elefante.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.escoba",
+      "index": 0,
+      "text": "Es... co... ba.",
+      "file": "assets/audio/prompts/listening.clap.escoba.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.estrella",
+      "index": 0,
+      "text": "Es... tre... lla.",
+      "file": "assets/audio/prompts/listening.clap.estrella.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.hielo",
+      "index": 0,
+      "text": "Hie... lo.",
+      "file": "assets/audio/prompts/listening.clap.hielo.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.humo",
+      "index": 0,
+      "text": "Hu... mo.",
+      "file": "assets/audio/prompts/listening.clap.humo.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.iglú",
+      "index": 0,
+      "text": "I... glú.",
+      "file": "assets/audio/prompts/listening.clap.iglú.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.imán",
+      "index": 0,
+      "text": "I... mán.",
+      "file": "assets/audio/prompts/listening.clap.imán.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.isla",
+      "index": 0,
+      "text": "Is... la.",
+      "file": "assets/audio/prompts/listening.clap.isla.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.lana",
+      "index": 0,
+      "text": "La... na.",
+      "file": "assets/audio/prompts/listening.clap.lana.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.leche",
+      "index": 0,
+      "text": "Le... che.",
+      "file": "assets/audio/prompts/listening.clap.leche.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.león",
+      "index": 0,
+      "text": "Le... ón.",
+      "file": "assets/audio/prompts/listening.clap.león.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.libro",
+      "index": 0,
+      "text": "Li... bro.",
+      "file": "assets/audio/prompts/listening.clap.libro.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.limón",
+      "index": 0,
+      "text": "Li... món.",
+      "file": "assets/audio/prompts/listening.clap.limón.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.lobo",
+      "index": 0,
+      "text": "Lo... bo.",
+      "file": "assets/audio/prompts/listening.clap.lobo.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.loro",
+      "index": 0,
+      "text": "Lo... ro.",
+      "file": "assets/audio/prompts/listening.clap.loro.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.luna",
+      "index": 0,
+      "text": "Lu... na.",
+      "file": "assets/audio/prompts/listening.clap.luna.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.lupa",
+      "index": 0,
+      "text": "Lu... pa.",
+      "file": "assets/audio/prompts/listening.clap.lupa.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.lápiz",
+      "index": 0,
+      "text": "Lá... piz.",
+      "file": "assets/audio/prompts/listening.clap.lápiz.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.mano",
+      "index": 0,
+      "text": "Ma... no.",
+      "file": "assets/audio/prompts/listening.clap.mano.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.manzana",
+      "index": 0,
+      "text": "Man... za... na.",
+      "file": "assets/audio/prompts/listening.clap.manzana.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.mapa",
+      "index": 0,
+      "text": "Ma... pa.",
+      "file": "assets/audio/prompts/listening.clap.mapa.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.melón",
+      "index": 0,
+      "text": "Me... lón.",
+      "file": "assets/audio/prompts/listening.clap.melón.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.mesa",
+      "index": 0,
+      "text": "Me... sa.",
+      "file": "assets/audio/prompts/listening.clap.mesa.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.micrófono",
+      "index": 0,
+      "text": "Mi... cró... fo... no.",
+      "file": "assets/audio/prompts/listening.clap.micrófono.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.miel",
+      "index": 0,
+      "text": "Miel.",
+      "file": "assets/audio/prompts/listening.clap.miel.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.mochila",
+      "index": 0,
+      "text": "Mo... chi... la.",
+      "file": "assets/audio/prompts/listening.clap.mochila.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.mono",
+      "index": 0,
+      "text": "Mo... no.",
+      "file": "assets/audio/prompts/listening.clap.mono.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.mula",
+      "index": 0,
+      "text": "Mu... la.",
+      "file": "assets/audio/prompts/listening.clap.mula.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.murciélago",
+      "index": 0,
+      "text": "Mur... cié... la... go.",
+      "file": "assets/audio/prompts/listening.clap.murciélago.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.muñeca",
+      "index": 0,
+      "text": "Mu... ñe... ca.",
+      "file": "assets/audio/prompts/listening.clap.muñeca.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.ojo",
+      "index": 0,
+      "text": "O... jo.",
+      "file": "assets/audio/prompts/listening.clap.ojo.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.ola",
+      "index": 0,
+      "text": "O... la.",
+      "file": "assets/audio/prompts/listening.clap.ola.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.oso",
+      "index": 0,
+      "text": "O... so.",
+      "file": "assets/audio/prompts/listening.clap.oso.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.oveja",
+      "index": 0,
+      "text": "O... ve... ja.",
+      "file": "assets/audio/prompts/listening.clap.oveja.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.pala",
+      "index": 0,
+      "text": "Pa... la.",
+      "file": "assets/audio/prompts/listening.clap.pala.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.paloma",
+      "index": 0,
+      "text": "Pa... lo... ma.",
+      "file": "assets/audio/prompts/listening.clap.paloma.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.palta",
+      "index": 0,
+      "text": "Pal... ta.",
+      "file": "assets/audio/prompts/listening.clap.palta.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.papa",
+      "index": 0,
+      "text": "Pa... pa.",
+      "file": "assets/audio/prompts/listening.clap.papa.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.pato",
+      "index": 0,
+      "text": "Pa... to.",
+      "file": "assets/audio/prompts/listening.clap.pato.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.pelota",
+      "index": 0,
+      "text": "Pe... lo... ta.",
+      "file": "assets/audio/prompts/listening.clap.pelota.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.pera",
+      "index": 0,
+      "text": "Pe... ra.",
+      "file": "assets/audio/prompts/listening.clap.pera.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.perro",
+      "index": 0,
+      "text": "Pe... rro.",
+      "file": "assets/audio/prompts/listening.clap.perro.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.pila",
+      "index": 0,
+      "text": "Pi... la.",
+      "file": "assets/audio/prompts/listening.clap.pila.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.pino",
+      "index": 0,
+      "text": "Pi... no.",
+      "file": "assets/audio/prompts/listening.clap.pino.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.piña",
+      "index": 0,
+      "text": "Pi... ña.",
+      "file": "assets/audio/prompts/listening.clap.piña.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.pluma",
+      "index": 0,
+      "text": "Plu... ma.",
+      "file": "assets/audio/prompts/listening.clap.pluma.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.pollo",
+      "index": 0,
+      "text": "Po... llo.",
+      "file": "assets/audio/prompts/listening.clap.pollo.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.pomelo",
+      "index": 0,
+      "text": "Po... me... lo.",
+      "file": "assets/audio/prompts/listening.clap.pomelo.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.poroto",
+      "index": 0,
+      "text": "Po... ro... to.",
+      "file": "assets/audio/prompts/listening.clap.poroto.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.pulpo",
+      "index": 0,
+      "text": "Pul... po.",
+      "file": "assets/audio/prompts/listening.clap.pulpo.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.puma",
+      "index": 0,
+      "text": "Pu... ma.",
+      "file": "assets/audio/prompts/listening.clap.puma.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.remo",
+      "index": 0,
+      "text": "Re... mo.",
+      "file": "assets/audio/prompts/listening.clap.remo.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.sapo",
+      "index": 0,
+      "text": "Sa... po.",
+      "file": "assets/audio/prompts/listening.clap.sapo.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.sopa",
+      "index": 0,
+      "text": "So... pa.",
+      "file": "assets/audio/prompts/listening.clap.sopa.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.trompo",
+      "index": 0,
+      "text": "Trom... po.",
+      "file": "assets/audio/prompts/listening.clap.trompo.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.unicornio",
+      "index": 0,
+      "text": "U... ni... cor... nio.",
+      "file": "assets/audio/prompts/listening.clap.unicornio.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.uva",
+      "index": 0,
+      "text": "U... va.",
+      "file": "assets/audio/prompts/listening.clap.uva.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.uña",
+      "index": 0,
+      "text": "U... ña.",
+      "file": "assets/audio/prompts/listening.clap.uña.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.vela",
+      "index": 0,
+      "text": "Ve... la.",
+      "file": "assets/audio/prompts/listening.clap.vela.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.árbol",
+      "index": 0,
+      "text": "Ár... bol.",
+      "file": "assets/audio/prompts/listening.clap.árbol.0.m4a"
     }
   ]
 }

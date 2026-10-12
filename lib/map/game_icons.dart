@@ -5,6 +5,8 @@ abstract final class GameIcons {
     ActivityIds.upDown: 'steps/up_down.svg',
     ActivityIds.leftRight: 'steps/left_right.svg',
     ActivityIds.positions: 'steps/positions.svg',
+    ActivityIds.clap: 'games/clap.svg',
+    ActivityIds.sameSound: 'games/same_sound.svg',
     ActivityIds.meet: 'games/meet.svg',
     ActivityIds.trace: 'games/trace.svg',
     ActivityIds.find: 'games/find.svg',

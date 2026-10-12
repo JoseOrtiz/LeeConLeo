@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'activity_registry.dart';
 import 'common/activity_spec.dart';
 import 'letters/find_activity.dart';
+import 'listening/clap_activity.dart';
 import 'letters/meet_activity.dart';
 import 'letters/trace_activity.dart';
 import 'review/review_activity.dart';
@@ -18,6 +19,8 @@ final _games = <ActivitySpec>[
   DirectionActivity.upDown,
   DirectionActivity.leftRight,
   const PositionsActivity(),
+  const ClapActivity(),
+  PictureSoundActivity.sameSound,
   const MeetActivity(),
   const TraceActivity(),
   const FindActivity(),
