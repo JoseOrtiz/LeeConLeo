@@ -33,6 +33,7 @@ flutter:
     - assets/audio/sounds/
     - assets/audio/words/
     - assets/content/bundle.json
+    - assets/images/games/
     - assets/images/leo/
     - assets/images/scenes/
     - assets/images/steps/

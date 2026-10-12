@@ -20,6 +20,17 @@ class CompletedSteps extends Table {
   Set<Column> get primaryKey => {profileId, stepId};
 }
 
+@DataClassName('PlayedGameRow')
+class PlayedGames extends Table {
+  IntColumn get profileId => integer()();
+  TextColumn get stepId => text()();
+  TextColumn get activityId => text()();
+  DateTimeColumn get playedAt => dateTime()();
+
+  @override
+  Set<Column> get primaryKey => {profileId, stepId, activityId};
+}
+
 @DataClassName('ItemEventRow')
 class ItemEvents extends Table {
   IntColumn get id => integer().autoIncrement()();
@@ -36,12 +47,12 @@ class ItemEvents extends Table {
   BoolColumn get hintUsed => boolean()();
 }
 
-@DriftDatabase(tables: [Profiles, CompletedSteps, ItemEvents])
+@DriftDatabase(tables: [Profiles, CompletedSteps, PlayedGames, ItemEvents])
 class AppDatabase extends _$AppDatabase {
   AppDatabase(super.executor);
 
   @override
-  int get schemaVersion => 2;
+  int get schemaVersion => 3;
 
   @override
   MigrationStrategy get migration => MigrationStrategy(
@@ -51,6 +62,7 @@ class AppDatabase extends _$AppDatabase {
         await migrator.createTable(completedSteps);
         await migrator.addColumn(itemEvents, itemEvents.profileId);
       }
+      if (from < 3) await migrator.createTable(playedGames);
     },
   );
 }

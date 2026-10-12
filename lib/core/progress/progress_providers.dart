@@ -14,6 +14,19 @@ final masteredStepsProvider = Provider<Set<String>>(
   (ref) => Mastery.masteredSteps(ref.watch(eventLogProvider).events),
 );
 
+final playedGamesProvider = NotifierProvider<PlayedGames, Set<PlayedGame>>(PlayedGames.new);
+
+class PlayedGames extends Notifier<Set<PlayedGame>> {
+  @override
+  Set<PlayedGame> build() => ref.watch(progressStoreProvider).playedGames;
+
+  Future<void> markPlayed(PlayedGame game) async {
+    if (state.contains(game)) return;
+    state = {...state, game};
+    await ref.read(progressStoreProvider).markPlayed(game);
+  }
+}
+
 final completedStepsProvider = NotifierProvider<CompletedSteps, Set<String>>(CompletedSteps.new);
 
 class CompletedSteps extends Notifier<Set<String>> {

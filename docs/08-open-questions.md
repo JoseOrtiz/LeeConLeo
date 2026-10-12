@@ -13,6 +13,7 @@
 | Letter sounds | Taught through letter names + syllables (Silabario tradition). No isolated phonemes |
 | Testing | No test group: checklist, informal play-tests and an open beta ([06](06-roadmap.md) M3) |
 | Leo's design | Redesigned: a blond boy whose hair looks like a lion's mane, keeping the 2014 red vest, shorts and boots ([`content/STYLE.md`](../content/STYLE.md)) |
+| Where Stage 1 lives | Inside each step, as more game cards on its step screen ([03](03-activities.md)) |
 
 ## Still open
 
@@ -22,4 +23,3 @@
 | 2 | Do the SVG test drawings look good enough, or should most words be AI-generated? | José, after the first 10 drawings | M1 |
 | 3 | Which TTS voice (and license) sounds most natural to Chilean ears? | José, by listening to samples | M1 |
 | 4 | Code license: MIT (maximum reuse) or GPL-3.0 (forks must stay open)? | José | M0 |
-| 5 | Is Stage 1 (listening games) a separate map area, or mixed into each consonant group? | Beta feedback | M2 |

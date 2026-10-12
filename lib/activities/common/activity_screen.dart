@@ -8,11 +8,14 @@ import 'package:go_router/go_router.dart';
 import '../../core/audio/audio_providers.dart';
 import '../../core/content/content_providers.dart';
 import '../../core/content/models/content_bundle.dart';
+import '../../core/content/activity_ids.dart';
 import '../../core/content/models/path_stage.dart';
+import '../../core/content/models/path_step.dart';
 import '../../core/logging/logging_providers.dart';
 import '../../core/audio/utterance.dart';
 import '../../core/progress/progress_providers.dart';
 import '../../core/progress/stickers.dart';
+import '../../app/step_routes.dart';
 import '../../app/widgets/loading_view.dart';
 import '../../app/widgets/scene_band.dart';
 import '../../utils/hex_color.dart';
@@ -50,7 +53,7 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
   Timer? _celebrationTimer;
   bool _isUnavailable = false;
   PathStage? _stage;
-  String? _nextActivityId;
+  PathStep? _step;
   String? _newSticker;
 
   @override
@@ -80,15 +83,13 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
     final items = spec.buildItems(
       ActivityContext(content: content, step: step, random: random, events: events),
     );
-    _nextActivityId = registry.nextAvailable(step.activities, after: spec.id);
+    _step = step;
     if (items.isEmpty) {
       _isUnavailable = true;
-      final next = _nextActivityId;
-      if (next != null) {
-        WidgetsBinding.instance.addPostFrameCallback((_) {
-          if (mounted) context.go('/play/${widget.stepId}/$next');
-        });
-      }
+      _markPlayed();
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) _continue();
+      });
       return;
     }
     final session = ActivitySession(
@@ -114,11 +115,28 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
       _celebrationTimer?.cancel();
       _celebrationTimer = Timer(widget.celebrationDuration, session.next);
     }
-    if (session.phase == SessionPhase.finished) _checkSticker(session.stepId);
-    if (session.phase == SessionPhase.finished && _nextActivityId == null) {
-      ref.read(completedStepsProvider.notifier).markCompleted(session.stepId);
+    if (session.phase == SessionPhase.finished) {
+      _checkSticker(session.stepId);
+      _markPlayed();
     }
     setState(() {});
+  }
+
+  bool get _isReview => widget.activityId == ActivityIds.review;
+
+  void _markPlayed() {
+    final step = _step;
+    if (step == null || _isReview) return;
+    final played = ref.read(playedGamesProvider.notifier);
+    played.markPlayed((stepId: step.id, activityId: widget.activityId));
+    final games = ref.read(activityRegistryProvider).available(step.activities);
+    final playedHere = {
+      for (final game in ref.read(playedGamesProvider))
+        if (game.stepId == step.id) game.activityId,
+    };
+    if (games.every(playedHere.contains)) {
+      ref.read(completedStepsProvider.notifier).markCompleted(step.id);
+    }
   }
 
   void _checkSticker(String stepId) {
@@ -141,10 +159,11 @@ class _ActivityScreenState extends ConsumerState<ActivityScreen> {
   }
 
   void _continue() {
-    final next = _nextActivityId;
-    if (next == null) return _goHome();
+    final step = _step;
+    if (step == null) return _goHome();
+    final registry = ref.read(activityRegistryProvider);
     ref.read(promptPlayerProvider).stop();
-    context.go('/play/${widget.stepId}/$next');
+    context.go(_isReview ? StepRoutes.entry(registry, step) : StepRoutes.afterGame(registry, step));
   }
 
   @override

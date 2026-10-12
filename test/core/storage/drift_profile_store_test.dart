@@ -22,14 +22,17 @@ void main() {
 
       final anaData = await store.open(ana);
       await anaData.progress.markCompleted('a');
+      await anaData.progress.markPlayed((stepId: 'a', activityId: 'letter.meet'));
       firstTries('a', correct: 2).forEach(anaData.events.record);
 
       expect((await store.all()).map((profile) => profile.nickname), ['Ana', 'Beto']);
       final reopened = await store.open(ana);
       expect(reopened.progress.completedSteps, {'a'});
+      expect(reopened.progress.playedGames, {(stepId: 'a', activityId: 'letter.meet')});
       expect(reopened.events.events, hasLength(2));
       final other = await store.open(beto);
       expect(other.progress.completedSteps, isEmpty);
+      expect(other.progress.playedGames, isEmpty);
       expect(other.events.events, isEmpty);
     });
 
@@ -37,12 +40,14 @@ void main() {
       final ana = await store.create(nickname: 'Ana', avatar: 'words/oso.svg');
       final data = await store.open(ana);
       await data.progress.markCompleted('a');
+      await data.progress.markPlayed((stepId: 'a', activityId: 'letter.meet'));
       firstTries('a', correct: 1).forEach(data.events.record);
 
       await store.delete(ana);
 
       expect(await store.all(), isEmpty);
       expect(await database.select(database.completedSteps).get(), isEmpty);
+      expect(await database.select(database.playedGames).get(), isEmpty);
       expect(await database.select(database.itemEvents).get(), isEmpty);
     });
   });

@@ -74,7 +74,8 @@ Rules that follow from this:
 - A step is **mastered** at ≥ 80 % correct over the last 10 tries, with tries in at
   least 2 sessions. A try is the first answer to an item (retries after a mistake don't
   count), and a session is one launch of the app.
-- Finishing a step unlocks the next one, whatever the score. A mastered step shows a
+- A step is finished once each of its games has been played to the end once, whatever
+  the score, and that unlocks the next one. A mastered step shows a
   medal on its stone. The child can always replay earlier steps.
 - **Spaced review:** in each launch of the app, the first step a child opens starts
   with 3 quick items from their other mastered steps, taken from those steps' own games

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<path d="M76.2 156.7 A55 55 0 1 0 47.4 132.5 L34.5 168 Z" fill="#3E8EDE" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M76.2 341.7 A55 55 0 1 0 47.4 317.5 L34.5 353 Z" fill="#D8433B" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M299.1 279.9 A85 85 0 1 1 343.6 242.5 L352 304 Z" fill="#8E5BB5" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M72 86 Q82 72 100 68" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M72 271 Q82 257 100 253" fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M226 162 Q240 136 270 130" fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(138 134) rotate(35)">
+<path d="M0 -16 L24 -16 L24 -34 L56 0 L24 34 L24 16 L0 16 Z" fill="#F2B632" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g transform="translate(138 266) rotate(-35)">
+<path d="M0 -16 L24 -16 L24 -34 L56 0 L24 34 L24 16 L0 16 Z" fill="#F2B632" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+</svg>

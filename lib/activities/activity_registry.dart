@@ -9,15 +9,13 @@ class ActivityRegistry {
 
   ActivitySpec? find(String id) => _specs[id];
 
+  List<String> available(List<String> activityIds) =>
+      activityIds.where(_specs.containsKey).toList();
+
   String? firstAvailable(List<String> activityIds) {
     for (final id in activityIds) {
       if (_specs.containsKey(id)) return id;
     }
     return null;
-  }
-
-  String? nextAvailable(List<String> activityIds, {required String after}) {
-    final index = activityIds.indexOf(after);
-    return firstAvailable(activityIds.sublist(index + 1));
   }
 }
