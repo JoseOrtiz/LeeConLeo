@@ -16,11 +16,4 @@ void main() {
     expect(registry.firstAvailable([_unbuilt, ActivityIds.upDown]), ActivityIds.upDown);
     expect(registry.firstAvailable([_unbuilt]), isNull);
   });
-
-  test('nextAvailable gives the following built activity of a step', () {
-    const step = [ActivityIds.meet, _unbuilt, ActivityIds.find];
-
-    expect(registry.nextAvailable(step, after: ActivityIds.meet), ActivityIds.find);
-    expect(registry.nextAvailable(step, after: ActivityIds.find), isNull);
-  });
 }

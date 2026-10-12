@@ -11,7 +11,9 @@ import 'package:lee_con_leo/activities/letters/find_activity.dart';
 import 'package:lee_con_leo/activities/letters/trace_path.dart';
 import 'package:lee_con_leo/activities/letters/trace_view.dart';
 import 'package:lee_con_leo/app/app_router.dart';
+import 'package:lee_con_leo/app/startup_providers.dart';
 import 'package:lee_con_leo/core/audio/audio_providers.dart';
+import 'package:lee_con_leo/map/step_screen.dart';
 import 'package:lee_con_leo/core/content/activity_ids.dart';
 import 'package:lee_con_leo/core/content/content_providers.dart';
 import 'package:lee_con_leo/core/content/models/letter_shape.dart';
@@ -32,6 +34,7 @@ void main() {
     return [
       singleProfile(),
       contentProvider.overrideWith((ref) async => testContent),
+      minimumSplashProvider.overrideWithValue(Duration.zero),
       promptPlayerProvider.overrideWithValue(player),
       eventLogProvider.overrideWithValue(log),
     ];
@@ -213,15 +216,17 @@ void main() {
     });
   });
 
-  testWidgets('finishing one letter game leads to the next game of the step', (tester) async {
+  testWidgets('finishing one letter game goes back to the step with a star on it', (tester) async {
     disableAnimations(tester);
-    final router = createAppRouter()..go('/play/a/${ActivityIds.meet}');
+    final router = createAppRouter()..go('/step/a');
     await tester.pumpWidget(
       ProviderScope(
         overrides: overrides(),
         child: MaterialApp.router(routerConfig: router),
       ),
     );
+    await tester.pumpAndSettle();
+    await tester.tap(find.byKey(const ValueKey('game-${ActivityIds.meet}')));
     await tester.pumpAndSettle();
     await tester.tap(find.byKey(const ValueKey('start')));
     await tester.pumpAndSettle();
@@ -235,15 +240,27 @@ void main() {
     await tester.tap(find.byKey(const ValueKey('done')));
     await tester.pumpAndSettle();
 
-    final screen = tester.widget<ActivityScreen>(find.byType(ActivityScreen));
-    expect(screen.activityId, ActivityIds.trace);
-    expect(find.byKey(const ValueKey('start')), findsOneWidget);
-    expect(find.byKey(const ValueKey('reward')), findsNothing);
-    expect(completedSteps(tester), isEmpty);
+    expect(find.byType(StepScreen), findsOneWidget);
+    expect(
+      find.descendant(
+        of: find.byKey(const ValueKey('game-${ActivityIds.meet}')),
+        matching: find.byIcon(Icons.star_rounded),
+      ),
+      findsOneWidget,
+    );
+    expect(
+      ProviderScope.containerOf(
+        tester.element(find.byType(StepScreen)),
+      ).read(completedStepsProvider),
+      isEmpty,
+    );
 
-    await tester.tap(find.byKey(const ValueKey('start')));
+    await tester.tap(find.byKey(const ValueKey('game-${ActivityIds.trace}')));
     await tester.pumpAndSettle();
-    expect(player.spoken.last, 'trace a');
+    expect(
+      tester.widget<ActivityScreen>(find.byType(ActivityScreen)).activityId,
+      ActivityIds.trace,
+    );
   });
 }
 

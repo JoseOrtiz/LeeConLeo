@@ -4370,6 +4370,9 @@
     "home.locked": [
       "Todavía no. Primero juega donde estoy yo."
     ],
+    "step.intro": [
+      "¿A qué quieres jugar? ¡Toca un dibujo!"
+    ],
     "profiles.intro": [
       "¿Quién va a jugar? ¡Toca tu dibujo!"
     ],
@@ -4950,6 +4953,7 @@
     "spatial.up_down.down.0": "prompts/spatial.up_down.down.0.m4a",
     "spatial.up_down.intro.0": "prompts/spatial.up_down.intro.0.m4a",
     "spatial.up_down.up.0": "prompts/spatial.up_down.up.0.m4a",
+    "step.intro.0": "prompts/step.intro.0.m4a",
     "stickers.intro.0": "prompts/stickers.intro.0.m4a",
     "stickers.new.0": "prompts/stickers.new.0.m4a",
     "syllables.build_word.intro.0": "prompts/syllables.build_word.intro.0.m4a",

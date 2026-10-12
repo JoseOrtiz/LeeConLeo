@@ -18,6 +18,14 @@
 | Join starts / ends with | **Merge** | A second way to play *Starts with / Ends with* (drag a line instead of tapping) |
 | Wrap (circle inside words) | **Keep, later stage** | *Circle it*: find the syllable inside words. A curated child vocabulary replaces the 52,787-word adult list, and each word has a picture and audio |
 
+## Step screen
+
+Each letter or syllable is one stone on the map. Tapping it opens the step screen:
+the letter or syllables on top, and one big card per game with an icon, in the order
+`path.yaml` lists them (listening, then letters, then syllables). Every card is open;
+the suggested next one pulses, and a star marks the ones already played. A step with a
+single game skips this screen and opens the game directly.
+
 ## Common frame for every activity
 
 Every activity follows the same frame, so children learn it once:
@@ -28,7 +36,7 @@ Every activity follows the same frame, so children learn it once:
 3. **Feedback on every item:** a sound, an animation and a short spoken phrase.
    After 2 errors on an item, a hint: the correct option glows and the hand shows
    the move again.
-4. **Reward:** a sticker or a star, then back to the map.
+4. **Reward:** a sticker or a star, then back to the step screen.
 5. **Logging:** every item records `{activity, item, answer, correct, ms, hintUsed}`
    (see [04](04-architecture.md)).
 

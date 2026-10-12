@@ -136,7 +136,7 @@ void main() {
       await tester.pumpAndSettle();
     }
 
-    testWidgets('picking the picture that starts with the sound completes the step', (
+    testWidgets('picking the picture that starts with the sound plays that game of the step', (
       tester,
     ) async {
       await play(tester);
@@ -159,7 +159,10 @@ void main() {
 
       expect(find.byKey(const ValueKey('reward')), findsOneWidget);
       final container = ProviderScope.containerOf(tester.element(find.byType(ActivityScreen)));
-      expect(container.read(completedStepsProvider), contains('a'));
+      expect(container.read(playedGamesProvider), {
+        (stepId: 'a', activityId: ActivityIds.startsWith),
+      });
+      expect(container.read(completedStepsProvider), isEmpty);
     });
 
     testWidgets('Leo names a wrong picture before asking again', (tester) async {

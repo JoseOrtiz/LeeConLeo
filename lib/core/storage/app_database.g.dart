@@ -535,6 +535,306 @@ class CompletedStepsCompanion extends UpdateCompanion<CompletedStepRow> {
   }
 }
 
+class $PlayedGamesTable extends PlayedGames with TableInfo<$PlayedGamesTable, PlayedGameRow> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  $PlayedGamesTable(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _profileIdMeta = const VerificationMeta('profileId');
+  @override
+  late final GeneratedColumn<int> profileId = GeneratedColumn<int>(
+    'profile_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _stepIdMeta = const VerificationMeta('stepId');
+  @override
+  late final GeneratedColumn<String> stepId = GeneratedColumn<String>(
+    'step_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _activityIdMeta = const VerificationMeta('activityId');
+  @override
+  late final GeneratedColumn<String> activityId = GeneratedColumn<String>(
+    'activity_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _playedAtMeta = const VerificationMeta('playedAt');
+  @override
+  late final GeneratedColumn<DateTime> playedAt = GeneratedColumn<DateTime>(
+    'played_at',
+    aliasedName,
+    false,
+    type: DriftSqlType.dateTime,
+    requiredDuringInsert: true,
+  );
+  @override
+  List<GeneratedColumn> get $columns => [profileId, stepId, activityId, playedAt];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'played_games';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<PlayedGameRow> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('profile_id')) {
+      context.handle(
+        _profileIdMeta,
+        profileId.isAcceptableOrUnknown(data['profile_id']!, _profileIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_profileIdMeta);
+    }
+    if (data.containsKey('step_id')) {
+      context.handle(_stepIdMeta, stepId.isAcceptableOrUnknown(data['step_id']!, _stepIdMeta));
+    } else if (isInserting) {
+      context.missing(_stepIdMeta);
+    }
+    if (data.containsKey('activity_id')) {
+      context.handle(
+        _activityIdMeta,
+        activityId.isAcceptableOrUnknown(data['activity_id']!, _activityIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_activityIdMeta);
+    }
+    if (data.containsKey('played_at')) {
+      context.handle(
+        _playedAtMeta,
+        playedAt.isAcceptableOrUnknown(data['played_at']!, _playedAtMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_playedAtMeta);
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {profileId, stepId, activityId};
+  @override
+  PlayedGameRow map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return PlayedGameRow(
+      profileId: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}profile_id'],
+      )!,
+      stepId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}step_id'],
+      )!,
+      activityId: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}activity_id'],
+      )!,
+      playedAt: attachedDatabase.typeMapping.read(
+        DriftSqlType.dateTime,
+        data['${effectivePrefix}played_at'],
+      )!,
+    );
+  }
+
+  @override
+  $PlayedGamesTable createAlias(String alias) {
+    return $PlayedGamesTable(attachedDatabase, alias);
+  }
+}
+
+class PlayedGameRow extends DataClass implements Insertable<PlayedGameRow> {
+  final int profileId;
+  final String stepId;
+  final String activityId;
+  final DateTime playedAt;
+  const PlayedGameRow({
+    required this.profileId,
+    required this.stepId,
+    required this.activityId,
+    required this.playedAt,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['profile_id'] = Variable<int>(profileId);
+    map['step_id'] = Variable<String>(stepId);
+    map['activity_id'] = Variable<String>(activityId);
+    map['played_at'] = Variable<DateTime>(playedAt);
+    return map;
+  }
+
+  PlayedGamesCompanion toCompanion(bool nullToAbsent) {
+    return PlayedGamesCompanion(
+      profileId: Value(profileId),
+      stepId: Value(stepId),
+      activityId: Value(activityId),
+      playedAt: Value(playedAt),
+    );
+  }
+
+  factory PlayedGameRow.fromJson(Map<String, dynamic> json, {ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return PlayedGameRow(
+      profileId: serializer.fromJson<int>(json['profileId']),
+      stepId: serializer.fromJson<String>(json['stepId']),
+      activityId: serializer.fromJson<String>(json['activityId']),
+      playedAt: serializer.fromJson<DateTime>(json['playedAt']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'profileId': serializer.toJson<int>(profileId),
+      'stepId': serializer.toJson<String>(stepId),
+      'activityId': serializer.toJson<String>(activityId),
+      'playedAt': serializer.toJson<DateTime>(playedAt),
+    };
+  }
+
+  PlayedGameRow copyWith({
+    int? profileId,
+    String? stepId,
+    String? activityId,
+    DateTime? playedAt,
+  }) => PlayedGameRow(
+    profileId: profileId ?? this.profileId,
+    stepId: stepId ?? this.stepId,
+    activityId: activityId ?? this.activityId,
+    playedAt: playedAt ?? this.playedAt,
+  );
+  PlayedGameRow copyWithCompanion(PlayedGamesCompanion data) {
+    return PlayedGameRow(
+      profileId: data.profileId.present ? data.profileId.value : this.profileId,
+      stepId: data.stepId.present ? data.stepId.value : this.stepId,
+      activityId: data.activityId.present ? data.activityId.value : this.activityId,
+      playedAt: data.playedAt.present ? data.playedAt.value : this.playedAt,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('PlayedGameRow(')
+          ..write('profileId: $profileId, ')
+          ..write('stepId: $stepId, ')
+          ..write('activityId: $activityId, ')
+          ..write('playedAt: $playedAt')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(profileId, stepId, activityId, playedAt);
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is PlayedGameRow &&
+          other.profileId == this.profileId &&
+          other.stepId == this.stepId &&
+          other.activityId == this.activityId &&
+          other.playedAt == this.playedAt);
+}
+
+class PlayedGamesCompanion extends UpdateCompanion<PlayedGameRow> {
+  final Value<int> profileId;
+  final Value<String> stepId;
+  final Value<String> activityId;
+  final Value<DateTime> playedAt;
+  final Value<int> rowid;
+  const PlayedGamesCompanion({
+    this.profileId = const Value.absent(),
+    this.stepId = const Value.absent(),
+    this.activityId = const Value.absent(),
+    this.playedAt = const Value.absent(),
+    this.rowid = const Value.absent(),
+  });
+  PlayedGamesCompanion.insert({
+    required int profileId,
+    required String stepId,
+    required String activityId,
+    required DateTime playedAt,
+    this.rowid = const Value.absent(),
+  }) : profileId = Value(profileId),
+       stepId = Value(stepId),
+       activityId = Value(activityId),
+       playedAt = Value(playedAt);
+  static Insertable<PlayedGameRow> custom({
+    Expression<int>? profileId,
+    Expression<String>? stepId,
+    Expression<String>? activityId,
+    Expression<DateTime>? playedAt,
+    Expression<int>? rowid,
+  }) {
+    return RawValuesInsertable({
+      if (profileId != null) 'profile_id': profileId,
+      if (stepId != null) 'step_id': stepId,
+      if (activityId != null) 'activity_id': activityId,
+      if (playedAt != null) 'played_at': playedAt,
+      if (rowid != null) 'rowid': rowid,
+    });
+  }
+
+  PlayedGamesCompanion copyWith({
+    Value<int>? profileId,
+    Value<String>? stepId,
+    Value<String>? activityId,
+    Value<DateTime>? playedAt,
+    Value<int>? rowid,
+  }) {
+    return PlayedGamesCompanion(
+      profileId: profileId ?? this.profileId,
+      stepId: stepId ?? this.stepId,
+      activityId: activityId ?? this.activityId,
+      playedAt: playedAt ?? this.playedAt,
+      rowid: rowid ?? this.rowid,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (profileId.present) {
+      map['profile_id'] = Variable<int>(profileId.value);
+    }
+    if (stepId.present) {
+      map['step_id'] = Variable<String>(stepId.value);
+    }
+    if (activityId.present) {
+      map['activity_id'] = Variable<String>(activityId.value);
+    }
+    if (playedAt.present) {
+      map['played_at'] = Variable<DateTime>(playedAt.value);
+    }
+    if (rowid.present) {
+      map['rowid'] = Variable<int>(rowid.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('PlayedGamesCompanion(')
+          ..write('profileId: $profileId, ')
+          ..write('stepId: $stepId, ')
+          ..write('activityId: $activityId, ')
+          ..write('playedAt: $playedAt, ')
+          ..write('rowid: $rowid')
+          ..write(')'))
+        .toString();
+  }
+}
+
 class $ItemEventsTable extends ItemEvents with TableInfo<$ItemEventsTable, ItemEventRow> {
   @override
   final GeneratedDatabase attachedDatabase;
@@ -1187,12 +1487,18 @@ abstract class _$AppDatabase extends GeneratedDatabase {
   $AppDatabaseManager get managers => $AppDatabaseManager(this);
   late final $ProfilesTable profiles = $ProfilesTable(this);
   late final $CompletedStepsTable completedSteps = $CompletedStepsTable(this);
+  late final $PlayedGamesTable playedGames = $PlayedGamesTable(this);
   late final $ItemEventsTable itemEvents = $ItemEventsTable(this);
   @override
   Iterable<TableInfo<Table, Object?>> get allTables =>
       allSchemaEntities.whereType<TableInfo<Table, Object?>>();
   @override
-  List<DatabaseSchemaEntity> get allSchemaEntities => [profiles, completedSteps, itemEvents];
+  List<DatabaseSchemaEntity> get allSchemaEntities => [
+    profiles,
+    completedSteps,
+    playedGames,
+    itemEvents,
+  ];
 }
 
 typedef $$ProfilesTableCreateCompanionBuilder =
@@ -1498,6 +1804,165 @@ typedef $$CompletedStepsTableProcessedTableManager =
       CompletedStepRow,
       PrefetchHooks Function()
     >;
+typedef $$PlayedGamesTableCreateCompanionBuilder =
+    PlayedGamesCompanion Function({
+      required int profileId,
+      required String stepId,
+      required String activityId,
+      required DateTime playedAt,
+      Value<int> rowid,
+    });
+typedef $$PlayedGamesTableUpdateCompanionBuilder =
+    PlayedGamesCompanion Function({
+      Value<int> profileId,
+      Value<String> stepId,
+      Value<String> activityId,
+      Value<DateTime> playedAt,
+      Value<int> rowid,
+    });
+
+class $$PlayedGamesTableFilterComposer extends Composer<_$AppDatabase, $PlayedGamesTable> {
+  $$PlayedGamesTableFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<int> get profileId =>
+      $composableBuilder(column: $table.profileId, builder: (column) => ColumnFilters(column));
+
+  ColumnFilters<String> get stepId =>
+      $composableBuilder(column: $table.stepId, builder: (column) => ColumnFilters(column));
+
+  ColumnFilters<String> get activityId =>
+      $composableBuilder(column: $table.activityId, builder: (column) => ColumnFilters(column));
+
+  ColumnFilters<DateTime> get playedAt =>
+      $composableBuilder(column: $table.playedAt, builder: (column) => ColumnFilters(column));
+}
+
+class $$PlayedGamesTableOrderingComposer extends Composer<_$AppDatabase, $PlayedGamesTable> {
+  $$PlayedGamesTableOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<int> get profileId =>
+      $composableBuilder(column: $table.profileId, builder: (column) => ColumnOrderings(column));
+
+  ColumnOrderings<String> get stepId =>
+      $composableBuilder(column: $table.stepId, builder: (column) => ColumnOrderings(column));
+
+  ColumnOrderings<String> get activityId =>
+      $composableBuilder(column: $table.activityId, builder: (column) => ColumnOrderings(column));
+
+  ColumnOrderings<DateTime> get playedAt =>
+      $composableBuilder(column: $table.playedAt, builder: (column) => ColumnOrderings(column));
+}
+
+class $$PlayedGamesTableAnnotationComposer extends Composer<_$AppDatabase, $PlayedGamesTable> {
+  $$PlayedGamesTableAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<int> get profileId =>
+      $composableBuilder(column: $table.profileId, builder: (column) => column);
+
+  GeneratedColumn<String> get stepId =>
+      $composableBuilder(column: $table.stepId, builder: (column) => column);
+
+  GeneratedColumn<String> get activityId =>
+      $composableBuilder(column: $table.activityId, builder: (column) => column);
+
+  GeneratedColumn<DateTime> get playedAt =>
+      $composableBuilder(column: $table.playedAt, builder: (column) => column);
+}
+
+class $$PlayedGamesTableTableManager
+    extends
+        RootTableManager<
+          _$AppDatabase,
+          $PlayedGamesTable,
+          PlayedGameRow,
+          $$PlayedGamesTableFilterComposer,
+          $$PlayedGamesTableOrderingComposer,
+          $$PlayedGamesTableAnnotationComposer,
+          $$PlayedGamesTableCreateCompanionBuilder,
+          $$PlayedGamesTableUpdateCompanionBuilder,
+          (PlayedGameRow, BaseReferences<_$AppDatabase, $PlayedGamesTable, PlayedGameRow>),
+          PlayedGameRow,
+          PrefetchHooks Function()
+        > {
+  $$PlayedGamesTableTableManager(_$AppDatabase db, $PlayedGamesTable table)
+    : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () => $$PlayedGamesTableFilterComposer($db: db, $table: table),
+          createOrderingComposer: () => $$PlayedGamesTableOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $$PlayedGamesTableAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<int> profileId = const Value.absent(),
+                Value<String> stepId = const Value.absent(),
+                Value<String> activityId = const Value.absent(),
+                Value<DateTime> playedAt = const Value.absent(),
+                Value<int> rowid = const Value.absent(),
+              }) => PlayedGamesCompanion(
+                profileId: profileId,
+                stepId: stepId,
+                activityId: activityId,
+                playedAt: playedAt,
+                rowid: rowid,
+              ),
+          createCompanionCallback:
+              ({
+                required int profileId,
+                required String stepId,
+                required String activityId,
+                required DateTime playedAt,
+                Value<int> rowid = const Value.absent(),
+              }) => PlayedGamesCompanion.insert(
+                profileId: profileId,
+                stepId: stepId,
+                activityId: activityId,
+                playedAt: playedAt,
+                rowid: rowid,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map(
+                (e) => (
+                  e.readTable<$PlayedGamesTable, PlayedGameRow>(table),
+                  BaseReferences<_$AppDatabase, $PlayedGamesTable, PlayedGameRow>(db, table, e),
+                ),
+              )
+              .toList(),
+          prefetchHooksCallback: null,
+        ),
+      );
+}
+
+typedef $$PlayedGamesTableProcessedTableManager =
+    ProcessedTableManager<
+      _$AppDatabase,
+      $PlayedGamesTable,
+      PlayedGameRow,
+      $$PlayedGamesTableFilterComposer,
+      $$PlayedGamesTableOrderingComposer,
+      $$PlayedGamesTableAnnotationComposer,
+      $$PlayedGamesTableCreateCompanionBuilder,
+      $$PlayedGamesTableUpdateCompanionBuilder,
+      (PlayedGameRow, BaseReferences<_$AppDatabase, $PlayedGamesTable, PlayedGameRow>),
+      PlayedGameRow,
+      PrefetchHooks Function()
+    >;
 typedef $$ItemEventsTableCreateCompanionBuilder =
     ItemEventsCompanion Function({
       Value<int> id,
@@ -1779,6 +2244,8 @@ class $AppDatabaseManager {
   $$ProfilesTableTableManager get profiles => $$ProfilesTableTableManager(_db, _db.profiles);
   $$CompletedStepsTableTableManager get completedSteps =>
       $$CompletedStepsTableTableManager(_db, _db.completedSteps);
+  $$PlayedGamesTableTableManager get playedGames =>
+      $$PlayedGamesTableTableManager(_db, _db.playedGames);
   $$ItemEventsTableTableManager get itemEvents =>
       $$ItemEventsTableTableManager(_db, _db.itemEvents);
 }

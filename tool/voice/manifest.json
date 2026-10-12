@@ -1681,6 +1681,12 @@
       "index": 0,
       "text": "¡Ganaste un sticker nuevo! Búscalo en tu álbum.",
       "file": "assets/audio/prompts/stickers.new.0.m4a"
+    },
+    {
+      "promptId": "step.intro",
+      "index": 0,
+      "text": "¿A qué quieres jugar? ¡Toca un dibujo!",
+      "file": "assets/audio/prompts/step.intro.0.m4a"
     }
   ]
 }

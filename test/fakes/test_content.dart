@@ -19,6 +19,7 @@ const testPrompts = PromptLibrary({
   'reward': ['reward'],
   'home.intro': ['home intro'],
   'home.locked': ['home locked'],
+  'step.intro': ['step intro'],
   'profiles.intro': ['profiles intro'],
   'profiles.empty': ['profiles empty'],
   'review.intro': ['review intro'],

@@ -7,6 +7,7 @@ import 'package:go_router/go_router.dart';
 import '../activities/activity_providers.dart';
 import '../app/app_theme.dart';
 import '../app/startup_providers.dart';
+import '../app/step_routes.dart';
 import '../app/widgets/loading_view.dart';
 import '../core/audio/audio_providers.dart';
 import '../core/audio/utterance.dart';
@@ -177,7 +178,7 @@ class _PathMapState extends ConsumerState<PathMap> {
       context.go('/play/${step.id}/${ActivityIds.review}');
       return;
     }
-    context.go('/play/${step.id}/$activityId');
+    context.go(StepRoutes.entry(ref.read(activityRegistryProvider), step));
   }
 
   double _crossing(PathStage below, PathStage above) =>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<circle cx="58" cy="104" r="17" fill="#3E8EDE" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="52" cy="150" r="17" fill="#3E8EDE" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="51" cy="197" r="17" fill="#3E8EDE" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="56" cy="243" r="17" fill="#3E8EDE" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="70" cy="286" r="17" fill="#3E8EDE" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="100" cy="321" r="17" fill="#3E8EDE" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="144" cy="322" r="17" fill="#3E8EDE" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="168" cy="284" r="17" fill="#3E8EDE" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<g transform="translate(184 250) rotate(25) scale(0.8)">
+<path d="M0 -26 L0 -120" fill="none" stroke="#3B2A20" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M-26 -196 Q-26 -226 4 -226 L76 -226 Q106 -226 106 -196 L106 -136 Q106 -106 76 -106 L4 -106 Q-26 -106 -26 -136 Z" fill="#F6C9A3" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M0 -26 L0 -130" fill="none" stroke="#F6C9A3" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M40 -110 L40 -136" fill="none" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M74 -110 L74 -136" fill="none" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M-4 -176 Q34 -164 64 -172" fill="none" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="-38" y="-262" width="152" height="44" rx="14" fill="#3E8EDE" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+</svg>

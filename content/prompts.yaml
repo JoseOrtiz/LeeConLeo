@@ -20,6 +20,9 @@ home.intro:
 home.locked:
   - Todavía no. Primero juega donde estoy yo.
 
+step.intro:
+  - ¿A qué quieres jugar? ¡Toca un dibujo!
+
 profiles.intro:
   - ¿Quién va a jugar? ¡Toca tu dibujo!
 

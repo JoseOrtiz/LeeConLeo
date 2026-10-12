@@ -37,6 +37,9 @@ class DriftProfileStore implements ProfileStore {
     await (_database.delete(
       _database.completedSteps,
     )..where((row) => row.profileId.equals(profile.id))).go();
+    await (_database.delete(
+      _database.playedGames,
+    )..where((row) => row.profileId.equals(profile.id))).go();
     await (_database.delete(_database.profiles)..where((row) => row.id.equals(profile.id))).go();
   });
 
