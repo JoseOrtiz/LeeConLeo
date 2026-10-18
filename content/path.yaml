@@ -75,17 +75,24 @@
   scene: scenes/mountain.svg
   tint: '#EAF1EC'
   steps:
-    - id: d
-      grapheme: d
-      word: dedo
-      activities: [letter.meet, letter.trace, letter.find]
-    - id: da
-      sounds: [da, de, di, do, du]
-      activities: [listening.clap, listening.same_sound, syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.blend, syllables.build_word]
     - id: s
       grapheme: s
       word: sol
       activities: [letter.meet, letter.trace, letter.find]
     - id: sa
       sounds: [sa, se, si, so, su]
+      activities: [listening.clap, listening.same_sound, syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.blend, syllables.build_word]
+    - id: t
+      grapheme: t
+      word: taza
+      activities: [letter.meet, letter.trace, letter.find]
+    - id: ta
+      sounds: [ta, te, ti, to, tu]
+      activities: [listening.clap, listening.same_sound, syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.blend, syllables.build_word]
+    - id: d
+      grapheme: d
+      word: dedo
+      activities: [letter.meet, letter.trace, letter.find]
+    - id: da
+      sounds: [da, de, di, do, du]
       activities: [listening.clap, listening.same_sound, syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.blend, syllables.build_word]

@@ -426,19 +426,31 @@
   syllables: [su, shi]
   sounds: [su, shi]
 - text: tambor
+  image: words/tambor.svg
+  audio: words/tambor.m4a
 - text: tarántula
 - text: taza
+  image: words/taza.svg
+  audio: words/taza.m4a
 - text: telescopio
 - text: televisor
 - text: teléfono
+  image: words/telefono.svg
+  audio: words/telefono.m4a
 - text: tenedor
 - text: tenis
 - text: tiburón
 - text: tierra
 - text: tigre
+  image: words/tigre.svg
+  audio: words/tigre.m4a
 - text: tijera
 - text: tomate
+  image: words/tomate.svg
+  audio: words/tomate.m4a
 - text: topo
+  image: words/topo.svg
+  audio: words/topo.m4a
 - text: toro
 - text: torta
 - text: tortuga
@@ -450,6 +462,8 @@
   image: words/trompo.svg
   audio: words/trompo.m4a
 - text: tucán
+  image: words/tucan.svg
+  audio: words/tucan.m4a
 - text: unicornio
   image: words/unicornio.svg
   audio: words/unicornio.m4a

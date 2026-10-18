@@ -29,8 +29,15 @@ are also the pieces of every syllable after that.
 
 ## Consonant order
 
-Start from the 2014 order, which teachers chose because children know these
-letters best:
+The working order for the first consonants, still to be confirmed with teachers or a
+Silabario edition:
+
+```
+m p l s t d n ñ f
+```
+
+It starts the same as the 2014 order and brings *t* and *n* forward, as proposed
+below. The 2014 order, which teachers chose because children know these letters best:
 
 ```
 m p l d s b c(ca co cu) f g(ga go gu) h j k n r t v w x y z

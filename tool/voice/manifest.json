@@ -2750,6 +2750,360 @@
       "text": "su",
       "file": "assets/audio/sounds/syllable.su.m4a",
       "spokenAs": "Sa... Se... Si... So... Su."
+    },
+    {
+      "promptId": "letter.meet.t",
+      "index": 0,
+      "text": "Esta es la, te. ¡La, te de taza! ¡Tócala!",
+      "file": "assets/audio/prompts/letter.meet.t.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.t.upper",
+      "index": 0,
+      "text": "Toca la, te mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.t.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.t.lower",
+      "index": 0,
+      "text": "Toca la, te minúscula.",
+      "file": "assets/audio/prompts/letter.meet.t.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.t.lower",
+      "index": 0,
+      "text": "Repasa la, te minúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.t.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.t.upper",
+      "index": 0,
+      "text": "Repasa la, te mayúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.t.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.find.t",
+      "index": 0,
+      "text": "Revienta las burbujas que tienen la, te.",
+      "file": "assets/audio/prompts/letter.find.t.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.ta",
+      "index": 0,
+      "text": "La, te, y la, a, juntas dicen, ta. ¡Toca, ta!",
+      "file": "assets/audio/prompts/syllables.meet.ta.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.ta.choose",
+      "index": 0,
+      "text": "¿Dónde dice, ta? ¡Tócala!",
+      "file": "assets/audio/prompts/syllables.meet.ta.choose.0.m4a"
+    },
+    {
+      "promptId": "syllables.trace.ta",
+      "index": 0,
+      "text": "Escribe, ta, con tu dedo.",
+      "file": "assets/audio/prompts/syllables.trace.ta.0.m4a"
+    },
+    {
+      "promptId": "syllables.find.ta",
+      "index": 0,
+      "text": "Revienta las burbujas que dicen, ta.",
+      "file": "assets/audio/prompts/syllables.find.ta.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.ta",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, ta?",
+      "file": "assets/audio/prompts/syllables.starts_with.ta.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.te",
+      "index": 0,
+      "text": "La, te, y la, e, juntas dicen, te. ¡Toca, te!",
+      "file": "assets/audio/prompts/syllables.meet.te.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.te.choose",
+      "index": 0,
+      "text": "¿Dónde dice, te? ¡Tócala!",
+      "file": "assets/audio/prompts/syllables.meet.te.choose.0.m4a"
+    },
+    {
+      "promptId": "syllables.trace.te",
+      "index": 0,
+      "text": "Escribe, te, con tu dedo.",
+      "file": "assets/audio/prompts/syllables.trace.te.0.m4a"
+    },
+    {
+      "promptId": "syllables.find.te",
+      "index": 0,
+      "text": "Revienta las burbujas que dicen, te.",
+      "file": "assets/audio/prompts/syllables.find.te.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.te",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, te?",
+      "file": "assets/audio/prompts/syllables.starts_with.te.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.ti",
+      "index": 0,
+      "text": "La, te, y la, i, juntas dicen, ti. ¡Toca, ti!",
+      "file": "assets/audio/prompts/syllables.meet.ti.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.ti.choose",
+      "index": 0,
+      "text": "¿Dónde dice, ti? ¡Tócala!",
+      "file": "assets/audio/prompts/syllables.meet.ti.choose.0.m4a"
+    },
+    {
+      "promptId": "syllables.trace.ti",
+      "index": 0,
+      "text": "Escribe, ti, con tu dedo.",
+      "file": "assets/audio/prompts/syllables.trace.ti.0.m4a"
+    },
+    {
+      "promptId": "syllables.find.ti",
+      "index": 0,
+      "text": "Revienta las burbujas que dicen, ti.",
+      "file": "assets/audio/prompts/syllables.find.ti.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.ti",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, ti?",
+      "file": "assets/audio/prompts/syllables.starts_with.ti.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.to",
+      "index": 0,
+      "text": "La, te, y la, o, juntas dicen, to. ¡Toca, to!",
+      "file": "assets/audio/prompts/syllables.meet.to.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.to.choose",
+      "index": 0,
+      "text": "¿Dónde dice, to? ¡Tócala!",
+      "file": "assets/audio/prompts/syllables.meet.to.choose.0.m4a"
+    },
+    {
+      "promptId": "syllables.trace.to",
+      "index": 0,
+      "text": "Escribe, to, con tu dedo.",
+      "file": "assets/audio/prompts/syllables.trace.to.0.m4a"
+    },
+    {
+      "promptId": "syllables.find.to",
+      "index": 0,
+      "text": "Revienta las burbujas que dicen, to.",
+      "file": "assets/audio/prompts/syllables.find.to.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.to",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, to?",
+      "file": "assets/audio/prompts/syllables.starts_with.to.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.tu",
+      "index": 0,
+      "text": "La, te, y la, u, juntas dicen, tu. ¡Toca, tu!",
+      "file": "assets/audio/prompts/syllables.meet.tu.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.tu.choose",
+      "index": 0,
+      "text": "¿Dónde dice, tu? ¡Tócala!",
+      "file": "assets/audio/prompts/syllables.meet.tu.choose.0.m4a"
+    },
+    {
+      "promptId": "syllables.trace.tu",
+      "index": 0,
+      "text": "Escribe, tu, con tu dedo.",
+      "file": "assets/audio/prompts/syllables.trace.tu.0.m4a"
+    },
+    {
+      "promptId": "syllables.find.tu",
+      "index": 0,
+      "text": "Revienta las burbujas que dicen, tu.",
+      "file": "assets/audio/prompts/syllables.find.tu.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.tu",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, tu?",
+      "file": "assets/audio/prompts/syllables.starts_with.tu.0.m4a"
+    },
+    {
+      "promptId": "syllables.ends_with.ta",
+      "index": 0,
+      "text": "¿Qué dibujo termina con, ta?",
+      "file": "assets/audio/prompts/syllables.ends_with.ta.0.m4a"
+    },
+    {
+      "promptId": "syllables.ends_with.te",
+      "index": 0,
+      "text": "¿Qué dibujo termina con, te?",
+      "file": "assets/audio/prompts/syllables.ends_with.te.0.m4a"
+    },
+    {
+      "promptId": "syllables.ends_with.to",
+      "index": 0,
+      "text": "¿Qué dibujo termina con, to?",
+      "file": "assets/audio/prompts/syllables.ends_with.to.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.taza",
+      "index": 0,
+      "text": "Ta... za.",
+      "file": "assets/audio/prompts/listening.clap.taza.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.tambor",
+      "index": 0,
+      "text": "Tam... bor.",
+      "file": "assets/audio/prompts/listening.clap.tambor.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.teléfono",
+      "index": 0,
+      "text": "Te... lé... fo... no.",
+      "file": "assets/audio/prompts/listening.clap.teléfono.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.tigre",
+      "index": 0,
+      "text": "Ti... gre.",
+      "file": "assets/audio/prompts/listening.clap.tigre.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.tomate",
+      "index": 0,
+      "text": "To... ma... te.",
+      "file": "assets/audio/prompts/listening.clap.tomate.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.topo",
+      "index": 0,
+      "text": "To... po.",
+      "file": "assets/audio/prompts/listening.clap.topo.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.tucán",
+      "index": 0,
+      "text": "Tu... cán.",
+      "file": "assets/audio/prompts/listening.clap.tucán.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.pato",
+      "index": 0,
+      "text": "Arma la palabra, pato.",
+      "file": "assets/audio/prompts/syllables.build_word.pato.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.pelota",
+      "index": 0,
+      "text": "Arma la palabra, pelota.",
+      "file": "assets/audio/prompts/syllables.build_word.pelota.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.tomate",
+      "index": 0,
+      "text": "Arma la palabra, tomate.",
+      "file": "assets/audio/prompts/syllables.build_word.tomate.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.topo",
+      "index": 0,
+      "text": "Arma la palabra, topo.",
+      "file": "assets/audio/prompts/syllables.build_word.topo.0.m4a"
+    },
+    {
+      "promptId": "word.tambor",
+      "index": 0,
+      "text": "tambor",
+      "file": "assets/audio/words/tambor.m4a",
+      "spokenAs": "Tambor."
+    },
+    {
+      "promptId": "word.taza",
+      "index": 0,
+      "text": "taza",
+      "file": "assets/audio/words/taza.m4a",
+      "spokenAs": "Taza."
+    },
+    {
+      "promptId": "word.telefono",
+      "index": 0,
+      "text": "teléfono",
+      "file": "assets/audio/words/telefono.m4a",
+      "spokenAs": "Teléfono."
+    },
+    {
+      "promptId": "word.tigre",
+      "index": 0,
+      "text": "tigre",
+      "file": "assets/audio/words/tigre.m4a",
+      "spokenAs": "Tigre."
+    },
+    {
+      "promptId": "word.tomate",
+      "index": 0,
+      "text": "tomate",
+      "file": "assets/audio/words/tomate.m4a",
+      "spokenAs": "Tomate."
+    },
+    {
+      "promptId": "word.topo",
+      "index": 0,
+      "text": "topo",
+      "file": "assets/audio/words/topo.m4a",
+      "spokenAs": "Topo."
+    },
+    {
+      "promptId": "word.tucan",
+      "index": 0,
+      "text": "tucán",
+      "file": "assets/audio/words/tucan.m4a",
+      "spokenAs": "Tucán."
+    },
+    {
+      "promptId": "syllable.ta",
+      "index": 0,
+      "text": "ta",
+      "file": "assets/audio/sounds/syllable.ta.m4a",
+      "spokenAs": "Ta... Te... Ti... To... Tu."
+    },
+    {
+      "promptId": "syllable.te",
+      "index": 0,
+      "text": "te",
+      "file": "assets/audio/sounds/syllable.te.m4a",
+      "spokenAs": "Ta... Te... Ti... To... Tu."
+    },
+    {
+      "promptId": "syllable.ti",
+      "index": 0,
+      "text": "ti",
+      "file": "assets/audio/sounds/syllable.ti.m4a",
+      "spokenAs": "Ta... Te... Ti... To... Tu."
+    },
+    {
+      "promptId": "syllable.to",
+      "index": 0,
+      "text": "to",
+      "file": "assets/audio/sounds/syllable.to.m4a",
+      "spokenAs": "Ta... Te... Ti... To... Tu."
+    },
+    {
+      "promptId": "syllable.tu",
+      "index": 0,
+      "text": "tu",
+      "file": "assets/audio/sounds/syllable.tu.m4a",
+      "spokenAs": "Ta... Te... Ti... To... Tu."
     }
   ]
 }

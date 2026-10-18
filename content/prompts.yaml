@@ -985,3 +985,138 @@ syllables.build_word.sapo:
 
 syllables.build_word.sopa:
   - Arma la palabra, sopa.
+
+letter.meet.t:
+  - Esta es la, te. ¡La, te de taza! ¡Tócala!
+
+letter.meet.t.upper:
+  - Toca la, te mayúscula.
+
+letter.meet.t.lower:
+  - Toca la, te minúscula.
+
+letter.trace.t.lower:
+  - Repasa la, te minúscula con tu dedo.
+
+letter.trace.t.upper:
+  - Repasa la, te mayúscula con tu dedo.
+
+letter.find.t:
+  - Revienta las burbujas que tienen la, te.
+
+syllables.meet.ta:
+  - La, te, y la, a, juntas dicen, ta. ¡Toca, ta!
+
+syllables.meet.ta.choose:
+  - ¿Dónde dice, ta? ¡Tócala!
+
+syllables.trace.ta:
+  - Escribe, ta, con tu dedo.
+
+syllables.find.ta:
+  - Revienta las burbujas que dicen, ta.
+
+syllables.starts_with.ta:
+  - ¿Qué dibujo empieza con, ta?
+
+syllables.meet.te:
+  - La, te, y la, e, juntas dicen, te. ¡Toca, te!
+
+syllables.meet.te.choose:
+  - ¿Dónde dice, te? ¡Tócala!
+
+syllables.trace.te:
+  - Escribe, te, con tu dedo.
+
+syllables.find.te:
+  - Revienta las burbujas que dicen, te.
+
+syllables.starts_with.te:
+  - ¿Qué dibujo empieza con, te?
+
+syllables.meet.ti:
+  - La, te, y la, i, juntas dicen, ti. ¡Toca, ti!
+
+syllables.meet.ti.choose:
+  - ¿Dónde dice, ti? ¡Tócala!
+
+syllables.trace.ti:
+  - Escribe, ti, con tu dedo.
+
+syllables.find.ti:
+  - Revienta las burbujas que dicen, ti.
+
+syllables.starts_with.ti:
+  - ¿Qué dibujo empieza con, ti?
+
+syllables.meet.to:
+  - La, te, y la, o, juntas dicen, to. ¡Toca, to!
+
+syllables.meet.to.choose:
+  - ¿Dónde dice, to? ¡Tócala!
+
+syllables.trace.to:
+  - Escribe, to, con tu dedo.
+
+syllables.find.to:
+  - Revienta las burbujas que dicen, to.
+
+syllables.starts_with.to:
+  - ¿Qué dibujo empieza con, to?
+
+syllables.meet.tu:
+  - La, te, y la, u, juntas dicen, tu. ¡Toca, tu!
+
+syllables.meet.tu.choose:
+  - ¿Dónde dice, tu? ¡Tócala!
+
+syllables.trace.tu:
+  - Escribe, tu, con tu dedo.
+
+syllables.find.tu:
+  - Revienta las burbujas que dicen, tu.
+
+syllables.starts_with.tu:
+  - ¿Qué dibujo empieza con, tu?
+
+syllables.ends_with.ta:
+  - ¿Qué dibujo termina con, ta?
+
+syllables.ends_with.te:
+  - ¿Qué dibujo termina con, te?
+
+syllables.ends_with.to:
+  - ¿Qué dibujo termina con, to?
+
+listening.clap.taza:
+  - Ta... za.
+
+listening.clap.tambor:
+  - Tam... bor.
+
+listening.clap.teléfono:
+  - Te... lé... fo... no.
+
+listening.clap.tigre:
+  - Ti... gre.
+
+listening.clap.tomate:
+  - To... ma... te.
+
+listening.clap.topo:
+  - To... po.
+
+listening.clap.tucán:
+  - Tu... cán.
+
+syllables.build_word.pato:
+  - Arma la palabra, pato.
+
+syllables.build_word.pelota:
+  - Arma la palabra, pelota.
+
+syllables.build_word.tomate:
+  - Arma la palabra, tomate.
+
+syllables.build_word.topo:
+  - Arma la palabra, topo.
