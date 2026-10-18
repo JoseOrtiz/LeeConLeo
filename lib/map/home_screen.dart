@@ -74,7 +74,7 @@ Widget _home(WidgetRef ref, ContentBundle bundle) {
         child: Builder(
           builder: (context) => IconButton.filledTonal(
             key: HomeScreen.albumKey,
-            iconSize: 40,
+            iconSize: 48,
             onPressed: () {
               ref.read(promptPlayerProvider).stop();
               context.go('/stickers');

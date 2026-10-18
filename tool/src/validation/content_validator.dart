@@ -1,5 +1,6 @@
 import 'package:lee_con_leo/core/content/models/content_bundle.dart';
 
+import 'rules/activity_intros_rule.dart';
 import 'rules/blend_steps_rule.dart';
 import 'rules/build_word_steps_rule.dart';
 import 'rules/clap_steps_rule.dart';
@@ -25,6 +26,7 @@ class ContentValidator {
     SyllablesMatchTextRule(),
     UniqueIdsRule(),
     KnownActivitiesRule(),
+    ActivityIntrosRule(),
     WordAssetsRule(),
     PathImagesRule(),
     StageTintsRule(),

@@ -4249,6 +4249,12 @@
       "text": "fu",
       "file": "assets/audio/sounds/syllable.fu.m4a",
       "spokenAs": "Fa... Fe... Fi... Fo... Fu."
+    },
+    {
+      "promptId": "syllables.contains.intro",
+      "index": 0,
+      "text": "¡Busca bien adentro! Toca el dibujo que tiene el sonido que te digo.",
+      "file": "assets/audio/prompts/syllables.contains.intro.0.m4a"
     }
   ]
 }

@@ -45,6 +45,8 @@ There's no school group available, so testing is built into the release process:
 - **Self-review against a checklist** at every milestone: can each activity be
   understood with the sound on and the screen text hidden? Are all touch targets
   at least 64 dp? Is feedback given within 300 ms?
+  `test/checklist/` runs it on every game, on a phone and a tablet: touch targets,
+  a recorded spoken intro and first question, and a response to the first tap.
 - **Informal play-tests** with any child available (family, friends), following a
   short written protocol in `docs/playtest.md`. Five minutes, no help given, note
   where they get stuck.
