@@ -733,3 +733,255 @@ listening.clap.vela:
 
 listening.clap.árbol:
   - Ár... bol.
+
+letter.meet.d:
+  - Esta es la, de. ¡La, de de dedo! ¡Tócala!
+
+letter.meet.d.upper:
+  - Toca la, de mayúscula.
+
+letter.meet.d.lower:
+  - Toca la, de minúscula.
+
+letter.trace.d.lower:
+  - Repasa la, de minúscula con tu dedo.
+
+letter.trace.d.upper:
+  - Repasa la, de mayúscula con tu dedo.
+
+letter.find.d:
+  - Revienta las burbujas que tienen la, de.
+
+letter.meet.s:
+  - Esta es la, ese. ¡La, ese de sol! ¡Tócala!
+
+letter.meet.s.upper:
+  - Toca la, ese mayúscula.
+
+letter.meet.s.lower:
+  - Toca la, ese minúscula.
+
+letter.trace.s.lower:
+  - Repasa la, ese minúscula con tu dedo.
+
+letter.trace.s.upper:
+  - Repasa la, ese mayúscula con tu dedo.
+
+letter.find.s:
+  - Revienta las burbujas que tienen la, ese.
+
+syllables.meet.da:
+  - La, de, y la, a, juntas dicen, da. ¡Toca, da!
+
+syllables.meet.da.choose:
+  - ¿Dónde dice, da? ¡Tócala!
+
+syllables.trace.da:
+  - Escribe, da, con tu dedo.
+
+syllables.find.da:
+  - Revienta las burbujas que dicen, da.
+
+syllables.starts_with.da:
+  - ¿Qué dibujo empieza con, da?
+
+syllables.meet.de:
+  - La, de, y la, e, juntas dicen, de. ¡Toca, de!
+
+syllables.meet.de.choose:
+  - ¿Dónde dice, de? ¡Tócala!
+
+syllables.trace.de:
+  - Escribe, de, con tu dedo.
+
+syllables.find.de:
+  - Revienta las burbujas que dicen, de.
+
+syllables.starts_with.de:
+  - ¿Qué dibujo empieza con, de?
+
+syllables.meet.di:
+  - La, de, y la, i, juntas dicen, di. ¡Toca, di!
+
+syllables.meet.di.choose:
+  - ¿Dónde dice, di? ¡Tócala!
+
+syllables.trace.di:
+  - Escribe, di, con tu dedo.
+
+syllables.find.di:
+  - Revienta las burbujas que dicen, di.
+
+syllables.starts_with.di:
+  - ¿Qué dibujo empieza con, di?
+
+syllables.meet.do:
+  - La, de, y la, o, juntas dicen, do. ¡Toca, do!
+
+syllables.meet.do.choose:
+  - ¿Dónde dice, do? ¡Tócala!
+
+syllables.trace.do:
+  - Escribe, do, con tu dedo.
+
+syllables.find.do:
+  - Revienta las burbujas que dicen, do.
+
+syllables.starts_with.do:
+  - ¿Qué dibujo empieza con, do?
+
+syllables.meet.du:
+  - La, de, y la, u, juntas dicen, du. ¡Toca, du!
+
+syllables.meet.du.choose:
+  - ¿Dónde dice, du? ¡Tócala!
+
+syllables.trace.du:
+  - Escribe, du, con tu dedo.
+
+syllables.find.du:
+  - Revienta las burbujas que dicen, du.
+
+syllables.starts_with.du:
+  - ¿Qué dibujo empieza con, du?
+
+syllables.meet.sa:
+  - La, ese, y la, a, juntas dicen, sa. ¡Toca, sa!
+
+syllables.meet.sa.choose:
+  - ¿Dónde dice, sa? ¡Tócala!
+
+syllables.trace.sa:
+  - Escribe, sa, con tu dedo.
+
+syllables.find.sa:
+  - Revienta las burbujas que dicen, sa.
+
+syllables.starts_with.sa:
+  - ¿Qué dibujo empieza con, sa?
+
+syllables.meet.se:
+  - La, ese, y la, e, juntas dicen, se. ¡Toca, se!
+
+syllables.meet.se.choose:
+  - ¿Dónde dice, se? ¡Tócala!
+
+syllables.trace.se:
+  - Escribe, se, con tu dedo.
+
+syllables.find.se:
+  - Revienta las burbujas que dicen, se.
+
+syllables.starts_with.se:
+  - ¿Qué dibujo empieza con, se?
+
+syllables.meet.si:
+  - La, ese, y la, i, juntas dicen, si. ¡Toca, si!
+
+syllables.meet.si.choose:
+  - ¿Dónde dice, si? ¡Tócala!
+
+syllables.trace.si:
+  - Escribe, si, con tu dedo.
+
+syllables.find.si:
+  - Revienta las burbujas que dicen, si.
+
+syllables.starts_with.si:
+  - ¿Qué dibujo empieza con, si?
+
+syllables.meet.so:
+  - La, ese, y la, o, juntas dicen, so. ¡Toca, so!
+
+syllables.meet.so.choose:
+  - ¿Dónde dice, so? ¡Tócala!
+
+syllables.trace.so:
+  - Escribe, so, con tu dedo.
+
+syllables.find.so:
+  - Revienta las burbujas que dicen, so.
+
+syllables.starts_with.so:
+  - ¿Qué dibujo empieza con, so?
+
+syllables.meet.su:
+  - La, ese, y la, u, juntas dicen, su. ¡Toca, su!
+
+syllables.meet.su.choose:
+  - ¿Dónde dice, su? ¡Tócala!
+
+syllables.trace.su:
+  - Escribe, su, con tu dedo.
+
+syllables.find.su:
+  - Revienta las burbujas que dicen, su.
+
+syllables.starts_with.su:
+  - ¿Qué dibujo empieza con, su?
+
+syllables.ends_with.da:
+  - ¿Qué dibujo termina con, da?
+
+syllables.ends_with.do:
+  - ¿Qué dibujo termina con, do?
+
+syllables.ends_with.sa:
+  - ¿Qué dibujo termina con, sa?
+
+syllables.ends_with.so:
+  - ¿Qué dibujo termina con, so?
+
+listening.clap.dado:
+  - Da... do.
+
+listening.clap.dedo:
+  - De... do.
+
+listening.clap.dinosaurio:
+  - Di... no... sau... rio.
+
+listening.clap.dominó:
+  - Do... mi... nó.
+
+listening.clap.ducha:
+  - Du... cha.
+
+listening.clap.cebra:
+  - Ce... bra.
+
+listening.clap.silla:
+  - Si... lla.
+
+listening.clap.submarino:
+  - Sub... ma... ri... no.
+
+listening.clap.sol:
+  - Sol.
+
+listening.clap.medusa:
+  - Me... du... sa.
+
+listening.clap.espada:
+  - Es... pa... da.
+
+syllables.build_word.dado:
+  - Arma la palabra, dado.
+
+syllables.build_word.dedo:
+  - Arma la palabra, dedo.
+
+syllables.build_word.medusa:
+  - Arma la palabra, medusa.
+
+syllables.build_word.mesa:
+  - Arma la palabra, mesa.
+
+syllables.build_word.oso:
+  - Arma la palabra, oso.
+
+syllables.build_word.sapo:
+  - Arma la palabra, sapo.
+
+syllables.build_word.sopa:
+  - Arma la palabra, sopa.

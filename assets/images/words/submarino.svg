@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<path d="M232 120 L232 56 L268 56" fill="none" stroke="#3B2A20" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M232 120 L232 56 L268 56" fill="none" stroke="#8F9BAA" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="262" y="40" width="22" height="32" rx="6" fill="#CFE8F7" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="166" y="104" width="96" height="76" rx="20" fill="#F2B632" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M60 236 L30 200 L30 272 Z" fill="#D8433B" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M56 236 Q56 164 146 164 L284 164 Q368 164 368 236 Q368 306 284 306 L146 306 Q56 306 56 236 Z" fill="#F2B632" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M76 268 Q96 296 146 298 L284 298 Q340 298 358 268 Q340 284 284 286 L146 286 Q100 286 76 268 Z" fill="#D98E1C"/>
+<path d="M100 196 Q112 180 140 178" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="150" cy="236" r="26" fill="#CFE8F7" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="220" cy="236" r="26" fill="#CFE8F7" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="290" cy="236" r="26" fill="#CFE8F7" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M140 228 Q144 220 152 218" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M210 228 Q214 220 222 218" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M280 228 Q284 220 292 218" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="372" cy="140" r="10" fill="#CFE8F7" stroke="#3B2A20" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="352" cy="104" r="7" fill="#CFE8F7" stroke="#3B2A20" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>
