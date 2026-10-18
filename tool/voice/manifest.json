@@ -2089,6 +2089,18 @@
       "index": 0,
       "text": "Ár... bol.",
       "file": "assets/audio/prompts/listening.clap.árbol.0.m4a"
+    },
+    {
+      "promptId": "syllables.blend.intro",
+      "index": 0,
+      "text": "¡Escucha los pedacitos y júntalos! Toca el dibujo de la palabra que se forma.",
+      "file": "assets/audio/prompts/syllables.blend.intro.0.m4a"
+    },
+    {
+      "promptId": "syllables.blend.ask",
+      "index": 0,
+      "text": "Junta los pedacitos...",
+      "file": "assets/audio/prompts/syllables.blend.ask.0.m4a"
     }
   ]
 }
