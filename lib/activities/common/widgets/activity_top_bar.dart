@@ -26,7 +26,7 @@ class ActivityTopBar extends StatelessWidget {
         children: [
           IconButton.filledTonal(
             key: const ValueKey('home'),
-            iconSize: 40,
+            iconSize: 48,
             onPressed: onHome,
             icon: const Icon(Icons.home_rounded),
           ),
@@ -46,7 +46,7 @@ class ActivityTopBar extends StatelessWidget {
           ),
           IconButton.filled(
             key: const ValueKey('repeat'),
-            iconSize: 40,
+            iconSize: 48,
             onPressed: onRepeat,
             icon: const Icon(Icons.volume_up_rounded),
           ),

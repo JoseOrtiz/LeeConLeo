@@ -8,6 +8,7 @@ import 'package:lee_con_leo/core/content/models/path_step.dart';
 import 'package:lee_con_leo/core/content/models/prompt_library.dart';
 import 'package:lee_con_leo/core/content/models/word.dart';
 
+import '../../tool/src/validation/rules/activity_intros_rule.dart';
 import '../../tool/src/validation/rules/blend_steps_rule.dart';
 import '../../tool/src/validation/rules/build_word_steps_rule.dart';
 import '../../tool/src/validation/rules/clap_steps_rule.dart';
@@ -476,6 +477,28 @@ void main() {
       contains('listening.clap.ask'),
       contains('listening.clap.sol'),
     ]);
+  });
+
+  test('every game a step lists needs an intro phrase', () {
+    final bundle = ContentBundle(
+      words: const [],
+      stages: const [
+        PathStage(
+          stage: 2,
+          name: 'vocales',
+          steps: [
+            PathStep(id: 'a', activities: ['letter.meet', 'letter.find']),
+          ],
+        ),
+      ],
+      prompts: const PromptLibrary({
+        'letter.meet.intro': ['¡Hola!'],
+      }),
+    );
+    expect(
+      const ActivityIntrosRule().check(bundle).single.message,
+      contains('missing prompt "letter.find.intro"'),
+    );
   });
 
   test('flags places with no steps or too many to fit one screen', () {

@@ -296,6 +296,9 @@ syllables.find.intro:
 syllables.ends_with.intro:
   - ¡Escucha el final! Toca el dibujo que termina con el sonido que te digo.
 
+syllables.contains.intro:
+  - ¡Busca bien adentro! Toca el dibujo que tiene el sonido que te digo.
+
 syllables.blend.intro:
   - ¡Escucha los pedacitos y júntalos! Toca el dibujo de la palabra que se forma.
 

@@ -5024,6 +5024,9 @@
     "syllables.ends_with.intro": [
       "¡Escucha el final! Toca el dibujo que termina con el sonido que te digo."
     ],
+    "syllables.contains.intro": [
+      "¡Busca bien adentro! Toca el dibujo que tiene el sonido que te digo."
+    ],
     "syllables.blend.intro": [
       "¡Escucha los pedacitos y júntalos! Toca el dibujo de la palabra que se forma."
     ],
@@ -6578,6 +6581,7 @@
     "syllables.contains.fe.0": "prompts/syllables.contains.fe.0.m4a",
     "syllables.contains.fi.0": "prompts/syllables.contains.fi.0.m4a",
     "syllables.contains.fo.0": "prompts/syllables.contains.fo.0.m4a",
+    "syllables.contains.intro.0": "prompts/syllables.contains.intro.0.m4a",
     "syllables.contains.la.0": "prompts/syllables.contains.la.0.m4a",
     "syllables.contains.le.0": "prompts/syllables.contains.le.0.m4a",
     "syllables.contains.li.0": "prompts/syllables.contains.li.0.m4a",

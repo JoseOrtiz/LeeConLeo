@@ -129,7 +129,7 @@ class _StepScreenState extends ConsumerState<StepScreen> {
               left: 8,
               child: IconButton.filledTonal(
                 key: StepScreen.mapKey,
-                iconSize: 40,
+                iconSize: 48,
                 onPressed: () => _go('/'),
                 icon: const Icon(Icons.map_rounded),
               ),

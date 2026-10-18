@@ -97,7 +97,7 @@ class _StickerAlbumState extends ConsumerState<StickerAlbum> {
                     left: 8,
                     child: IconButton.filledTonal(
                       key: StickerAlbum.backKey,
-                      iconSize: 40,
+                      iconSize: 48,
                       onPressed: _back,
                       icon: const Icon(Icons.arrow_back_rounded),
                     ),
