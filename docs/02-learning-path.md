@@ -17,6 +17,10 @@ Stage 8  Words and sentences     read a word → match it to a picture → read 
 Stage 1 runs **alongside** stages 2–4 as review and warm-up games. It isn't a gate
 the child has to pass first.
 
+Stage 3 comes **after** the first consonants, not before them: following the MINEDUC
+guide, vowel combinations are an advanced step, so the path goes from the vowels
+straight to *m p l d s*.
+
 ### Why single vowels first
 
 In 2014 the map started at "ao". A child who doesn't know "a" or "o" on their own

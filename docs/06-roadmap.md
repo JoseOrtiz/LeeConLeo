@@ -31,8 +31,8 @@ activity and one vowel **without adult help**, on a phone and on a tablet.
 - Profiles (multiple children per device), parental gate.
 - Mastery, unlocking, spaced review, stickers.
 - Stage 1 listening games: *Clap the syllables*, *Same sound*.
-- Stage 3 vowel combinations. Stage 4 for **m, p, l** with *Starts with*,
-  *Ends with* and *Build the word*.
+- Stage 4 for **m, p, l, d, s** with *Starts with*, *Ends with* and *Build the word*.
+  Stage 3 vowel combinations move later (see [02](02-learning-path.md)).
 - Illustrations for the words these steps need.
 
 **Done when:** a child can progress from spatial concepts to "ma me mi mo mu" in

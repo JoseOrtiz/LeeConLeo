@@ -1,5 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lee_con_leo/core/content/models/content_bundle.dart';
+import 'package:lee_con_leo/core/content/models/path_stage.dart';
+import 'package:lee_con_leo/core/content/models/path_step.dart';
 import 'package:lee_con_leo/core/content/models/prompt_library.dart';
 import 'package:lee_con_leo/core/content/models/word.dart';
 
@@ -54,6 +56,29 @@ void main() {
     expect(list.phrases.map((phrase) => phrase['promptId']), ['feedback.correct', 'reward']);
     expect(list.words.map((word) => word['name']), ['abeja', 'ojo']);
     expect(list.sounds, unorderedEquals(['pa', 'i']));
+  });
+
+  test('a step sound with no clip yet is listed to record', () {
+    final withSteps = ContentBundle(
+      words: const [],
+      stages: const [
+        PathStage(
+          stage: 4,
+          name: 'montaña',
+          steps: [
+            PathStep(id: 'da', sounds: ['da', 'de'], activities: []),
+          ],
+        ),
+      ],
+      prompts: const PromptLibrary({}),
+    );
+
+    final list = RecordingList.missing(
+      withSteps,
+      hasAudio: (path) => path == 'sounds/syllable.de.m4a',
+    );
+
+    expect(list.sounds, ['da']);
   });
 
   test('nothing to record gives an empty list', () {

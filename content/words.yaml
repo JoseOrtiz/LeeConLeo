@@ -56,6 +56,8 @@
 - text: casa
 - text: castor
 - text: cebra
+  image: words/cebra.svg
+  audio: words/cebra.m4a
 - text: celular
 - text: cerdo
 - text: círculo
@@ -68,19 +70,29 @@
 - text: corbata
 - text: cueva
 - text: dado
+  image: words/dado.svg
+  audio: words/dado.m4a
 - text: damasco
 - text: dedo
+  image: words/dedo.svg
+  audio: words/dedo.m4a
 - text: delantal
 - text: delfín
 - text: desierto
 - text: diamante
 - text: diente
 - text: dinosaurio
+  image: words/dinosaurio.svg
+  audio: words/dinosaurio.m4a
 - text: disco
 - text: doce
 - text: dominó
+  image: words/domino.svg
+  audio: words/domino.m4a
 - text: dos
 - text: ducha
+  image: words/ducha.svg
+  audio: words/ducha.m4a
 - text: duende
 - text: dulce
 - text: durazno
@@ -96,6 +108,9 @@
   image: words/escoba.svg
   audio: words/escoba.m4a
 - text: escorpión
+- text: espada
+  image: words/espada.svg
+  audio: words/espada.m4a
 - text: espantapájaros
 - text: espejo
 - text: esqueleto
@@ -225,6 +240,8 @@
 - text: martillo
 - text: maíz
 - text: medusa
+  image: words/medusa.svg
+  audio: words/medusa.m4a
 - text: melón
   image: words/melon.svg
   audio: words/melon.m4a
@@ -390,14 +407,20 @@
 - text: serrucho
 - text: siete
 - text: silla
+  image: words/silla.svg
+  audio: words/silla.m4a
 - text: sillón
 - text: sirena
 - text: sol
+  image: words/sol.svg
+  audio: words/sol.m4a
 - text: sombrero
 - text: sopa
   image: words/sopa.svg
   audio: words/sopa.m4a
 - text: submarino
+  image: words/submarino.svg
+  audio: words/submarino.m4a
 - text: surfeo
 - text: sushi
   syllables: [su, shi]

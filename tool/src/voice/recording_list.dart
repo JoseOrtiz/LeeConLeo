@@ -1,5 +1,6 @@
 import 'package:lee_con_leo/core/content/models/content_bundle.dart';
 import 'package:lee_con_leo/core/content/models/prompt_library.dart';
+import 'package:lee_con_leo/core/content/sound_clips.dart';
 
 class RecordingList {
   const RecordingList({required this.phrases, required this.words, required this.sounds});
@@ -23,10 +24,13 @@ class RecordingList {
             if (redo.contains('word.${_name(audio)}') || !hasAudio(audio))
               {'name': _name(audio), 'text': word.text},
       ],
-      sounds: [
+      sounds: {
         for (final id in redo)
           if (id.startsWith(vowelPrefix) || id.startsWith(syllablePrefix)) id.split('.').last,
-      ],
+        for (final step in bundle.steps)
+          for (final sound in step.sounds)
+            if (!hasAudio(SoundClips.of(sound))) sound,
+      }.toList(),
     );
   }
 

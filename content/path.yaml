@@ -70,3 +70,22 @@
     - id: la
       sounds: [la, le, li, lo, lu]
       activities: [listening.clap, listening.same_sound, syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.blend, syllables.build_word]
+- stage: 4
+  name: La montaña
+  scene: scenes/mountain.svg
+  tint: '#EAF1EC'
+  steps:
+    - id: d
+      grapheme: d
+      word: dedo
+      activities: [letter.meet, letter.trace, letter.find]
+    - id: da
+      sounds: [da, de, di, do, du]
+      activities: [listening.clap, listening.same_sound, syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.blend, syllables.build_word]
+    - id: s
+      grapheme: s
+      word: sol
+      activities: [letter.meet, letter.trace, letter.find]
+    - id: sa
+      sounds: [sa, se, si, so, su]
+      activities: [listening.clap, listening.same_sound, syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.blend, syllables.build_word]
