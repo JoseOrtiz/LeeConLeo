@@ -4,6 +4,9 @@
 - text: agua
 - text: ala
 - text: anillo
+- text: araña
+  image: words/arana.svg
+  audio: words/arana.m4a
 - text: arco
 - text: aro
 - text: asiento
@@ -36,6 +39,8 @@
 - text: caballo
 - text: cabra
 - text: café
+  image: words/cafe.svg
+  audio: words/cafe.m4a
 - text: calabaza
 - text: calcetín
 - text: cama
@@ -121,14 +126,26 @@
 - text: falda
 - text: fantasma
 - text: faro
+  image: words/faro.svg
+  audio: words/faro.m4a
+- text: fideos
+  image: words/fideos.svg
+  audio: words/fideos.m4a
 - text: flamenco
 - text: flauta
 - text: flecha
 - text: flor
 - text: foca
+  image: words/foca.svg
+  audio: words/foca.m4a
+- text: foto
+  image: words/foto.svg
+  audio: words/foto.m4a
 - text: frambuesa
 - text: frutilla
 - text: fuego
+  image: words/fuego.svg
+  audio: words/fuego.m4a
 - text: furgón
 - text: fútbol
 - text: galleta
@@ -178,6 +195,8 @@
 - text: jarra
 - text: jaula
 - text: jirafa
+  image: words/jirafa.svg
+  audio: words/jirafa.m4a
 - text: joyas
 - text: karate
 - text: kiwi
@@ -258,6 +277,9 @@
 - text: mochila
   image: words/mochila.svg
   audio: words/mochila.m4a
+- text: mofeta
+  image: words/mofeta.svg
+  audio: words/mofeta.m4a
 - text: molino
 - text: momia
 - text: mono
@@ -274,13 +296,22 @@
   image: words/muneca.svg
   audio: words/muneca.m4a
 - text: naranja
+  image: words/naranja.svg
+  audio: words/naranja.m4a
 - text: nariz
 - text: natación
 - text: nave
 - text: nido
+  image: words/nido.svg
+  audio: words/nido.m4a
 - text: nieve
+- text: niño
+  image: words/nino.svg
+  audio: words/nino.m4a
 - text: novios
 - text: nube
+  image: words/nube.svg
+  audio: words/nube.m4a
 - text: ocho
 - text: ojo
   image: words/ojo.svg
@@ -495,3 +526,6 @@
 - text: árbol
   image: words/arbol.svg
   audio: words/arbol.m4a
+- text: ñandú
+  image: words/nandu.svg
+  audio: words/nandu.m4a

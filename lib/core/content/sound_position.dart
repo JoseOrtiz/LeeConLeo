@@ -1,20 +1,40 @@
-import 'activity_ids.dart';
+import '../../utils/spanish/spanish_letters.dart';
 import 'models/word.dart';
 import 'sound_prompt_ids.dart';
 
 enum SoundPosition {
-  start(ActivityIds.startsWith),
-  end(ActivityIds.endsWith);
+  start('starts'),
+  end('ends'),
+  inside('contains');
 
-  const SoundPosition(this.activityId);
+  const SoundPosition(this.label);
 
-  final String activityId;
+  final String label;
 
-  bool matches(Word word, String sound) =>
-      this == start ? word.startsWithSound(sound) : word.endsWithSound(sound);
+  bool matches(Word word, String sound) => switch (this) {
+    start => word.startsWithSound(sound),
+    end => word.endsWithSound(sound),
+    inside => word.sounds.contains(sound),
+  };
 
-  String promptId(String sound) =>
-      this == start ? SoundPromptIds.startsWith(sound) : SoundPromptIds.endsWith(sound);
+  bool isSpelled(Word word, String sound) {
+    final written = [for (final syllable in word.syllables) _plain(syllable)];
+    if (written.isEmpty) return false;
+    return switch (this) {
+      start => written.first.startsWith(sound),
+      end => written.last == sound,
+      inside => written.contains(sound),
+    };
+  }
+
+  String promptId(String sound) => switch (this) {
+    start => SoundPromptIds.startsWith(sound),
+    end => SoundPromptIds.endsWith(sound),
+    inside => SoundPromptIds.contains(sound),
+  };
+
+  static String _plain(String syllable) =>
+      syllable.toLowerCase().split('').map(SpanishLetters.withoutAccent).join();
 
   static List<Word> pictured(Iterable<Word> words) =>
       words.where((word) => word.image != null).toList();

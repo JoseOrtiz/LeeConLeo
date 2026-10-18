@@ -15,6 +15,7 @@ abstract final class GameIcons {
     ActivityIds.syllableFind: 'games/find.svg',
     ActivityIds.startsWith: 'games/starts_with.svg',
     ActivityIds.endsWith: 'games/ends_with.svg',
+    ActivityIds.contains: 'games/contains.svg',
     ActivityIds.blend: 'games/blend.svg',
     ActivityIds.buildWord: 'games/build_word.svg',
   };

@@ -91,6 +91,7 @@ vowel, first in order (*ma me mi mo mu*), then mixed, then written.
 |---|---|
 | *Starts with* | Hear a syllable and see it written, and 4 pictures appear. Tap (or drag a line to) the one that starts with it. Tapping a picture speaks its name |
 | *Ends with* | Same, with the ending |
+| *Contains* | Same, with the syllable anywhere in the word (*piña* has *ña*). Carries steps like *ñ*, whose syllables rarely start a word |
 | *Build the word* (new) | A picture and its spoken word. Drag or tap syllable tiles into the slots in order (*ma + pa*), among two extra syllables of the family. A wrong tile speaks that syllable. Words use only syllables already taught and at least one of the step's own |
 | *Circle it* | Circle the target syllable inside written words. Stage 5 and after |
 | *Read and match* (new) | Read a word and match it to one of 3 pictures. Stage 8 |
