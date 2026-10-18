@@ -4320,6 +4320,7 @@
             "syllables.find",
             "syllables.starts_with",
             "syllables.ends_with",
+            "syllables.blend",
             "syllables.build_word"
           ],
           "sounds": [
@@ -4350,6 +4351,7 @@
             "syllables.find",
             "syllables.starts_with",
             "syllables.ends_with",
+            "syllables.blend",
             "syllables.build_word"
           ],
           "sounds": [
@@ -4661,6 +4663,12 @@
     ],
     "syllables.ends_with.intro": [
       "¡Escucha el final! Toca el dibujo que termina con el sonido que te digo."
+    ],
+    "syllables.blend.intro": [
+      "¡Escucha los pedacitos y júntalos! Toca el dibujo de la palabra que se forma."
+    ],
+    "syllables.blend.ask": [
+      "Junta los pedacitos..."
     ],
     "syllables.build_word.intro": [
       "¡Ahora armemos palabras! Mira el dibujo y lleva cada pedacito a su lugar."
@@ -5240,6 +5248,8 @@
     "step.intro.0": "prompts/step.intro.0.m4a",
     "stickers.intro.0": "prompts/stickers.intro.0.m4a",
     "stickers.new.0": "prompts/stickers.new.0.m4a",
+    "syllables.blend.ask.0": "prompts/syllables.blend.ask.0.m4a",
+    "syllables.blend.intro.0": "prompts/syllables.blend.intro.0.m4a",
     "syllables.build_word.intro.0": "prompts/syllables.build_word.intro.0.m4a",
     "syllables.build_word.lupa.0": "prompts/syllables.build_word.lupa.0.m4a",
     "syllables.build_word.mapa.0": "prompts/syllables.build_word.mapa.0.m4a",

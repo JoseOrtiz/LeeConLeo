@@ -296,6 +296,12 @@ syllables.find.intro:
 syllables.ends_with.intro:
   - ¡Escucha el final! Toca el dibujo que termina con el sonido que te digo.
 
+syllables.blend.intro:
+  - ¡Escucha los pedacitos y júntalos! Toca el dibujo de la palabra que se forma.
+
+syllables.blend.ask:
+  - Junta los pedacitos...
+
 syllables.build_word.intro:
   - ¡Ahora armemos palabras! Mira el dibujo y lleva cada pedacito a su lugar.
 

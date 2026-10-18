@@ -62,11 +62,11 @@
       activities: [letter.meet, letter.trace, letter.find]
     - id: pa
       sounds: [pa, pe, pi, po, pu]
-      activities: [listening.clap, listening.same_sound, syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.build_word]
+      activities: [listening.clap, listening.same_sound, syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.blend, syllables.build_word]
     - id: l
       grapheme: l
       word: luna
       activities: [letter.meet, letter.trace, letter.find]
     - id: la
       sounds: [la, le, li, lo, lu]
-      activities: [listening.clap, listening.same_sound, syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.build_word]
+      activities: [listening.clap, listening.same_sound, syllables.meet, syllables.trace, syllables.find, syllables.starts_with, syllables.ends_with, syllables.blend, syllables.build_word]

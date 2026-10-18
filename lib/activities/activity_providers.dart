@@ -10,6 +10,7 @@ import 'review/review_activity.dart';
 import 'sounds/picture_sound_activity.dart';
 import 'spatial/direction_activity.dart';
 import 'spatial/positions_activity.dart';
+import 'syllables/blend_activity.dart';
 import 'syllables/build_word_activity.dart';
 import 'syllables/syllable_find_activity.dart';
 import 'syllables/syllable_meet_activity.dart';
@@ -29,6 +30,7 @@ final _games = <ActivitySpec>[
   const SyllableFindActivity(),
   PictureSoundActivity.startsWith,
   PictureSoundActivity.endsWith,
+  const BlendActivity(),
   const BuildWordActivity(),
 ];
 

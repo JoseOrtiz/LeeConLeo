@@ -8,6 +8,7 @@ import 'package:lee_con_leo/core/content/models/path_step.dart';
 import 'package:lee_con_leo/core/content/models/prompt_library.dart';
 import 'package:lee_con_leo/core/content/models/word.dart';
 
+import '../../tool/src/validation/rules/blend_steps_rule.dart';
 import '../../tool/src/validation/rules/build_word_steps_rule.dart';
 import '../../tool/src/validation/rules/clap_steps_rule.dart';
 import '../../tool/src/validation/rules/known_activities_rule.dart';
@@ -388,6 +389,37 @@ void main() {
 
     test('a step with a word made of known syllables and its phrase passes', () {
       expect(rule.check(buildBundle()), isEmpty);
+    });
+
+    test('blending needs the ask phrase and the split phrase of every word', () {
+      ContentBundle blendBundle(Map<String, List<String>> phrases) => ContentBundle(
+        words: const [mapa],
+        stages: const [
+          PathStage(
+            stage: 4,
+            name: 'bosque',
+            steps: [
+              PathStep(id: 'ma', sounds: ['ma', 'me'], activities: []),
+              PathStep(id: 'pa', sounds: ['pa', 'pe'], activities: ['syllables.blend']),
+            ],
+          ),
+        ],
+        prompts: PromptLibrary(phrases),
+      );
+
+      expect(
+        const BlendStepsRule().check(
+          blendBundle({
+            'syllables.blend.ask': ['ask'],
+            'listening.clap.mapa': ['Ma... pa.'],
+          }),
+        ),
+        isEmpty,
+      );
+      expect(const BlendStepsRule().check(blendBundle({})).map((issue) => issue.message), [
+        contains('syllables.blend.ask'),
+        contains('listening.clap.mapa'),
+      ]);
     });
 
     test('flags a missing phrase and a step with no word to build', () {

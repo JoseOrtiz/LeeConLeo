@@ -103,7 +103,8 @@ A syllable step lists its syllables in `sounds` (`[ma, me, mi, mo, mu]`). *Ends 
 asks only the syllables that some picture ends with, so a step can use it even when
 words ending in *mu* or *pi* don't exist.
 *Clap the syllables* needs a `listening.clap.<word>` phrase for every pictured word of 1–4
-syllables: the word split up ("A... be... ja.").
+syllables: the word split up ("A... be... ja."). *Blend the sounds* says the same phrase
+after `syllables.blend.ask`.
 
 *Build the word* uses pictured words spelled exactly as they sound (*humo* is out
 because of the silent *h*), made only of syllables taught up to that step and with
