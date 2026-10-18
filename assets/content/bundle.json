@@ -51,6 +51,21 @@
       ]
     },
     {
+      "text": "araña",
+      "syllables": [
+        "a",
+        "ra",
+        "ña"
+      ],
+      "sounds": [
+        "a",
+        "ra",
+        "ña"
+      ],
+      "image": "words/arana.svg",
+      "audio": "words/arana.m4a"
+    },
+    {
       "text": "arco",
       "syllables": [
         "ar",
@@ -424,7 +439,9 @@
       "sounds": [
         "ka",
         "fe"
-      ]
+      ],
+      "image": "words/cafe.svg",
+      "audio": "words/cafe.m4a"
     },
     {
       "text": "calabaza",
@@ -1225,7 +1242,24 @@
       "sounds": [
         "fa",
         "ro"
-      ]
+      ],
+      "image": "words/faro.svg",
+      "audio": "words/faro.m4a"
+    },
+    {
+      "text": "fideos",
+      "syllables": [
+        "fi",
+        "de",
+        "os"
+      ],
+      "sounds": [
+        "fi",
+        "de",
+        "os"
+      ],
+      "image": "words/fideos.svg",
+      "audio": "words/fideos.m4a"
     },
     {
       "text": "flamenco",
@@ -1280,7 +1314,22 @@
       "sounds": [
         "fo",
         "ka"
-      ]
+      ],
+      "image": "words/foca.svg",
+      "audio": "words/foca.m4a"
+    },
+    {
+      "text": "foto",
+      "syllables": [
+        "fo",
+        "to"
+      ],
+      "sounds": [
+        "fo",
+        "to"
+      ],
+      "image": "words/foto.svg",
+      "audio": "words/foto.m4a"
     },
     {
       "text": "frambuesa",
@@ -1317,7 +1366,9 @@
       "sounds": [
         "fue",
         "go"
-      ]
+      ],
+      "image": "words/fuego.svg",
+      "audio": "words/fuego.m4a"
     },
     {
       "text": "furgón",
@@ -1790,7 +1841,9 @@
         "ji",
         "ra",
         "fa"
-      ]
+      ],
+      "image": "words/jirafa.svg",
+      "audio": "words/jirafa.m4a"
     },
     {
       "text": "joyas",
@@ -2337,6 +2390,21 @@
       "audio": "words/mochila.m4a"
     },
     {
+      "text": "mofeta",
+      "syllables": [
+        "mo",
+        "fe",
+        "ta"
+      ],
+      "sounds": [
+        "mo",
+        "fe",
+        "ta"
+      ],
+      "image": "words/mofeta.svg",
+      "audio": "words/mofeta.m4a"
+    },
+    {
       "text": "molino",
       "syllables": [
         "mo",
@@ -2446,7 +2514,9 @@
         "na",
         "ran",
         "ja"
-      ]
+      ],
+      "image": "words/naranja.svg",
+      "audio": "words/naranja.m4a"
     },
     {
       "text": "nariz",
@@ -2492,7 +2562,9 @@
       "sounds": [
         "ni",
         "do"
-      ]
+      ],
+      "image": "words/nido.svg",
+      "audio": "words/nido.m4a"
     },
     {
       "text": "nieve",
@@ -2504,6 +2576,19 @@
         "nie",
         "be"
       ]
+    },
+    {
+      "text": "niño",
+      "syllables": [
+        "ni",
+        "ño"
+      ],
+      "sounds": [
+        "ni",
+        "ño"
+      ],
+      "image": "words/nino.svg",
+      "audio": "words/nino.m4a"
     },
     {
       "text": "novios",
@@ -2525,7 +2610,9 @@
       "sounds": [
         "nu",
         "be"
-      ]
+      ],
+      "image": "words/nube.svg",
+      "audio": "words/nube.m4a"
     },
     {
       "text": "ocho",
@@ -4194,6 +4281,19 @@
       ],
       "image": "words/arbol.svg",
       "audio": "words/arbol.m4a"
+    },
+    {
+      "text": "ñandú",
+      "syllables": [
+        "ñan",
+        "dú"
+      ],
+      "sounds": [
+        "ñan",
+        "du"
+      ],
+      "image": "words/nandu.svg",
+      "audio": "words/nandu.m4a"
     }
   ],
   "stages": [
@@ -4339,7 +4439,8 @@
             "syllables.trace",
             "syllables.find",
             "syllables.starts_with",
-            "syllables.ends_with"
+            "syllables.ends_with",
+            "syllables.contains"
           ],
           "sounds": [
             "ma",
@@ -4369,6 +4470,7 @@
             "syllables.find",
             "syllables.starts_with",
             "syllables.ends_with",
+            "syllables.contains",
             "syllables.blend",
             "syllables.build_word"
           ],
@@ -4400,6 +4502,7 @@
             "syllables.find",
             "syllables.starts_with",
             "syllables.ends_with",
+            "syllables.contains",
             "syllables.blend",
             "syllables.build_word"
           ],
@@ -4439,6 +4542,7 @@
             "syllables.find",
             "syllables.starts_with",
             "syllables.ends_with",
+            "syllables.contains",
             "syllables.blend",
             "syllables.build_word"
           ],
@@ -4470,6 +4574,7 @@
             "syllables.find",
             "syllables.starts_with",
             "syllables.ends_with",
+            "syllables.contains",
             "syllables.blend",
             "syllables.build_word"
           ],
@@ -4501,6 +4606,7 @@
             "syllables.find",
             "syllables.starts_with",
             "syllables.ends_with",
+            "syllables.contains",
             "syllables.blend",
             "syllables.build_word"
           ],
@@ -4510,6 +4616,110 @@
             "di",
             "do",
             "du"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": 4,
+      "name": "El lago",
+      "scene": "scenes/lake.svg",
+      "tint": "#E6F1F5",
+      "steps": [
+        {
+          "id": "n",
+          "activities": [
+            "letter.meet",
+            "letter.trace",
+            "letter.find"
+          ],
+          "grapheme": "n",
+          "word": "nido"
+        },
+        {
+          "id": "na",
+          "activities": [
+            "listening.clap",
+            "listening.same_sound",
+            "syllables.meet",
+            "syllables.trace",
+            "syllables.find",
+            "syllables.starts_with",
+            "syllables.ends_with",
+            "syllables.contains",
+            "syllables.blend",
+            "syllables.build_word"
+          ],
+          "sounds": [
+            "na",
+            "ne",
+            "ni",
+            "no",
+            "nu"
+          ]
+        },
+        {
+          "id": "enye",
+          "activities": [
+            "letter.meet",
+            "letter.trace",
+            "letter.find"
+          ],
+          "grapheme": "ñ",
+          "word": "ñandú"
+        },
+        {
+          "id": "nya",
+          "activities": [
+            "listening.clap",
+            "listening.same_sound",
+            "syllables.meet",
+            "syllables.trace",
+            "syllables.find",
+            "syllables.starts_with",
+            "syllables.ends_with",
+            "syllables.contains",
+            "syllables.blend",
+            "syllables.build_word"
+          ],
+          "sounds": [
+            "ña",
+            "ñe",
+            "ñi",
+            "ño",
+            "ñu"
+          ]
+        },
+        {
+          "id": "f",
+          "activities": [
+            "letter.meet",
+            "letter.trace",
+            "letter.find"
+          ],
+          "grapheme": "f",
+          "word": "foca"
+        },
+        {
+          "id": "fa",
+          "activities": [
+            "listening.clap",
+            "listening.same_sound",
+            "syllables.meet",
+            "syllables.trace",
+            "syllables.find",
+            "syllables.starts_with",
+            "syllables.ends_with",
+            "syllables.contains",
+            "syllables.blend",
+            "syllables.build_word"
+          ],
+          "sounds": [
+            "fa",
+            "fe",
+            "fi",
+            "fo",
+            "fu"
           ]
         }
       ]
@@ -5638,6 +5848,477 @@
     ],
     "syllables.build_word.topo": [
       "Arma la palabra, topo."
+    ],
+    "letter.meet.n": [
+      "Esta es la, ene. ¡La, ene de nido! ¡Tócala!"
+    ],
+    "letter.meet.n.upper": [
+      "Toca la, ene mayúscula."
+    ],
+    "letter.meet.n.lower": [
+      "Toca la, ene minúscula."
+    ],
+    "letter.trace.n.lower": [
+      "Repasa la, ene minúscula con tu dedo."
+    ],
+    "letter.trace.n.upper": [
+      "Repasa la, ene mayúscula con tu dedo."
+    ],
+    "letter.find.n": [
+      "Revienta las burbujas que tienen la, ene."
+    ],
+    "syllables.meet.na": [
+      "La, ene, y la, a, juntas dicen, na. ¡Toca, na!"
+    ],
+    "syllables.meet.na.choose": [
+      "¿Dónde dice, na? ¡Tócala!"
+    ],
+    "syllables.trace.na": [
+      "Escribe, na, con tu dedo."
+    ],
+    "syllables.find.na": [
+      "Revienta las burbujas que dicen, na."
+    ],
+    "syllables.meet.ne": [
+      "La, ene, y la, e, juntas dicen, ne. ¡Toca, ne!"
+    ],
+    "syllables.meet.ne.choose": [
+      "¿Dónde dice, ne? ¡Tócala!"
+    ],
+    "syllables.trace.ne": [
+      "Escribe, ne, con tu dedo."
+    ],
+    "syllables.find.ne": [
+      "Revienta las burbujas que dicen, ne."
+    ],
+    "syllables.meet.ni": [
+      "La, ene, y la, i, juntas dicen, ni. ¡Toca, ni!"
+    ],
+    "syllables.meet.ni.choose": [
+      "¿Dónde dice, ni? ¡Tócala!"
+    ],
+    "syllables.trace.ni": [
+      "Escribe, ni, con tu dedo."
+    ],
+    "syllables.find.ni": [
+      "Revienta las burbujas que dicen, ni."
+    ],
+    "syllables.meet.no": [
+      "La, ene, y la, o, juntas dicen, no. ¡Toca, no!"
+    ],
+    "syllables.meet.no.choose": [
+      "¿Dónde dice, no? ¡Tócala!"
+    ],
+    "syllables.trace.no": [
+      "Escribe, no, con tu dedo."
+    ],
+    "syllables.find.no": [
+      "Revienta las burbujas que dicen, no."
+    ],
+    "syllables.meet.nu": [
+      "La, ene, y la, u, juntas dicen, nu. ¡Toca, nu!"
+    ],
+    "syllables.meet.nu.choose": [
+      "¿Dónde dice, nu? ¡Tócala!"
+    ],
+    "syllables.trace.nu": [
+      "Escribe, nu, con tu dedo."
+    ],
+    "syllables.find.nu": [
+      "Revienta las burbujas que dicen, nu."
+    ],
+    "letter.meet.ñ": [
+      "Esta es la, eñe. ¡La, eñe de ñandú! ¡Tócala!"
+    ],
+    "letter.meet.ñ.upper": [
+      "Toca la, eñe mayúscula."
+    ],
+    "letter.meet.ñ.lower": [
+      "Toca la, eñe minúscula."
+    ],
+    "letter.trace.ñ.lower": [
+      "Repasa la, eñe minúscula con tu dedo."
+    ],
+    "letter.trace.ñ.upper": [
+      "Repasa la, eñe mayúscula con tu dedo."
+    ],
+    "letter.find.ñ": [
+      "Revienta las burbujas que tienen la, eñe."
+    ],
+    "syllables.meet.ña": [
+      "La, eñe, y la, a, juntas dicen, ña. ¡Toca, ña!"
+    ],
+    "syllables.meet.ña.choose": [
+      "¿Dónde dice, ña? ¡Tócala!"
+    ],
+    "syllables.trace.ña": [
+      "Escribe, ña, con tu dedo."
+    ],
+    "syllables.find.ña": [
+      "Revienta las burbujas que dicen, ña."
+    ],
+    "syllables.meet.ñe": [
+      "La, eñe, y la, e, juntas dicen, ñe. ¡Toca, ñe!"
+    ],
+    "syllables.meet.ñe.choose": [
+      "¿Dónde dice, ñe? ¡Tócala!"
+    ],
+    "syllables.trace.ñe": [
+      "Escribe, ñe, con tu dedo."
+    ],
+    "syllables.find.ñe": [
+      "Revienta las burbujas que dicen, ñe."
+    ],
+    "syllables.meet.ñi": [
+      "La, eñe, y la, i, juntas dicen, ñi. ¡Toca, ñi!"
+    ],
+    "syllables.meet.ñi.choose": [
+      "¿Dónde dice, ñi? ¡Tócala!"
+    ],
+    "syllables.trace.ñi": [
+      "Escribe, ñi, con tu dedo."
+    ],
+    "syllables.find.ñi": [
+      "Revienta las burbujas que dicen, ñi."
+    ],
+    "syllables.meet.ño": [
+      "La, eñe, y la, o, juntas dicen, ño. ¡Toca, ño!"
+    ],
+    "syllables.meet.ño.choose": [
+      "¿Dónde dice, ño? ¡Tócala!"
+    ],
+    "syllables.trace.ño": [
+      "Escribe, ño, con tu dedo."
+    ],
+    "syllables.find.ño": [
+      "Revienta las burbujas que dicen, ño."
+    ],
+    "syllables.meet.ñu": [
+      "La, eñe, y la, u, juntas dicen, ñu. ¡Toca, ñu!"
+    ],
+    "syllables.meet.ñu.choose": [
+      "¿Dónde dice, ñu? ¡Tócala!"
+    ],
+    "syllables.trace.ñu": [
+      "Escribe, ñu, con tu dedo."
+    ],
+    "syllables.find.ñu": [
+      "Revienta las burbujas que dicen, ñu."
+    ],
+    "letter.meet.f": [
+      "Esta es la, efe. ¡La, efe de foca! ¡Tócala!"
+    ],
+    "letter.meet.f.upper": [
+      "Toca la, efe mayúscula."
+    ],
+    "letter.meet.f.lower": [
+      "Toca la, efe minúscula."
+    ],
+    "letter.trace.f.lower": [
+      "Repasa la, efe minúscula con tu dedo."
+    ],
+    "letter.trace.f.upper": [
+      "Repasa la, efe mayúscula con tu dedo."
+    ],
+    "letter.find.f": [
+      "Revienta las burbujas que tienen la, efe."
+    ],
+    "syllables.meet.fa": [
+      "La, efe, y la, a, juntas dicen, fa. ¡Toca, fa!"
+    ],
+    "syllables.meet.fa.choose": [
+      "¿Dónde dice, fa? ¡Tócala!"
+    ],
+    "syllables.trace.fa": [
+      "Escribe, fa, con tu dedo."
+    ],
+    "syllables.find.fa": [
+      "Revienta las burbujas que dicen, fa."
+    ],
+    "syllables.meet.fe": [
+      "La, efe, y la, e, juntas dicen, fe. ¡Toca, fe!"
+    ],
+    "syllables.meet.fe.choose": [
+      "¿Dónde dice, fe? ¡Tócala!"
+    ],
+    "syllables.trace.fe": [
+      "Escribe, fe, con tu dedo."
+    ],
+    "syllables.find.fe": [
+      "Revienta las burbujas que dicen, fe."
+    ],
+    "syllables.meet.fi": [
+      "La, efe, y la, i, juntas dicen, fi. ¡Toca, fi!"
+    ],
+    "syllables.meet.fi.choose": [
+      "¿Dónde dice, fi? ¡Tócala!"
+    ],
+    "syllables.trace.fi": [
+      "Escribe, fi, con tu dedo."
+    ],
+    "syllables.find.fi": [
+      "Revienta las burbujas que dicen, fi."
+    ],
+    "syllables.meet.fo": [
+      "La, efe, y la, o, juntas dicen, fo. ¡Toca, fo!"
+    ],
+    "syllables.meet.fo.choose": [
+      "¿Dónde dice, fo? ¡Tócala!"
+    ],
+    "syllables.trace.fo": [
+      "Escribe, fo, con tu dedo."
+    ],
+    "syllables.find.fo": [
+      "Revienta las burbujas que dicen, fo."
+    ],
+    "syllables.meet.fu": [
+      "La, efe, y la, u, juntas dicen, fu. ¡Toca, fu!"
+    ],
+    "syllables.meet.fu.choose": [
+      "¿Dónde dice, fu? ¡Tócala!"
+    ],
+    "syllables.trace.fu": [
+      "Escribe, fu, con tu dedo."
+    ],
+    "syllables.find.fu": [
+      "Revienta las burbujas que dicen, fu."
+    ],
+    "listening.clap.nido": [
+      "Ni... do."
+    ],
+    "listening.clap.naranja": [
+      "Na... ran... ja."
+    ],
+    "listening.clap.nube": [
+      "Nu... be."
+    ],
+    "listening.clap.ñandú": [
+      "Ñan... dú."
+    ],
+    "listening.clap.araña": [
+      "A... ra... ña."
+    ],
+    "listening.clap.niño": [
+      "Ni... ño."
+    ],
+    "listening.clap.foca": [
+      "Fo... ca."
+    ],
+    "listening.clap.faro": [
+      "Fa... ro."
+    ],
+    "listening.clap.fideos": [
+      "Fi... de... os."
+    ],
+    "listening.clap.fuego": [
+      "Fue... go."
+    ],
+    "listening.clap.jirafa": [
+      "Ji... ra... fa."
+    ],
+    "listening.clap.café": [
+      "Ca... fé."
+    ],
+    "listening.clap.foto": [
+      "Fo... to."
+    ],
+    "listening.clap.mofeta": [
+      "Mo... fe... ta."
+    ],
+    "syllables.build_word.foto": [
+      "Arma la palabra, foto."
+    ],
+    "syllables.build_word.lana": [
+      "Arma la palabra, lana."
+    ],
+    "syllables.build_word.luna": [
+      "Arma la palabra, luna."
+    ],
+    "syllables.build_word.mano": [
+      "Arma la palabra, mano."
+    ],
+    "syllables.build_word.mofeta": [
+      "Arma la palabra, mofeta."
+    ],
+    "syllables.build_word.mono": [
+      "Arma la palabra, mono."
+    ],
+    "syllables.build_word.nido": [
+      "Arma la palabra, nido."
+    ],
+    "syllables.build_word.niño": [
+      "Arma la palabra, niño."
+    ],
+    "syllables.build_word.pino": [
+      "Arma la palabra, pino."
+    ],
+    "syllables.build_word.piña": [
+      "Arma la palabra, piña."
+    ],
+    "syllables.build_word.uña": [
+      "Arma la palabra, uña."
+    ],
+    "syllables.contains.da": [
+      "¿Qué dibujo tiene, da?"
+    ],
+    "syllables.contains.de": [
+      "¿Qué dibujo tiene, de?"
+    ],
+    "syllables.contains.di": [
+      "¿Qué dibujo tiene, di?"
+    ],
+    "syllables.contains.do": [
+      "¿Qué dibujo tiene, do?"
+    ],
+    "syllables.contains.du": [
+      "¿Qué dibujo tiene, du?"
+    ],
+    "syllables.contains.fa": [
+      "¿Qué dibujo tiene, fa?"
+    ],
+    "syllables.contains.fe": [
+      "¿Qué dibujo tiene, fe?"
+    ],
+    "syllables.contains.fi": [
+      "¿Qué dibujo tiene, fi?"
+    ],
+    "syllables.contains.fo": [
+      "¿Qué dibujo tiene, fo?"
+    ],
+    "syllables.contains.la": [
+      "¿Qué dibujo tiene, la?"
+    ],
+    "syllables.contains.le": [
+      "¿Qué dibujo tiene, le?"
+    ],
+    "syllables.contains.li": [
+      "¿Qué dibujo tiene, li?"
+    ],
+    "syllables.contains.lo": [
+      "¿Qué dibujo tiene, lo?"
+    ],
+    "syllables.contains.lu": [
+      "¿Qué dibujo tiene, lu?"
+    ],
+    "syllables.contains.ma": [
+      "¿Qué dibujo tiene, ma?"
+    ],
+    "syllables.contains.me": [
+      "¿Qué dibujo tiene, me?"
+    ],
+    "syllables.contains.mi": [
+      "¿Qué dibujo tiene, mi?"
+    ],
+    "syllables.contains.mo": [
+      "¿Qué dibujo tiene, mo?"
+    ],
+    "syllables.contains.mu": [
+      "¿Qué dibujo tiene, mu?"
+    ],
+    "syllables.contains.na": [
+      "¿Qué dibujo tiene, na?"
+    ],
+    "syllables.contains.ni": [
+      "¿Qué dibujo tiene, ni?"
+    ],
+    "syllables.contains.no": [
+      "¿Qué dibujo tiene, no?"
+    ],
+    "syllables.contains.nu": [
+      "¿Qué dibujo tiene, nu?"
+    ],
+    "syllables.contains.pa": [
+      "¿Qué dibujo tiene, pa?"
+    ],
+    "syllables.contains.pe": [
+      "¿Qué dibujo tiene, pe?"
+    ],
+    "syllables.contains.pi": [
+      "¿Qué dibujo tiene, pi?"
+    ],
+    "syllables.contains.po": [
+      "¿Qué dibujo tiene, po?"
+    ],
+    "syllables.contains.pu": [
+      "¿Qué dibujo tiene, pu?"
+    ],
+    "syllables.contains.sa": [
+      "¿Qué dibujo tiene, sa?"
+    ],
+    "syllables.contains.si": [
+      "¿Qué dibujo tiene, si?"
+    ],
+    "syllables.contains.so": [
+      "¿Qué dibujo tiene, so?"
+    ],
+    "syllables.contains.ta": [
+      "¿Qué dibujo tiene, ta?"
+    ],
+    "syllables.contains.te": [
+      "¿Qué dibujo tiene, te?"
+    ],
+    "syllables.contains.ti": [
+      "¿Qué dibujo tiene, ti?"
+    ],
+    "syllables.contains.to": [
+      "¿Qué dibujo tiene, to?"
+    ],
+    "syllables.contains.tu": [
+      "¿Qué dibujo tiene, tu?"
+    ],
+    "syllables.contains.ña": [
+      "¿Qué dibujo tiene, ña?"
+    ],
+    "syllables.contains.ñe": [
+      "¿Qué dibujo tiene, ñe?"
+    ],
+    "syllables.contains.ño": [
+      "¿Qué dibujo tiene, ño?"
+    ],
+    "syllables.ends_with.du": [
+      "¿Qué dibujo termina con, du?"
+    ],
+    "syllables.ends_with.fa": [
+      "¿Qué dibujo termina con, fa?"
+    ],
+    "syllables.ends_with.fe": [
+      "¿Qué dibujo termina con, fe?"
+    ],
+    "syllables.ends_with.na": [
+      "¿Qué dibujo termina con, na?"
+    ],
+    "syllables.ends_with.no": [
+      "¿Qué dibujo termina con, no?"
+    ],
+    "syllables.ends_with.ña": [
+      "¿Qué dibujo termina con, ña?"
+    ],
+    "syllables.ends_with.ño": [
+      "¿Qué dibujo termina con, ño?"
+    ],
+    "syllables.starts_with.fa": [
+      "¿Qué dibujo empieza con, fa?"
+    ],
+    "syllables.starts_with.fi": [
+      "¿Qué dibujo empieza con, fi?"
+    ],
+    "syllables.starts_with.fo": [
+      "¿Qué dibujo empieza con, fo?"
+    ],
+    "syllables.starts_with.fu": [
+      "¿Qué dibujo empieza con, fu?"
+    ],
+    "syllables.starts_with.na": [
+      "¿Qué dibujo empieza con, na?"
+    ],
+    "syllables.starts_with.ni": [
+      "¿Qué dibujo empieza con, ni?"
+    ],
+    "syllables.starts_with.nu": [
+      "¿Qué dibujo empieza con, nu?"
+    ],
+    "syllables.starts_with.ña": [
+      "¿Qué dibujo empieza con, ña?"
     ]
   },
   "promptClips": {
@@ -5653,15 +6334,18 @@
     "letter.find.a.0": "prompts/letter.find.a.0.m4a",
     "letter.find.d.0": "prompts/letter.find.d.0.m4a",
     "letter.find.e.0": "prompts/letter.find.e.0.m4a",
+    "letter.find.f.0": "prompts/letter.find.f.0.m4a",
     "letter.find.i.0": "prompts/letter.find.i.0.m4a",
     "letter.find.intro.0": "prompts/letter.find.intro.0.m4a",
     "letter.find.l.0": "prompts/letter.find.l.0.m4a",
     "letter.find.m.0": "prompts/letter.find.m.0.m4a",
+    "letter.find.n.0": "prompts/letter.find.n.0.m4a",
     "letter.find.o.0": "prompts/letter.find.o.0.m4a",
     "letter.find.p.0": "prompts/letter.find.p.0.m4a",
     "letter.find.s.0": "prompts/letter.find.s.0.m4a",
     "letter.find.t.0": "prompts/letter.find.t.0.m4a",
     "letter.find.u.0": "prompts/letter.find.u.0.m4a",
+    "letter.find.ñ.0": "prompts/letter.find.ñ.0.m4a",
     "letter.meet.a.0": "prompts/letter.meet.a.0.m4a",
     "letter.meet.a.lower.0": "prompts/letter.meet.a.lower.0.m4a",
     "letter.meet.a.upper.0": "prompts/letter.meet.a.upper.0.m4a",
@@ -5671,6 +6355,9 @@
     "letter.meet.e.0": "prompts/letter.meet.e.0.m4a",
     "letter.meet.e.lower.0": "prompts/letter.meet.e.lower.0.m4a",
     "letter.meet.e.upper.0": "prompts/letter.meet.e.upper.0.m4a",
+    "letter.meet.f.0": "prompts/letter.meet.f.0.m4a",
+    "letter.meet.f.lower.0": "prompts/letter.meet.f.lower.0.m4a",
+    "letter.meet.f.upper.0": "prompts/letter.meet.f.upper.0.m4a",
     "letter.meet.i.0": "prompts/letter.meet.i.0.m4a",
     "letter.meet.i.lower.0": "prompts/letter.meet.i.lower.0.m4a",
     "letter.meet.i.upper.0": "prompts/letter.meet.i.upper.0.m4a",
@@ -5681,6 +6368,9 @@
     "letter.meet.m.0": "prompts/letter.meet.m.0.m4a",
     "letter.meet.m.lower.0": "prompts/letter.meet.m.lower.0.m4a",
     "letter.meet.m.upper.0": "prompts/letter.meet.m.upper.0.m4a",
+    "letter.meet.n.0": "prompts/letter.meet.n.0.m4a",
+    "letter.meet.n.lower.0": "prompts/letter.meet.n.lower.0.m4a",
+    "letter.meet.n.upper.0": "prompts/letter.meet.n.upper.0.m4a",
     "letter.meet.o.0": "prompts/letter.meet.o.0.m4a",
     "letter.meet.o.lower.0": "prompts/letter.meet.o.lower.0.m4a",
     "letter.meet.o.upper.0": "prompts/letter.meet.o.upper.0.m4a",
@@ -5696,12 +6386,17 @@
     "letter.meet.u.0": "prompts/letter.meet.u.0.m4a",
     "letter.meet.u.lower.0": "prompts/letter.meet.u.lower.0.m4a",
     "letter.meet.u.upper.0": "prompts/letter.meet.u.upper.0.m4a",
+    "letter.meet.ñ.0": "prompts/letter.meet.ñ.0.m4a",
+    "letter.meet.ñ.lower.0": "prompts/letter.meet.ñ.lower.0.m4a",
+    "letter.meet.ñ.upper.0": "prompts/letter.meet.ñ.upper.0.m4a",
     "letter.trace.a.lower.0": "prompts/letter.trace.a.lower.0.m4a",
     "letter.trace.a.upper.0": "prompts/letter.trace.a.upper.0.m4a",
     "letter.trace.d.lower.0": "prompts/letter.trace.d.lower.0.m4a",
     "letter.trace.d.upper.0": "prompts/letter.trace.d.upper.0.m4a",
     "letter.trace.e.lower.0": "prompts/letter.trace.e.lower.0.m4a",
     "letter.trace.e.upper.0": "prompts/letter.trace.e.upper.0.m4a",
+    "letter.trace.f.lower.0": "prompts/letter.trace.f.lower.0.m4a",
+    "letter.trace.f.upper.0": "prompts/letter.trace.f.upper.0.m4a",
     "letter.trace.i.lower.0": "prompts/letter.trace.i.lower.0.m4a",
     "letter.trace.i.upper.0": "prompts/letter.trace.i.upper.0.m4a",
     "letter.trace.intro.0": "prompts/letter.trace.intro.0.m4a",
@@ -5709,6 +6404,8 @@
     "letter.trace.l.upper.0": "prompts/letter.trace.l.upper.0.m4a",
     "letter.trace.m.lower.0": "prompts/letter.trace.m.lower.0.m4a",
     "letter.trace.m.upper.0": "prompts/letter.trace.m.upper.0.m4a",
+    "letter.trace.n.lower.0": "prompts/letter.trace.n.lower.0.m4a",
+    "letter.trace.n.upper.0": "prompts/letter.trace.n.upper.0.m4a",
     "letter.trace.o.lower.0": "prompts/letter.trace.o.lower.0.m4a",
     "letter.trace.o.upper.0": "prompts/letter.trace.o.upper.0.m4a",
     "letter.trace.p.lower.0": "prompts/letter.trace.p.lower.0.m4a",
@@ -5719,9 +6416,13 @@
     "letter.trace.t.upper.0": "prompts/letter.trace.t.upper.0.m4a",
     "letter.trace.u.lower.0": "prompts/letter.trace.u.lower.0.m4a",
     "letter.trace.u.upper.0": "prompts/letter.trace.u.upper.0.m4a",
+    "letter.trace.ñ.lower.0": "prompts/letter.trace.ñ.lower.0.m4a",
+    "letter.trace.ñ.upper.0": "prompts/letter.trace.ñ.upper.0.m4a",
     "listening.clap.abeja.0": "prompts/listening.clap.abeja.0.m4a",
+    "listening.clap.araña.0": "prompts/listening.clap.araña.0.m4a",
     "listening.clap.ask.0": "prompts/listening.clap.ask.0.m4a",
     "listening.clap.avión.0": "prompts/listening.clap.avión.0.m4a",
+    "listening.clap.café.0": "prompts/listening.clap.café.0.m4a",
     "listening.clap.cama.0": "prompts/listening.clap.cama.0.m4a",
     "listening.clap.caramelo.0": "prompts/listening.clap.caramelo.0.m4a",
     "listening.clap.cebra.0": "prompts/listening.clap.cebra.0.m4a",
@@ -5734,12 +6435,18 @@
     "listening.clap.escoba.0": "prompts/listening.clap.escoba.0.m4a",
     "listening.clap.espada.0": "prompts/listening.clap.espada.0.m4a",
     "listening.clap.estrella.0": "prompts/listening.clap.estrella.0.m4a",
+    "listening.clap.faro.0": "prompts/listening.clap.faro.0.m4a",
+    "listening.clap.fideos.0": "prompts/listening.clap.fideos.0.m4a",
+    "listening.clap.foca.0": "prompts/listening.clap.foca.0.m4a",
+    "listening.clap.foto.0": "prompts/listening.clap.foto.0.m4a",
+    "listening.clap.fuego.0": "prompts/listening.clap.fuego.0.m4a",
     "listening.clap.hielo.0": "prompts/listening.clap.hielo.0.m4a",
     "listening.clap.humo.0": "prompts/listening.clap.humo.0.m4a",
     "listening.clap.iglú.0": "prompts/listening.clap.iglú.0.m4a",
     "listening.clap.imán.0": "prompts/listening.clap.imán.0.m4a",
     "listening.clap.intro.0": "prompts/listening.clap.intro.0.m4a",
     "listening.clap.isla.0": "prompts/listening.clap.isla.0.m4a",
+    "listening.clap.jirafa.0": "prompts/listening.clap.jirafa.0.m4a",
     "listening.clap.lana.0": "prompts/listening.clap.lana.0.m4a",
     "listening.clap.leche.0": "prompts/listening.clap.leche.0.m4a",
     "listening.clap.león.0": "prompts/listening.clap.león.0.m4a",
@@ -5759,10 +6466,15 @@
     "listening.clap.micrófono.0": "prompts/listening.clap.micrófono.0.m4a",
     "listening.clap.miel.0": "prompts/listening.clap.miel.0.m4a",
     "listening.clap.mochila.0": "prompts/listening.clap.mochila.0.m4a",
+    "listening.clap.mofeta.0": "prompts/listening.clap.mofeta.0.m4a",
     "listening.clap.mono.0": "prompts/listening.clap.mono.0.m4a",
     "listening.clap.mula.0": "prompts/listening.clap.mula.0.m4a",
     "listening.clap.murciélago.0": "prompts/listening.clap.murciélago.0.m4a",
     "listening.clap.muñeca.0": "prompts/listening.clap.muñeca.0.m4a",
+    "listening.clap.naranja.0": "prompts/listening.clap.naranja.0.m4a",
+    "listening.clap.nido.0": "prompts/listening.clap.nido.0.m4a",
+    "listening.clap.niño.0": "prompts/listening.clap.niño.0.m4a",
+    "listening.clap.nube.0": "prompts/listening.clap.nube.0.m4a",
     "listening.clap.ojo.0": "prompts/listening.clap.ojo.0.m4a",
     "listening.clap.ola.0": "prompts/listening.clap.ola.0.m4a",
     "listening.clap.oso.0": "prompts/listening.clap.oso.0.m4a",
@@ -5803,6 +6515,7 @@
     "listening.clap.uña.0": "prompts/listening.clap.uña.0.m4a",
     "listening.clap.vela.0": "prompts/listening.clap.vela.0.m4a",
     "listening.clap.árbol.0": "prompts/listening.clap.árbol.0.m4a",
+    "listening.clap.ñandú.0": "prompts/listening.clap.ñandú.0.m4a",
     "listening.same_sound.intro.0": "prompts/listening.same_sound.intro.0.m4a",
     "profiles.empty.0": "prompts/profiles.empty.0.m4a",
     "profiles.intro.0": "prompts/profiles.intro.0.m4a",
@@ -5825,12 +6538,20 @@
     "syllables.blend.intro.0": "prompts/syllables.blend.intro.0.m4a",
     "syllables.build_word.dado.0": "prompts/syllables.build_word.dado.0.m4a",
     "syllables.build_word.dedo.0": "prompts/syllables.build_word.dedo.0.m4a",
+    "syllables.build_word.foto.0": "prompts/syllables.build_word.foto.0.m4a",
     "syllables.build_word.intro.0": "prompts/syllables.build_word.intro.0.m4a",
+    "syllables.build_word.lana.0": "prompts/syllables.build_word.lana.0.m4a",
+    "syllables.build_word.luna.0": "prompts/syllables.build_word.luna.0.m4a",
     "syllables.build_word.lupa.0": "prompts/syllables.build_word.lupa.0.m4a",
+    "syllables.build_word.mano.0": "prompts/syllables.build_word.mano.0.m4a",
     "syllables.build_word.mapa.0": "prompts/syllables.build_word.mapa.0.m4a",
     "syllables.build_word.medusa.0": "prompts/syllables.build_word.medusa.0.m4a",
     "syllables.build_word.mesa.0": "prompts/syllables.build_word.mesa.0.m4a",
+    "syllables.build_word.mofeta.0": "prompts/syllables.build_word.mofeta.0.m4a",
+    "syllables.build_word.mono.0": "prompts/syllables.build_word.mono.0.m4a",
     "syllables.build_word.mula.0": "prompts/syllables.build_word.mula.0.m4a",
+    "syllables.build_word.nido.0": "prompts/syllables.build_word.nido.0.m4a",
+    "syllables.build_word.niño.0": "prompts/syllables.build_word.niño.0.m4a",
     "syllables.build_word.ola.0": "prompts/syllables.build_word.ola.0.m4a",
     "syllables.build_word.oso.0": "prompts/syllables.build_word.oso.0.m4a",
     "syllables.build_word.pala.0": "prompts/syllables.build_word.pala.0.m4a",
@@ -5839,19 +6560,66 @@
     "syllables.build_word.pato.0": "prompts/syllables.build_word.pato.0.m4a",
     "syllables.build_word.pelota.0": "prompts/syllables.build_word.pelota.0.m4a",
     "syllables.build_word.pila.0": "prompts/syllables.build_word.pila.0.m4a",
+    "syllables.build_word.pino.0": "prompts/syllables.build_word.pino.0.m4a",
+    "syllables.build_word.piña.0": "prompts/syllables.build_word.piña.0.m4a",
     "syllables.build_word.pomelo.0": "prompts/syllables.build_word.pomelo.0.m4a",
     "syllables.build_word.puma.0": "prompts/syllables.build_word.puma.0.m4a",
     "syllables.build_word.sapo.0": "prompts/syllables.build_word.sapo.0.m4a",
     "syllables.build_word.sopa.0": "prompts/syllables.build_word.sopa.0.m4a",
     "syllables.build_word.tomate.0": "prompts/syllables.build_word.tomate.0.m4a",
     "syllables.build_word.topo.0": "prompts/syllables.build_word.topo.0.m4a",
+    "syllables.build_word.uña.0": "prompts/syllables.build_word.uña.0.m4a",
+    "syllables.contains.da.0": "prompts/syllables.contains.da.0.m4a",
+    "syllables.contains.de.0": "prompts/syllables.contains.de.0.m4a",
+    "syllables.contains.di.0": "prompts/syllables.contains.di.0.m4a",
+    "syllables.contains.do.0": "prompts/syllables.contains.do.0.m4a",
+    "syllables.contains.du.0": "prompts/syllables.contains.du.0.m4a",
+    "syllables.contains.fa.0": "prompts/syllables.contains.fa.0.m4a",
+    "syllables.contains.fe.0": "prompts/syllables.contains.fe.0.m4a",
+    "syllables.contains.fi.0": "prompts/syllables.contains.fi.0.m4a",
+    "syllables.contains.fo.0": "prompts/syllables.contains.fo.0.m4a",
+    "syllables.contains.la.0": "prompts/syllables.contains.la.0.m4a",
+    "syllables.contains.le.0": "prompts/syllables.contains.le.0.m4a",
+    "syllables.contains.li.0": "prompts/syllables.contains.li.0.m4a",
+    "syllables.contains.lo.0": "prompts/syllables.contains.lo.0.m4a",
+    "syllables.contains.lu.0": "prompts/syllables.contains.lu.0.m4a",
+    "syllables.contains.ma.0": "prompts/syllables.contains.ma.0.m4a",
+    "syllables.contains.me.0": "prompts/syllables.contains.me.0.m4a",
+    "syllables.contains.mi.0": "prompts/syllables.contains.mi.0.m4a",
+    "syllables.contains.mo.0": "prompts/syllables.contains.mo.0.m4a",
+    "syllables.contains.mu.0": "prompts/syllables.contains.mu.0.m4a",
+    "syllables.contains.na.0": "prompts/syllables.contains.na.0.m4a",
+    "syllables.contains.ni.0": "prompts/syllables.contains.ni.0.m4a",
+    "syllables.contains.no.0": "prompts/syllables.contains.no.0.m4a",
+    "syllables.contains.nu.0": "prompts/syllables.contains.nu.0.m4a",
+    "syllables.contains.pa.0": "prompts/syllables.contains.pa.0.m4a",
+    "syllables.contains.pe.0": "prompts/syllables.contains.pe.0.m4a",
+    "syllables.contains.pi.0": "prompts/syllables.contains.pi.0.m4a",
+    "syllables.contains.po.0": "prompts/syllables.contains.po.0.m4a",
+    "syllables.contains.pu.0": "prompts/syllables.contains.pu.0.m4a",
+    "syllables.contains.sa.0": "prompts/syllables.contains.sa.0.m4a",
+    "syllables.contains.si.0": "prompts/syllables.contains.si.0.m4a",
+    "syllables.contains.so.0": "prompts/syllables.contains.so.0.m4a",
+    "syllables.contains.ta.0": "prompts/syllables.contains.ta.0.m4a",
+    "syllables.contains.te.0": "prompts/syllables.contains.te.0.m4a",
+    "syllables.contains.ti.0": "prompts/syllables.contains.ti.0.m4a",
+    "syllables.contains.to.0": "prompts/syllables.contains.to.0.m4a",
+    "syllables.contains.tu.0": "prompts/syllables.contains.tu.0.m4a",
+    "syllables.contains.ña.0": "prompts/syllables.contains.ña.0.m4a",
+    "syllables.contains.ñe.0": "prompts/syllables.contains.ñe.0.m4a",
+    "syllables.contains.ño.0": "prompts/syllables.contains.ño.0.m4a",
     "syllables.ends_with.da.0": "prompts/syllables.ends_with.da.0.m4a",
     "syllables.ends_with.do.0": "prompts/syllables.ends_with.do.0.m4a",
+    "syllables.ends_with.du.0": "prompts/syllables.ends_with.du.0.m4a",
+    "syllables.ends_with.fa.0": "prompts/syllables.ends_with.fa.0.m4a",
+    "syllables.ends_with.fe.0": "prompts/syllables.ends_with.fe.0.m4a",
     "syllables.ends_with.intro.0": "prompts/syllables.ends_with.intro.0.m4a",
     "syllables.ends_with.la.0": "prompts/syllables.ends_with.la.0.m4a",
     "syllables.ends_with.lo.0": "prompts/syllables.ends_with.lo.0.m4a",
     "syllables.ends_with.ma.0": "prompts/syllables.ends_with.ma.0.m4a",
     "syllables.ends_with.mo.0": "prompts/syllables.ends_with.mo.0.m4a",
+    "syllables.ends_with.na.0": "prompts/syllables.ends_with.na.0.m4a",
+    "syllables.ends_with.no.0": "prompts/syllables.ends_with.no.0.m4a",
     "syllables.ends_with.pa.0": "prompts/syllables.ends_with.pa.0.m4a",
     "syllables.ends_with.po.0": "prompts/syllables.ends_with.po.0.m4a",
     "syllables.ends_with.sa.0": "prompts/syllables.ends_with.sa.0.m4a",
@@ -5859,11 +6627,18 @@
     "syllables.ends_with.ta.0": "prompts/syllables.ends_with.ta.0.m4a",
     "syllables.ends_with.te.0": "prompts/syllables.ends_with.te.0.m4a",
     "syllables.ends_with.to.0": "prompts/syllables.ends_with.to.0.m4a",
+    "syllables.ends_with.ña.0": "prompts/syllables.ends_with.ña.0.m4a",
+    "syllables.ends_with.ño.0": "prompts/syllables.ends_with.ño.0.m4a",
     "syllables.find.da.0": "prompts/syllables.find.da.0.m4a",
     "syllables.find.de.0": "prompts/syllables.find.de.0.m4a",
     "syllables.find.di.0": "prompts/syllables.find.di.0.m4a",
     "syllables.find.do.0": "prompts/syllables.find.do.0.m4a",
     "syllables.find.du.0": "prompts/syllables.find.du.0.m4a",
+    "syllables.find.fa.0": "prompts/syllables.find.fa.0.m4a",
+    "syllables.find.fe.0": "prompts/syllables.find.fe.0.m4a",
+    "syllables.find.fi.0": "prompts/syllables.find.fi.0.m4a",
+    "syllables.find.fo.0": "prompts/syllables.find.fo.0.m4a",
+    "syllables.find.fu.0": "prompts/syllables.find.fu.0.m4a",
     "syllables.find.intro.0": "prompts/syllables.find.intro.0.m4a",
     "syllables.find.la.0": "prompts/syllables.find.la.0.m4a",
     "syllables.find.le.0": "prompts/syllables.find.le.0.m4a",
@@ -5875,6 +6650,11 @@
     "syllables.find.mi.0": "prompts/syllables.find.mi.0.m4a",
     "syllables.find.mo.0": "prompts/syllables.find.mo.0.m4a",
     "syllables.find.mu.0": "prompts/syllables.find.mu.0.m4a",
+    "syllables.find.na.0": "prompts/syllables.find.na.0.m4a",
+    "syllables.find.ne.0": "prompts/syllables.find.ne.0.m4a",
+    "syllables.find.ni.0": "prompts/syllables.find.ni.0.m4a",
+    "syllables.find.no.0": "prompts/syllables.find.no.0.m4a",
+    "syllables.find.nu.0": "prompts/syllables.find.nu.0.m4a",
     "syllables.find.pa.0": "prompts/syllables.find.pa.0.m4a",
     "syllables.find.pe.0": "prompts/syllables.find.pe.0.m4a",
     "syllables.find.pi.0": "prompts/syllables.find.pi.0.m4a",
@@ -5890,6 +6670,11 @@
     "syllables.find.ti.0": "prompts/syllables.find.ti.0.m4a",
     "syllables.find.to.0": "prompts/syllables.find.to.0.m4a",
     "syllables.find.tu.0": "prompts/syllables.find.tu.0.m4a",
+    "syllables.find.ña.0": "prompts/syllables.find.ña.0.m4a",
+    "syllables.find.ñe.0": "prompts/syllables.find.ñe.0.m4a",
+    "syllables.find.ñi.0": "prompts/syllables.find.ñi.0.m4a",
+    "syllables.find.ño.0": "prompts/syllables.find.ño.0.m4a",
+    "syllables.find.ñu.0": "prompts/syllables.find.ñu.0.m4a",
     "syllables.meet.da.0": "prompts/syllables.meet.da.0.m4a",
     "syllables.meet.da.choose.0": "prompts/syllables.meet.da.choose.0.m4a",
     "syllables.meet.de.0": "prompts/syllables.meet.de.0.m4a",
@@ -5900,6 +6685,16 @@
     "syllables.meet.do.choose.0": "prompts/syllables.meet.do.choose.0.m4a",
     "syllables.meet.du.0": "prompts/syllables.meet.du.0.m4a",
     "syllables.meet.du.choose.0": "prompts/syllables.meet.du.choose.0.m4a",
+    "syllables.meet.fa.0": "prompts/syllables.meet.fa.0.m4a",
+    "syllables.meet.fa.choose.0": "prompts/syllables.meet.fa.choose.0.m4a",
+    "syllables.meet.fe.0": "prompts/syllables.meet.fe.0.m4a",
+    "syllables.meet.fe.choose.0": "prompts/syllables.meet.fe.choose.0.m4a",
+    "syllables.meet.fi.0": "prompts/syllables.meet.fi.0.m4a",
+    "syllables.meet.fi.choose.0": "prompts/syllables.meet.fi.choose.0.m4a",
+    "syllables.meet.fo.0": "prompts/syllables.meet.fo.0.m4a",
+    "syllables.meet.fo.choose.0": "prompts/syllables.meet.fo.choose.0.m4a",
+    "syllables.meet.fu.0": "prompts/syllables.meet.fu.0.m4a",
+    "syllables.meet.fu.choose.0": "prompts/syllables.meet.fu.choose.0.m4a",
     "syllables.meet.intro.0": "prompts/syllables.meet.intro.0.m4a",
     "syllables.meet.la.0": "prompts/syllables.meet.la.0.m4a",
     "syllables.meet.la.choose.0": "prompts/syllables.meet.la.choose.0.m4a",
@@ -5921,6 +6716,16 @@
     "syllables.meet.mo.choose.0": "prompts/syllables.meet.mo.choose.0.m4a",
     "syllables.meet.mu.0": "prompts/syllables.meet.mu.0.m4a",
     "syllables.meet.mu.choose.0": "prompts/syllables.meet.mu.choose.0.m4a",
+    "syllables.meet.na.0": "prompts/syllables.meet.na.0.m4a",
+    "syllables.meet.na.choose.0": "prompts/syllables.meet.na.choose.0.m4a",
+    "syllables.meet.ne.0": "prompts/syllables.meet.ne.0.m4a",
+    "syllables.meet.ne.choose.0": "prompts/syllables.meet.ne.choose.0.m4a",
+    "syllables.meet.ni.0": "prompts/syllables.meet.ni.0.m4a",
+    "syllables.meet.ni.choose.0": "prompts/syllables.meet.ni.choose.0.m4a",
+    "syllables.meet.no.0": "prompts/syllables.meet.no.0.m4a",
+    "syllables.meet.no.choose.0": "prompts/syllables.meet.no.choose.0.m4a",
+    "syllables.meet.nu.0": "prompts/syllables.meet.nu.0.m4a",
+    "syllables.meet.nu.choose.0": "prompts/syllables.meet.nu.choose.0.m4a",
     "syllables.meet.pa.0": "prompts/syllables.meet.pa.0.m4a",
     "syllables.meet.pa.choose.0": "prompts/syllables.meet.pa.choose.0.m4a",
     "syllables.meet.pe.0": "prompts/syllables.meet.pe.0.m4a",
@@ -5951,6 +6756,16 @@
     "syllables.meet.to.choose.0": "prompts/syllables.meet.to.choose.0.m4a",
     "syllables.meet.tu.0": "prompts/syllables.meet.tu.0.m4a",
     "syllables.meet.tu.choose.0": "prompts/syllables.meet.tu.choose.0.m4a",
+    "syllables.meet.ña.0": "prompts/syllables.meet.ña.0.m4a",
+    "syllables.meet.ña.choose.0": "prompts/syllables.meet.ña.choose.0.m4a",
+    "syllables.meet.ñe.0": "prompts/syllables.meet.ñe.0.m4a",
+    "syllables.meet.ñe.choose.0": "prompts/syllables.meet.ñe.choose.0.m4a",
+    "syllables.meet.ñi.0": "prompts/syllables.meet.ñi.0.m4a",
+    "syllables.meet.ñi.choose.0": "prompts/syllables.meet.ñi.choose.0.m4a",
+    "syllables.meet.ño.0": "prompts/syllables.meet.ño.0.m4a",
+    "syllables.meet.ño.choose.0": "prompts/syllables.meet.ño.choose.0.m4a",
+    "syllables.meet.ñu.0": "prompts/syllables.meet.ñu.0.m4a",
+    "syllables.meet.ñu.choose.0": "prompts/syllables.meet.ñu.choose.0.m4a",
     "syllables.starts_with.a.0": "prompts/syllables.starts_with.a.0.m4a",
     "syllables.starts_with.da.0": "prompts/syllables.starts_with.da.0.m4a",
     "syllables.starts_with.de.0": "prompts/syllables.starts_with.de.0.m4a",
@@ -5958,6 +6773,10 @@
     "syllables.starts_with.do.0": "prompts/syllables.starts_with.do.0.m4a",
     "syllables.starts_with.du.0": "prompts/syllables.starts_with.du.0.m4a",
     "syllables.starts_with.e.0": "prompts/syllables.starts_with.e.0.m4a",
+    "syllables.starts_with.fa.0": "prompts/syllables.starts_with.fa.0.m4a",
+    "syllables.starts_with.fi.0": "prompts/syllables.starts_with.fi.0.m4a",
+    "syllables.starts_with.fo.0": "prompts/syllables.starts_with.fo.0.m4a",
+    "syllables.starts_with.fu.0": "prompts/syllables.starts_with.fu.0.m4a",
     "syllables.starts_with.i.0": "prompts/syllables.starts_with.i.0.m4a",
     "syllables.starts_with.intro.0": "prompts/syllables.starts_with.intro.0.m4a",
     "syllables.starts_with.la.0": "prompts/syllables.starts_with.la.0.m4a",
@@ -5970,6 +6789,9 @@
     "syllables.starts_with.mi.0": "prompts/syllables.starts_with.mi.0.m4a",
     "syllables.starts_with.mo.0": "prompts/syllables.starts_with.mo.0.m4a",
     "syllables.starts_with.mu.0": "prompts/syllables.starts_with.mu.0.m4a",
+    "syllables.starts_with.na.0": "prompts/syllables.starts_with.na.0.m4a",
+    "syllables.starts_with.ni.0": "prompts/syllables.starts_with.ni.0.m4a",
+    "syllables.starts_with.nu.0": "prompts/syllables.starts_with.nu.0.m4a",
     "syllables.starts_with.o.0": "prompts/syllables.starts_with.o.0.m4a",
     "syllables.starts_with.pa.0": "prompts/syllables.starts_with.pa.0.m4a",
     "syllables.starts_with.pe.0": "prompts/syllables.starts_with.pe.0.m4a",
@@ -5987,11 +6809,17 @@
     "syllables.starts_with.to.0": "prompts/syllables.starts_with.to.0.m4a",
     "syllables.starts_with.tu.0": "prompts/syllables.starts_with.tu.0.m4a",
     "syllables.starts_with.u.0": "prompts/syllables.starts_with.u.0.m4a",
+    "syllables.starts_with.ña.0": "prompts/syllables.starts_with.ña.0.m4a",
     "syllables.trace.da.0": "prompts/syllables.trace.da.0.m4a",
     "syllables.trace.de.0": "prompts/syllables.trace.de.0.m4a",
     "syllables.trace.di.0": "prompts/syllables.trace.di.0.m4a",
     "syllables.trace.do.0": "prompts/syllables.trace.do.0.m4a",
     "syllables.trace.du.0": "prompts/syllables.trace.du.0.m4a",
+    "syllables.trace.fa.0": "prompts/syllables.trace.fa.0.m4a",
+    "syllables.trace.fe.0": "prompts/syllables.trace.fe.0.m4a",
+    "syllables.trace.fi.0": "prompts/syllables.trace.fi.0.m4a",
+    "syllables.trace.fo.0": "prompts/syllables.trace.fo.0.m4a",
+    "syllables.trace.fu.0": "prompts/syllables.trace.fu.0.m4a",
     "syllables.trace.intro.0": "prompts/syllables.trace.intro.0.m4a",
     "syllables.trace.la.0": "prompts/syllables.trace.la.0.m4a",
     "syllables.trace.le.0": "prompts/syllables.trace.le.0.m4a",
@@ -6003,6 +6831,11 @@
     "syllables.trace.mi.0": "prompts/syllables.trace.mi.0.m4a",
     "syllables.trace.mo.0": "prompts/syllables.trace.mo.0.m4a",
     "syllables.trace.mu.0": "prompts/syllables.trace.mu.0.m4a",
+    "syllables.trace.na.0": "prompts/syllables.trace.na.0.m4a",
+    "syllables.trace.ne.0": "prompts/syllables.trace.ne.0.m4a",
+    "syllables.trace.ni.0": "prompts/syllables.trace.ni.0.m4a",
+    "syllables.trace.no.0": "prompts/syllables.trace.no.0.m4a",
+    "syllables.trace.nu.0": "prompts/syllables.trace.nu.0.m4a",
     "syllables.trace.pa.0": "prompts/syllables.trace.pa.0.m4a",
     "syllables.trace.pe.0": "prompts/syllables.trace.pe.0.m4a",
     "syllables.trace.pi.0": "prompts/syllables.trace.pi.0.m4a",
@@ -6017,7 +6850,12 @@
     "syllables.trace.te.0": "prompts/syllables.trace.te.0.m4a",
     "syllables.trace.ti.0": "prompts/syllables.trace.ti.0.m4a",
     "syllables.trace.to.0": "prompts/syllables.trace.to.0.m4a",
-    "syllables.trace.tu.0": "prompts/syllables.trace.tu.0.m4a"
+    "syllables.trace.tu.0": "prompts/syllables.trace.tu.0.m4a",
+    "syllables.trace.ña.0": "prompts/syllables.trace.ña.0.m4a",
+    "syllables.trace.ñe.0": "prompts/syllables.trace.ñe.0.m4a",
+    "syllables.trace.ñi.0": "prompts/syllables.trace.ñi.0.m4a",
+    "syllables.trace.ño.0": "prompts/syllables.trace.ño.0.m4a",
+    "syllables.trace.ñu.0": "prompts/syllables.trace.ñu.0.m4a"
   },
   "letters": {
     "a": {
@@ -6678,6 +7516,234 @@
         ]
       ]
     },
+    "f": {
+      "lower": [
+        [
+          [
+            50,
+            89
+          ],
+          [
+            57,
+            86
+          ],
+          [
+            63,
+            81
+          ],
+          [
+            68,
+            75
+          ],
+          [
+            72,
+            66
+          ],
+          [
+            76,
+            55
+          ],
+          [
+            80,
+            42
+          ],
+          [
+            82,
+            28
+          ],
+          [
+            83,
+            15
+          ],
+          [
+            81,
+            6
+          ],
+          [
+            78,
+            1
+          ],
+          [
+            74,
+            1
+          ],
+          [
+            71,
+            6
+          ],
+          [
+            69,
+            15
+          ],
+          [
+            69,
+            30
+          ],
+          [
+            69,
+            50
+          ],
+          [
+            69,
+            75
+          ],
+          [
+            69,
+            100
+          ],
+          [
+            69,
+            125
+          ],
+          [
+            70,
+            134
+          ],
+          [
+            74,
+            138
+          ],
+          [
+            78,
+            137
+          ],
+          [
+            82,
+            131
+          ],
+          [
+            84,
+            120
+          ],
+          [
+            82,
+            108
+          ],
+          [
+            79,
+            95
+          ],
+          [
+            75,
+            84
+          ],
+          [
+            72,
+            77
+          ],
+          [
+            76,
+            74
+          ],
+          [
+            82,
+            73
+          ],
+          [
+            87,
+            72
+          ]
+        ]
+      ],
+      "upper": [
+        [
+          [
+            36,
+            37
+          ],
+          [
+            40,
+            32
+          ],
+          [
+            46,
+            28
+          ],
+          [
+            53,
+            26
+          ],
+          [
+            62,
+            25
+          ],
+          [
+            75,
+            25
+          ],
+          [
+            90,
+            25
+          ],
+          [
+            104,
+            25
+          ],
+          [
+            90,
+            25
+          ],
+          [
+            75,
+            25
+          ],
+          [
+            63,
+            26
+          ],
+          [
+            63,
+            40
+          ],
+          [
+            63,
+            60
+          ],
+          [
+            63,
+            80
+          ],
+          [
+            63,
+            98
+          ],
+          [
+            61,
+            107
+          ],
+          [
+            56,
+            113
+          ],
+          [
+            49,
+            115
+          ],
+          [
+            43,
+            113
+          ],
+          [
+            38,
+            107
+          ]
+        ],
+        [
+          [
+            66,
+            69
+          ],
+          [
+            82,
+            69
+          ],
+          [
+            98,
+            69
+          ]
+        ]
+      ]
+    },
     "i": {
       "lower": [
         [
@@ -7289,6 +8355,212 @@
           ],
           [
             132,
+            107
+          ]
+        ]
+      ]
+    },
+    "n": {
+      "lower": [
+        [
+          [
+            41,
+            61
+          ],
+          [
+            42,
+            55
+          ],
+          [
+            46,
+            50
+          ],
+          [
+            51,
+            49
+          ],
+          [
+            55,
+            52
+          ],
+          [
+            57,
+            58
+          ],
+          [
+            57,
+            70
+          ],
+          [
+            57,
+            90
+          ],
+          [
+            57,
+            75
+          ],
+          [
+            57,
+            62
+          ],
+          [
+            60,
+            57
+          ],
+          [
+            65,
+            52
+          ],
+          [
+            71,
+            50
+          ],
+          [
+            77,
+            50
+          ],
+          [
+            83,
+            53
+          ],
+          [
+            86,
+            60
+          ],
+          [
+            86,
+            70
+          ],
+          [
+            86,
+            82
+          ],
+          [
+            88,
+            88
+          ],
+          [
+            92,
+            90
+          ],
+          [
+            96,
+            89
+          ],
+          [
+            99,
+            86
+          ]
+        ]
+      ],
+      "upper": [
+        [
+          [
+            22,
+            36
+          ],
+          [
+            26,
+            30
+          ],
+          [
+            31,
+            26
+          ],
+          [
+            37,
+            24
+          ],
+          [
+            42,
+            25
+          ],
+          [
+            46,
+            29
+          ],
+          [
+            47,
+            36
+          ],
+          [
+            47,
+            60
+          ],
+          [
+            47,
+            85
+          ],
+          [
+            47,
+            115
+          ],
+          [
+            47,
+            85
+          ],
+          [
+            47,
+            58
+          ],
+          [
+            49,
+            48
+          ],
+          [
+            54,
+            39
+          ],
+          [
+            61,
+            31
+          ],
+          [
+            69,
+            26
+          ],
+          [
+            77,
+            24
+          ],
+          [
+            85,
+            26
+          ],
+          [
+            91,
+            31
+          ],
+          [
+            94,
+            40
+          ],
+          [
+            95,
+            55
+          ],
+          [
+            95,
+            80
+          ],
+          [
+            95,
+            104
+          ],
+          [
+            97,
+            112
+          ],
+          [
+            103,
+            116
+          ],
+          [
+            109,
+            114
+          ],
+          [
+            116,
             107
           ]
         ]
@@ -8245,6 +9517,256 @@
           ]
         ]
       ]
+    },
+    "ñ": {
+      "lower": [
+        [
+          [
+            54,
+            62
+          ],
+          [
+            54,
+            75
+          ],
+          [
+            54,
+            90
+          ],
+          [
+            54,
+            102
+          ],
+          [
+            54,
+            88
+          ],
+          [
+            54,
+            76
+          ],
+          [
+            57,
+            70
+          ],
+          [
+            63,
+            64
+          ],
+          [
+            70,
+            61
+          ],
+          [
+            76,
+            61
+          ],
+          [
+            81,
+            64
+          ],
+          [
+            83,
+            71
+          ],
+          [
+            83,
+            82
+          ],
+          [
+            83,
+            93
+          ],
+          [
+            85,
+            99
+          ],
+          [
+            89,
+            101
+          ],
+          [
+            93,
+            100
+          ],
+          [
+            96,
+            97
+          ]
+        ],
+        [
+          [
+            55,
+            47
+          ],
+          [
+            58,
+            41
+          ],
+          [
+            63,
+            37
+          ],
+          [
+            69,
+            39
+          ],
+          [
+            74,
+            43
+          ],
+          [
+            79,
+            42
+          ],
+          [
+            81,
+            37
+          ]
+        ]
+      ],
+      "upper": [
+        [
+          [
+            22,
+            36
+          ],
+          [
+            26,
+            30
+          ],
+          [
+            31,
+            26
+          ],
+          [
+            37,
+            24
+          ],
+          [
+            42,
+            25
+          ],
+          [
+            46,
+            29
+          ],
+          [
+            47,
+            36
+          ],
+          [
+            47,
+            60
+          ],
+          [
+            47,
+            85
+          ],
+          [
+            47,
+            115
+          ],
+          [
+            47,
+            85
+          ],
+          [
+            47,
+            58
+          ],
+          [
+            49,
+            48
+          ],
+          [
+            54,
+            39
+          ],
+          [
+            61,
+            31
+          ],
+          [
+            69,
+            26
+          ],
+          [
+            77,
+            24
+          ],
+          [
+            85,
+            26
+          ],
+          [
+            91,
+            31
+          ],
+          [
+            94,
+            40
+          ],
+          [
+            95,
+            55
+          ],
+          [
+            95,
+            80
+          ],
+          [
+            95,
+            104
+          ],
+          [
+            97,
+            112
+          ],
+          [
+            103,
+            116
+          ],
+          [
+            109,
+            114
+          ],
+          [
+            116,
+            107
+          ]
+        ],
+        [
+          [
+            52,
+            15
+          ],
+          [
+            56,
+            10
+          ],
+          [
+            62,
+            8
+          ],
+          [
+            68,
+            10
+          ],
+          [
+            74,
+            13
+          ],
+          [
+            80,
+            12
+          ],
+          [
+            84,
+            8
+          ]
+        ]
+      ]
     }
   },
   "syllables": {
@@ -9155,6 +10677,1016 @@
         [
           116,
           107
+        ]
+      ]
+    ],
+    "fa": [
+      [
+        [
+          20,
+          108
+        ],
+        [
+          27,
+          105
+        ],
+        [
+          33,
+          100
+        ],
+        [
+          38,
+          94
+        ],
+        [
+          42,
+          85
+        ],
+        [
+          46,
+          74
+        ],
+        [
+          50,
+          61
+        ],
+        [
+          52,
+          47
+        ],
+        [
+          53,
+          34
+        ],
+        [
+          51,
+          25
+        ],
+        [
+          48,
+          20
+        ],
+        [
+          44,
+          20
+        ],
+        [
+          41,
+          25
+        ],
+        [
+          39,
+          34
+        ],
+        [
+          39,
+          49
+        ],
+        [
+          39,
+          69
+        ],
+        [
+          39,
+          94
+        ],
+        [
+          39,
+          119
+        ],
+        [
+          39,
+          144
+        ],
+        [
+          40,
+          153
+        ],
+        [
+          44,
+          157
+        ],
+        [
+          48,
+          156
+        ],
+        [
+          52,
+          150
+        ],
+        [
+          54,
+          139
+        ],
+        [
+          52,
+          127
+        ],
+        [
+          49,
+          114
+        ],
+        [
+          45,
+          103
+        ],
+        [
+          42,
+          96
+        ],
+        [
+          46,
+          93
+        ],
+        [
+          52,
+          92
+        ],
+        [
+          57,
+          91
+        ],
+        [
+          68,
+          66
+        ],
+        [
+          76,
+          61
+        ],
+        [
+          88,
+          62
+        ],
+        [
+          98,
+          73
+        ],
+        [
+          92,
+          69
+        ],
+        [
+          82,
+          68
+        ],
+        [
+          76,
+          71
+        ],
+        [
+          72,
+          77
+        ],
+        [
+          70,
+          85
+        ],
+        [
+          72,
+          93
+        ],
+        [
+          74,
+          100
+        ],
+        [
+          80,
+          104
+        ],
+        [
+          86,
+          104
+        ],
+        [
+          92,
+          101
+        ],
+        [
+          98,
+          95
+        ],
+        [
+          100,
+          87
+        ],
+        [
+          100,
+          77
+        ],
+        [
+          100,
+          68
+        ],
+        [
+          100,
+          79
+        ],
+        [
+          100,
+          91
+        ],
+        [
+          100,
+          100
+        ],
+        [
+          102,
+          106
+        ],
+        [
+          108,
+          107
+        ],
+        [
+          112,
+          104
+        ]
+      ]
+    ],
+    "fe": [
+      [
+        [
+          20,
+          108
+        ],
+        [
+          27,
+          105
+        ],
+        [
+          33,
+          100
+        ],
+        [
+          38,
+          94
+        ],
+        [
+          42,
+          85
+        ],
+        [
+          46,
+          74
+        ],
+        [
+          50,
+          61
+        ],
+        [
+          52,
+          47
+        ],
+        [
+          53,
+          34
+        ],
+        [
+          51,
+          25
+        ],
+        [
+          48,
+          20
+        ],
+        [
+          44,
+          20
+        ],
+        [
+          41,
+          25
+        ],
+        [
+          39,
+          34
+        ],
+        [
+          39,
+          49
+        ],
+        [
+          39,
+          69
+        ],
+        [
+          39,
+          94
+        ],
+        [
+          39,
+          119
+        ],
+        [
+          39,
+          144
+        ],
+        [
+          40,
+          153
+        ],
+        [
+          44,
+          157
+        ],
+        [
+          48,
+          156
+        ],
+        [
+          52,
+          150
+        ],
+        [
+          54,
+          139
+        ],
+        [
+          52,
+          127
+        ],
+        [
+          49,
+          114
+        ],
+        [
+          45,
+          103
+        ],
+        [
+          42,
+          96
+        ],
+        [
+          46,
+          93
+        ],
+        [
+          52,
+          92
+        ],
+        [
+          57,
+          91
+        ],
+        [
+          58,
+          108
+        ],
+        [
+          66,
+          107
+        ],
+        [
+          72,
+          104
+        ],
+        [
+          78,
+          100
+        ],
+        [
+          84,
+          94
+        ],
+        [
+          89,
+          87
+        ],
+        [
+          91,
+          79
+        ],
+        [
+          90,
+          73
+        ],
+        [
+          86,
+          69
+        ],
+        [
+          80,
+          67
+        ],
+        [
+          75,
+          69
+        ],
+        [
+          71,
+          75
+        ],
+        [
+          70,
+          83
+        ],
+        [
+          72,
+          91
+        ],
+        [
+          76,
+          98
+        ],
+        [
+          82,
+          104
+        ],
+        [
+          88,
+          107
+        ],
+        [
+          94,
+          106
+        ],
+        [
+          98,
+          103
+        ],
+        [
+          102,
+          99
+        ]
+      ]
+    ],
+    "fi": [
+      [
+        [
+          20,
+          108
+        ],
+        [
+          27,
+          105
+        ],
+        [
+          33,
+          100
+        ],
+        [
+          38,
+          94
+        ],
+        [
+          42,
+          85
+        ],
+        [
+          46,
+          74
+        ],
+        [
+          50,
+          61
+        ],
+        [
+          52,
+          47
+        ],
+        [
+          53,
+          34
+        ],
+        [
+          51,
+          25
+        ],
+        [
+          48,
+          20
+        ],
+        [
+          44,
+          20
+        ],
+        [
+          41,
+          25
+        ],
+        [
+          39,
+          34
+        ],
+        [
+          39,
+          49
+        ],
+        [
+          39,
+          69
+        ],
+        [
+          39,
+          94
+        ],
+        [
+          39,
+          119
+        ],
+        [
+          39,
+          144
+        ],
+        [
+          40,
+          153
+        ],
+        [
+          44,
+          157
+        ],
+        [
+          48,
+          156
+        ],
+        [
+          52,
+          150
+        ],
+        [
+          54,
+          139
+        ],
+        [
+          52,
+          127
+        ],
+        [
+          49,
+          114
+        ],
+        [
+          45,
+          103
+        ],
+        [
+          42,
+          96
+        ],
+        [
+          46,
+          93
+        ],
+        [
+          52,
+          92
+        ],
+        [
+          57,
+          91
+        ],
+        [
+          73,
+          68
+        ],
+        [
+          73,
+          79
+        ],
+        [
+          73,
+          91
+        ],
+        [
+          73,
+          99
+        ],
+        [
+          75,
+          105
+        ],
+        [
+          79,
+          106
+        ],
+        [
+          83,
+          104
+        ],
+        [
+          85,
+          102
+        ]
+      ],
+      [
+        [
+          74,
+          48
+        ]
+      ]
+    ],
+    "fo": [
+      [
+        [
+          20,
+          108
+        ],
+        [
+          27,
+          105
+        ],
+        [
+          33,
+          100
+        ],
+        [
+          38,
+          94
+        ],
+        [
+          42,
+          85
+        ],
+        [
+          46,
+          74
+        ],
+        [
+          50,
+          61
+        ],
+        [
+          52,
+          47
+        ],
+        [
+          53,
+          34
+        ],
+        [
+          51,
+          25
+        ],
+        [
+          48,
+          20
+        ],
+        [
+          44,
+          20
+        ],
+        [
+          41,
+          25
+        ],
+        [
+          39,
+          34
+        ],
+        [
+          39,
+          49
+        ],
+        [
+          39,
+          69
+        ],
+        [
+          39,
+          94
+        ],
+        [
+          39,
+          119
+        ],
+        [
+          39,
+          144
+        ],
+        [
+          40,
+          153
+        ],
+        [
+          44,
+          157
+        ],
+        [
+          48,
+          156
+        ],
+        [
+          52,
+          150
+        ],
+        [
+          54,
+          139
+        ],
+        [
+          52,
+          127
+        ],
+        [
+          49,
+          114
+        ],
+        [
+          45,
+          103
+        ],
+        [
+          42,
+          96
+        ],
+        [
+          46,
+          93
+        ],
+        [
+          52,
+          92
+        ],
+        [
+          57,
+          91
+        ],
+        [
+          67,
+          71
+        ],
+        [
+          72,
+          63
+        ],
+        [
+          80,
+          62
+        ],
+        [
+          87,
+          68
+        ],
+        [
+          78,
+          71
+        ],
+        [
+          72,
+          79
+        ],
+        [
+          70,
+          89
+        ],
+        [
+          72,
+          99
+        ],
+        [
+          78,
+          106
+        ],
+        [
+          87,
+          109
+        ],
+        [
+          95,
+          106
+        ],
+        [
+          101,
+          99
+        ],
+        [
+          103,
+          89
+        ],
+        [
+          101,
+          79
+        ],
+        [
+          96,
+          72
+        ],
+        [
+          88,
+          69
+        ],
+        [
+          81,
+          72
+        ],
+        [
+          80,
+          77
+        ],
+        [
+          86,
+          81
+        ],
+        [
+          94,
+          80
+        ],
+        [
+          102,
+          77
+        ],
+        [
+          111,
+          72
+        ]
+      ]
+    ],
+    "fu": [
+      [
+        [
+          20,
+          108
+        ],
+        [
+          27,
+          105
+        ],
+        [
+          33,
+          100
+        ],
+        [
+          38,
+          94
+        ],
+        [
+          42,
+          85
+        ],
+        [
+          46,
+          74
+        ],
+        [
+          50,
+          61
+        ],
+        [
+          52,
+          47
+        ],
+        [
+          53,
+          34
+        ],
+        [
+          51,
+          25
+        ],
+        [
+          48,
+          20
+        ],
+        [
+          44,
+          20
+        ],
+        [
+          41,
+          25
+        ],
+        [
+          39,
+          34
+        ],
+        [
+          39,
+          49
+        ],
+        [
+          39,
+          69
+        ],
+        [
+          39,
+          94
+        ],
+        [
+          39,
+          119
+        ],
+        [
+          39,
+          144
+        ],
+        [
+          40,
+          153
+        ],
+        [
+          44,
+          157
+        ],
+        [
+          48,
+          156
+        ],
+        [
+          52,
+          150
+        ],
+        [
+          54,
+          139
+        ],
+        [
+          52,
+          127
+        ],
+        [
+          49,
+          114
+        ],
+        [
+          45,
+          103
+        ],
+        [
+          42,
+          96
+        ],
+        [
+          46,
+          93
+        ],
+        [
+          52,
+          92
+        ],
+        [
+          57,
+          91
+        ],
+        [
+          74,
+          68
+        ],
+        [
+          74,
+          81
+        ],
+        [
+          74,
+          94
+        ],
+        [
+          76,
+          101
+        ],
+        [
+          82,
+          106
+        ],
+        [
+          89,
+          106
+        ],
+        [
+          95,
+          102
+        ],
+        [
+          99,
+          95
+        ],
+        [
+          101,
+          85
+        ],
+        [
+          102,
+          74
+        ],
+        [
+          102,
+          68
+        ],
+        [
+          102,
+          81
+        ],
+        [
+          102,
+          93
+        ],
+        [
+          102,
+          101
+        ],
+        [
+          104,
+          107
+        ],
+        [
+          109,
+          107
+        ],
+        [
+          114,
+          103
         ]
       ]
     ],
@@ -10994,6 +13526,836 @@
         ],
         [
           157,
+          55
+        ]
+      ]
+    ],
+    "na": [
+      [
+        [
+          20,
+          39
+        ],
+        [
+          21,
+          33
+        ],
+        [
+          25,
+          28
+        ],
+        [
+          30,
+          27
+        ],
+        [
+          34,
+          30
+        ],
+        [
+          36,
+          36
+        ],
+        [
+          36,
+          48
+        ],
+        [
+          36,
+          68
+        ],
+        [
+          36,
+          53
+        ],
+        [
+          36,
+          40
+        ],
+        [
+          39,
+          35
+        ],
+        [
+          44,
+          30
+        ],
+        [
+          50,
+          28
+        ],
+        [
+          56,
+          28
+        ],
+        [
+          62,
+          31
+        ],
+        [
+          65,
+          38
+        ],
+        [
+          65,
+          48
+        ],
+        [
+          65,
+          60
+        ],
+        [
+          67,
+          66
+        ],
+        [
+          71,
+          68
+        ],
+        [
+          75,
+          67
+        ],
+        [
+          78,
+          64
+        ],
+        [
+          86,
+          25
+        ],
+        [
+          94,
+          20
+        ],
+        [
+          106,
+          21
+        ],
+        [
+          116,
+          32
+        ],
+        [
+          109,
+          28
+        ],
+        [
+          100,
+          27
+        ],
+        [
+          93,
+          30
+        ],
+        [
+          89,
+          36
+        ],
+        [
+          88,
+          44
+        ],
+        [
+          89,
+          52
+        ],
+        [
+          92,
+          59
+        ],
+        [
+          98,
+          63
+        ],
+        [
+          104,
+          63
+        ],
+        [
+          110,
+          60
+        ],
+        [
+          115,
+          54
+        ],
+        [
+          117,
+          46
+        ],
+        [
+          118,
+          36
+        ],
+        [
+          118,
+          27
+        ],
+        [
+          118,
+          38
+        ],
+        [
+          118,
+          50
+        ],
+        [
+          118,
+          59
+        ],
+        [
+          120,
+          65
+        ],
+        [
+          125,
+          66
+        ],
+        [
+          130,
+          63
+        ]
+      ]
+    ],
+    "ne": [
+      [
+        [
+          20,
+          33
+        ],
+        [
+          21,
+          27
+        ],
+        [
+          25,
+          22
+        ],
+        [
+          30,
+          21
+        ],
+        [
+          34,
+          24
+        ],
+        [
+          36,
+          30
+        ],
+        [
+          36,
+          42
+        ],
+        [
+          36,
+          62
+        ],
+        [
+          36,
+          47
+        ],
+        [
+          36,
+          34
+        ],
+        [
+          39,
+          29
+        ],
+        [
+          44,
+          24
+        ],
+        [
+          50,
+          22
+        ],
+        [
+          56,
+          22
+        ],
+        [
+          62,
+          25
+        ],
+        [
+          65,
+          32
+        ],
+        [
+          65,
+          42
+        ],
+        [
+          65,
+          54
+        ],
+        [
+          67,
+          60
+        ],
+        [
+          71,
+          62
+        ],
+        [
+          75,
+          61
+        ],
+        [
+          78,
+          58
+        ],
+        [
+          75,
+          61
+        ],
+        [
+          83,
+          60
+        ],
+        [
+          89,
+          57
+        ],
+        [
+          95,
+          53
+        ],
+        [
+          101,
+          47
+        ],
+        [
+          106,
+          40
+        ],
+        [
+          108,
+          32
+        ],
+        [
+          107,
+          26
+        ],
+        [
+          103,
+          22
+        ],
+        [
+          97,
+          20
+        ],
+        [
+          92,
+          22
+        ],
+        [
+          88,
+          28
+        ],
+        [
+          87,
+          36
+        ],
+        [
+          89,
+          44
+        ],
+        [
+          93,
+          51
+        ],
+        [
+          99,
+          57
+        ],
+        [
+          105,
+          60
+        ],
+        [
+          111,
+          59
+        ],
+        [
+          115,
+          56
+        ],
+        [
+          119,
+          52
+        ]
+      ]
+    ],
+    "ni": [
+      [
+        [
+          20,
+          52
+        ],
+        [
+          21,
+          46
+        ],
+        [
+          25,
+          41
+        ],
+        [
+          30,
+          40
+        ],
+        [
+          34,
+          43
+        ],
+        [
+          36,
+          49
+        ],
+        [
+          36,
+          61
+        ],
+        [
+          36,
+          81
+        ],
+        [
+          36,
+          66
+        ],
+        [
+          36,
+          53
+        ],
+        [
+          39,
+          48
+        ],
+        [
+          44,
+          43
+        ],
+        [
+          50,
+          41
+        ],
+        [
+          56,
+          41
+        ],
+        [
+          62,
+          44
+        ],
+        [
+          65,
+          51
+        ],
+        [
+          65,
+          61
+        ],
+        [
+          65,
+          73
+        ],
+        [
+          67,
+          79
+        ],
+        [
+          71,
+          81
+        ],
+        [
+          75,
+          80
+        ],
+        [
+          78,
+          77
+        ],
+        [
+          90,
+          40
+        ],
+        [
+          90,
+          51
+        ],
+        [
+          90,
+          63
+        ],
+        [
+          90,
+          71
+        ],
+        [
+          92,
+          77
+        ],
+        [
+          96,
+          78
+        ],
+        [
+          100,
+          76
+        ],
+        [
+          102,
+          74
+        ]
+      ],
+      [
+        [
+          91,
+          20
+        ]
+      ]
+    ],
+    "no": [
+      [
+        [
+          20,
+          38
+        ],
+        [
+          21,
+          32
+        ],
+        [
+          25,
+          27
+        ],
+        [
+          30,
+          26
+        ],
+        [
+          34,
+          29
+        ],
+        [
+          36,
+          35
+        ],
+        [
+          36,
+          47
+        ],
+        [
+          36,
+          67
+        ],
+        [
+          36,
+          52
+        ],
+        [
+          36,
+          39
+        ],
+        [
+          39,
+          34
+        ],
+        [
+          44,
+          29
+        ],
+        [
+          50,
+          27
+        ],
+        [
+          56,
+          27
+        ],
+        [
+          62,
+          30
+        ],
+        [
+          65,
+          37
+        ],
+        [
+          65,
+          47
+        ],
+        [
+          65,
+          59
+        ],
+        [
+          67,
+          65
+        ],
+        [
+          71,
+          67
+        ],
+        [
+          75,
+          66
+        ],
+        [
+          78,
+          63
+        ],
+        [
+          84,
+          29
+        ],
+        [
+          89,
+          21
+        ],
+        [
+          97,
+          20
+        ],
+        [
+          104,
+          26
+        ],
+        [
+          95,
+          29
+        ],
+        [
+          89,
+          37
+        ],
+        [
+          87,
+          47
+        ],
+        [
+          89,
+          57
+        ],
+        [
+          95,
+          64
+        ],
+        [
+          104,
+          67
+        ],
+        [
+          112,
+          64
+        ],
+        [
+          118,
+          57
+        ],
+        [
+          120,
+          47
+        ],
+        [
+          118,
+          37
+        ],
+        [
+          113,
+          30
+        ],
+        [
+          105,
+          27
+        ],
+        [
+          98,
+          30
+        ],
+        [
+          97,
+          35
+        ],
+        [
+          103,
+          39
+        ],
+        [
+          111,
+          38
+        ],
+        [
+          119,
+          35
+        ],
+        [
+          128,
+          30
+        ]
+      ]
+    ],
+    "nu": [
+      [
+        [
+          20,
+          32
+        ],
+        [
+          21,
+          26
+        ],
+        [
+          25,
+          21
+        ],
+        [
+          30,
+          20
+        ],
+        [
+          34,
+          23
+        ],
+        [
+          36,
+          29
+        ],
+        [
+          36,
+          41
+        ],
+        [
+          36,
+          61
+        ],
+        [
+          36,
+          46
+        ],
+        [
+          36,
+          33
+        ],
+        [
+          39,
+          28
+        ],
+        [
+          44,
+          23
+        ],
+        [
+          50,
+          21
+        ],
+        [
+          56,
+          21
+        ],
+        [
+          62,
+          24
+        ],
+        [
+          65,
+          31
+        ],
+        [
+          65,
+          41
+        ],
+        [
+          65,
+          53
+        ],
+        [
+          67,
+          59
+        ],
+        [
+          71,
+          61
+        ],
+        [
+          75,
+          60
+        ],
+        [
+          78,
+          57
+        ],
+        [
+          92,
+          20
+        ],
+        [
+          92,
+          33
+        ],
+        [
+          92,
+          46
+        ],
+        [
+          94,
+          53
+        ],
+        [
+          100,
+          58
+        ],
+        [
+          107,
+          58
+        ],
+        [
+          113,
+          54
+        ],
+        [
+          117,
+          47
+        ],
+        [
+          119,
+          37
+        ],
+        [
+          120,
+          26
+        ],
+        [
+          120,
+          20
+        ],
+        [
+          120,
+          33
+        ],
+        [
+          120,
+          45
+        ],
+        [
+          120,
+          53
+        ],
+        [
+          122,
+          59
+        ],
+        [
+          127,
+          59
+        ],
+        [
+          132,
           55
         ]
       ]
@@ -13235,6 +16597,906 @@
         [
           45,
           40
+        ]
+      ]
+    ],
+    "ña": [
+      [
+        [
+          20,
+          45
+        ],
+        [
+          20,
+          58
+        ],
+        [
+          20,
+          73
+        ],
+        [
+          20,
+          85
+        ],
+        [
+          20,
+          71
+        ],
+        [
+          20,
+          59
+        ],
+        [
+          23,
+          53
+        ],
+        [
+          29,
+          47
+        ],
+        [
+          36,
+          44
+        ],
+        [
+          42,
+          44
+        ],
+        [
+          47,
+          47
+        ],
+        [
+          49,
+          54
+        ],
+        [
+          49,
+          65
+        ],
+        [
+          49,
+          76
+        ],
+        [
+          51,
+          82
+        ],
+        [
+          55,
+          84
+        ],
+        [
+          59,
+          83
+        ],
+        [
+          62,
+          80
+        ],
+        [
+          69,
+          42
+        ],
+        [
+          77,
+          37
+        ],
+        [
+          89,
+          38
+        ],
+        [
+          99,
+          49
+        ],
+        [
+          92,
+          45
+        ],
+        [
+          83,
+          44
+        ],
+        [
+          76,
+          47
+        ],
+        [
+          72,
+          53
+        ],
+        [
+          71,
+          61
+        ],
+        [
+          72,
+          69
+        ],
+        [
+          75,
+          76
+        ],
+        [
+          81,
+          80
+        ],
+        [
+          87,
+          80
+        ],
+        [
+          93,
+          77
+        ],
+        [
+          98,
+          71
+        ],
+        [
+          100,
+          63
+        ],
+        [
+          101,
+          53
+        ],
+        [
+          101,
+          44
+        ],
+        [
+          101,
+          55
+        ],
+        [
+          101,
+          67
+        ],
+        [
+          101,
+          76
+        ],
+        [
+          103,
+          82
+        ],
+        [
+          108,
+          83
+        ],
+        [
+          113,
+          80
+        ]
+      ],
+      [
+        [
+          21,
+          30
+        ],
+        [
+          24,
+          24
+        ],
+        [
+          29,
+          20
+        ],
+        [
+          35,
+          22
+        ],
+        [
+          40,
+          26
+        ],
+        [
+          45,
+          25
+        ],
+        [
+          47,
+          20
+        ]
+      ]
+    ],
+    "ñe": [
+      [
+        [
+          20,
+          45
+        ],
+        [
+          20,
+          58
+        ],
+        [
+          20,
+          73
+        ],
+        [
+          20,
+          85
+        ],
+        [
+          20,
+          71
+        ],
+        [
+          20,
+          59
+        ],
+        [
+          23,
+          53
+        ],
+        [
+          29,
+          47
+        ],
+        [
+          36,
+          44
+        ],
+        [
+          42,
+          44
+        ],
+        [
+          47,
+          47
+        ],
+        [
+          49,
+          54
+        ],
+        [
+          49,
+          65
+        ],
+        [
+          49,
+          76
+        ],
+        [
+          51,
+          82
+        ],
+        [
+          55,
+          84
+        ],
+        [
+          59,
+          83
+        ],
+        [
+          62,
+          80
+        ],
+        [
+          58,
+          84
+        ],
+        [
+          66,
+          83
+        ],
+        [
+          72,
+          80
+        ],
+        [
+          78,
+          76
+        ],
+        [
+          84,
+          70
+        ],
+        [
+          89,
+          63
+        ],
+        [
+          91,
+          55
+        ],
+        [
+          90,
+          49
+        ],
+        [
+          86,
+          45
+        ],
+        [
+          80,
+          43
+        ],
+        [
+          75,
+          45
+        ],
+        [
+          71,
+          51
+        ],
+        [
+          70,
+          59
+        ],
+        [
+          72,
+          67
+        ],
+        [
+          76,
+          74
+        ],
+        [
+          82,
+          80
+        ],
+        [
+          88,
+          83
+        ],
+        [
+          94,
+          82
+        ],
+        [
+          98,
+          79
+        ],
+        [
+          102,
+          75
+        ]
+      ],
+      [
+        [
+          21,
+          30
+        ],
+        [
+          24,
+          24
+        ],
+        [
+          29,
+          20
+        ],
+        [
+          35,
+          22
+        ],
+        [
+          40,
+          26
+        ],
+        [
+          45,
+          25
+        ],
+        [
+          47,
+          20
+        ]
+      ]
+    ],
+    "ñi": [
+      [
+        [
+          20,
+          45
+        ],
+        [
+          20,
+          58
+        ],
+        [
+          20,
+          73
+        ],
+        [
+          20,
+          85
+        ],
+        [
+          20,
+          71
+        ],
+        [
+          20,
+          59
+        ],
+        [
+          23,
+          53
+        ],
+        [
+          29,
+          47
+        ],
+        [
+          36,
+          44
+        ],
+        [
+          42,
+          44
+        ],
+        [
+          47,
+          47
+        ],
+        [
+          49,
+          54
+        ],
+        [
+          49,
+          65
+        ],
+        [
+          49,
+          76
+        ],
+        [
+          51,
+          82
+        ],
+        [
+          55,
+          84
+        ],
+        [
+          59,
+          83
+        ],
+        [
+          62,
+          80
+        ],
+        [
+          74,
+          44
+        ],
+        [
+          74,
+          55
+        ],
+        [
+          74,
+          67
+        ],
+        [
+          74,
+          75
+        ],
+        [
+          76,
+          81
+        ],
+        [
+          80,
+          82
+        ],
+        [
+          84,
+          80
+        ],
+        [
+          86,
+          78
+        ]
+      ],
+      [
+        [
+          21,
+          30
+        ],
+        [
+          24,
+          24
+        ],
+        [
+          29,
+          20
+        ],
+        [
+          35,
+          22
+        ],
+        [
+          40,
+          26
+        ],
+        [
+          45,
+          25
+        ],
+        [
+          47,
+          20
+        ]
+      ],
+      [
+        [
+          75,
+          24
+        ]
+      ]
+    ],
+    "ño": [
+      [
+        [
+          20,
+          45
+        ],
+        [
+          20,
+          58
+        ],
+        [
+          20,
+          73
+        ],
+        [
+          20,
+          85
+        ],
+        [
+          20,
+          71
+        ],
+        [
+          20,
+          59
+        ],
+        [
+          23,
+          53
+        ],
+        [
+          29,
+          47
+        ],
+        [
+          36,
+          44
+        ],
+        [
+          42,
+          44
+        ],
+        [
+          47,
+          47
+        ],
+        [
+          49,
+          54
+        ],
+        [
+          49,
+          65
+        ],
+        [
+          49,
+          76
+        ],
+        [
+          51,
+          82
+        ],
+        [
+          55,
+          84
+        ],
+        [
+          59,
+          83
+        ],
+        [
+          62,
+          80
+        ],
+        [
+          68,
+          47
+        ],
+        [
+          73,
+          39
+        ],
+        [
+          81,
+          38
+        ],
+        [
+          88,
+          44
+        ],
+        [
+          79,
+          47
+        ],
+        [
+          73,
+          55
+        ],
+        [
+          71,
+          65
+        ],
+        [
+          73,
+          75
+        ],
+        [
+          79,
+          82
+        ],
+        [
+          88,
+          85
+        ],
+        [
+          96,
+          82
+        ],
+        [
+          102,
+          75
+        ],
+        [
+          104,
+          65
+        ],
+        [
+          102,
+          55
+        ],
+        [
+          97,
+          48
+        ],
+        [
+          89,
+          45
+        ],
+        [
+          82,
+          48
+        ],
+        [
+          81,
+          53
+        ],
+        [
+          87,
+          57
+        ],
+        [
+          95,
+          56
+        ],
+        [
+          103,
+          53
+        ],
+        [
+          112,
+          48
+        ]
+      ],
+      [
+        [
+          21,
+          30
+        ],
+        [
+          24,
+          24
+        ],
+        [
+          29,
+          20
+        ],
+        [
+          35,
+          22
+        ],
+        [
+          40,
+          26
+        ],
+        [
+          45,
+          25
+        ],
+        [
+          47,
+          20
+        ]
+      ]
+    ],
+    "ñu": [
+      [
+        [
+          20,
+          45
+        ],
+        [
+          20,
+          58
+        ],
+        [
+          20,
+          73
+        ],
+        [
+          20,
+          85
+        ],
+        [
+          20,
+          71
+        ],
+        [
+          20,
+          59
+        ],
+        [
+          23,
+          53
+        ],
+        [
+          29,
+          47
+        ],
+        [
+          36,
+          44
+        ],
+        [
+          42,
+          44
+        ],
+        [
+          47,
+          47
+        ],
+        [
+          49,
+          54
+        ],
+        [
+          49,
+          65
+        ],
+        [
+          49,
+          76
+        ],
+        [
+          51,
+          82
+        ],
+        [
+          55,
+          84
+        ],
+        [
+          59,
+          83
+        ],
+        [
+          62,
+          80
+        ],
+        [
+          75,
+          44
+        ],
+        [
+          75,
+          57
+        ],
+        [
+          75,
+          70
+        ],
+        [
+          77,
+          77
+        ],
+        [
+          83,
+          82
+        ],
+        [
+          90,
+          82
+        ],
+        [
+          96,
+          78
+        ],
+        [
+          100,
+          71
+        ],
+        [
+          102,
+          61
+        ],
+        [
+          103,
+          50
+        ],
+        [
+          103,
+          44
+        ],
+        [
+          103,
+          57
+        ],
+        [
+          103,
+          69
+        ],
+        [
+          103,
+          77
+        ],
+        [
+          105,
+          83
+        ],
+        [
+          110,
+          83
+        ],
+        [
+          115,
+          79
+        ]
+      ],
+      [
+        [
+          21,
+          30
+        ],
+        [
+          24,
+          24
+        ],
+        [
+          29,
+          20
+        ],
+        [
+          35,
+          22
+        ],
+        [
+          40,
+          26
+        ],
+        [
+          45,
+          25
+        ],
+        [
+          47,
+          20
         ]
       ]
     ]

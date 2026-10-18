@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<ellipse cx="200" cy="350" rx="160" ry="17.6" fill="#3B2A20" fill-opacity="0.15"/>
+<g transform="rotate(14 200 304)">
+<rect x="56" y="282" width="288" height="44" rx="22" fill="#8A5A34" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M120 296 L230 296" fill="none" stroke="#6B4226" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="322" cy="304" rx="18" ry="22" fill="#F5D78E" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="322" cy="304" rx="7" ry="9" fill="none" stroke="#D9A05B" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<path d="M200 28 Q226 96 268 104 Q258 76 278 62 Q330 150 312 222 Q296 300 200 300 Q104 300 90 228 Q78 160 124 106 Q130 146 152 150 Q140 84 200 28 Z" fill="#D8433B" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M204 112 Q220 160 254 164 Q252 146 264 138 Q288 200 270 244 Q254 290 200 290 Q144 290 132 246 Q122 204 146 172 Q154 200 170 200 Q166 150 204 112 Z" fill="#D98E1C"/>
+<path d="M202 186 Q216 216 236 220 Q248 262 224 280 Q200 296 176 280 Q154 262 166 230 Q176 244 186 240 Q184 210 202 186 Z" fill="#F2B632"/>
+<g transform="rotate(-14 200 304)">
+<rect x="56" y="282" width="288" height="44" rx="22" fill="#8A5A34" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M170 312 L280 312" fill="none" stroke="#6B4226" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="78" cy="304" rx="18" ry="22" fill="#F5D78E" stroke="#3B2A20" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+<ellipse cx="78" cy="304" rx="7" ry="9" fill="none" stroke="#D9A05B" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+</svg>

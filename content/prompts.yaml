@@ -1120,3 +1120,474 @@ syllables.build_word.tomate:
 
 syllables.build_word.topo:
   - Arma la palabra, topo.
+
+letter.meet.n:
+  - Esta es la, ene. ¡La, ene de nido! ¡Tócala!
+
+letter.meet.n.upper:
+  - Toca la, ene mayúscula.
+
+letter.meet.n.lower:
+  - Toca la, ene minúscula.
+
+letter.trace.n.lower:
+  - Repasa la, ene minúscula con tu dedo.
+
+letter.trace.n.upper:
+  - Repasa la, ene mayúscula con tu dedo.
+
+letter.find.n:
+  - Revienta las burbujas que tienen la, ene.
+
+syllables.meet.na:
+  - La, ene, y la, a, juntas dicen, na. ¡Toca, na!
+
+syllables.meet.na.choose:
+  - ¿Dónde dice, na? ¡Tócala!
+
+syllables.trace.na:
+  - Escribe, na, con tu dedo.
+
+syllables.find.na:
+  - Revienta las burbujas que dicen, na.
+
+syllables.meet.ne:
+  - La, ene, y la, e, juntas dicen, ne. ¡Toca, ne!
+
+syllables.meet.ne.choose:
+  - ¿Dónde dice, ne? ¡Tócala!
+
+syllables.trace.ne:
+  - Escribe, ne, con tu dedo.
+
+syllables.find.ne:
+  - Revienta las burbujas que dicen, ne.
+
+syllables.meet.ni:
+  - La, ene, y la, i, juntas dicen, ni. ¡Toca, ni!
+
+syllables.meet.ni.choose:
+  - ¿Dónde dice, ni? ¡Tócala!
+
+syllables.trace.ni:
+  - Escribe, ni, con tu dedo.
+
+syllables.find.ni:
+  - Revienta las burbujas que dicen, ni.
+
+syllables.meet.no:
+  - La, ene, y la, o, juntas dicen, no. ¡Toca, no!
+
+syllables.meet.no.choose:
+  - ¿Dónde dice, no? ¡Tócala!
+
+syllables.trace.no:
+  - Escribe, no, con tu dedo.
+
+syllables.find.no:
+  - Revienta las burbujas que dicen, no.
+
+syllables.meet.nu:
+  - La, ene, y la, u, juntas dicen, nu. ¡Toca, nu!
+
+syllables.meet.nu.choose:
+  - ¿Dónde dice, nu? ¡Tócala!
+
+syllables.trace.nu:
+  - Escribe, nu, con tu dedo.
+
+syllables.find.nu:
+  - Revienta las burbujas que dicen, nu.
+
+letter.meet.ñ:
+  - Esta es la, eñe. ¡La, eñe de ñandú! ¡Tócala!
+
+letter.meet.ñ.upper:
+  - Toca la, eñe mayúscula.
+
+letter.meet.ñ.lower:
+  - Toca la, eñe minúscula.
+
+letter.trace.ñ.lower:
+  - Repasa la, eñe minúscula con tu dedo.
+
+letter.trace.ñ.upper:
+  - Repasa la, eñe mayúscula con tu dedo.
+
+letter.find.ñ:
+  - Revienta las burbujas que tienen la, eñe.
+
+syllables.meet.ña:
+  - La, eñe, y la, a, juntas dicen, ña. ¡Toca, ña!
+
+syllables.meet.ña.choose:
+  - ¿Dónde dice, ña? ¡Tócala!
+
+syllables.trace.ña:
+  - Escribe, ña, con tu dedo.
+
+syllables.find.ña:
+  - Revienta las burbujas que dicen, ña.
+
+syllables.meet.ñe:
+  - La, eñe, y la, e, juntas dicen, ñe. ¡Toca, ñe!
+
+syllables.meet.ñe.choose:
+  - ¿Dónde dice, ñe? ¡Tócala!
+
+syllables.trace.ñe:
+  - Escribe, ñe, con tu dedo.
+
+syllables.find.ñe:
+  - Revienta las burbujas que dicen, ñe.
+
+syllables.meet.ñi:
+  - La, eñe, y la, i, juntas dicen, ñi. ¡Toca, ñi!
+
+syllables.meet.ñi.choose:
+  - ¿Dónde dice, ñi? ¡Tócala!
+
+syllables.trace.ñi:
+  - Escribe, ñi, con tu dedo.
+
+syllables.find.ñi:
+  - Revienta las burbujas que dicen, ñi.
+
+syllables.meet.ño:
+  - La, eñe, y la, o, juntas dicen, ño. ¡Toca, ño!
+
+syllables.meet.ño.choose:
+  - ¿Dónde dice, ño? ¡Tócala!
+
+syllables.trace.ño:
+  - Escribe, ño, con tu dedo.
+
+syllables.find.ño:
+  - Revienta las burbujas que dicen, ño.
+
+syllables.meet.ñu:
+  - La, eñe, y la, u, juntas dicen, ñu. ¡Toca, ñu!
+
+syllables.meet.ñu.choose:
+  - ¿Dónde dice, ñu? ¡Tócala!
+
+syllables.trace.ñu:
+  - Escribe, ñu, con tu dedo.
+
+syllables.find.ñu:
+  - Revienta las burbujas que dicen, ñu.
+
+letter.meet.f:
+  - Esta es la, efe. ¡La, efe de foca! ¡Tócala!
+
+letter.meet.f.upper:
+  - Toca la, efe mayúscula.
+
+letter.meet.f.lower:
+  - Toca la, efe minúscula.
+
+letter.trace.f.lower:
+  - Repasa la, efe minúscula con tu dedo.
+
+letter.trace.f.upper:
+  - Repasa la, efe mayúscula con tu dedo.
+
+letter.find.f:
+  - Revienta las burbujas que tienen la, efe.
+
+syllables.meet.fa:
+  - La, efe, y la, a, juntas dicen, fa. ¡Toca, fa!
+
+syllables.meet.fa.choose:
+  - ¿Dónde dice, fa? ¡Tócala!
+
+syllables.trace.fa:
+  - Escribe, fa, con tu dedo.
+
+syllables.find.fa:
+  - Revienta las burbujas que dicen, fa.
+
+syllables.meet.fe:
+  - La, efe, y la, e, juntas dicen, fe. ¡Toca, fe!
+
+syllables.meet.fe.choose:
+  - ¿Dónde dice, fe? ¡Tócala!
+
+syllables.trace.fe:
+  - Escribe, fe, con tu dedo.
+
+syllables.find.fe:
+  - Revienta las burbujas que dicen, fe.
+
+syllables.meet.fi:
+  - La, efe, y la, i, juntas dicen, fi. ¡Toca, fi!
+
+syllables.meet.fi.choose:
+  - ¿Dónde dice, fi? ¡Tócala!
+
+syllables.trace.fi:
+  - Escribe, fi, con tu dedo.
+
+syllables.find.fi:
+  - Revienta las burbujas que dicen, fi.
+
+syllables.meet.fo:
+  - La, efe, y la, o, juntas dicen, fo. ¡Toca, fo!
+
+syllables.meet.fo.choose:
+  - ¿Dónde dice, fo? ¡Tócala!
+
+syllables.trace.fo:
+  - Escribe, fo, con tu dedo.
+
+syllables.find.fo:
+  - Revienta las burbujas que dicen, fo.
+
+syllables.meet.fu:
+  - La, efe, y la, u, juntas dicen, fu. ¡Toca, fu!
+
+syllables.meet.fu.choose:
+  - ¿Dónde dice, fu? ¡Tócala!
+
+syllables.trace.fu:
+  - Escribe, fu, con tu dedo.
+
+syllables.find.fu:
+  - Revienta las burbujas que dicen, fu.
+
+listening.clap.nido:
+  - Ni... do.
+
+listening.clap.naranja:
+  - Na... ran... ja.
+
+listening.clap.nube:
+  - Nu... be.
+
+listening.clap.ñandú:
+  - Ñan... dú.
+
+listening.clap.araña:
+  - A... ra... ña.
+
+listening.clap.niño:
+  - Ni... ño.
+
+listening.clap.foca:
+  - Fo... ca.
+
+listening.clap.faro:
+  - Fa... ro.
+
+listening.clap.fideos:
+  - Fi... de... os.
+
+listening.clap.fuego:
+  - Fue... go.
+
+listening.clap.jirafa:
+  - Ji... ra... fa.
+
+listening.clap.café:
+  - Ca... fé.
+
+listening.clap.foto:
+  - Fo... to.
+
+listening.clap.mofeta:
+  - Mo... fe... ta.
+
+syllables.build_word.foto:
+  - Arma la palabra, foto.
+
+syllables.build_word.lana:
+  - Arma la palabra, lana.
+
+syllables.build_word.luna:
+  - Arma la palabra, luna.
+
+syllables.build_word.mano:
+  - Arma la palabra, mano.
+
+syllables.build_word.mofeta:
+  - Arma la palabra, mofeta.
+
+syllables.build_word.mono:
+  - Arma la palabra, mono.
+
+syllables.build_word.nido:
+  - Arma la palabra, nido.
+
+syllables.build_word.niño:
+  - Arma la palabra, niño.
+
+syllables.build_word.pino:
+  - Arma la palabra, pino.
+
+syllables.build_word.piña:
+  - Arma la palabra, piña.
+
+syllables.build_word.uña:
+  - Arma la palabra, uña.
+
+syllables.contains.da:
+  - ¿Qué dibujo tiene, da?
+
+syllables.contains.de:
+  - ¿Qué dibujo tiene, de?
+
+syllables.contains.di:
+  - ¿Qué dibujo tiene, di?
+
+syllables.contains.do:
+  - ¿Qué dibujo tiene, do?
+
+syllables.contains.du:
+  - ¿Qué dibujo tiene, du?
+
+syllables.contains.fa:
+  - ¿Qué dibujo tiene, fa?
+
+syllables.contains.fe:
+  - ¿Qué dibujo tiene, fe?
+
+syllables.contains.fi:
+  - ¿Qué dibujo tiene, fi?
+
+syllables.contains.fo:
+  - ¿Qué dibujo tiene, fo?
+
+syllables.contains.la:
+  - ¿Qué dibujo tiene, la?
+
+syllables.contains.le:
+  - ¿Qué dibujo tiene, le?
+
+syllables.contains.li:
+  - ¿Qué dibujo tiene, li?
+
+syllables.contains.lo:
+  - ¿Qué dibujo tiene, lo?
+
+syllables.contains.lu:
+  - ¿Qué dibujo tiene, lu?
+
+syllables.contains.ma:
+  - ¿Qué dibujo tiene, ma?
+
+syllables.contains.me:
+  - ¿Qué dibujo tiene, me?
+
+syllables.contains.mi:
+  - ¿Qué dibujo tiene, mi?
+
+syllables.contains.mo:
+  - ¿Qué dibujo tiene, mo?
+
+syllables.contains.mu:
+  - ¿Qué dibujo tiene, mu?
+
+syllables.contains.na:
+  - ¿Qué dibujo tiene, na?
+
+syllables.contains.ni:
+  - ¿Qué dibujo tiene, ni?
+
+syllables.contains.no:
+  - ¿Qué dibujo tiene, no?
+
+syllables.contains.nu:
+  - ¿Qué dibujo tiene, nu?
+
+syllables.contains.pa:
+  - ¿Qué dibujo tiene, pa?
+
+syllables.contains.pe:
+  - ¿Qué dibujo tiene, pe?
+
+syllables.contains.pi:
+  - ¿Qué dibujo tiene, pi?
+
+syllables.contains.po:
+  - ¿Qué dibujo tiene, po?
+
+syllables.contains.pu:
+  - ¿Qué dibujo tiene, pu?
+
+syllables.contains.sa:
+  - ¿Qué dibujo tiene, sa?
+
+syllables.contains.si:
+  - ¿Qué dibujo tiene, si?
+
+syllables.contains.so:
+  - ¿Qué dibujo tiene, so?
+
+syllables.contains.ta:
+  - ¿Qué dibujo tiene, ta?
+
+syllables.contains.te:
+  - ¿Qué dibujo tiene, te?
+
+syllables.contains.ti:
+  - ¿Qué dibujo tiene, ti?
+
+syllables.contains.to:
+  - ¿Qué dibujo tiene, to?
+
+syllables.contains.tu:
+  - ¿Qué dibujo tiene, tu?
+
+syllables.contains.ña:
+  - ¿Qué dibujo tiene, ña?
+
+syllables.contains.ñe:
+  - ¿Qué dibujo tiene, ñe?
+
+syllables.contains.ño:
+  - ¿Qué dibujo tiene, ño?
+
+syllables.ends_with.du:
+  - ¿Qué dibujo termina con, du?
+
+syllables.ends_with.fa:
+  - ¿Qué dibujo termina con, fa?
+
+syllables.ends_with.fe:
+  - ¿Qué dibujo termina con, fe?
+
+syllables.ends_with.na:
+  - ¿Qué dibujo termina con, na?
+
+syllables.ends_with.no:
+  - ¿Qué dibujo termina con, no?
+
+syllables.ends_with.ña:
+  - ¿Qué dibujo termina con, ña?
+
+syllables.ends_with.ño:
+  - ¿Qué dibujo termina con, ño?
+
+syllables.starts_with.fa:
+  - ¿Qué dibujo empieza con, fa?
+
+syllables.starts_with.fi:
+  - ¿Qué dibujo empieza con, fi?
+
+syllables.starts_with.fo:
+  - ¿Qué dibujo empieza con, fo?
+
+syllables.starts_with.fu:
+  - ¿Qué dibujo empieza con, fu?
+
+syllables.starts_with.na:
+  - ¿Qué dibujo empieza con, na?
+
+syllables.starts_with.ni:
+  - ¿Qué dibujo empieza con, ni?
+
+syllables.starts_with.nu:
+  - ¿Qué dibujo empieza con, nu?
+
+syllables.starts_with.ña:
+  - ¿Qué dibujo empieza con, ña?

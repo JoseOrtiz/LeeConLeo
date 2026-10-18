@@ -257,7 +257,7 @@ void main() {
       );
       expect(
         const PictureSoundStepsRule().check(bundle(complete.skip(1).toList())).single.message,
-        contains('no word with a picture starts with "a"'),
+        contains('no word with a picture starts with any of a'),
       );
     });
 

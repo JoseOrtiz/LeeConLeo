@@ -30,6 +30,7 @@ final _games = <ActivitySpec>[
   const SyllableFindActivity(),
   PictureSoundActivity.startsWith,
   PictureSoundActivity.endsWith,
+  PictureSoundActivity.contains,
   const BlendActivity(),
   const BuildWordActivity(),
 ];

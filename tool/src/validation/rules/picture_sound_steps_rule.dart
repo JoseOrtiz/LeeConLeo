@@ -35,34 +35,26 @@ class PictureSoundStepsRule implements ValidationRule {
   ) sync* {
     final position = game.position;
     final pictured = SoundPosition.pictured(bundle.words);
-    final label = position == SoundPosition.start ? 'starts' : 'ends';
+    final label = position.label;
     if (step.sounds.isEmpty) {
       yield ValidationIssue.error('step "${step.id}": ${game.activityId} needs a sound');
       return;
     }
     final asked = <String>[];
     for (final sound in step.sounds) {
-      final matches = pictured.where((word) => position.matches(word, sound)).length;
-      if (matches == 0) {
-        if (position == SoundPosition.start) {
-          yield ValidationIssue.error(
-            'step "${step.id}": no word with a picture $label with "$sound"',
-          );
-        }
-        continue;
-      }
+      if (!pictured.any((word) => game.matches(word, sound))) continue;
       asked.add(sound);
-      final prompt = position.promptId(sound);
+      final prompt = game.promptId(sound);
       if (!bundle.prompts.contains(prompt)) {
         yield ValidationIssue.error('step "${step.id}": missing prompt "$prompt"');
       }
-      if (pictured.length - matches < distractors) {
+      if (pictured.where((word) => !position.matches(word, sound)).length < distractors) {
         yield ValidationIssue.error(
           'step "${step.id}": fewer than $distractors pictures that do not $label with "$sound"',
         );
       }
     }
-    if (asked.isEmpty && position == SoundPosition.end) {
+    if (asked.isEmpty) {
       yield ValidationIssue.error(
         'step "${step.id}": no word with a picture $label with any of ${step.sounds.join(', ')}',
       );

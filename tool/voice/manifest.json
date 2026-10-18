@@ -3104,6 +3104,1151 @@
       "text": "tu",
       "file": "assets/audio/sounds/syllable.tu.m4a",
       "spokenAs": "Ta... Te... Ti... To... Tu."
+    },
+    {
+      "promptId": "letter.meet.n",
+      "index": 0,
+      "text": "Esta es la, ene. ¡La, ene de nido! ¡Tócala!",
+      "file": "assets/audio/prompts/letter.meet.n.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.n.upper",
+      "index": 0,
+      "text": "Toca la, ene mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.n.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.n.lower",
+      "index": 0,
+      "text": "Toca la, ene minúscula.",
+      "file": "assets/audio/prompts/letter.meet.n.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.n.lower",
+      "index": 0,
+      "text": "Repasa la, ene minúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.n.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.n.upper",
+      "index": 0,
+      "text": "Repasa la, ene mayúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.n.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.find.n",
+      "index": 0,
+      "text": "Revienta las burbujas que tienen la, ene.",
+      "file": "assets/audio/prompts/letter.find.n.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.na",
+      "index": 0,
+      "text": "La, ene, y la, a, juntas dicen, na. ¡Toca, na!",
+      "file": "assets/audio/prompts/syllables.meet.na.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.na.choose",
+      "index": 0,
+      "text": "¿Dónde dice, na? ¡Tócala!",
+      "file": "assets/audio/prompts/syllables.meet.na.choose.0.m4a"
+    },
+    {
+      "promptId": "syllables.trace.na",
+      "index": 0,
+      "text": "Escribe, na, con tu dedo.",
+      "file": "assets/audio/prompts/syllables.trace.na.0.m4a"
+    },
+    {
+      "promptId": "syllables.find.na",
+      "index": 0,
+      "text": "Revienta las burbujas que dicen, na.",
+      "file": "assets/audio/prompts/syllables.find.na.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.ne",
+      "index": 0,
+      "text": "La, ene, y la, e, juntas dicen, ne. ¡Toca, ne!",
+      "file": "assets/audio/prompts/syllables.meet.ne.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.ne.choose",
+      "index": 0,
+      "text": "¿Dónde dice, ne? ¡Tócala!",
+      "file": "assets/audio/prompts/syllables.meet.ne.choose.0.m4a"
+    },
+    {
+      "promptId": "syllables.trace.ne",
+      "index": 0,
+      "text": "Escribe, ne, con tu dedo.",
+      "file": "assets/audio/prompts/syllables.trace.ne.0.m4a"
+    },
+    {
+      "promptId": "syllables.find.ne",
+      "index": 0,
+      "text": "Revienta las burbujas que dicen, ne.",
+      "file": "assets/audio/prompts/syllables.find.ne.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.ni",
+      "index": 0,
+      "text": "La, ene, y la, i, juntas dicen, ni. ¡Toca, ni!",
+      "file": "assets/audio/prompts/syllables.meet.ni.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.ni.choose",
+      "index": 0,
+      "text": "¿Dónde dice, ni? ¡Tócala!",
+      "file": "assets/audio/prompts/syllables.meet.ni.choose.0.m4a"
+    },
+    {
+      "promptId": "syllables.trace.ni",
+      "index": 0,
+      "text": "Escribe, ni, con tu dedo.",
+      "file": "assets/audio/prompts/syllables.trace.ni.0.m4a"
+    },
+    {
+      "promptId": "syllables.find.ni",
+      "index": 0,
+      "text": "Revienta las burbujas que dicen, ni.",
+      "file": "assets/audio/prompts/syllables.find.ni.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.no",
+      "index": 0,
+      "text": "La, ene, y la, o, juntas dicen, no. ¡Toca, no!",
+      "file": "assets/audio/prompts/syllables.meet.no.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.no.choose",
+      "index": 0,
+      "text": "¿Dónde dice, no? ¡Tócala!",
+      "file": "assets/audio/prompts/syllables.meet.no.choose.0.m4a"
+    },
+    {
+      "promptId": "syllables.trace.no",
+      "index": 0,
+      "text": "Escribe, no, con tu dedo.",
+      "file": "assets/audio/prompts/syllables.trace.no.0.m4a"
+    },
+    {
+      "promptId": "syllables.find.no",
+      "index": 0,
+      "text": "Revienta las burbujas que dicen, no.",
+      "file": "assets/audio/prompts/syllables.find.no.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.nu",
+      "index": 0,
+      "text": "La, ene, y la, u, juntas dicen, nu. ¡Toca, nu!",
+      "file": "assets/audio/prompts/syllables.meet.nu.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.nu.choose",
+      "index": 0,
+      "text": "¿Dónde dice, nu? ¡Tócala!",
+      "file": "assets/audio/prompts/syllables.meet.nu.choose.0.m4a"
+    },
+    {
+      "promptId": "syllables.trace.nu",
+      "index": 0,
+      "text": "Escribe, nu, con tu dedo.",
+      "file": "assets/audio/prompts/syllables.trace.nu.0.m4a"
+    },
+    {
+      "promptId": "syllables.find.nu",
+      "index": 0,
+      "text": "Revienta las burbujas que dicen, nu.",
+      "file": "assets/audio/prompts/syllables.find.nu.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.ñ",
+      "index": 0,
+      "text": "Esta es la, eñe. ¡La, eñe de ñandú! ¡Tócala!",
+      "file": "assets/audio/prompts/letter.meet.ñ.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.ñ.upper",
+      "index": 0,
+      "text": "Toca la, eñe mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.ñ.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.ñ.lower",
+      "index": 0,
+      "text": "Toca la, eñe minúscula.",
+      "file": "assets/audio/prompts/letter.meet.ñ.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.ñ.lower",
+      "index": 0,
+      "text": "Repasa la, eñe minúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.ñ.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.ñ.upper",
+      "index": 0,
+      "text": "Repasa la, eñe mayúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.ñ.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.find.ñ",
+      "index": 0,
+      "text": "Revienta las burbujas que tienen la, eñe.",
+      "file": "assets/audio/prompts/letter.find.ñ.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.ña",
+      "index": 0,
+      "text": "La, eñe, y la, a, juntas dicen, ña. ¡Toca, ña!",
+      "file": "assets/audio/prompts/syllables.meet.ña.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.ña.choose",
+      "index": 0,
+      "text": "¿Dónde dice, ña? ¡Tócala!",
+      "file": "assets/audio/prompts/syllables.meet.ña.choose.0.m4a"
+    },
+    {
+      "promptId": "syllables.trace.ña",
+      "index": 0,
+      "text": "Escribe, ña, con tu dedo.",
+      "file": "assets/audio/prompts/syllables.trace.ña.0.m4a"
+    },
+    {
+      "promptId": "syllables.find.ña",
+      "index": 0,
+      "text": "Revienta las burbujas que dicen, ña.",
+      "file": "assets/audio/prompts/syllables.find.ña.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.ñe",
+      "index": 0,
+      "text": "La, eñe, y la, e, juntas dicen, ñe. ¡Toca, ñe!",
+      "file": "assets/audio/prompts/syllables.meet.ñe.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.ñe.choose",
+      "index": 0,
+      "text": "¿Dónde dice, ñe? ¡Tócala!",
+      "file": "assets/audio/prompts/syllables.meet.ñe.choose.0.m4a"
+    },
+    {
+      "promptId": "syllables.trace.ñe",
+      "index": 0,
+      "text": "Escribe, ñe, con tu dedo.",
+      "file": "assets/audio/prompts/syllables.trace.ñe.0.m4a"
+    },
+    {
+      "promptId": "syllables.find.ñe",
+      "index": 0,
+      "text": "Revienta las burbujas que dicen, ñe.",
+      "file": "assets/audio/prompts/syllables.find.ñe.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.ñi",
+      "index": 0,
+      "text": "La, eñe, y la, i, juntas dicen, ñi. ¡Toca, ñi!",
+      "file": "assets/audio/prompts/syllables.meet.ñi.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.ñi.choose",
+      "index": 0,
+      "text": "¿Dónde dice, ñi? ¡Tócala!",
+      "file": "assets/audio/prompts/syllables.meet.ñi.choose.0.m4a"
+    },
+    {
+      "promptId": "syllables.trace.ñi",
+      "index": 0,
+      "text": "Escribe, ñi, con tu dedo.",
+      "file": "assets/audio/prompts/syllables.trace.ñi.0.m4a"
+    },
+    {
+      "promptId": "syllables.find.ñi",
+      "index": 0,
+      "text": "Revienta las burbujas que dicen, ñi.",
+      "file": "assets/audio/prompts/syllables.find.ñi.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.ño",
+      "index": 0,
+      "text": "La, eñe, y la, o, juntas dicen, ño. ¡Toca, ño!",
+      "file": "assets/audio/prompts/syllables.meet.ño.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.ño.choose",
+      "index": 0,
+      "text": "¿Dónde dice, ño? ¡Tócala!",
+      "file": "assets/audio/prompts/syllables.meet.ño.choose.0.m4a"
+    },
+    {
+      "promptId": "syllables.trace.ño",
+      "index": 0,
+      "text": "Escribe, ño, con tu dedo.",
+      "file": "assets/audio/prompts/syllables.trace.ño.0.m4a"
+    },
+    {
+      "promptId": "syllables.find.ño",
+      "index": 0,
+      "text": "Revienta las burbujas que dicen, ño.",
+      "file": "assets/audio/prompts/syllables.find.ño.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.ñu",
+      "index": 0,
+      "text": "La, eñe, y la, u, juntas dicen, ñu. ¡Toca, ñu!",
+      "file": "assets/audio/prompts/syllables.meet.ñu.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.ñu.choose",
+      "index": 0,
+      "text": "¿Dónde dice, ñu? ¡Tócala!",
+      "file": "assets/audio/prompts/syllables.meet.ñu.choose.0.m4a"
+    },
+    {
+      "promptId": "syllables.trace.ñu",
+      "index": 0,
+      "text": "Escribe, ñu, con tu dedo.",
+      "file": "assets/audio/prompts/syllables.trace.ñu.0.m4a"
+    },
+    {
+      "promptId": "syllables.find.ñu",
+      "index": 0,
+      "text": "Revienta las burbujas que dicen, ñu.",
+      "file": "assets/audio/prompts/syllables.find.ñu.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.f",
+      "index": 0,
+      "text": "Esta es la, efe. ¡La, efe de foca! ¡Tócala!",
+      "file": "assets/audio/prompts/letter.meet.f.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.f.upper",
+      "index": 0,
+      "text": "Toca la, efe mayúscula.",
+      "file": "assets/audio/prompts/letter.meet.f.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.meet.f.lower",
+      "index": 0,
+      "text": "Toca la, efe minúscula.",
+      "file": "assets/audio/prompts/letter.meet.f.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.f.lower",
+      "index": 0,
+      "text": "Repasa la, efe minúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.f.lower.0.m4a"
+    },
+    {
+      "promptId": "letter.trace.f.upper",
+      "index": 0,
+      "text": "Repasa la, efe mayúscula con tu dedo.",
+      "file": "assets/audio/prompts/letter.trace.f.upper.0.m4a"
+    },
+    {
+      "promptId": "letter.find.f",
+      "index": 0,
+      "text": "Revienta las burbujas que tienen la, efe.",
+      "file": "assets/audio/prompts/letter.find.f.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.fa",
+      "index": 0,
+      "text": "La, efe, y la, a, juntas dicen, fa. ¡Toca, fa!",
+      "file": "assets/audio/prompts/syllables.meet.fa.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.fa.choose",
+      "index": 0,
+      "text": "¿Dónde dice, fa? ¡Tócala!",
+      "file": "assets/audio/prompts/syllables.meet.fa.choose.0.m4a"
+    },
+    {
+      "promptId": "syllables.trace.fa",
+      "index": 0,
+      "text": "Escribe, fa, con tu dedo.",
+      "file": "assets/audio/prompts/syllables.trace.fa.0.m4a"
+    },
+    {
+      "promptId": "syllables.find.fa",
+      "index": 0,
+      "text": "Revienta las burbujas que dicen, fa.",
+      "file": "assets/audio/prompts/syllables.find.fa.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.fe",
+      "index": 0,
+      "text": "La, efe, y la, e, juntas dicen, fe. ¡Toca, fe!",
+      "file": "assets/audio/prompts/syllables.meet.fe.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.fe.choose",
+      "index": 0,
+      "text": "¿Dónde dice, fe? ¡Tócala!",
+      "file": "assets/audio/prompts/syllables.meet.fe.choose.0.m4a"
+    },
+    {
+      "promptId": "syllables.trace.fe",
+      "index": 0,
+      "text": "Escribe, fe, con tu dedo.",
+      "file": "assets/audio/prompts/syllables.trace.fe.0.m4a"
+    },
+    {
+      "promptId": "syllables.find.fe",
+      "index": 0,
+      "text": "Revienta las burbujas que dicen, fe.",
+      "file": "assets/audio/prompts/syllables.find.fe.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.fi",
+      "index": 0,
+      "text": "La, efe, y la, i, juntas dicen, fi. ¡Toca, fi!",
+      "file": "assets/audio/prompts/syllables.meet.fi.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.fi.choose",
+      "index": 0,
+      "text": "¿Dónde dice, fi? ¡Tócala!",
+      "file": "assets/audio/prompts/syllables.meet.fi.choose.0.m4a"
+    },
+    {
+      "promptId": "syllables.trace.fi",
+      "index": 0,
+      "text": "Escribe, fi, con tu dedo.",
+      "file": "assets/audio/prompts/syllables.trace.fi.0.m4a"
+    },
+    {
+      "promptId": "syllables.find.fi",
+      "index": 0,
+      "text": "Revienta las burbujas que dicen, fi.",
+      "file": "assets/audio/prompts/syllables.find.fi.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.fo",
+      "index": 0,
+      "text": "La, efe, y la, o, juntas dicen, fo. ¡Toca, fo!",
+      "file": "assets/audio/prompts/syllables.meet.fo.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.fo.choose",
+      "index": 0,
+      "text": "¿Dónde dice, fo? ¡Tócala!",
+      "file": "assets/audio/prompts/syllables.meet.fo.choose.0.m4a"
+    },
+    {
+      "promptId": "syllables.trace.fo",
+      "index": 0,
+      "text": "Escribe, fo, con tu dedo.",
+      "file": "assets/audio/prompts/syllables.trace.fo.0.m4a"
+    },
+    {
+      "promptId": "syllables.find.fo",
+      "index": 0,
+      "text": "Revienta las burbujas que dicen, fo.",
+      "file": "assets/audio/prompts/syllables.find.fo.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.fu",
+      "index": 0,
+      "text": "La, efe, y la, u, juntas dicen, fu. ¡Toca, fu!",
+      "file": "assets/audio/prompts/syllables.meet.fu.0.m4a"
+    },
+    {
+      "promptId": "syllables.meet.fu.choose",
+      "index": 0,
+      "text": "¿Dónde dice, fu? ¡Tócala!",
+      "file": "assets/audio/prompts/syllables.meet.fu.choose.0.m4a"
+    },
+    {
+      "promptId": "syllables.trace.fu",
+      "index": 0,
+      "text": "Escribe, fu, con tu dedo.",
+      "file": "assets/audio/prompts/syllables.trace.fu.0.m4a"
+    },
+    {
+      "promptId": "syllables.find.fu",
+      "index": 0,
+      "text": "Revienta las burbujas que dicen, fu.",
+      "file": "assets/audio/prompts/syllables.find.fu.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.nido",
+      "index": 0,
+      "text": "Ni... do.",
+      "file": "assets/audio/prompts/listening.clap.nido.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.naranja",
+      "index": 0,
+      "text": "Na... ran... ja.",
+      "file": "assets/audio/prompts/listening.clap.naranja.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.nube",
+      "index": 0,
+      "text": "Nu... be.",
+      "file": "assets/audio/prompts/listening.clap.nube.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.ñandú",
+      "index": 0,
+      "text": "Ñan... dú.",
+      "file": "assets/audio/prompts/listening.clap.ñandú.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.araña",
+      "index": 0,
+      "text": "A... ra... ña.",
+      "file": "assets/audio/prompts/listening.clap.araña.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.niño",
+      "index": 0,
+      "text": "Ni... ño.",
+      "file": "assets/audio/prompts/listening.clap.niño.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.foca",
+      "index": 0,
+      "text": "Fo... ca.",
+      "file": "assets/audio/prompts/listening.clap.foca.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.faro",
+      "index": 0,
+      "text": "Fa... ro.",
+      "file": "assets/audio/prompts/listening.clap.faro.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.fideos",
+      "index": 0,
+      "text": "Fi... de... os.",
+      "file": "assets/audio/prompts/listening.clap.fideos.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.fuego",
+      "index": 0,
+      "text": "Fue... go.",
+      "file": "assets/audio/prompts/listening.clap.fuego.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.jirafa",
+      "index": 0,
+      "text": "Ji... ra... fa.",
+      "file": "assets/audio/prompts/listening.clap.jirafa.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.café",
+      "index": 0,
+      "text": "Ca... fé.",
+      "file": "assets/audio/prompts/listening.clap.café.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.foto",
+      "index": 0,
+      "text": "Fo... to.",
+      "file": "assets/audio/prompts/listening.clap.foto.0.m4a"
+    },
+    {
+      "promptId": "listening.clap.mofeta",
+      "index": 0,
+      "text": "Mo... fe... ta.",
+      "file": "assets/audio/prompts/listening.clap.mofeta.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.foto",
+      "index": 0,
+      "text": "Arma la palabra, foto.",
+      "file": "assets/audio/prompts/syllables.build_word.foto.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.lana",
+      "index": 0,
+      "text": "Arma la palabra, lana.",
+      "file": "assets/audio/prompts/syllables.build_word.lana.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.luna",
+      "index": 0,
+      "text": "Arma la palabra, luna.",
+      "file": "assets/audio/prompts/syllables.build_word.luna.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.mano",
+      "index": 0,
+      "text": "Arma la palabra, mano.",
+      "file": "assets/audio/prompts/syllables.build_word.mano.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.mofeta",
+      "index": 0,
+      "text": "Arma la palabra, mofeta.",
+      "file": "assets/audio/prompts/syllables.build_word.mofeta.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.mono",
+      "index": 0,
+      "text": "Arma la palabra, mono.",
+      "file": "assets/audio/prompts/syllables.build_word.mono.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.nido",
+      "index": 0,
+      "text": "Arma la palabra, nido.",
+      "file": "assets/audio/prompts/syllables.build_word.nido.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.niño",
+      "index": 0,
+      "text": "Arma la palabra, niño.",
+      "file": "assets/audio/prompts/syllables.build_word.niño.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.pino",
+      "index": 0,
+      "text": "Arma la palabra, pino.",
+      "file": "assets/audio/prompts/syllables.build_word.pino.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.piña",
+      "index": 0,
+      "text": "Arma la palabra, piña.",
+      "file": "assets/audio/prompts/syllables.build_word.piña.0.m4a"
+    },
+    {
+      "promptId": "syllables.build_word.uña",
+      "index": 0,
+      "text": "Arma la palabra, uña.",
+      "file": "assets/audio/prompts/syllables.build_word.uña.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.da",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, da?",
+      "file": "assets/audio/prompts/syllables.contains.da.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.de",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, de?",
+      "file": "assets/audio/prompts/syllables.contains.de.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.di",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, di?",
+      "file": "assets/audio/prompts/syllables.contains.di.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.do",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, do?",
+      "file": "assets/audio/prompts/syllables.contains.do.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.du",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, du?",
+      "file": "assets/audio/prompts/syllables.contains.du.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.fa",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, fa?",
+      "file": "assets/audio/prompts/syllables.contains.fa.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.fe",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, fe?",
+      "file": "assets/audio/prompts/syllables.contains.fe.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.fi",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, fi?",
+      "file": "assets/audio/prompts/syllables.contains.fi.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.fo",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, fo?",
+      "file": "assets/audio/prompts/syllables.contains.fo.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.la",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, la?",
+      "file": "assets/audio/prompts/syllables.contains.la.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.le",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, le?",
+      "file": "assets/audio/prompts/syllables.contains.le.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.li",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, li?",
+      "file": "assets/audio/prompts/syllables.contains.li.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.lo",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, lo?",
+      "file": "assets/audio/prompts/syllables.contains.lo.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.lu",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, lu?",
+      "file": "assets/audio/prompts/syllables.contains.lu.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.ma",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, ma?",
+      "file": "assets/audio/prompts/syllables.contains.ma.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.me",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, me?",
+      "file": "assets/audio/prompts/syllables.contains.me.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.mi",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, mi?",
+      "file": "assets/audio/prompts/syllables.contains.mi.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.mo",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, mo?",
+      "file": "assets/audio/prompts/syllables.contains.mo.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.mu",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, mu?",
+      "file": "assets/audio/prompts/syllables.contains.mu.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.na",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, na?",
+      "file": "assets/audio/prompts/syllables.contains.na.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.ni",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, ni?",
+      "file": "assets/audio/prompts/syllables.contains.ni.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.no",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, no?",
+      "file": "assets/audio/prompts/syllables.contains.no.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.nu",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, nu?",
+      "file": "assets/audio/prompts/syllables.contains.nu.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.pa",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, pa?",
+      "file": "assets/audio/prompts/syllables.contains.pa.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.pe",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, pe?",
+      "file": "assets/audio/prompts/syllables.contains.pe.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.pi",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, pi?",
+      "file": "assets/audio/prompts/syllables.contains.pi.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.po",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, po?",
+      "file": "assets/audio/prompts/syllables.contains.po.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.pu",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, pu?",
+      "file": "assets/audio/prompts/syllables.contains.pu.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.sa",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, sa?",
+      "file": "assets/audio/prompts/syllables.contains.sa.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.si",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, si?",
+      "file": "assets/audio/prompts/syllables.contains.si.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.so",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, so?",
+      "file": "assets/audio/prompts/syllables.contains.so.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.ta",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, ta?",
+      "file": "assets/audio/prompts/syllables.contains.ta.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.te",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, te?",
+      "file": "assets/audio/prompts/syllables.contains.te.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.ti",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, ti?",
+      "file": "assets/audio/prompts/syllables.contains.ti.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.to",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, to?",
+      "file": "assets/audio/prompts/syllables.contains.to.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.tu",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, tu?",
+      "file": "assets/audio/prompts/syllables.contains.tu.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.ña",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, ña?",
+      "file": "assets/audio/prompts/syllables.contains.ña.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.ñe",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, ñe?",
+      "file": "assets/audio/prompts/syllables.contains.ñe.0.m4a"
+    },
+    {
+      "promptId": "syllables.contains.ño",
+      "index": 0,
+      "text": "¿Qué dibujo tiene, ño?",
+      "file": "assets/audio/prompts/syllables.contains.ño.0.m4a"
+    },
+    {
+      "promptId": "syllables.ends_with.du",
+      "index": 0,
+      "text": "¿Qué dibujo termina con, du?",
+      "file": "assets/audio/prompts/syllables.ends_with.du.0.m4a"
+    },
+    {
+      "promptId": "syllables.ends_with.fa",
+      "index": 0,
+      "text": "¿Qué dibujo termina con, fa?",
+      "file": "assets/audio/prompts/syllables.ends_with.fa.0.m4a"
+    },
+    {
+      "promptId": "syllables.ends_with.fe",
+      "index": 0,
+      "text": "¿Qué dibujo termina con, fe?",
+      "file": "assets/audio/prompts/syllables.ends_with.fe.0.m4a"
+    },
+    {
+      "promptId": "syllables.ends_with.na",
+      "index": 0,
+      "text": "¿Qué dibujo termina con, na?",
+      "file": "assets/audio/prompts/syllables.ends_with.na.0.m4a"
+    },
+    {
+      "promptId": "syllables.ends_with.no",
+      "index": 0,
+      "text": "¿Qué dibujo termina con, no?",
+      "file": "assets/audio/prompts/syllables.ends_with.no.0.m4a"
+    },
+    {
+      "promptId": "syllables.ends_with.ña",
+      "index": 0,
+      "text": "¿Qué dibujo termina con, ña?",
+      "file": "assets/audio/prompts/syllables.ends_with.ña.0.m4a"
+    },
+    {
+      "promptId": "syllables.ends_with.ño",
+      "index": 0,
+      "text": "¿Qué dibujo termina con, ño?",
+      "file": "assets/audio/prompts/syllables.ends_with.ño.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.fa",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, fa?",
+      "file": "assets/audio/prompts/syllables.starts_with.fa.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.fi",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, fi?",
+      "file": "assets/audio/prompts/syllables.starts_with.fi.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.fo",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, fo?",
+      "file": "assets/audio/prompts/syllables.starts_with.fo.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.fu",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, fu?",
+      "file": "assets/audio/prompts/syllables.starts_with.fu.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.na",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, na?",
+      "file": "assets/audio/prompts/syllables.starts_with.na.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.ni",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, ni?",
+      "file": "assets/audio/prompts/syllables.starts_with.ni.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.nu",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, nu?",
+      "file": "assets/audio/prompts/syllables.starts_with.nu.0.m4a"
+    },
+    {
+      "promptId": "syllables.starts_with.ña",
+      "index": 0,
+      "text": "¿Qué dibujo empieza con, ña?",
+      "file": "assets/audio/prompts/syllables.starts_with.ña.0.m4a"
+    },
+    {
+      "promptId": "word.arana",
+      "index": 0,
+      "text": "araña",
+      "file": "assets/audio/words/arana.m4a",
+      "spokenAs": "Araña."
+    },
+    {
+      "promptId": "word.cafe",
+      "index": 0,
+      "text": "café",
+      "file": "assets/audio/words/cafe.m4a",
+      "spokenAs": "Café."
+    },
+    {
+      "promptId": "word.faro",
+      "index": 0,
+      "text": "faro",
+      "file": "assets/audio/words/faro.m4a",
+      "spokenAs": "Faro."
+    },
+    {
+      "promptId": "word.fideos",
+      "index": 0,
+      "text": "fideos",
+      "file": "assets/audio/words/fideos.m4a",
+      "spokenAs": "Fideos."
+    },
+    {
+      "promptId": "word.foca",
+      "index": 0,
+      "text": "foca",
+      "file": "assets/audio/words/foca.m4a",
+      "spokenAs": "Foca."
+    },
+    {
+      "promptId": "word.foto",
+      "index": 0,
+      "text": "foto",
+      "file": "assets/audio/words/foto.m4a",
+      "spokenAs": "Foto."
+    },
+    {
+      "promptId": "word.fuego",
+      "index": 0,
+      "text": "fuego",
+      "file": "assets/audio/words/fuego.m4a",
+      "spokenAs": "Fuego."
+    },
+    {
+      "promptId": "word.jirafa",
+      "index": 0,
+      "text": "jirafa",
+      "file": "assets/audio/words/jirafa.m4a",
+      "spokenAs": "Jirafa."
+    },
+    {
+      "promptId": "word.mofeta",
+      "index": 0,
+      "text": "mofeta",
+      "file": "assets/audio/words/mofeta.m4a",
+      "spokenAs": "Mofeta."
+    },
+    {
+      "promptId": "word.naranja",
+      "index": 0,
+      "text": "naranja",
+      "file": "assets/audio/words/naranja.m4a",
+      "spokenAs": "Naranja."
+    },
+    {
+      "promptId": "word.nido",
+      "index": 0,
+      "text": "nido",
+      "file": "assets/audio/words/nido.m4a",
+      "spokenAs": "Nido."
+    },
+    {
+      "promptId": "word.nino",
+      "index": 0,
+      "text": "niño",
+      "file": "assets/audio/words/nino.m4a",
+      "spokenAs": "Niño."
+    },
+    {
+      "promptId": "word.nube",
+      "index": 0,
+      "text": "nube",
+      "file": "assets/audio/words/nube.m4a",
+      "spokenAs": "Nube."
+    },
+    {
+      "promptId": "word.nandu",
+      "index": 0,
+      "text": "ñandú",
+      "file": "assets/audio/words/nandu.m4a",
+      "spokenAs": "Ñandú."
+    },
+    {
+      "promptId": "syllable.na",
+      "index": 0,
+      "text": "na",
+      "file": "assets/audio/sounds/syllable.na.m4a",
+      "spokenAs": "Na... Ne... Ni... No... Nu."
+    },
+    {
+      "promptId": "syllable.ne",
+      "index": 0,
+      "text": "ne",
+      "file": "assets/audio/sounds/syllable.ne.m4a",
+      "spokenAs": "Na... Ne... Ni... No... Nu."
+    },
+    {
+      "promptId": "syllable.ni",
+      "index": 0,
+      "text": "ni",
+      "file": "assets/audio/sounds/syllable.ni.m4a",
+      "spokenAs": "Na... Ne... Ni... No... Nu."
+    },
+    {
+      "promptId": "syllable.no",
+      "index": 0,
+      "text": "no",
+      "file": "assets/audio/sounds/syllable.no.m4a",
+      "spokenAs": "Na... Ne... Ni... No... Nu."
+    },
+    {
+      "promptId": "syllable.nu",
+      "index": 0,
+      "text": "nu",
+      "file": "assets/audio/sounds/syllable.nu.m4a",
+      "spokenAs": "Na... Ne... Ni... No... Nu."
+    },
+    {
+      "promptId": "syllable.ña",
+      "index": 0,
+      "text": "ña",
+      "file": "assets/audio/sounds/syllable.ña.m4a",
+      "spokenAs": "¡Ña!... Escucha bien."
+    },
+    {
+      "promptId": "syllable.ñe",
+      "index": 0,
+      "text": "ñe",
+      "file": "assets/audio/sounds/syllable.ñe.m4a",
+      "spokenAs": "¡Ñe!... Escucha bien."
+    },
+    {
+      "promptId": "syllable.ñi",
+      "index": 0,
+      "text": "ñi",
+      "file": "assets/audio/sounds/syllable.ñi.m4a",
+      "spokenAs": "¡Ñi!... Escucha bien."
+    },
+    {
+      "promptId": "syllable.ño",
+      "index": 0,
+      "text": "ño",
+      "file": "assets/audio/sounds/syllable.ño.m4a",
+      "spokenAs": "¡Ño!... Escucha bien."
+    },
+    {
+      "promptId": "syllable.ñu",
+      "index": 0,
+      "text": "ñu",
+      "file": "assets/audio/sounds/syllable.ñu.m4a",
+      "spokenAs": "¡Ñu!... Escucha bien."
+    },
+    {
+      "promptId": "syllable.fa",
+      "index": 0,
+      "text": "fa",
+      "file": "assets/audio/sounds/syllable.fa.m4a",
+      "spokenAs": "Fa... Fe... Fi... Fo... Fu."
+    },
+    {
+      "promptId": "syllable.fe",
+      "index": 0,
+      "text": "fe",
+      "file": "assets/audio/sounds/syllable.fe.m4a",
+      "spokenAs": "Fa... Fe... Fi... Fo... Fu."
+    },
+    {
+      "promptId": "syllable.fi",
+      "index": 0,
+      "text": "fi",
+      "file": "assets/audio/sounds/syllable.fi.m4a",
+      "spokenAs": "Fa... Fe... Fi... Fo... Fu."
+    },
+    {
+      "promptId": "syllable.fo",
+      "index": 0,
+      "text": "fo",
+      "file": "assets/audio/sounds/syllable.fo.m4a",
+      "spokenAs": "Fa... Fe... Fi... Fo... Fu."
+    },
+    {
+      "promptId": "syllable.fu",
+      "index": 0,
+      "text": "fu",
+      "file": "assets/audio/sounds/syllable.fu.m4a",
+      "spokenAs": "Fa... Fe... Fi... Fo... Fu."
     }
   ]
 }

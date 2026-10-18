@@ -12,6 +12,7 @@ abstract final class ActivityIds {
   static const syllableFind = 'syllables.find';
   static const startsWith = 'syllables.starts_with';
   static const endsWith = 'syllables.ends_with';
+  static const contains = 'syllables.contains';
   static const blend = 'syllables.blend';
   static const buildWord = 'syllables.build_word';
   static const review = 'review';
@@ -30,6 +31,7 @@ abstract final class ActivityIds {
     syllableFind,
     startsWith,
     endsWith,
+    contains,
     blend,
     buildWord,
     review,

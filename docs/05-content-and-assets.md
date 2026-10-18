@@ -99,9 +99,12 @@ join from the consonant into the vowel (over the top of *a* and *o*). Only the d
 of the *i* is a separate stroke. The files were built by placing the letter strokes
 at Playwrite Chile's letter positions, then checked over the font by eye.
 
-A syllable step lists its syllables in `sounds` (`[ma, me, mi, mo, mu]`). *Ends with*
-asks only the syllables that some picture ends with, so a step can use it even when
-words ending in *mu* or *pi* don't exist.
+A syllable step lists its syllables in `sounds` (`[ma, me, mi, mo, mu]`). *Starts with*,
+*Ends with* and *Contains* ask only the syllables some picture fits, so a step can use them
+even when no word ends in *mu* or starts with *ñi*. Because these games show the written
+syllable, a picture fits only when its word is also **spelled** that way: *cebra* sounds
+like *se* but is not offered for **se**. *Same sound* shows no letters and matches by sound
+only. Wrong choices never sound like the asked syllable.
 *Clap the syllables* needs a `listening.clap.<word>` phrase for every pictured word of 1–4
 syllables: the word split up ("A... be... ja."). *Blend the sounds* says the same phrase
 after `syllables.blend.ask`.

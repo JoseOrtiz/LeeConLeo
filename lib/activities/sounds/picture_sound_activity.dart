@@ -34,6 +34,7 @@ class PictureSoundActivity implements ActivitySpec {
 
   static const startsWith = PictureSoundActivity._(PictureSoundGame.startsWith);
   static const endsWith = PictureSoundActivity._(PictureSoundGame.endsWith);
+  static const contains = PictureSoundActivity._(PictureSoundGame.contains);
   static const sameSound = PictureSoundActivity._(PictureSoundGame.sameSound);
 
   final PictureSoundGame game;
@@ -50,7 +51,7 @@ class PictureSoundActivity implements ActivitySpec {
     final pictures = SoundPosition.pictured(context.content.words);
     return [
       for (final sound in context.step.sounds)
-        if (pictures.any((word) => position.matches(word, sound))) sound,
+        if (pictures.any((word) => game.matches(word, sound))) sound,
     ];
   }
 
@@ -62,7 +63,7 @@ class PictureSoundActivity implements ActivitySpec {
     final ordered = _fill(sounds, random);
     final targets = {
       for (final sound in sounds)
-        sound: pictures.where((word) => position.matches(word, sound)).toList()..shuffle(random),
+        sound: pictures.where((word) => game.matches(word, sound)).toList()..shuffle(random),
     };
     final asked = <String, int>{};
     final items = <ActivityItem>[];
@@ -99,7 +100,7 @@ class PictureSoundActivity implements ActivitySpec {
     return PictureItem(
       id: '$round-${target.text}',
       target: target.text,
-      promptId: position.promptId(sound),
+      promptId: game.promptId(sound),
       sound: sound,
       options: [for (final word in words) word.text],
       optionNames: {for (final word in words) word.text: SpokenLine(word.text, clip: word.audio)},
